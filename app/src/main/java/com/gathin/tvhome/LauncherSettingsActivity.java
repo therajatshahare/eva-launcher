@@ -174,6 +174,27 @@ public final class LauncherSettingsActivity extends Activity {
         });
         findViewById(R.id.tvSettingsChoice).setOnClickListener(v ->
                 open(SystemSettings.intent(this, Settings.ACTION_SETTINGS)));
+                TextView redditWallpaperChoice = findViewById(R.id.redditWallpaperChoice);
+        redditWallpaperChoice.setOnClickListener(v -> {
+            redditWallpaperChoice.setText("Fetching wallpapers from Reddit...");
+            WallpaperFetcher.fetchFromReddit(this, (success, msg) -> {
+                runOnUiThread(() -> {
+                    redditWallpaperChoice.setText("Fetch Wallpapers from Reddit r/wallpapers");
+                    Toast.makeText(this, msg, Toast.LENGTH_LONG).show();
+                    refresh();
+                });
+            });
+        });
+
+        TextView updateChoice = findViewById(R.id.updateChoice);
+        updateChoice.setOnClickListener(v -> {
+            updateChoice.setText("Checking for updates...");
+            UpdateManager.checkForUpdates(this, true, msg -> {
+                updateChoice.setText("Check for Launcher Updates");
+                Toast.makeText(this, msg, Toast.LENGTH_LONG).show();
+            });
+        });
+
         refresh();
         if (config.launcherSettingsButton) reorderChoice.requestFocus();
         else columnChoices[Math.max(0, Math.min(columns - 4, 3))].requestFocus();
@@ -337,3 +358,4 @@ public final class LauncherSettingsActivity extends Activity {
         }
     }
 }
+

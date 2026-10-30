@@ -169,5 +169,17 @@
             style="@style/SettingsRow"
             android:layout_marginTop="18dp"
             android:text="@string/tv_settings" />
+            <TextView
+            android:id="@+id/redditWallpaperChoice"
+            style="@style/SettingsRow"
+            android:layout_marginTop="28dp"
+            android:text="Fetch Wallpapers from Reddit r/wallpapers" />
+
+        <TextView
+            android:id="@+id/updateChoice"
+            style="@style/SettingsRow"
+            android:layout_marginTop="18dp"
+            android:text="Check for Launcher Updates" />
+
     </LinearLayout>
 </ScrollView>
