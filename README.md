@@ -1,166 +1,169 @@
-# EVA TV Launcher
+<div align="center">
 
-A lightweight, remote-friendly home launcher for Android TV boxes, with fresh wallpapers from Reddit and over-the-air updates straight from GitHub.
+# 🚀 EVA TV Launcher
 
-![Platform](https://img.shields.io/badge/platform-Android%20TV-3DDC84?logo=android&logoColor=white)
-![Min SDK](https://img.shields.io/badge/minSdk-26%20(Android%208.0)-blue)
-![APK size](https://img.shields.io/badge/APK-~530%20KB-success)
-![License](https://img.shields.io/badge/license-MIT-lightgrey)
+<b>A lightweight, blazing-fast, remote-friendly Android TV launcher based on CleanYourTV, featuring live Reddit wallpaper synchronization, GitHub OTA auto-updates, and ultra-low RAM overhead.</b>
 
-EVA is a fork of [CleanYourTV Launcher](https://github.com/Gathin23/cleanyourtv) by Gathin23. The upstream launcher is deliberately isolated: no network permissions, and wallpapers are pushed manually over ADB. EVA keeps the same tiny footprint and clean design, and adds just enough networking to make the launcher self-maintaining.
+<p align="center">
+  <a href="https://github.com/Gathin23"><img src="https://img.shields.io/badge/Base-CleanYourTV-blue?style=flat-square" alt="Base Project"></a>
+  <a href="https://developer.android.com/about/versions/oreo"><img src="https://img.shields.io/badge/Android-8.0%2B%20(API%2026%2B)-green?style=flat-square" alt="Android Min SDK"></a>
+  <a href="https://github.com/therajatshahare/eva-launcher/releases/latest"><img src="https://img.shields.io/badge/APK-~530%20KB-success?style=flat-square" alt="APK Size"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square" alt="License"></a>
+  <a href="https://github.com/gradle/gradle"><img src="https://img.shields.io/badge/Java-17-orange?style=flat-square" alt="Java 17"></a>
+</p>
 
----
-
-## Features
-
-| Feature | What it does |
-|---|---|
-| **Reddit wallpaper sync** | Pulls landscape, high-resolution images from `r/wallpapers` and rotates them as your home background. |
-| **In-app OTA updates** | Checks GitHub Releases for a newer version, downloads it in the background, and prompts you to install. |
-| **Tiny footprint** | Base APK is roughly 530 KB, with R8 shrinking enabled and no heavy dependencies such as `androidx.core`. |
-| **Remote-friendly** | Built for D-pad navigation on TV boxes. |
-| **Automated releases** | Push a version tag and GitHub Actions builds, signs and publishes the APK. |
+</div>
 
 ---
 
-## How it works
+## 🌟 Key Features
 
-### Reddit wallpaper sync (`WallpaperFetcher.java`)
+### ⚡ Blazing-Fast & Ultra-Lightweight
+- **Zero Bloatware:** Base APK is roughly ~530 KB, built with plain Java and minimal dependencies (no heavy libraries like `androidx.core`).
+- **R8 Optimized:** Code stripping and resource shrinking enabled for instantaneous startup and minimal RAM usage on low-spec Smart TV processors.
 
+### 🖼️ Live Reddit Wallpaper Synchronization
+- **`r/wallpapers` Integration:** Fetches high-definition landscape artwork directly from Reddit's `r/wallpapers` (`WallpaperFetcher.java`).
+- **Smart Rotation & Memory Protection:** Downsamples images in memory to protect low-RAM TV boxes and rotates backgrounds automatically.
+
+### 🔄 GitHub OTA Auto-Updates
+- **In-App Updater:** Check for new releases directly from settings (`UpdateManager.java`).
+- **Seamless Install:** Downloads and prompts for installation via `UpdateFileProvider`, a custom lightweight `ContentProvider`.
+
+### 🎨 Customizable Grid & Dock
+- **Adjustable Layout:** Configure app columns (4 to 7 per row) and customize rows displayed below the main dock.
+- **Dock Opacity Controls:** Choose between 100%, 70%, 50%, 30%, or full clean transparency.
+- **App Library & Shortcuts:** Fast D-pad navigation with shortcut pinning and app reordering.
+
+### 🕒 Daydream Clock, System Stats & Festive Themes
+- **Daydream Screensaver:** Integrated clock screensaver supporting 12-hour, 24-hour, and system time formats.
+- **Real-Time System Stats:** Monitor displaying CPU load %, RAM usage, free storage, and active network connections (Wi-Fi, Ethernet, VPN).
+- **Dynamic Cards & Widgets:** Race weekend schedule countdowns (F1/Motorsport), game day updates, and adaptive time-of-day greetings.
+- **Seasonal Visual Accents:** Dynamic visual celebrations for Diwali, Dussehra, Halloween, and Lunar New Year.
+- **Multi-Language Support:** Fully translated into over 30 languages.
+
+---
+
+## ⚙️ How It Works
+
+### Reddit Wallpaper Sync (`WallpaperFetcher.java`)
 - Queries `https://www.reddit.com/r/wallpapers/hot.json?limit=25`.
-- Sends an Android TV User-Agent to avoid Reddit's HTTP 403 blocks.
-- Skips portrait and gallery posts, and ignores files under 10 KB.
-- Downsamples images in memory so low-RAM TV boxes don't run out of memory.
-- Saves results to `getExternalFilesDir(null)/wallpapers/`, where the upstream `WallpaperPlayer` and rotation engine pick them up automatically.
+- Sends an Android TV User-Agent to prevent HTTP 403 response blocks.
+- Filters out portrait images, gallery posts, and invalid files under 10 KB.
+- Saves high-res landscape wallpapers to app storage where `WallpaperPlayer` rotates them automatically.
 
-### OTA updates (`UpdateManager.java` and `UpdateFileProvider.java`)
-
-- Calls `https://api.github.com/repos/therajatshahare/eva-launcher/releases/latest`.
-- Compares the installed `versionName` with the release `tag_name`.
-- If a newer version exists, downloads `app-release.apk` to `cacheDir/updates/launcher-update.apk`.
-- Hands the file to Android's Package Installer through `UpdateFileProvider`, a small custom `ContentProvider` that grants temporary read access without pulling in `androidx.core`.
+### OTA Auto-Updates (`UpdateManager.java` & `UpdateFileProvider.java`)
+- Queries GitHub Releases API (`https://api.github.com/repos/therajatshahare/eva-launcher/releases/latest`).
+- Compares installed `versionName` against the latest GitHub tag.
+- Downloads `app-release.apk` to `cacheDir/updates/` and prompts for direct installation without requiring third-party app installers.
 
 ---
 
-## Requirements
+## 📋 Requirements
 
-- Android TV device running **Android 8.0 (API 26) or higher**
-- Permissions used: `INTERNET` and `REQUEST_INSTALL_PACKAGES`
-- Allow installs from this app when Android prompts you (needed for OTA updates)
+- Android TV device running **Android 8.0 (API 26) or higher**.
+- Permissions: `INTERNET` and `REQUEST_INSTALL_PACKAGES`.
 
 ---
 
-## Installation
+## 📥 Installation
 
-1. Download `app-release.apk` from the [latest release](https://github.com/therajatshahare/eva-launcher/releases/latest).
-2. Copy it to your TV box (USB drive, a file manager app, or ADB).
-3. Install it and set **EVA** as your default home app when prompted.
+1. Download `app-release.apk` from the [Latest Release](https://github.com/therajatshahare/eva-launcher/releases/latest).
+2. Sideload the APK onto your Android TV using ADB or a file manager app (e.g., Downloader).
+3. Open **EVA TV Launcher** and optionally set it as your default Home launcher.
 
 Using ADB:
-
 ```bash
 adb connect <tv-ip-address>:5555
 adb install -r app-release.apk
 ```
 
-After the first install, future updates can be done from inside the launcher.
-
 ---
 
-## Usage
+## 📦 Building from Source
 
-Open **Launcher Settings** to find:
+### Prerequisites
+- JDK 17
+- Android SDK (Compile SDK 34, Min SDK 26)
 
-- **Sync Reddit Wallpapers**: fetches a fresh batch of wallpapers.
-- **Check for Launcher Updates**: looks for a newer release and offers to install it.
+### Build Commands
 
----
-
-## Building from source
-
-**Prerequisites:** Java 17 and the Android SDK (compile SDK 34).
-
+**Linux / macOS:**
 ```bash
-git clone https://github.com/therajatshahare/eva-launcher.git
-cd eva-launcher
 ./gradlew assembleRelease
 ```
 
-On Windows PowerShell, use `./gradlew assembleRelease` as well, or `gradlew.bat assembleRelease` from cmd.
+**Windows (PowerShell):**
+```powershell
+.\gradlew.bat assembleRelease
+```
 
-The output is at `app/build/outputs/apk/release/app-release.apk`.
+The output APK will be generated at:
+```text
+app/build/outputs/apk/release/app-release.apk
+```
 
 ---
 
-## Releasing an update
+## 🚀 Releasing an Update
 
 1. Commit and push your changes:
-
    ```bash
    git add .
-   git commit -m "Describe your changes"
+   git commit -m "Your update description"
    git push origin main
    ```
 
-2. Tag and push a version:
-
+2. Tag and push a release version:
    ```bash
-   git tag v3.3
-   git push origin v3.3
+   git tag v3.2
+   git push origin v3.2
    ```
 
-3. GitHub Actions (`.github/workflows/release.yml`) builds, signs and publishes the release APK. Your TV will see it the next time you choose **Check for Launcher Updates**.
-
-> **Note:** the app's `versionName` must match the tag you push (for example `3.3` for `v3.3`), otherwise the updater can't tell a release is newer.
+3. GitHub Actions (`.github/workflows/release.yml`) builds and publishes the release APK automatically.
 
 ---
 
-## Project structure
+## 📁 Project Structure
 
 ```text
 eva-launcher/
-├── .github/workflows/release.yml     # CI/CD auto-release
+├── .github/workflows/release.yml     # CI/CD auto-release workflow
 ├── app/
-│   ├── build.gradle                  # namespace, SDK 34, R8 shrinking
+│   ├── build.gradle                  # App configuration, SDK 34, R8 shrinking
 │   └── src/main/
-│       ├── AndroidManifest.xml       # INTERNET, REQUEST_INSTALL_PACKAGES, UpdateFileProvider
+│       ├── AndroidManifest.xml       # Permissions, UpdateFileProvider
 │       ├── java/com/gathin/tvhome/
 │       │   ├── LauncherSettingsActivity.java
 │       │   ├── WallpaperFetcher.java
 │       │   ├── UpdateManager.java
 │       │   ├── UpdateFileProvider.java
-│       │   └── ...                   # upstream launcher files
-│       └── res/
-│           ├── layout/activity_launcher_settings.xml
-│           └── values/config.xml     # github_update_repo
+│       │   └── ...                   # Launcher core components
+│       └── res/                      # UI layouts, fonts, drawables, strings
 ├── README.md
 └── LICENSE
 ```
 
 ---
 
-## Privacy
+## 🔒 Privacy
 
-EVA makes network requests only when you trigger them from settings:
-
-- `reddit.com` for wallpaper sync
+EVA makes network requests only when triggered from Launcher Settings:
+- `reddit.com` for fetching wallpapers
 - `api.github.com` and GitHub release assets for update checks and downloads
 
-No analytics, no accounts, no tracking.
+No telemetry, no tracking, and no external advertising services.
 
 ---
 
-## Contributing
+## 👥 Credits & Acknowledgments
 
-Issues and pull requests are welcome. For larger changes, please open an issue first so we can discuss the approach. Keep the APK small: avoid adding heavy dependencies unless there is a strong reason.
+- **Original Base:** Built upon the [CleanYourTV](https://github.com/Gathin23/cleanyourtv) project created by **[Gathin23](https://github.com/Gathin23)**.
+- **Custom Enhancements & Maintenance:** Developed and maintained by **Rajat Shahare**.
+- **Font:** Uses the [Outfit](https://github.com/outfit-project/outfit-font) typeface under the SIL Open Font License 1.1.
 
 ---
 
-## Credits
+## 📄 License
 
-- **Original project:** [CleanYourTV](https://github.com/Gathin23/cleanyourtv) by **Gathin23**
-- **EVA enhancements and maintenance:** **Rajat Shahare**
-
-## License
-
-Released under the [MIT License](LICENSE).
+This project is licensed under the **[MIT License](LICENSE)**.
