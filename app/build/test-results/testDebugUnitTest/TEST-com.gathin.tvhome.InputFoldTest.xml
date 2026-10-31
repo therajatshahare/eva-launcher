@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gathin.tvhome.InputFoldTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-31T16:08:41.837Z" hostname="DESKTOP-EOQDD3G" time="0.005">
+<testsuite name="com.gathin.tvhome.InputFoldTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-31T16:41:50.138Z" hostname="DESKTOP-EOQDD3G" time="0.004">
   <properties/>
   <testcase name="anEmptyPortReportingStandbyFolds" classname="com.gathin.tvhome.InputFoldTest" time="0.001"/>
-  <testcase name="aConnectedHdmiPortStays" classname="com.gathin.tvhome.InputFoldTest" time="0.001"/>
-  <testcase name="anAvJackAlwaysFolds" classname="com.gathin.tvhome.InputFoldTest" time="0.001"/>
+  <testcase name="aConnectedHdmiPortStays" classname="com.gathin.tvhome.InputFoldTest" time="0.0"/>
+  <testcase name="anAvJackAlwaysFolds" classname="com.gathin.tvhome.InputFoldTest" time="0.0"/>
   <testcase name="anHdmiRowWithNoStateStays" classname="com.gathin.tvhome.InputFoldTest" time="0.001"/>
-  <testcase name="aDisconnectedPortFolds" classname="com.gathin.tvhome.InputFoldTest" time="0.001"/>
+  <testcase name="aDisconnectedPortFolds" classname="com.gathin.tvhome.InputFoldTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gathin.tvhome.TopFadeTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-31T16:08:42.900Z" hostname="DESKTOP-EOQDD3G" time="0.005">
+<testsuite name="com.gathin.tvhome.TopFadeTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-31T16:41:51.171Z" hostname="DESKTOP-EOQDD3G" time="0.004">
   <properties/>
   <testcase name="theFadeGrowsInWithTheFirstPixelsOfScrolling" classname="com.gathin.tvhome.TopFadeTest" time="0.003"/>
-  <testcase name="theDockAtRestIsUntouched" classname="com.gathin.tvhome.TopFadeTest" time="0.001"/>
+  <testcase name="theDockAtRestIsUntouched" classname="com.gathin.tvhome.TopFadeTest" time="0.0"/>
   <testcase name="thenItStaysAtItsFullLength" classname="com.gathin.tvhome.TopFadeTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

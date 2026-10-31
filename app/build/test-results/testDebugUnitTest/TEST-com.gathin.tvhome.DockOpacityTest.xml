@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gathin.tvhome.DockOpacityTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-31T16:08:41.641Z" hostname="DESKTOP-EOQDD3G" time="0.01">
+<testsuite name="com.gathin.tvhome.DockOpacityTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-31T16:41:49.994Z" hostname="DESKTOP-EOQDD3G" time="0.008">
   <properties/>
-  <testcase name="aChoiceMadeOnTheTvWinsOverTheTheme" classname="com.gathin.tvhome.DockOpacityTest" time="0.007"/>
+  <testcase name="aChoiceMadeOnTheTvWinsOverTheTheme" classname="com.gathin.tvhome.DockOpacityTest" time="0.006"/>
   <testcase name="anOutOfRangeChoiceIsIgnored" classname="com.gathin.tvhome.DockOpacityTest" time="0.001"/>
   <testcase name="noChoiceKeepsTheThemeValue" classname="com.gathin.tvhome.DockOpacityTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>

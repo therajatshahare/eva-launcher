@@ -2247,7 +2247,6 @@ androidx.recyclerview.widget.PagerSnapHelper$1
 androidx.recyclerview.widget.PagerSnapHelper
 androidx.recyclerview.widget.RecyclerView$Adapter:
     public final androidx.recyclerview.widget.RecyclerView$Adapter$StateRestorationPolicy getStateRestorationPolicy()
-    public final void notifyItemChanged(int)
     public final void notifyItemChanged(int,java.lang.Object)
     public final void notifyItemInserted(int)
     public final void notifyItemRangeChanged(int,int,java.lang.Object)
@@ -2818,6 +2817,24 @@ com.gathin.tvhome.LauncherSettingsActivity:
     private static final int CAT_UPDATES
     private static final int CAT_WALLPAPER
     static final java.lang.String EXTRA_REORDER
+    private static final int ITEM_ADD_THEME
+    private static final int ITEM_ADVANCED
+    private static final int ITEM_ANIMATIONS
+    private static final int ITEM_CHECK_UPDATE
+    private static final int ITEM_CLOCK_FORMAT
+    private static final int ITEM_COLUMNS
+    private static final int ITEM_CREDITS
+    private static final int ITEM_DEFAULT_HOME
+    private static final int ITEM_DEFAULT_THEME
+    private static final int ITEM_DEV_INFO
+    private static final int ITEM_DOCK
+    private static final int ITEM_FETCH_REDDIT
+    private static final int ITEM_GITHUB
+    private static final int ITEM_OPEN_START
+    private static final int ITEM_PICK_WALLPAPER
+    private static final int ITEM_ROWS
+    private static final int ITEM_TELEGRAM
+    private static final int ITEM_TV_SETTINGS
 com.gathin.tvhome.LibraryApps:
     static final int MAX_ADDED
     private static final int MAX_BYTES
@@ -2890,6 +2907,7 @@ com.gathin.tvhome.R$drawable:
     public static int pill_text_dim
     public static int pill_text_mid
     public static int settings_card_bg
+    public static int settings_choice_bg
     public static int status_dot
     public static int tile_bg
     public static int wallpaper_card_gradient
@@ -2899,17 +2917,23 @@ com.gathin.tvhome.R$id:
     public static int ampm
     public static int hint
     public static int sectionContent
+    public static int sectionOptionsContainer
     public static int sectionScrollView
+    public static int sectionSubtitle
+    public static int sectionTitle
     private void <init>()
 com.gathin.tvhome.R$integer:
     private void <init>()
 com.gathin.tvhome.R$layout:
+    public static int dialog_settings_section
     private void <init>()
 com.gathin.tvhome.R$mipmap
 com.gathin.tvhome.R$plurals:
     private void <init>()
 com.gathin.tvhome.R$raw
 com.gathin.tvhome.R$string:
+    public static int advanced_effects_state
+    public static int animations_state
     public static int card_keep_hidden
     public static int card_prompt_hint
     public static int card_show
@@ -2923,6 +2947,7 @@ com.gathin.tvhome.R$string:
     public static int home_key_description
     public static int home_key_name
     public static int input_key_service_description
+    public static int open_on_start_state
     public static int standby
     public static int wallpaper_label
     public static int wallpaper_state
@@ -4783,7 +4808,7 @@ androidx.collection.SimpleArrayMap:
     public static java.lang.Object setValueAt()
     public final java.lang.Object valueAt(int)
 androidx.core.R$id
-androidx.core.app.CoreComponentFactory$$InternalSyntheticThrowCCEIfNotNull$13$28d6d52be828bd520f37653069cdb0fd59ddc413967dd43deec606fddf5e864e$0
+androidx.core.app.CoreComponentFactory$$InternalSyntheticThrowCCEIfNotNull$14$28d6d52be828bd520f37653069cdb0fd59ddc413967dd43deec606fddf5e864e$0
 androidx.core.app.CoreComponentFactory$CompatWrapped
 androidx.core.content.ContextCompat
 androidx.core.content.FileProvider$PathStrategy
@@ -4883,19 +4908,19 @@ androidx.core.view.ViewGroupKt
 androidx.core.view.ViewKt$allViews$1:
     public final java.lang.Object invoke(kotlin.sequences.SequenceBuilderIterator,kotlin.coroutines.jvm.internal.BaseContinuationImpl)
 androidx.core.view.ViewKt
-androidx.core.view.ViewParentCompat$$InternalSyntheticThrowCCEIfNotNull$13$2a61360a7b1c60393fcf5820ae00ee4320c4549037c2fc658de4c3e75adecd88$0
-androidx.core.view.ViewParentCompat$$InternalSyntheticThrowCCEIfNotNull$13$2a61360a7b1c60393fcf5820ae00ee4320c4549037c2fc658de4c3e75adecd88$1
-androidx.core.view.ViewParentCompat$$InternalSyntheticThrowCCEIfNotNull$13$2b58d0105ca4ae4f6719b0b4a846dcc72268a4e510902cfe69948bc82e875e1d$0
-androidx.core.view.ViewParentCompat$$InternalSyntheticThrowCCEIfNotNull$13$34af3155686c2fece4e64a76009a6e235cdd4be8bb6db90a3cae2a722d38a40e$0
-androidx.core.view.ViewParentCompat$$InternalSyntheticThrowCCEIfNotNull$13$34af3155686c2fece4e64a76009a6e235cdd4be8bb6db90a3cae2a722d38a40e$1
-androidx.core.view.ViewParentCompat$$InternalSyntheticThrowCCEIfNotNull$13$34af3155686c2fece4e64a76009a6e235cdd4be8bb6db90a3cae2a722d38a40e$2
-androidx.core.view.ViewParentCompat$$InternalSyntheticThrowCCEIfNotNull$13$5dd6341c2af74899b57723b3b9d3a554047f0a0827486edba582c4b22393673c$0
-androidx.core.view.ViewParentCompat$$InternalSyntheticThrowCCEIfNotNull$13$5dd6341c2af74899b57723b3b9d3a554047f0a0827486edba582c4b22393673c$1
-androidx.core.view.ViewParentCompat$$InternalSyntheticThrowCCEIfNotNull$13$60b38615cadf5bc3bdee9729b7b7b4714748a0db720b551ac9c31444ad6b7359$0
-androidx.core.view.ViewParentCompat$$InternalSyntheticThrowCCEIfNotNull$13$a25fecbb808ccf037ff4d2bc14a28f05f01e2c21fed64e33b063e87cc80444ab$0
-androidx.core.view.ViewParentCompat$$InternalSyntheticThrowCCEIfNotNull$13$a25fecbb808ccf037ff4d2bc14a28f05f01e2c21fed64e33b063e87cc80444ab$1
-androidx.core.view.ViewParentCompat$$InternalSyntheticThrowCCEIfNotNull$13$ab1bf97d81fb365da45faf90a0ae00aea90bab7067241d36e6be99051195be86$0
-androidx.core.view.ViewParentCompat$$InternalSyntheticThrowCCEIfNotNull$13$ab1bf97d81fb365da45faf90a0ae00aea90bab7067241d36e6be99051195be86$1
+androidx.core.view.ViewParentCompat$$InternalSyntheticThrowCCEIfNotNull$14$2a61360a7b1c60393fcf5820ae00ee4320c4549037c2fc658de4c3e75adecd88$0
+androidx.core.view.ViewParentCompat$$InternalSyntheticThrowCCEIfNotNull$14$2a61360a7b1c60393fcf5820ae00ee4320c4549037c2fc658de4c3e75adecd88$1
+androidx.core.view.ViewParentCompat$$InternalSyntheticThrowCCEIfNotNull$14$2b58d0105ca4ae4f6719b0b4a846dcc72268a4e510902cfe69948bc82e875e1d$0
+androidx.core.view.ViewParentCompat$$InternalSyntheticThrowCCEIfNotNull$14$34af3155686c2fece4e64a76009a6e235cdd4be8bb6db90a3cae2a722d38a40e$0
+androidx.core.view.ViewParentCompat$$InternalSyntheticThrowCCEIfNotNull$14$34af3155686c2fece4e64a76009a6e235cdd4be8bb6db90a3cae2a722d38a40e$1
+androidx.core.view.ViewParentCompat$$InternalSyntheticThrowCCEIfNotNull$14$34af3155686c2fece4e64a76009a6e235cdd4be8bb6db90a3cae2a722d38a40e$2
+androidx.core.view.ViewParentCompat$$InternalSyntheticThrowCCEIfNotNull$14$5dd6341c2af74899b57723b3b9d3a554047f0a0827486edba582c4b22393673c$0
+androidx.core.view.ViewParentCompat$$InternalSyntheticThrowCCEIfNotNull$14$5dd6341c2af74899b57723b3b9d3a554047f0a0827486edba582c4b22393673c$1
+androidx.core.view.ViewParentCompat$$InternalSyntheticThrowCCEIfNotNull$14$60b38615cadf5bc3bdee9729b7b7b4714748a0db720b551ac9c31444ad6b7359$0
+androidx.core.view.ViewParentCompat$$InternalSyntheticThrowCCEIfNotNull$14$a25fecbb808ccf037ff4d2bc14a28f05f01e2c21fed64e33b063e87cc80444ab$0
+androidx.core.view.ViewParentCompat$$InternalSyntheticThrowCCEIfNotNull$14$a25fecbb808ccf037ff4d2bc14a28f05f01e2c21fed64e33b063e87cc80444ab$1
+androidx.core.view.ViewParentCompat$$InternalSyntheticThrowCCEIfNotNull$14$ab1bf97d81fb365da45faf90a0ae00aea90bab7067241d36e6be99051195be86$0
+androidx.core.view.ViewParentCompat$$InternalSyntheticThrowCCEIfNotNull$14$ab1bf97d81fb365da45faf90a0ae00aea90bab7067241d36e6be99051195be86$1
 androidx.core.view.ViewParentCompat
 androidx.core.view.WindowInsetsCompat$Builder
 androidx.core.view.WindowInsetsCompat$BuilderImpl20:
@@ -4976,7 +5001,7 @@ androidx.core.view.WindowInsetsCompat:
     public static void setStableInsets()
     public final android.view.WindowInsets toWindowInsets()
 androidx.core.view.accessibility.AccessibilityEventCompat
-androidx.core.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityActionCompat$$InternalSyntheticThrowCCEIfNotNull$15$51a518e2562bdd83f1a37db6273eca8c40d29d82445ffc5c9314f2450daba410$0
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityActionCompat$$InternalSyntheticThrowCCEIfNotNull$16$51a518e2562bdd83f1a37db6273eca8c40d29d82445ffc5c9314f2450daba410$0
 androidx.core.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityActionCompat:
     public static final androidx.core.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityActionCompat ACTION_ACCESSIBILITY_FOCUS
     public static final androidx.core.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityActionCompat ACTION_CLEAR_ACCESSIBILITY_FOCUS
@@ -5078,7 +5103,7 @@ androidx.customview.poolingcontainer.PoolingContainer:
     static void <clinit>()
     public static final androidx.customview.poolingcontainer.PoolingContainerListenerHolder getPoolingContainerListenerHolder(android.view.View)
 androidx.customview.poolingcontainer.PoolingContainerListener
-androidx.customview.poolingcontainer.PoolingContainerListenerHolder$$InternalSyntheticThrowCCEIfNotNull$20$7b65cda82b6164824df4fe94f15f0ac33b924e849dd16ae33b6ae8083b9a9f3b$0
+androidx.customview.poolingcontainer.PoolingContainerListenerHolder$$InternalSyntheticThrowCCEIfNotNull$21$7b65cda82b6164824df4fe94f15f0ac33b924e849dd16ae33b6ae8083b9a9f3b$0
 androidx.customview.poolingcontainer.PoolingContainerListenerHolder:
     public final void onRelease()
 androidx.customview.poolingcontainer.R$id
@@ -5136,8 +5161,8 @@ androidx.dynamicanimation.animation.DynamicAnimation$OnAnimationUpdateListener
 androidx.dynamicanimation.animation.DynamicAnimation
 androidx.dynamicanimation.animation.FloatPropertyCompat:
     public final java.lang.String mPropertyName
-androidx.dynamicanimation.animation.SpringAnimation$$InternalSyntheticThrowCCEIfNotNull$22$5bb1a4985e537708005ff131cfd41f50541d71cd26fe87c1ed77e34c608207ef$0
-androidx.dynamicanimation.animation.SpringAnimation$$InternalSyntheticThrowCCEIfNotNull$22$6f5bbdca6380c0249362b1539b8217d618a687efc20717b3b6908935ea1b94a8$0
+androidx.dynamicanimation.animation.SpringAnimation$$InternalSyntheticThrowCCEIfNotNull$23$5bb1a4985e537708005ff131cfd41f50541d71cd26fe87c1ed77e34c608207ef$0
+androidx.dynamicanimation.animation.SpringAnimation$$InternalSyntheticThrowCCEIfNotNull$23$6f5bbdca6380c0249362b1539b8217d618a687efc20717b3b6908935ea1b94a8$0
 androidx.dynamicanimation.animation.SpringAnimation:
     public static final androidx.dynamicanimation.animation.DynamicAnimation$ViewProperty SCROLL_X
     public static final androidx.dynamicanimation.animation.DynamicAnimation$ViewProperty SCROLL_Y
@@ -5380,6 +5405,7 @@ androidx.recyclerview.widget.RecyclerView$Adapter:
     public abstract boolean hasObservers()
     public abstract boolean hasStableIds()
     public final void notifyDataSetChanged()
+    public abstract void notifyItemChanged()
     public abstract void notifyItemMoved()
     public abstract void notifyItemRangeChanged()
     public abstract void onAttachedToRecyclerView()
@@ -5399,7 +5425,7 @@ androidx.recyclerview.widget.RecyclerView$ChildDrawingOrderCallback:
     public abstract int onGetChildDrawingOrder()
 androidx.recyclerview.widget.RecyclerView$EdgeEffectFactory:
     public abstract android.widget.EdgeEffect createEdgeEffect(androidx.recyclerview.widget.RecyclerView)
-androidx.recyclerview.widget.RecyclerView$ItemAnimator$$InternalSyntheticThrowCCEIfNotNull$15$b727cf6321d32d3f0b16a60ed66915ec0f245e056170aafe3b4c4cf626d65f87$0
+androidx.recyclerview.widget.RecyclerView$ItemAnimator$$InternalSyntheticThrowCCEIfNotNull$16$b727cf6321d32d3f0b16a60ed66915ec0f245e056170aafe3b4c4cf626d65f87$0
 androidx.recyclerview.widget.RecyclerView$ItemAnimator$ItemAnimatorFinishedListener
 androidx.recyclerview.widget.RecyclerView$ItemAnimator$ItemAnimatorListener
 androidx.recyclerview.widget.RecyclerView$ItemAnimator$ItemHolderInfo:
@@ -5518,7 +5544,7 @@ androidx.recyclerview.widget.RecyclerView$RecycledViewPool:
     public static long runningAverage(long,long)
     public static boolean willBindInTime()
     public static boolean willCreateInTime()
-androidx.recyclerview.widget.RecyclerView$Recycler$$InternalSyntheticThrowCCEIfNotNull$30$3d4117e3661818900ec32e474cf737c55f87ee15b1898c6f5f4c823236bead68$0
+androidx.recyclerview.widget.RecyclerView$Recycler$$InternalSyntheticThrowCCEIfNotNull$31$3d4117e3661818900ec32e474cf737c55f87ee15b1898c6f5f4c823236bead68$0
 androidx.recyclerview.widget.RecyclerView$Recycler:
     public androidx.recyclerview.widget.RecyclerView$ViewCacheExtension mViewCacheExtension
     public final void clear()
@@ -5904,18 +5930,23 @@ com.gathin.tvhome.JackOLanternDrawable:
 com.gathin.tvhome.LastOpened
 com.gathin.tvhome.LauncherSettingsActivity$$InternalSyntheticLambda$1$287214e63e9f0b048f4c9985f49720ae4ec808c99f9a6453cd1d779255d7f011$0:
     public static void onClick()
-com.gathin.tvhome.LauncherSettingsActivity$$InternalSyntheticLambda$4$b882af7a8e780a453707d25877b2139f0ccb41ed911f5731ac9bdb11f1b61c01$0:
+com.gathin.tvhome.LauncherSettingsActivity$$InternalSyntheticLambda$3$ac1f1ba37b15f227c784ff5e067b3bb0b4e86d4578e64673a3300e035351f12b$0:
+    public static void onClick()
+com.gathin.tvhome.LauncherSettingsActivity$$InternalSyntheticLambda$6$b882af7a8e780a453707d25877b2139f0ccb41ed911f5731ac9bdb11f1b61c01$0:
     public static void onSelected()
 com.gathin.tvhome.LauncherSettingsActivity$CategoryAdapter$OnCategoryClickListener
 com.gathin.tvhome.LauncherSettingsActivity$CategoryAdapter:
     public static void onBindViewHolder$2()
     public static com.gathin.tvhome.LauncherSettingsActivity$CategoryViewHolder onCreateViewHolder()
+com.gathin.tvhome.LauncherSettingsActivity$SubGridAdapter$OnSubGridClickListener
+com.gathin.tvhome.LauncherSettingsActivity$SubGridAdapter:
+    public static void onBindViewHolder$3()
+    public static com.gathin.tvhome.LauncherSettingsActivity$SubGridViewHolder onCreateViewHolder()
 com.gathin.tvhome.LauncherSettingsActivity$WallpaperGridAdapter$OnWallpaperSelectedListener
 com.gathin.tvhome.LauncherSettingsActivity$WallpaperGridAdapter:
-    public static void onBindViewHolder$3()
+    public static void onBindViewHolder$4()
     public static com.gathin.tvhome.LauncherSettingsActivity$WallpaperViewHolder onCreateViewHolder()
 com.gathin.tvhome.LauncherSettingsActivity:
-    public final void applyFocusAnimation(android.widget.TextView)
     public final void open(android.content.Intent)
     public final void setAdvanced(boolean)
 com.gathin.tvhome.LibraryApps:
@@ -6021,7 +6052,7 @@ com.gathin.tvhome.TileRefresh:
     public static int onResume()
     public static void onStart()
     public static void onStop()
-com.gathin.tvhome.UpdateManager$$InternalSyntheticLambda$5$fea7254b7512e6e8ee18a42f46172baeb9945d1f459806396f1efe4e434dfce1$0:
+com.gathin.tvhome.UpdateManager$$InternalSyntheticLambda$6$fea7254b7512e6e8ee18a42f46172baeb9945d1f459806396f1efe4e434dfce1$0:
     public final synthetic boolean f$2
 com.gathin.tvhome.UpdateManager$StatusCallback
 com.gathin.tvhome.VolumeKeys:

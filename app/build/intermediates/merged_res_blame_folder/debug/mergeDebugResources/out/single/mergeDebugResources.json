@@ -172,16 +172,16 @@
         "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\drawable-nodpi\\banner.jpg"
     },
     {
-        "merged": "com.gathin.tvhome.app-debug-10:/layout_dialog_settings_section.xml.flat",
-        "source": "com.gathin.tvhome.app-main-12:/layout/dialog_settings_section.xml"
-    },
-    {
         "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-debug-10:\\font_outfit.ttf.flat",
         "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\font\\outfit.ttf"
     },
     {
         "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-debug-10:\\layout_activity_quick_settings.xml.flat",
         "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\layout\\activity_quick_settings.xml"
+    },
+    {
+        "merged": "com.gathin.tvhome.app-debug-10:/layout_item_settings_grid_card.xml.flat",
+        "source": "com.gathin.tvhome.app-main-12:/layout/item_settings_grid_card.xml"
     },
     {
         "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-debug-10:\\drawable_race_bar.xml.flat",
@@ -282,6 +282,10 @@
     {
         "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-debug-10:\\font_outfit_medium.xml.flat",
         "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\font\\outfit_medium.xml"
+    },
+    {
+        "merged": "com.gathin.tvhome.app-debug-10:/layout_dialog_settings_grid.xml.flat",
+        "source": "com.gathin.tvhome.app-main-12:/layout/dialog_settings_grid.xml"
     },
     {
         "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-debug-10:\\layout_dialog_card_prompt.xml.flat",

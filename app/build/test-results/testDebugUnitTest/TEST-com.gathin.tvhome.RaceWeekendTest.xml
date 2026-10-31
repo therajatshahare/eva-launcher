@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gathin.tvhome.RaceWeekendTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-31T16:08:42.757Z" hostname="DESKTOP-EOQDD3G" time="0.007">
+<testsuite name="com.gathin.tvhome.RaceWeekendTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-31T16:41:51.040Z" hostname="DESKTOP-EOQDD3G" time="0.005">
   <properties/>
   <testcase name="opensTwelveHoursBeforeFirstPractice" classname="com.gathin.tvhome.RaceWeekendTest" time="0.002"/>
   <testcase name="aSessionOnTrackIsLiveAndTheNextOneIsCountedDown" classname="com.gathin.tvhome.RaceWeekendTest" time="0.001"/>
   <testcase name="closesFourHoursAfterTheRaceStarts" classname="com.gathin.tvhome.RaceWeekendTest" time="0.001"/>
   <testcase name="theRaceIsLiveForTwoHoursThenFinished" classname="com.gathin.tvhome.RaceWeekendTest" time="0.001"/>
-  <testcase name="nothingBeforeTheWeekendOpens" classname="com.gathin.tvhome.RaceWeekendTest" time="0.001"/>
+  <testcase name="nothingBeforeTheWeekendOpens" classname="com.gathin.tvhome.RaceWeekendTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

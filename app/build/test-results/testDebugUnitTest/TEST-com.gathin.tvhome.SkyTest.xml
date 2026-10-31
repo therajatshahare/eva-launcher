@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gathin.tvhome.SkyTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-31T16:08:42.824Z" hostname="DESKTOP-EOQDD3G" time="0.009">
+<testsuite name="com.gathin.tvhome.SkyTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-31T16:41:51.102Z" hostname="DESKTOP-EOQDD3G" time="0.006">
   <properties/>
-  <testcase name="timeIsClampedAndAnsweredEveryMinuteOfTheDay" classname="com.gathin.tvhome.SkyTest" time="0.007"/>
-  <testcase name="theGlowTracksTheSunFromLeftToRight" classname="com.gathin.tvhome.SkyTest" time="0.0"/>
-  <testcase name="nightLooksTheSameAtBothEndsOfTheDay" classname="com.gathin.tvhome.SkyTest" time="0.001"/>
-  <testcase name="coloursInterpolateBetweenAnchors" classname="com.gathin.tvhome.SkyTest" time="0.001"/>
+  <testcase name="timeIsClampedAndAnsweredEveryMinuteOfTheDay" classname="com.gathin.tvhome.SkyTest" time="0.004"/>
+  <testcase name="theGlowTracksTheSunFromLeftToRight" classname="com.gathin.tvhome.SkyTest" time="0.001"/>
+  <testcase name="nightLooksTheSameAtBothEndsOfTheDay" classname="com.gathin.tvhome.SkyTest" time="0.0"/>
+  <testcase name="coloursInterpolateBetweenAnchors" classname="com.gathin.tvhome.SkyTest" time="0.0"/>
   <testcase name="glowPeaksAtSunriseAndSunset" classname="com.gathin.tvhome.SkyTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

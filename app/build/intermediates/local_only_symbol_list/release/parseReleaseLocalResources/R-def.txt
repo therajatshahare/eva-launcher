@@ -143,6 +143,9 @@ id btnShow
 id btnVpn
 id btnWifi
 id card
+id cardHint
+id cardTitle
+id cardValue
 id categoryCard
 id categoryGrid
 id categoryIcon
@@ -150,6 +153,8 @@ id categoryTitle
 id clock
 id clockDivider
 id date
+id dialogSubtitle
+id dialogTitle
 id digest
 id dot
 id dreamAmbient
@@ -193,6 +198,8 @@ id sky
 id state
 id stats
 id status
+id subGridCard
+id subGridRecyclerView
 id title
 id topButtons
 id wallpaperCard
@@ -212,6 +219,7 @@ layout activity_launcher_settings
 layout activity_main
 layout activity_quick_settings
 layout dialog_card_prompt
+layout dialog_settings_grid
 layout dialog_settings_section
 layout dialog_wallpaper_picker
 layout dream_clock
@@ -219,6 +227,7 @@ layout item_app
 layout item_card_row
 layout item_input
 layout item_settings_category_card
+layout item_settings_grid_card
 layout item_wallpaper_card
 layout popup_cards
 layout popup_inputs

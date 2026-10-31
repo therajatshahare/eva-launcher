@@ -14,12 +14,9 @@ import android.os.Bundle;
 import android.provider.Settings;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.ViewParent;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -31,11 +28,11 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/** Remote-friendly settings owned by the launcher; system settings stay one row away. */
+/** Category Grid View Launcher Settings with Sub-Menu Grids and Focus Scale Animations. */
 public final class LauncherSettingsActivity extends Activity {
     @Override
     protected void attachBaseContext(android.content.Context base) {
-        super.attachBaseContext(LauncherLocale.wrap(base));   // locale
+        super.attachBaseContext(LauncherLocale.wrap(base));
     }
 
     static final String EXTRA_REORDER = "com.gathin.tvhome.extra.REORDER_FROM_SETTINGS";
@@ -101,6 +98,44 @@ public final class LauncherSettingsActivity extends Activity {
         grid.setAdapter(new CategoryAdapter(this, categories, this::openCategorySection));
     }
 
+    static final class SubGridItem {
+        final int id;
+        final String title;
+        String value;
+        final String hint;
+
+        SubGridItem(int id, String title, String value, String hint) {
+            this.id = id;
+            this.title = title;
+            this.value = value;
+            this.hint = hint;
+        }
+    }
+
+    private static final int ITEM_COLUMNS = 101;
+    private static final int ITEM_ROWS = 102;
+    private static final int ITEM_DOCK = 103;
+
+    private static final int ITEM_CLOCK_FORMAT = 201;
+    private static final int ITEM_ANIMATIONS = 202;
+    private static final int ITEM_ADVANCED = 203;
+
+    private static final int ITEM_DEFAULT_THEME = 301;
+    private static final int ITEM_ADD_THEME = 302;
+    private static final int ITEM_PICK_WALLPAPER = 303;
+    private static final int ITEM_FETCH_REDDIT = 304;
+
+    private static final int ITEM_CHECK_UPDATE = 401;
+    private static final int ITEM_OPEN_START = 402;
+
+    private static final int ITEM_DEFAULT_HOME = 501;
+    private static final int ITEM_TV_SETTINGS = 502;
+
+    private static final int ITEM_DEV_INFO = 601;
+    private static final int ITEM_TELEGRAM = 602;
+    private static final int ITEM_GITHUB = 603;
+    private static final int ITEM_CREDITS = 604;
+
     private void openCategorySection(CategoryItem category) {
         if (category.id == CAT_REORDER) {
             setResult(RESULT_OK, new Intent().putExtra(EXTRA_REORDER, true));
@@ -108,15 +143,64 @@ public final class LauncherSettingsActivity extends Activity {
             return;
         }
 
-        View sectionView = getLayoutInflater().inflate(R.layout.dialog_settings_section, null);
-        TextView title = sectionView.findViewById(R.id.sectionTitle);
-        TextView subtitle = sectionView.findViewById(R.id.sectionSubtitle);
-        LinearLayout container = sectionView.findViewById(R.id.sectionOptionsContainer);
+        View dialogView = getLayoutInflater().inflate(R.layout.dialog_settings_grid, null);
+        TextView title = dialogView.findViewById(R.id.dialogTitle);
+        TextView subtitle = dialogView.findViewById(R.id.dialogSubtitle);
+        RecyclerView gridView = dialogView.findViewById(R.id.subGridRecyclerView);
 
         title.setText(category.title);
+        List<SubGridItem> items = new ArrayList<>();
+
+        switch (category.id) {
+            case CAT_HOMESCREEN:
+                subtitle.setText("Press OK on a card to adjust setting value");
+                items.add(new SubGridItem(ITEM_COLUMNS, getString(R.string.columns_label), "‹ " + columns + " ›", "Press OK to cycle (4..7)"));
+                items.add(new SubGridItem(ITEM_ROWS, getString(R.string.rows_below_dock_label), "‹ " + rowsBelowDock + " ›", "Press OK to cycle (0..3)"));
+                items.add(new SubGridItem(ITEM_DOCK, getString(R.string.dock_opacity_label), "‹ " + dockOpacity + "% ›", "Press OK to cycle opacity"));
+                break;
+
+            case CAT_CLOCK:
+                subtitle.setText("Customize clock format and motion animations");
+                items.add(new SubGridItem(ITEM_CLOCK_FORMAT, getString(R.string.dream_name), "‹ " + clockFormatLabel(clockFormat) + " ›", "Press OK to cycle format"));
+                items.add(new SubGridItem(ITEM_ANIMATIONS, "Animations", animations ? getString(R.string.on) : getString(R.string.off), "Press OK to toggle"));
+                items.add(new SubGridItem(ITEM_ADVANCED, getString(R.string.advanced_effects), advancedEffects ? getString(R.string.on) : getString(R.string.off), "Press OK to toggle"));
+                break;
+
+            case CAT_WALLPAPER:
+                subtitle.setText("Themes and Wallpaper visual selection");
+                items.add(new SubGridItem(ITEM_DEFAULT_THEME, "Default Theme", "Reset Choices", "Revert to built-in theme"));
+                items.add(new SubGridItem(ITEM_ADD_THEME, "+ Add Theme Addon", "Custom Addons", "Add custom theme folders"));
+                items.add(new SubGridItem(ITEM_PICK_WALLPAPER, "Choose Wallpaper", "Visual Grid Previews", "Select 16:9 wallpaper card"));
+                items.add(new SubGridItem(ITEM_FETCH_REDDIT, "Fetch Wallpapers", "Reddit r/wallpapers", "Download HD wallpapers"));
+                break;
+
+            case CAT_UPDATES:
+                subtitle.setText("Check for new launcher releases and auto-launch");
+                items.add(new SubGridItem(ITEM_CHECK_UPDATE, "Check for Updates", "v2.0 Release Check", "Check latest launcher version"));
+                if (config.openOnStartChoice) {
+                    items.add(new SubGridItem(ITEM_OPEN_START, getString(R.string.open_on_start_label), openOnStartLabel(), "App on boot"));
+                }
+                break;
+
+            case CAT_SYSTEM:
+                subtitle.setText("Access default home and TV system settings");
+                items.add(new SubGridItem(ITEM_DEFAULT_HOME, getString(R.string.home_settings), "Default Launcher", "Choose TV home app"));
+                items.add(new SubGridItem(ITEM_TV_SETTINGS, getString(R.string.tv_settings), "System Options", "Open native TV settings"));
+                break;
+
+            case CAT_ABOUT:
+                subtitle.setText("Developer details, support links, and credits");
+                items.add(new SubGridItem(ITEM_DEV_INFO, "Developer Info", "Rajat Shahare", "rns@cyberservices.com"));
+                items.add(new SubGridItem(ITEM_TELEGRAM, "Telegram Channel", "t.me/EvaTVLauncher", "Join support channel"));
+                items.add(new SubGridItem(ITEM_GITHUB, "GitHub Repository", "therajatshahare/eva-launcher", "Source code & releases"));
+                items.add(new SubGridItem(ITEM_CREDITS, "Credits", "CleanYourTV by Gathin23", "Original base project"));
+                break;
+        }
+
+        gridView.setLayoutManager(new GridLayoutManager(this, 2));
 
         AlertDialog dialog = new AlertDialog.Builder(this)
-                .setView(sectionView)
+                .setView(dialogView)
                 .setNegativeButton(android.R.string.cancel, null)
                 .create();
 
@@ -124,246 +208,142 @@ public final class LauncherSettingsActivity extends Activity {
             dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
         }
 
-        switch (category.id) {
-            case CAT_HOMESCREEN:
-                subtitle.setText("Customize grid columns, dock rows, and opacity");
-                buildHomescreenSection(container);
-                break;
-            case CAT_CLOCK:
-                subtitle.setText("Customize clock format and motion animations");
-                buildClockSection(container);
-                break;
-            case CAT_WALLPAPER:
-                subtitle.setText("Themes and Wallpaper visual selection");
-                buildWallpaperSection(container, dialog);
-                break;
-            case CAT_UPDATES:
-                subtitle.setText("Check for new launcher releases and auto-launch");
-                buildUpdatesSection(container, dialog);
-                break;
-            case CAT_SYSTEM:
-                subtitle.setText("Access default home and TV system settings");
-                buildSystemSection(container);
-                break;
-            case CAT_ABOUT:
-                subtitle.setText("Developer details, support links, and credits");
-                buildAboutSection(container);
-                break;
-        }
+        SubGridAdapter adapter = new SubGridAdapter(this, items, item -> {
+            handleSubGridClick(item, dialog);
+        });
 
+        gridView.setAdapter(adapter);
         dialog.show();
 
         if (dialog.getWindow() != null) {
-            int maxHeight = (int) (getResources().getDisplayMetrics().heightPixels * 0.82f);
-            int width = (int) (getResources().getDisplayMetrics().widthPixels * 0.55f);
-            dialog.getWindow().setLayout(Math.max(width, (int) (500 * getResources().getDisplayMetrics().density)), maxHeight);
+            int maxHeight = (int) (getResources().getDisplayMetrics().heightPixels * 0.85f);
+            int width = (int) (getResources().getDisplayMetrics().widthPixels * 0.65f);
+            dialog.getWindow().setLayout(Math.max(width, (int) (550 * getResources().getDisplayMetrics().density)), maxHeight);
         }
     }
 
-    private void buildHomescreenSection(LinearLayout container) {
-        // Apps per row
-        addLabel(container, getString(R.string.columns_label));
-        LinearLayout colRow = createHorizontalRow();
-        TextView[] colBtns = new TextView[4];
-        for (int i = 0; i < 4; i++) {
-            final int val = i + 4;
-            colBtns[i] = createChoiceButton(String.valueOf(val), columns == val);
-            colBtns[i].setOnClickListener(v -> {
-                columns = val;
-                choices.edit().putInt("columns", val).apply();
+    private void handleSubGridClick(SubGridItem item, AlertDialog dialog) {
+        switch (item.id) {
+            case ITEM_COLUMNS:
+                columns = columns >= 7 ? 4 : columns + 1;
+                choices.edit().putInt("columns", columns).apply();
                 changed();
-                updateRowSelection(colBtns, columns - 4);
-            });
-            colRow.addView(colBtns[i]);
-        }
-        container.addView(colRow);
+                item.value = "‹ " + columns + " ›";
+                break;
 
-        // Rows below dock
-        addLabel(container, getString(R.string.rows_below_dock_label));
-        LinearLayout rowRow = createHorizontalRow();
-        TextView[] rowBtns = new TextView[4];
-        for (int i = 0; i < 4; i++) {
-            final int val = i;
-            rowBtns[i] = createChoiceButton(String.valueOf(val), rowsBelowDock == val);
-            rowBtns[i].setOnClickListener(v -> {
-                rowsBelowDock = val;
-                choices.edit().putInt(Config.ROWS_BELOW_DOCK_KEY, val).apply();
+            case ITEM_ROWS:
+                rowsBelowDock = rowsBelowDock >= 3 ? 0 : rowsBelowDock + 1;
+                choices.edit().putInt(Config.ROWS_BELOW_DOCK_KEY, rowsBelowDock).apply();
                 changed();
-                updateRowSelection(rowBtns, rowsBelowDock);
-            });
-            rowRow.addView(rowBtns[i]);
-        }
-        container.addView(rowRow);
+                item.value = "‹ " + rowsBelowDock + " ›";
+                break;
 
-        // Dock opacity
-        addLabel(container, getString(R.string.dock_opacity_label));
-        LinearLayout dockRow = createHorizontalRow();
-        TextView[] dockBtns = new TextView[4];
-        for (int i = 0; i < 4; i++) {
-            final int val = DOCK_OPACITIES[i];
-            dockBtns[i] = createChoiceButton(val + "%", dockOpacity == val);
-            dockBtns[i].setOnClickListener(v -> {
-                dockOpacity = val;
-                choices.edit().putInt(Config.DOCK_OPACITY_KEY, val).apply();
+            case ITEM_DOCK:
+                int idx = indexOfInt(DOCK_OPACITIES, dockOpacity);
+                dockOpacity = DOCK_OPACITIES[(idx + 1) % DOCK_OPACITIES.length];
+                choices.edit().putInt(Config.DOCK_OPACITY_KEY, dockOpacity).apply();
                 changed();
-                updateRowSelection(dockBtns, indexOfInt(DOCK_OPACITIES, dockOpacity));
-            });
-            dockRow.addView(dockBtns[i]);
-        }
-        container.addView(dockRow);
-    }
+                item.value = "‹ " + dockOpacity + "% ›";
+                break;
 
-    private void buildClockSection(LinearLayout container) {
-        addLabel(container, getString(R.string.dream_name));
-        LinearLayout clockRow = createHorizontalRow();
-        TextView[] clockBtns = new TextView[3];
-        String[] labels = {getString(R.string.clock_format_system), getString(R.string.clock_format_12), getString(R.string.clock_format_24)};
-        for (int i = 0; i < 3; i++) {
-            final String val = CLOCK_FORMATS[i];
-            clockBtns[i] = createChoiceButton(labels[i], val.equals(clockFormat));
-            clockBtns[i].setOnClickListener(v -> {
-                clockFormat = val;
-                choices.edit().putString(Config.CLOCK_FORMAT_KEY, val).apply();
+            case ITEM_CLOCK_FORMAT:
+                int cIdx = indexOfStr(CLOCK_FORMATS, clockFormat);
+                clockFormat = CLOCK_FORMATS[(cIdx + 1) % CLOCK_FORMATS.length];
+                choices.edit().putString(Config.CLOCK_FORMAT_KEY, clockFormat).apply();
                 changed();
-                updateRowSelection(clockBtns, indexOfStr(CLOCK_FORMATS, clockFormat));
-            });
-            clockRow.addView(clockBtns[i]);
-        }
-        container.addView(clockRow);
+                item.value = "‹ " + clockFormatLabel(clockFormat) + " ›";
+                break;
 
-        // Animations Toggle
-        TextView animBtn = createFullRowButton(getString(R.string.animations_state, getString(animations ? R.string.on : R.string.off)));
-        animBtn.setOnClickListener(v -> {
-            animations = !animations;
-            if (!animations) advancedEffects = false;
-            choices.edit().putBoolean("animations", animations)
-                    .putBoolean("advanced_effects", advancedEffects).apply();
-            changed();
-            animBtn.setText(getString(R.string.animations_state, getString(animations ? R.string.on : R.string.off)));
-        });
-        container.addView(animBtn);
+            case ITEM_ANIMATIONS:
+                animations = !animations;
+                if (!animations) advancedEffects = false;
+                choices.edit().putBoolean("animations", animations)
+                        .putBoolean("advanced_effects", advancedEffects).apply();
+                changed();
+                item.value = animations ? getString(R.string.on) : getString(R.string.off);
+                break;
 
-        // Advanced Effects Toggle
-        TextView advBtn = createFullRowButton(getString(R.string.advanced_effects_state, getString(advancedEffects ? R.string.on : R.string.off)));
-        advBtn.setOnClickListener(v -> {
-            if (advancedEffects) {
-                setAdvanced(false);
-                advBtn.setText(getString(R.string.advanced_effects_state, getString(R.string.off)));
-            } else {
-                new AlertDialog.Builder(this)
-                        .setTitle(R.string.advanced_effects)
-                        .setMessage(R.string.advanced_effects_warning)
-                        .setPositiveButton(R.string.enable, (d, w) -> {
-                            setAdvanced(true);
-                            advBtn.setText(getString(R.string.advanced_effects_state, getString(R.string.on)));
-                        })
-                        .setNegativeButton(android.R.string.cancel, null)
-                        .show();
-            }
-        });
-        container.addView(advBtn);
-    }
+            case ITEM_ADVANCED:
+                if (advancedEffects) {
+                    setAdvanced(false);
+                    item.value = getString(R.string.off);
+                } else {
+                    new AlertDialog.Builder(this)
+                            .setTitle(R.string.advanced_effects)
+                            .setMessage(R.string.advanced_effects_warning)
+                            .setPositiveButton(R.string.enable, (d, w) -> {
+                                setAdvanced(true);
+                                item.value = getString(R.string.on);
+                            })
+                            .setNegativeButton(android.R.string.cancel, null)
+                            .show();
+                }
+                break;
 
-    private void buildWallpaperSection(LinearLayout container, AlertDialog dialog) {
-        // SECTION 1: THEMES
-        addSectionHeader(container, "1. THEMES");
+            case ITEM_DEFAULT_THEME:
+                choices.edit().remove(Config.WALLPAPER_CHOICE_KEY).apply();
+                changed();
+                Toast.makeText(this, "Default theme active", Toast.LENGTH_SHORT).show();
+                dialog.dismiss();
+                break;
 
-        TextView defaultThemeBtn = createFullRowButton("Default Theme");
-        defaultThemeBtn.setOnClickListener(v -> {
-            choices.edit().remove(Config.WALLPAPER_CHOICE_KEY).apply();
-            changed();
-            Toast.makeText(this, "Default theme active", Toast.LENGTH_SHORT).show();
-            dialog.dismiss();
-        });
-        container.addView(defaultThemeBtn);
+            case ITEM_ADD_THEME:
+                Toast.makeText(this, "Theme Addons: Place theme folders in Android/data/com.gathin.tvhome/files/", Toast.LENGTH_LONG).show();
+                break;
 
-        TextView addAddonBtn = createFullRowButton("+ Add Theme Addon");
-        addAddonBtn.setOnClickListener(v -> {
-            Toast.makeText(this, "Theme Addons: Place custom theme folders in Android/data/com.gathin.tvhome/files/", Toast.LENGTH_LONG).show();
-        });
-        container.addView(addAddonBtn);
+            case ITEM_PICK_WALLPAPER:
+                dialog.dismiss();
+                showWallpaperPicker();
+                break;
 
-        // SECTION 2: WALLPAPERS
-        addSectionHeader(container, "2. WALLPAPERS");
-
-        TextView pickBtn = createFullRowButton("Choose Wallpaper (Visual Grid Previews)");
-        pickBtn.setOnClickListener(v -> {
-            dialog.dismiss();
-            showWallpaperPicker();
-        });
-        container.addView(pickBtn);
-
-        TextView redditBtn = createFullRowButton("Fetch Wallpapers from Reddit r/wallpapers");
-        redditBtn.setOnClickListener(v -> {
-            redditBtn.setText("Fetching wallpapers from Reddit...");
-            WallpaperFetcher.fetchFromReddit(this, (success, msg) -> {
-                runOnUiThread(() -> {
-                    redditBtn.setText("Fetch Wallpapers from Reddit r/wallpapers");
-                    Toast.makeText(this, msg, Toast.LENGTH_LONG).show();
+            case ITEM_FETCH_REDDIT:
+                Toast.makeText(this, "Fetching wallpapers from Reddit...", Toast.LENGTH_SHORT).show();
+                WallpaperFetcher.fetchFromReddit(this, (success, msg) -> {
+                    runOnUiThread(() -> Toast.makeText(this, msg, Toast.LENGTH_LONG).show());
                 });
-            });
-        });
-        container.addView(redditBtn);
-    }
+                break;
 
-    private void buildUpdatesSection(LinearLayout container, AlertDialog dialog) {
-        TextView updateBtn = createFullRowButton("Check for Launcher Updates");
-        updateBtn.setOnClickListener(v -> {
-            updateBtn.setText("Checking for updates...");
-            UpdateManager.checkForUpdates(this, true, msg -> {
-                updateBtn.setText("Check for Launcher Updates");
-                Toast.makeText(this, msg, Toast.LENGTH_LONG).show();
-            });
-        });
-        container.addView(updateBtn);
+            case ITEM_CHECK_UPDATE:
+                Toast.makeText(this, "Checking for updates...", Toast.LENGTH_SHORT).show();
+                UpdateManager.checkForUpdates(this, true, msg -> Toast.makeText(this, msg, Toast.LENGTH_LONG).show());
+                break;
 
-        if (config.openOnStartChoice) {
-            TextView openStartBtn = createFullRowButton(getString(R.string.open_on_start_state, openOnStartLabel()));
-            openStartBtn.setOnClickListener(v -> {
+            case ITEM_OPEN_START:
                 dialog.dismiss();
                 showOpenOnStartPicker();
-            });
-            container.addView(openStartBtn);
+                break;
+
+            case ITEM_DEFAULT_HOME:
+                Toast.makeText(this, R.string.home_settings_help, Toast.LENGTH_LONG).show();
+                open(new Intent(Settings.ACTION_HOME_SETTINGS));
+                break;
+
+            case ITEM_TV_SETTINGS:
+                open(SystemSettings.intent(this, Settings.ACTION_SETTINGS));
+                break;
+
+            case ITEM_DEV_INFO:
+                Toast.makeText(this, "Developer: Rajat Shahare (rns@cyberservices.com)", Toast.LENGTH_LONG).show();
+                break;
+
+            case ITEM_TELEGRAM:
+                openUrl("https://t.me/EvaTVLauncher");
+                break;
+
+            case ITEM_GITHUB:
+                openUrl("https://github.com/therajatshahare/eva-launcher");
+                break;
+
+            case ITEM_CREDITS:
+                openUrl("https://github.com/Gathin23/cleanyourtv");
+                break;
         }
     }
 
-    private void buildSystemSection(LinearLayout container) {
-        TextView defaultHomeBtn = createFullRowButton(getString(R.string.home_settings));
-        defaultHomeBtn.setOnClickListener(v -> {
-            Toast.makeText(this, R.string.home_settings_help, Toast.LENGTH_LONG).show();
-            open(new Intent(Settings.ACTION_HOME_SETTINGS));
-        });
-        container.addView(defaultHomeBtn);
-
-        TextView tvSettingsBtn = createFullRowButton(getString(R.string.tv_settings));
-        tvSettingsBtn.setOnClickListener(v -> open(SystemSettings.intent(this, Settings.ACTION_SETTINGS)));
-        container.addView(tvSettingsBtn);
-    }
-
-    private void buildAboutSection(LinearLayout container) {
-        addLabel(container, "EVA TV Launcher v1.9");
-
-        TextView devBtn = createFullRowButton("Developer: Rajat Shahare");
-        devBtn.setOnClickListener(v -> Toast.makeText(this, "Rajat Shahare", Toast.LENGTH_SHORT).show());
-        container.addView(devBtn);
-
-        TextView emailBtn = createFullRowButton("Contact Email: rns@cyberservices.com");
-        emailBtn.setOnClickListener(v -> Toast.makeText(this, "Email: rns@cyberservices.com", Toast.LENGTH_LONG).show());
-        container.addView(emailBtn);
-
-        TextView telegramBtn = createFullRowButton("Telegram Channel: t.me/EvaTVLauncher");
-        telegramBtn.setOnClickListener(v -> openUrl("https://t.me/EvaTVLauncher"));
-        container.addView(telegramBtn);
-
-        TextView githubBtn = createFullRowButton("GitHub Repository: therajatshahare/eva-launcher");
-        githubBtn.setOnClickListener(v -> openUrl("https://github.com/therajatshahare/eva-launcher"));
-        container.addView(githubBtn);
-
-        addLabel(container, "Credits & Acknowledgments");
-
-        TextView creditBtn = createFullRowButton("Based on CleanYourTV by Gathin23");
-        creditBtn.setOnClickListener(v -> openUrl("https://github.com/Gathin23/cleanyourtv"));
-        container.addView(creditBtn);
+    private String clockFormatLabel(String fmt) {
+        if ("12".equals(fmt)) return getString(R.string.clock_format_12);
+        if ("24".equals(fmt)) return getString(R.string.clock_format_24);
+        return getString(R.string.clock_format_system);
     }
 
     private void openUrl(String url) {
@@ -375,88 +355,6 @@ public final class LauncherSettingsActivity extends Activity {
         }
     }
 
-    private void addSectionHeader(LinearLayout container, String title) {
-        TextView header = new TextView(this);
-        header.setText(title);
-        header.setTextColor(0xFF4ADE80);
-        header.setTextSize(13);
-        header.setLetterSpacing(0.05f);
-        header.setTypeface(android.graphics.Typeface.DEFAULT_BOLD);
-        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-        lp.topMargin = (int) (16 * getResources().getDisplayMetrics().density);
-        header.setLayoutParams(lp);
-        container.addView(header);
-    }
-
-    private void addLabel(LinearLayout container, String text) {
-        TextView label = new TextView(this);
-        label.setText(text);
-        label.setTextColor(0xFFFFFFFF);
-        label.setTextSize(15);
-        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-        lp.topMargin = (int) (12 * getResources().getDisplayMetrics().density);
-        label.setLayoutParams(lp);
-        container.addView(label);
-    }
-
-    private LinearLayout createHorizontalRow() {
-        LinearLayout row = new LinearLayout(this);
-        row.setOrientation(LinearLayout.HORIZONTAL);
-        row.setClipChildren(false);
-        row.setClipToPadding(false);
-        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-        lp.topMargin = (int) (8 * getResources().getDisplayMetrics().density);
-        row.setLayoutParams(lp);
-        return row;
-    }
-
-    private TextView createChoiceButton(String text, boolean selected) {
-        TextView btn = new TextView(this);
-        btn.setText(text);
-        btn.setGravity(android.view.Gravity.CENTER);
-        btn.setBackgroundResource(R.drawable.settings_choice_bg);
-        btn.setTextColor(0xFFFFFFFF);
-        btn.setTextSize(16);
-        btn.setSelected(selected);
-        btn.setFocusable(true);
-        btn.setClickable(true);
-
-        float density = getResources().getDisplayMetrics().density;
-        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(0, (int) (48 * density), 1.0f);
-        lp.setMargins((int) (4 * density), (int) (2 * density), (int) (4 * density), (int) (2 * density));
-        btn.setLayoutParams(lp);
-
-        applyFocusAnimation(btn);
-        return btn;
-    }
-
-    private TextView createFullRowButton(String text) {
-        TextView btn = new TextView(this);
-        btn.setText(text);
-        btn.setGravity(android.view.Gravity.CENTER_VERTICAL);
-        btn.setBackgroundResource(R.drawable.settings_choice_bg);
-        btn.setTextColor(0xFFFFFFFF);
-        btn.setTextSize(16);
-        btn.setFocusable(true);
-        btn.setClickable(true);
-
-        float density = getResources().getDisplayMetrics().density;
-        btn.setPadding((int) (18 * density), 0, (int) (18 * density), 0);
-
-        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, (int) (50 * density));
-        lp.topMargin = (int) (10 * density);
-        btn.setLayoutParams(lp);
-
-        applyFocusAnimation(btn);
-        return btn;
-    }
-
-    private void updateRowSelection(TextView[] btns, int selectedIdx) {
-        for (int i = 0; i < btns.length; i++) {
-            btns[i].setSelected(i == selectedIdx);
-        }
-    }
-
     private static int indexOfInt(int[] arr, int val) {
         for (int i = 0; i < arr.length; i++) if (arr[i] == val) return i;
         return 0;
@@ -465,6 +363,75 @@ public final class LauncherSettingsActivity extends Activity {
     private static int indexOfStr(String[] arr, String val) {
         for (int i = 0; i < arr.length; i++) if (arr[i].equals(val)) return i;
         return 0;
+    }
+
+    private static final class SubGridAdapter extends RecyclerView.Adapter<SubGridViewHolder> {
+        private final Activity activity;
+        private final List<SubGridItem> items;
+        private final OnSubGridClickListener listener;
+
+        interface OnSubGridClickListener {
+            void onClick(SubGridItem item);
+        }
+
+        SubGridAdapter(Activity activity, List<SubGridItem> items, OnSubGridClickListener listener) {
+            this.activity = activity;
+            this.items = items;
+            this.listener = listener;
+        }
+
+        @Override
+        public SubGridViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+            View view = activity.getLayoutInflater().inflate(R.layout.item_settings_grid_card, parent, false);
+            return new SubGridViewHolder(view);
+        }
+
+        @Override
+        public void onBindViewHolder(SubGridViewHolder holder, int position) {
+            SubGridItem item = items.get(position);
+            holder.title.setText(item.title);
+            holder.value.setText(item.value);
+            holder.hint.setText(item.hint);
+
+            final float density = activity.getResources().getDisplayMetrics().density;
+            holder.card.setOnFocusChangeListener((v, focused) -> {
+                float scale = focused ? 1.05f : 1.00f;
+                float z = focused ? 8f * density : 0f;
+                v.animate()
+                        .scaleX(scale)
+                        .scaleY(scale)
+                        .translationZ(z)
+                        .setDuration(focused ? 180 : 140)
+                        .setInterpolator(focused ? new DecelerateInterpolator(1.5f) : new AccelerateInterpolator())
+                        .start();
+                if (focused) v.bringToFront();
+            });
+
+            holder.card.setOnClickListener(v -> {
+                listener.onClick(item);
+                notifyItemChanged(position);
+            });
+        }
+
+        @Override
+        public int getItemCount() {
+            return items.size();
+        }
+    }
+
+    private static final class SubGridViewHolder extends RecyclerView.ViewHolder {
+        final View card;
+        final TextView title;
+        final TextView value;
+        final TextView hint;
+
+        SubGridViewHolder(View itemView) {
+            super(itemView);
+            card = itemView.findViewById(R.id.subGridCard);
+            title = itemView.findViewById(R.id.cardTitle);
+            value = itemView.findViewById(R.id.cardValue);
+            hint = itemView.findViewById(R.id.cardHint);
+        }
     }
 
     private static final class CategoryAdapter extends RecyclerView.Adapter<CategoryViewHolder> {
@@ -528,33 +495,6 @@ public final class LauncherSettingsActivity extends Activity {
             icon = itemView.findViewById(R.id.categoryIcon);
             title = itemView.findViewById(R.id.categoryTitle);
         }
-    }
-
-    private void applyFocusAnimation(View view) {
-        if (view == null) return;
-        final float density = getResources().getDisplayMetrics().density;
-        view.setOnFocusChangeListener((v, focused) -> {
-            float scale = focused ? 1.05f : 1.00f;
-            float translationZ = focused ? 8f * density : 0f;
-            v.animate()
-                    .scaleX(scale)
-                    .scaleY(scale)
-                    .translationZ(translationZ)
-                    .setDuration(focused ? 180 : 140)
-                    .setInterpolator(focused ? new DecelerateInterpolator(1.5f) : new AccelerateInterpolator())
-                    .start();
-            if (focused) {
-                v.bringToFront();
-                ViewParent p = v.getParent();
-                while (p != null) {
-                    if (p instanceof ScrollView) {
-                        ((ScrollView) p).requestChildFocus(v, v);
-                        break;
-                    }
-                    p = p.getParent();
-                }
-            }
-        });
     }
 
     static final class WallpaperItem {
