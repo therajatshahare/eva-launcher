@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gathin.tvhome.GamepadPassthroughTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-31T10:29:03.091Z" hostname="DESKTOP-EOQDD3G" time="0.019">
+<testsuite name="com.gathin.tvhome.GamepadPassthroughTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-31T11:02:24.261Z" hostname="DESKTOP-EOQDD3G" time="0.019">
   <properties/>
-  <testcase name="keypadIsNot" classname="com.gathin.tvhome.GamepadPassthroughTest" time="0.015"/>
-  <testcase name="xboxControllerIsAGamepad" classname="com.gathin.tvhome.GamepadPassthroughTest" time="0.0"/>
-  <testcase name="voiceRemoteWithJoystickIsNot" classname="com.gathin.tvhome.GamepadPassthroughTest" time="0.0"/>
-  <testcase name="virtualSearchKeyboardIsNot" classname="com.gathin.tvhome.GamepadPassthroughTest" time="0.002"/>
+  <testcase name="keypadIsNot" classname="com.gathin.tvhome.GamepadPassthroughTest" time="0.016"/>
+  <testcase name="xboxControllerIsAGamepad" classname="com.gathin.tvhome.GamepadPassthroughTest" time="0.001"/>
+  <testcase name="voiceRemoteWithJoystickIsNot" classname="com.gathin.tvhome.GamepadPassthroughTest" time="0.001"/>
+  <testcase name="virtualSearchKeyboardIsNot" classname="com.gathin.tvhome.GamepadPassthroughTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

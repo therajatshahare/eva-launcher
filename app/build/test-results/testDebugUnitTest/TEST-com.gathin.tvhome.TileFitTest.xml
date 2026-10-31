@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gathin.tvhome.TileFitTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-31T10:29:04.636Z" hostname="DESKTOP-EOQDD3G" time="0.005">
+<testsuite name="com.gathin.tvhome.TileFitTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-31T11:02:26.039Z" hostname="DESKTOP-EOQDD3G" time="0.008">
   <properties/>
-  <testcase name="oneRowUnderATitledDockFits" classname="com.gathin.tvhome.TileFitTest" time="0.0"/>
-  <testcase name="moreRowsStopAtTheFloorInsteadOfShrinkingTheTiles" classname="com.gathin.tvhome.TileFitTest" time="0.001"/>
+  <testcase name="oneRowUnderATitledDockFits" classname="com.gathin.tvhome.TileFitTest" time="0.002"/>
+  <testcase name="moreRowsStopAtTheFloorInsteadOfShrinkingTheTiles" classname="com.gathin.tvhome.TileFitTest" time="0.0"/>
   <testcase name="noRowsBelowDockKeepsTheWidthOnlySize" classname="com.gathin.tvhome.TileFitTest" time="0.001"/>
-  <testcase name="dockTitleAndRowsFitTheHeightUnlessThatMeansTinyTiles" classname="com.gathin.tvhome.TileFitTest" time="0.002"/>
+  <testcase name="dockTitleAndRowsFitTheHeightUnlessThatMeansTinyTiles" classname="com.gathin.tvhome.TileFitTest" time="0.0"/>
   <testcase name="droppingTheTitleGivesBiggerTiles" classname="com.gathin.tvhome.TileFitTest" time="0.0"/>
   <testcase name="plainGridFitsFourRowsAtSixColumns" classname="com.gathin.tvhome.TileFitTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
