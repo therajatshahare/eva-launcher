@@ -10,8 +10,10 @@ import android.content.pm.ResolveInfo;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.view.View;
-import android.widget.TextView;
+import android.view.animation.AccelerateInterpolator;
+import android.view.animation.DecelerateInterpolator;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.File;
@@ -58,6 +60,8 @@ public final class LauncherSettingsActivity extends Activity {
             setResult(RESULT_OK, new Intent().putExtra(EXTRA_REORDER, true));
             finish();
         });
+        applyFocusAnimation(reorderChoice);
+
         columns = config.columns;
         rowsBelowDock = config.rowsBelowDock;
         dockOpacity = config.dockOpacity;
@@ -76,6 +80,7 @@ public final class LauncherSettingsActivity extends Activity {
                 changed();
                 refresh();
             });
+            applyFocusAnimation(columnChoices[i]);
         }
         int[] rowIds = {R.id.rows0, R.id.rows1, R.id.rows2, R.id.rows3};
         for (int i = 0; i < rowIds.length; i++) {
@@ -88,6 +93,7 @@ public final class LauncherSettingsActivity extends Activity {
                 changed();
                 refresh();
             });
+            applyFocusAnimation(rowChoices[i]);
         }
         int[] dockIds = {R.id.dock100, R.id.dock70, R.id.dock50, R.id.dock30};
         for (int i = 0; i < dockIds.length; i++) {
@@ -100,6 +106,7 @@ public final class LauncherSettingsActivity extends Activity {
                 changed();
                 refresh();
             });
+            applyFocusAnimation(dockChoices[i]);
         }
         int[] clockIds = {R.id.clockSystem, R.id.clock12, R.id.clock24};
         for (int i = 0; i < clockIds.length; i++) {
@@ -112,6 +119,7 @@ public final class LauncherSettingsActivity extends Activity {
                 changed();
                 refresh();
             });
+            applyFocusAnimation(clockChoices[i]);
         }
         // Mirror text alignment without globally opting the launcher into RTL. Numeric rows
         // still need explicit ordering in Android's no-supportsRtl compatibility mode.
@@ -125,6 +133,8 @@ public final class LauncherSettingsActivity extends Activity {
         }
         wallpaperChoice = findViewById(R.id.wallpaperChoice);
         wallpaperChoice.setOnClickListener(v -> showWallpaperPicker());
+        applyFocusAnimation(wallpaperChoice);
+
         animationsChoice = findViewById(R.id.animationsChoice);
         animationsChoice.setOnClickListener(v -> {
             animations = !animations;
@@ -134,6 +144,8 @@ public final class LauncherSettingsActivity extends Activity {
             changed();
             refresh();
         });
+        applyFocusAnimation(animationsChoice);
+
         advancedChoice = findViewById(R.id.advancedChoice);
         advancedChoice.setOnClickListener(v -> {
             if (advancedEffects) {
@@ -147,10 +159,13 @@ public final class LauncherSettingsActivity extends Activity {
                         .show();
             }
         });
+        applyFocusAnimation(advancedChoice);
+
         openOnStartChoice = findViewById(R.id.openOnStartChoice);
         if (config.openOnStartChoice) {
             openOnStartChoice.setVisibility(View.VISIBLE);
             openOnStartChoice.setOnClickListener(v -> showOpenOnStartPicker());
+            applyFocusAnimation(openOnStartChoice);
         }
         followThemeChoice = findViewById(R.id.followThemeChoice);
         followThemeChoice.setOnClickListener(v -> {
@@ -168,13 +183,20 @@ public final class LauncherSettingsActivity extends Activity {
             changed();
             refresh();
         });
-        findViewById(R.id.defaultHomeChoice).setOnClickListener(v -> {
+        applyFocusAnimation(followThemeChoice);
+
+        View defaultHomeChoice = findViewById(R.id.defaultHomeChoice);
+        defaultHomeChoice.setOnClickListener(v -> {
             Toast.makeText(this, R.string.home_settings_help, Toast.LENGTH_LONG).show();
             open(new Intent(Settings.ACTION_HOME_SETTINGS));
         });
-        findViewById(R.id.tvSettingsChoice).setOnClickListener(v ->
-                open(SystemSettings.intent(this, Settings.ACTION_SETTINGS)));
-                TextView redditWallpaperChoice = findViewById(R.id.redditWallpaperChoice);
+        applyFocusAnimation(defaultHomeChoice);
+
+        View tvSettingsChoice = findViewById(R.id.tvSettingsChoice);
+        tvSettingsChoice.setOnClickListener(v -> open(SystemSettings.intent(this, Settings.ACTION_SETTINGS)));
+        applyFocusAnimation(tvSettingsChoice);
+
+        TextView redditWallpaperChoice = findViewById(R.id.redditWallpaperChoice);
         redditWallpaperChoice.setOnClickListener(v -> {
             redditWallpaperChoice.setText("Fetching wallpapers from Reddit...");
             WallpaperFetcher.fetchFromReddit(this, (success, msg) -> {
@@ -185,6 +207,7 @@ public final class LauncherSettingsActivity extends Activity {
                 });
             });
         });
+        applyFocusAnimation(redditWallpaperChoice);
 
         TextView updateChoice = findViewById(R.id.updateChoice);
         updateChoice.setOnClickListener(v -> {
@@ -194,10 +217,30 @@ public final class LauncherSettingsActivity extends Activity {
                 Toast.makeText(this, msg, Toast.LENGTH_LONG).show();
             });
         });
+        applyFocusAnimation(updateChoice);
 
         refresh();
         if (config.launcherSettingsButton) reorderChoice.requestFocus();
         else columnChoices[Math.max(0, Math.min(columns - 4, 3))].requestFocus();
+    }
+
+    private void applyFocusAnimation(View view) {
+        if (view == null) return;
+        final float density = getResources().getDisplayMetrics().density;
+        view.setOnFocusChangeListener((v, focused) -> {
+            float scale = focused ? 1.04f : 1.00f;
+            float translationZ = focused ? 8f * density : 0f;
+            v.animate()
+                    .scaleX(scale)
+                    .scaleY(scale)
+                    .translationZ(translationZ)
+                    .setDuration(focused ? 180 : 140)
+                    .setInterpolator(focused ? new DecelerateInterpolator(1.5f) : new AccelerateInterpolator())
+                    .start();
+            if (focused) {
+                v.bringToFront();
+            }
+        });
     }
 
     private void reverseRow(TextView[] views) {
@@ -358,4 +401,3 @@ public final class LauncherSettingsActivity extends Activity {
         }
     }
 }
-

@@ -3,8 +3,8 @@
 # min_api: 26
 # common_typos_disable
 # {"id":"com.android.tools.r8.mapping","version":"2.2"}
-# pg_map_id: 4b1820b4e88a290aee9eac8f296502237679540d70e5174d2eea9f5c6d9dd391
-# pg_map_hash: SHA-256 4b1820b4e88a290aee9eac8f296502237679540d70e5174d2eea9f5c6d9dd391
+# pg_map_id: 30238ddfe95d0415aeb68af82fe3c819b884c8df40365d4100de7da8ec17c287
+# pg_map_hash: SHA-256 30238ddfe95d0415aeb68af82fe3c819b884c8df40365d4100de7da8ec17c287
 android.app.AppComponentFactory -> android.app.AppComponentFactory:
 # {"id":"com.android.tools.r8.synthesized"}
     void <clinit>() -> <clinit>
@@ -15075,15 +15075,15 @@ com.gathin.tvhome.AppAdapter$$ExternalSyntheticLambda0 -> com.gathin.tvhome.AppA
     53:61:void com.gathin.tvhome.MainActivity.lambda$addTopBarApps$34(android.content.Intent,android.view.View):2481:2481 -> onClick
     53:61:void onClick(android.view.View):0 -> onClick
     62:65:void onClick(android.view.View):0:0 -> onClick
-    66:74:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$4(java.lang.String,android.view.View):109:109 -> onClick
+    66:74:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$4(java.lang.String,android.view.View):116:116 -> onClick
     66:74:void onClick(android.view.View):0 -> onClick
-    75:76:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$4(java.lang.String,android.view.View):110:110 -> onClick
+    75:76:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$4(java.lang.String,android.view.View):117:117 -> onClick
     75:76:void onClick(android.view.View):0 -> onClick
-    77:91:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$4(java.lang.String,android.view.View):111:111 -> onClick
+    77:91:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$4(java.lang.String,android.view.View):118:118 -> onClick
     77:91:void onClick(android.view.View):0 -> onClick
-    92:94:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$4(java.lang.String,android.view.View):112:112 -> onClick
+    92:94:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$4(java.lang.String,android.view.View):119:119 -> onClick
     92:94:void onClick(android.view.View):0 -> onClick
-    95:98:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$4(java.lang.String,android.view.View):113:113 -> onClick
+    95:98:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$4(java.lang.String,android.view.View):120:120 -> onClick
     95:98:void onClick(android.view.View):0 -> onClick
     99:102:void onClick(android.view.View):0:0 -> onClick
     103:111:void com.gathin.tvhome.AppAdapter.launch(com.gathin.tvhome.AppAdapter$Entry):529:529 -> onClick
@@ -16959,7 +16959,7 @@ com.gathin.tvhome.Cards$$ExternalSyntheticLambda3 -> com.gathin.tvhome.Cards$$Ex
     37:45:int com.gathin.tvhome.Cards.byLabel(com.gathin.tvhome.Cards$Card,com.gathin.tvhome.Cards$Card):369:369 -> compare
     37:45:int compare(java.lang.Object,java.lang.Object):0 -> compare
     46:51:int compare(java.lang.Object,java.lang.Object):0:0 -> compare
-    52:60:int com.gathin.tvhome.LauncherSettingsActivity.lambda$showOpenOnStartPicker$20(java.lang.String[],java.lang.String[]):257:257 -> compare
+    52:60:int com.gathin.tvhome.LauncherSettingsActivity.lambda$showOpenOnStartPicker$21(java.lang.String[],java.lang.String[]):300:300 -> compare
     52:60:int compare(java.lang.Object,java.lang.Object):0 -> compare
     61:64:int compare(java.lang.Object,java.lang.Object):0:0 -> compare
     65:84:int com.gathin.tvhome.CoocaaSources.lambda$list$0(com.gathin.tvhome.CoocaaSources$Source,com.gathin.tvhome.CoocaaSources$Source):52:52 -> compare
@@ -18712,117 +18712,135 @@ com.gathin.tvhome.LauncherLocale -> com.gathin.tvhome.LauncherLocale:
     58:62:android.content.Context wrap(android.content.Context):34:34 -> wrap
 com.gathin.tvhome.LauncherSettingsActivity -> com.gathin.tvhome.LauncherSettingsActivity:
 # {"id":"sourceFile","fileName":"LauncherSettingsActivity.java"}
-    9:14:void <clinit>():33:33 -> <clinit>
-    15:27:void <clinit>():35:35 -> <clinit>
-    1:4:void <init>():23:23 -> <init>
-    5:8:void <init>():31:31 -> <init>
-    9:12:void <init>():32:32 -> <init>
-    13:17:void <init>():34:34 -> <init>
-    18:22:void <init>():36:36 -> <init>
-    1:8:void attachBaseContext(android.content.Context):26:26 -> attachBaseContext
-    2:4:void changed():306:306 -> changed
-    5:14:void changed():307:307 -> changed
-    15:23:void changed():308:308 -> changed
-    24:27:void changed():307:307 -> changed
-    28:31:void changed():308:308 -> changed
-    1:24:boolean hasOnTvChoices():347:347 -> hasOnTvChoices
-    25:44:boolean hasOnTvChoices():348:348 -> hasOnTvChoices
-    45:64:boolean hasOnTvChoices():349:349 -> hasOnTvChoices
-    65:85:boolean hasOnTvChoices():350:350 -> hasOnTvChoices
-    1:5:void onCreate(android.os.Bundle):51:51 -> onCreate
-    6:8:void onCreate(android.os.Bundle):52:52 -> onCreate
-    9:17:void onCreate(android.os.Bundle):53:53 -> onCreate
-    18:24:void onCreate(android.os.Bundle):54:54 -> onCreate
-    25:28:void onCreate(android.os.Bundle):55:55 -> onCreate
-    29:39:void onCreate(android.os.Bundle):56:56 -> onCreate
-    40:48:void onCreate(android.os.Bundle):57:57 -> onCreate
-    49:52:void onCreate(android.os.Bundle):61:61 -> onCreate
-    53:56:void onCreate(android.os.Bundle):62:62 -> onCreate
-    57:60:void onCreate(android.os.Bundle):63:63 -> onCreate
-    61:64:void onCreate(android.os.Bundle):64:64 -> onCreate
-    65:71:void onCreate(android.os.Bundle):65:65 -> onCreate
-    72:92:void onCreate(android.os.Bundle):66:66 -> onCreate
-    93:97:void onCreate(android.os.Bundle):68:68 -> onCreate
-    98:104:void onCreate(android.os.Bundle):69:69 -> onCreate
-    105:114:void onCreate(android.os.Bundle):71:71 -> onCreate
-    115:138:void onCreate(android.os.Bundle):72:72 -> onCreate
-    139:143:void onCreate(android.os.Bundle):80:80 -> onCreate
-    144:147:void onCreate(android.os.Bundle):81:81 -> onCreate
-    148:157:void onCreate(android.os.Bundle):83:83 -> onCreate
-    158:181:void onCreate(android.os.Bundle):84:84 -> onCreate
-    182:186:void onCreate(android.os.Bundle):92:92 -> onCreate
-    187:190:void onCreate(android.os.Bundle):93:93 -> onCreate
-    191:194:void onCreate(android.os.Bundle):94:94 -> onCreate
-    195:204:void onCreate(android.os.Bundle):95:95 -> onCreate
-    205:225:void onCreate(android.os.Bundle):96:96 -> onCreate
-    226:231:void onCreate(android.os.Bundle):104:104 -> onCreate
-    232:235:void onCreate(android.os.Bundle):105:105 -> onCreate
-    236:239:void onCreate(android.os.Bundle):106:106 -> onCreate
-    240:249:void onCreate(android.os.Bundle):107:107 -> onCreate
-    250:261:void onCreate(android.os.Bundle):108:108 -> onCreate
-    262:277:void onCreate(android.os.Bundle):118:118 -> onCreate
-    278:284:void onCreate(android.os.Bundle):119:119 -> onCreate
-    285:297:void onCreate(android.os.Bundle):120:120 -> onCreate
-    298:300:void onCreate(android.os.Bundle):121:121 -> onCreate
-    301:303:void onCreate(android.os.Bundle):122:122 -> onCreate
-    304:306:void onCreate(android.os.Bundle):123:123 -> onCreate
-    307:312:void onCreate(android.os.Bundle):124:124 -> onCreate
-    313:320:void onCreate(android.os.Bundle):126:126 -> onCreate
-    321:332:void onCreate(android.os.Bundle):127:127 -> onCreate
-    333:340:void onCreate(android.os.Bundle):128:128 -> onCreate
-    341:352:void onCreate(android.os.Bundle):129:129 -> onCreate
-    353:360:void onCreate(android.os.Bundle):137:137 -> onCreate
-    361:372:void onCreate(android.os.Bundle):138:138 -> onCreate
-    373:380:void onCreate(android.os.Bundle):150:150 -> onCreate
-    381:384:void onCreate(android.os.Bundle):151:151 -> onCreate
-    385:387:void onCreate(android.os.Bundle):152:152 -> onCreate
-    388:401:void onCreate(android.os.Bundle):153:153 -> onCreate
-    402:409:void onCreate(android.os.Bundle):155:155 -> onCreate
-    410:421:void onCreate(android.os.Bundle):156:156 -> onCreate
-    422:437:void onCreate(android.os.Bundle):171:171 -> onCreate
-    438:453:void onCreate(android.os.Bundle):175:175 -> onCreate
-    454:459:void onCreate(android.os.Bundle):177:177 -> onCreate
-    460:471:void onCreate(android.os.Bundle):178:178 -> onCreate
-    472:477:void onCreate(android.os.Bundle):189:189 -> onCreate
-    478:486:void onCreate(android.os.Bundle):190:190 -> onCreate
-    487:491:void onCreate(android.os.Bundle):198:198 -> onCreate
-    492:495:void onCreate(android.os.Bundle):199:199 -> onCreate
-    496:512:void onCreate(android.os.Bundle):200:200 -> onCreate
-    3:8:void refresh():319:319 -> refresh
-    9:25:void refresh():320:320 -> refresh
-    26:30:void refresh():322:322 -> refresh
-    31:46:void refresh():323:323 -> refresh
-    47:51:void refresh():325:325 -> refresh
-    52:71:void refresh():326:326 -> refresh
-    72:76:void refresh():328:328 -> refresh
-    77:94:void refresh():329:329 -> refresh
-    95:96:void refresh():331:331 -> refresh
-    97:120:void refresh():332:332 -> refresh
-    121:127:void refresh():331:331 -> refresh
-    128:129:void refresh():333:333 -> refresh
-    130:146:void refresh():334:334 -> refresh
-    147:153:void refresh():333:333 -> refresh
-    154:160:void refresh():335:335 -> refresh
-    161:174:void refresh():336:336 -> refresh
-    175:183:void refresh():337:337 -> refresh
-    184:185:void refresh():338:338 -> refresh
-    186:207:void refresh():339:339 -> refresh
-    208:218:void refresh():341:341 -> refresh
-    219:225:void refresh():338:338 -> refresh
-    226:227:void refresh():342:342 -> refresh
-    228:237:java.lang.String openOnStartLabel():283:283 -> refresh
-    228:237:void refresh():342 -> refresh
-    238:248:java.lang.String openOnStartLabel():284:284 -> refresh
-    238:248:void refresh():342 -> refresh
-    249:252:java.lang.String openOnStartLabel():286:286 -> refresh
-    249:252:void refresh():342 -> refresh
-    253:264:java.lang.String openOnStartLabel():287:287 -> refresh
-    253:264:void refresh():342 -> refresh
-    265:278:void refresh():342:342 -> refresh
-    279:289:void refresh():343:343 -> refresh
-    2:9:void reverseRow(android.widget.TextView[]):204:204 -> reverseRow
-    10:12:void reverseRow(android.widget.TextView[]):205:205 -> reverseRow
-    13:26:void reverseRow(android.widget.TextView[]):206:206 -> reverseRow
+    9:14:void <clinit>():35:35 -> <clinit>
+    15:27:void <clinit>():37:37 -> <clinit>
+    1:4:void <init>():25:25 -> <init>
+    5:8:void <init>():33:33 -> <init>
+    9:12:void <init>():34:34 -> <init>
+    13:17:void <init>():36:36 -> <init>
+    18:22:void <init>():38:38 -> <init>
+    4:13:void applyFocusAnimation(android.view.View):229:229 -> applyFocusAnimation
+    14:22:void applyFocusAnimation(android.view.View):230:230 -> applyFocusAnimation
+    1:8:void attachBaseContext(android.content.Context):28:28 -> attachBaseContext
+    2:4:void changed():349:349 -> changed
+    5:14:void changed():350:350 -> changed
+    15:23:void changed():351:351 -> changed
+    24:27:void changed():350:350 -> changed
+    28:31:void changed():351:351 -> changed
+    1:24:boolean hasOnTvChoices():390:390 -> hasOnTvChoices
+    25:44:boolean hasOnTvChoices():391:391 -> hasOnTvChoices
+    45:64:boolean hasOnTvChoices():392:392 -> hasOnTvChoices
+    65:85:boolean hasOnTvChoices():393:393 -> hasOnTvChoices
+    3:7:void onCreate(android.os.Bundle):53:53 -> onCreate
+    8:10:void onCreate(android.os.Bundle):54:54 -> onCreate
+    11:19:void onCreate(android.os.Bundle):55:55 -> onCreate
+    20:26:void onCreate(android.os.Bundle):56:56 -> onCreate
+    27:30:void onCreate(android.os.Bundle):57:57 -> onCreate
+    31:41:void onCreate(android.os.Bundle):58:58 -> onCreate
+    42:50:void onCreate(android.os.Bundle):59:59 -> onCreate
+    51:53:void onCreate(android.os.Bundle):63:63 -> onCreate
+    54:57:void onCreate(android.os.Bundle):65:65 -> onCreate
+    58:61:void onCreate(android.os.Bundle):66:66 -> onCreate
+    62:65:void onCreate(android.os.Bundle):67:67 -> onCreate
+    66:69:void onCreate(android.os.Bundle):68:68 -> onCreate
+    70:76:void onCreate(android.os.Bundle):69:69 -> onCreate
+    77:97:void onCreate(android.os.Bundle):70:70 -> onCreate
+    98:102:void onCreate(android.os.Bundle):72:72 -> onCreate
+    103:109:void onCreate(android.os.Bundle):73:73 -> onCreate
+    110:119:void onCreate(android.os.Bundle):75:75 -> onCreate
+    120:128:void onCreate(android.os.Bundle):76:76 -> onCreate
+    129:148:void onCreate(android.os.Bundle):83:83 -> onCreate
+    149:153:void onCreate(android.os.Bundle):85:85 -> onCreate
+    154:157:void onCreate(android.os.Bundle):86:86 -> onCreate
+    158:167:void onCreate(android.os.Bundle):88:88 -> onCreate
+    168:176:void onCreate(android.os.Bundle):89:89 -> onCreate
+    177:196:void onCreate(android.os.Bundle):96:96 -> onCreate
+    197:201:void onCreate(android.os.Bundle):98:98 -> onCreate
+    202:205:void onCreate(android.os.Bundle):99:99 -> onCreate
+    206:209:void onCreate(android.os.Bundle):100:100 -> onCreate
+    210:219:void onCreate(android.os.Bundle):101:101 -> onCreate
+    220:228:void onCreate(android.os.Bundle):102:102 -> onCreate
+    229:245:void onCreate(android.os.Bundle):109:109 -> onCreate
+    246:251:void onCreate(android.os.Bundle):111:111 -> onCreate
+    252:255:void onCreate(android.os.Bundle):112:112 -> onCreate
+    256:259:void onCreate(android.os.Bundle):113:113 -> onCreate
+    260:269:void onCreate(android.os.Bundle):114:114 -> onCreate
+    270:280:void onCreate(android.os.Bundle):115:115 -> onCreate
+    281:292:void onCreate(android.os.Bundle):122:122 -> onCreate
+    293:308:void onCreate(android.os.Bundle):126:126 -> onCreate
+    309:315:void onCreate(android.os.Bundle):127:127 -> onCreate
+    316:328:void onCreate(android.os.Bundle):128:128 -> onCreate
+    329:331:void onCreate(android.os.Bundle):129:129 -> onCreate
+    332:334:void onCreate(android.os.Bundle):130:130 -> onCreate
+    335:337:void onCreate(android.os.Bundle):131:131 -> onCreate
+    338:343:void onCreate(android.os.Bundle):132:132 -> onCreate
+    344:351:void onCreate(android.os.Bundle):134:134 -> onCreate
+    352:360:void onCreate(android.os.Bundle):135:135 -> onCreate
+    361:368:void onCreate(android.os.Bundle):136:136 -> onCreate
+    369:376:void onCreate(android.os.Bundle):138:138 -> onCreate
+    377:385:void onCreate(android.os.Bundle):139:139 -> onCreate
+    386:393:void onCreate(android.os.Bundle):147:147 -> onCreate
+    394:401:void onCreate(android.os.Bundle):149:149 -> onCreate
+    402:410:void onCreate(android.os.Bundle):150:150 -> onCreate
+    411:418:void onCreate(android.os.Bundle):162:162 -> onCreate
+    419:426:void onCreate(android.os.Bundle):164:164 -> onCreate
+    427:430:void onCreate(android.os.Bundle):165:165 -> onCreate
+    431:433:void onCreate(android.os.Bundle):166:166 -> onCreate
+    434:444:void onCreate(android.os.Bundle):167:167 -> onCreate
+    445:452:void onCreate(android.os.Bundle):168:168 -> onCreate
+    453:460:void onCreate(android.os.Bundle):170:170 -> onCreate
+    461:469:void onCreate(android.os.Bundle):171:171 -> onCreate
+    470:477:void onCreate(android.os.Bundle):186:186 -> onCreate
+    478:481:void onCreate(android.os.Bundle):188:188 -> onCreate
+    482:490:void onCreate(android.os.Bundle):189:189 -> onCreate
+    491:496:void onCreate(android.os.Bundle):193:193 -> onCreate
+    497:500:void onCreate(android.os.Bundle):195:195 -> onCreate
+    501:509:void onCreate(android.os.Bundle):196:196 -> onCreate
+    510:515:void onCreate(android.os.Bundle):197:197 -> onCreate
+    516:521:void onCreate(android.os.Bundle):199:199 -> onCreate
+    522:530:void onCreate(android.os.Bundle):200:200 -> onCreate
+    531:536:void onCreate(android.os.Bundle):210:210 -> onCreate
+    537:542:void onCreate(android.os.Bundle):212:212 -> onCreate
+    543:551:void onCreate(android.os.Bundle):213:213 -> onCreate
+    552:554:void onCreate(android.os.Bundle):220:220 -> onCreate
+    555:559:void onCreate(android.os.Bundle):222:222 -> onCreate
+    560:563:void onCreate(android.os.Bundle):223:223 -> onCreate
+    564:581:void onCreate(android.os.Bundle):224:224 -> onCreate
+    3:8:void refresh():362:362 -> refresh
+    9:25:void refresh():363:363 -> refresh
+    26:30:void refresh():365:365 -> refresh
+    31:46:void refresh():366:366 -> refresh
+    47:51:void refresh():368:368 -> refresh
+    52:71:void refresh():369:369 -> refresh
+    72:76:void refresh():371:371 -> refresh
+    77:94:void refresh():372:372 -> refresh
+    95:96:void refresh():374:374 -> refresh
+    97:120:void refresh():375:375 -> refresh
+    121:127:void refresh():374:374 -> refresh
+    128:129:void refresh():376:376 -> refresh
+    130:146:void refresh():377:377 -> refresh
+    147:153:void refresh():376:376 -> refresh
+    154:160:void refresh():378:378 -> refresh
+    161:174:void refresh():379:379 -> refresh
+    175:183:void refresh():380:380 -> refresh
+    184:185:void refresh():381:381 -> refresh
+    186:207:void refresh():382:382 -> refresh
+    208:218:void refresh():384:384 -> refresh
+    219:225:void refresh():381:381 -> refresh
+    226:227:void refresh():385:385 -> refresh
+    228:237:java.lang.String openOnStartLabel():326:326 -> refresh
+    228:237:void refresh():385 -> refresh
+    238:248:java.lang.String openOnStartLabel():327:327 -> refresh
+    238:248:void refresh():385 -> refresh
+    249:252:java.lang.String openOnStartLabel():329:329 -> refresh
+    249:252:void refresh():385 -> refresh
+    253:264:java.lang.String openOnStartLabel():330:330 -> refresh
+    253:264:void refresh():385 -> refresh
+    265:278:void refresh():385:385 -> refresh
+    279:289:void refresh():386:386 -> refresh
+    2:9:void reverseRow(android.widget.TextView[]):247:247 -> reverseRow
+    10:12:void reverseRow(android.widget.TextView[]):248:248 -> reverseRow
+    13:26:void reverseRow(android.widget.TextView[]):249:249 -> reverseRow
 com.gathin.tvhome.LauncherSettingsActivity$$ExternalSyntheticLambda0 -> com.gathin.tvhome.LauncherSettingsActivity$$ExternalSyntheticLambda0:
 # {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
 # {"id":"com.android.tools.r8.synthesized"}
@@ -18831,245 +18849,262 @@ com.gathin.tvhome.LauncherSettingsActivity$$ExternalSyntheticLambda0 -> com.gath
     1:8:void <init>(com.gathin.tvhome.LauncherSettingsActivity,int):0:0 -> <init>
       # {"id":"com.android.tools.r8.synthesized"}
     27:30:java.io.File com.gathin.tvhome.Config.dir(android.content.Context):420:420 -> onClick
-    27:30:void com.gathin.tvhome.LauncherSettingsActivity.showWallpaperPicker():210 -> onClick
-    27:30:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$5(android.view.View):127 -> onClick
+    27:30:void com.gathin.tvhome.LauncherSettingsActivity.showWallpaperPicker():253 -> onClick
+    27:30:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$5(android.view.View):135 -> onClick
     27:30:void onClick(android.view.View):0 -> onClick
       # {"id":"com.android.tools.r8.synthesized"}
-    31:36:void com.gathin.tvhome.LauncherSettingsActivity.showWallpaperPicker():211:211 -> onClick
-    31:36:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$5(android.view.View):127 -> onClick
+    31:36:void com.gathin.tvhome.LauncherSettingsActivity.showWallpaperPicker():254:254 -> onClick
+    31:36:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$5(android.view.View):135 -> onClick
     31:36:void onClick(android.view.View):0 -> onClick
-    37:43:void com.gathin.tvhome.LauncherSettingsActivity.showWallpaperPicker():212:212 -> onClick
-    37:43:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$5(android.view.View):127 -> onClick
+    37:43:void com.gathin.tvhome.LauncherSettingsActivity.showWallpaperPicker():255:255 -> onClick
+    37:43:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$5(android.view.View):135 -> onClick
     37:43:void onClick(android.view.View):0 -> onClick
-    44:54:void com.gathin.tvhome.LauncherSettingsActivity.showWallpaperPicker():211:211 -> onClick
-    44:54:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$5(android.view.View):127 -> onClick
+    44:54:void com.gathin.tvhome.LauncherSettingsActivity.showWallpaperPicker():254:254 -> onClick
+    44:54:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$5(android.view.View):135 -> onClick
     44:54:void onClick(android.view.View):0 -> onClick
-    55:63:void com.gathin.tvhome.LauncherSettingsActivity.showWallpaperPicker():214:214 -> onClick
-    55:63:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$5(android.view.View):127 -> onClick
+    55:63:void com.gathin.tvhome.LauncherSettingsActivity.showWallpaperPicker():257:257 -> onClick
+    55:63:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$5(android.view.View):135 -> onClick
     55:63:void onClick(android.view.View):0 -> onClick
-    64:72:void com.gathin.tvhome.LauncherSettingsActivity.showWallpaperPicker():215:215 -> onClick
-    64:72:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$5(android.view.View):127 -> onClick
+    64:72:void com.gathin.tvhome.LauncherSettingsActivity.showWallpaperPicker():258:258 -> onClick
+    64:72:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$5(android.view.View):135 -> onClick
     64:72:void onClick(android.view.View):0 -> onClick
-    73:80:void com.gathin.tvhome.LauncherSettingsActivity.showWallpaperPicker():216:216 -> onClick
-    73:80:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$5(android.view.View):127 -> onClick
+    73:80:void com.gathin.tvhome.LauncherSettingsActivity.showWallpaperPicker():259:259 -> onClick
+    73:80:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$5(android.view.View):135 -> onClick
     73:80:void onClick(android.view.View):0 -> onClick
-    81:101:void com.gathin.tvhome.LauncherSettingsActivity.showWallpaperPicker():217:217 -> onClick
-    81:101:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$5(android.view.View):127 -> onClick
+    81:101:void com.gathin.tvhome.LauncherSettingsActivity.showWallpaperPicker():260:260 -> onClick
+    81:101:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$5(android.view.View):135 -> onClick
     81:101:void onClick(android.view.View):0 -> onClick
-    102:114:void com.gathin.tvhome.LauncherSettingsActivity.showWallpaperPicker():218:218 -> onClick
-    102:114:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$5(android.view.View):127 -> onClick
+    102:114:void com.gathin.tvhome.LauncherSettingsActivity.showWallpaperPicker():261:261 -> onClick
+    102:114:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$5(android.view.View):135 -> onClick
     102:114:void onClick(android.view.View):0 -> onClick
-    115:120:void com.gathin.tvhome.LauncherSettingsActivity.showWallpaperPicker():219:219 -> onClick
-    115:120:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$5(android.view.View):127 -> onClick
+    115:120:void com.gathin.tvhome.LauncherSettingsActivity.showWallpaperPicker():262:262 -> onClick
+    115:120:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$5(android.view.View):135 -> onClick
     115:120:void onClick(android.view.View):0 -> onClick
-    121:136:void com.gathin.tvhome.LauncherSettingsActivity.showWallpaperPicker():220:220 -> onClick
-    121:136:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$5(android.view.View):127 -> onClick
+    121:136:void com.gathin.tvhome.LauncherSettingsActivity.showWallpaperPicker():263:263 -> onClick
+    121:136:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$5(android.view.View):135 -> onClick
     121:136:void onClick(android.view.View):0 -> onClick
-    137:142:int com.gathin.tvhome.LauncherSettingsActivity.indexOf(java.util.List,java.lang.String):295:295 -> onClick
-    137:142:void com.gathin.tvhome.LauncherSettingsActivity.showWallpaperPicker():221 -> onClick
-    137:142:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$5(android.view.View):127 -> onClick
+    137:142:int com.gathin.tvhome.LauncherSettingsActivity.indexOf(java.util.List,java.lang.String):338:338 -> onClick
+    137:142:void com.gathin.tvhome.LauncherSettingsActivity.showWallpaperPicker():264 -> onClick
+    137:142:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$5(android.view.View):135 -> onClick
     137:142:void onClick(android.view.View):0 -> onClick
-    143:164:int com.gathin.tvhome.LauncherSettingsActivity.indexOf(java.util.List,java.lang.String):296:296 -> onClick
-    143:164:void com.gathin.tvhome.LauncherSettingsActivity.showWallpaperPicker():221 -> onClick
-    143:164:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$5(android.view.View):127 -> onClick
+    143:164:int com.gathin.tvhome.LauncherSettingsActivity.indexOf(java.util.List,java.lang.String):339:339 -> onClick
+    143:164:void com.gathin.tvhome.LauncherSettingsActivity.showWallpaperPicker():264 -> onClick
+    143:164:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$5(android.view.View):135 -> onClick
     143:164:void onClick(android.view.View):0 -> onClick
-    165:172:void com.gathin.tvhome.LauncherSettingsActivity.showWallpaperPicker():222:222 -> onClick
-    165:172:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$5(android.view.View):127 -> onClick
+    165:172:void com.gathin.tvhome.LauncherSettingsActivity.showWallpaperPicker():265:265 -> onClick
+    165:172:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$5(android.view.View):135 -> onClick
     165:172:void onClick(android.view.View):0 -> onClick
-    173:181:void com.gathin.tvhome.LauncherSettingsActivity.showWallpaperPicker():223:223 -> onClick
-    173:181:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$5(android.view.View):127 -> onClick
+    173:181:void com.gathin.tvhome.LauncherSettingsActivity.showWallpaperPicker():266:266 -> onClick
+    173:181:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$5(android.view.View):135 -> onClick
     173:181:void onClick(android.view.View):0 -> onClick
-    182:193:void com.gathin.tvhome.LauncherSettingsActivity.showWallpaperPicker():224:224 -> onClick
-    182:193:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$5(android.view.View):127 -> onClick
+    182:193:void com.gathin.tvhome.LauncherSettingsActivity.showWallpaperPicker():267:267 -> onClick
+    182:193:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$5(android.view.View):135 -> onClick
     182:193:void onClick(android.view.View):0 -> onClick
-    194:197:void com.gathin.tvhome.LauncherSettingsActivity.showWallpaperPicker():236:236 -> onClick
-    194:197:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$5(android.view.View):127 -> onClick
+    194:197:void com.gathin.tvhome.LauncherSettingsActivity.showWallpaperPicker():279:279 -> onClick
+    194:197:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$5(android.view.View):135 -> onClick
     194:197:void onClick(android.view.View):0 -> onClick
-    198:201:void com.gathin.tvhome.LauncherSettingsActivity.showWallpaperPicker():241:241 -> onClick
-    198:201:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$5(android.view.View):127 -> onClick
+    198:201:void com.gathin.tvhome.LauncherSettingsActivity.showWallpaperPicker():284:284 -> onClick
+    198:201:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$5(android.view.View):135 -> onClick
     198:201:void onClick(android.view.View):0 -> onClick
-    202:205:void com.gathin.tvhome.LauncherSettingsActivity.showWallpaperPicker():242:242 -> onClick
-    202:205:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$5(android.view.View):127 -> onClick
+    202:205:void com.gathin.tvhome.LauncherSettingsActivity.showWallpaperPicker():285:285 -> onClick
+    202:205:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$5(android.view.View):135 -> onClick
     202:205:void onClick(android.view.View):0 -> onClick
     206:207:void onClick(android.view.View):0:0 -> onClick
-    208:213:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$12(android.view.View):176:176 -> onClick
+    208:213:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$12(android.view.View):196:196 -> onClick
     208:213:void onClick(android.view.View):0 -> onClick
-    214:217:void com.gathin.tvhome.LauncherSettingsActivity.open(android.content.Intent):355:355 -> onClick
-    214:217:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$12(android.view.View):176 -> onClick
+    214:217:void com.gathin.tvhome.LauncherSettingsActivity.open(android.content.Intent):398:398 -> onClick
+    214:217:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$12(android.view.View):196 -> onClick
     214:217:void onClick(android.view.View):0 -> onClick
-    218:225:void com.gathin.tvhome.LauncherSettingsActivity.open(android.content.Intent):357:357 -> onClick
-    218:225:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$12(android.view.View):176 -> onClick
+    218:225:void com.gathin.tvhome.LauncherSettingsActivity.open(android.content.Intent):400:400 -> onClick
+    218:225:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$12(android.view.View):196 -> onClick
     218:225:void onClick(android.view.View):0 -> onClick
     226:230:void onClick(android.view.View):0:0 -> onClick
-    231:237:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$11(android.view.View):172:172 -> onClick
+    231:237:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$11(android.view.View):190:190 -> onClick
     231:237:void onClick(android.view.View):0 -> onClick
-    238:244:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$11(android.view.View):173:173 -> onClick
+    238:244:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$11(android.view.View):191:191 -> onClick
     238:244:void onClick(android.view.View):0 -> onClick
-    245:248:void com.gathin.tvhome.LauncherSettingsActivity.open(android.content.Intent):355:355 -> onClick
-    245:248:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$11(android.view.View):173 -> onClick
+    245:248:void com.gathin.tvhome.LauncherSettingsActivity.open(android.content.Intent):398:398 -> onClick
+    245:248:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$11(android.view.View):191 -> onClick
     245:248:void onClick(android.view.View):0 -> onClick
-    249:256:void com.gathin.tvhome.LauncherSettingsActivity.open(android.content.Intent):357:357 -> onClick
-    249:256:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$11(android.view.View):173 -> onClick
+    249:256:void com.gathin.tvhome.LauncherSettingsActivity.open(android.content.Intent):400:400 -> onClick
+    249:256:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$11(android.view.View):191 -> onClick
     249:256:void onClick(android.view.View):0 -> onClick
     257:258:void onClick(android.view.View):0:0 -> onClick
-    259:265:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$10(android.view.View):157:157 -> onClick
+    259:265:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$10(android.view.View):172:172 -> onClick
     259:265:void onClick(android.view.View):0 -> onClick
-    266:287:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$10(android.view.View):158:158 -> onClick
+    266:287:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$10(android.view.View):173:173 -> onClick
     266:287:void onClick(android.view.View):0 -> onClick
-    288:297:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$10(android.view.View):159:159 -> onClick
+    288:297:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$10(android.view.View):174:174 -> onClick
     288:297:void onClick(android.view.View):0 -> onClick
-    298:314:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$10(android.view.View):160:160 -> onClick
+    298:314:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$10(android.view.View):175:175 -> onClick
     298:314:void onClick(android.view.View):0 -> onClick
-    315:318:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$10(android.view.View):161:161 -> onClick
+    315:318:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$10(android.view.View):176:176 -> onClick
     315:318:void onClick(android.view.View):0 -> onClick
-    319:322:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$10(android.view.View):162:162 -> onClick
+    319:322:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$10(android.view.View):177:177 -> onClick
     319:322:void onClick(android.view.View):0 -> onClick
-    323:326:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$10(android.view.View):163:163 -> onClick
+    323:326:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$10(android.view.View):178:178 -> onClick
     323:326:void onClick(android.view.View):0 -> onClick
-    327:330:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$10(android.view.View):164:164 -> onClick
+    327:330:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$10(android.view.View):179:179 -> onClick
     327:330:void onClick(android.view.View):0 -> onClick
-    331:334:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$10(android.view.View):165:165 -> onClick
+    331:334:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$10(android.view.View):180:180 -> onClick
     331:334:void onClick(android.view.View):0 -> onClick
-    335:340:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$10(android.view.View):166:166 -> onClick
+    335:340:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$10(android.view.View):181:181 -> onClick
     335:340:void onClick(android.view.View):0 -> onClick
-    341:347:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$10(android.view.View):167:167 -> onClick
+    341:347:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$10(android.view.View):182:182 -> onClick
     341:347:void onClick(android.view.View):0 -> onClick
-    348:350:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$10(android.view.View):168:168 -> onClick
+    348:350:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$10(android.view.View):183:183 -> onClick
     348:350:void onClick(android.view.View):0 -> onClick
-    351:354:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$10(android.view.View):169:169 -> onClick
+    351:354:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$10(android.view.View):184:184 -> onClick
     351:354:void onClick(android.view.View):0 -> onClick
     355:356:void onClick(android.view.View):0:0 -> onClick
-    357:360:void com.gathin.tvhome.LauncherSettingsActivity.showOpenOnStartPicker():247:247 -> onClick
-    357:360:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$9(android.view.View):153 -> onClick
+    357:360:void com.gathin.tvhome.LauncherSettingsActivity.showOpenOnStartPicker():290:290 -> onClick
+    357:360:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$9(android.view.View):167 -> onClick
     357:360:void onClick(android.view.View):0 -> onClick
-    361:365:void com.gathin.tvhome.LauncherSettingsActivity.showOpenOnStartPicker():248:248 -> onClick
-    361:365:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$9(android.view.View):153 -> onClick
+    361:365:void com.gathin.tvhome.LauncherSettingsActivity.showOpenOnStartPicker():291:291 -> onClick
+    361:365:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$9(android.view.View):167 -> onClick
     361:365:void onClick(android.view.View):0 -> onClick
-    366:378:void com.gathin.tvhome.LauncherSettingsActivity.showOpenOnStartPicker():249:249 -> onClick
-    366:378:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$9(android.view.View):153 -> onClick
+    366:378:void com.gathin.tvhome.LauncherSettingsActivity.showOpenOnStartPicker():292:292 -> onClick
+    366:378:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$9(android.view.View):167 -> onClick
     366:378:void onClick(android.view.View):0 -> onClick
-    379:398:void com.gathin.tvhome.LauncherSettingsActivity.showOpenOnStartPicker():250:250 -> onClick
-    379:398:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$9(android.view.View):153 -> onClick
+    379:398:void com.gathin.tvhome.LauncherSettingsActivity.showOpenOnStartPicker():293:293 -> onClick
+    379:398:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$9(android.view.View):167 -> onClick
     379:398:void onClick(android.view.View):0 -> onClick
-    399:402:void com.gathin.tvhome.LauncherSettingsActivity.showOpenOnStartPicker():251:251 -> onClick
-    399:402:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$9(android.view.View):153 -> onClick
+    399:402:void com.gathin.tvhome.LauncherSettingsActivity.showOpenOnStartPicker():294:294 -> onClick
+    399:402:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$9(android.view.View):167 -> onClick
     399:402:void onClick(android.view.View):0 -> onClick
-    403:413:void com.gathin.tvhome.LauncherSettingsActivity.showOpenOnStartPicker():252:252 -> onClick
-    403:413:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$9(android.view.View):153 -> onClick
+    403:413:void com.gathin.tvhome.LauncherSettingsActivity.showOpenOnStartPicker():295:295 -> onClick
+    403:413:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$9(android.view.View):167 -> onClick
     403:413:void onClick(android.view.View):0 -> onClick
-    414:439:void com.gathin.tvhome.LauncherSettingsActivity.showOpenOnStartPicker():254:254 -> onClick
-    414:439:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$9(android.view.View):153 -> onClick
+    414:439:void com.gathin.tvhome.LauncherSettingsActivity.showOpenOnStartPicker():297:297 -> onClick
+    414:439:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$9(android.view.View):167 -> onClick
     414:439:void onClick(android.view.View):0 -> onClick
-    440:455:void com.gathin.tvhome.LauncherSettingsActivity.showOpenOnStartPicker():255:255 -> onClick
-    440:455:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$9(android.view.View):153 -> onClick
+    440:455:void com.gathin.tvhome.LauncherSettingsActivity.showOpenOnStartPicker():298:298 -> onClick
+    440:455:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$9(android.view.View):167 -> onClick
     440:455:void onClick(android.view.View):0 -> onClick
-    456:464:void com.gathin.tvhome.LauncherSettingsActivity.showOpenOnStartPicker():257:257 -> onClick
-    456:464:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$9(android.view.View):153 -> onClick
+    456:464:void com.gathin.tvhome.LauncherSettingsActivity.showOpenOnStartPicker():300:300 -> onClick
+    456:464:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$9(android.view.View):167 -> onClick
     456:464:void onClick(android.view.View):0 -> onClick
-    465:474:void com.gathin.tvhome.LauncherSettingsActivity.showOpenOnStartPicker():258:258 -> onClick
-    465:474:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$9(android.view.View):153 -> onClick
+    465:474:void com.gathin.tvhome.LauncherSettingsActivity.showOpenOnStartPicker():301:301 -> onClick
+    465:474:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$9(android.view.View):167 -> onClick
     465:474:void onClick(android.view.View):0 -> onClick
-    475:480:void com.gathin.tvhome.LauncherSettingsActivity.showOpenOnStartPicker():259:259 -> onClick
-    475:480:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$9(android.view.View):153 -> onClick
+    475:480:void com.gathin.tvhome.LauncherSettingsActivity.showOpenOnStartPicker():302:302 -> onClick
+    475:480:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$9(android.view.View):167 -> onClick
     475:480:void onClick(android.view.View):0 -> onClick
-    481:490:void com.gathin.tvhome.LauncherSettingsActivity.showOpenOnStartPicker():260:260 -> onClick
-    481:490:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$9(android.view.View):153 -> onClick
+    481:490:void com.gathin.tvhome.LauncherSettingsActivity.showOpenOnStartPicker():303:303 -> onClick
+    481:490:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$9(android.view.View):167 -> onClick
     481:490:void onClick(android.view.View):0 -> onClick
-    491:498:void com.gathin.tvhome.LauncherSettingsActivity.showOpenOnStartPicker():262:262 -> onClick
-    491:498:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$9(android.view.View):153 -> onClick
+    491:498:void com.gathin.tvhome.LauncherSettingsActivity.showOpenOnStartPicker():305:305 -> onClick
+    491:498:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$9(android.view.View):167 -> onClick
     491:498:void onClick(android.view.View):0 -> onClick
-    499:508:void com.gathin.tvhome.LauncherSettingsActivity.showOpenOnStartPicker():263:263 -> onClick
-    499:508:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$9(android.view.View):153 -> onClick
+    499:508:void com.gathin.tvhome.LauncherSettingsActivity.showOpenOnStartPicker():306:306 -> onClick
+    499:508:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$9(android.view.View):167 -> onClick
     499:508:void onClick(android.view.View):0 -> onClick
-    509:525:void com.gathin.tvhome.LauncherSettingsActivity.showOpenOnStartPicker():264:264 -> onClick
-    509:525:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$9(android.view.View):153 -> onClick
+    509:525:void com.gathin.tvhome.LauncherSettingsActivity.showOpenOnStartPicker():307:307 -> onClick
+    509:525:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$9(android.view.View):167 -> onClick
     509:525:void onClick(android.view.View):0 -> onClick
-    526:533:void com.gathin.tvhome.LauncherSettingsActivity.showOpenOnStartPicker():266:266 -> onClick
-    526:533:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$9(android.view.View):153 -> onClick
+    526:533:void com.gathin.tvhome.LauncherSettingsActivity.showOpenOnStartPicker():309:309 -> onClick
+    526:533:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$9(android.view.View):167 -> onClick
     526:533:void onClick(android.view.View):0 -> onClick
-    534:542:void com.gathin.tvhome.LauncherSettingsActivity.showOpenOnStartPicker():267:267 -> onClick
-    534:542:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$9(android.view.View):153 -> onClick
+    534:542:void com.gathin.tvhome.LauncherSettingsActivity.showOpenOnStartPicker():310:310 -> onClick
+    534:542:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$9(android.view.View):167 -> onClick
     534:542:void onClick(android.view.View):0 -> onClick
-    543:546:void com.gathin.tvhome.LauncherSettingsActivity.showOpenOnStartPicker():268:268 -> onClick
-    543:546:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$9(android.view.View):153 -> onClick
+    543:546:void com.gathin.tvhome.LauncherSettingsActivity.showOpenOnStartPicker():311:311 -> onClick
+    543:546:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$9(android.view.View):167 -> onClick
     543:546:void onClick(android.view.View):0 -> onClick
-    547:550:void com.gathin.tvhome.LauncherSettingsActivity.showOpenOnStartPicker():277:277 -> onClick
-    547:550:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$9(android.view.View):153 -> onClick
+    547:550:void com.gathin.tvhome.LauncherSettingsActivity.showOpenOnStartPicker():320:320 -> onClick
+    547:550:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$9(android.view.View):167 -> onClick
     547:550:void onClick(android.view.View):0 -> onClick
-    551:554:void com.gathin.tvhome.LauncherSettingsActivity.showOpenOnStartPicker():278:278 -> onClick
-    551:554:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$9(android.view.View):153 -> onClick
+    551:554:void com.gathin.tvhome.LauncherSettingsActivity.showOpenOnStartPicker():321:321 -> onClick
+    551:554:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$9(android.view.View):167 -> onClick
     551:554:void onClick(android.view.View):0 -> onClick
-    555:558:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$8(android.view.View):139:139 -> onClick
+    555:558:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$8(android.view.View):151:151 -> onClick
     555:558:void onClick(android.view.View):0 -> onClick
-    559:560:void com.gathin.tvhome.LauncherSettingsActivity.setAdvanced(boolean):312:312 -> onClick
-    559:560:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$8(android.view.View):140 -> onClick
+    559:560:void com.gathin.tvhome.LauncherSettingsActivity.setAdvanced(boolean):355:355 -> onClick
+    559:560:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$8(android.view.View):152 -> onClick
     559:560:void onClick(android.view.View):0 -> onClick
-    561:573:void com.gathin.tvhome.LauncherSettingsActivity.setAdvanced(boolean):313:313 -> onClick
-    561:573:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$8(android.view.View):140 -> onClick
+    561:573:void com.gathin.tvhome.LauncherSettingsActivity.setAdvanced(boolean):356:356 -> onClick
+    561:573:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$8(android.view.View):152 -> onClick
     561:573:void onClick(android.view.View):0 -> onClick
-    574:576:void com.gathin.tvhome.LauncherSettingsActivity.setAdvanced(boolean):314:314 -> onClick
-    574:576:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$8(android.view.View):140 -> onClick
+    574:576:void com.gathin.tvhome.LauncherSettingsActivity.setAdvanced(boolean):357:357 -> onClick
+    574:576:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$8(android.view.View):152 -> onClick
     574:576:void onClick(android.view.View):0 -> onClick
-    577:580:void com.gathin.tvhome.LauncherSettingsActivity.setAdvanced(boolean):315:315 -> onClick
-    577:580:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$8(android.view.View):140 -> onClick
+    577:580:void com.gathin.tvhome.LauncherSettingsActivity.setAdvanced(boolean):358:358 -> onClick
+    577:580:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$8(android.view.View):152 -> onClick
     577:580:void onClick(android.view.View):0 -> onClick
-    581:587:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$8(android.view.View):142:142 -> onClick
+    581:587:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$8(android.view.View):154:154 -> onClick
     581:587:void onClick(android.view.View):0 -> onClick
-    588:594:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$8(android.view.View):143:143 -> onClick
+    588:594:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$8(android.view.View):155:155 -> onClick
     588:594:void onClick(android.view.View):0 -> onClick
-    595:606:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$8(android.view.View):144:144 -> onClick
+    595:606:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$8(android.view.View):156:156 -> onClick
     595:606:void onClick(android.view.View):0 -> onClick
-    607:610:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$8(android.view.View):145:145 -> onClick
+    607:610:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$8(android.view.View):157:157 -> onClick
     607:610:void onClick(android.view.View):0 -> onClick
-    611:614:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$8(android.view.View):146:146 -> onClick
+    611:614:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$8(android.view.View):158:158 -> onClick
     611:614:void onClick(android.view.View):0 -> onClick
-    615:618:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$8(android.view.View):147:147 -> onClick
+    615:618:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$8(android.view.View):159:159 -> onClick
     615:618:void onClick(android.view.View):0 -> onClick
-    619:626:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$6(android.view.View):130:130 -> onClick
+    619:626:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$6(android.view.View):140:140 -> onClick
     619:626:void onClick(android.view.View):0 -> onClick
-    627:628:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$6(android.view.View):131:131 -> onClick
+    627:628:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$6(android.view.View):141:141 -> onClick
     627:628:void onClick(android.view.View):0 -> onClick
-    629:642:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$6(android.view.View):132:132 -> onClick
+    629:642:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$6(android.view.View):142:142 -> onClick
     629:642:void onClick(android.view.View):0 -> onClick
-    643:649:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$6(android.view.View):133:133 -> onClick
+    643:649:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$6(android.view.View):143:143 -> onClick
     643:649:void onClick(android.view.View):0 -> onClick
-    650:652:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$6(android.view.View):134:134 -> onClick
+    650:652:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$6(android.view.View):144:144 -> onClick
     650:652:void onClick(android.view.View):0 -> onClick
-    653:656:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$6(android.view.View):135:135 -> onClick
+    653:656:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$6(android.view.View):145:145 -> onClick
     653:656:void onClick(android.view.View):0 -> onClick
     657:661:void onClick(android.view.View):0:0 -> onClick
-    662:675:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$0(android.view.View):58:58 -> onClick
+    662:675:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$0(android.view.View):60:60 -> onClick
     662:675:void onClick(android.view.View):0 -> onClick
-    676:680:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$0(android.view.View):59:59 -> onClick
+    676:680:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$0(android.view.View):61:61 -> onClick
     676:680:void onClick(android.view.View):0 -> onClick
 com.gathin.tvhome.LauncherSettingsActivity$$ExternalSyntheticLambda14 -> com.gathin.tvhome.LauncherSettingsActivity$$ExternalSyntheticLambda14:
+# {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
+# {"id":"com.android.tools.r8.synthesized"}
+    float com.gathin.tvhome.LauncherSettingsActivity$$InternalSyntheticLambda$2$039a5aa7a193bf98d44dca5bd55b50c2dfabb03bda9f2809e901c0fda8fc1ecd$0.f$0 -> f$0
+      # {"id":"com.android.tools.r8.synthesized"}
+    1:6:void <init>(float):0:0 -> <init>
+      # {"id":"com.android.tools.r8.synthesized"}
+    15:19:void com.gathin.tvhome.LauncherSettingsActivity.lambda$applyFocusAnimation$18(float,android.view.View,boolean):232:232 -> onFocusChange
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Landroid/view/View;Z)V"}
+    20:23:void com.gathin.tvhome.LauncherSettingsActivity.lambda$applyFocusAnimation$18(float,android.view.View,boolean):233:233 -> onFocusChange
+    24:27:void com.gathin.tvhome.LauncherSettingsActivity.lambda$applyFocusAnimation$18(float,android.view.View,boolean):234:234 -> onFocusChange
+    28:31:void com.gathin.tvhome.LauncherSettingsActivity.lambda$applyFocusAnimation$18(float,android.view.View,boolean):235:235 -> onFocusChange
+    32:42:void com.gathin.tvhome.LauncherSettingsActivity.lambda$applyFocusAnimation$18(float,android.view.View,boolean):236:236 -> onFocusChange
+    43:48:void com.gathin.tvhome.LauncherSettingsActivity.lambda$applyFocusAnimation$18(float,android.view.View,boolean):237:237 -> onFocusChange
+    49:65:void com.gathin.tvhome.LauncherSettingsActivity.lambda$applyFocusAnimation$18(float,android.view.View,boolean):238:238 -> onFocusChange
+    66:70:void com.gathin.tvhome.LauncherSettingsActivity.lambda$applyFocusAnimation$18(float,android.view.View,boolean):239:239 -> onFocusChange
+    71:74:void com.gathin.tvhome.LauncherSettingsActivity.lambda$applyFocusAnimation$18(float,android.view.View,boolean):241:241 -> onFocusChange
+com.gathin.tvhome.LauncherSettingsActivity$$ExternalSyntheticLambda15 -> com.gathin.tvhome.LauncherSettingsActivity$$ExternalSyntheticLambda15:
 # {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
 # {"id":"com.android.tools.r8.synthesized"}
     com.gathin.tvhome.LauncherSettingsActivity com.gathin.tvhome.LauncherSettingsActivity$$InternalSyntheticLambda$2$1e152a178fd656e3460e96a544b51b3b4a2ca40a8e54bcebe31f5940c22bba28$0.f$0 -> f$0
       # {"id":"com.android.tools.r8.synthesized"}
     1:8:void <init>(com.gathin.tvhome.LauncherSettingsActivity,int):0:0 -> <init>
       # {"id":"com.android.tools.r8.synthesized"}
-    8:22:void com.gathin.tvhome.LauncherSettingsActivity.lambda$showWallpaperPicker$19(android.content.DialogInterface,int):237:237 -> onClick
+    8:22:void com.gathin.tvhome.LauncherSettingsActivity.lambda$showWallpaperPicker$20(android.content.DialogInterface,int):280:280 -> onClick
     8:22:void onClick(android.content.DialogInterface,int):0 -> onClick
       # {"id":"com.android.tools.r8.synthesized"}
-    23:25:void com.gathin.tvhome.LauncherSettingsActivity.lambda$showWallpaperPicker$19(android.content.DialogInterface,int):238:238 -> onClick
+    23:25:void com.gathin.tvhome.LauncherSettingsActivity.lambda$showWallpaperPicker$20(android.content.DialogInterface,int):281:281 -> onClick
     23:25:void onClick(android.content.DialogInterface,int):0 -> onClick
-    26:29:void com.gathin.tvhome.LauncherSettingsActivity.lambda$showWallpaperPicker$19(android.content.DialogInterface,int):239:239 -> onClick
+    26:29:void com.gathin.tvhome.LauncherSettingsActivity.lambda$showWallpaperPicker$20(android.content.DialogInterface,int):282:282 -> onClick
     26:29:void onClick(android.content.DialogInterface,int):0 -> onClick
     30:32:void onClick(android.content.DialogInterface,int):0:0 -> onClick
-    33:34:void com.gathin.tvhome.LauncherSettingsActivity.setAdvanced(boolean):312:312 -> onClick
-    33:34:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$7(android.content.DialogInterface,int):145 -> onClick
+    33:34:void com.gathin.tvhome.LauncherSettingsActivity.setAdvanced(boolean):355:355 -> onClick
+    33:34:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$7(android.content.DialogInterface,int):157 -> onClick
     33:34:void onClick(android.content.DialogInterface,int):0 -> onClick
-    35:49:void com.gathin.tvhome.LauncherSettingsActivity.setAdvanced(boolean):313:313 -> onClick
-    35:49:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$7(android.content.DialogInterface,int):145 -> onClick
+    35:49:void com.gathin.tvhome.LauncherSettingsActivity.setAdvanced(boolean):356:356 -> onClick
+    35:49:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$7(android.content.DialogInterface,int):157 -> onClick
     35:49:void onClick(android.content.DialogInterface,int):0 -> onClick
-    50:52:void com.gathin.tvhome.LauncherSettingsActivity.setAdvanced(boolean):314:314 -> onClick
-    50:52:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$7(android.content.DialogInterface,int):145 -> onClick
+    50:52:void com.gathin.tvhome.LauncherSettingsActivity.setAdvanced(boolean):357:357 -> onClick
+    50:52:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$7(android.content.DialogInterface,int):157 -> onClick
     50:52:void onClick(android.content.DialogInterface,int):0 -> onClick
-    53:56:void com.gathin.tvhome.LauncherSettingsActivity.setAdvanced(boolean):315:315 -> onClick
-    53:56:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$7(android.content.DialogInterface,int):145 -> onClick
+    53:56:void com.gathin.tvhome.LauncherSettingsActivity.setAdvanced(boolean):358:358 -> onClick
+    53:56:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$7(android.content.DialogInterface,int):157 -> onClick
     53:56:void onClick(android.content.DialogInterface,int):0 -> onClick
-com.gathin.tvhome.LauncherSettingsActivity$$ExternalSyntheticLambda15 -> com.gathin.tvhome.LauncherSettingsActivity$$ExternalSyntheticLambda15:
+com.gathin.tvhome.LauncherSettingsActivity$$ExternalSyntheticLambda16 -> com.gathin.tvhome.LauncherSettingsActivity$$ExternalSyntheticLambda16:
 # {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
 # {"id":"com.android.tools.r8.synthesized"}
     com.gathin.tvhome.LauncherSettingsActivity com.gathin.tvhome.LauncherSettingsActivity$$InternalSyntheticLambda$2$46084720f2756b6f9f9252675c51701f14847176c12a0d932be7a73f301c4892$0.f$0 -> f$0
@@ -19080,11 +19115,11 @@ com.gathin.tvhome.LauncherSettingsActivity$$ExternalSyntheticLambda15 -> com.gat
       # {"id":"com.android.tools.r8.synthesized"}
     1:8:void <init>(android.app.Activity,java.lang.Object):0:0 -> <init>
       # {"id":"com.android.tools.r8.synthesized"}
-    11:20:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$14(android.widget.TextView,boolean,java.lang.String):181:181 -> onComplete
+    11:20:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$14(android.widget.TextView,boolean,java.lang.String):203:203 -> onComplete
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Ljava/lang/String;)V"}
-    14:19:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$16(android.widget.TextView,java.lang.String):193:193 -> onStatus
+    14:19:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$16(android.widget.TextView,java.lang.String):216:216 -> onStatus
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Ljava/lang/String;)V"}
-    20:27:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$16(android.widget.TextView,java.lang.String):194:194 -> onStatus
+    20:27:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$16(android.widget.TextView,java.lang.String):217:217 -> onStatus
     12:15:java.util.List com.gathin.tvhome.MainActivity.lambda$reloadTiles$19(java.util.List):1195:1195 -> run
       # {"id":"com.android.tools.r8.residualsignature","signature":"()Ljava/lang/Object;"}
     16:32:java.util.List com.gathin.tvhome.Cards.discover(android.content.Context,java.util.Set,java.util.function.Supplier,java.util.List):188:188 -> run
@@ -19286,7 +19321,7 @@ com.gathin.tvhome.LauncherSettingsActivity$$ExternalSyntheticLambda15 -> com.gat
     868:908:java.util.List com.gathin.tvhome.MainActivity.lambda$reloadTiles$19(java.util.List):1195 -> run
     909:928:java.util.List com.gathin.tvhome.Cards.discover(android.content.Context,java.util.Set,java.util.function.Supplier,java.util.List):196:196 -> run
     909:928:java.util.List com.gathin.tvhome.MainActivity.lambda$reloadTiles$19(java.util.List):1195 -> run
-com.gathin.tvhome.LauncherSettingsActivity$$ExternalSyntheticLambda17 -> com.gathin.tvhome.LauncherSettingsActivity$$ExternalSyntheticLambda17:
+com.gathin.tvhome.LauncherSettingsActivity$$ExternalSyntheticLambda18 -> com.gathin.tvhome.LauncherSettingsActivity$$ExternalSyntheticLambda18:
 # {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
 # {"id":"com.android.tools.r8.synthesized"}
     com.gathin.tvhome.LauncherSettingsActivity com.gathin.tvhome.LauncherSettingsActivity$$InternalSyntheticLambda$2$5745098c2a3348f1dcb86a320b6c9604ea6756c2a5238e40375d05487c576f44$1.f$0 -> f$0
@@ -19296,45 +19331,45 @@ com.gathin.tvhome.LauncherSettingsActivity$$ExternalSyntheticLambda17 -> com.gat
       # {"id":"com.android.tools.r8.synthesized"}
     1:10:void <init>(com.gathin.tvhome.LauncherSettingsActivity,java.util.ArrayList,int):0:0 -> <init>
       # {"id":"com.android.tools.r8.synthesized"}
-    13:15:void com.gathin.tvhome.LauncherSettingsActivity.lambda$showWallpaperPicker$18(java.util.List,android.content.DialogInterface,int):225:225 -> onClick
+    13:15:void com.gathin.tvhome.LauncherSettingsActivity.lambda$showWallpaperPicker$19(java.util.List,android.content.DialogInterface,int):268:268 -> onClick
     13:15:void onClick(android.content.DialogInterface,int):0 -> onClick
       # {"id":"com.android.tools.r8.synthesized"}
-    16:23:void com.gathin.tvhome.LauncherSettingsActivity.lambda$showWallpaperPicker$18(java.util.List,android.content.DialogInterface,int):226:226 -> onClick
+    16:23:void com.gathin.tvhome.LauncherSettingsActivity.lambda$showWallpaperPicker$19(java.util.List,android.content.DialogInterface,int):269:269 -> onClick
     16:23:void onClick(android.content.DialogInterface,int):0 -> onClick
-    24:39:void com.gathin.tvhome.LauncherSettingsActivity.lambda$showWallpaperPicker$18(java.util.List,android.content.DialogInterface,int):227:227 -> onClick
+    24:39:void com.gathin.tvhome.LauncherSettingsActivity.lambda$showWallpaperPicker$19(java.util.List,android.content.DialogInterface,int):270:270 -> onClick
     24:39:void onClick(android.content.DialogInterface,int):0 -> onClick
-    40:45:void com.gathin.tvhome.LauncherSettingsActivity.lambda$showWallpaperPicker$18(java.util.List,android.content.DialogInterface,int):229:229 -> onClick
+    40:45:void com.gathin.tvhome.LauncherSettingsActivity.lambda$showWallpaperPicker$19(java.util.List,android.content.DialogInterface,int):272:272 -> onClick
     40:45:void onClick(android.content.DialogInterface,int):0 -> onClick
-    46:55:void com.gathin.tvhome.LauncherSettingsActivity.lambda$showWallpaperPicker$18(java.util.List,android.content.DialogInterface,int):230:230 -> onClick
+    46:55:void com.gathin.tvhome.LauncherSettingsActivity.lambda$showWallpaperPicker$19(java.util.List,android.content.DialogInterface,int):273:273 -> onClick
     46:55:void onClick(android.content.DialogInterface,int):0 -> onClick
-    56:59:void com.gathin.tvhome.LauncherSettingsActivity.lambda$showWallpaperPicker$18(java.util.List,android.content.DialogInterface,int):229:229 -> onClick
+    56:59:void com.gathin.tvhome.LauncherSettingsActivity.lambda$showWallpaperPicker$19(java.util.List,android.content.DialogInterface,int):272:272 -> onClick
     56:59:void onClick(android.content.DialogInterface,int):0 -> onClick
-    60:62:void com.gathin.tvhome.LauncherSettingsActivity.lambda$showWallpaperPicker$18(java.util.List,android.content.DialogInterface,int):230:230 -> onClick
+    60:62:void com.gathin.tvhome.LauncherSettingsActivity.lambda$showWallpaperPicker$19(java.util.List,android.content.DialogInterface,int):273:273 -> onClick
     60:62:void onClick(android.content.DialogInterface,int):0 -> onClick
-    63:68:void com.gathin.tvhome.LauncherSettingsActivity.lambda$showWallpaperPicker$18(java.util.List,android.content.DialogInterface,int):232:232 -> onClick
+    63:68:void com.gathin.tvhome.LauncherSettingsActivity.lambda$showWallpaperPicker$19(java.util.List,android.content.DialogInterface,int):275:275 -> onClick
     63:68:void onClick(android.content.DialogInterface,int):0 -> onClick
-    69:75:void com.gathin.tvhome.LauncherSettingsActivity.lambda$showWallpaperPicker$18(java.util.List,android.content.DialogInterface,int):233:233 -> onClick
+    69:75:void com.gathin.tvhome.LauncherSettingsActivity.lambda$showWallpaperPicker$19(java.util.List,android.content.DialogInterface,int):276:276 -> onClick
     69:75:void onClick(android.content.DialogInterface,int):0 -> onClick
-    76:79:void com.gathin.tvhome.LauncherSettingsActivity.lambda$showWallpaperPicker$18(java.util.List,android.content.DialogInterface,int):234:234 -> onClick
+    76:79:void com.gathin.tvhome.LauncherSettingsActivity.lambda$showWallpaperPicker$19(java.util.List,android.content.DialogInterface,int):277:277 -> onClick
     76:79:void onClick(android.content.DialogInterface,int):0 -> onClick
     80:81:void onClick(android.content.DialogInterface,int):0:0 -> onClick
-    82:84:void com.gathin.tvhome.LauncherSettingsActivity.lambda$showOpenOnStartPicker$21(java.util.List,android.content.DialogInterface,int):269:269 -> onClick
+    82:84:void com.gathin.tvhome.LauncherSettingsActivity.lambda$showOpenOnStartPicker$22(java.util.List,android.content.DialogInterface,int):312:312 -> onClick
     82:84:void onClick(android.content.DialogInterface,int):0 -> onClick
-    85:102:void com.gathin.tvhome.LauncherSettingsActivity.lambda$showOpenOnStartPicker$21(java.util.List,android.content.DialogInterface,int):270:270 -> onClick
+    85:102:void com.gathin.tvhome.LauncherSettingsActivity.lambda$showOpenOnStartPicker$22(java.util.List,android.content.DialogInterface,int):313:313 -> onClick
     85:102:void onClick(android.content.DialogInterface,int):0 -> onClick
     103:112:void com.gathin.tvhome.OpenOnStart.skipThisBoot(android.content.Context):34:34 -> onClick
-    103:112:void com.gathin.tvhome.LauncherSettingsActivity.lambda$showOpenOnStartPicker$21(java.util.List,android.content.DialogInterface,int):272 -> onClick
+    103:112:void com.gathin.tvhome.LauncherSettingsActivity.lambda$showOpenOnStartPicker$22(java.util.List,android.content.DialogInterface,int):315 -> onClick
     103:112:void onClick(android.content.DialogInterface,int):0 -> onClick
     113:123:int com.gathin.tvhome.OpenOnStart.boot(android.content.Context):29:29 -> onClick
     113:123:void com.gathin.tvhome.OpenOnStart.skipThisBoot(android.content.Context):34 -> onClick
-    113:123:void com.gathin.tvhome.LauncherSettingsActivity.lambda$showOpenOnStartPicker$21(java.util.List,android.content.DialogInterface,int):272 -> onClick
+    113:123:void com.gathin.tvhome.LauncherSettingsActivity.lambda$showOpenOnStartPicker$22(java.util.List,android.content.DialogInterface,int):315 -> onClick
     113:123:void onClick(android.content.DialogInterface,int):0 -> onClick
     124:132:void com.gathin.tvhome.OpenOnStart.skipThisBoot(android.content.Context):34:34 -> onClick
-    124:132:void com.gathin.tvhome.LauncherSettingsActivity.lambda$showOpenOnStartPicker$21(java.util.List,android.content.DialogInterface,int):272 -> onClick
+    124:132:void com.gathin.tvhome.LauncherSettingsActivity.lambda$showOpenOnStartPicker$22(java.util.List,android.content.DialogInterface,int):315 -> onClick
     124:132:void onClick(android.content.DialogInterface,int):0 -> onClick
-    133:155:void com.gathin.tvhome.LauncherSettingsActivity.lambda$showOpenOnStartPicker$21(java.util.List,android.content.DialogInterface,int):273:273 -> onClick
+    133:155:void com.gathin.tvhome.LauncherSettingsActivity.lambda$showOpenOnStartPicker$22(java.util.List,android.content.DialogInterface,int):316:316 -> onClick
     133:155:void onClick(android.content.DialogInterface,int):0 -> onClick
-    156:160:void com.gathin.tvhome.LauncherSettingsActivity.lambda$showOpenOnStartPicker$21(java.util.List,android.content.DialogInterface,int):275:275 -> onClick
+    156:160:void com.gathin.tvhome.LauncherSettingsActivity.lambda$showOpenOnStartPicker$22(java.util.List,android.content.DialogInterface,int):318:318 -> onClick
     156:160:void onClick(android.content.DialogInterface,int):0 -> onClick
 com.gathin.tvhome.LauncherSettingsActivity$$ExternalSyntheticLambda3 -> com.gathin.tvhome.LauncherSettingsActivity$$ExternalSyntheticLambda3:
 # {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
@@ -19345,33 +19380,33 @@ com.gathin.tvhome.LauncherSettingsActivity$$ExternalSyntheticLambda3 -> com.gath
       # {"id":"com.android.tools.r8.synthesized"}
     1:10:void <init>(com.gathin.tvhome.LauncherSettingsActivity,android.widget.TextView,int):0:0 -> <init>
       # {"id":"com.android.tools.r8.synthesized"}
-    12:16:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$17(android.widget.TextView,android.view.View):191:191 -> onClick
+    12:16:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$17(android.widget.TextView,android.view.View):214:214 -> onClick
     12:16:void onClick(android.view.View):0 -> onClick
       # {"id":"com.android.tools.r8.synthesized"}
-    17:21:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$17(android.widget.TextView,android.view.View):192:192 -> onClick
+    17:21:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$17(android.widget.TextView,android.view.View):215:215 -> onClick
     17:21:void onClick(android.view.View):0 -> onClick
     22:34:void com.gathin.tvhome.UpdateManager.checkForUpdates(android.app.Activity,boolean,com.gathin.tvhome.UpdateManager$StatusCallback):32:32 -> onClick
-    22:34:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$17(android.widget.TextView,android.view.View):192 -> onClick
+    22:34:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$17(android.widget.TextView,android.view.View):215 -> onClick
     22:34:void onClick(android.view.View):0 -> onClick
     35:42:void com.gathin.tvhome.UpdateManager.checkForUpdates(android.app.Activity,boolean,com.gathin.tvhome.UpdateManager$StatusCallback):36:36 -> onClick
-    35:42:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$17(android.widget.TextView,android.view.View):192 -> onClick
+    35:42:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$17(android.widget.TextView,android.view.View):215 -> onClick
     35:42:void onClick(android.view.View):0 -> onClick
     43:53:void com.gathin.tvhome.UpdateManager.checkForUpdates(android.app.Activity,boolean,com.gathin.tvhome.UpdateManager$StatusCallback):42:42 -> onClick
-    43:53:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$17(android.widget.TextView,android.view.View):192 -> onClick
+    43:53:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$17(android.widget.TextView,android.view.View):215 -> onClick
     43:53:void onClick(android.view.View):0 -> onClick
     54:57:void com.gathin.tvhome.UpdateManager.checkForUpdates(android.app.Activity,boolean,com.gathin.tvhome.UpdateManager$StatusCallback):107:107 -> onClick
-    54:57:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$17(android.widget.TextView,android.view.View):192 -> onClick
+    54:57:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$17(android.widget.TextView,android.view.View):215 -> onClick
     54:57:void onClick(android.view.View):0 -> onClick
     58:59:void onClick(android.view.View):0:0 -> onClick
-    60:64:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$15(android.widget.TextView,android.view.View):179:179 -> onClick
+    60:64:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$15(android.widget.TextView,android.view.View):201:201 -> onClick
     60:64:void onClick(android.view.View):0 -> onClick
-    65:69:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$15(android.widget.TextView,android.view.View):180:180 -> onClick
+    65:69:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$15(android.widget.TextView,android.view.View):202:202 -> onClick
     65:69:void onClick(android.view.View):0 -> onClick
     70:81:void com.gathin.tvhome.WallpaperFetcher.fetchFromReddit(android.content.Context,com.gathin.tvhome.WallpaperFetcher$Callback):31:31 -> onClick
-    70:81:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$15(android.widget.TextView,android.view.View):180 -> onClick
+    70:81:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$15(android.widget.TextView,android.view.View):202 -> onClick
     70:81:void onClick(android.view.View):0 -> onClick
     82:86:void com.gathin.tvhome.WallpaperFetcher.fetchFromReddit(android.content.Context,com.gathin.tvhome.WallpaperFetcher$Callback):66:66 -> onClick
-    82:86:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$15(android.widget.TextView,android.view.View):180 -> onClick
+    82:86:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$15(android.widget.TextView,android.view.View):202 -> onClick
     82:86:void onClick(android.view.View):0 -> onClick
 com.gathin.tvhome.LauncherSettingsActivity$$ExternalSyntheticLambda5 -> com.gathin.tvhome.LauncherSettingsActivity$$ExternalSyntheticLambda5:
 # {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
@@ -19382,22 +19417,22 @@ com.gathin.tvhome.LauncherSettingsActivity$$ExternalSyntheticLambda5 -> com.gath
       # {"id":"com.android.tools.r8.synthesized"}
     1:10:void <init>(com.gathin.tvhome.LauncherSettingsActivity,int,int):0:0 -> <init>
       # {"id":"com.android.tools.r8.synthesized"}
-    6:14:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$3(int,android.view.View):97:97 -> onClick
+    6:14:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$3(int,android.view.View):103:103 -> onClick
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Landroid/view/View;)V"}
-    15:16:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$3(int,android.view.View):98:98 -> onClick
-    17:31:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$3(int,android.view.View):99:99 -> onClick
-    32:34:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$3(int,android.view.View):100:100 -> onClick
-    35:38:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$3(int,android.view.View):101:101 -> onClick
-    39:47:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$2(int,android.view.View):85:85 -> onClick
-    48:49:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$2(int,android.view.View):86:86 -> onClick
-    50:64:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$2(int,android.view.View):87:87 -> onClick
-    65:67:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$2(int,android.view.View):88:88 -> onClick
-    68:71:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$2(int,android.view.View):89:89 -> onClick
-    72:80:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$1(int,android.view.View):73:73 -> onClick
-    81:82:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$1(int,android.view.View):74:74 -> onClick
-    83:97:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$1(int,android.view.View):75:75 -> onClick
-    98:100:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$1(int,android.view.View):76:76 -> onClick
-    101:104:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$1(int,android.view.View):77:77 -> onClick
+    15:16:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$3(int,android.view.View):104:104 -> onClick
+    17:31:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$3(int,android.view.View):105:105 -> onClick
+    32:34:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$3(int,android.view.View):106:106 -> onClick
+    35:38:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$3(int,android.view.View):107:107 -> onClick
+    39:47:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$2(int,android.view.View):90:90 -> onClick
+    48:49:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$2(int,android.view.View):91:91 -> onClick
+    50:64:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$2(int,android.view.View):92:92 -> onClick
+    65:67:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$2(int,android.view.View):93:93 -> onClick
+    68:71:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$2(int,android.view.View):94:94 -> onClick
+    72:80:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$1(int,android.view.View):77:77 -> onClick
+    81:82:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$1(int,android.view.View):78:78 -> onClick
+    83:97:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$1(int,android.view.View):79:79 -> onClick
+    98:100:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$1(int,android.view.View):80:80 -> onClick
+    101:104:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$1(int,android.view.View):81:81 -> onClick
 com.gathin.tvhome.LibraryLoads -> com.gathin.tvhome.LibraryLoads:
 # {"id":"sourceFile","fileName":"LibraryLoads.java"}
 com.gathin.tvhome.MainActivity -> com.gathin.tvhome.MainActivity:
@@ -25369,9 +25404,9 @@ com.gathin.tvhome.UpdateManager$$ExternalSyntheticLambda0 -> com.gathin.tvhome.U
     java.lang.String com.gathin.tvhome.UpdateManager$$InternalSyntheticLambda$3$fea7254b7512e6e8ee18a42f46172baeb9945d1f459806396f1efe4e434dfce1$0.f$1 -> f$1
       # {"id":"com.android.tools.r8.synthesized"}
     com.gathin.tvhome.UpdateManager$StatusCallback com.gathin.tvhome.UpdateManager$$InternalSyntheticLambda$3$fea7254b7512e6e8ee18a42f46172baeb9945d1f459806396f1efe4e434dfce1$0.f$3 -> f$3
-      # {"id":"com.android.tools.r8.residualsignature","signature":"Lcom/gathin/tvhome/LauncherSettingsActivity$$ExternalSyntheticLambda15;"}
+      # {"id":"com.android.tools.r8.residualsignature","signature":"Lcom/gathin/tvhome/LauncherSettingsActivity$$ExternalSyntheticLambda16;"}
       # {"id":"com.android.tools.r8.synthesized"}
-    1:12:void <init>(android.app.Activity,java.lang.String,com.gathin.tvhome.LauncherSettingsActivity$$ExternalSyntheticLambda15,int):0:0 -> <init>
+    1:12:void <init>(android.app.Activity,java.lang.String,com.gathin.tvhome.LauncherSettingsActivity$$ExternalSyntheticLambda16,int):0:0 -> <init>
       # {"id":"com.android.tools.r8.synthesized"}
     12:22:void com.gathin.tvhome.UpdateManager.lambda$downloadAndInstall$11(android.app.Activity,java.lang.String,com.gathin.tvhome.UpdateManager$StatusCallback):114:114 -> run
     12:22:void run():0 -> run
@@ -25467,9 +25502,9 @@ com.gathin.tvhome.UpdateManager$$ExternalSyntheticLambda1 -> com.gathin.tvhome.U
 # {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
 # {"id":"com.android.tools.r8.synthesized"}
     com.gathin.tvhome.UpdateManager$StatusCallback com.gathin.tvhome.UpdateManager$$InternalSyntheticLambda$4$87eef6579b08aacb2377a598447933ab76141f83e0754edd3ac11811b4e3282a$0.f$0 -> f$0
-      # {"id":"com.android.tools.r8.residualsignature","signature":"Lcom/gathin/tvhome/LauncherSettingsActivity$$ExternalSyntheticLambda15;"}
+      # {"id":"com.android.tools.r8.residualsignature","signature":"Lcom/gathin/tvhome/LauncherSettingsActivity$$ExternalSyntheticLambda16;"}
       # {"id":"com.android.tools.r8.synthesized"}
-    1:8:void <init>(com.gathin.tvhome.LauncherSettingsActivity$$ExternalSyntheticLambda15,int):0:0 -> <init>
+    1:8:void <init>(com.gathin.tvhome.LauncherSettingsActivity$$ExternalSyntheticLambda16,int):0:0 -> <init>
       # {"id":"com.android.tools.r8.synthesized"}
     8:13:void com.gathin.tvhome.UpdateManager.lambda$downloadAndInstall$8(com.gathin.tvhome.UpdateManager$StatusCallback):129:129 -> run
     8:13:void run():0 -> run
@@ -25504,11 +25539,11 @@ com.gathin.tvhome.UpdateManager$$ExternalSyntheticLambda10 -> com.gathin.tvhome.
     18:43:void run():0 -> run
       # {"id":"com.android.tools.r8.synthesized"}
     44:60:void run():0:0 -> run
-    61:66:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$13(android.widget.TextView,java.lang.String):182:182 -> run
+    61:66:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$13(android.widget.TextView,java.lang.String):204:204 -> run
     61:66:void run():0 -> run
-    67:73:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$13(android.widget.TextView,java.lang.String):183:183 -> run
+    67:73:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$13(android.widget.TextView,java.lang.String):205:205 -> run
     67:73:void run():0 -> run
-    74:77:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$13(android.widget.TextView,java.lang.String):184:184 -> run
+    74:77:void com.gathin.tvhome.LauncherSettingsActivity.lambda$onCreate$13(android.widget.TextView,java.lang.String):206:206 -> run
     74:77:void run():0 -> run
     78:89:void run():0:0 -> run
     90:94:void com.gathin.tvhome.AppLibraryDialog.lambda$showActions$12(android.content.Intent,android.content.pm.ResolveInfo):549:549 -> run
@@ -25551,7 +25586,7 @@ com.gathin.tvhome.UpdateManager$$ExternalSyntheticLambda4 -> com.gathin.tvhome.U
     com.gathin.tvhome.UpdateManager$StatusCallback com.gathin.tvhome.UpdateManager$$InternalSyntheticLambda$4$87eef6579b08aacb2377a598447933ab76141f83e0754edd3ac11811b4e3282a$3.f$4 -> f$4
       # {"id":"com.android.tools.r8.residualsignature","signature":"Ljava/lang/Object;"}
       # {"id":"com.android.tools.r8.synthesized"}
-    1:1:void <init>(android.app.Activity,java.lang.String,java.lang.String,java.lang.String,com.gathin.tvhome.LauncherSettingsActivity$$ExternalSyntheticLambda15):0:0 -> <init>
+    1:1:void <init>(android.app.Activity,java.lang.String,java.lang.String,java.lang.String,com.gathin.tvhome.LauncherSettingsActivity$$ExternalSyntheticLambda16):0:0 -> <init>
       # {"id":"com.android.tools.r8.synthesized"}
     2:2:void <init>(com.gathin.tvhome.AppLibraryDialog,android.content.pm.ResolveInfo,android.content.pm.PackageManager,java.lang.String,android.widget.ImageView):0:0 -> <init>
       # {"id":"com.android.tools.r8.synthesized"}
@@ -25577,11 +25612,11 @@ com.gathin.tvhome.UpdateManager$$ExternalSyntheticLambda5 -> com.gathin.tvhome.U
 # {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
 # {"id":"com.android.tools.r8.synthesized"}
     com.gathin.tvhome.UpdateManager$StatusCallback com.gathin.tvhome.UpdateManager$$InternalSyntheticLambda$4$87eef6579b08aacb2377a598447933ab76141f83e0754edd3ac11811b4e3282a$4.f$0 -> f$0
-      # {"id":"com.android.tools.r8.residualsignature","signature":"Lcom/gathin/tvhome/LauncherSettingsActivity$$ExternalSyntheticLambda15;"}
+      # {"id":"com.android.tools.r8.residualsignature","signature":"Lcom/gathin/tvhome/LauncherSettingsActivity$$ExternalSyntheticLambda16;"}
       # {"id":"com.android.tools.r8.synthesized"}
     java.lang.Exception com.gathin.tvhome.UpdateManager$$InternalSyntheticLambda$4$87eef6579b08aacb2377a598447933ab76141f83e0754edd3ac11811b4e3282a$4.f$1 -> f$1
       # {"id":"com.android.tools.r8.synthesized"}
-    1:10:void <init>(com.gathin.tvhome.LauncherSettingsActivity$$ExternalSyntheticLambda15,java.lang.Exception,int):0:0 -> <init>
+    1:10:void <init>(com.gathin.tvhome.LauncherSettingsActivity$$ExternalSyntheticLambda16,java.lang.Exception,int):0:0 -> <init>
       # {"id":"com.android.tools.r8.synthesized"}
     6:31:void com.gathin.tvhome.UpdateManager.lambda$downloadAndInstall$10(com.gathin.tvhome.UpdateManager$StatusCallback,java.lang.Exception):148:148 -> run
       # {"id":"com.android.tools.r8.residualsignature","signature":"()V"}
@@ -25594,9 +25629,9 @@ com.gathin.tvhome.UpdateManager$$ExternalSyntheticLambda6 -> com.gathin.tvhome.U
     java.lang.String com.gathin.tvhome.UpdateManager$$InternalSyntheticLambda$5$de38420a7619d1f845c7c975bcfcdf5ee4bfa48f43f9f4ca3647f6271a129385$0.f$1 -> f$1
       # {"id":"com.android.tools.r8.synthesized"}
     com.gathin.tvhome.UpdateManager$StatusCallback com.gathin.tvhome.UpdateManager$$InternalSyntheticLambda$5$de38420a7619d1f845c7c975bcfcdf5ee4bfa48f43f9f4ca3647f6271a129385$0.f$2 -> f$2
-      # {"id":"com.android.tools.r8.residualsignature","signature":"Lcom/gathin/tvhome/LauncherSettingsActivity$$ExternalSyntheticLambda15;"}
+      # {"id":"com.android.tools.r8.residualsignature","signature":"Lcom/gathin/tvhome/LauncherSettingsActivity$$ExternalSyntheticLambda16;"}
       # {"id":"com.android.tools.r8.synthesized"}
-    1:10:void <init>(android.app.Activity,java.lang.String,com.gathin.tvhome.LauncherSettingsActivity$$ExternalSyntheticLambda15):0:0 -> <init>
+    1:10:void <init>(android.app.Activity,java.lang.String,com.gathin.tvhome.LauncherSettingsActivity$$ExternalSyntheticLambda16):0:0 -> <init>
       # {"id":"com.android.tools.r8.synthesized"}
     1:13:void com.gathin.tvhome.UpdateManager.downloadAndInstall(android.app.Activity,java.lang.String,com.gathin.tvhome.UpdateManager$StatusCallback):111:111 -> onClick
     1:13:void com.gathin.tvhome.UpdateManager.lambda$checkForUpdates$3(android.app.Activity,java.lang.String,com.gathin.tvhome.UpdateManager$StatusCallback,android.content.DialogInterface,int):100 -> onClick

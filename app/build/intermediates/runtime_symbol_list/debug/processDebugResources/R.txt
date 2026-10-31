@@ -186,9 +186,10 @@ int drawable pill_text 0x7f070024
 int drawable pill_text_dim 0x7f070025
 int drawable pill_text_mid 0x7f070026
 int drawable race_bar 0x7f070027
-int drawable settings_choice_bg 0x7f070028
-int drawable status_dot 0x7f070029
-int drawable tile_bg 0x7f07002a
+int drawable settings_card_bg 0x7f070028
+int drawable settings_choice_bg 0x7f070029
+int drawable status_dot 0x7f07002a
+int drawable tile_bg 0x7f07002b
 int font outfit 0x7f080000
 int font outfit_extralight 0x7f080001
 int font outfit_light 0x7f080002

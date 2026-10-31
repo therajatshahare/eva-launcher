@@ -2884,6 +2884,7 @@ com.gathin.tvhome.R$drawable:
     public static int pill_text
     public static int pill_text_dim
     public static int pill_text_mid
+    public static int settings_card_bg
     public static int settings_choice_bg
     public static int status_dot
     public static int tile_bg

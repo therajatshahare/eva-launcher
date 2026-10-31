@@ -24,6 +24,10 @@
         "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\drawable\\ic_ethernet.xml"
     },
     {
+        "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-debug-10:\\xml_file_paths.xml.flat",
+        "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\xml\\file_paths.xml"
+    },
+    {
         "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-debug-10:\\drawable_status_dot.xml.flat",
         "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\drawable\\status_dot.xml"
     },
@@ -152,10 +156,6 @@
         "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\drawable-nodpi\\banner.jpg"
     },
     {
-        "merged": "com.gathin.tvhome.app-debug-10:/xml_file_paths.xml.flat",
-        "source": "com.gathin.tvhome.app-main-12:/xml/file_paths.xml"
-    },
-    {
         "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-debug-10:\\font_outfit.ttf.flat",
         "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\font\\outfit.ttf"
     },
@@ -174,6 +174,10 @@
     {
         "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-debug-10:\\layout-iw_dream_clock.xml.flat",
         "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\layout-iw\\dream_clock.xml"
+    },
+    {
+        "merged": "com.gathin.tvhome.app-debug-10:/drawable_settings_card_bg.xml.flat",
+        "source": "com.gathin.tvhome.app-main-12:/drawable/settings_card_bg.xml"
     },
     {
         "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-debug-10:\\drawable_pill_text_dim.xml.flat",
@@ -202,6 +206,10 @@
     {
         "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-debug-10:\\drawable_ic_swap_vert.xml.flat",
         "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\drawable\\ic_swap_vert.xml"
+    },
+    {
+        "merged": "com.gathin.tvhome.app-debug-10:/layout_activity_launcher_settings.xml.flat",
+        "source": "com.gathin.tvhome.app-main-12:/layout/activity_launcher_settings.xml"
     },
     {
         "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-debug-10:\\drawable_ic_apps.xml.flat",

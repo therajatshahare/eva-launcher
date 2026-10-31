@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gathin.tvhome.DockCornersTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-31T11:42:02.991Z" hostname="DESKTOP-EOQDD3G" time="0.01">
+<testsuite name="com.gathin.tvhome.DockCornersTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-31T12:22:30.236Z" hostname="DESKTOP-EOQDD3G" time="0.013">
   <properties/>
-  <testcase name="evenPaddingIsTheGapBetweenTilesUnlessTheEdgeIsTighter" classname="com.gathin.tvhome.DockCornersTest" time="0.007"/>
-  <testcase name="evenPaddingStaysPositiveAndBelowTheCellFromFourToSevenColumns" classname="com.gathin.tvhome.DockCornersTest" time="0.002"/>
-  <testcase name="bandRadiusIsTileRadiusPlusPadding" classname="com.gathin.tvhome.DockCornersTest" time="0.001"/>
+  <testcase name="evenPaddingIsTheGapBetweenTilesUnlessTheEdgeIsTighter" classname="com.gathin.tvhome.DockCornersTest" time="0.006"/>
+  <testcase name="evenPaddingStaysPositiveAndBelowTheCellFromFourToSevenColumns" classname="com.gathin.tvhome.DockCornersTest" time="0.003"/>
+  <testcase name="bandRadiusIsTileRadiusPlusPadding" classname="com.gathin.tvhome.DockCornersTest" time="0.003"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

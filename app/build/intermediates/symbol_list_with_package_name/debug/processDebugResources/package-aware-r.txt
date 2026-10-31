@@ -187,6 +187,7 @@ drawable pill_text
 drawable pill_text_dim
 drawable pill_text_mid
 drawable race_bar
+drawable settings_card_bg
 drawable settings_choice_bg
 drawable status_dot
 drawable tile_bg
