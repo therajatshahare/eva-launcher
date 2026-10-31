@@ -2,7 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#FF141A22"
+    android:background="@drawable/dialog_rounded_bg"
+    android:clipChildren="false"
+    android:clipToPadding="false"
     android:orientation="vertical"
     android:padding="28dp">
 
@@ -11,8 +13,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/wallpaper_label"
-        android:textColor="#FFFFFFFF"
-        android:textSize="24sp"
+        android:textColor="#FF4ADE80"
+        android:textSize="22sp"
         android:fontFamily="@string/font_medium" />
 
     <TextView

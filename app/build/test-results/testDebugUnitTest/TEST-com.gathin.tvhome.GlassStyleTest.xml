@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gathin.tvhome.GlassStyleTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-31T14:22:54.015Z" hostname="DESKTOP-EOQDD3G" time="0.004">
+<testsuite name="com.gathin.tvhome.GlassStyleTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-31T15:20:14.308Z" hostname="DESKTOP-EOQDD3G" time="0.003">
   <properties/>
   <testcase name="rimByNameAnyCase" classname="com.gathin.tvhome.GlassStyleTest" time="0.001"/>
   <testcase name="anythingElseIsGlass" classname="com.gathin.tvhome.GlassStyleTest" time="0.001"/>
-  <testcase name="haloByNameAnyCase" classname="com.gathin.tvhome.GlassStyleTest" time="0.002"/>
+  <testcase name="haloByNameAnyCase" classname="com.gathin.tvhome.GlassStyleTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

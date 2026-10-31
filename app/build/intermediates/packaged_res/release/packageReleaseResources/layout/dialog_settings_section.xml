@@ -2,7 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#FF121820"
+    android:background="@drawable/dialog_rounded_bg"
     android:clipChildren="false"
     android:clipToPadding="false"
     android:padding="28dp">

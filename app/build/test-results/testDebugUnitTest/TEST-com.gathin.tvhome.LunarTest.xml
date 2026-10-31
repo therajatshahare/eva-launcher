@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gathin.tvhome.LunarTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2026-10-31T14:22:54.322Z" hostname="DESKTOP-EOQDD3G" time="1.129">
+<testsuite name="com.gathin.tvhome.LunarTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2026-10-31T15:20:14.578Z" hostname="DESKTOP-EOQDD3G" time="1.262">
   <properties/>
-  <testcase name="lunarNewYear" classname="com.gathin.tvhome.LunarTest" time="0.01"/>
-  <testcase name="midAutumn" classname="com.gathin.tvhome.LunarTest" time="0.001"/>
-  <testcase name="dayBeforeANewMoonJustAfterMidnightIsTheThirtieth" classname="com.gathin.tvhome.LunarTest" time="0.002"/>
+  <testcase name="lunarNewYear" classname="com.gathin.tvhome.LunarTest" time="0.009"/>
+  <testcase name="midAutumn" classname="com.gathin.tvhome.LunarTest" time="0.0"/>
+  <testcase name="dayBeforeANewMoonJustAfterMidnightIsTheThirtieth" classname="com.gathin.tvhome.LunarTest" time="0.001"/>
   <testcase name="leapSecondMonth2023StartsOn22March" classname="com.gathin.tvhome.LunarTest" time="0.001"/>
-  <testcase name="leapSixthMonth2025" classname="com.gathin.tvhome.LunarTest" time="0.001"/>
+  <testcase name="leapSixthMonth2025" classname="com.gathin.tvhome.LunarTest" time="0.002"/>
   <testcase name="koreanHolidays2026" classname="com.gathin.tvhome.LunarTest" time="0.001"/>
-  <testcase name="offsetFollowsTheLanguageUnlessConfigured" classname="com.gathin.tvhome.LunarTest" time="0.003"/>
+  <testcase name="offsetFollowsTheLanguageUnlessConfigured" classname="com.gathin.tvhome.LunarTest" time="0.001"/>
   <testcase name="koreaAndChinaDifferIn1997And2027" classname="com.gathin.tvhome.LunarTest" time="0.001"/>
   <testcase name="vietnamAndChinaDifferIn1985" classname="com.gathin.tvhome.LunarTest" time="0.001"/>
   <testcase name="vietnamAndChinaDifferIn2007" classname="com.gathin.tvhome.LunarTest" time="0.001"/>
-  <testcase name="lunarNewYear2023" classname="com.gathin.tvhome.LunarTest" time="0.003"/>
-  <testcase name="everyDayFrom1900To2099IsDay1To30" classname="com.gathin.tvhome.LunarTest" time="1.097"/>
+  <testcase name="lunarNewYear2023" classname="com.gathin.tvhome.LunarTest" time="0.002"/>
+  <testcase name="everyDayFrom1900To2099IsDay1To30" classname="com.gathin.tvhome.LunarTest" time="1.234"/>
   <testcase name="dayBeforeNewYearBelongsToTheOldYear" classname="com.gathin.tvhome.LunarTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

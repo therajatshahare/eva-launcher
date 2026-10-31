@@ -9,6 +9,7 @@ import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.view.View;
@@ -28,11 +29,11 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/** Category Grid View Launcher Settings with Sub-menu Sections and Focus Scale Animations. */
+/** Remote-friendly settings owned by the launcher; system settings stay one row away. */
 public final class LauncherSettingsActivity extends Activity {
     @Override
     protected void attachBaseContext(android.content.Context base) {
-        super.attachBaseContext(LauncherLocale.wrap(base));
+        super.attachBaseContext(LauncherLocale.wrap(base));   // locale
     }
 
     static final String EXTRA_REORDER = "com.gathin.tvhome.extra.REORDER_FROM_SETTINGS";
@@ -64,7 +65,8 @@ public final class LauncherSettingsActivity extends Activity {
     private static final int CAT_WALLPAPER = 3;
     private static final int CAT_UPDATES = 4;
     private static final int CAT_SYSTEM = 5;
-    private static final int CAT_REORDER = 6;
+    private static final int CAT_ABOUT = 6;
+    private static final int CAT_REORDER = 7;
 
     @Override
     protected void onCreate(Bundle state) {
@@ -87,6 +89,7 @@ public final class LauncherSettingsActivity extends Activity {
         categories.add(new CategoryItem(CAT_WALLPAPER, "Wallpaper & Themes", R.drawable.ic_picture));
         categories.add(new CategoryItem(CAT_UPDATES, "Updates & Startup", R.drawable.ic_settings));
         categories.add(new CategoryItem(CAT_SYSTEM, "System Settings", R.drawable.ic_wifi));
+        categories.add(new CategoryItem(CAT_ABOUT, "About & Credits", R.drawable.ic_home_settings_pill));
         if (config.launcherSettingsButton) {
             categories.add(new CategoryItem(CAT_REORDER, getString(R.string.reorder), R.drawable.ic_swap_vert));
         }
@@ -115,17 +118,21 @@ public final class LauncherSettingsActivity extends Activity {
                 .setNegativeButton(android.R.string.cancel, null)
                 .create();
 
+        if (dialog.getWindow() != null) {
+            dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
+        }
+
         switch (category.id) {
             case CAT_HOMESCREEN:
                 subtitle.setText("Customize grid columns, dock rows, and opacity");
-                buildHomescreenSection(container, dialog);
+                buildHomescreenSection(container);
                 break;
             case CAT_CLOCK:
                 subtitle.setText("Customize clock format and motion animations");
-                buildClockSection(container, dialog);
+                buildClockSection(container);
                 break;
             case CAT_WALLPAPER:
-                subtitle.setText("Choose wallpapers and fetch online art");
+                subtitle.setText("Themes and Wallpaper visual selection");
                 buildWallpaperSection(container, dialog);
                 break;
             case CAT_UPDATES:
@@ -134,14 +141,18 @@ public final class LauncherSettingsActivity extends Activity {
                 break;
             case CAT_SYSTEM:
                 subtitle.setText("Access default home and TV system settings");
-                buildSystemSection(container, dialog);
+                buildSystemSection(container);
+                break;
+            case CAT_ABOUT:
+                subtitle.setText("Developer details, support links, and credits");
+                buildAboutSection(container);
                 break;
         }
 
         dialog.show();
     }
 
-    private void buildHomescreenSection(LinearLayout container, AlertDialog dialog) {
+    private void buildHomescreenSection(LinearLayout container) {
         // Apps per row
         addLabel(container, getString(R.string.columns_label));
         LinearLayout colRow = createHorizontalRow();
@@ -194,7 +205,7 @@ public final class LauncherSettingsActivity extends Activity {
         container.addView(dockRow);
     }
 
-    private void buildClockSection(LinearLayout container, AlertDialog dialog) {
+    private void buildClockSection(LinearLayout container) {
         addLabel(container, getString(R.string.dream_name));
         LinearLayout clockRow = createHorizontalRow();
         TextView[] clockBtns = new TextView[3];
@@ -246,7 +257,28 @@ public final class LauncherSettingsActivity extends Activity {
     }
 
     private void buildWallpaperSection(LinearLayout container, AlertDialog dialog) {
-        TextView pickBtn = createFullRowButton("Choose Wallpaper (Card Grid)");
+        // SECTION 1: THEMES
+        addSectionHeader(container, "1. THEMES");
+
+        TextView defaultThemeBtn = createFullRowButton("Default Theme");
+        defaultThemeBtn.setOnClickListener(v -> {
+            choices.edit().remove(Config.WALLPAPER_CHOICE_KEY).apply();
+            changed();
+            Toast.makeText(this, "Default theme active", Toast.LENGTH_SHORT).show();
+            dialog.dismiss();
+        });
+        container.addView(defaultThemeBtn);
+
+        TextView addAddonBtn = createFullRowButton("+ Add Theme Addon");
+        addAddonBtn.setOnClickListener(v -> {
+            Toast.makeText(this, "Theme Addons: Place custom theme folders in Android/data/com.gathin.tvhome/files/", Toast.LENGTH_LONG).show();
+        });
+        container.addView(addAddonBtn);
+
+        // SECTION 2: WALLPAPERS
+        addSectionHeader(container, "2. WALLPAPERS");
+
+        TextView pickBtn = createFullRowButton("Choose Wallpaper (Visual Grid Previews)");
         pickBtn.setOnClickListener(v -> {
             dialog.dismiss();
             showWallpaperPicker();
@@ -264,24 +296,6 @@ public final class LauncherSettingsActivity extends Activity {
             });
         });
         container.addView(redditBtn);
-
-        TextView themeBtn = createFullRowButton(getString(R.string.follow_theme));
-        themeBtn.setOnClickListener(v -> {
-            choices.edit().remove("columns").remove(Config.ROWS_BELOW_DOCK_KEY).remove("animations")
-                    .remove("advanced_effects").remove(Config.WALLPAPER_CHOICE_KEY)
-                    .remove(Config.DOCK_OPACITY_KEY).remove(Config.CLOCK_FORMAT_KEY).remove(OpenOnStart.KEY).commit();
-            Config current = Config.load(this);
-            columns = current.columns;
-            rowsBelowDock = current.rowsBelowDock;
-            dockOpacity = current.dockOpacity;
-            clockFormat = current.clockFormat;
-            animations = current.animations;
-            advancedEffects = current.animations && current.advancedEffects;
-            changed();
-            Toast.makeText(this, "Theme choices reset", Toast.LENGTH_SHORT).show();
-            dialog.dismiss();
-        });
-        container.addView(themeBtn);
     }
 
     private void buildUpdatesSection(LinearLayout container, AlertDialog dialog) {
@@ -305,7 +319,7 @@ public final class LauncherSettingsActivity extends Activity {
         }
     }
 
-    private void buildSystemSection(LinearLayout container, AlertDialog dialog) {
+    private void buildSystemSection(LinearLayout container) {
         TextView defaultHomeBtn = createFullRowButton(getString(R.string.home_settings));
         defaultHomeBtn.setOnClickListener(v -> {
             Toast.makeText(this, R.string.home_settings_help, Toast.LENGTH_LONG).show();
@@ -316,6 +330,54 @@ public final class LauncherSettingsActivity extends Activity {
         TextView tvSettingsBtn = createFullRowButton(getString(R.string.tv_settings));
         tvSettingsBtn.setOnClickListener(v -> open(SystemSettings.intent(this, Settings.ACTION_SETTINGS)));
         container.addView(tvSettingsBtn);
+    }
+
+    private void buildAboutSection(LinearLayout container) {
+        addLabel(container, "EVA TV Launcher v1.8");
+
+        TextView devBtn = createFullRowButton("Developer: Rajat Shahare");
+        devBtn.setOnClickListener(v -> Toast.makeText(this, "Rajat Shahare", Toast.LENGTH_SHORT).show());
+        container.addView(devBtn);
+
+        TextView emailBtn = createFullRowButton("Contact Email: rns@cyberservices.com");
+        emailBtn.setOnClickListener(v -> Toast.makeText(this, "Email: rns@cyberservices.com", Toast.LENGTH_LONG).show());
+        container.addView(emailBtn);
+
+        TextView telegramBtn = createFullRowButton("Telegram Channel: t.me/EvaTVLauncher");
+        telegramBtn.setOnClickListener(v -> openUrl("https://t.me/EvaTVLauncher"));
+        container.addView(telegramBtn);
+
+        TextView githubBtn = createFullRowButton("GitHub Repository: therajatshahare/eva-launcher");
+        githubBtn.setOnClickListener(v -> openUrl("https://github.com/therajatshahare/eva-launcher"));
+        container.addView(githubBtn);
+
+        addLabel(container, "Credits & Acknowledgments");
+
+        TextView creditBtn = createFullRowButton("Based on CleanYourTV by Gathin23");
+        creditBtn.setOnClickListener(v -> openUrl("https://github.com/Gathin23/cleanyourtv"));
+        container.addView(creditBtn);
+    }
+
+    private void openUrl(String url) {
+        try {
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+            startActivity(intent);
+        } catch (Exception e) {
+            Toast.makeText(this, url, Toast.LENGTH_LONG).show();
+        }
+    }
+
+    private void addSectionHeader(LinearLayout container, String title) {
+        TextView header = new TextView(this);
+        header.setText(title);
+        header.setTextColor(0xFF4ADE80);
+        header.setTextSize(13);
+        header.setLetterSpacing(0.05f);
+        header.setTypeface(android.graphics.Typeface.DEFAULT_BOLD);
+        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        lp.topMargin = (int) (16 * getResources().getDisplayMetrics().density);
+        header.setLayoutParams(lp);
+        container.addView(header);
     }
 
     private void addLabel(LinearLayout container, String text) {
@@ -531,6 +593,10 @@ public final class LauncherSettingsActivity extends Activity {
                 .setNegativeButton(android.R.string.cancel, null)
                 .create();
 
+        if (dialog.getWindow() != null) {
+            dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
+        }
+
         grid.setAdapter(new WallpaperGridAdapter(this, items, currentChoice, item -> {
             dialog.dismiss();
             if (item.isThemeDefault) {
@@ -710,13 +776,6 @@ public final class LauncherSettingsActivity extends Activity {
         advancedEffects = enabled;
         choices.edit().putBoolean("advanced_effects", enabled).apply();
         changed();
-    }
-
-    private boolean hasOnTvChoices() {
-        return choices.contains("columns") || choices.contains(Config.ROWS_BELOW_DOCK_KEY)
-                || choices.contains("animations") || choices.contains("advanced_effects")
-                || choices.contains(Config.WALLPAPER_CHOICE_KEY) || choices.contains(Config.DOCK_OPACITY_KEY)
-                || choices.contains(Config.CLOCK_FORMAT_KEY) || choices.contains(OpenOnStart.KEY);
     }
 
     private void open(Intent intent) {

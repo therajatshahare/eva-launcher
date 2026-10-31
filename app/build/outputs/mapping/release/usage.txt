@@ -2810,6 +2810,7 @@ com.gathin.tvhome.LaunchActions:
 com.gathin.tvhome.LauncherLocale:
     private void <init>()
 com.gathin.tvhome.LauncherSettingsActivity:
+    private static final int CAT_ABOUT
     private static final int CAT_CLOCK
     private static final int CAT_HOMESCREEN
     private static final int CAT_REORDER
@@ -2817,7 +2818,6 @@ com.gathin.tvhome.LauncherSettingsActivity:
     private static final int CAT_UPDATES
     private static final int CAT_WALLPAPER
     static final java.lang.String EXTRA_REORDER
-    private boolean hasOnTvChoices()
 com.gathin.tvhome.LibraryApps:
     static final int MAX_ADDED
     private static final int MAX_BYTES
@@ -2882,6 +2882,7 @@ com.gathin.tvhome.R$color:
     private void <init>()
 com.gathin.tvhome.R$drawable:
     public static int banner_tv
+    public static int dialog_rounded_bg
     public static int ic_apps_pill
     public static int input_row_bg
     public static int pill_bg
@@ -2913,6 +2914,7 @@ com.gathin.tvhome.R$string:
     public static int card_show
     public static int date_format
     public static int date_format_home
+    public static int follow_theme
     public static int follow_theme_hint
     public static int font_body
     public static int font_extralight

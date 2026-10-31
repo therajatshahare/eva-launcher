@@ -91,6 +91,7 @@ color pill_icon_offline
 color pill_icon_online
 drawable banner
 drawable banner_tv
+drawable dialog_rounded_bg
 drawable glass_panel
 drawable halloween_bat
 drawable halloween_ghost
