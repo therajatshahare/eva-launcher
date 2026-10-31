@@ -2247,6 +2247,7 @@ androidx.recyclerview.widget.PagerSnapHelper$1
 androidx.recyclerview.widget.PagerSnapHelper
 androidx.recyclerview.widget.RecyclerView$Adapter:
     public final androidx.recyclerview.widget.RecyclerView$Adapter$StateRestorationPolicy getStateRestorationPolicy()
+    public final void notifyItemChanged(int)
     public final void notifyItemChanged(int,java.lang.Object)
     public final void notifyItemInserted(int)
     public final void notifyItemRangeChanged(int,int,java.lang.Object)
@@ -5405,7 +5406,6 @@ androidx.recyclerview.widget.RecyclerView$Adapter:
     public abstract boolean hasObservers()
     public abstract boolean hasStableIds()
     public final void notifyDataSetChanged()
-    public abstract void notifyItemChanged()
     public abstract void notifyItemMoved()
     public abstract void notifyItemRangeChanged()
     public abstract void onAttachedToRecyclerView()

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gathin.tvhome.InputNamesTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-31T16:41:50.145Z" hostname="DESKTOP-EOQDD3G" time="0.006">
+<testsuite name="com.gathin.tvhome.InputNamesTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-31T17:23:27.956Z" hostname="DESKTOP-EOQDD3G" time="0.01">
   <properties/>
-  <testcase name="anUnknownTypeLeavesTheNameAlone" classname="com.gathin.tvhome.InputNamesTest" time="0.002"/>
+  <testcase name="anUnknownTypeLeavesTheNameAlone" classname="com.gathin.tvhome.InputNamesTest" time="0.004"/>
   <testcase name="aTypeWithNoNameIsJustItsEmoji" classname="com.gathin.tvhome.InputNamesTest" time="0.001"/>
   <testcase name="theTextNullAndBlanksAreNoName" classname="com.gathin.tvhome.InputNamesTest" time="0.001"/>
-  <testcase name="otherNamesAreKept" classname="com.gathin.tvhome.InputNamesTest" time="0.001"/>
+  <testcase name="otherNamesAreKept" classname="com.gathin.tvhome.InputNamesTest" time="0.002"/>
   <testcase name="philipsTypeBecomesAnEmoji" classname="com.gathin.tvhome.InputNamesTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

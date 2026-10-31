@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gathin.tvhome.CardFeatureTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-31T16:41:49.844Z" hostname="DESKTOP-EOQDD3G" time="0.016">
+<testsuite name="com.gathin.tvhome.CardFeatureTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-31T17:23:27.589Z" hostname="DESKTOP-EOQDD3G" time="0.02">
   <properties/>
-  <testcase name="aWorkingStepReturnsItsValue" classname="com.gathin.tvhome.CardFeatureTest" time="0.007"/>
+  <testcase name="aWorkingStepReturnsItsValue" classname="com.gathin.tvhome.CardFeatureTest" time="0.008"/>
   <testcase name="aFailingReporterDoesNotMatter" classname="com.gathin.tvhome.CardFeatureTest" time="0.002"/>
   <testcase name="anExceptionGivesTheFallbackAndSwitchesCardsOff" classname="com.gathin.tvhome.CardFeatureTest" time="0.003"/>
-  <testcase name="aClassThatFailsToInitialiseIsCaught" classname="com.gathin.tvhome.CardFeatureTest" time="0.002"/>
-  <testcase name="outOfMemoryIsNotSwallowed" classname="com.gathin.tvhome.CardFeatureTest" time="0.001"/>
+  <testcase name="aClassThatFailsToInitialiseIsCaught" classname="com.gathin.tvhome.CardFeatureTest" time="0.004"/>
+  <testcase name="outOfMemoryIsNotSwallowed" classname="com.gathin.tvhome.CardFeatureTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

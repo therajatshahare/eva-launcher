@@ -11,19 +11,8 @@ Marking string:stats_memory:2131755163 reachable: referenced from in_memory_r8_b
 Marking string:storage_gb_whole:2131755168 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:storage_gb_decimal:2131755167 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:stats_storage:2131755164 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:not_available:2131755106 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:wallpaper_theme_default:2131755181 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:wallpaper_none:2131755179 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking layout:dialog_wallpaper_picker:2131427335 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:wallpaperGrid:2131296412 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:off:2131755108 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:advanced_effects:2131755008 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:advanced_effects_warning:2131755010 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:enable:2131755047 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:on:2131755110 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:home_settings_help:2131755074 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:open_on_start_label:2131755111 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:github_update_repo:2131755061 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking string:not_available:2131755106 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking drawable:halloween_bat:2131165188 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking drawable:halloween_ghost:2131165189 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking id:card:2131296310 reachable: referenced from in_memory_r8_base_classes0.dex
@@ -342,6 +331,7 @@ Marking drawable:banner:2131165184 reachable: referenced from in_memory_r8_base_
 Marking layout:item_wallpaper_card:2131427342 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking id:tag_window_insets_animation_callback:2131296404 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking id:tag_on_apply_window_listener:2131296396 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking string:on:2131755110 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking id:dreamContent:2131296330 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking id:dreamAmbient:2131296328 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:wallpaper_applied:2131755176 reachable: referenced from in_memory_r8_base_classes0.dex
@@ -349,7 +339,10 @@ Marking layout:dialog_settings_grid:2131427333 reachable: referenced from in_mem
 Marking id:dialogTitle:2131296323 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking id:dialogSubtitle:2131296322 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking id:subGridRecyclerView:2131296391 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking string:off:2131755108 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:tv_settings:2131755172 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking string:open_on_start_label:2131755111 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking string:advanced_effects:2131755008 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:columns_label:2131755037 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:rows_below_dock_label:2131755144 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:dock_opacity_label:2131755045 reachable: referenced from in_memory_r8_base_classes0.dex
@@ -367,6 +360,13 @@ Marking id:wallpaperCard:2131296411 reachable: referenced from in_memory_r8_base
 Marking id:wallpaperPreview:2131296414 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking id:wallpaperName:2131296413 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking id:selectedBadge:2131296384 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking string:wallpaper_theme_default:2131755181 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking string:wallpaper_none:2131755179 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking layout:dialog_wallpaper_picker:2131427335 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:wallpaperGrid:2131296412 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking string:advanced_effects_warning:2131755010 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking string:enable:2131755047 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking string:github_update_repo:2131755061 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking layout:activity_quick_settings:2131427330 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking id:panel:2131296365 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking id:scrim:2131296378 reachable: referenced from in_memory_r8_base_classes0.dex
@@ -394,8 +394,8 @@ androidx.view.accessibility.Accessibi...
 absent
 kotlin.reflect.jvm.internal.Reflectio...
 ACTION_UNKNOWN
-clock_format
 accessibility_enabled
+clock_format
 wallpaper_true_color
 festival
 traceCounter
@@ -559,7 +559,7 @@ reorder_button
 url
 url_overridden_by_dest
 hide
-2.0
+2.1
 ACTION_HIDE_TOOLTIP
 cinematic_art
 evening
@@ -681,8 +681,8 @@ guard_off_in_standby
 hdmi2
 advanced_effects
 .webp
-rows_below_dock
 RecyclerView
+rows_below_dock
 input_sources
 show_home_settings_shortcut
 vnd.android.cursor.dir/channel
@@ -820,8 +820,8 @@ vnd.android.cursor.dir/program
 app_banners
 clock_wallpaper_dim
 DONE
-wallpaper_choice
 package
+wallpaper_choice
 Yesterday
 hdmi
 ACTION_COPY
