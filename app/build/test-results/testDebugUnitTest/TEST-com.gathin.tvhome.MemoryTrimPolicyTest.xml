@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gathin.tvhome.MemoryTrimPolicyTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-31T11:02:25.805Z" hostname="DESKTOP-EOQDD3G" time="0.003">
+<testsuite name="com.gathin.tvhome.MemoryTrimPolicyTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-31T11:42:04.250Z" hostname="DESKTOP-EOQDD3G" time="0.003">
   <properties/>
-  <testcase name="ordinaryBackgroundTransitionKeepsWarmResources" classname="com.gathin.tvhome.MemoryTrimPolicyTest" time="0.001"/>
+  <testcase name="ordinaryBackgroundTransitionKeepsWarmResources" classname="com.gathin.tvhome.MemoryTrimPolicyTest" time="0.002"/>
   <testcase name="backgroundPressureReleasesResourcesOnlyWhenHomeIsStopped" classname="com.gathin.tvhome.MemoryTrimPolicyTest" time="0.0"/>
-  <testcase name="lowMemorySignalsReleaseResourcesWhenHomeIsStopped" classname="com.gathin.tvhome.MemoryTrimPolicyTest" time="0.002"/>
+  <testcase name="lowMemorySignalsReleaseResourcesWhenHomeIsStopped" classname="com.gathin.tvhome.MemoryTrimPolicyTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

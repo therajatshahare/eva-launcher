@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gathin.tvhome.LibraryAppsTest" tests="17" skipped="0" failures="0" errors="0" timestamp="2026-10-31T11:02:24.459Z" hostname="DESKTOP-EOQDD3G" time="0.077">
+<testsuite name="com.gathin.tvhome.LibraryAppsTest" tests="17" skipped="0" failures="0" errors="0" timestamp="2026-10-31T11:42:03.404Z" hostname="DESKTOP-EOQDD3G" time="0.075">
   <properties/>
   <testcase name="duplicateAndMalformedRecordsAreRejected" classname="com.gathin.tvhome.LibraryAppsTest" time="0.003"/>
-  <testcase name="staleFocusIsClampedAfterAnAppRemoval" classname="com.gathin.tvhome.LibraryAppsTest" time="0.005"/>
-  <testcase name="okOpensHomeAppsAndEveryAppWithTheSwitchButNeverInSelectionMode" classname="com.gathin.tvhome.LibraryAppsTest" time="0.001"/>
-  <testcase name="themeAndTvDefaultsStayInPlaceUntilTheOwnerChoosesAnApp" classname="com.gathin.tvhome.LibraryAppsTest" time="0.0"/>
-  <testcase name="addingAdvancesPastCheckedAppsToTheNextMissingShortcut" classname="com.gathin.tvhome.LibraryAppsTest" time="0.001"/>
-  <testcase name="checkedAppsComeFirstAndEachGroupCanUseLabelOrder" classname="com.gathin.tvhome.LibraryAppsTest" time="0.047"/>
-  <testcase name="recentMeansFirstInstalledWithinSevenDaysAndNotAnUnknownOrFutureDate" classname="com.gathin.tvhome.LibraryAppsTest" time="0.0"/>
+  <testcase name="staleFocusIsClampedAfterAnAppRemoval" classname="com.gathin.tvhome.LibraryAppsTest" time="0.003"/>
+  <testcase name="okOpensHomeAppsAndEveryAppWithTheSwitchButNeverInSelectionMode" classname="com.gathin.tvhome.LibraryAppsTest" time="0.0"/>
+  <testcase name="themeAndTvDefaultsStayInPlaceUntilTheOwnerChoosesAnApp" classname="com.gathin.tvhome.LibraryAppsTest" time="0.002"/>
+  <testcase name="addingAdvancesPastCheckedAppsToTheNextMissingShortcut" classname="com.gathin.tvhome.LibraryAppsTest" time="0.003"/>
+  <testcase name="checkedAppsComeFirstAndEachGroupCanUseLabelOrder" classname="com.gathin.tvhome.LibraryAppsTest" time="0.042"/>
+  <testcase name="recentMeansFirstInstalledWithinSevenDaysAndNotAnUnknownOrFutureDate" classname="com.gathin.tvhome.LibraryAppsTest" time="0.001"/>
   <testcase name="thePillHidesOnlyWhileTheTopBarButtonIsAWayIn" classname="com.gathin.tvhome.LibraryAppsTest" time="0.001"/>
-  <testcase name="hidingKeepsTheNextAppOrThePreviousAppAtTheEnd" classname="com.gathin.tvhome.LibraryAppsTest" time="0.001"/>
-  <testcase name="addingTheLastMissingShortcutKeepsANearbyCardInsteadOfJumpingToTheStart" classname="com.gathin.tvhome.LibraryAppsTest" time="0.003"/>
+  <testcase name="hidingKeepsTheNextAppOrThePreviousAppAtTheEnd" classname="com.gathin.tvhome.LibraryAppsTest" time="0.003"/>
+  <testcase name="addingTheLastMissingShortcutKeepsANearbyCardInsteadOfJumpingToTheStart" classname="com.gathin.tvhome.LibraryAppsTest" time="0.006"/>
   <testcase name="excludedFromCatalogIsExactSetMembershipAndEmptyByDefault" classname="com.gathin.tvhome.LibraryAppsTest" time="0.001"/>
-  <testcase name="missingShortcutsComeBeforeHomeAppsEvenWhenTheHomeAppIsNewer" classname="com.gathin.tvhome.LibraryAppsTest" time="0.002"/>
-  <testcase name="undoingAnAdditionRestoresDefaultVisibilityAndKeepsOtherChoices" classname="com.gathin.tvhome.LibraryAppsTest" time="0.002"/>
+  <testcase name="missingShortcutsComeBeforeHomeAppsEvenWhenTheHomeAppIsNewer" classname="com.gathin.tvhome.LibraryAppsTest" time="0.0"/>
+  <testcase name="undoingAnAdditionRestoresDefaultVisibilityAndKeepsOtherChoices" classname="com.gathin.tvhome.LibraryAppsTest" time="0.0"/>
   <testcase name="aFullListAllowsRemovalAndAnExistingChoiceButNotAnotherApp" classname="com.gathin.tvhome.LibraryAppsTest" time="0.003"/>
   <testcase name="choicesRoundTripInStableOrderIncludingAnEmptyList" classname="com.gathin.tvhome.LibraryAppsTest" time="0.0"/>
   <testcase name="recentMissingAppsComeFirstButOlderAppsAndHomeAppsUseLabelOrder" classname="com.gathin.tvhome.LibraryAppsTest" time="0.0"/>

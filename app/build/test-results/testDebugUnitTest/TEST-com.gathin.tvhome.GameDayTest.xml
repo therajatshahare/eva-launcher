@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gathin.tvhome.GameDayTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2026-10-31T11:02:24.221Z" hostname="DESKTOP-EOQDD3G" time="0.035">
+<testsuite name="com.gathin.tvhome.GameDayTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2026-10-31T11:42:03.130Z" hostname="DESKTOP-EOQDD3G" time="0.053">
   <properties/>
   <testcase name="turnIsLiveOnlyBetweenStartAndEnd" classname="com.gathin.tvhome.GameDayTest" time="0.013"/>
-  <testcase name="noF1OutsideItsWeekend" classname="com.gathin.tvhome.GameDayTest" time="0.005"/>
-  <testcase name="nextTurnIsNeverMoreThanOneTurnAway" classname="com.gathin.tvhome.GameDayTest" time="0.0"/>
+  <testcase name="noF1OutsideItsWeekend" classname="com.gathin.tvhome.GameDayTest" time="0.009"/>
+  <testcase name="nextTurnIsNeverMoreThanOneTurnAway" classname="com.gathin.tvhome.GameDayTest" time="0.002"/>
   <testcase name="turnSecondsOutOfRangeBecomesThirty" classname="com.gathin.tvhome.GameDayTest" time="0.001"/>
   <testcase name="f1LiveSortsFirst" classname="com.gathin.tvhome.GameDayTest" time="0.003"/>
   <testcase name="f1JoinsSortedByItsNextSession" classname="com.gathin.tvhome.GameDayTest" time="0.002"/>
   <testcase name="durationHelperMatchesTheCountdown" classname="com.gathin.tvhome.GameDayTest" time="0.001"/>
-  <testcase name="rotationIndex" classname="com.gathin.tvhome.GameDayTest" time="0.001"/>
-  <testcase name="endedGamesAreDropped" classname="com.gathin.tvhome.GameDayTest" time="0.0"/>
-  <testcase name="noTurnsHidesPanel" classname="com.gathin.tvhome.GameDayTest" time="0.0"/>
-  <testcase name="rowsAreParsedAndBadOnesSkipped" classname="com.gathin.tvhome.GameDayTest" time="0.002"/>
+  <testcase name="rotationIndex" classname="com.gathin.tvhome.GameDayTest" time="0.002"/>
+  <testcase name="endedGamesAreDropped" classname="com.gathin.tvhome.GameDayTest" time="0.001"/>
+  <testcase name="noTurnsHidesPanel" classname="com.gathin.tvhome.GameDayTest" time="0.002"/>
+  <testcase name="rowsAreParsedAndBadOnesSkipped" classname="com.gathin.tvhome.GameDayTest" time="0.007"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

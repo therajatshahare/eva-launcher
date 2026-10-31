@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gathin.tvhome.WallpaperRotationTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-10-31T11:02:26.125Z" hostname="DESKTOP-EOQDD3G" time="0.032">
+<testsuite name="com.gathin.tvhome.WallpaperRotationTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-10-31T11:42:04.574Z" hostname="DESKTOP-EOQDD3G" time="0.031">
   <properties/>
   <testcase name="findMatchesByName" classname="com.gathin.tvhome.WallpaperRotationTest" time="0.002"/>
-  <testcase name="anOnTvPickReplacesTheRotation" classname="com.gathin.tvhome.WallpaperRotationTest" time="0.001"/>
-  <testcase name="imagesKeepsPicturesOnlySortedByName" classname="com.gathin.tvhome.WallpaperRotationTest" time="0.023"/>
+  <testcase name="anOnTvPickReplacesTheRotation" classname="com.gathin.tvhome.WallpaperRotationTest" time="0.0"/>
+  <testcase name="imagesKeepsPicturesOnlySortedByName" classname="com.gathin.tvhome.WallpaperRotationTest" time="0.021"/>
   <testcase name="pickUsesTheRequestedOrder" classname="com.gathin.tvhome.WallpaperRotationTest" time="0.002"/>
-  <testcase name="dueOnlyWithRotationOnAndTheIntervalPassed" classname="com.gathin.tvhome.WallpaperRotationTest" time="0.0"/>
+  <testcase name="dueOnlyWithRotationOnAndTheIntervalPassed" classname="com.gathin.tvhome.WallpaperRotationTest" time="0.001"/>
   <testcase name="pickAvoidsThePreviousPictureWhenThereIsAnother" classname="com.gathin.tvhome.WallpaperRotationTest" time="0.001"/>
-  <testcase name="findsTheFirstPictureWhenThePreviousOneIsGone" classname="com.gathin.tvhome.WallpaperRotationTest" time="0.001"/>
+  <testcase name="findsTheFirstPictureWhenThePreviousOneIsGone" classname="com.gathin.tvhome.WallpaperRotationTest" time="0.0"/>
   <testcase name="homeRebuildsWhenTheSettingsRevisionMoved" classname="com.gathin.tvhome.WallpaperRotationTest" time="0.0"/>
   <testcase name="sequentialAdvancesInSortedOrderAndWraps" classname="com.gathin.tvhome.WallpaperRotationTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>

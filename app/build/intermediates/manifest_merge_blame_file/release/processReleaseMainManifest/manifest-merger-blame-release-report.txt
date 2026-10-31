@@ -175,7 +175,7 @@
 101    </queries>
 102
 103    <application
-103-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:75:5-254:19
+103-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:75:5-264:19
 104        android:allowBackup="false"
 104-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:80:9-36
 105        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -459,76 +459,92 @@
 269-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:215:13-36
 270            android:permission="android.permission.WRITE_SECURE_SETTINGS" />
 270-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:216:13-74
-271
-272        <!--
-273         The remote's Input button (KEYCODE_TV or KEYCODE_TV_INPUT) opens the input switcher, and input_key_keycodes and
-274         app_keys (config.xml or a theme) bring back other remote buttons; see InputKeyService.
-275        -->
-276        <!--
-277             Bound again by the system after a force stop, which restarts Home on firmware that kills
-278             third-party apps (TCL tc8000_ay30a2). It reads no notification.
-279             cmd notification allow_listener com.gathin.tvhome/.GuardRevival
-280        -->
-281        <service
-281-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:223:9-232:19
-282            android:name="com.gathin.tvhome.GuardRevival"
-282-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:224:13-41
-283            android:directBootAware="true"
-283-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:225:13-43
-284            android:exported="true"
-284-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:226:13-36
-285            android:label="@string/home_key_name"
-285-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:227:13-50
-286            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" >
-286-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:228:13-87
-287            <intent-filter>
-287-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:229:13-231:29
-288                <action android:name="android.service.notification.NotificationListenerService" />
-288-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:230:17-99
-288-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:230:25-96
-289            </intent-filter>
-290        </service>
-291
-292        <receiver
-292-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:233:9-240:20
-293            android:name="com.gathin.tvhome.GuardConfig"
-293-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:234:13-40
-294            android:exported="true"
-294-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:235:13-36
-295            android:permission="android.permission.WRITE_SECURE_SETTINGS" >
-295-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:236:13-74
+271        <provider
+272            android:name="androidx.core.content.FileProvider"
+272-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:219:13-62
+273            android:authorities="com.gathin.tvhome.updateprovider"
+273-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:220:13-66
+274            android:exported="false"
+274-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:221:13-37
+275            android:grantUriPermissions="true" >
+275-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:222:13-47
+276            <meta-data
+276-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:223:13-225:54
+277                android:name="android.support.FILE_PROVIDER_PATHS"
+277-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:224:17-67
+278                android:resource="@xml/file_paths" />
+278-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:225:17-51
+279        </provider>
+280
+281        <!--
+282         The remote's Input button (KEYCODE_TV or KEYCODE_TV_INPUT) opens the input switcher, and input_key_keycodes and
+283         app_keys (config.xml or a theme) bring back other remote buttons; see InputKeyService.
+284        -->
+285        <!--
+286             Bound again by the system after a force stop, which restarts Home on firmware that kills
+287             third-party apps (TCL tc8000_ay30a2). It reads no notification.
+288             cmd notification allow_listener com.gathin.tvhome/.GuardRevival
+289        -->
+290        <service
+290-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:233:9-242:19
+291            android:name="com.gathin.tvhome.GuardRevival"
+291-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:234:13-41
+292            android:directBootAware="true"
+292-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:235:13-43
+293            android:exported="true"
+293-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:236:13-36
+294            android:label="@string/home_key_name"
+294-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:237:13-50
+295            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" >
+295-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:238:13-87
 296            <intent-filter>
-296-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:237:13-239:29
-297                <action android:name="com.gathin.tvhome.GUARD" />
-297-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:238:17-66
-297-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:238:25-63
+296-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:239:13-241:29
+297                <action android:name="android.service.notification.NotificationListenerService" />
+297-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:240:17-99
+297-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:240:25-96
 298            </intent-filter>
-299        </receiver>
+299        </service>
 300
-301        <service
-301-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:242:9-253:19
-302            android:name="com.gathin.tvhome.InputKeyService"
-302-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:243:13-44
-303            android:exported="false"
-303-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:244:13-37
-304            android:label="@string/app_name"
-304-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:245:13-45
-305            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
-305-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:246:13-79
-306            <intent-filter>
-306-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:155:13-157:29
-307                <action android:name="android.accessibilityservice.AccessibilityService" />
-307-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:156:17-92
-307-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:156:25-89
-308            </intent-filter>
+301        <receiver
+301-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:243:9-250:20
+302            android:name="com.gathin.tvhome.GuardConfig"
+302-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:244:13-40
+303            android:exported="true"
+303-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:245:13-36
+304            android:permission="android.permission.WRITE_SECURE_SETTINGS" >
+304-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:246:13-74
+305            <intent-filter>
+305-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:247:13-249:29
+306                <action android:name="com.gathin.tvhome.GUARD" />
+306-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:248:17-66
+306-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:248:25-63
+307            </intent-filter>
+308        </receiver>
 309
-310            <meta-data
-310-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:158:13-160:60
-311                android:name="android.accessibilityservice"
-311-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:159:17-60
-312                android:resource="@xml/input_key_service" />
-312-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:160:17-57
-313        </service>
-314    </application>
-315
-316</manifest>
+310        <service
+310-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:252:9-263:19
+311            android:name="com.gathin.tvhome.InputKeyService"
+311-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:253:13-44
+312            android:exported="false"
+312-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:254:13-37
+313            android:label="@string/app_name"
+313-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:255:13-45
+314            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+314-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:256:13-79
+315            <intent-filter>
+315-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:155:13-157:29
+316                <action android:name="android.accessibilityservice.AccessibilityService" />
+316-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:156:17-92
+316-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:156:25-89
+317            </intent-filter>
+318
+319            <meta-data
+319-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:158:13-160:60
+320                android:name="android.accessibilityservice"
+320-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:159:17-60
+321                android:resource="@xml/input_key_service" />
+321-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:160:17-57
+322        </service>
+323    </application>
+324
+325</manifest>

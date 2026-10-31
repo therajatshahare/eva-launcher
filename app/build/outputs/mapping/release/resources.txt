@@ -388,6 +388,7 @@ Clock
 halo
 AUDIO
 ‏
+path
 Verified‮
 ViewHolder
 androidx.view.accessibility.Accessibi...
@@ -431,6 +432,7 @@ ACTION_IME_ENTER
 android.settings.MANAGE_APPLICATIONS_...
 cinematic_scrim
 mounted
+r
 background_color
 GridLayoutManager
 java.lang.Module
@@ -456,7 +458,7 @@ live_tv_package
 androidx.view.accessibility.Accessibi...
 ACTION_SET_PROGRESS
 power_on_home
-Android:com.gathin.tvhome:v1.3
+Android:com.gathin.tvhome:v1.4
 ACTION_SCROLL_FORWARD
 android.settings.VPN_SETTINGS
 add
@@ -499,6 +501,7 @@ tvvibehack
 input:
 start_ms
 BITMAP_MASKABLE
+TvHome.UpdateManager
 .jpg
 com.gathin.tvhome.extra.REORDER_FROM_...
 IconCompat
@@ -516,6 +519,7 @@ probe_boot
 wallpapers/
 .bak
 caption
+android.support.FILE_PROVIDER_PATHS
 ACTION_CONTEXT_CLICK
 turns
 cards.json
@@ -565,6 +569,7 @@ content://com.skyworth.tv.sdk.provide...
 festival_until
 settings_key_panel
 wallpaper_rotation_minutes
+_size
 UnknownNullness
 mVisibleInsets
 launcher_settings_button
@@ -581,7 +586,7 @@ mStableInsets
 /time
 null
 DISC
-1.3
+1.4
 wifi_label_width
 open_on_start
 https://api.github.com/repos/
@@ -645,6 +650,7 @@ config.json
 cleanLabel
 24
 icon_only_buttons
+rw
 top_bar_apps
 0x
 scan
@@ -681,7 +687,6 @@ android.intent.action.PACKAGE_REMOVED
 theme_revision
 android.settings.HOME_SETTINGS
 theme_signature
-Android:com.gathin.tvhome
 androidx.recyclerview.widget.Recycler...
 dock_apps
 up
@@ -697,21 +702,24 @@ vi
 library_excluded_apps
 hold:
 name
+TvHome.WallpaperFetcher
 wallpaper_dim
 changed
 getDescriptor
-.updateprovider/update
 sequential
 show
 java.lang.module.ModuleDescriptor
 back_opens_clock
+wa
 updates
 Retro
 ViewParentCompat
+rwt
 CTSDummy
 NEXT
 guide:
 boot
+wt
 /releases/latest
 android.intent.action.TIMEZONE_CHANGED
 consume_volume_keys
@@ -728,6 +736,7 @@ top_line
 RACE
 android.intent.action.VIEW
 ACTION_PREVIOUS_AT_MOVEMENT_GRANULARITY
+Location
 ﻿
 xx
 com.gathin.tvhome.card
@@ -753,6 +762,7 @@ wallpaper_moods
 wifi
 sessions
 enabled_accessibility_services
+_display_name
 CONSUMED
 screensaver
 .jpeg
@@ -764,7 +774,6 @@ GET
 word
 card
 ACTION_FOCUS
-content://
 columns
 guard
 order.txt
@@ -794,6 +803,7 @@ live_tv_boot
 lunar_utc_offset
 URI_MASKABLE
 wallpaper_rotation
+https://www.reddit.com/r/wallpapers/.rss
 data
 boot_to_live_tv
 spec
@@ -854,6 +864,7 @@ Today
 tv_input
 round
 mAttachInfo
+.updateprovider
 Marking string:glass_style:2131755062 used because it matches string pool constant glass_style
 Marking id:greeting:2131296340 used because it matches string pool constant greeting
 Marking string:greeting_name:2131755069 used because it matches string pool constant greeting
@@ -915,7 +926,7 @@ Marking array:settings_key_keycodes:2130837518 used because it matches string po
 Marking bool:back_opens_clock:2130968583 used because it matches string pool constant back
 Marking bool:uniform_tiles:2130968636 used because it matches string pool constant uniform_tiles
 Marking string:locale:2131755096 used because it matches string pool constant locale
-Marking xml:locales_config:2131951618 used because it matches string pool constant locale
+Marking xml:locales_config:2131951619 used because it matches string pool constant locale
 Marking bool:show_greeting:2130968627 used because it matches string pool constant show_greeting
 Marking bool:launcher_settings_button:2130968612 used because it matches string pool constant launcher_settings
 Marking string:launcher_settings:2131755081 used because it matches string pool constant launcher_settings
@@ -929,7 +940,7 @@ Marking string:home_key_description:2131755071 used because it matches string po
 Marking string:home_key_name:2131755072 used because it matches string pool constant home
 Marking string:home_settings:2131755073 used because it matches string pool constant home
 Marking string:home_settings_help:2131755074 used because it matches string pool constant home
-Marking xml:home_key_service:2131951616 used because it matches string pool constant home
+Marking xml:home_key_service:2131951617 used because it matches string pool constant home
 Marking bool:header_white:2130968605 used because it matches string pool constant he
 Marking id:hero:2131296342 used because it matches string pool constant he
 Marking id:heroArt:2131296343 used because it matches string pool constant he
@@ -951,7 +962,7 @@ Marking string:input_action:2131755075 used because it matches string pool const
 Marking string:input_key_service_description:2131755076 used because it matches string pool constant in
 Marking string:input_uri_scheme:2131755077 used because it matches string pool constant in
 Marking string:inputs:2131755078 used because it matches string pool constant in
-Marking xml:input_key_service:2131951617 used because it matches string pool constant in
+Marking xml:input_key_service:2131951618 used because it matches string pool constant in
 Marking drawable:banner_tv:2131165185 used because it matches string pool constant banner_
 Marking array:library_apps:2130837513 used because it matches string pool constant library_apps
 Marking bool:reorder_button:2130968621 used because it matches string pool constant reorder_button
@@ -1041,7 +1052,7 @@ Marking string:input_action:2131755075 used because it matches string pool const
 Marking string:input_key_service_description:2131755076 used because it matches string pool constant input
 Marking string:input_uri_scheme:2131755077 used because it matches string pool constant input
 Marking string:inputs:2131755078 used because it matches string pool constant input
-Marking xml:input_key_service:2131951617 used because it matches string pool constant input
+Marking xml:input_key_service:2131951618 used because it matches string pool constant input
 Marking bool:icon_only_buttons:2130968607 used because it matches string pool constant icon_only_buttons
 Marking array:top_bar_apps:2130837520 used because it matches string pool constant top_bar_apps
 Marking array:hidden_apps:2130837508 used because it matches string pool constant hidden_apps
@@ -1078,6 +1089,15 @@ Marking bool:show_library_pill:2130968630 used because it matches string pool co
 Marking bool:show_network_pill:2130968631 used because it matches string pool constant show
 Marking bool:show_stats:2130968632 used because it matches string pool constant show
 Marking bool:back_opens_clock:2130968583 used because it matches string pool constant back_opens_clock
+Marking bool:wallpaper_captions:2130968638 used because it matches string pool constant wa
+Marking bool:wallpaper_true_color:2130968639 used because it matches string pool constant wa
+Marking id:wallpaperChoice:2131296418 used because it matches string pool constant wa
+Marking string:wallpaper_applied:2131755176 used because it matches string pool constant wa
+Marking string:wallpaper_label:2131755177 used because it matches string pool constant wa
+Marking string:wallpaper_moods:2131755178 used because it matches string pool constant wa
+Marking string:wallpaper_none:2131755179 used because it matches string pool constant wa
+Marking string:wallpaper_state:2131755180 used because it matches string pool constant wa
+Marking string:wallpaper_theme_default:2131755181 used because it matches string pool constant wa
 Marking bool:boot_to_live_tv:2130968584 used because it matches string pool constant boot
 Marking bool:consume_volume_keys:2130968590 used because it matches string pool constant consume_volume_keys
 Marking bool:app_library_selection:2130968582 used because it matches string pool constant app_library_selection
@@ -1860,6 +1880,7 @@ Marking bool:focus_overshoot:2130968602 used because it matches string pool cons
 @com.gathin.tvhome:style/Widget_Compat_NotificationActionText : reachable=false
     @com.gathin.tvhome:color/androidx_core_secondary_text_default_material_light
     @com.gathin.tvhome:dimen/notification_action_text_size
+@com.gathin.tvhome:xml/file_paths : reachable=true
 @com.gathin.tvhome:xml/home_key_service : reachable=true
     @com.gathin.tvhome:string/home_key_description
 @com.gathin.tvhome:xml/input_key_service : reachable=true
@@ -2307,9 +2328,10 @@ The root reachable resources are:
  style:SettingsColumnChoice:2131820544
  style:SettingsRow:2131820545
  style:Theme_TvHome:2131820551
- xml:home_key_service:2131951616
- xml:input_key_service:2131951617
- xml:locales_config:2131951618
+ xml:file_paths:2131951616
+ xml:home_key_service:2131951617
+ xml:input_key_service:2131951618
+ xml:locales_config:2131951619
 Unused resources are: 
  color:androidx_core_ripple_material_light:2131034112
  color:androidx_core_secondary_text_default_material_light:2131034113

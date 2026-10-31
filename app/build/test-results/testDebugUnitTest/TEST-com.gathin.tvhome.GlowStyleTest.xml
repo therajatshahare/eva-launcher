@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gathin.tvhome.GlowStyleTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-31T11:02:24.290Z" hostname="DESKTOP-EOQDD3G" time="0.003">
+<testsuite name="com.gathin.tvhome.GlowStyleTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-31T11:42:03.223Z" hostname="DESKTOP-EOQDD3G" time="0.003">
   <properties/>
-  <testcase name="horizonByNameAnyCase" classname="com.gathin.tvhome.GlowStyleTest" time="0.001"/>
+  <testcase name="horizonByNameAnyCase" classname="com.gathin.tvhome.GlowStyleTest" time="0.002"/>
   <testcase name="anythingElseIsRadial" classname="com.gathin.tvhome.GlowStyleTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

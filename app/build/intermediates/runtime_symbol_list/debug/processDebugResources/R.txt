@@ -636,6 +636,7 @@ int styleable RecyclerView_layoutManager 8
 int styleable RecyclerView_reverseLayout 9
 int styleable RecyclerView_spanCount 10
 int styleable RecyclerView_stackFromEnd 11
-int xml home_key_service 0x7f130000
-int xml input_key_service 0x7f130001
-int xml locales_config 0x7f130002
+int xml file_paths 0x7f130000
+int xml home_key_service 0x7f130001
+int xml input_key_service 0x7f130002
+int xml locales_config 0x7f130003

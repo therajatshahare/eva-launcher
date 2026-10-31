@@ -269,6 +269,15 @@
             android:authorities="com.gathin.tvhome.theme"
             android:exported="true"
             android:permission="android.permission.WRITE_SECURE_SETTINGS" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.gathin.tvhome.updateprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
 
         <!--
          The remote's Input button (KEYCODE_TV or KEYCODE_TV_INPUT) opens the input switcher, and input_key_keycodes and

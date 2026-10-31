@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gathin.tvhome.CardsTest" tests="37" skipped="0" failures="0" errors="0" timestamp="2026-10-31T11:02:23.951Z" hostname="DESKTOP-EOQDD3G" time="0.164">
+<testsuite name="com.gathin.tvhome.CardsTest" tests="37" skipped="0" failures="0" errors="0" timestamp="2026-10-31T11:42:02.760Z" hostname="DESKTOP-EOQDD3G" time="0.21">
   <properties/>
-  <testcase name="decodeRecordIsExact" classname="com.gathin.tvhome.CardsTest" time="0.004"/>
-  <testcase name="labelRejectsLengthAndCharacters" classname="com.gathin.tvhome.CardsTest" time="0.002"/>
-  <testcase name="packageNames" classname="com.gathin.tvhome.CardsTest" time="0.001"/>
+  <testcase name="decodeRecordIsExact" classname="com.gathin.tvhome.CardsTest" time="0.008"/>
+  <testcase name="labelRejectsLengthAndCharacters" classname="com.gathin.tvhome.CardsTest" time="0.004"/>
+  <testcase name="packageNames" classname="com.gathin.tvhome.CardsTest" time="0.002"/>
   <testcase name="emptyStoreRoundTrip" classname="com.gathin.tvhome.CardsTest" time="0.004"/>
-  <testcase name="parserRejectsWrongRootMissingSpecAndReferences" classname="com.gathin.tvhome.CardsTest" time="0.022"/>
+  <testcase name="parserRejectsWrongRootMissingSpecAndReferences" classname="com.gathin.tvhome.CardsTest" time="0.028"/>
   <testcase name="decodeRejectsAnythingElse" classname="com.gathin.tvhome.CardsTest" time="0.003"/>
-  <testcase name="translatedUiNamesCountToo" classname="com.gathin.tvhome.CardsTest" time="0.003"/>
-  <testcase name="isFoldedIsStrict" classname="com.gathin.tvhome.CardsTest" time="0.002"/>
-  <testcase name="quarantineMovesTheBadFileAside" classname="com.gathin.tvhome.CardsTest" time="0.022"/>
+  <testcase name="translatedUiNamesCountToo" classname="com.gathin.tvhome.CardsTest" time="0.002"/>
+  <testcase name="isFoldedIsStrict" classname="com.gathin.tvhome.CardsTest" time="0.001"/>
+  <testcase name="quarantineMovesTheBadFileAside" classname="com.gathin.tvhome.CardsTest" time="0.023"/>
   <testcase name="foldDropsCaseSpacesAndPunctuation" classname="com.gathin.tvhome.CardsTest" time="0.001"/>
   <testcase name="labelTakenByAnotherPackageOnly" classname="com.gathin.tvhome.CardsTest" time="0.001"/>
   <testcase name="parserRejectsTwoRootElements" classname="com.gathin.tvhome.CardsTest" time="0.003"/>
-  <testcase name="cleanLabelStripsFormattingAndBounds" classname="com.gathin.tvhome.CardsTest" time="0.002"/>
-  <testcase name="parsesTheCompiledForms" classname="com.gathin.tvhome.CardsTest" time="0.001"/>
-  <testcase name="firstPendingIsByPackage" classname="com.gathin.tvhome.CardsTest" time="0.001"/>
+  <testcase name="cleanLabelStripsFormattingAndBounds" classname="com.gathin.tvhome.CardsTest" time="0.003"/>
+  <testcase name="parsesTheCompiledForms" classname="com.gathin.tvhome.CardsTest" time="0.002"/>
+  <testcase name="firstPendingIsByPackage" classname="com.gathin.tvhome.CardsTest" time="0.003"/>
   <testcase name="accentAcceptsWrittenAndCompiledForms" classname="com.gathin.tvhome.CardsTest" time="0.001"/>
-  <testcase name="resolveClashesKeepsTheOwnersDecision" classname="com.gathin.tvhome.CardsTest" time="0.002"/>
-  <testcase name="encodeRefusesAnInvalidRecord" classname="com.gathin.tvhome.CardsTest" time="0.001"/>
-  <testcase name="shownFiltersOrdersAndCaps" classname="com.gathin.tvhome.CardsTest" time="0.004"/>
+  <testcase name="resolveClashesKeepsTheOwnersDecision" classname="com.gathin.tvhome.CardsTest" time="0.003"/>
+  <testcase name="encodeRefusesAnInvalidRecord" classname="com.gathin.tvhome.CardsTest" time="0.002"/>
+  <testcase name="shownFiltersOrdersAndCaps" classname="com.gathin.tvhome.CardsTest" time="0.002"/>
   <testcase name="labelAcceptsTheSpecAlphabet" classname="com.gathin.tvhome.CardsTest" time="0.001"/>
   <testcase name="storeRoundTrip" classname="com.gathin.tvhome.CardsTest" time="0.001"/>
   <testcase name="parserRejectsTooManyEvents" classname="com.gathin.tvhome.CardsTest" time="0.002"/>
   <testcase name="parserRejectsTooManyAttributes" classname="com.gathin.tvhome.CardsTest" time="0.003"/>
   <testcase name="characterClasses" classname="com.gathin.tvhome.CardsTest" time="0.001"/>
-  <testcase name="parserIgnoresChildrenAndUnknownAttributes" classname="com.gathin.tvhome.CardsTest" time="0.003"/>
-  <testcase name="parserRejectsDeepNesting" classname="com.gathin.tvhome.CardsTest" time="0.003"/>
-  <testcase name="parsesTheReferenceCard" classname="com.gathin.tvhome.CardsTest" time="0.001"/>
-  <testcase name="unsupportedSpecIsParsedThenRejectedByTheCaller" classname="com.gathin.tvhome.CardsTest" time="0.004"/>
-  <testcase name="decodeCapsSizeAndCount" classname="com.gathin.tvhome.CardsTest" time="0.022"/>
-  <testcase name="resolveClashesOldestDecisionWins" classname="com.gathin.tvhome.CardsTest" time="0.001"/>
-  <testcase name="captionCannotClaimEndorsement" classname="com.gathin.tvhome.CardsTest" time="0.001"/>
+  <testcase name="parserIgnoresChildrenAndUnknownAttributes" classname="com.gathin.tvhome.CardsTest" time="0.001"/>
+  <testcase name="parserRejectsDeepNesting" classname="com.gathin.tvhome.CardsTest" time="0.004"/>
+  <testcase name="parsesTheReferenceCard" classname="com.gathin.tvhome.CardsTest" time="0.006"/>
+  <testcase name="unsupportedSpecIsParsedThenRejectedByTheCaller" classname="com.gathin.tvhome.CardsTest" time="0.011"/>
+  <testcase name="decodeCapsSizeAndCount" classname="com.gathin.tvhome.CardsTest" time="0.036"/>
+  <testcase name="resolveClashesOldestDecisionWins" classname="com.gathin.tvhome.CardsTest" time="0.002"/>
+  <testcase name="captionCannotClaimEndorsement" classname="com.gathin.tvhome.CardsTest" time="0.0"/>
   <testcase name="reservedWordsAreSubstringsOrWholeNames" classname="com.gathin.tvhome.CardsTest" time="0.001"/>
-  <testcase name="resolveClashesDropsTwoPendingAndLeavesTheRest" classname="com.gathin.tvhome.CardsTest" time="0.004"/>
-  <testcase name="parserRejectsLongValuesBeforeLookingAtThem" classname="com.gathin.tvhome.CardsTest" time="0.005"/>
-  <testcase name="captionIsOptionalAndBounded" classname="com.gathin.tvhome.CardsTest" time="0.001"/>
-  <testcase name="digestFormatting" classname="com.gathin.tvhome.CardsTest" time="0.003"/>
+  <testcase name="resolveClashesDropsTwoPendingAndLeavesTheRest" classname="com.gathin.tvhome.CardsTest" time="0.001"/>
+  <testcase name="parserRejectsLongValuesBeforeLookingAtThem" classname="com.gathin.tvhome.CardsTest" time="0.004"/>
+  <testcase name="captionIsOptionalAndBounded" classname="com.gathin.tvhome.CardsTest" time="0.002"/>
+  <testcase name="digestFormatting" classname="com.gathin.tvhome.CardsTest" time="0.002"/>
   <testcase name="relabelledCardIsPendingAgain" classname="com.gathin.tvhome.CardsTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

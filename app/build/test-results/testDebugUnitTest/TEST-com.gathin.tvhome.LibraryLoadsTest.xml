@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gathin.tvhome.LibraryLoadsTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-31T11:02:24.540Z" hostname="DESKTOP-EOQDD3G" time="0.005">
+<testsuite name="com.gathin.tvhome.LibraryLoadsTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-31T11:42:03.485Z" hostname="DESKTOP-EOQDD3G" time="0.005">
   <properties/>
   <testcase name="aRefreshDuringTheOpeningStillRevealsOnce" classname="com.gathin.tvhome.LibraryLoadsTest" time="0.002"/>
-  <testcase name="aRefreshOnItsOwnNeverReveals" classname="com.gathin.tvhome.LibraryLoadsTest" time="0.0"/>
-  <testcase name="refreshesAfterTheRevealDoNotRevealAgain" classname="com.gathin.tvhome.LibraryLoadsTest" time="0.001"/>
+  <testcase name="aRefreshOnItsOwnNeverReveals" classname="com.gathin.tvhome.LibraryLoadsTest" time="0.001"/>
+  <testcase name="refreshesAfterTheRevealDoNotRevealAgain" classname="com.gathin.tvhome.LibraryLoadsTest" time="0.0"/>
   <testcase name="anOpeningAfterARefreshRevealsWithItsOwnLoad" classname="com.gathin.tvhome.LibraryLoadsTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gathin.tvhome.FestivalTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-31T11:02:24.179Z" hostname="DESKTOP-EOQDD3G" time="0.024">
+<testsuite name="com.gathin.tvhome.FestivalTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-31T11:42:03.067Z" hostname="DESKTOP-EOQDD3G" time="0.028">
   <properties/>
-  <testcase name="malformedValuesTurnTheSkinOff" classname="com.gathin.tvhome.FestivalTest" time="0.013"/>
-  <testcase name="activeThroughTheLastDayInclusive" classname="com.gathin.tvhome.FestivalTest" time="0.002"/>
+  <testcase name="malformedValuesTurnTheSkinOff" classname="com.gathin.tvhome.FestivalTest" time="0.016"/>
+  <testcase name="activeThroughTheLastDayInclusive" classname="com.gathin.tvhome.FestivalTest" time="0.003"/>
   <testcase name="customGreetingIsSanitizedAndOverridesTheFestivalDefault" classname="com.gathin.tvhome.FestivalTest" time="0.002"/>
   <testcase name="halloweenHasItsOwnSkinAndPumpkinAccent" classname="com.gathin.tvhome.FestivalTest" time="0.001"/>
   <testcase name="accentFallsBackToDiyaGold" classname="com.gathin.tvhome.FestivalTest" time="0.001"/>
-  <testcase name="unknownFestivalKeepsTheTimeOfDayGreeting" classname="com.gathin.tvhome.FestivalTest" time="0.0"/>
-  <testcase name="noEndDateStaysOn" classname="com.gathin.tvhome.FestivalTest" time="0.0"/>
+  <testcase name="unknownFestivalKeepsTheTimeOfDayGreeting" classname="com.gathin.tvhome.FestivalTest" time="0.001"/>
+  <testcase name="noEndDateStaysOn" classname="com.gathin.tvhome.FestivalTest" time="0.001"/>
   <testcase name="otherFestivalsKeepTheDiyaSkin" classname="com.gathin.tvhome.FestivalTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

@@ -411,6 +411,7 @@ style Theme.TvHome
 style TopButton
 style TopButtonBase
 style TopButtonIcon
+xml file_paths
 xml home_key_service
 xml input_key_service
 xml locales_config

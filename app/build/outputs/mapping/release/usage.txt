@@ -344,7 +344,8 @@ androidx.core.content.ContentProviderCompat
 androidx.core.content.ContentResolverCompat
 androidx.core.content.ContentValuesKt
 androidx.core.content.ContextCompat$Api16Impl
-androidx.core.content.ContextCompat$Api19Impl
+androidx.core.content.ContextCompat$Api19Impl:
+    private void <init>()
 androidx.core.content.ContextCompat$Api21Impl
 androidx.core.content.ContextCompat$Api23Impl
 androidx.core.content.ContextCompat$Api24Impl
@@ -352,11 +353,43 @@ androidx.core.content.ContextCompat$Api26Impl
 androidx.core.content.ContextCompat$Api28Impl
 androidx.core.content.ContextCompat$Api30Impl
 androidx.core.content.ContextCompat$LegacyServiceMapHolder
-androidx.core.content.ContextCompat
+androidx.core.content.ContextCompat:
+    private static final java.lang.String TAG
+    private static android.util.TypedValue sTempValue
+    protected void <init>()
+    public static int checkSelfPermission(android.content.Context,java.lang.String)
+    public static android.content.Context createDeviceProtectedStorageContext(android.content.Context)
+    private static java.io.File createFilesDir(java.io.File)
+    public static java.lang.String getAttributionTag(android.content.Context)
+    public static java.io.File getCodeCacheDir(android.content.Context)
+    public static int getColor(android.content.Context,int)
+    public static android.content.res.ColorStateList getColorStateList(android.content.Context,int)
+    public static java.io.File getDataDir(android.content.Context)
+    public static android.graphics.drawable.Drawable getDrawable(android.content.Context,int)
+    public static java.util.concurrent.Executor getMainExecutor(android.content.Context)
+    public static java.io.File getNoBackupFilesDir(android.content.Context)
+    public static java.io.File[] getObbDirs(android.content.Context)
+    public static java.lang.Object getSystemService(android.content.Context,java.lang.Class)
+    public static java.lang.String getSystemServiceName(android.content.Context,java.lang.Class)
+    public static boolean isDeviceProtectedStorage(android.content.Context)
+    public static boolean startActivities(android.content.Context,android.content.Intent[])
+    public static boolean startActivities(android.content.Context,android.content.Intent[],android.os.Bundle)
+    public static void startActivity(android.content.Context,android.content.Intent,android.os.Bundle)
+    public static void startForegroundService(android.content.Context,android.content.Intent)
 androidx.core.content.ContextKt
-androidx.core.content.FileProvider$PathStrategy
-androidx.core.content.FileProvider$SimplePathStrategy
-androidx.core.content.FileProvider
+androidx.core.content.FileProvider:
+    private static final java.lang.String ATTR_NAME
+    private static final java.lang.String ATTR_PATH
+    private static final java.lang.String DISPLAYNAME_FIELD
+    private static final java.lang.String META_DATA_FILE_PROVIDER_PATHS
+    private static final java.lang.String TAG_CACHE_PATH
+    private static final java.lang.String TAG_EXTERNAL
+    private static final java.lang.String TAG_EXTERNAL_CACHE
+    private static final java.lang.String TAG_EXTERNAL_FILES
+    private static final java.lang.String TAG_EXTERNAL_MEDIA
+    private static final java.lang.String TAG_FILES_PATH
+    private static final java.lang.String TAG_ROOT_PATH
+    public static android.net.Uri getUriForFile(android.content.Context,java.lang.String,java.io.File,java.lang.String)
 androidx.core.content.IntentCompat
 androidx.core.content.LocusIdCompat$Api29Impl
 androidx.core.content.LocusIdCompat
@@ -2956,6 +2989,8 @@ com.gathin.tvhome.WallpaperCaptions:
     static final int MAX_LENGTH
     private void <init>()
 com.gathin.tvhome.WallpaperFetcher:
+    private static final java.lang.String TAG
+    private static final java.lang.String USER_AGENT
     public void <init>()
 com.gathin.tvhome.WallpaperMood:
     static final int DEFAULT_SUNRISE
@@ -4746,6 +4781,11 @@ androidx.collection.SimpleArrayMap:
 androidx.core.R$id
 androidx.core.app.CoreComponentFactory$$InternalSyntheticThrowCCEIfNotNull$13$28d6d52be828bd520f37653069cdb0fd59ddc413967dd43deec606fddf5e864e$0
 androidx.core.app.CoreComponentFactory$CompatWrapped
+androidx.core.content.ContextCompat
+androidx.core.content.FileProvider$PathStrategy
+androidx.core.content.FileProvider$SimplePathStrategy:
+    public static void addRoot()
+    public static android.net.Uri getUriForFile()
 androidx.core.graphics.Insets$$InternalSyntheticApiModelOutline$2$3d9903e0d7c238cb9bfbac20bf7fcf9b914886a6e20621351e6747194928c6a0$0
 androidx.core.graphics.Insets$$InternalSyntheticApiModelOutline$2$3d9903e0d7c238cb9bfbac20bf7fcf9b914886a6e20621351e6747194928c6a0$1
 androidx.core.graphics.Insets$$InternalSyntheticApiModelOutline$2$3d9903e0d7c238cb9bfbac20bf7fcf9b914886a6e20621351e6747194928c6a0$2
@@ -5967,7 +6007,6 @@ com.gathin.tvhome.TileRefresh:
 com.gathin.tvhome.UpdateManager$$InternalSyntheticLambda$3$fea7254b7512e6e8ee18a42f46172baeb9945d1f459806396f1efe4e434dfce1$0:
     public final synthetic boolean f$2
 com.gathin.tvhome.UpdateManager$StatusCallback
-com.gathin.tvhome.UpdateManager
 com.gathin.tvhome.VolumeKeys:
     public static void stop()
 com.gathin.tvhome.VpnBadge:
@@ -5976,7 +6015,6 @@ com.gathin.tvhome.VpnBadge:
     public static int pillInkColor(boolean,boolean)
     public static float textSize()
 com.gathin.tvhome.WallpaperFetcher$Callback
-com.gathin.tvhome.WallpaperFetcher
 com.gathin.tvhome.WallpaperMood:
     public static java.lang.String timeOfDay(int,int,int)
 com.gathin.tvhome.WallpaperPlayer:

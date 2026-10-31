@@ -215,6 +215,16 @@
             android:exported="true"
             android:permission="android.permission.WRITE_SECURE_SETTINGS" />
 
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.updateprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
         <!-- The remote's Input button (KEYCODE_TV or KEYCODE_TV_INPUT) opens the input switcher, and input_key_keycodes and
          app_keys (config.xml or a theme) bring back other remote buttons; see InputKeyService. -->
         <!-- Bound again by the system after a force stop, which restarts Home on firmware that kills

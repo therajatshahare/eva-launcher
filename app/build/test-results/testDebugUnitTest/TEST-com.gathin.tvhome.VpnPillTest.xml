@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gathin.tvhome.VpnPillTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-31T11:02:26.089Z" hostname="DESKTOP-EOQDD3G" time="0.01">
+<testsuite name="com.gathin.tvhome.VpnPillTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-31T11:42:04.528Z" hostname="DESKTOP-EOQDD3G" time="0.013">
   <properties/>
-  <testcase name="greenWhileAnyVpnIsUp" classname="com.gathin.tvhome.VpnPillTest" time="0.007"/>
+  <testcase name="greenWhileAnyVpnIsUp" classname="com.gathin.tvhome.VpnPillTest" time="0.008"/>
   <testcase name="inkContrastsTheSolidFillOnlyWhenFocused" classname="com.gathin.tvhome.VpnPillTest" time="0.0"/>
-  <testcase name="hiddenWithNoVpnAndNoInstalledVpnApp" classname="com.gathin.tvhome.VpnPillTest" time="0.0"/>
+  <testcase name="hiddenWithNoVpnAndNoInstalledVpnApp" classname="com.gathin.tvhome.VpnPillTest" time="0.001"/>
   <testcase name="redWhileTheInstalledVpnAppIsDown" classname="com.gathin.tvhome.VpnPillTest" time="0.001"/>
-  <testcase name="iconOnlyShowsTheClosedLockOnlyWhileUp" classname="com.gathin.tvhome.VpnPillTest" time="0.001"/>
+  <testcase name="iconOnlyShowsTheClosedLockOnlyWhileUp" classname="com.gathin.tvhome.VpnPillTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

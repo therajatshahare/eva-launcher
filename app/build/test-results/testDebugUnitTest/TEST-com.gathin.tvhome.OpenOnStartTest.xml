@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gathin.tvhome.OpenOnStartTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-31T11:02:25.819Z" hostname="DESKTOP-EOQDD3G" time="0.004">
+<testsuite name="com.gathin.tvhome.OpenOnStartTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-31T11:42:04.275Z" hostname="DESKTOP-EOQDD3G" time="0.008">
   <properties/>
-  <testcase name="unknownBootCountStaysHome" classname="com.gathin.tvhome.OpenOnStartTest" time="0.002"/>
+  <testcase name="unknownBootCountStaysHome" classname="com.gathin.tvhome.OpenOnStartTest" time="0.001"/>
   <testcase name="offStaysHome" classname="com.gathin.tvhome.OpenOnStartTest" time="0.0"/>
-  <testcase name="onlineTheAppOpensAtOnce" classname="com.gathin.tvhome.OpenOnStartTest" time="0.0"/>
-  <testcase name="offlineTheAppWaitsUntilTheEndOfTheWait" classname="com.gathin.tvhome.OpenOnStartTest" time="0.0"/>
-  <testcase name="firstHomeOfANewBootOpensTheApp" classname="com.gathin.tvhome.OpenOnStartTest" time="0.0"/>
-  <testcase name="laterHomeOfTheSameBootStaysHome" classname="com.gathin.tvhome.OpenOnStartTest" time="0.0"/>
-  <testcase name="theLauncherItselfIsNeverOpened" classname="com.gathin.tvhome.OpenOnStartTest" time="0.0"/>
+  <testcase name="onlineTheAppOpensAtOnce" classname="com.gathin.tvhome.OpenOnStartTest" time="0.001"/>
+  <testcase name="offlineTheAppWaitsUntilTheEndOfTheWait" classname="com.gathin.tvhome.OpenOnStartTest" time="0.001"/>
+  <testcase name="firstHomeOfANewBootOpensTheApp" classname="com.gathin.tvhome.OpenOnStartTest" time="0.001"/>
+  <testcase name="laterHomeOfTheSameBootStaysHome" classname="com.gathin.tvhome.OpenOnStartTest" time="0.001"/>
+  <testcase name="theLauncherItselfIsNeverOpened" classname="com.gathin.tvhome.OpenOnStartTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
