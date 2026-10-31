@@ -28,46 +28,51 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/** Remote-friendly settings owned by the launcher; system settings stay one row away. */
+/** Category Grid View Launcher Settings with Sub-menu Sections and Focus Scale Animations. */
 public final class LauncherSettingsActivity extends Activity {
     @Override
     protected void attachBaseContext(android.content.Context base) {
-        super.attachBaseContext(LauncherLocale.wrap(base));   // locale
+        super.attachBaseContext(LauncherLocale.wrap(base));
     }
 
     static final String EXTRA_REORDER = "com.gathin.tvhome.extra.REORDER_FROM_SETTINGS";
     private SharedPreferences choices;
-    private final TextView[] columnChoices = new TextView[4];
-    private final TextView[] rowChoices = new TextView[4];
     private static final int[] DOCK_OPACITIES = {100, 70, 50, 30};
-    private final TextView[] dockChoices = new TextView[DOCK_OPACITIES.length];
     private static final String[] CLOCK_FORMATS = {"system", "12", "24"};
-    private final TextView[] clockChoices = new TextView[CLOCK_FORMATS.length];
-    private TextView wallpaperChoice;
-    private TextView animationsChoice;
-    private TextView advancedChoice;
-    private TextView followThemeChoice;
-    private TextView openOnStartChoice;
     private int columns;
     private int rowsBelowDock;
     private int dockOpacity;
     private String clockFormat;
     private boolean animations;
     private boolean advancedEffects;
+    private Config config;
+
+    static final class CategoryItem {
+        final int id;
+        final String title;
+        final int iconRes;
+
+        CategoryItem(int id, String title, int iconRes) {
+            this.id = id;
+            this.title = title;
+            this.iconRes = iconRes;
+        }
+    }
+
+    private static final int CAT_HOMESCREEN = 1;
+    private static final int CAT_CLOCK = 2;
+    private static final int CAT_WALLPAPER = 3;
+    private static final int CAT_UPDATES = 4;
+    private static final int CAT_SYSTEM = 5;
+    private static final int CAT_REORDER = 6;
 
     @Override
     protected void onCreate(Bundle state) {
         super.onCreate(state);
         setContentView(R.layout.activity_launcher_settings);
+
         choices = getSharedPreferences(Config.SETTINGS_NAME, MODE_PRIVATE);
-        Config config = Config.load(this);
-        View reorderChoice = findViewById(R.id.reorderChoice);
-        reorderChoice.setVisibility(config.launcherSettingsButton ? View.VISIBLE : View.GONE);
-        reorderChoice.setOnClickListener(v -> {
-            setResult(RESULT_OK, new Intent().putExtra(EXTRA_REORDER, true));
-            finish();
-        });
-        applyFocusAnimation(reorderChoice);
+        config = Config.load(this);
 
         columns = config.columns;
         rowsBelowDock = config.rowsBelowDock;
@@ -76,107 +81,192 @@ public final class LauncherSettingsActivity extends Activity {
         animations = config.animations;
         advancedEffects = config.animations && config.advancedEffects;
 
-        int[] ids = {R.id.columns4, R.id.columns5, R.id.columns6, R.id.columns7};
-        for (int i = 0; i < ids.length; i++) {
-            final int value = i + 4;
-            columnChoices[i] = findViewById(ids[i]);
-            columnChoices[i].setOnClickListener(v -> {
-                if (columns == value) return;
-                columns = value;
-                choices.edit().putInt("columns", value).apply();
-                changed();
-                refresh();
-            });
-            applyFocusAnimation(columnChoices[i]);
+        List<CategoryItem> categories = new ArrayList<>();
+        categories.add(new CategoryItem(CAT_HOMESCREEN, "Homescreen Layout", R.drawable.ic_apps));
+        categories.add(new CategoryItem(CAT_CLOCK, "Clock & Motion", R.drawable.ic_home_settings));
+        categories.add(new CategoryItem(CAT_WALLPAPER, "Wallpaper & Themes", R.drawable.ic_picture));
+        categories.add(new CategoryItem(CAT_UPDATES, "Updates & Startup", R.drawable.ic_settings));
+        categories.add(new CategoryItem(CAT_SYSTEM, "System Settings", R.drawable.ic_wifi));
+        if (config.launcherSettingsButton) {
+            categories.add(new CategoryItem(CAT_REORDER, getString(R.string.reorder), R.drawable.ic_swap_vert));
         }
-        int[] rowIds = {R.id.rows0, R.id.rows1, R.id.rows2, R.id.rows3};
-        for (int i = 0; i < rowIds.length; i++) {
-            final int value = i;
-            rowChoices[i] = findViewById(rowIds[i]);
-            rowChoices[i].setOnClickListener(v -> {
-                if (rowsBelowDock == value) return;
-                rowsBelowDock = value;
-                choices.edit().putInt(Config.ROWS_BELOW_DOCK_KEY, value).apply();
-                changed();
-                refresh();
-            });
-            applyFocusAnimation(rowChoices[i]);
-        }
-        int[] dockIds = {R.id.dock100, R.id.dock70, R.id.dock50, R.id.dock30};
-        for (int i = 0; i < dockIds.length; i++) {
-            final int value = DOCK_OPACITIES[i];
-            dockChoices[i] = findViewById(dockIds[i]);
-            dockChoices[i].setOnClickListener(v -> {
-                if (dockOpacity == value) return;
-                dockOpacity = value;
-                choices.edit().putInt(Config.DOCK_OPACITY_KEY, value).apply();
-                changed();
-                refresh();
-            });
-            applyFocusAnimation(dockChoices[i]);
-        }
-        int[] clockIds = {R.id.clockSystem, R.id.clock12, R.id.clock24};
-        for (int i = 0; i < clockIds.length; i++) {
-            final String value = CLOCK_FORMATS[i];
-            clockChoices[i] = findViewById(clockIds[i]);
-            clockChoices[i].setOnClickListener(v -> {
-                if (value.equals(clockFormat)) return;
-                clockFormat = value;
-                choices.edit().putString(Config.CLOCK_FORMAT_KEY, value).apply();
-                changed();
-                refresh();
-            });
-            applyFocusAnimation(clockChoices[i]);
-        }
-        // Mirror text alignment without globally opting the launcher into RTL. Numeric rows
-        // still need explicit ordering in Android's no-supportsRtl compatibility mode.
-        if (getResources().getBoolean(R.bool.rtl_menu_bar))
-            findViewById(android.R.id.content).setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
-        if (getResources().getBoolean(R.bool.rtl_app_grid)) {
-            reverseRow(columnChoices);
-            reverseRow(rowChoices);
-            reverseRow(dockChoices);
-            reverseRow(clockChoices);
-        }
-        wallpaperChoice = findViewById(R.id.wallpaperChoice);
-        wallpaperChoice.setOnClickListener(v -> showWallpaperPicker());
-        applyFocusAnimation(wallpaperChoice);
 
-        animationsChoice = findViewById(R.id.animationsChoice);
-        animationsChoice.setOnClickListener(v -> {
+        RecyclerView grid = findViewById(R.id.categoryGrid);
+        grid.setLayoutManager(new GridLayoutManager(this, 3));
+        grid.setAdapter(new CategoryAdapter(this, categories, this::openCategorySection));
+    }
+
+    private void openCategorySection(CategoryItem category) {
+        if (category.id == CAT_REORDER) {
+            setResult(RESULT_OK, new Intent().putExtra(EXTRA_REORDER, true));
+            finish();
+            return;
+        }
+
+        View sectionView = getLayoutInflater().inflate(R.layout.dialog_settings_section, null);
+        TextView title = sectionView.findViewById(R.id.sectionTitle);
+        TextView subtitle = sectionView.findViewById(R.id.sectionSubtitle);
+        LinearLayout container = sectionView.findViewById(R.id.sectionOptionsContainer);
+
+        title.setText(category.title);
+
+        AlertDialog dialog = new AlertDialog.Builder(this)
+                .setView(sectionView)
+                .setNegativeButton(android.R.string.cancel, null)
+                .create();
+
+        switch (category.id) {
+            case CAT_HOMESCREEN:
+                subtitle.setText("Customize grid columns, dock rows, and opacity");
+                buildHomescreenSection(container, dialog);
+                break;
+            case CAT_CLOCK:
+                subtitle.setText("Customize clock format and motion animations");
+                buildClockSection(container, dialog);
+                break;
+            case CAT_WALLPAPER:
+                subtitle.setText("Choose wallpapers and fetch online art");
+                buildWallpaperSection(container, dialog);
+                break;
+            case CAT_UPDATES:
+                subtitle.setText("Check for new launcher releases and auto-launch");
+                buildUpdatesSection(container, dialog);
+                break;
+            case CAT_SYSTEM:
+                subtitle.setText("Access default home and TV system settings");
+                buildSystemSection(container, dialog);
+                break;
+        }
+
+        dialog.show();
+    }
+
+    private void buildHomescreenSection(LinearLayout container, AlertDialog dialog) {
+        // Apps per row
+        addLabel(container, getString(R.string.columns_label));
+        LinearLayout colRow = createHorizontalRow();
+        TextView[] colBtns = new TextView[4];
+        for (int i = 0; i < 4; i++) {
+            final int val = i + 4;
+            colBtns[i] = createChoiceButton(String.valueOf(val), columns == val);
+            colBtns[i].setOnClickListener(v -> {
+                columns = val;
+                choices.edit().putInt("columns", val).apply();
+                changed();
+                updateRowSelection(colBtns, columns - 4);
+            });
+            colRow.addView(colBtns[i]);
+        }
+        container.addView(colRow);
+
+        // Rows below dock
+        addLabel(container, getString(R.string.rows_below_dock_label));
+        LinearLayout rowRow = createHorizontalRow();
+        TextView[] rowBtns = new TextView[4];
+        for (int i = 0; i < 4; i++) {
+            final int val = i;
+            rowBtns[i] = createChoiceButton(String.valueOf(val), rowsBelowDock == val);
+            rowBtns[i].setOnClickListener(v -> {
+                rowsBelowDock = val;
+                choices.edit().putInt(Config.ROWS_BELOW_DOCK_KEY, val).apply();
+                changed();
+                updateRowSelection(rowBtns, rowsBelowDock);
+            });
+            rowRow.addView(rowBtns[i]);
+        }
+        container.addView(rowRow);
+
+        // Dock opacity
+        addLabel(container, getString(R.string.dock_opacity_label));
+        LinearLayout dockRow = createHorizontalRow();
+        TextView[] dockBtns = new TextView[4];
+        for (int i = 0; i < 4; i++) {
+            final int val = DOCK_OPACITIES[i];
+            dockBtns[i] = createChoiceButton(val + "%", dockOpacity == val);
+            dockBtns[i].setOnClickListener(v -> {
+                dockOpacity = val;
+                choices.edit().putInt(Config.DOCK_OPACITY_KEY, val).apply();
+                changed();
+                updateRowSelection(dockBtns, indexOfInt(DOCK_OPACITIES, dockOpacity));
+            });
+            dockRow.addView(dockBtns[i]);
+        }
+        container.addView(dockRow);
+    }
+
+    private void buildClockSection(LinearLayout container, AlertDialog dialog) {
+        addLabel(container, getString(R.string.dream_name));
+        LinearLayout clockRow = createHorizontalRow();
+        TextView[] clockBtns = new TextView[3];
+        String[] labels = {getString(R.string.clock_format_system), getString(R.string.clock_format_12), getString(R.string.clock_format_24)};
+        for (int i = 0; i < 3; i++) {
+            final String val = CLOCK_FORMATS[i];
+            clockBtns[i] = createChoiceButton(labels[i], val.equals(clockFormat));
+            clockBtns[i].setOnClickListener(v -> {
+                clockFormat = val;
+                choices.edit().putString(Config.CLOCK_FORMAT_KEY, val).apply();
+                changed();
+                updateRowSelection(clockBtns, indexOfStr(CLOCK_FORMATS, clockFormat));
+            });
+            clockRow.addView(clockBtns[i]);
+        }
+        container.addView(clockRow);
+
+        // Animations Toggle
+        TextView animBtn = createFullRowButton(getString(R.string.animations_state, getString(animations ? R.string.on : R.string.off)));
+        animBtn.setOnClickListener(v -> {
             animations = !animations;
             if (!animations) advancedEffects = false;
             choices.edit().putBoolean("animations", animations)
                     .putBoolean("advanced_effects", advancedEffects).apply();
             changed();
-            refresh();
+            animBtn.setText(getString(R.string.animations_state, getString(animations ? R.string.on : R.string.off)));
         });
-        applyFocusAnimation(animationsChoice);
+        container.addView(animBtn);
 
-        advancedChoice = findViewById(R.id.advancedChoice);
-        advancedChoice.setOnClickListener(v -> {
+        // Advanced Effects Toggle
+        TextView advBtn = createFullRowButton(getString(R.string.advanced_effects_state, getString(advancedEffects ? R.string.on : R.string.off)));
+        advBtn.setOnClickListener(v -> {
             if (advancedEffects) {
                 setAdvanced(false);
+                advBtn.setText(getString(R.string.advanced_effects_state, getString(R.string.off)));
             } else {
                 new AlertDialog.Builder(this)
                         .setTitle(R.string.advanced_effects)
                         .setMessage(R.string.advanced_effects_warning)
-                        .setPositiveButton(R.string.enable, (dialog, which) -> setAdvanced(true))
+                        .setPositiveButton(R.string.enable, (d, w) -> {
+                            setAdvanced(true);
+                            advBtn.setText(getString(R.string.advanced_effects_state, getString(R.string.on)));
+                        })
                         .setNegativeButton(android.R.string.cancel, null)
                         .show();
             }
         });
-        applyFocusAnimation(advancedChoice);
+        container.addView(advBtn);
+    }
 
-        openOnStartChoice = findViewById(R.id.openOnStartChoice);
-        if (config.openOnStartChoice) {
-            openOnStartChoice.setVisibility(View.VISIBLE);
-            openOnStartChoice.setOnClickListener(v -> showOpenOnStartPicker());
-            applyFocusAnimation(openOnStartChoice);
-        }
-        followThemeChoice = findViewById(R.id.followThemeChoice);
-        followThemeChoice.setOnClickListener(v -> {
-            if (!hasOnTvChoices()) return;
+    private void buildWallpaperSection(LinearLayout container, AlertDialog dialog) {
+        TextView pickBtn = createFullRowButton("Choose Wallpaper (Card Grid)");
+        pickBtn.setOnClickListener(v -> {
+            dialog.dismiss();
+            showWallpaperPicker();
+        });
+        container.addView(pickBtn);
+
+        TextView redditBtn = createFullRowButton("Fetch Wallpapers from Reddit r/wallpapers");
+        redditBtn.setOnClickListener(v -> {
+            redditBtn.setText("Fetching wallpapers from Reddit...");
+            WallpaperFetcher.fetchFromReddit(this, (success, msg) -> {
+                runOnUiThread(() -> {
+                    redditBtn.setText("Fetch Wallpapers from Reddit r/wallpapers");
+                    Toast.makeText(this, msg, Toast.LENGTH_LONG).show();
+                });
+            });
+        });
+        container.addView(redditBtn);
+
+        TextView themeBtn = createFullRowButton(getString(R.string.follow_theme));
+        themeBtn.setOnClickListener(v -> {
             choices.edit().remove("columns").remove(Config.ROWS_BELOW_DOCK_KEY).remove("animations")
                     .remove("advanced_effects").remove(Config.WALLPAPER_CHOICE_KEY)
                     .remove(Config.DOCK_OPACITY_KEY).remove(Config.CLOCK_FORMAT_KEY).remove(OpenOnStart.KEY).commit();
@@ -188,47 +278,186 @@ public final class LauncherSettingsActivity extends Activity {
             animations = current.animations;
             advancedEffects = current.animations && current.advancedEffects;
             changed();
-            refresh();
+            Toast.makeText(this, "Theme choices reset", Toast.LENGTH_SHORT).show();
+            dialog.dismiss();
         });
-        applyFocusAnimation(followThemeChoice);
+        container.addView(themeBtn);
+    }
 
-        View defaultHomeChoice = findViewById(R.id.defaultHomeChoice);
-        defaultHomeChoice.setOnClickListener(v -> {
-            Toast.makeText(this, R.string.home_settings_help, Toast.LENGTH_LONG).show();
-            open(new Intent(Settings.ACTION_HOME_SETTINGS));
-        });
-        applyFocusAnimation(defaultHomeChoice);
-
-        View tvSettingsChoice = findViewById(R.id.tvSettingsChoice);
-        tvSettingsChoice.setOnClickListener(v -> open(SystemSettings.intent(this, Settings.ACTION_SETTINGS)));
-        applyFocusAnimation(tvSettingsChoice);
-
-        TextView redditWallpaperChoice = findViewById(R.id.redditWallpaperChoice);
-        redditWallpaperChoice.setOnClickListener(v -> {
-            redditWallpaperChoice.setText("Fetching wallpapers from Reddit...");
-            WallpaperFetcher.fetchFromReddit(this, (success, msg) -> {
-                runOnUiThread(() -> {
-                    redditWallpaperChoice.setText("Fetch Wallpapers from Reddit r/wallpapers");
-                    Toast.makeText(this, msg, Toast.LENGTH_LONG).show();
-                    refresh();
-                });
-            });
-        });
-        applyFocusAnimation(redditWallpaperChoice);
-
-        TextView updateChoice = findViewById(R.id.updateChoice);
-        updateChoice.setOnClickListener(v -> {
-            updateChoice.setText("Checking for updates...");
+    private void buildUpdatesSection(LinearLayout container, AlertDialog dialog) {
+        TextView updateBtn = createFullRowButton("Check for Launcher Updates");
+        updateBtn.setOnClickListener(v -> {
+            updateBtn.setText("Checking for updates...");
             UpdateManager.checkForUpdates(this, true, msg -> {
-                updateChoice.setText("Check for Launcher Updates");
+                updateBtn.setText("Check for Launcher Updates");
                 Toast.makeText(this, msg, Toast.LENGTH_LONG).show();
             });
         });
-        applyFocusAnimation(updateChoice);
+        container.addView(updateBtn);
 
-        refresh();
-        if (config.launcherSettingsButton) reorderChoice.requestFocus();
-        else columnChoices[Math.max(0, Math.min(columns - 4, 3))].requestFocus();
+        if (config.openOnStartChoice) {
+            TextView openStartBtn = createFullRowButton(getString(R.string.open_on_start_state, openOnStartLabel()));
+            openStartBtn.setOnClickListener(v -> {
+                dialog.dismiss();
+                showOpenOnStartPicker();
+            });
+            container.addView(openStartBtn);
+        }
+    }
+
+    private void buildSystemSection(LinearLayout container, AlertDialog dialog) {
+        TextView defaultHomeBtn = createFullRowButton(getString(R.string.home_settings));
+        defaultHomeBtn.setOnClickListener(v -> {
+            Toast.makeText(this, R.string.home_settings_help, Toast.LENGTH_LONG).show();
+            open(new Intent(Settings.ACTION_HOME_SETTINGS));
+        });
+        container.addView(defaultHomeBtn);
+
+        TextView tvSettingsBtn = createFullRowButton(getString(R.string.tv_settings));
+        tvSettingsBtn.setOnClickListener(v -> open(SystemSettings.intent(this, Settings.ACTION_SETTINGS)));
+        container.addView(tvSettingsBtn);
+    }
+
+    private void addLabel(LinearLayout container, String text) {
+        TextView label = new TextView(this);
+        label.setText(text);
+        label.setTextColor(0xFFFFFFFF);
+        label.setTextSize(15);
+        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        lp.topMargin = (int) (12 * getResources().getDisplayMetrics().density);
+        label.setLayoutParams(lp);
+        container.addView(label);
+    }
+
+    private LinearLayout createHorizontalRow() {
+        LinearLayout row = new LinearLayout(this);
+        row.setOrientation(LinearLayout.HORIZONTAL);
+        row.setClipChildren(false);
+        row.setClipToPadding(false);
+        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        lp.topMargin = (int) (8 * getResources().getDisplayMetrics().density);
+        row.setLayoutParams(lp);
+        return row;
+    }
+
+    private TextView createChoiceButton(String text, boolean selected) {
+        TextView btn = new TextView(this);
+        btn.setText(text);
+        btn.setGravity(android.view.Gravity.CENTER);
+        btn.setBackgroundResource(R.drawable.settings_choice_bg);
+        btn.setTextColor(0xFFFFFFFF);
+        btn.setTextSize(16);
+        btn.setSelected(selected);
+        btn.setFocusable(true);
+        btn.setClickable(true);
+
+        float density = getResources().getDisplayMetrics().density;
+        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(0, (int) (48 * density), 1.0f);
+        lp.setMargins((int) (4 * density), (int) (2 * density), (int) (4 * density), (int) (2 * density));
+        btn.setLayoutParams(lp);
+
+        applyFocusAnimation(btn);
+        return btn;
+    }
+
+    private TextView createFullRowButton(String text) {
+        TextView btn = new TextView(this);
+        btn.setText(text);
+        btn.setGravity(android.view.Gravity.CENTER_VERTICAL);
+        btn.setBackgroundResource(R.drawable.settings_choice_bg);
+        btn.setTextColor(0xFFFFFFFF);
+        btn.setTextSize(16);
+        btn.setFocusable(true);
+        btn.setClickable(true);
+
+        float density = getResources().getDisplayMetrics().density;
+        btn.setPadding((int) (18 * density), 0, (int) (18 * density), 0);
+
+        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, (int) (50 * density));
+        lp.topMargin = (int) (10 * density);
+        btn.setLayoutParams(lp);
+
+        applyFocusAnimation(btn);
+        return btn;
+    }
+
+    private void updateRowSelection(TextView[] btns, int selectedIdx) {
+        for (int i = 0; i < btns.length; i++) {
+            btns[i].setSelected(i == selectedIdx);
+        }
+    }
+
+    private static int indexOfInt(int[] arr, int val) {
+        for (int i = 0; i < arr.length; i++) if (arr[i] == val) return i;
+        return 0;
+    }
+
+    private static int indexOfStr(String[] arr, String val) {
+        for (int i = 0; i < arr.length; i++) if (arr[i].equals(val)) return i;
+        return 0;
+    }
+
+    private static final class CategoryAdapter extends RecyclerView.Adapter<CategoryViewHolder> {
+        private final Activity activity;
+        private final List<CategoryItem> items;
+        private final OnCategoryClickListener listener;
+
+        interface OnCategoryClickListener {
+            void onClick(CategoryItem category);
+        }
+
+        CategoryAdapter(Activity activity, List<CategoryItem> items, OnCategoryClickListener listener) {
+            this.activity = activity;
+            this.items = items;
+            this.listener = listener;
+        }
+
+        @Override
+        public CategoryViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+            View view = activity.getLayoutInflater().inflate(R.layout.item_settings_category_card, parent, false);
+            return new CategoryViewHolder(view);
+        }
+
+        @Override
+        public void onBindViewHolder(CategoryViewHolder holder, int position) {
+            CategoryItem item = items.get(position);
+            holder.title.setText(item.title);
+            holder.icon.setImageResource(item.iconRes);
+
+            final float density = activity.getResources().getDisplayMetrics().density;
+            holder.card.setOnFocusChangeListener((v, focused) -> {
+                float scale = focused ? 1.05f : 1.00f;
+                float z = focused ? 8f * density : 0f;
+                v.animate()
+                        .scaleX(scale)
+                        .scaleY(scale)
+                        .translationZ(z)
+                        .setDuration(focused ? 180 : 140)
+                        .setInterpolator(focused ? new DecelerateInterpolator(1.5f) : new AccelerateInterpolator())
+                        .start();
+                if (focused) v.bringToFront();
+            });
+
+            holder.card.setOnClickListener(v -> listener.onClick(item));
+        }
+
+        @Override
+        public int getItemCount() {
+            return items.size();
+        }
+    }
+
+    private static final class CategoryViewHolder extends RecyclerView.ViewHolder {
+        final View card;
+        final ImageView icon;
+        final TextView title;
+
+        CategoryViewHolder(View itemView) {
+            super(itemView);
+            card = itemView.findViewById(R.id.categoryCard);
+            icon = itemView.findViewById(R.id.categoryIcon);
+            title = itemView.findViewById(R.id.categoryTitle);
+        }
     }
 
     private void applyFocusAnimation(View view) {
@@ -248,12 +477,6 @@ public final class LauncherSettingsActivity extends Activity {
                 v.bringToFront();
             }
         });
-    }
-
-    private void reverseRow(TextView[] views) {
-        LinearLayout row = (LinearLayout) views[0].getParent();
-        row.removeAllViews();
-        for (int i = views.length - 1; i >= 0; i--) row.addView(views[i]);
     }
 
     static final class WallpaperItem {
@@ -317,7 +540,6 @@ public final class LauncherSettingsActivity extends Activity {
             }
             changed();
             Toast.makeText(this, R.string.wallpaper_applied, Toast.LENGTH_SHORT).show();
-            refresh();
         }));
 
         dialog.show();
@@ -433,7 +655,6 @@ public final class LauncherSettingsActivity extends Activity {
         return inSampleSize;
     }
 
-    /** Off, then every app with a TV entry point by name. Saved at once; it is read on the next boot. */
     private void showOpenOnStartPicker() {
         PackageManager pm = getPackageManager();
         List<String[]> apps = new ArrayList<>();
@@ -463,13 +684,11 @@ public final class LauncherSettingsActivity extends Activity {
                         OpenOnStart.skipThisBoot(this);
                         choices.edit().putString(OpenOnStart.KEY, apps.get(which - 1)[1]).apply();
                     }
-                    refresh();
                 })
                 .setNegativeButton(android.R.string.cancel, null)
                 .show();
     }
 
-    /** The picked app's name, its package when it is gone, or Off. */
     private String openOnStartLabel() {
         String pkg = choices.getString(OpenOnStart.KEY, "");
         if (pkg.isEmpty()) return getString(R.string.off);
@@ -481,12 +700,6 @@ public final class LauncherSettingsActivity extends Activity {
         }
     }
 
-
-
-    /**
-     * A choice was saved. Home rebuilds when it next resumes because the change count moved, whether these
-     * settings are left with Back or with the remote's Home button (which cancels the activity result).
-     */
     private void changed() {
         setResult(RESULT_OK);
         choices.edit().putLong(Config.SETTINGS_REVISION_KEY,
@@ -497,35 +710,6 @@ public final class LauncherSettingsActivity extends Activity {
         advancedEffects = enabled;
         choices.edit().putBoolean("advanced_effects", enabled).apply();
         changed();
-        refresh();
-    }
-
-    private void refresh() {
-        for (int i = 0; i < columnChoices.length; i++) {
-            columnChoices[i].setSelected(columns == i + 4);
-        }
-        for (int i = 0; i < rowChoices.length; i++) {
-            rowChoices[i].setSelected(rowsBelowDock == i);
-        }
-        for (int i = 0; i < dockChoices.length; i++) {
-            dockChoices[i].setSelected(dockOpacity == DOCK_OPACITIES[i]);
-        }
-        for (int i = 0; i < clockChoices.length; i++) {
-            clockChoices[i].setSelected(CLOCK_FORMATS[i].equals(clockFormat));
-        }
-        animationsChoice.setText(getString(R.string.animations_state,
-                getString(animations ? R.string.on : R.string.off)));
-        advancedChoice.setText(getString(R.string.advanced_effects_state,
-                getString(advancedEffects ? R.string.on : R.string.off)));
-        advancedChoice.setEnabled(animations);
-        advancedChoice.setAlpha(animations ? 1f : 0.5f);
-        String wallpaperCurrent = choices.getString(Config.WALLPAPER_CHOICE_KEY, null);
-        wallpaperChoice.setText(getString(R.string.wallpaper_state,
-                "none".equals(wallpaperCurrent) ? getString(R.string.wallpaper_none)
-                        : wallpaperCurrent != null ? wallpaperCurrent
-                        : getString(R.string.wallpaper_theme_default)));
-        openOnStartChoice.setText(getString(R.string.open_on_start_state, openOnStartLabel()));
-        followThemeChoice.setSelected(!hasOnTvChoices());
     }
 
     private boolean hasOnTvChoices() {

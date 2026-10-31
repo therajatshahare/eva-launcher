@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gathin.tvhome.TileRefreshTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-10-31T13:07:42.762Z" hostname="DESKTOP-EOQDD3G" time="0.008">
+<testsuite name="com.gathin.tvhome.TileRefreshTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-10-31T14:22:55.875Z" hostname="DESKTOP-EOQDD3G" time="0.013">
   <properties/>
   <testcase name="homePressedInAnAppRefocusesWithoutRebuilding" classname="com.gathin.tvhome.TileRefreshTest" time="0.002"/>
-  <testcase name="anAppChangedInTheBackgroundRebuildsOnceOnReturn" classname="com.gathin.tvhome.TileRefreshTest" time="0.0"/>
-  <testcase name="homeOnHomeGoesBackToTheFirstTileWithoutRebuilding" classname="com.gathin.tvhome.TileRefreshTest" time="0.001"/>
-  <testcase name="firstResumeBuildsTheTiles" classname="com.gathin.tvhome.TileRefreshTest" time="0.0"/>
-  <testcase name="backFromAnAppWithNothingChangedOnlyRefocuses" classname="com.gathin.tvhome.TileRefreshTest" time="0.0"/>
+  <testcase name="anAppChangedInTheBackgroundRebuildsOnceOnReturn" classname="com.gathin.tvhome.TileRefreshTest" time="0.001"/>
+  <testcase name="homeOnHomeGoesBackToTheFirstTileWithoutRebuilding" classname="com.gathin.tvhome.TileRefreshTest" time="0.002"/>
+  <testcase name="firstResumeBuildsTheTiles" classname="com.gathin.tvhome.TileRefreshTest" time="0.001"/>
+  <testcase name="backFromAnAppWithNothingChangedOnlyRefocuses" classname="com.gathin.tvhome.TileRefreshTest" time="0.001"/>
   <testcase name="pauseWithoutStopChangesNothing" classname="com.gathin.tvhome.TileRefreshTest" time="0.0"/>
   <testcase name="tilesDroppedForMemoryAreRebuiltOnReturn" classname="com.gathin.tvhome.TileRefreshTest" time="0.001"/>
-  <testcase name="aMissedBroadcastStillRebuilds" classname="com.gathin.tvhome.TileRefreshTest" time="0.0"/>
+  <testcase name="aMissedBroadcastStillRebuilds" classname="com.gathin.tvhome.TileRefreshTest" time="0.001"/>
   <testcase name="anAppChangedWhileHomeIsShownRebuildsAtOnce" classname="com.gathin.tvhome.TileRefreshTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

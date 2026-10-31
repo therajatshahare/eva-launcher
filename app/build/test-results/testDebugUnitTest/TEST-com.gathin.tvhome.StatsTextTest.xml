@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gathin.tvhome.StatsTextTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-31T13:07:42.709Z" hostname="DESKTOP-EOQDD3G" time="0.01">
+<testsuite name="com.gathin.tvhome.StatsTextTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-31T14:22:55.742Z" hostname="DESKTOP-EOQDD3G" time="0.015">
   <properties/>
-  <testcase name="preservesUpstreamSpacedUsedTotalAsOneRun" classname="com.gathin.tvhome.StatsTextTest" time="0.007"/>
-  <testcase name="isolatesUnitsAndPercentAsWholeMeasurements" classname="com.gathin.tvhome.StatsTextTest" time="0.001"/>
+  <testcase name="preservesUpstreamSpacedUsedTotalAsOneRun" classname="com.gathin.tvhome.StatsTextTest" time="0.008"/>
+  <testcase name="isolatesUnitsAndPercentAsWholeMeasurements" classname="com.gathin.tvhome.StatsTextTest" time="0.002"/>
   <testcase name="preservesEnglishExactly" classname="com.gathin.tvhome.StatsTextTest" time="0.001"/>
-  <testcase name="supportsAbsentCpuAndLargeValues" classname="com.gathin.tvhome.StatsTextTest" time="0.0"/>
-  <testcase name="keepsCapacityRatiosInOneDirectionRun" classname="com.gathin.tvhome.StatsTextTest" time="0.0"/>
+  <testcase name="supportsAbsentCpuAndLargeValues" classname="com.gathin.tvhome.StatsTextTest" time="0.001"/>
+  <testcase name="keepsCapacityRatiosInOneDirectionRun" classname="com.gathin.tvhome.StatsTextTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

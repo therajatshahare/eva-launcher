@@ -2810,7 +2810,14 @@ com.gathin.tvhome.LaunchActions:
 com.gathin.tvhome.LauncherLocale:
     private void <init>()
 com.gathin.tvhome.LauncherSettingsActivity:
+    private static final int CAT_CLOCK
+    private static final int CAT_HOMESCREEN
+    private static final int CAT_REORDER
+    private static final int CAT_SYSTEM
+    private static final int CAT_UPDATES
+    private static final int CAT_WALLPAPER
     static final java.lang.String EXTRA_REORDER
+    private boolean hasOnTvChoices()
 com.gathin.tvhome.LibraryApps:
     static final int MAX_ADDED
     private static final int MAX_BYTES
@@ -2882,7 +2889,6 @@ com.gathin.tvhome.R$drawable:
     public static int pill_text_dim
     public static int pill_text_mid
     public static int settings_card_bg
-    public static int settings_choice_bg
     public static int status_dot
     public static int tile_bg
     public static int wallpaper_card_gradient
@@ -2891,6 +2897,7 @@ com.gathin.tvhome.R$font
 com.gathin.tvhome.R$id:
     public static int ampm
     public static int hint
+    public static int sectionContent
     private void <init>()
 com.gathin.tvhome.R$integer:
     private void <init>()
@@ -2904,14 +2911,8 @@ com.gathin.tvhome.R$string:
     public static int card_keep_hidden
     public static int card_prompt_hint
     public static int card_show
-    public static int clock_format_12
-    public static int clock_format_24
-    public static int clock_format_system
-    public static int columns_label
     public static int date_format
     public static int date_format_home
-    public static int dock_opacity_label
-    public static int follow_theme
     public static int follow_theme_hint
     public static int font_body
     public static int font_extralight
@@ -2919,9 +2920,9 @@ com.gathin.tvhome.R$string:
     public static int home_key_description
     public static int home_key_name
     public static int input_key_service_description
-    public static int rows_below_dock_label
     public static int standby
     public static int wallpaper_label
+    public static int wallpaper_state
     private void <init>()
 com.gathin.tvhome.R$style
 com.gathin.tvhome.R$xml
@@ -5898,13 +5899,20 @@ com.gathin.tvhome.InputFold
 com.gathin.tvhome.JackOLanternDrawable:
     public final void setReducedMotion()
 com.gathin.tvhome.LastOpened
-com.gathin.tvhome.LauncherSettingsActivity$$InternalSyntheticLambda$2$b882af7a8e780a453707d25877b2139f0ccb41ed911f5731ac9bdb11f1b61c01$0:
+com.gathin.tvhome.LauncherSettingsActivity$$InternalSyntheticLambda$1$287214e63e9f0b048f4c9985f49720ae4ec808c99f9a6453cd1d779255d7f011$0:
+    public static void onClick()
+com.gathin.tvhome.LauncherSettingsActivity$$InternalSyntheticLambda$4$b882af7a8e780a453707d25877b2139f0ccb41ed911f5731ac9bdb11f1b61c01$0:
     public static void onSelected()
+com.gathin.tvhome.LauncherSettingsActivity$CategoryAdapter$OnCategoryClickListener
+com.gathin.tvhome.LauncherSettingsActivity$CategoryAdapter:
+    public static void onBindViewHolder$2()
+    public static com.gathin.tvhome.LauncherSettingsActivity$CategoryViewHolder onCreateViewHolder()
 com.gathin.tvhome.LauncherSettingsActivity$WallpaperGridAdapter$OnWallpaperSelectedListener
 com.gathin.tvhome.LauncherSettingsActivity$WallpaperGridAdapter:
-    public static void onBindViewHolder$2()
+    public static void onBindViewHolder$3()
     public static com.gathin.tvhome.LauncherSettingsActivity$WallpaperViewHolder onCreateViewHolder()
 com.gathin.tvhome.LauncherSettingsActivity:
+    public final void applyFocusAnimation(android.widget.TextView)
     public final void open(android.content.Intent)
     public final void setAdvanced(boolean)
 com.gathin.tvhome.LibraryApps:
@@ -6010,7 +6018,7 @@ com.gathin.tvhome.TileRefresh:
     public static int onResume()
     public static void onStart()
     public static void onStop()
-com.gathin.tvhome.UpdateManager$$InternalSyntheticLambda$3$fea7254b7512e6e8ee18a42f46172baeb9945d1f459806396f1efe4e434dfce1$0:
+com.gathin.tvhome.UpdateManager$$InternalSyntheticLambda$5$fea7254b7512e6e8ee18a42f46172baeb9945d1f459806396f1efe4e434dfce1$0:
     public final synthetic boolean f$2
 com.gathin.tvhome.UpdateManager$StatusCallback
 com.gathin.tvhome.VolumeKeys:

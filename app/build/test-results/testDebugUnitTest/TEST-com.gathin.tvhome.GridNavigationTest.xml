@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gathin.tvhome.GridNavigationTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-31T13:07:41.804Z" hostname="DESKTOP-EOQDD3G" time="0.011">
+<testsuite name="com.gathin.tvhome.GridNavigationTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-31T14:22:54.030Z" hostname="DESKTOP-EOQDD3G" time="0.014">
   <properties/>
-  <testcase name="horizontalEdgesMatchExplicitRowsAcrossColumnCountsAndDirections" classname="com.gathin.tvhome.GridNavigationTest" time="0.005"/>
-  <testcase name="sparseDockRedirectsEmptySlotsAndKeepsGridRowBoundary" classname="com.gathin.tvhome.GridNavigationTest" time="0.0"/>
+  <testcase name="horizontalEdgesMatchExplicitRowsAcrossColumnCountsAndDirections" classname="com.gathin.tvhome.GridNavigationTest" time="0.007"/>
+  <testcase name="sparseDockRedirectsEmptySlotsAndKeepsGridRowBoundary" classname="com.gathin.tvhome.GridNavigationTest" time="0.002"/>
   <testcase name="singleColumnHasBothHorizontalEdges" classname="com.gathin.tvhome.GridNavigationTest" time="0.001"/>
   <testcase name="incompleteHebrewLastRowDoesNotWrapIntoEmptySpace" classname="com.gathin.tvhome.GridNavigationTest" time="0.001"/>
-  <testcase name="hebrewDockStartsOnTheRightAndStopsAtTheLeft" classname="com.gathin.tvhome.GridNavigationTest" time="0.0"/>
+  <testcase name="hebrewDockStartsOnTheRightAndStopsAtTheLeft" classname="com.gathin.tvhome.GridNavigationTest" time="0.001"/>
   <testcase name="originalLeftToRightBoundariesArePreserved" classname="com.gathin.tvhome.GridNavigationTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

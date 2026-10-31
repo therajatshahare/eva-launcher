@@ -1,10 +1,10 @@
-Marking id:icon:2131296349 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:title:2131296414 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:status:2131296397 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:icon:2131296338 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:title:2131296400 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:status:2131296383 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:library_on_home:2131755087 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:library_recent:2131755089 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:library_add_home:2131755082 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:dot:2131296331 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:dot:2131296321 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking drawable:library_check:2131165206 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:stats_cpu:2131755162 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:stats_memory:2131755163 reachable: referenced from in_memory_r8_base_classes0.dex
@@ -15,13 +15,13 @@ Marking string:home_settings_help:2131755074 reachable: referenced from in_memor
 Marking string:not_available:2131755106 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking drawable:halloween_bat:2131165187 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking drawable:halloween_ghost:2131165188 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:card:2131296312 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:banner:2131296300 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:label:2131296360 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:name:2131296365 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:card:2131296310 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:banner:2131296298 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:label:2131296349 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:name:2131296354 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking bool:rtl_app_grid:2130968623 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking drawable:glass_panel:2131165186 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking layout:item_input:2131427337 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking layout:item_input:2131427338 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:library_save_failed:2131755091 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:app_library:2131755012 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking plurals:library_app_count:2131623936 reachable: referenced from in_memory_r8_base_classes0.dex
@@ -31,13 +31,13 @@ Marking string:library_hint_add:2131755085 reachable: referenced from in_memory_
 Marking string:library_hint_open:2131755086 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:cant_open:2131755014 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:font_medium:2131755057 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:btnShow:2131296309 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:btnShow:2131296307 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking attr:recyclerViewStyle:2130903061 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking dimen:fastscroll_default_thickness:2131099655 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking dimen:fastscroll_minimum_range:2131099657 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking dimen:fastscroll_margin:2131099656 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:is_pooling_container_tag:2131296353 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:pooling_container_listener_holder_tag:2131296374 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:is_pooling_container_tag:2131296342 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:pooling_container_listener_holder_tag:2131296362 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:latitude:2131755080 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:longitude:2131755097 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:shamsi_month_farvardin:2131755151 reachable: referenced from in_memory_r8_base_classes0.dex
@@ -54,58 +54,58 @@ Marking string:shamsi_month_bahman:2131755148 reachable: referenced from in_memo
 Marking string:shamsi_month_esfand:2131755150 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:dock_edit_hint:2131755042 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:no_module_cards:2131755105 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:btnLibrary:2131296305 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:btnLibrary:2131296303 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:connected:2131755038 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:not_connected:2131755107 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:card_not_saved:2131755017 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:dock_edit_pick_app:2131755043 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:reorder_not_saved:2131755143 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:last_opened:2131755079 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:topButtons:2131296415 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:btnSettings:2131296308 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:topButtons:2131296401 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:btnSettings:2131296306 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking layout:activity_main:2131427329 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:root:2131296385 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:sky:2131296394 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:glass:2131296339 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:ambient:2131296295 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:heroName:2131296346 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:hero:2131296342 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:heroMeta:2131296345 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:heroDots:2131296344 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:heroArt:2131296343 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:root:2131296371 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:sky:2131296380 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:glass:2131296328 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:ambient:2131296294 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:heroName:2131296335 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:hero:2131296331 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:heroMeta:2131296334 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:heroDots:2131296333 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:heroArt:2131296332 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking bool:rtl_menu_bar:2130968624 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:heroScrim:2131296347 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:greeting:2131296340 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:leftBlock:2131296361 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:heroScrim:2131296336 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:greeting:2131296329 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:leftBlock:2131296350 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking id:clockDivider:2131296317 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:date:2131296323 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:clock:2131296314 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:btnWifi:2131296311 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:shamsiDate:2131296393 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:stats:2131296396 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:racePanel:2131296379 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:raceKicker:2131296377 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:raceHeadline:2131296376 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:raceSessions:2131296380 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:raceBar:2131296375 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:racePager:2131296378 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:lunarDate:2131296364 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:btnVpn:2131296310 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:grid:2131296341 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:date:2131296318 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:clock:2131296316 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:btnWifi:2131296309 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:shamsiDate:2131296379 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:stats:2131296382 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:racePanel:2131296367 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:raceKicker:2131296365 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:raceHeadline:2131296364 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:raceSessions:2131296368 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:raceBar:2131296363 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:racePager:2131296366 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:lunarDate:2131296353 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:btnVpn:2131296308 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:grid:2131296330 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking anim:tile_enter:2130771970 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:btnInputs:2131296303 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:btnInputs:2131296301 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:launcher_settings:2131755081 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking drawable:ic_home_settings_pill:2131165196 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:btnReorder:2131296307 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:btnLibraryTop:2131296306 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking layout:top_app_button:2131427348 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:btnReorder:2131296305 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:btnLibraryTop:2131296304 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking layout:top_app_button:2131427350 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking color:pill_icon_online:2131034118 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking color:pill_icon_no_internet:2131034116 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking color:pill_icon_offline:2131034117 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:settings:2131755145 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking drawable:ic_settings:2131165202 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking layout:popup_inputs:2131427346 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:rows:2131296386 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking layout:popup_inputs:2131427348 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:rows:2131296372 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:tile_replace_in_dock:2131755171 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:tile_add_to_dock:2131755169 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:tile_move:2131755170 reachable: referenced from in_memory_r8_base_classes0.dex
@@ -120,7 +120,7 @@ Marking string:inputs:2131755078 reachable: referenced from in_memory_r8_base_cl
 Marking string:live_tv:2131755092 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:no_inputs:2131755104 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:reorder_hint:2131755142 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:state:2131296395 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:state:2131296381 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:card_state_new:2131755027 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:card_state_hidden:2131755026 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:card_state_shown:2131755031 reachable: referenced from in_memory_r8_base_classes0.dex
@@ -167,31 +167,20 @@ Marking string:vpn_off:2131755175 reachable: referenced from in_memory_r8_base_c
 Marking drawable:ic_lock_open:2131165200 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking drawable:halloween_pumpkin_dark:2131165189 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking drawable:halloween_pumpkin_lit:2131165190 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:github_update_repo:2131755061 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:tag_screen_reader_focusable:2131296405 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:tag_accessibility_heading:2131296400 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:tag_accessibility_pane_title:2131296401 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:tag_state_description:2131296406 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:tag_accessibility_actions:2131296398 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking layout:item_settings_category_card:2131427339 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:tag_screen_reader_focusable:2131296391 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:tag_accessibility_heading:2131296386 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:tag_accessibility_pane_title:2131296387 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:tag_state_description:2131296392 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:tag_accessibility_actions:2131296384 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:font_regular:2131755058 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking layout:popup_cards:2131427345 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking layout:item_card_row:2131427336 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:app:2131296298 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:card_app_name:2131755015 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:pkg:2131296373 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:digest:2131296326 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking layout:dialog_card_prompt:2131427332 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:card_prompt_title:2131755024 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:body:2131296302 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:card_prompt_resigned:2131755023 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:card_prompt_relabelled:2131755022 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:card_prompt_body:2131755018 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:names:2131296366 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:card_prompt_names:2131755021 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:identity:2131296351 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:card_prompt_identity:2131755020 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:btnKeep:2131296304 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking array:settings_fallback_components:2130837517 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking string:wallpaper_theme_default:2131755181 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking string:wallpaper_none:2131755179 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking layout:dialog_wallpaper_picker:2131427334 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:wallpaperGrid:2131296404 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking string:off:2131755108 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking string:open_on_start_label:2131755111 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking array:dock_apps:2130837507 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking bool:fill_dock:2130968601 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking array:hidden_apps:2130837508 reachable: referenced from in_memory_r8_base_classes0.dex
@@ -297,68 +286,73 @@ Marking string:race_countdown_minutes:2131755120 reachable: referenced from in_m
 Marking string:race_countdown_hours:2131755119 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:race_countdown_days:2131755118 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking drawable:ic_apps:2131165191 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking array:icon_tiles:2130837509 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking layout:row_app_library:2131427347 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking layout:item_app:2131427335 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:dock_edit_pick_place:2131755044 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:wallpaper_theme_default:2131755181 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:wallpaper_none:2131755179 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking layout:dialog_wallpaper_picker:2131427333 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:wallpaperGrid:2131296421 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:off:2131755108 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:open_on_start_label:2131755111 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:categoryCard:2131296311 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:categoryIcon:2131296313 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:categoryTitle:2131296314 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking string:on:2131755110 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking string:advanced_effects_state:2131755009 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:advanced_effects:2131755008 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:advanced_effects_warning:2131755010 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:enable:2131755047 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking layout:dream_clock:2131427334 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking layout:activity_launcher_settings:2131427328 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:reorderChoice:2131296382 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:columns6:2131296321 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:columns7:2131296322 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:columns4:2131296319 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:columns5:2131296320 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:rows2:2131296389 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:rows3:2131296390 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:rows0:2131296387 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:rows1:2131296388 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:dock50:2131296329 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:dock30:2131296328 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:dock100:2131296327 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:dock70:2131296330 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:clock12:2131296315 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:clock24:2131296316 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:clockSystem:2131296318 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:wallpaperChoice:2131296420 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:animationsChoice:2131296297 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:advancedChoice:2131296294 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:openOnStartChoice:2131296371 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:followThemeChoice:2131296337 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:defaultHomeChoice:2131296324 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:tvSettingsChoice:2131296416 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:redditWallpaperChoice:2131296381 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:updateChoice:2131296417 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:on:2131755110 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:animations_state:2131755011 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:advanced_effects_state:2131755009 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:wallpaper_state:2131755180 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:open_on_start_state:2131755112 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking string:github_update_repo:2131755061 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking array:icon_tiles:2130837509 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking layout:row_app_library:2131427349 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking layout:item_app:2131427336 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking string:dock_edit_pick_place:2131755044 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking layout:popup_cards:2131427347 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking layout:item_card_row:2131427337 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:app:2131296296 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking string:card_app_name:2131755015 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:pkg:2131296361 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:digest:2131296320 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking layout:dialog_card_prompt:2131427332 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking string:card_prompt_title:2131755024 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:body:2131296300 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking string:card_prompt_resigned:2131755023 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking string:card_prompt_relabelled:2131755022 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking string:card_prompt_body:2131755018 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:names:2131296355 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking string:card_prompt_names:2131755021 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:identity:2131296340 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking string:card_prompt_identity:2131755020 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:btnKeep:2131296302 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking layout:dream_clock:2131427335 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking drawable:settings_choice_bg:2131165225 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking layout:activity_launcher_settings:2131427328 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking drawable:ic_picture:2131165201 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking string:reorder:2131755141 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking drawable:ic_swap_vert:2131165203 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:categoryGrid:2131296312 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:native_settings:2131755103 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:module_cards:2131755101 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:dock_edit:2131755041 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:reorder:2131755141 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:power_menu:2131755113 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:tag_unhandled_key_listeners:2131296409 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:tag_unhandled_key_listeners:2131296395 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:library_open:2131755088 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking drawable:banner:2131165184 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking layout:item_wallpaper_card:2131427338 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:tag_window_insets_animation_callback:2131296410 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:tag_on_apply_window_listener:2131296402 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking layout:item_wallpaper_card:2131427340 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:tag_window_insets_animation_callback:2131296396 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:tag_on_apply_window_listener:2131296388 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:app_name:2131755013 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:choose_input:2131755032 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:dream_name:2131755046 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:dreamContent:2131296335 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:dreamAmbient:2131296333 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:dreamContent:2131296325 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:dreamAmbient:2131296323 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:wallpaper_applied:2131755176 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking layout:dialog_settings_section:2131427333 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:sectionTitle:2131296377 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:sectionSubtitle:2131296376 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:sectionOptionsContainer:2131296375 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking string:tv_settings:2131755172 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking string:open_on_start_state:2131755112 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking string:follow_theme:2131755052 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking string:clock_format_system:2131755036 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking string:clock_format_12:2131755034 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking string:clock_format_24:2131755035 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking string:columns_label:2131755037 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking string:rows_below_dock_label:2131755144 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking string:dock_opacity_label:2131755045 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking anim:app_open_enter:2130771968 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking anim:app_open_exit:2130771969 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:race_qualifying:2131755133 reachable: referenced from in_memory_r8_base_classes0.dex
@@ -369,22 +363,19 @@ Marking string:race_practice_1:2131755127 reachable: referenced from in_memory_r
 Marking string:race_sprint_qualifying:2131755138 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:race_sprint:2131755137 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:quick_network:2131755116 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking drawable:ic_swap_vert:2131165203 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:wallpaperCard:2131296419 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:wallpaperPreview:2131296423 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:wallpaperName:2131296422 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:selectedBadge:2131296392 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:wallpaperCard:2131296403 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:wallpaperPreview:2131296406 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:wallpaperName:2131296405 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:selectedBadge:2131296378 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking layout:activity_quick_settings:2131427330 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:panel:2131296372 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:scrim:2131296391 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:tv_settings:2131755172 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking drawable:ic_picture:2131165201 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:panel:2131296360 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:scrim:2131296373 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:quick_picture:2131755117 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:quick_apps:2131755114 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking string:quick_apps_hint:2131755115 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking array:settings_key_scancodes:2130837519 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking id:accessibility_action_clickable_span:2131296256 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:tag_accessibility_clickable_spans:2131296399 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:tag_accessibility_clickable_spans:2131296385 reachable: referenced from in_memory_r8_base_classes0.dex
 android.content.res.Resources#getIdentifier present: true
 Web content present: false
 Referenced Strings:
@@ -594,9 +585,9 @@ mStableInsets
 null
 DISC
 wifi_label_width
-1.6
 open_on_start
 https://api.github.com/repos/
+1.7
 key_filter
 inputs_connected_only
 ACTION_SCROLL_RIGHT
@@ -873,7 +864,7 @@ round
 mAttachInfo
 .updateprovider
 Marking string:glass_style:2131755062 used because it matches string pool constant glass_style
-Marking id:greeting:2131296340 used because it matches string pool constant greeting
+Marking id:greeting:2131296329 used because it matches string pool constant greeting
 Marking string:greeting_name:2131755069 used because it matches string pool constant greeting
 Marking string:greeting_with_name:2131755070 used because it matches string pool constant greeting
 Marking string:clock_format:2131755033 used because it matches string pool constant clock_format
@@ -890,7 +881,11 @@ Marking bool:dock_even_padding:2130968596 used because it matches string pool co
 Marking array:app_labels:2130837506 used because it matches string pool constant app_labels
 Marking bool:gamepad_passthrough:2130968603 used because it matches string pool constant gamepad_passthrough
 Marking bool:home_long_press_home:2130968606 used because it matches string pool constant home_long_press_home
-Marking id:card:2131296312 used because it matches string pool constant ca
+Marking id:card:2131296310 used because it matches string pool constant ca
+Marking id:categoryCard:2131296311 used because it matches string pool constant ca
+Marking id:categoryGrid:2131296312 used because it matches string pool constant ca
+Marking id:categoryIcon:2131296313 used because it matches string pool constant ca
+Marking id:categoryTitle:2131296314 used because it matches string pool constant ca
 Marking string:cant_open:2131755014 used because it matches string pool constant ca
 Marking string:card_app_name:2131755015 used because it matches string pool constant ca
 Marking string:card_keep_hidden:2131755016 used because it matches string pool constant ca
@@ -915,7 +910,7 @@ Marking string:input_action:2131755075 used because it matches string pool const
 Marking string:last_opened:2131755079 used because it matches string pool constant last_opened
 Marking bool:date_below_clock:2130968592 used because it matches string pool constant da
 Marking bool:date_single_line:2130968593 used because it matches string pool constant da
-Marking id:date:2131296323 used because it matches string pool constant da
+Marking id:date:2131296318 used because it matches string pool constant da
 Marking string:date_format:2131755039 used because it matches string pool constant da
 Marking string:date_format_home:2131755040 used because it matches string pool constant da
 Marking bool:module_cards:2130968616 used because it matches string pool constant module_cards
@@ -940,7 +935,7 @@ Marking string:launcher_settings:2131755081 used because it matches string pool 
 Marking bool:ambient_glow:2130968578 used because it matches string pool constant ambient_glow
 Marking bool:dock_glass:2130968597 used because it matches string pool constant dock_glass
 Marking bool:icon_only_vpn:2130968609 used because it matches string pool constant icon_only_vpn
-Marking id:label:2131296360 used because it matches string pool constant label
+Marking id:label:2131296349 used because it matches string pool constant label
 Marking bool:home_long_press_home:2130968606 used because it matches string pool constant home
 Marking integer:home_idle_clock_minutes:2131361796 used because it matches string pool constant home
 Marking string:home_key_description:2131755071 used because it matches string pool constant home
@@ -949,14 +944,14 @@ Marking string:home_settings:2131755073 used because it matches string pool cons
 Marking string:home_settings_help:2131755074 used because it matches string pool constant home
 Marking xml:home_key_service:2131951617 used because it matches string pool constant home
 Marking bool:header_white:2130968605 used because it matches string pool constant he
-Marking id:hero:2131296342 used because it matches string pool constant he
-Marking id:heroArt:2131296343 used because it matches string pool constant he
-Marking id:heroDots:2131296344 used because it matches string pool constant he
-Marking id:heroMeta:2131296345 used because it matches string pool constant he
-Marking id:heroName:2131296346 used because it matches string pool constant he
-Marking id:heroScrim:2131296347 used because it matches string pool constant he
+Marking id:hero:2131296331 used because it matches string pool constant he
+Marking id:heroArt:2131296332 used because it matches string pool constant he
+Marking id:heroDots:2131296333 used because it matches string pool constant he
+Marking id:heroMeta:2131296334 used because it matches string pool constant he
+Marking id:heroName:2131296335 used because it matches string pool constant he
+Marking id:heroScrim:2131296336 used because it matches string pool constant he
 Marking bool:tile_menu:2130968634 used because it matches string pool constant tile_menu
-Marking id:identity:2131296351 used because it matches string pool constant id
+Marking id:identity:2131296340 used because it matches string pool constant id
 Marking style:SettingsColumnChoice:2131820544 used because it matches string pool constant Settings
 Marking style:SettingsRow:2131820545 used because it matches string pool constant Settings
 Marking integer:home_idle_clock_minutes:2131361796 used because it matches string pool constant home_idle_clock_minutes
@@ -964,7 +959,7 @@ Marking array:input_key_keycodes:2130837510 used because it matches string pool 
 Marking array:input_sources:2130837511 used because it matches string pool constant in
 Marking bool:inputs_connected_only:2130968610 used because it matches string pool constant in
 Marking drawable:input_row_bg:2131165205 used because it matches string pool constant in
-Marking id:info:2131296352 used because it matches string pool constant in
+Marking id:info:2131296341 used because it matches string pool constant in
 Marking string:input_action:2131755075 used because it matches string pool constant in
 Marking string:input_key_service_description:2131755076 used because it matches string pool constant in
 Marking string:input_uri_scheme:2131755077 used because it matches string pool constant in
@@ -984,7 +979,7 @@ Marking bool:settings_key_panel:2130968625 used because it matches string pool c
 Marking drawable:settings_card_bg:2131165224 used because it matches string pool constant settings
 Marking drawable:settings_choice_bg:2131165225 used because it matches string pool constant settings
 Marking string:settings:2131755145 used because it matches string pool constant settings
-Marking id:time:2131296413 used because it matches string pool constant /time
+Marking id:time:2131296399 used because it matches string pool constant /time
 Marking integer:wifi_label_width:2131361801 used because it matches string pool constant wifi_label_width
 Marking bool:open_on_start_choice:2130968617 used because it matches string pool constant open_on_start
 Marking integer:open_on_start_network_wait:2131361797 used because it matches string pool constant open_on_start
@@ -998,11 +993,10 @@ Marking bool:restore_key_services:2130968622 used because it matches string pool
 Marking bool:wallpaper_captions:2130968638 used because it matches string pool constant wallpaper
 Marking bool:wallpaper_true_color:2130968639 used because it matches string pool constant wallpaper
 Marking drawable:wallpaper_card_gradient:2131165228 used because it matches string pool constant wallpaper
-Marking id:wallpaperCard:2131296419 used because it matches string pool constant wallpaper
-Marking id:wallpaperChoice:2131296420 used because it matches string pool constant wallpaper
-Marking id:wallpaperGrid:2131296421 used because it matches string pool constant wallpaper
-Marking id:wallpaperName:2131296422 used because it matches string pool constant wallpaper
-Marking id:wallpaperPreview:2131296423 used because it matches string pool constant wallpaper
+Marking id:wallpaperCard:2131296403 used because it matches string pool constant wallpaper
+Marking id:wallpaperGrid:2131296404 used because it matches string pool constant wallpaper
+Marking id:wallpaperName:2131296405 used because it matches string pool constant wallpaper
+Marking id:wallpaperPreview:2131296406 used because it matches string pool constant wallpaper
 Marking string:wallpaper_applied:2131755176 used because it matches string pool constant wallpaper
 Marking string:wallpaper_label:2131755177 used because it matches string pool constant wallpaper
 Marking string:wallpaper_moods:2131755178 used because it matches string pool constant wallpaper
@@ -1050,7 +1044,7 @@ Marking id:accessibility_custom_action_9:2131296288 used because it matches stri
 Marking bool:vpn_pill:2130968637 used because it matches string pool constant vpn_pill
 Marking bool:open_on_start_choice:2130968617 used because it matches string pool constant open_on_start_choice
 Marking bool:wifi_status_warnings:2130968641 used because it matches string pool constant wifi_status_warnings
-Marking id:stats:2131296396 used because it matches string pool constant stats
+Marking id:stats:2131296382 used because it matches string pool constant stats
 Marking string:stats_cpu:2131755162 used because it matches string pool constant stats
 Marking string:stats_memory:2131755163 used because it matches string pool constant stats
 Marking string:stats_storage:2131755164 used because it matches string pool constant stats
@@ -1082,19 +1076,18 @@ Marking string:rows_below_dock_label:2131755144 used because it matches string p
 Marking array:input_sources:2130837511 used because it matches string pool constant input_sources
 Marking bool:show_home_settings_shortcut:2130968628 used because it matches string pool constant show_home_settings_shortcut
 Marking array:dock_apps:2130837507 used because it matches string pool constant dock_apps
-Marking id:updateChoice:2131296417 used because it matches string pool constant up
 Marking string:source_panel_action:2131755158 used because it matches string pool constant source_panel_action
 Marking drawable:glass_panel:2131165186 used because it matches string pool constant glass
-Marking id:glass:2131296339 used because it matches string pool constant glass
+Marking id:glass:2131296328 used because it matches string pool constant glass
 Marking string:glass_style:2131755062 used because it matches string pool constant glass
 Marking string:stock_home_redirect:2131755166 used because it matches string pool constant stock_home_redirect
 Marking bool:dock_band:2130968594 used because it matches string pool constant dock_band
 Marking bool:dock_band_all:2130968595 used because it matches string pool constant dock_band
 Marking bool:power_on_home_always:2130968619 used because it matches string pool constant power_on_home_always
-Marking id:view_tree_lifecycle_owner:2131296418 used because it matches string pool constant vi
+Marking id:view_tree_lifecycle_owner:2131296402 used because it matches string pool constant vi
 Marking array:library_excluded_apps:2130837514 used because it matches string pool constant library_excluded_apps
-Marking id:name:2131296365 used because it matches string pool constant name
-Marking id:names:2131296366 used because it matches string pool constant name
+Marking id:name:2131296354 used because it matches string pool constant name
+Marking id:names:2131296355 used because it matches string pool constant name
 Marking bool:show_greeting:2130968627 used because it matches string pool constant show
 Marking bool:show_home_settings_shortcut:2130968628 used because it matches string pool constant show
 Marking bool:show_inputs_pill:2130968629 used because it matches string pool constant show
@@ -1105,11 +1098,10 @@ Marking bool:back_opens_clock:2130968583 used because it matches string pool con
 Marking bool:wallpaper_captions:2130968638 used because it matches string pool constant wa
 Marking bool:wallpaper_true_color:2130968639 used because it matches string pool constant wa
 Marking drawable:wallpaper_card_gradient:2131165228 used because it matches string pool constant wa
-Marking id:wallpaperCard:2131296419 used because it matches string pool constant wa
-Marking id:wallpaperChoice:2131296420 used because it matches string pool constant wa
-Marking id:wallpaperGrid:2131296421 used because it matches string pool constant wa
-Marking id:wallpaperName:2131296422 used because it matches string pool constant wa
-Marking id:wallpaperPreview:2131296423 used because it matches string pool constant wa
+Marking id:wallpaperCard:2131296403 used because it matches string pool constant wa
+Marking id:wallpaperGrid:2131296404 used because it matches string pool constant wa
+Marking id:wallpaperName:2131296405 used because it matches string pool constant wa
+Marking id:wallpaperPreview:2131296406 used because it matches string pool constant wa
 Marking string:wallpaper_applied:2131755176 used because it matches string pool constant wa
 Marking string:wallpaper_label:2131755177 used because it matches string pool constant wa
 Marking string:wallpaper_moods:2131755178 used because it matches string pool constant wa
@@ -1134,7 +1126,7 @@ Marking bool:wifi_status_warnings:2130968641 used because it matches string pool
 Marking integer:wifi_label_width:2131361801 used because it matches string pool constant wifi
 Marking string:wifi:2131755182 used because it matches string pool constant wifi
 Marking string:vpn_app:2131755174 used because it matches string pool constant vpn_app
-Marking id:card:2131296312 used because it matches string pool constant card
+Marking id:card:2131296310 used because it matches string pool constant card
 Marking string:card_app_name:2131755015 used because it matches string pool constant card
 Marking string:card_keep_hidden:2131755016 used because it matches string pool constant card
 Marking string:card_not_saved:2131755017 used because it matches string pool constant card
@@ -1152,10 +1144,6 @@ Marking string:card_state_new_key:2131755028 used because it matches string pool
 Marking string:card_state_new_label:2131755029 used because it matches string pool constant card
 Marking string:card_state_over_limit:2131755030 used because it matches string pool constant card
 Marking string:card_state_shown:2131755031 used because it matches string pool constant card
-Marking id:columns4:2131296319 used because it matches string pool constant columns
-Marking id:columns5:2131296320 used because it matches string pool constant columns
-Marking id:columns6:2131296321 used because it matches string pool constant columns
-Marking id:columns7:2131296322 used because it matches string pool constant columns
 Marking integer:columns:2131361795 used because it matches string pool constant columns
 Marking string:columns_label:2131755037 used because it matches string pool constant columns
 Marking string:greeting_name:2131755069 used because it matches string pool constant greeting_name
@@ -1183,7 +1171,6 @@ Marking integer:clock_wallpaper_dim:2131361794 used because it matches string po
 Marking integer:open_on_start_network_wait:2131361797 used because it matches string pool constant open_on_start_network_wait
 Marking bool:show_stats:2130968632 used because it matches string pool constant show_stats
 Marking bool:animations:2130968579 used because it matches string pool constant animations
-Marking id:animationsChoice:2131296297 used because it matches string pool constant animations
 Marking string:animations_state:2131755011 used because it matches string pool constant animations
 Marking bool:header_white:2130968605 used because it matches string pool constant header_white
 Marking bool:always_show_names:2130968577 used because it matches string pool constant always_show_names
@@ -1445,10 +1432,8 @@ Marking bool:focus_overshoot:2130968602 used because it matches string pool cons
 @com.gathin.tvhome:id/action_image : reachable=false
 @com.gathin.tvhome:id/action_text : reachable=false
 @com.gathin.tvhome:id/actions : reachable=false
-@com.gathin.tvhome:id/advancedChoice : reachable=true
 @com.gathin.tvhome:id/ambient : reachable=true
 @com.gathin.tvhome:id/ampm : reachable=false
-@com.gathin.tvhome:id/animationsChoice : reachable=true
 @com.gathin.tvhome:id/app : reachable=true
 @com.gathin.tvhome:id/async : reachable=false
 @com.gathin.tvhome:id/banner : reachable=true
@@ -1464,31 +1449,22 @@ Marking bool:focus_overshoot:2130968602 used because it matches string pool cons
 @com.gathin.tvhome:id/btnVpn : reachable=true
 @com.gathin.tvhome:id/btnWifi : reachable=true
 @com.gathin.tvhome:id/card : reachable=true
+@com.gathin.tvhome:id/categoryCard : reachable=true
+@com.gathin.tvhome:id/categoryGrid : reachable=true
+@com.gathin.tvhome:id/categoryIcon : reachable=true
+@com.gathin.tvhome:id/categoryTitle : reachable=true
 @com.gathin.tvhome:id/chronometer : reachable=false
 @com.gathin.tvhome:id/clock : reachable=true
-@com.gathin.tvhome:id/clock12 : reachable=true
-@com.gathin.tvhome:id/clock24 : reachable=true
 @com.gathin.tvhome:id/clockDivider : reachable=true
-@com.gathin.tvhome:id/clockSystem : reachable=true
-@com.gathin.tvhome:id/columns4 : reachable=true
-@com.gathin.tvhome:id/columns5 : reachable=true
-@com.gathin.tvhome:id/columns6 : reachable=true
-@com.gathin.tvhome:id/columns7 : reachable=true
 @com.gathin.tvhome:id/date : reachable=true
-@com.gathin.tvhome:id/defaultHomeChoice : reachable=true
 @com.gathin.tvhome:id/dialog_button : reachable=false
 @com.gathin.tvhome:id/digest : reachable=true
-@com.gathin.tvhome:id/dock100 : reachable=true
-@com.gathin.tvhome:id/dock30 : reachable=true
-@com.gathin.tvhome:id/dock50 : reachable=true
-@com.gathin.tvhome:id/dock70 : reachable=true
 @com.gathin.tvhome:id/dot : reachable=true
 @com.gathin.tvhome:id/dreamAmPm : reachable=false
 @com.gathin.tvhome:id/dreamAmbient : reachable=true
 @com.gathin.tvhome:id/dreamClock : reachable=false
 @com.gathin.tvhome:id/dreamContent : reachable=true
 @com.gathin.tvhome:id/dreamDate : reachable=false
-@com.gathin.tvhome:id/followThemeChoice : reachable=true
 @com.gathin.tvhome:id/forever : reachable=false
 @com.gathin.tvhome:id/glass : reachable=true
 @com.gathin.tvhome:id/greeting : reachable=true
@@ -1522,7 +1498,6 @@ Marking bool:focus_overshoot:2130968602 used because it matches string pool cons
 @com.gathin.tvhome:id/notification_background : reachable=false
 @com.gathin.tvhome:id/notification_main_column : reachable=false
 @com.gathin.tvhome:id/notification_main_column_container : reachable=false
-@com.gathin.tvhome:id/openOnStartChoice : reachable=true
 @com.gathin.tvhome:id/panel : reachable=true
 @com.gathin.tvhome:id/pkg : reachable=true
 @com.gathin.tvhome:id/pooling_container_listener_holder_tag : reachable=true
@@ -1532,17 +1507,15 @@ Marking bool:focus_overshoot:2130968602 used because it matches string pool cons
 @com.gathin.tvhome:id/racePager : reachable=true
 @com.gathin.tvhome:id/racePanel : reachable=true
 @com.gathin.tvhome:id/raceSessions : reachable=true
-@com.gathin.tvhome:id/redditWallpaperChoice : reachable=true
-@com.gathin.tvhome:id/reorderChoice : reachable=true
 @com.gathin.tvhome:id/right_icon : reachable=false
 @com.gathin.tvhome:id/right_side : reachable=false
 @com.gathin.tvhome:id/root : reachable=true
 @com.gathin.tvhome:id/rows : reachable=true
-@com.gathin.tvhome:id/rows0 : reachable=true
-@com.gathin.tvhome:id/rows1 : reachable=true
-@com.gathin.tvhome:id/rows2 : reachable=true
-@com.gathin.tvhome:id/rows3 : reachable=true
 @com.gathin.tvhome:id/scrim : reachable=true
+@com.gathin.tvhome:id/sectionContent : reachable=false
+@com.gathin.tvhome:id/sectionOptionsContainer : reachable=true
+@com.gathin.tvhome:id/sectionSubtitle : reachable=true
+@com.gathin.tvhome:id/sectionTitle : reachable=true
 @com.gathin.tvhome:id/selectedBadge : reachable=true
 @com.gathin.tvhome:id/shamsiDate : reachable=true
 @com.gathin.tvhome:id/sky : reachable=true
@@ -1567,11 +1540,8 @@ Marking bool:focus_overshoot:2130968602 used because it matches string pool cons
 @com.gathin.tvhome:id/time : reachable=true
 @com.gathin.tvhome:id/title : reachable=true
 @com.gathin.tvhome:id/topButtons : reachable=true
-@com.gathin.tvhome:id/tvSettingsChoice : reachable=true
-@com.gathin.tvhome:id/updateChoice : reachable=true
 @com.gathin.tvhome:id/view_tree_lifecycle_owner : reachable=true
 @com.gathin.tvhome:id/wallpaperCard : reachable=true
-@com.gathin.tvhome:id/wallpaperChoice : reachable=true
 @com.gathin.tvhome:id/wallpaperGrid : reachable=true
 @com.gathin.tvhome:id/wallpaperName : reachable=true
 @com.gathin.tvhome:id/wallpaperPreview : reachable=true
@@ -1588,23 +1558,6 @@ Marking bool:focus_overshoot:2130968602 used because it matches string pool cons
 @com.gathin.tvhome:layout/activity_launcher_settings : reachable=true
     @com.gathin.tvhome:string/font_medium
     @com.gathin.tvhome:string/launcher_settings
-    @com.gathin.tvhome:drawable/settings_card_bg
-    @com.gathin.tvhome:string/columns_label
-    @com.gathin.tvhome:style/SettingsColumnChoice
-    @com.gathin.tvhome:string/rows_below_dock_label
-    @com.gathin.tvhome:string/dock_opacity_label
-    @com.gathin.tvhome:style/SettingsRow
-    @com.gathin.tvhome:string/reorder
-    @com.gathin.tvhome:string/dream_name
-    @com.gathin.tvhome:string/clock_format_system
-    @com.gathin.tvhome:string/clock_format_12
-    @com.gathin.tvhome:string/clock_format_24
-    @com.gathin.tvhome:string/advanced_effects_warning
-    @com.gathin.tvhome:string/follow_theme
-    @com.gathin.tvhome:string/follow_theme_hint
-    @com.gathin.tvhome:string/home_settings
-    @com.gathin.tvhome:string/home_settings_help
-    @com.gathin.tvhome:string/tv_settings
 @com.gathin.tvhome:layout/activity_main : reachable=true
     @com.gathin.tvhome:drawable/race_bar
     @com.gathin.tvhome:string/font_medium
@@ -1638,6 +1591,8 @@ Marking bool:focus_overshoot:2130968602 used because it matches string pool cons
     @com.gathin.tvhome:style/TopButton
     @com.gathin.tvhome:string/card_keep_hidden
     @com.gathin.tvhome:string/card_show
+@com.gathin.tvhome:layout/dialog_settings_section : reachable=true
+    @com.gathin.tvhome:string/font_medium
 @com.gathin.tvhome:layout/dialog_wallpaper_picker : reachable=true
     @com.gathin.tvhome:string/font_medium
     @com.gathin.tvhome:string/wallpaper_label
@@ -1663,6 +1618,9 @@ Marking bool:focus_overshoot:2130968602 used because it matches string pool cons
     @com.gathin.tvhome:drawable/status_dot
     @com.gathin.tvhome:string/font_body
     @com.gathin.tvhome:drawable/pill_text_dim
+@com.gathin.tvhome:layout/item_settings_category_card : reachable=true
+    @com.gathin.tvhome:drawable/settings_choice_bg
+    @com.gathin.tvhome:string/font_medium
 @com.gathin.tvhome:layout/item_wallpaper_card : reachable=true
     @com.gathin.tvhome:drawable/settings_choice_bg
     @com.gathin.tvhome:drawable/wallpaper_card_gradient
@@ -1754,7 +1712,7 @@ Marking bool:focus_overshoot:2130968602 used because it matches string pool cons
 @com.gathin.tvhome:string/festival_diwali_greeting : reachable=true
 @com.gathin.tvhome:string/festival_dussehra_greeting : reachable=true
 @com.gathin.tvhome:string/festival_halloween_greeting : reachable=true
-@com.gathin.tvhome:string/follow_theme : reachable=false
+@com.gathin.tvhome:string/follow_theme : reachable=true
 @com.gathin.tvhome:string/follow_theme_hint : reachable=false
 @com.gathin.tvhome:string/font_body : reachable=false
     @com.gathin.tvhome:font/outfit
@@ -2074,105 +2032,87 @@ The root reachable resources are:
  id:accessibility_custom_action_7:2131296286
  id:accessibility_custom_action_8:2131296287
  id:accessibility_custom_action_9:2131296288
- id:advancedChoice:2131296294
- id:ambient:2131296295
- id:animationsChoice:2131296297
- id:app:2131296298
- id:banner:2131296300
- id:body:2131296302
- id:btnInputs:2131296303
- id:btnKeep:2131296304
- id:btnLibrary:2131296305
- id:btnLibraryTop:2131296306
- id:btnReorder:2131296307
- id:btnSettings:2131296308
- id:btnShow:2131296309
- id:btnVpn:2131296310
- id:btnWifi:2131296311
- id:card:2131296312
- id:clock:2131296314
- id:clock12:2131296315
- id:clock24:2131296316
+ id:ambient:2131296294
+ id:app:2131296296
+ id:banner:2131296298
+ id:body:2131296300
+ id:btnInputs:2131296301
+ id:btnKeep:2131296302
+ id:btnLibrary:2131296303
+ id:btnLibraryTop:2131296304
+ id:btnReorder:2131296305
+ id:btnSettings:2131296306
+ id:btnShow:2131296307
+ id:btnVpn:2131296308
+ id:btnWifi:2131296309
+ id:card:2131296310
+ id:categoryCard:2131296311
+ id:categoryGrid:2131296312
+ id:categoryIcon:2131296313
+ id:categoryTitle:2131296314
+ id:clock:2131296316
  id:clockDivider:2131296317
- id:clockSystem:2131296318
- id:columns4:2131296319
- id:columns5:2131296320
- id:columns6:2131296321
- id:columns7:2131296322
- id:date:2131296323
- id:defaultHomeChoice:2131296324
- id:digest:2131296326
- id:dock100:2131296327
- id:dock30:2131296328
- id:dock50:2131296329
- id:dock70:2131296330
- id:dot:2131296331
- id:dreamAmbient:2131296333
- id:dreamContent:2131296335
- id:followThemeChoice:2131296337
- id:glass:2131296339
- id:greeting:2131296340
- id:grid:2131296341
- id:hero:2131296342
- id:heroArt:2131296343
- id:heroDots:2131296344
- id:heroMeta:2131296345
- id:heroName:2131296346
- id:heroScrim:2131296347
- id:icon:2131296349
- id:identity:2131296351
- id:info:2131296352
- id:is_pooling_container_tag:2131296353
- id:label:2131296360
- id:leftBlock:2131296361
- id:lunarDate:2131296364
- id:name:2131296365
- id:names:2131296366
- id:openOnStartChoice:2131296371
- id:panel:2131296372
- id:pkg:2131296373
- id:pooling_container_listener_holder_tag:2131296374
- id:raceBar:2131296375
- id:raceHeadline:2131296376
- id:raceKicker:2131296377
- id:racePager:2131296378
- id:racePanel:2131296379
- id:raceSessions:2131296380
- id:redditWallpaperChoice:2131296381
- id:reorderChoice:2131296382
- id:root:2131296385
- id:rows:2131296386
- id:rows0:2131296387
- id:rows1:2131296388
- id:rows2:2131296389
- id:rows3:2131296390
- id:scrim:2131296391
- id:selectedBadge:2131296392
- id:shamsiDate:2131296393
- id:sky:2131296394
- id:state:2131296395
- id:stats:2131296396
- id:status:2131296397
- id:tag_accessibility_actions:2131296398
- id:tag_accessibility_clickable_spans:2131296399
- id:tag_accessibility_heading:2131296400
- id:tag_accessibility_pane_title:2131296401
- id:tag_on_apply_window_listener:2131296402
- id:tag_screen_reader_focusable:2131296405
- id:tag_state_description:2131296406
- id:tag_unhandled_key_listeners:2131296409
- id:tag_window_insets_animation_callback:2131296410
- id:time:2131296413
- id:title:2131296414
- id:topButtons:2131296415
- id:tvSettingsChoice:2131296416
- id:updateChoice:2131296417
- id:view_tree_lifecycle_owner:2131296418
- id:wallpaperCard:2131296419
- id:wallpaperChoice:2131296420
- id:wallpaperGrid:2131296421
- id:wallpaperName:2131296422
- id:wallpaperPreview:2131296423
+ id:date:2131296318
+ id:digest:2131296320
+ id:dot:2131296321
+ id:dreamAmbient:2131296323
+ id:dreamContent:2131296325
+ id:glass:2131296328
+ id:greeting:2131296329
+ id:grid:2131296330
+ id:hero:2131296331
+ id:heroArt:2131296332
+ id:heroDots:2131296333
+ id:heroMeta:2131296334
+ id:heroName:2131296335
+ id:heroScrim:2131296336
+ id:icon:2131296338
+ id:identity:2131296340
+ id:info:2131296341
+ id:is_pooling_container_tag:2131296342
+ id:label:2131296349
+ id:leftBlock:2131296350
+ id:lunarDate:2131296353
+ id:name:2131296354
+ id:names:2131296355
+ id:panel:2131296360
+ id:pkg:2131296361
+ id:pooling_container_listener_holder_tag:2131296362
+ id:raceBar:2131296363
+ id:raceHeadline:2131296364
+ id:raceKicker:2131296365
+ id:racePager:2131296366
+ id:racePanel:2131296367
+ id:raceSessions:2131296368
+ id:root:2131296371
+ id:rows:2131296372
+ id:scrim:2131296373
+ id:sectionOptionsContainer:2131296375
+ id:sectionSubtitle:2131296376
+ id:sectionTitle:2131296377
+ id:selectedBadge:2131296378
+ id:shamsiDate:2131296379
+ id:sky:2131296380
+ id:state:2131296381
+ id:stats:2131296382
+ id:status:2131296383
+ id:tag_accessibility_actions:2131296384
+ id:tag_accessibility_clickable_spans:2131296385
+ id:tag_accessibility_heading:2131296386
+ id:tag_accessibility_pane_title:2131296387
+ id:tag_on_apply_window_listener:2131296388
+ id:tag_screen_reader_focusable:2131296391
+ id:tag_state_description:2131296392
+ id:tag_unhandled_key_listeners:2131296395
+ id:tag_window_insets_animation_callback:2131296396
+ id:time:2131296399
+ id:title:2131296400
+ id:topButtons:2131296401
+ id:view_tree_lifecycle_owner:2131296402
+ id:wallpaperCard:2131296403
+ id:wallpaperGrid:2131296404
+ id:wallpaperName:2131296405
+ id:wallpaperPreview:2131296406
  integer:cinematic_art:2131361792
  integer:cinematic_scrim:2131361793
  integer:clock_wallpaper_dim:2131361794
@@ -2186,16 +2126,18 @@ The root reachable resources are:
  layout:activity_main:2131427329
  layout:activity_quick_settings:2131427330
  layout:dialog_card_prompt:2131427332
- layout:dialog_wallpaper_picker:2131427333
- layout:dream_clock:2131427334
- layout:item_app:2131427335
- layout:item_card_row:2131427336
- layout:item_input:2131427337
- layout:item_wallpaper_card:2131427338
- layout:popup_cards:2131427345
- layout:popup_inputs:2131427346
- layout:row_app_library:2131427347
- layout:top_app_button:2131427348
+ layout:dialog_settings_section:2131427333
+ layout:dialog_wallpaper_picker:2131427334
+ layout:dream_clock:2131427335
+ layout:item_app:2131427336
+ layout:item_card_row:2131427337
+ layout:item_input:2131427338
+ layout:item_settings_category_card:2131427339
+ layout:item_wallpaper_card:2131427340
+ layout:popup_cards:2131427347
+ layout:popup_inputs:2131427348
+ layout:row_app_library:2131427349
+ layout:top_app_button:2131427350
  menu:example_menu:2131492864
  menu:example_menu2:2131492865
  mipmap:ic_launcher:2131558400
@@ -2244,6 +2186,7 @@ The root reachable resources are:
  string:festival_diwali_greeting:2131755049
  string:festival_dussehra_greeting:2131755050
  string:festival_halloween_greeting:2131755051
+ string:follow_theme:2131755052
  string:font_medium:2131755057
  string:font_regular:2131755058
  string:game_day:2131755059
@@ -2422,46 +2365,48 @@ Unused resources are:
  id:action_image:2131296291
  id:action_text:2131296292
  id:actions:2131296293
- id:ampm:2131296296
- id:async:2131296299
- id:blocking:2131296301
- id:chronometer:2131296313
- id:dialog_button:2131296325
- id:dreamAmPm:2131296332
- id:dreamClock:2131296334
- id:dreamDate:2131296336
- id:forever:2131296338
- id:hint:2131296348
- id:icon_group:2131296350
- id:italic:2131296354
- id:item1:2131296355
- id:item2:2131296356
- id:item3:2131296357
- id:item4:2131296358
- id:item_touch_helper_previous_elevation:2131296359
- id:line1:2131296362
- id:line3:2131296363
- id:normal:2131296367
- id:notification_background:2131296368
- id:notification_main_column:2131296369
- id:notification_main_column_container:2131296370
- id:right_icon:2131296383
- id:right_side:2131296384
- id:tag_on_receive_content_listener:2131296403
- id:tag_on_receive_content_mime_types:2131296404
- id:tag_transition_group:2131296407
- id:tag_unhandled_key_event_manager:2131296408
- id:text:2131296411
- id:text2:2131296412
+ id:ampm:2131296295
+ id:async:2131296297
+ id:blocking:2131296299
+ id:chronometer:2131296315
+ id:dialog_button:2131296319
+ id:dreamAmPm:2131296322
+ id:dreamClock:2131296324
+ id:dreamDate:2131296326
+ id:forever:2131296327
+ id:hint:2131296337
+ id:icon_group:2131296339
+ id:italic:2131296343
+ id:item1:2131296344
+ id:item2:2131296345
+ id:item3:2131296346
+ id:item4:2131296347
+ id:item_touch_helper_previous_elevation:2131296348
+ id:line1:2131296351
+ id:line3:2131296352
+ id:normal:2131296356
+ id:notification_background:2131296357
+ id:notification_main_column:2131296358
+ id:notification_main_column_container:2131296359
+ id:right_icon:2131296369
+ id:right_side:2131296370
+ id:sectionContent:2131296374
+ id:tag_on_receive_content_listener:2131296389
+ id:tag_on_receive_content_mime_types:2131296390
+ id:tag_transition_group:2131296393
+ id:tag_unhandled_key_event_manager:2131296394
+ id:text:2131296397
+ id:text2:2131296398
  integer:status_bar_notification_info_maxnum:2131361800
  layout:custom_dialog:2131427331
- layout:notification_action:2131427339
- layout:notification_action_tombstone:2131427340
- layout:notification_template_custom_big:2131427341
- layout:notification_template_icon_group:2131427342
- layout:notification_template_part_chronometer:2131427343
- layout:notification_template_part_time:2131427344
+ layout:notification_action:2131427341
+ layout:notification_action_tombstone:2131427342
+ layout:notification_template_custom_big:2131427343
+ layout:notification_template_icon_group:2131427344
+ layout:notification_template_part_chronometer:2131427345
+ layout:notification_template_part_time:2131427346
  raw:keep:2131689472
+ string:follow_theme_hint:2131755053
  string:standby:2131755161
  string:status_bar_notification_info_overflow:2131755165
  style:TextAppearance_Compat_Notification:2131820546

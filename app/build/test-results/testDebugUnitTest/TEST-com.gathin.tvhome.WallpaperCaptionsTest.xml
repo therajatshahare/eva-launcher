@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gathin.tvhome.WallpaperCaptionsTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-31T13:07:42.803Z" hostname="DESKTOP-EOQDD3G" time="0.005">
+<testsuite name="com.gathin.tvhome.WallpaperCaptionsTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-31T14:22:55.929Z" hostname="DESKTOP-EOQDD3G" time="0.005">
   <properties/>
-  <testcase name="missingFolderHasNoNames" classname="com.gathin.tvhome.WallpaperCaptionsTest" time="0.002"/>
-  <testcase name="skipsCommentsBlankAndMalformedLines" classname="com.gathin.tvhome.WallpaperCaptionsTest" time="0.001"/>
+  <testcase name="missingFolderHasNoNames" classname="com.gathin.tvhome.WallpaperCaptionsTest" time="0.001"/>
+  <testcase name="skipsCommentsBlankAndMalformedLines" classname="com.gathin.tvhome.WallpaperCaptionsTest" time="0.0"/>
   <testcase name="laterLineWinsForTheSameFile" classname="com.gathin.tvhome.WallpaperCaptionsTest" time="0.001"/>
   <testcase name="cutsVeryLongNames" classname="com.gathin.tvhome.WallpaperCaptionsTest" time="0.001"/>
-  <testcase name="readsFilenameTabName" classname="com.gathin.tvhome.WallpaperCaptionsTest" time="0.0"/>
+  <testcase name="readsFilenameTabName" classname="com.gathin.tvhome.WallpaperCaptionsTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

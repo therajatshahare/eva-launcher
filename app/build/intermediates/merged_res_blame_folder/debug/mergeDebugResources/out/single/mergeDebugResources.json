@@ -8,16 +8,16 @@
         "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\xml\\locales_config.xml"
     },
     {
-        "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-debug-10:\\drawable_ic_picture.xml.flat",
-        "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\drawable\\ic_picture.xml"
+        "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-debug-10:\\anim_tile_enter.xml.flat",
+        "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\anim\\tile_enter.xml"
     },
     {
         "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-debug-10:\\drawable_pill_text_mid.xml.flat",
         "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\drawable\\pill_text_mid.xml"
     },
     {
-        "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-debug-10:\\anim_tile_enter.xml.flat",
-        "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\anim\\tile_enter.xml"
+        "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-debug-10:\\drawable_ic_picture.xml.flat",
+        "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\drawable\\ic_picture.xml"
     },
     {
         "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-debug-10:\\drawable_ic_ethernet.xml.flat",
@@ -32,24 +32,24 @@
         "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\drawable\\status_dot.xml"
     },
     {
-        "merged": "com.gathin.tvhome.app-debug-10:/layout_dialog_wallpaper_picker.xml.flat",
-        "source": "com.gathin.tvhome.app-main-12:/layout/dialog_wallpaper_picker.xml"
-    },
-    {
         "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-debug-10:\\layout_item_input.xml.flat",
         "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\layout\\item_input.xml"
+    },
+    {
+        "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-debug-10:\\drawable_wallpaper_card_gradient.xml.flat",
+        "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\drawable\\wallpaper_card_gradient.xml"
     },
     {
         "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-debug-10:\\drawable_banner_tv.xml.flat",
         "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\drawable\\banner_tv.xml"
     },
     {
-        "merged": "com.gathin.tvhome.app-debug-10:/layout_item_wallpaper_card.xml.flat",
-        "source": "com.gathin.tvhome.app-main-12:/layout/item_wallpaper_card.xml"
-    },
-    {
         "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-debug-10:\\mipmap-xhdpi_ic_launcher.jpg.flat",
         "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\mipmap-xhdpi\\ic_launcher.jpg"
+    },
+    {
+        "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-debug-10:\\layout_item_wallpaper_card.xml.flat",
+        "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\layout\\item_wallpaper_card.xml"
     },
     {
         "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-debug-10:\\color_pill_icon_no_internet.xml.flat",
@@ -164,6 +164,14 @@
         "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\drawable-nodpi\\banner.jpg"
     },
     {
+        "merged": "com.gathin.tvhome.app-debug-10:/layout_dialog_settings_section.xml.flat",
+        "source": "com.gathin.tvhome.app-main-12:/layout/dialog_settings_section.xml"
+    },
+    {
+        "merged": "com.gathin.tvhome.app-debug-10:/layout_item_settings_category_card.xml.flat",
+        "source": "com.gathin.tvhome.app-main-12:/layout/item_settings_category_card.xml"
+    },
+    {
         "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-debug-10:\\font_outfit.ttf.flat",
         "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\font\\outfit.ttf"
     },
@@ -212,6 +220,10 @@
         "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\drawable\\ic_swap_vert.xml"
     },
     {
+        "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-debug-10:\\layout_dialog_wallpaper_picker.xml.flat",
+        "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\layout\\dialog_wallpaper_picker.xml"
+    },
+    {
         "merged": "com.gathin.tvhome.app-debug-10:/layout_activity_launcher_settings.xml.flat",
         "source": "com.gathin.tvhome.app-main-12:/layout/activity_launcher_settings.xml"
     },
@@ -234,10 +246,6 @@
     {
         "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-debug-10:\\layout_item_card_row.xml.flat",
         "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\layout\\item_card_row.xml"
-    },
-    {
-        "merged": "com.gathin.tvhome.app-debug-10:/drawable_wallpaper_card_gradient.xml.flat",
-        "source": "com.gathin.tvhome.app-main-12:/drawable/wallpaper_card_gradient.xml"
     },
     {
         "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-debug-10:\\layout_row_app_library.xml.flat",
