@@ -21,7 +21,7 @@ public final class WallpaperFetcher {
             try {
                 URL url = new URL("https://www.reddit.com/r/wallpapers/hot.json?limit=25");
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-                conn.setRequestProperty("User-Agent", "Android:com.gathin.tvhome:v1.1");
+                conn.setRequestProperty("User-Agent", "Android:com.gathin.tvhome:v1.2");
                 if (conn.getResponseCode() != 200) {
                     callback.onComplete(false, "Reddit HTTP error");
                     return;

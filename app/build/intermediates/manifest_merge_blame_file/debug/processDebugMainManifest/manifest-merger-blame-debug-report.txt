@@ -1,8 +1,8 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="com.gathin.tvhome"
-4    android:versionCode="12"
-5    android:versionName="1.1" >
+4    android:versionCode="13"
+5    android:versionName="1.2" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="26"
@@ -33,497 +33,503 @@
 22        android:required="false" />
 22-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:8:64-88
 23
-24    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-24-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:10:5-79
-24-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:10:22-76
-25    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-25-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:11:5-76
-25-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:11:22-73
-26    <!--
-27         Needed since Android 10 to read the Wi-Fi network name for the network pill. Never requested at
-28         runtime: build-and-install grants it with pm grant, so lint's Android 12 "ask for COARSE with
-29         FINE" rule does not apply here.
-30    -->
-31    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-31-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:15:5-16:45
-31-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:15:22-76
-32    <!--
-33         Puts the remote's accessibility helpers back after a force stop of this app took them off the enabled
-34         list (ServiceRepair). Granted with pm grant by build-and-install when a helper is enabled.
-35    -->
-36    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
-36-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:19:5-20:47
-36-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:19:22-77
-37    <!--
-38         YaOS (Yandex TV OS): HDMI, AV and the tuner all play in com.yandex.tv.live, whose activities require
-39         this permission (protection level normal, so it is granted at install). Ignored on other TVs.
-40    -->
-41    <uses-permission android:name="yandex.tv.permission.ACCESS_TV_SOURCE" />
-41-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:23:5-77
-41-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:23:22-74
-42
-43    <!--
-44         Android 11+ package visibility: lets the launcher list the TV apps it shows as tiles, and the
-45         apps that declare a module card (docs/specs/card.md).
-46    -->
-47    <queries>
-47-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:27:5-71:15
-48
-49        <!-- The standard settings handlers, so package visibility doesn't hide them and send the pills to a vendor fallback by mistake. -->
-50        <intent>
-50-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:29:9-31:18
-51            <action android:name="android.settings.SETTINGS" />
-51-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:30:13-64
-51-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:30:21-61
-52        </intent>
-53        <intent>
-53-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:32:9-34:18
-54            <action android:name="android.settings.WIFI_SETTINGS" />
-54-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:33:13-69
-54-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:33:21-66
-55        </intent>
-56        <intent>
-56-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:35:9-37:18
-57            <action android:name="android.settings.DISPLAY_SETTINGS" />
-57-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:36:13-72
-57-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:36:21-69
-58        </intent>
-59        <intent>
-59-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:38:9-40:18
-60            <action android:name="android.settings.MANAGE_APPLICATIONS_SETTINGS" />
-60-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:39:13-84
-60-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:39:21-81
-61        </intent>
-62        <!-- The tile menu and the app library offer App info only where this resolves (SystemSettings.appInfo). -->
-63        <intent>
-63-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:42:9-45:18
-64            <action android:name="android.settings.APPLICATION_DETAILS_SETTINGS" />
-64-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:43:13-84
-64-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:43:21-81
-65
-66            <data android:scheme="package" />
-66-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:44:13-46
-66-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:44:19-43
-67        </intent>
-68        <intent>
-68-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:46:9-49:18
-69            <action android:name="android.intent.action.MAIN" />
-69-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:47:13-65
-69-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:47:21-62
-70
-71            <category android:name="android.intent.category.LAUNCHER" />
-71-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:48:13-73
-71-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:48:23-70
-72        </intent>
-73        <intent>
-73-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:50:9-53:18
-74            <action android:name="android.intent.action.MAIN" />
-74-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:47:13-65
-74-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:47:21-62
-75
-76            <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-76-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:52:13-82
-76-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:52:23-79
-77        </intent>
-78        <intent>
-78-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:54:9-57:18
-79            <action android:name="android.intent.action.MAIN" />
-79-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:47:13-65
-79-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:47:21-62
-80
-81            <category android:name="com.gathin.tvhome.category.DOCK_CARD" />
-81-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:56:13-77
-81-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:56:23-74
-82        </intent>
-83        <!-- stock_home_redirect: HomeKeyService looks up the stock launcher's HOME activity. -->
-84        <intent>
-84-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:59:9-62:18
-85            <action android:name="android.intent.action.MAIN" />
-85-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:47:13-65
-85-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:47:21-62
-86
-87            <category android:name="android.intent.category.HOME" />
-87-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:61:13-69
-87-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:61:23-66
-88        </intent>
-89        <!--
-90             China-market MIUI TV firmware: the Settings and Wi-Fi pills fall back to Xiaomi's settings app.
-91             Fire TV: the real settings menu lives in the stock launcher (see settings_fallback_components).
-92        -->
-93        <package android:name="com.xiaomi.mitv.settings" />
-93-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:65:9-60
-93-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:65:18-57
-94        <package android:name="com.tcl.settings" />
-94-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:66:9-52
-94-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:66:18-49
-95        <package android:name="com.amazon.tv.launcher" />
-95-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:67:9-58
-95-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:67:18-55
-96        <!-- Coocaa OS sources for the Inputs menu (coocaa_sources); see CoocaaSources. -->
-97        <provider android:authorities="com.skyworth.tv.provider" />
-97-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:69:9-68
-97-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:69:19-65
-98        <provider android:authorities="com.skyworth.tv.sdk.provider" />
-98-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:69:9-68
-98-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:69:19-65
-99    </queries>
-100
-101    <application
-101-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:73:5-252:19
-102        android:allowBackup="false"
-102-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:78:9-36
-103        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-103-->[androidx.core:core:1.7.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\9765218b3880d2e946d65e7a73736c39\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
-104        android:banner="@drawable/banner"
-104-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:76:9-42
-105        android:debuggable="true"
-106        android:extractNativeLibs="false"
-107        android:icon="@mipmap/ic_launcher"
-107-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:75:9-43
-108        android:label="@string/app_name"
-108-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:74:9-41
-109        android:localeConfig="@xml/locales_config"
-109-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:79:9-51
-110        android:theme="@style/Theme.TvHome" >
-110-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:77:9-44
-111        <activity
-111-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:81:9-104:20
-112            android:name="com.gathin.tvhome.MainActivity"
-112-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:82:13-41
-113            android:clearTaskOnLaunch="true"
-113-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:87:13-45
-114            android:configChanges="orientation|screenSize|keyboard|keyboardHidden|uiMode"
-114-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:88:13-90
-115            android:excludeFromRecents="true"
-115-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:86:13-46
-116            android:exported="true"
-116-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:83:13-36
-117            android:launchMode="singleTask"
-117-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:84:13-44
-118            android:screenOrientation="landscape"
-118-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:89:13-50
-119            android:stateNotNeeded="true" >
-119-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:85:13-42
-120
-121            <!--
-122                 CVTE firmware (ro.CVT_EN_COMMON_HOME_INTENT=1) sends the Home key and boot as MAIN + HOME +
-123                 COMMON_HOME, which only matches a filter that lists both (#1201). In this one filter, not a second
-124                 one: a plain HOME intent still matches it, and a second filter could list this activity twice.
-125            -->
-126            <intent-filter>
-126-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:93:13-98:29
-127                <action android:name="android.intent.action.MAIN" />
-127-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:47:13-65
-127-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:47:21-62
-128
-129                <category android:name="android.intent.category.HOME" />
-129-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:61:13-69
-129-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:61:23-66
-130                <category android:name="android.intent.category.COMMON_HOME" />
-130-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:96:17-80
-130-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:96:27-77
-131                <category android:name="android.intent.category.DEFAULT" />
-131-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:97:17-76
-131-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:97:27-73
-132            </intent-filter>
-133            <!-- Listed in the TV's own app list, so it can be opened from the stock home screen too. -->
-134            <intent-filter>
-134-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:100:13-103:29
-135                <action android:name="android.intent.action.MAIN" />
-135-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:47:13-65
-135-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:47:21-62
-136
-137                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-137-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:52:13-82
-137-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:52:23-79
-138            </intent-filter>
-139        </activity>
-140        <activity
-140-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:106:9-110:53
-141            android:name="com.gathin.tvhome.LauncherSettingsActivity"
-141-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:107:13-53
-142            android:excludeFromRecents="true"
-142-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:109:13-46
-143            android:exported="false"
-143-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:108:13-37
-144            android:screenOrientation="landscape" />
-144-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:110:13-50
-145        <!--
-146             The system input switcher (com.android.tv.action.VIEW_INPUTS), which is what the remote's Input
-147             button becomes through the TV's Live TV app or InputKeyService. Disabled here and switched on by
-148             MainActivity only while handle_view_inputs is true (config.xml or a theme), for sets whose stock
-149             launcher was the only handler of the action (Hisense huangshan, Android TV 10): kept off, a TV with
-150             its own input picker never sees a second candidate and a chooser.
-151        -->
-152        <activity
-152-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:116:9-127:20
-153            android:name="com.gathin.tvhome.InputsRequestActivity"
-153-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:117:13-50
-154            android:enabled="false"
-154-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:119:13-36
-155            android:excludeFromRecents="true"
-155-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:120:13-46
-156            android:exported="true"
-156-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:118:13-36
-157            android:noHistory="true"
-157-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:121:13-37
-158            android:theme="@android:style/Theme.NoDisplay" >
-158-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:122:13-59
-159            <intent-filter>
-159-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:123:13-126:29
-160                <action android:name="com.android.tv.action.VIEW_INPUTS" />
-160-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:124:17-76
-160-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:124:25-73
-161
-162                <category android:name="android.intent.category.DEFAULT" />
-162-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:97:17-76
-162-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:97:27-73
-163            </intent-filter>
-164        </activity>
-165        <!--
-166             Remote Settings button panel (settings_key_panel); own task so the app behind stays put.
-167             No screenOrientation: a translucent activity may not request one on Android 8.0 (API 26),
-168             which throws IllegalStateException in onCreate (#1122); a TV is landscape anyway.
-169        -->
-170        <activity
-170-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:131:9-138:86
-171            android:name="com.gathin.tvhome.QuickSettingsActivity"
-171-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:132:13-50
-172            android:excludeFromRecents="true"
-172-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:136:13-46
-173            android:exported="false"
-173-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:133:13-37
-174            android:launchMode="singleTop"
-174-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:135:13-43
-175            android:noHistory="true"
-175-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:137:13-37
-176            android:taskAffinity=""
-176-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:134:13-36
-177            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
-177-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:138:13-83
-178        <activity
-178-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:139:9-144:62
-179            android:name="com.gathin.tvhome.HomeSettingsActivity"
-179-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:140:13-49
-180            android:excludeFromRecents="true"
-180-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:143:13-46
-181            android:exported="false"
-181-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:141:13-37
-182            android:taskAffinity=""
-182-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:142:13-36
-183            android:theme="@android:style/Theme.NoDisplay" />
-183-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:144:13-59
-184        <!--
-185             Home button for remotes that send KEYCODE_ALL_APPS (Xiaomi). Opt-in: HOME_KEY_SERVICE=1
-186             build-and-install.sh; see HomeKeyService.
-187        -->
-188        <service
-188-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:147:9-159:19
-189            android:name="com.gathin.tvhome.HomeKeyService"
-189-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:148:13-43
-190            android:directBootAware="true"
-190-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:150:13-43
-191            android:exported="true"
-191-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:151:13-36
-192            android:label="@string/home_key_name"
-192-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:149:13-50
-193            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
-193-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:152:13-79
-194            <intent-filter>
-194-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:153:13-155:29
-195                <action android:name="android.accessibilityservice.AccessibilityService" />
-195-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:154:17-92
-195-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:154:25-89
-196            </intent-filter>
-197
-198            <meta-data
-198-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:156:13-158:60
-199                android:name="android.accessibilityservice"
-199-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:157:17-60
-200                android:resource="@xml/home_key_service" />
-200-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:158:17-57
-201        </service>
-202
-203        <!--
-204             market://launch?id=<package>: package-name app launches from the Android TV Remote service
-205             (Home Assistant android_tv_remote), normally served by the stock launcher.
-206        -->
-207        <activity
-207-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:163:9-175:20
-208            android:name="com.gathin.tvhome.AppLaunchActivity"
-208-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:164:13-46
-209            android:excludeFromRecents="true"
-209-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:166:13-46
-210            android:exported="true"
-210-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:165:13-36
-211            android:noHistory="true"
-211-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:167:13-37
-212            android:theme="@android:style/Theme.NoDisplay" >
-212-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:168:13-59
-213            <intent-filter>
-213-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:169:13-174:29
-214                <action android:name="android.intent.action.VIEW" />
-214-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:170:17-69
-214-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:170:25-66
-215
-216                <category android:name="android.intent.category.DEFAULT" />
-216-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:97:17-76
-216-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:97:27-73
-217                <category android:name="android.intent.category.BROWSABLE" />
-217-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:172:17-78
-217-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:172:27-75
-218
-219                <data
-219-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:44:13-46
-220                    android:host="launch"
-220-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:173:47-68
-221                    android:scheme="market" />
-221-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:44:19-43
-222            </intent-filter>
-223        </activity>
-224
-225        <!-- The same clock, started by Home itself after home_idle_clock_minutes without input. -->
-226        <activity
-226-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:178:9-183:80
-227            android:name="com.gathin.tvhome.ClockActivity"
-227-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:179:13-42
-228            android:excludeFromRecents="true"
-228-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:181:13-46
-229            android:exported="false"
-229-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:180:13-37
-230            android:noHistory="true"
-230-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:182:13-37
-231            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
-231-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:183:13-77
-232
-233        <!--
-234             stock_home_redirect at boot: HomeKeyService opens this invisible activity once, so the screen behind
-235             it sends a window event when it closes (HomeKeyService.probeAtBoot).
-236        -->
-237        <activity
-237-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:187:9-193:75
-238            android:name="com.gathin.tvhome.ProbeActivity"
-238-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:188:13-42
-239            android:excludeFromRecents="true"
-239-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:190:13-46
-240            android:exported="false"
-240-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:189:13-37
-241            android:noHistory="true"
-241-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:191:13-37
-242            android:taskAffinity=""
-242-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:192:13-36
-243            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-243-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:193:13-72
-244
-245        <!--
-246             Screensaver: pick it in Settings, or `settings put secure screensaver_components
-247             com.gathin.tvhome/.ClockDream` over adb.
-248        -->
-249        <service
-249-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:197:9-206:19
-250            android:name="com.gathin.tvhome.ClockDream"
-250-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:198:13-39
-251            android:exported="true"
-251-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:200:13-36
-252            android:label="@string/dream_name"
-252-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:199:13-47
-253            android:permission="android.permission.BIND_DREAM_SERVICE" >
-253-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:201:13-71
-254            <intent-filter>
-254-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:202:13-205:29
-255                <action android:name="android.service.dreams.DreamService" />
-255-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:203:17-78
-255-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:203:25-75
-256
-257                <category android:name="android.intent.category.DEFAULT" />
-257-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:97:17-76
-257-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:97:27-73
-258            </intent-filter>
-259        </service>
-260
-261        <!--
-262             tools/theme.sh writes the theme through this where the shell can't reach Android/data;
-263             see ThemeProvider. WRITE_SECURE_SETTINGS: the adb shell has it, ordinary apps don't.
-264        -->
-265        <provider
-266            android:name="com.gathin.tvhome.ThemeProvider"
-266-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:211:13-42
-267            android:authorities="com.gathin.tvhome.theme"
-267-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:212:13-57
-268            android:exported="true"
-268-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:213:13-36
-269            android:permission="android.permission.WRITE_SECURE_SETTINGS" />
-269-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:214:13-74
-270
-271        <!--
-272         The remote's Input button (KEYCODE_TV or KEYCODE_TV_INPUT) opens the input switcher, and input_key_keycodes and
-273         app_keys (config.xml or a theme) bring back other remote buttons; see InputKeyService.
-274        -->
-275        <!--
-276             Bound again by the system after a force stop, which restarts Home on firmware that kills
-277             third-party apps (TCL tc8000_ay30a2). It reads no notification.
-278             cmd notification allow_listener com.gathin.tvhome/.GuardRevival
-279        -->
-280        <service
-280-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:221:9-230:19
-281            android:name="com.gathin.tvhome.GuardRevival"
-281-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:222:13-41
-282            android:directBootAware="true"
-282-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:223:13-43
-283            android:exported="true"
-283-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:224:13-36
-284            android:label="@string/home_key_name"
-284-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:225:13-50
-285            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" >
-285-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:226:13-87
-286            <intent-filter>
-286-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:227:13-229:29
-287                <action android:name="android.service.notification.NotificationListenerService" />
-287-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:228:17-99
-287-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:228:25-96
-288            </intent-filter>
-289        </service>
-290
-291        <receiver
-291-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:231:9-238:20
-292            android:name="com.gathin.tvhome.GuardConfig"
-292-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:232:13-40
-293            android:exported="true"
-293-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:233:13-36
-294            android:permission="android.permission.WRITE_SECURE_SETTINGS" >
-294-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:234:13-74
-295            <intent-filter>
-295-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:235:13-237:29
-296                <action android:name="com.gathin.tvhome.GUARD" />
-296-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:236:17-66
-296-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:236:25-63
-297            </intent-filter>
-298        </receiver>
-299
-300        <service
-300-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:240:9-251:19
-301            android:name="com.gathin.tvhome.InputKeyService"
-301-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:241:13-44
-302            android:exported="false"
-302-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:242:13-37
-303            android:label="@string/app_name"
-303-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:243:13-45
-304            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
-304-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:244:13-79
-305            <intent-filter>
-305-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:153:13-155:29
-306                <action android:name="android.accessibilityservice.AccessibilityService" />
-306-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:154:17-92
-306-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:154:25-89
-307            </intent-filter>
-308
-309            <meta-data
-309-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:156:13-158:60
-310                android:name="android.accessibilityservice"
-310-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:157:17-60
-311                android:resource="@xml/input_key_service" />
-311-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:158:17-57
-312        </service>
-313    </application>
-314
-315</manifest>
+24    <uses-permission android:name="android.permission.INTERNET" />
+24-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:10:5-67
+24-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:10:22-64
+25    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+25-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:11:5-79
+25-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:11:22-76
+26    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+26-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:12:5-76
+26-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:12:22-73
+27    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+27-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:13:5-83
+27-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:13:22-80
+28    <!--
+29         Needed since Android 10 to read the Wi-Fi network name for the network pill. Never requested at
+30         runtime: build-and-install grants it with pm grant, so lint's Android 12 "ask for COARSE with
+31         FINE" rule does not apply here.
+32    -->
+33    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+33-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:17:5-18:45
+33-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:17:22-76
+34    <!--
+35         Puts the remote's accessibility helpers back after a force stop of this app took them off the enabled
+36         list (ServiceRepair). Granted with pm grant by build-and-install when a helper is enabled.
+37    -->
+38    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+38-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:21:5-22:47
+38-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:21:22-77
+39    <!--
+40         YaOS (Yandex TV OS): HDMI, AV and the tuner all play in com.yandex.tv.live, whose activities require
+41         this permission (protection level normal, so it is granted at install). Ignored on other TVs.
+42    -->
+43    <uses-permission android:name="yandex.tv.permission.ACCESS_TV_SOURCE" />
+43-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:25:5-77
+43-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:25:22-74
+44
+45    <!--
+46         Android 11+ package visibility: lets the launcher list the TV apps it shows as tiles, and the
+47         apps that declare a module card (docs/specs/card.md).
+48    -->
+49    <queries>
+49-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:29:5-73:15
+50
+51        <!-- The standard settings handlers, so package visibility doesn't hide them and send the pills to a vendor fallback by mistake. -->
+52        <intent>
+52-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:31:9-33:18
+53            <action android:name="android.settings.SETTINGS" />
+53-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:32:13-64
+53-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:32:21-61
+54        </intent>
+55        <intent>
+55-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:34:9-36:18
+56            <action android:name="android.settings.WIFI_SETTINGS" />
+56-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:35:13-69
+56-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:35:21-66
+57        </intent>
+58        <intent>
+58-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:37:9-39:18
+59            <action android:name="android.settings.DISPLAY_SETTINGS" />
+59-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:38:13-72
+59-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:38:21-69
+60        </intent>
+61        <intent>
+61-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:40:9-42:18
+62            <action android:name="android.settings.MANAGE_APPLICATIONS_SETTINGS" />
+62-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:41:13-84
+62-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:41:21-81
+63        </intent>
+64        <!-- The tile menu and the app library offer App info only where this resolves (SystemSettings.appInfo). -->
+65        <intent>
+65-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:44:9-47:18
+66            <action android:name="android.settings.APPLICATION_DETAILS_SETTINGS" />
+66-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:45:13-84
+66-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:45:21-81
+67
+68            <data android:scheme="package" />
+68-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:46:13-46
+68-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:46:19-43
+69        </intent>
+70        <intent>
+70-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:48:9-51:18
+71            <action android:name="android.intent.action.MAIN" />
+71-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:49:13-65
+71-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:49:21-62
+72
+73            <category android:name="android.intent.category.LAUNCHER" />
+73-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:50:13-73
+73-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:50:23-70
+74        </intent>
+75        <intent>
+75-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:52:9-55:18
+76            <action android:name="android.intent.action.MAIN" />
+76-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:49:13-65
+76-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:49:21-62
+77
+78            <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+78-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:54:13-82
+78-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:54:23-79
+79        </intent>
+80        <intent>
+80-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:56:9-59:18
+81            <action android:name="android.intent.action.MAIN" />
+81-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:49:13-65
+81-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:49:21-62
+82
+83            <category android:name="com.gathin.tvhome.category.DOCK_CARD" />
+83-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:58:13-77
+83-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:58:23-74
+84        </intent>
+85        <!-- stock_home_redirect: HomeKeyService looks up the stock launcher's HOME activity. -->
+86        <intent>
+86-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:61:9-64:18
+87            <action android:name="android.intent.action.MAIN" />
+87-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:49:13-65
+87-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:49:21-62
+88
+89            <category android:name="android.intent.category.HOME" />
+89-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:63:13-69
+89-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:63:23-66
+90        </intent>
+91        <!--
+92             China-market MIUI TV firmware: the Settings and Wi-Fi pills fall back to Xiaomi's settings app.
+93             Fire TV: the real settings menu lives in the stock launcher (see settings_fallback_components).
+94        -->
+95        <package android:name="com.xiaomi.mitv.settings" />
+95-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:67:9-60
+95-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:67:18-57
+96        <package android:name="com.tcl.settings" />
+96-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:68:9-52
+96-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:68:18-49
+97        <package android:name="com.amazon.tv.launcher" />
+97-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:69:9-58
+97-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:69:18-55
+98        <!-- Coocaa OS sources for the Inputs menu (coocaa_sources); see CoocaaSources. -->
+99        <provider android:authorities="com.skyworth.tv.provider" />
+99-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:71:9-68
+99-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:71:19-65
+100        <provider android:authorities="com.skyworth.tv.sdk.provider" />
+100-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:71:9-68
+100-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:71:19-65
+101    </queries>
+102
+103    <application
+103-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:75:5-254:19
+104        android:allowBackup="false"
+104-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:80:9-36
+105        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+105-->[androidx.core:core:1.7.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\9765218b3880d2e946d65e7a73736c39\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+106        android:banner="@drawable/banner"
+106-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:78:9-42
+107        android:debuggable="true"
+108        android:extractNativeLibs="false"
+109        android:icon="@mipmap/ic_launcher"
+109-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:77:9-43
+110        android:label="@string/app_name"
+110-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:76:9-41
+111        android:localeConfig="@xml/locales_config"
+111-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:81:9-51
+112        android:theme="@style/Theme.TvHome" >
+112-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:79:9-44
+113        <activity
+113-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:83:9-106:20
+114            android:name="com.gathin.tvhome.MainActivity"
+114-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:84:13-41
+115            android:clearTaskOnLaunch="true"
+115-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:89:13-45
+116            android:configChanges="orientation|screenSize|keyboard|keyboardHidden|uiMode"
+116-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:90:13-90
+117            android:excludeFromRecents="true"
+117-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:88:13-46
+118            android:exported="true"
+118-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:85:13-36
+119            android:launchMode="singleTask"
+119-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:86:13-44
+120            android:screenOrientation="landscape"
+120-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:91:13-50
+121            android:stateNotNeeded="true" >
+121-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:87:13-42
+122
+123            <!--
+124                 CVTE firmware (ro.CVT_EN_COMMON_HOME_INTENT=1) sends the Home key and boot as MAIN + HOME +
+125                 COMMON_HOME, which only matches a filter that lists both (#1201). In this one filter, not a second
+126                 one: a plain HOME intent still matches it, and a second filter could list this activity twice.
+127            -->
+128            <intent-filter>
+128-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:95:13-100:29
+129                <action android:name="android.intent.action.MAIN" />
+129-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:49:13-65
+129-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:49:21-62
+130
+131                <category android:name="android.intent.category.HOME" />
+131-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:63:13-69
+131-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:63:23-66
+132                <category android:name="android.intent.category.COMMON_HOME" />
+132-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:98:17-80
+132-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:98:27-77
+133                <category android:name="android.intent.category.DEFAULT" />
+133-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:99:17-76
+133-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:99:27-73
+134            </intent-filter>
+135            <!-- Listed in the TV's own app list, so it can be opened from the stock home screen too. -->
+136            <intent-filter>
+136-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:102:13-105:29
+137                <action android:name="android.intent.action.MAIN" />
+137-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:49:13-65
+137-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:49:21-62
+138
+139                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+139-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:54:13-82
+139-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:54:23-79
+140            </intent-filter>
+141        </activity>
+142        <activity
+142-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:108:9-112:53
+143            android:name="com.gathin.tvhome.LauncherSettingsActivity"
+143-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:109:13-53
+144            android:excludeFromRecents="true"
+144-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:111:13-46
+145            android:exported="false"
+145-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:110:13-37
+146            android:screenOrientation="landscape" />
+146-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:112:13-50
+147        <!--
+148             The system input switcher (com.android.tv.action.VIEW_INPUTS), which is what the remote's Input
+149             button becomes through the TV's Live TV app or InputKeyService. Disabled here and switched on by
+150             MainActivity only while handle_view_inputs is true (config.xml or a theme), for sets whose stock
+151             launcher was the only handler of the action (Hisense huangshan, Android TV 10): kept off, a TV with
+152             its own input picker never sees a second candidate and a chooser.
+153        -->
+154        <activity
+154-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:118:9-129:20
+155            android:name="com.gathin.tvhome.InputsRequestActivity"
+155-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:119:13-50
+156            android:enabled="false"
+156-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:121:13-36
+157            android:excludeFromRecents="true"
+157-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:122:13-46
+158            android:exported="true"
+158-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:120:13-36
+159            android:noHistory="true"
+159-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:123:13-37
+160            android:theme="@android:style/Theme.NoDisplay" >
+160-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:124:13-59
+161            <intent-filter>
+161-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:125:13-128:29
+162                <action android:name="com.android.tv.action.VIEW_INPUTS" />
+162-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:126:17-76
+162-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:126:25-73
+163
+164                <category android:name="android.intent.category.DEFAULT" />
+164-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:99:17-76
+164-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:99:27-73
+165            </intent-filter>
+166        </activity>
+167        <!--
+168             Remote Settings button panel (settings_key_panel); own task so the app behind stays put.
+169             No screenOrientation: a translucent activity may not request one on Android 8.0 (API 26),
+170             which throws IllegalStateException in onCreate (#1122); a TV is landscape anyway.
+171        -->
+172        <activity
+172-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:133:9-140:86
+173            android:name="com.gathin.tvhome.QuickSettingsActivity"
+173-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:134:13-50
+174            android:excludeFromRecents="true"
+174-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:138:13-46
+175            android:exported="false"
+175-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:135:13-37
+176            android:launchMode="singleTop"
+176-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:137:13-43
+177            android:noHistory="true"
+177-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:139:13-37
+178            android:taskAffinity=""
+178-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:136:13-36
+179            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+179-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:140:13-83
+180        <activity
+180-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:141:9-146:62
+181            android:name="com.gathin.tvhome.HomeSettingsActivity"
+181-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:142:13-49
+182            android:excludeFromRecents="true"
+182-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:145:13-46
+183            android:exported="false"
+183-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:143:13-37
+184            android:taskAffinity=""
+184-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:144:13-36
+185            android:theme="@android:style/Theme.NoDisplay" />
+185-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:146:13-59
+186        <!--
+187             Home button for remotes that send KEYCODE_ALL_APPS (Xiaomi). Opt-in: HOME_KEY_SERVICE=1
+188             build-and-install.sh; see HomeKeyService.
+189        -->
+190        <service
+190-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:149:9-161:19
+191            android:name="com.gathin.tvhome.HomeKeyService"
+191-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:150:13-43
+192            android:directBootAware="true"
+192-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:152:13-43
+193            android:exported="true"
+193-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:153:13-36
+194            android:label="@string/home_key_name"
+194-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:151:13-50
+195            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+195-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:154:13-79
+196            <intent-filter>
+196-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:155:13-157:29
+197                <action android:name="android.accessibilityservice.AccessibilityService" />
+197-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:156:17-92
+197-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:156:25-89
+198            </intent-filter>
+199
+200            <meta-data
+200-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:158:13-160:60
+201                android:name="android.accessibilityservice"
+201-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:159:17-60
+202                android:resource="@xml/home_key_service" />
+202-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:160:17-57
+203        </service>
+204
+205        <!--
+206             market://launch?id=<package>: package-name app launches from the Android TV Remote service
+207             (Home Assistant android_tv_remote), normally served by the stock launcher.
+208        -->
+209        <activity
+209-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:165:9-177:20
+210            android:name="com.gathin.tvhome.AppLaunchActivity"
+210-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:166:13-46
+211            android:excludeFromRecents="true"
+211-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:168:13-46
+212            android:exported="true"
+212-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:167:13-36
+213            android:noHistory="true"
+213-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:169:13-37
+214            android:theme="@android:style/Theme.NoDisplay" >
+214-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:170:13-59
+215            <intent-filter>
+215-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:171:13-176:29
+216                <action android:name="android.intent.action.VIEW" />
+216-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:172:17-69
+216-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:172:25-66
+217
+218                <category android:name="android.intent.category.DEFAULT" />
+218-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:99:17-76
+218-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:99:27-73
+219                <category android:name="android.intent.category.BROWSABLE" />
+219-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:174:17-78
+219-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:174:27-75
+220
+221                <data
+221-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:46:13-46
+222                    android:host="launch"
+222-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:175:47-68
+223                    android:scheme="market" />
+223-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:46:19-43
+224            </intent-filter>
+225        </activity>
+226
+227        <!-- The same clock, started by Home itself after home_idle_clock_minutes without input. -->
+228        <activity
+228-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:180:9-185:80
+229            android:name="com.gathin.tvhome.ClockActivity"
+229-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:181:13-42
+230            android:excludeFromRecents="true"
+230-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:183:13-46
+231            android:exported="false"
+231-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:182:13-37
+232            android:noHistory="true"
+232-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:184:13-37
+233            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+233-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:185:13-77
+234
+235        <!--
+236             stock_home_redirect at boot: HomeKeyService opens this invisible activity once, so the screen behind
+237             it sends a window event when it closes (HomeKeyService.probeAtBoot).
+238        -->
+239        <activity
+239-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:189:9-195:75
+240            android:name="com.gathin.tvhome.ProbeActivity"
+240-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:190:13-42
+241            android:excludeFromRecents="true"
+241-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:192:13-46
+242            android:exported="false"
+242-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:191:13-37
+243            android:noHistory="true"
+243-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:193:13-37
+244            android:taskAffinity=""
+244-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:194:13-36
+245            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+245-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:195:13-72
+246
+247        <!--
+248             Screensaver: pick it in Settings, or `settings put secure screensaver_components
+249             com.gathin.tvhome/.ClockDream` over adb.
+250        -->
+251        <service
+251-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:199:9-208:19
+252            android:name="com.gathin.tvhome.ClockDream"
+252-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:200:13-39
+253            android:exported="true"
+253-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:202:13-36
+254            android:label="@string/dream_name"
+254-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:201:13-47
+255            android:permission="android.permission.BIND_DREAM_SERVICE" >
+255-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:203:13-71
+256            <intent-filter>
+256-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:204:13-207:29
+257                <action android:name="android.service.dreams.DreamService" />
+257-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:205:17-78
+257-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:205:25-75
+258
+259                <category android:name="android.intent.category.DEFAULT" />
+259-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:99:17-76
+259-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:99:27-73
+260            </intent-filter>
+261        </service>
+262
+263        <!--
+264             tools/theme.sh writes the theme through this where the shell can't reach Android/data;
+265             see ThemeProvider. WRITE_SECURE_SETTINGS: the adb shell has it, ordinary apps don't.
+266        -->
+267        <provider
+268            android:name="com.gathin.tvhome.ThemeProvider"
+268-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:213:13-42
+269            android:authorities="com.gathin.tvhome.theme"
+269-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:214:13-57
+270            android:exported="true"
+270-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:215:13-36
+271            android:permission="android.permission.WRITE_SECURE_SETTINGS" />
+271-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:216:13-74
+272
+273        <!--
+274         The remote's Input button (KEYCODE_TV or KEYCODE_TV_INPUT) opens the input switcher, and input_key_keycodes and
+275         app_keys (config.xml or a theme) bring back other remote buttons; see InputKeyService.
+276        -->
+277        <!--
+278             Bound again by the system after a force stop, which restarts Home on firmware that kills
+279             third-party apps (TCL tc8000_ay30a2). It reads no notification.
+280             cmd notification allow_listener com.gathin.tvhome/.GuardRevival
+281        -->
+282        <service
+282-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:223:9-232:19
+283            android:name="com.gathin.tvhome.GuardRevival"
+283-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:224:13-41
+284            android:directBootAware="true"
+284-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:225:13-43
+285            android:exported="true"
+285-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:226:13-36
+286            android:label="@string/home_key_name"
+286-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:227:13-50
+287            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" >
+287-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:228:13-87
+288            <intent-filter>
+288-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:229:13-231:29
+289                <action android:name="android.service.notification.NotificationListenerService" />
+289-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:230:17-99
+289-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:230:25-96
+290            </intent-filter>
+291        </service>
+292
+293        <receiver
+293-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:233:9-240:20
+294            android:name="com.gathin.tvhome.GuardConfig"
+294-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:234:13-40
+295            android:exported="true"
+295-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:235:13-36
+296            android:permission="android.permission.WRITE_SECURE_SETTINGS" >
+296-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:236:13-74
+297            <intent-filter>
+297-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:237:13-239:29
+298                <action android:name="com.gathin.tvhome.GUARD" />
+298-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:238:17-66
+298-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:238:25-63
+299            </intent-filter>
+300        </receiver>
+301
+302        <service
+302-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:242:9-253:19
+303            android:name="com.gathin.tvhome.InputKeyService"
+303-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:243:13-44
+304            android:exported="false"
+304-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:244:13-37
+305            android:label="@string/app_name"
+305-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:245:13-45
+306            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+306-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:246:13-79
+307            <intent-filter>
+307-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:155:13-157:29
+308                <action android:name="android.accessibilityservice.AccessibilityService" />
+308-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:156:17-92
+308-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:156:25-89
+309            </intent-filter>
+310
+311            <meta-data
+311-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:158:13-160:60
+312                android:name="android.accessibilityservice"
+312-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:159:17-60
+313                android:resource="@xml/input_key_service" />
+313-->D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:160:17-57
+314        </service>
+315    </application>
+316
+317</manifest>

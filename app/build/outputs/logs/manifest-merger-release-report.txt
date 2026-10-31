@@ -1,20 +1,20 @@
 -- Merging decision tree log ---
 provider#com.gathin.tvhome.ThemeProvider
-INJECTED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:210:9-214:77
+INJECTED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:212:9-216:77
 	android:authorities
 		INJECTED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:212:13-57
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:214:13-57
 	android:exported
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:213:13-36
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:215:13-36
 	android:permission
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:214:13-74
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:216:13-74
 	android:name
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:211:13-42
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:213:13-42
 manifest
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:2:1-253:12
-INJECTED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:2:1-253:12
-INJECTED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:2:1-253:12
-INJECTED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:2:1-253:12
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:2:1-255:12
+INJECTED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:2:1-255:12
+INJECTED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:2:1-255:12
+INJECTED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:2:1-255:12
 MERGED from [androidx.recyclerview:recyclerview:1.3.2] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\12e7a3cd0b2bb63e310553f31f94b304\transformed\recyclerview-1.3.2\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\bf60f3bdc0db4022392617937fb1c593\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\fd85e4fb334b739f57914217c9eb8bd6\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -67,115 +67,123 @@ ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:
 		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:8:64-88
 	android:name
 		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:8:19-63
+uses-permission#android.permission.INTERNET
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:10:5-67
+	android:name
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:10:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:10:5-79
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:11:5-79
 	android:name
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:10:22-76
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:11:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:11:5-76
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:12:5-76
 	android:name
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:11:22-73
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:12:22-73
+uses-permission#android.permission.REQUEST_INSTALL_PACKAGES
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:13:5-83
+	android:name
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:13:22-80
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:15:5-16:45
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:17:5-18:45
 	tools:ignore
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:16:9-42
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:18:9-42
 	android:name
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:15:22-76
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:17:22-76
 uses-permission#android.permission.WRITE_SECURE_SETTINGS
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:19:5-20:47
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:21:5-22:47
 	tools:ignore
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:20:9-44
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:22:9-44
 	android:name
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:19:22-77
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:21:22-77
 uses-permission#yandex.tv.permission.ACCESS_TV_SOURCE
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:23:5-77
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:25:5-77
 	android:name
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:23:22-74
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:25:22-74
 queries
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:27:5-71:15
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:29:5-73:15
 intent#action:name:android.settings.SETTINGS
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:29:9-31:18
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:31:9-33:18
 action#android.settings.SETTINGS
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:30:13-64
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:32:13-64
 	android:name
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:30:21-61
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:32:21-61
 intent#action:name:android.settings.WIFI_SETTINGS
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:32:9-34:18
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:34:9-36:18
 action#android.settings.WIFI_SETTINGS
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:33:13-69
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:35:13-69
 	android:name
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:33:21-66
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:35:21-66
 intent#action:name:android.settings.DISPLAY_SETTINGS
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:35:9-37:18
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:37:9-39:18
 action#android.settings.DISPLAY_SETTINGS
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:36:13-72
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:38:13-72
 	android:name
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:36:21-69
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:38:21-69
 intent#action:name:android.settings.MANAGE_APPLICATIONS_SETTINGS
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:38:9-40:18
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:40:9-42:18
 action#android.settings.MANAGE_APPLICATIONS_SETTINGS
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:39:13-84
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:41:13-84
 	android:name
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:39:21-81
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:41:21-81
 intent#action:name:android.settings.APPLICATION_DETAILS_SETTINGS+data:scheme:package
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:42:9-45:18
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:44:9-47:18
 action#android.settings.APPLICATION_DETAILS_SETTINGS
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:43:13-84
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:45:13-84
 	android:name
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:43:21-81
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:45:21-81
 data
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:44:13-46
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:46:13-46
 	android:host
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:173:47-68
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:175:47-68
 	android:scheme
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:44:19-43
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:46:19-43
 intent#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:46:9-49:18
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:48:9-51:18
 action#android.intent.action.MAIN
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:47:13-65
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:49:13-65
 	android:name
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:47:21-62
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:49:21-62
 category#android.intent.category.LAUNCHER
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:48:13-73
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:50:13-73
 	android:name
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:48:23-70
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:50:23-70
 intent#action:name:android.intent.action.MAIN+category:name:android.intent.category.LEANBACK_LAUNCHER
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:50:9-53:18
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:52:9-55:18
 category#android.intent.category.LEANBACK_LAUNCHER
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:52:13-82
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:54:13-82
 	android:name
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:52:23-79
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:54:23-79
 intent#action:name:android.intent.action.MAIN+category:name:com.gathin.tvhome.category.DOCK_CARD
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:54:9-57:18
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:56:9-59:18
 category#com.gathin.tvhome.category.DOCK_CARD
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:56:13-77
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:58:13-77
 	android:name
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:56:23-74
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:58:23-74
 intent#action:name:android.intent.action.MAIN+category:name:android.intent.category.HOME
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:59:9-62:18
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:61:9-64:18
 category#android.intent.category.HOME
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:61:13-69
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:63:13-69
 	android:name
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:61:23-66
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:63:23-66
 package#com.xiaomi.mitv.settings
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:65:9-60
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:67:9-60
 	android:name
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:65:18-57
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:67:18-57
 package#com.tcl.settings
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:66:9-52
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:68:9-52
 	android:name
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:66:18-49
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:68:18-49
 package#com.amazon.tv.launcher
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:67:9-58
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:69:9-58
 	android:name
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:67:18-55
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:69:18-55
 provider
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:69:9-68
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:71:9-68
 	android:authorities
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:69:19-65
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:71:19-65
 application
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:73:5-252:19
-INJECTED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:73:5-252:19
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:75:5-254:19
+INJECTED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:75:5-254:19
 MERGED from [androidx.core:core:1.7.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\9765218b3880d2e946d65e7a73736c39\transformed\core-1.7.0\AndroidManifest.xml:24:5-89
 MERGED from [androidx.core:core:1.7.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\9765218b3880d2e946d65e7a73736c39\transformed\core-1.7.0\AndroidManifest.xml:24:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\b5a967ff7ed68aaf12e249d0f9061d3b\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
@@ -183,237 +191,237 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\RA
 	android:extractNativeLibs
 		INJECTED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml
 	android:localeConfig
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:79:9-51
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:81:9-51
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.7.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\9765218b3880d2e946d65e7a73736c39\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:74:9-41
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:76:9-41
 	android:icon
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:75:9-43
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:77:9-43
 	android:allowBackup
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:78:9-36
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:80:9-36
 	android:banner
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:76:9-42
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:78:9-42
 	android:theme
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:77:9-44
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:79:9-44
 activity#com.gathin.tvhome.MainActivity
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:81:9-104:20
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:83:9-106:20
 	android:screenOrientation
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:89:13-50
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:91:13-50
 	android:clearTaskOnLaunch
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:87:13-45
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:89:13-45
 	android:stateNotNeeded
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:85:13-42
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:87:13-42
 	android:excludeFromRecents
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:86:13-46
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:88:13-46
 	android:launchMode
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:84:13-44
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:86:13-44
 	android:exported
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:83:13-36
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:85:13-36
 	android:configChanges
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:88:13-90
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:90:13-90
 	android:name
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:82:13-41
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:84:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.COMMON_HOME+category:name:android.intent.category.DEFAULT+category:name:android.intent.category.HOME
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:93:13-98:29
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:95:13-100:29
 category#android.intent.category.COMMON_HOME
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:96:17-80
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:98:17-80
 	android:name
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:96:27-77
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:98:27-77
 category#android.intent.category.DEFAULT
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:97:17-76
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:99:17-76
 	android:name
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:97:27-73
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:99:27-73
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LEANBACK_LAUNCHER
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:100:13-103:29
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:102:13-105:29
 activity#com.gathin.tvhome.LauncherSettingsActivity
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:106:9-110:53
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:108:9-112:53
 	android:screenOrientation
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:110:13-50
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:112:13-50
 	android:excludeFromRecents
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:109:13-46
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:111:13-46
 	android:exported
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:108:13-37
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:110:13-37
 	android:name
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:107:13-53
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:109:13-53
 activity#com.gathin.tvhome.InputsRequestActivity
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:116:9-127:20
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:118:9-129:20
 	android:enabled
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:119:13-36
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:121:13-36
 	android:excludeFromRecents
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:120:13-46
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:122:13-46
 	android:noHistory
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:121:13-37
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:123:13-37
 	android:exported
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:118:13-36
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:120:13-36
 	android:theme
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:122:13-59
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:124:13-59
 	android:name
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:117:13-50
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:119:13-50
 intent-filter#action:name:com.android.tv.action.VIEW_INPUTS+category:name:android.intent.category.DEFAULT
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:123:13-126:29
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:125:13-128:29
 action#com.android.tv.action.VIEW_INPUTS
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:124:17-76
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:126:17-76
 	android:name
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:124:25-73
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:126:25-73
 activity#com.gathin.tvhome.QuickSettingsActivity
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:131:9-138:86
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:133:9-140:86
 	android:excludeFromRecents
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:136:13-46
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:138:13-46
 	android:launchMode
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:135:13-43
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:137:13-43
 	android:noHistory
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:137:13-37
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:139:13-37
 	android:exported
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:133:13-37
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:135:13-37
 	android:theme
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:138:13-83
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:140:13-83
 	android:taskAffinity
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:134:13-36
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:136:13-36
 	android:name
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:132:13-50
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:134:13-50
 activity#com.gathin.tvhome.HomeSettingsActivity
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:139:9-144:62
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:141:9-146:62
 	android:excludeFromRecents
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:143:13-46
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:145:13-46
 	android:exported
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:141:13-37
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:143:13-37
 	android:theme
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:144:13-59
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:146:13-59
 	android:taskAffinity
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:142:13-36
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:144:13-36
 	android:name
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:140:13-49
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:142:13-49
 service#com.gathin.tvhome.HomeKeyService
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:147:9-159:19
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:149:9-161:19
 	android:label
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:149:13-50
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:151:13-50
 	android:exported
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:151:13-36
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:153:13-36
 	android:permission
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:152:13-79
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:154:13-79
 	android:directBootAware
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:152:13-43
+	android:name
 		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:150:13-43
-	android:name
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:148:13-43
 intent-filter#action:name:android.accessibilityservice.AccessibilityService
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:153:13-155:29
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:155:13-157:29
 action#android.accessibilityservice.AccessibilityService
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:154:17-92
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:156:17-92
 	android:name
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:154:25-89
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:156:25-89
 meta-data#android.accessibilityservice
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:156:13-158:60
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:158:13-160:60
 	android:resource
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:158:17-57
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:160:17-57
 	android:name
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:157:17-60
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:159:17-60
 activity#com.gathin.tvhome.AppLaunchActivity
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:163:9-175:20
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:165:9-177:20
 	android:excludeFromRecents
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:168:13-46
+	android:noHistory
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:169:13-37
+	android:exported
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:167:13-36
+	android:theme
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:170:13-59
+	android:name
 		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:166:13-46
-	android:noHistory
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:167:13-37
-	android:exported
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:165:13-36
-	android:theme
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:168:13-59
-	android:name
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:164:13-46
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:launch+data:scheme:market
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:169:13-174:29
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:171:13-176:29
 action#android.intent.action.VIEW
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:170:17-69
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:172:17-69
 	android:name
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:170:25-66
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:172:25-66
 category#android.intent.category.BROWSABLE
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:172:17-78
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:174:17-78
 	android:name
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:172:27-75
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:174:27-75
 activity#com.gathin.tvhome.ClockActivity
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:178:9-183:80
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:180:9-185:80
 	android:excludeFromRecents
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:181:13-46
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:183:13-46
 	android:noHistory
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:184:13-37
+	android:exported
 		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:182:13-37
-	android:exported
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:180:13-37
 	android:theme
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:183:13-77
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:185:13-77
 	android:name
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:179:13-42
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:181:13-42
 activity#com.gathin.tvhome.ProbeActivity
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:187:9-193:75
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:189:9-195:75
 	android:excludeFromRecents
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:190:13-46
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:192:13-46
 	android:noHistory
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:193:13-37
+	android:exported
 		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:191:13-37
-	android:exported
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:189:13-37
 	android:theme
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:193:13-72
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:195:13-72
 	android:taskAffinity
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:192:13-36
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:194:13-36
 	android:name
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:188:13-42
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:190:13-42
 service#com.gathin.tvhome.ClockDream
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:197:9-206:19
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:199:9-208:19
 	android:label
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:199:13-47
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:201:13-47
 	android:exported
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:200:13-36
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:202:13-36
 	android:permission
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:201:13-71
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:203:13-71
 	android:name
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:198:13-39
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:200:13-39
 intent-filter#action:name:android.service.dreams.DreamService+category:name:android.intent.category.DEFAULT
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:202:13-205:29
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:204:13-207:29
 action#android.service.dreams.DreamService
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:203:17-78
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:205:17-78
 	android:name
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:203:25-75
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:205:25-75
 service#com.gathin.tvhome.GuardRevival
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:221:9-230:19
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:223:9-232:19
 	android:label
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:225:13-50
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:227:13-50
 	android:exported
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:224:13-36
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:226:13-36
 	android:permission
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:226:13-87
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:228:13-87
 	android:directBootAware
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:223:13-43
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:225:13-43
 	android:name
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:222:13-41
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:224:13-41
 intent-filter#action:name:android.service.notification.NotificationListenerService
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:227:13-229:29
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:229:13-231:29
 action#android.service.notification.NotificationListenerService
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:228:17-99
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:230:17-99
 	android:name
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:228:25-96
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:230:25-96
 receiver#com.gathin.tvhome.GuardConfig
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:231:9-238:20
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:233:9-240:20
 	android:exported
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:233:13-36
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:235:13-36
 	android:permission
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:234:13-74
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:236:13-74
 	android:name
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:232:13-40
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:234:13-40
 intent-filter#action:name:com.gathin.tvhome.GUARD
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:235:13-237:29
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:237:13-239:29
 action#com.gathin.tvhome.GUARD
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:236:17-66
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:238:17-66
 	android:name
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:236:25-63
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:238:25-63
 service#com.gathin.tvhome.InputKeyService
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:240:9-251:19
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:242:9-253:19
 	android:label
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:243:13-45
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:245:13-45
 	android:exported
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:242:13-37
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:244:13-37
 	android:permission
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:244:13-79
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:246:13-79
 	android:name
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:241:13-44
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:243:13-44
 uses-sdk
 INJECTED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml

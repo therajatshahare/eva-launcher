@@ -455,7 +455,7 @@ isTagEnabled
 live_tv_package
 androidx.view.accessibility.Accessibi...
 ACTION_SET_PROGRESS
-Android:com.gathin.tvhome:v1.1
+Android:com.gathin.tvhome:v1.2
 power_on_home
 ACTION_SCROLL_FORWARD
 android.settings.VPN_SETTINGS
@@ -580,8 +580,8 @@ Installing...
 mStableInsets
 /time
 null
-1.1
 DISC
+1.2
 wifi_label_width
 open_on_start
 https://api.github.com/repos/
