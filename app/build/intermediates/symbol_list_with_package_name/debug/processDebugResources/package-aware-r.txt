@@ -318,6 +318,7 @@ id rows
 id scrim
 id sectionContent
 id sectionOptionsContainer
+id sectionScrollView
 id sectionSubtitle
 id sectionTitle
 id selectedBadge

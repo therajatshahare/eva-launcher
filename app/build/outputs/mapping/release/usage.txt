@@ -2899,6 +2899,7 @@ com.gathin.tvhome.R$id:
     public static int ampm
     public static int hint
     public static int sectionContent
+    public static int sectionScrollView
     private void <init>()
 com.gathin.tvhome.R$integer:
     private void <init>()

@@ -14,10 +14,12 @@ import android.os.Bundle;
 import android.provider.Settings;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.ViewParent;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -150,6 +152,12 @@ public final class LauncherSettingsActivity extends Activity {
         }
 
         dialog.show();
+
+        if (dialog.getWindow() != null) {
+            int maxHeight = (int) (getResources().getDisplayMetrics().heightPixels * 0.82f);
+            int width = (int) (getResources().getDisplayMetrics().widthPixels * 0.55f);
+            dialog.getWindow().setLayout(Math.max(width, (int) (500 * getResources().getDisplayMetrics().density)), maxHeight);
+        }
     }
 
     private void buildHomescreenSection(LinearLayout container) {
@@ -333,7 +341,7 @@ public final class LauncherSettingsActivity extends Activity {
     }
 
     private void buildAboutSection(LinearLayout container) {
-        addLabel(container, "EVA TV Launcher v1.8");
+        addLabel(container, "EVA TV Launcher v1.9");
 
         TextView devBtn = createFullRowButton("Developer: Rajat Shahare");
         devBtn.setOnClickListener(v -> Toast.makeText(this, "Rajat Shahare", Toast.LENGTH_SHORT).show());
@@ -526,7 +534,7 @@ public final class LauncherSettingsActivity extends Activity {
         if (view == null) return;
         final float density = getResources().getDisplayMetrics().density;
         view.setOnFocusChangeListener((v, focused) -> {
-            float scale = focused ? 1.04f : 1.00f;
+            float scale = focused ? 1.05f : 1.00f;
             float translationZ = focused ? 8f * density : 0f;
             v.animate()
                     .scaleX(scale)
@@ -537,6 +545,14 @@ public final class LauncherSettingsActivity extends Activity {
                     .start();
             if (focused) {
                 v.bringToFront();
+                ViewParent p = v.getParent();
+                while (p != null) {
+                    if (p instanceof ScrollView) {
+                        ((ScrollView) p).requestChildFocus(v, v);
+                        break;
+                    }
+                    p = p.getParent();
+                }
             }
         });
     }
@@ -609,6 +625,12 @@ public final class LauncherSettingsActivity extends Activity {
         }));
 
         dialog.show();
+
+        if (dialog.getWindow() != null) {
+            int maxHeight = (int) (getResources().getDisplayMetrics().heightPixels * 0.82f);
+            int width = (int) (getResources().getDisplayMetrics().widthPixels * 0.65f);
+            dialog.getWindow().setLayout(Math.max(width, (int) (550 * getResources().getDisplayMetrics().density)), maxHeight);
+        }
     }
 
     private static final class WallpaperGridAdapter extends RecyclerView.Adapter<WallpaperViewHolder> {

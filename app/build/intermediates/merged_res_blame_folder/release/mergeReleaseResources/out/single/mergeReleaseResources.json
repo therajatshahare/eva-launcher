@@ -4,12 +4,12 @@
         "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\anim\\app_open_enter.xml"
     },
     {
-        "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-release-11:\\drawable_ic_swap_vert.xml.flat",
-        "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\drawable\\ic_swap_vert.xml"
-    },
-    {
         "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-release-11:\\layout_dialog_card_prompt.xml.flat",
         "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\layout\\dialog_card_prompt.xml"
+    },
+    {
+        "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-release-11:\\drawable_ic_swap_vert.xml.flat",
+        "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\drawable\\ic_swap_vert.xml"
     },
     {
         "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-release-11:\\layout_dialog_wallpaper_picker.xml.flat",
@@ -32,28 +32,28 @@
         "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\mipmap-xhdpi\\ic_launcher.jpg"
     },
     {
-        "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-release-11:\\drawable_ic_apps_pill.xml.flat",
-        "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\drawable\\ic_apps_pill.xml"
-    },
-    {
         "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-release-11:\\drawable-mdpi-v4_notify_panel_notification_icon_bg.png.flat",
         "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-core-1.7.0-3:\\drawable-mdpi-v4\\notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-release-11:\\drawable_ic_apps_pill.xml.flat",
+        "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\drawable\\ic_apps_pill.xml"
     },
     {
         "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-release-11:\\drawable_settings_card_bg.xml.flat",
         "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\drawable\\settings_card_bg.xml"
     },
     {
-        "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-release-11:\\drawable_race_bar.xml.flat",
-        "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\drawable\\race_bar.xml"
+        "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-release-11:\\color_pill_icon_online.xml.flat",
+        "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\color\\pill_icon_online.xml"
     },
     {
         "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-release-11:\\xml_locales_config.xml.flat",
         "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\xml\\locales_config.xml"
     },
     {
-        "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-release-11:\\color_pill_icon_online.xml.flat",
-        "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\color\\pill_icon_online.xml"
+        "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-release-11:\\drawable_race_bar.xml.flat",
+        "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\drawable\\race_bar.xml"
     },
     {
         "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-release-11:\\drawable-hdpi-v4_notify_panel_notification_icon_bg.png.flat",
@@ -92,20 +92,16 @@
         "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\layout\\item_settings_category_card.xml"
     },
     {
-        "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-release-11:\\drawable_wallpaper_card_gradient.xml.flat",
-        "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\drawable\\wallpaper_card_gradient.xml"
-    },
-    {
         "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-release-11:\\drawable_banner_tv.xml.flat",
         "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\drawable\\banner_tv.xml"
     },
     {
-        "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-release-11:\\drawable-xhdpi-v4_notify_panel_notification_icon_bg.png.flat",
-        "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-core-1.7.0-3:\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png"
+        "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-release-11:\\drawable_wallpaper_card_gradient.xml.flat",
+        "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\drawable\\wallpaper_card_gradient.xml"
     },
     {
-        "merged": "com.gathin.tvhome.app-release-11:/drawable_dialog_rounded_bg.xml.flat",
-        "source": "com.gathin.tvhome.app-main-12:/drawable/dialog_rounded_bg.xml"
+        "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-release-11:\\drawable-xhdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-core-1.7.0-3:\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png"
     },
     {
         "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-release-11:\\drawable_ic_home_settings_pill.xml.flat",
@@ -160,12 +156,12 @@
         "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\layout\\activity_quick_settings.xml"
     },
     {
-        "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-release-11:\\drawable_status_dot.xml.flat",
-        "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\drawable\\status_dot.xml"
-    },
-    {
         "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-release-11:\\drawable-hdpi-v4_notification_bg_low_normal.9.png.flat",
         "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-core-1.7.0-3:\\drawable-hdpi-v4\\notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-release-11:\\drawable_status_dot.xml.flat",
+        "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\drawable\\status_dot.xml"
     },
     {
         "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-release-11:\\layout_popup_cards.xml.flat",
@@ -188,12 +184,12 @@
         "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\layout\\item_app.xml"
     },
     {
-        "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-release-11:\\drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
-        "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-core-1.7.0-3:\\drawable-hdpi-v4\\notification_bg_low_pressed.9.png"
-    },
-    {
         "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-release-11:\\drawable_ic_input.xml.flat",
         "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\drawable\\ic_input.xml"
+    },
+    {
+        "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-release-11:\\drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-core-1.7.0-3:\\drawable-hdpi-v4\\notification_bg_low_pressed.9.png"
     },
     {
         "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-release-11:\\drawable-mdpi-v4_notification_bg_normal_pressed.9.png.flat",
@@ -236,6 +232,10 @@
         "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\drawable-nodpi\\halloween_pumpkin_dark.webp"
     },
     {
+        "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-release-11:\\drawable_dialog_rounded_bg.xml.flat",
+        "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\drawable\\dialog_rounded_bg.xml"
+    },
+    {
         "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-release-11:\\menu_example_menu.xml.flat",
         "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-core-1.7.0-3:\\menu\\example_menu.xml"
     },
@@ -262,10 +262,6 @@
     {
         "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-release-11:\\layout_activity_main.xml.flat",
         "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-main-12:\\layout\\activity_main.xml"
-    },
-    {
-        "merged": "com.gathin.tvhome.app-release-11:/layout_dialog_wallpaper_picker.xml.flat",
-        "source": "com.gathin.tvhome.app-main-12:/layout/dialog_wallpaper_picker.xml"
     },
     {
         "merged": "C:\\Users\\RAJAT SHAHARE\\.gradle\\daemon\\8.14.6\\com.gathin.tvhome.app-release-11:\\layout_item_input.xml.flat",
