@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.gathin.tvhome.LauncherLocaleTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-31T09:40:20.888Z" hostname="DESKTOP-EOQDD3G" time="0.013">
+  <properties/>
+  <testcase name="emptyOrMalformedTagsFollowTheTv" classname="com.gathin.tvhome.LauncherLocaleTest" time="0.005"/>
+  <testcase name="plainTagsBecomeLocales" classname="com.gathin.tvhome.LauncherLocaleTest" time="0.002"/>
+  <testcase name="tagsWithScriptsAndExtensionsBecomeLocales" classname="com.gathin.tvhome.LauncherLocaleTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -5,7 +5,10 @@ import android.app.AlertDialog;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.net.Uri;
+<<<<<<< HEAD
 import android.os.Build;
+=======
+>>>>>>> ef71f96 (Release v1.1: Fix catalog sorting NPE and Javadoc formatting)
 import android.util.Log;
 import android.widget.Toast;
 
@@ -41,7 +44,11 @@ public final class UpdateManager {
 
         new Thread(() -> {
             try {
+<<<<<<< HEAD
                 String currentVersionName = "3.2";
+=======
+                String currentVersionName = "1.1";
+>>>>>>> ef71f96 (Release v1.1: Fix catalog sorting NPE and Javadoc formatting)
                 try {
                     PackageInfo pInfo = activity.getPackageManager().getPackageInfo(activity.getPackageName(), 0);
                     currentVersionName = pInfo.versionName;
@@ -128,7 +135,11 @@ public final class UpdateManager {
                 activity.runOnUiThread(() -> {
                     callback.onStatus("Installing...");
                     Intent intent = new Intent(Intent.ACTION_VIEW);
+<<<<<<< HEAD
                     Uri apkUri = Build.VERSION.SDK_INT >= 24 ? Uri.parse("content://" + activity.getPackageName() + ".updateprovider/update") : Uri.fromFile(apkFile);
+=======
+                    Uri apkUri = Uri.parse("content://" + activity.getPackageName() + ".updateprovider/update");
+>>>>>>> ef71f96 (Release v1.1: Fix catalog sorting NPE and Javadoc formatting)
                     intent.setDataAndType(apkUri, "application/vnd.android.package-archive");
                     intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION | Intent.FLAG_ACTIVITY_NEW_TASK);
                     activity.startActivity(intent);

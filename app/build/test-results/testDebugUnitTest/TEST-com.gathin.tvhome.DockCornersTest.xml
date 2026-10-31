@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.gathin.tvhome.DockCornersTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-31T09:40:20.277Z" hostname="DESKTOP-EOQDD3G" time="0.022">
+  <properties/>
+  <testcase name="evenPaddingIsTheGapBetweenTilesUnlessTheEdgeIsTighter" classname="com.gathin.tvhome.DockCornersTest" time="0.013"/>
+  <testcase name="evenPaddingStaysPositiveAndBelowTheCellFromFourToSevenColumns" classname="com.gathin.tvhome.DockCornersTest" time="0.003"/>
+  <testcase name="bandRadiusIsTileRadiusPlusPadding" classname="com.gathin.tvhome.DockCornersTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

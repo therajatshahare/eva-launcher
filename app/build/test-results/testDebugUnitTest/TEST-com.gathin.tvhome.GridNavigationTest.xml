@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.gathin.tvhome.GridNavigationTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-31T09:40:20.686Z" hostname="DESKTOP-EOQDD3G" time="0.033">
+  <properties/>
+  <testcase name="horizontalEdgesMatchExplicitRowsAcrossColumnCountsAndDirections" classname="com.gathin.tvhome.GridNavigationTest" time="0.015"/>
+  <testcase name="sparseDockRedirectsEmptySlotsAndKeepsGridRowBoundary" classname="com.gathin.tvhome.GridNavigationTest" time="0.002"/>
+  <testcase name="singleColumnHasBothHorizontalEdges" classname="com.gathin.tvhome.GridNavigationTest" time="0.001"/>
+  <testcase name="incompleteHebrewLastRowDoesNotWrapIntoEmptySpace" classname="com.gathin.tvhome.GridNavigationTest" time="0.001"/>
+  <testcase name="hebrewDockStartsOnTheRightAndStopsAtTheLeft" classname="com.gathin.tvhome.GridNavigationTest" time="0.004"/>
+  <testcase name="originalLeftToRightBoundariesArePreserved" classname="com.gathin.tvhome.GridNavigationTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

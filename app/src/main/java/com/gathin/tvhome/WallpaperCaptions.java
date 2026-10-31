@@ -10,7 +10,11 @@ import java.util.Map;
 
 /**
  * Names for a wallpaper collection (wallpaper_captions): {@code wallpapers/captions.txt}, one
+<<<<<<< HEAD
  * "filename<TAB>name" per line. Blank lines, lines starting with # and lines without a tab are skipped; a name
+=======
+ * "filename&lt;TAB&gt;name" per line. Blank lines, lines starting with # and lines without a tab are skipped; a name
+>>>>>>> ef71f96 (Release v1.1: Fix catalog sorting NPE and Javadoc formatting)
  * is cut to {@link #MAX_LENGTH} characters. No Android types, so it is tested on the JVM.
  */
 final class WallpaperCaptions {
