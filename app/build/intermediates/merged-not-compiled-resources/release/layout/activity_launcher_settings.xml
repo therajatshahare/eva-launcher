@@ -3,11 +3,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FF0F141A"
+    android:clipChildren="false"
+    android:clipToPadding="false"
     android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
         android:orientation="vertical"
         android:paddingStart="48dp"
         android:paddingEnd="48dp"
@@ -36,6 +40,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:baselineAligned="false"
+            android:clipChildren="false"
+            android:clipToPadding="false"
             android:orientation="horizontal">
 
             <!-- LEFT COLUMN -->
@@ -44,6 +51,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginEnd="12dp"
+                android:clipChildren="false"
+                android:clipToPadding="false"
                 android:orientation="vertical">
 
                 <!-- SECTION 1: Homescreen Layout Card -->
@@ -51,6 +60,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/settings_card_bg"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
                     android:orientation="vertical"
                     android:padding="20dp">
 
@@ -76,12 +87,23 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
+                        android:baselineAligned="false"
+                        android:clipChildren="false"
+                        android:clipToPadding="false"
                         android:orientation="horizontal">
 
-                        <TextView android:id="@+id/columns4" style="@style/SettingsColumnChoice" android:text="4" />
-                        <TextView android:id="@+id/columns5" style="@style/SettingsColumnChoice" android:text="5" />
-                        <TextView android:id="@+id/columns6" style="@style/SettingsColumnChoice" android:text="6" />
-                        <TextView android:id="@+id/columns7" style="@style/SettingsColumnChoice" android:text="7" />
+                        <TextView android:id="@+id/columns4" style="@style/SettingsColumnChoice" android:text="4"
+                            android:nextFocusLeft="@+id/columns4" android:nextFocusRight="@+id/columns5"
+                            android:nextFocusDown="@+id/rows0" />
+                        <TextView android:id="@+id/columns5" style="@style/SettingsColumnChoice" android:text="5"
+                            android:nextFocusLeft="@+id/columns4" android:nextFocusRight="@+id/columns6"
+                            android:nextFocusDown="@+id/rows1" />
+                        <TextView android:id="@+id/columns6" style="@style/SettingsColumnChoice" android:text="6"
+                            android:nextFocusLeft="@+id/columns5" android:nextFocusRight="@+id/columns7"
+                            android:nextFocusDown="@+id/rows2" />
+                        <TextView android:id="@+id/columns7" style="@style/SettingsColumnChoice" android:text="7"
+                            android:nextFocusLeft="@+id/columns6" android:nextFocusRight="@+id/wallpaperChoice"
+                            android:nextFocusDown="@+id/rows3" />
                     </LinearLayout>
 
                     <!-- Rows Below Dock -->
@@ -97,12 +119,23 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
+                        android:baselineAligned="false"
+                        android:clipChildren="false"
+                        android:clipToPadding="false"
                         android:orientation="horizontal">
 
-                        <TextView android:id="@+id/rows0" style="@style/SettingsColumnChoice" android:text="0" />
-                        <TextView android:id="@+id/rows1" style="@style/SettingsColumnChoice" android:text="1" />
-                        <TextView android:id="@+id/rows2" style="@style/SettingsColumnChoice" android:text="2" />
-                        <TextView android:id="@+id/rows3" style="@style/SettingsColumnChoice" android:text="3" />
+                        <TextView android:id="@+id/rows0" style="@style/SettingsColumnChoice" android:text="0"
+                            android:nextFocusLeft="@+id/rows0" android:nextFocusRight="@+id/rows1"
+                            android:nextFocusUp="@+id/columns4" android:nextFocusDown="@+id/dock100" />
+                        <TextView android:id="@+id/rows1" style="@style/SettingsColumnChoice" android:text="1"
+                            android:nextFocusLeft="@+id/rows0" android:nextFocusRight="@+id/rows2"
+                            android:nextFocusUp="@+id/columns5" android:nextFocusDown="@+id/dock70" />
+                        <TextView android:id="@+id/rows2" style="@style/SettingsColumnChoice" android:text="2"
+                            android:nextFocusLeft="@+id/rows1" android:nextFocusRight="@+id/rows3"
+                            android:nextFocusUp="@+id/columns6" android:nextFocusDown="@+id/dock50" />
+                        <TextView android:id="@+id/rows3" style="@style/SettingsColumnChoice" android:text="3"
+                            android:nextFocusLeft="@+id/rows2" android:nextFocusRight="@+id/wallpaperChoice"
+                            android:nextFocusUp="@+id/columns7" android:nextFocusDown="@+id/dock30" />
                     </LinearLayout>
 
                     <!-- Dock Opacity -->
@@ -118,12 +151,23 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
+                        android:baselineAligned="false"
+                        android:clipChildren="false"
+                        android:clipToPadding="false"
                         android:orientation="horizontal">
 
-                        <TextView android:id="@+id/dock100" style="@style/SettingsColumnChoice" android:text="100%" />
-                        <TextView android:id="@+id/dock70" style="@style/SettingsColumnChoice" android:text="70%" />
-                        <TextView android:id="@+id/dock50" style="@style/SettingsColumnChoice" android:text="50%" />
-                        <TextView android:id="@+id/dock30" style="@style/SettingsColumnChoice" android:text="30%" />
+                        <TextView android:id="@+id/dock100" style="@style/SettingsColumnChoice" android:text="100%"
+                            android:nextFocusLeft="@+id/dock100" android:nextFocusRight="@+id/dock70"
+                            android:nextFocusUp="@+id/rows0" android:nextFocusDown="@+id/clockSystem" />
+                        <TextView android:id="@+id/dock70" style="@style/SettingsColumnChoice" android:text="70%"
+                            android:nextFocusLeft="@+id/dock100" android:nextFocusRight="@+id/dock50"
+                            android:nextFocusUp="@+id/rows1" android:nextFocusDown="@+id/clock12" />
+                        <TextView android:id="@+id/dock50" style="@style/SettingsColumnChoice" android:text="50%"
+                            android:nextFocusLeft="@+id/dock70" android:nextFocusRight="@+id/dock30"
+                            android:nextFocusUp="@+id/rows2" android:nextFocusDown="@+id/clock24" />
+                        <TextView android:id="@+id/dock30" style="@style/SettingsColumnChoice" android:text="30%"
+                            android:nextFocusLeft="@+id/dock50" android:nextFocusRight="@+id/wallpaperChoice"
+                            android:nextFocusUp="@+id/rows3" android:nextFocusDown="@+id/clock24" />
                     </LinearLayout>
 
                     <!-- Reorder Choice -->
@@ -142,6 +186,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:background="@drawable/settings_card_bg"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
                     android:orientation="vertical"
                     android:padding="20dp">
 
@@ -167,24 +213,41 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
+                        android:baselineAligned="false"
+                        android:clipChildren="false"
+                        android:clipToPadding="false"
                         android:orientation="horizontal">
 
-                        <TextView android:id="@+id/clockSystem" style="@style/SettingsColumnChoice" android:text="@string/clock_format_system" />
-                        <TextView android:id="@+id/clock12" style="@style/SettingsColumnChoice" android:text="@string/clock_format_12" />
-                        <TextView android:id="@+id/clock24" style="@style/SettingsColumnChoice" android:text="@string/clock_format_24" />
+                        <TextView android:id="@+id/clockSystem" style="@style/SettingsColumnChoice" android:text="@string/clock_format_system"
+                            android:nextFocusLeft="@+id/clockSystem" android:nextFocusRight="@+id/clock12"
+                            android:nextFocusUp="@+id/dock100" android:nextFocusDown="@+id/animationsChoice" />
+                        <TextView android:id="@+id/clock12" style="@style/SettingsColumnChoice" android:text="@string/clock_format_12"
+                            android:nextFocusLeft="@+id/clockSystem" android:nextFocusRight="@+id/clock24"
+                            android:nextFocusUp="@+id/dock70" android:nextFocusDown="@+id/animationsChoice" />
+                        <TextView android:id="@+id/clock24" style="@style/SettingsColumnChoice" android:text="@string/clock_format_24"
+                            android:nextFocusLeft="@+id/clock12" android:nextFocusRight="@+id/redditWallpaperChoice"
+                            android:nextFocusUp="@+id/dock50" android:nextFocusDown="@+id/animationsChoice" />
                     </LinearLayout>
 
                     <!-- Animations Toggle -->
                     <TextView
                         android:id="@+id/animationsChoice"
                         style="@style/SettingsRow"
-                        android:layout_marginTop="16dp" />
+                        android:layout_marginTop="16dp"
+                        android:nextFocusLeft="@+id/animationsChoice"
+                        android:nextFocusRight="@+id/followThemeChoice"
+                        android:nextFocusUp="@+id/clockSystem"
+                        android:nextFocusDown="@+id/advancedChoice" />
 
                     <!-- Advanced Effects Toggle -->
                     <TextView
                         android:id="@+id/advancedChoice"
                         style="@style/SettingsRow"
-                        android:layout_marginTop="10dp" />
+                        android:layout_marginTop="10dp"
+                        android:nextFocusLeft="@+id/advancedChoice"
+                        android:nextFocusRight="@+id/updateChoice"
+                        android:nextFocusUp="@+id/animationsChoice"
+                        android:nextFocusDown="@+id/advancedChoice" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -204,6 +267,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginStart="12dp"
+                android:clipChildren="false"
+                android:clipToPadding="false"
                 android:orientation="vertical">
 
                 <!-- SECTION 3: Wallpaper & Themes Card -->
@@ -211,6 +276,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/settings_card_bg"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
                     android:orientation="vertical"
                     android:padding="20dp">
 
@@ -227,21 +294,33 @@
                     <TextView
                         android:id="@+id/wallpaperChoice"
                         style="@style/SettingsRow"
-                        android:layout_marginTop="12dp" />
+                        android:layout_marginTop="12dp"
+                        android:nextFocusLeft="@+id/columns7"
+                        android:nextFocusRight="@+id/wallpaperChoice"
+                        android:nextFocusUp="@+id/wallpaperChoice"
+                        android:nextFocusDown="@+id/redditWallpaperChoice" />
 
                     <!-- Fetch Reddit Wallpapers -->
                     <TextView
                         android:id="@+id/redditWallpaperChoice"
                         style="@style/SettingsRow"
                         android:layout_marginTop="10dp"
-                        android:text="Fetch Wallpapers from Reddit r/wallpapers" />
+                        android:text="Fetch Wallpapers from Reddit r/wallpapers"
+                        android:nextFocusLeft="@+id/dock30"
+                        android:nextFocusRight="@+id/redditWallpaperChoice"
+                        android:nextFocusUp="@+id/wallpaperChoice"
+                        android:nextFocusDown="@+id/followThemeChoice" />
 
                     <!-- Follow Theme -->
                     <TextView
                         android:id="@+id/followThemeChoice"
                         style="@style/SettingsRow"
                         android:layout_marginTop="10dp"
-                        android:text="@string/follow_theme" />
+                        android:text="@string/follow_theme"
+                        android:nextFocusLeft="@+id/animationsChoice"
+                        android:nextFocusRight="@+id/followThemeChoice"
+                        android:nextFocusUp="@+id/redditWallpaperChoice"
+                        android:nextFocusDown="@+id/updateChoice" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -259,6 +338,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:background="@drawable/settings_card_bg"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
                     android:orientation="vertical"
                     android:padding="20dp">
 
@@ -276,14 +357,22 @@
                         android:id="@+id/updateChoice"
                         style="@style/SettingsRow"
                         android:layout_marginTop="12dp"
-                        android:text="Check for Launcher Updates" />
+                        android:text="Check for Launcher Updates"
+                        android:nextFocusLeft="@+id/advancedChoice"
+                        android:nextFocusRight="@+id/updateChoice"
+                        android:nextFocusUp="@+id/followThemeChoice"
+                        android:nextFocusDown="@+id/defaultHomeChoice" />
 
                     <!-- Open On Start -->
                     <TextView
                         android:id="@+id/openOnStartChoice"
                         style="@style/SettingsRow"
                         android:layout_marginTop="10dp"
-                        android:visibility="gone" />
+                        android:visibility="gone"
+                        android:nextFocusLeft="@+id/advancedChoice"
+                        android:nextFocusRight="@+id/openOnStartChoice"
+                        android:nextFocusUp="@+id/updateChoice"
+                        android:nextFocusDown="@+id/defaultHomeChoice" />
 
                 </LinearLayout>
 
@@ -293,6 +382,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:background="@drawable/settings_card_bg"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
                     android:orientation="vertical"
                     android:padding="20dp">
 
@@ -310,7 +401,11 @@
                         android:id="@+id/defaultHomeChoice"
                         style="@style/SettingsRow"
                         android:layout_marginTop="12dp"
-                        android:text="@string/home_settings" />
+                        android:text="@string/home_settings"
+                        android:nextFocusLeft="@+id/advancedChoice"
+                        android:nextFocusRight="@+id/defaultHomeChoice"
+                        android:nextFocusUp="@+id/updateChoice"
+                        android:nextFocusDown="@+id/tvSettingsChoice" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -325,7 +420,11 @@
                         android:id="@+id/tvSettingsChoice"
                         style="@style/SettingsRow"
                         android:layout_marginTop="10dp"
-                        android:text="@string/tv_settings" />
+                        android:text="@string/tv_settings"
+                        android:nextFocusLeft="@+id/advancedChoice"
+                        android:nextFocusRight="@+id/tvSettingsChoice"
+                        android:nextFocusUp="@+id/defaultHomeChoice"
+                        android:nextFocusDown="@+id/tvSettingsChoice" />
 
                 </LinearLayout>
 

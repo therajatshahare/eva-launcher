@@ -191,6 +191,7 @@ drawable settings_card_bg
 drawable settings_choice_bg
 drawable status_dot
 drawable tile_bg
+drawable wallpaper_card_gradient
 font outfit
 font outfit_extralight
 font outfit_light
@@ -332,6 +333,7 @@ id rows1
 id rows2
 id rows3
 id scrim
+id selectedBadge
 id shamsiDate
 id sky
 id state
@@ -358,7 +360,11 @@ id topButtons
 id tvSettingsChoice
 id updateChoice
 id view_tree_lifecycle_owner
+id wallpaperCard
 id wallpaperChoice
+id wallpaperGrid
+id wallpaperName
+id wallpaperPreview
 integer cinematic_art
 integer cinematic_scrim
 integer clock_wallpaper_dim
@@ -374,10 +380,12 @@ layout activity_main
 layout activity_quick_settings
 layout custom_dialog
 layout dialog_card_prompt
+layout dialog_wallpaper_picker
 layout dream_clock
 layout item_app
 layout item_card_row
 layout item_input
+layout item_wallpaper_card
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big

@@ -7,14 +7,21 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.DecelerateInterpolator;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -249,40 +256,181 @@ public final class LauncherSettingsActivity extends Activity {
         for (int i = views.length - 1; i >= 0; i--) row.addView(views[i]);
     }
 
+    static final class WallpaperItem {
+        final String key;
+        final String label;
+        final File file;
+        final boolean isThemeDefault;
+        final boolean isNone;
+
+        WallpaperItem(String key, String label, File file, boolean isThemeDefault, boolean isNone) {
+            this.key = key;
+            this.label = label;
+            this.file = file;
+            this.isThemeDefault = isThemeDefault;
+            this.isNone = isNone;
+        }
+    }
+
     private void showWallpaperPicker() {
         File dir = Config.dir(this);
-        List<File> images = new java.util.ArrayList<>(WallpaperRotation.images(
+        List<File> images = new ArrayList<>(WallpaperRotation.images(
                 dir == null ? null : new File(dir, "wallpapers")));
-        // A theme with a single wallpaper.jpg offers that picture too (Config maps the choice back to it).
         File single = dir == null ? null : new File(dir, Config.WALLPAPER_NAME);
-        if (single != null && single.isFile()) images.add(0, single);
-        String[] labels = new String[images.size() + 1];
-        for (int i = 0; i < images.size(); i++) labels[i] = images.get(i).getName();
-        labels[images.size()] = getString(R.string.wallpaper_none);
-        String current = choices.getString(Config.WALLPAPER_CHOICE_KEY, null);
-        int checked = "none".equals(current) ? images.size()
-                : indexOf(images, current);
-        new AlertDialog.Builder(this)
-                .setTitle(R.string.wallpaper_label)
-                .setSingleChoiceItems(labels, checked, (dialog, which) -> {
-                    dialog.dismiss();
-                    if (which == images.size()) {
-                        choices.edit().putString(Config.WALLPAPER_CHOICE_KEY, "none").apply();
-                    } else {
-                        choices.edit().putString(Config.WALLPAPER_CHOICE_KEY,
-                                images.get(which).getName()).apply();
-                    }
-                    changed();
-                    Toast.makeText(this, R.string.wallpaper_applied, Toast.LENGTH_SHORT).show();
-                    refresh();
-                })
-                .setNeutralButton(R.string.wallpaper_theme_default, (dialog, which) -> {
-                    choices.edit().remove(Config.WALLPAPER_CHOICE_KEY).apply();
-                    changed();
-                    refresh();
-                })
+        if (single != null && single.isFile() && !images.contains(single)) {
+            images.add(0, single);
+        }
+
+        List<WallpaperItem> items = new ArrayList<>();
+        items.add(new WallpaperItem(null, getString(R.string.wallpaper_theme_default), single, true, false));
+
+        for (File img : images) {
+            String name = img.getName();
+            String displayLabel = name;
+            if (name.startsWith("reddit_")) {
+                int idx = name.lastIndexOf('_');
+                String num = idx >= 0 ? name.substring(idx + 1).replace(".jpg", "") : "";
+                displayLabel = "Reddit Wallpaper #" + num;
+            }
+            items.add(new WallpaperItem(name, displayLabel, img, false, false));
+        }
+
+        items.add(new WallpaperItem("none", getString(R.string.wallpaper_none), null, false, true));
+
+        String currentChoice = choices.getString(Config.WALLPAPER_CHOICE_KEY, null);
+
+        View dialogView = getLayoutInflater().inflate(R.layout.dialog_wallpaper_picker, null);
+        RecyclerView grid = dialogView.findViewById(R.id.wallpaperGrid);
+        grid.setLayoutManager(new GridLayoutManager(this, 3));
+
+        AlertDialog dialog = new AlertDialog.Builder(this)
+                .setView(dialogView)
                 .setNegativeButton(android.R.string.cancel, null)
-                .show();
+                .create();
+
+        grid.setAdapter(new WallpaperGridAdapter(this, items, currentChoice, item -> {
+            dialog.dismiss();
+            if (item.isThemeDefault) {
+                choices.edit().remove(Config.WALLPAPER_CHOICE_KEY).apply();
+            } else {
+                choices.edit().putString(Config.WALLPAPER_CHOICE_KEY, item.key).apply();
+            }
+            changed();
+            Toast.makeText(this, R.string.wallpaper_applied, Toast.LENGTH_SHORT).show();
+            refresh();
+        }));
+
+        dialog.show();
+    }
+
+    private static final class WallpaperGridAdapter extends RecyclerView.Adapter<WallpaperViewHolder> {
+        private final Activity activity;
+        private final List<WallpaperItem> items;
+        private final String currentChoice;
+        private final OnWallpaperSelectedListener listener;
+
+        interface OnWallpaperSelectedListener {
+            void onSelected(WallpaperItem item);
+        }
+
+        WallpaperGridAdapter(Activity activity, List<WallpaperItem> items, String currentChoice, OnWallpaperSelectedListener listener) {
+            this.activity = activity;
+            this.items = items;
+            this.currentChoice = currentChoice;
+            this.listener = listener;
+        }
+
+        @Override
+        public WallpaperViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+            View view = activity.getLayoutInflater().inflate(R.layout.item_wallpaper_card, parent, false);
+            return new WallpaperViewHolder(view);
+        }
+
+        @Override
+        public void onBindViewHolder(WallpaperViewHolder holder, int position) {
+            WallpaperItem item = items.get(position);
+            holder.name.setText(item.label);
+
+            boolean isCurrent = (item.isThemeDefault && currentChoice == null)
+                    || (!item.isThemeDefault && item.key != null && item.key.equals(currentChoice));
+            holder.selectedBadge.setVisibility(isCurrent ? View.VISIBLE : View.GONE);
+
+            if (item.file != null && item.file.isFile()) {
+                new Thread(() -> {
+                    Bitmap bmp = loadThumbnail(item.file, 240, 135);
+                    if (bmp != null) {
+                        activity.runOnUiThread(() -> holder.preview.setImageBitmap(bmp));
+                    }
+                }).start();
+            } else if (item.isNone) {
+                holder.preview.setImageResource(android.R.color.transparent);
+            } else {
+                holder.preview.setImageResource(R.drawable.banner);
+            }
+
+            final float density = activity.getResources().getDisplayMetrics().density;
+            holder.card.setOnFocusChangeListener((v, focused) -> {
+                float scale = focused ? 1.06f : 1.00f;
+                float z = focused ? 10f * density : 0f;
+                v.animate().scaleX(scale).scaleY(scale).translationZ(z)
+                        .setDuration(focused ? 180 : 140)
+                        .setInterpolator(focused ? new DecelerateInterpolator(1.5f) : new AccelerateInterpolator())
+                        .start();
+                if (focused) v.bringToFront();
+            });
+
+            holder.card.setOnClickListener(v -> listener.onSelected(item));
+        }
+
+        @Override
+        public int getItemCount() {
+            return items.size();
+        }
+    }
+
+    private static final class WallpaperViewHolder extends RecyclerView.ViewHolder {
+        final View card;
+        final ImageView preview;
+        final TextView name;
+        final TextView selectedBadge;
+
+        WallpaperViewHolder(View itemView) {
+            super(itemView);
+            card = itemView.findViewById(R.id.wallpaperCard);
+            preview = itemView.findViewById(R.id.wallpaperPreview);
+            name = itemView.findViewById(R.id.wallpaperName);
+            selectedBadge = itemView.findViewById(R.id.selectedBadge);
+        }
+    }
+
+    static Bitmap loadThumbnail(File file, int reqWidth, int reqHeight) {
+        if (file == null || !file.isFile()) return null;
+        try {
+            BitmapFactory.Options options = new BitmapFactory.Options();
+            options.inJustDecodeBounds = true;
+            BitmapFactory.decodeFile(file.getAbsolutePath(), options);
+
+            options.inSampleSize = calculateInSampleSize(options, reqWidth, reqHeight);
+            options.inJustDecodeBounds = false;
+            options.inPreferredConfig = Bitmap.Config.RGB_565;
+            return BitmapFactory.decodeFile(file.getAbsolutePath(), options);
+        } catch (Exception e) {
+            return null;
+        }
+    }
+
+    static int calculateInSampleSize(BitmapFactory.Options options, int reqWidth, int reqHeight) {
+        final int height = options.outHeight;
+        final int width = options.outWidth;
+        int inSampleSize = 1;
+        if (height > reqHeight || width > reqWidth) {
+            final int halfHeight = height / 2;
+            final int halfWidth = width / 2;
+            while ((halfHeight / inSampleSize) >= reqHeight && (halfWidth / inSampleSize) >= reqWidth) {
+                inSampleSize *= 2;
+            }
+        }
+        return inSampleSize;
     }
 
     /** Off, then every app with a TV entry point by name. Saved at once; it is read on the next boot. */
@@ -333,13 +481,7 @@ public final class LauncherSettingsActivity extends Activity {
         }
     }
 
-    private static int indexOf(List<File> images, String name) {
-        if (name == null) return -1;
-        for (int i = 0; i < images.size(); i++) {
-            if (images.get(i).getName().equals(name)) return i;
-        }
-        return -1;
-    }
+
 
     /**
      * A choice was saved. Home rebuilds when it next resumes because the change count moved, whether these

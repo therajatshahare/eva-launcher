@@ -2157,7 +2157,6 @@ androidx.recyclerview.widget.GridLayoutManager:
     private static final boolean DEBUG
     public static final int DEFAULT_SPAN_COUNT
     private static final java.lang.String TAG
-    public void <init>(android.content.Context,int)
     public int getSpanCount()
     public androidx.recyclerview.widget.GridLayoutManager$SpanSizeLookup getSpanSizeLookup()
     public boolean isUsingSpansToEstimateScrollbarDimensions()
@@ -2200,7 +2199,6 @@ androidx.recyclerview.widget.LinearLayoutManager:
     private static final float MAX_SCROLL_FACTOR
     private static final java.lang.String TAG
     public static final int VERTICAL
-    public void <init>(android.content.Context)
     public int findFirstCompletelyVisibleItemPosition()
     public int findLastCompletelyVisibleItemPosition()
     public int getInitialPrefetchItemCount()
@@ -2876,7 +2874,6 @@ com.gathin.tvhome.R$bool:
 com.gathin.tvhome.R$color:
     private void <init>()
 com.gathin.tvhome.R$drawable:
-    public static int banner
     public static int banner_tv
     public static int ic_apps_pill
     public static int input_row_bg
@@ -2888,6 +2885,7 @@ com.gathin.tvhome.R$drawable:
     public static int settings_choice_bg
     public static int status_dot
     public static int tile_bg
+    public static int wallpaper_card_gradient
     private void <init>()
 com.gathin.tvhome.R$font
 com.gathin.tvhome.R$id:
@@ -2923,6 +2921,7 @@ com.gathin.tvhome.R$string:
     public static int input_key_service_description
     public static int rows_below_dock_label
     public static int standby
+    public static int wallpaper_label
     private void <init>()
 com.gathin.tvhome.R$style
 com.gathin.tvhome.R$xml
@@ -5899,6 +5898,12 @@ com.gathin.tvhome.InputFold
 com.gathin.tvhome.JackOLanternDrawable:
     public final void setReducedMotion()
 com.gathin.tvhome.LastOpened
+com.gathin.tvhome.LauncherSettingsActivity$$InternalSyntheticLambda$2$b882af7a8e780a453707d25877b2139f0ccb41ed911f5731ac9bdb11f1b61c01$0:
+    public static void onSelected()
+com.gathin.tvhome.LauncherSettingsActivity$WallpaperGridAdapter$OnWallpaperSelectedListener
+com.gathin.tvhome.LauncherSettingsActivity$WallpaperGridAdapter:
+    public static void onBindViewHolder$2()
+    public static com.gathin.tvhome.LauncherSettingsActivity$WallpaperViewHolder onCreateViewHolder()
 com.gathin.tvhome.LauncherSettingsActivity:
     public final void open(android.content.Intent)
     public final void setAdvanced(boolean)

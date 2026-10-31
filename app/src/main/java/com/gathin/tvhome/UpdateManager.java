@@ -41,7 +41,7 @@ public final class UpdateManager {
 
         new Thread(() -> {
             try {
-                String currentVersionName = "1.5";
+                String currentVersionName = "1.6";
                 try {
                     PackageInfo pInfo = activity.getPackageManager().getPackageInfo(activity.getPackageName(), 0);
                     currentVersionName = pInfo.versionName;
