@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gathin.tvhome.MemoryTrimPolicyTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-31T09:40:22.325Z" hostname="DESKTOP-EOQDD3G" time="0.004">
+<testsuite name="com.gathin.tvhome.MemoryTrimPolicyTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-31T09:50:20.283Z" hostname="DESKTOP-EOQDD3G" time="0.004">
   <properties/>
   <testcase name="ordinaryBackgroundTransitionKeepsWarmResources" classname="com.gathin.tvhome.MemoryTrimPolicyTest" time="0.002"/>
   <testcase name="backgroundPressureReleasesResourcesOnlyWhenHomeIsStopped" classname="com.gathin.tvhome.MemoryTrimPolicyTest" time="0.001"/>

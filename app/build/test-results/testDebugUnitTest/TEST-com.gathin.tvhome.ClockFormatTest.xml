@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gathin.tvhome.ClockFormatTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-31T09:40:20.259Z" hostname="DESKTOP-EOQDD3G" time="0.004">
+<testsuite name="com.gathin.tvhome.ClockFormatTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-31T09:50:18.477Z" hostname="DESKTOP-EOQDD3G" time="0.003">
   <properties/>
-  <testcase name="aChosenFormatWinsWithoutAskingTheTv" classname="com.gathin.tvhome.ClockFormatTest" time="0.004"/>
+  <testcase name="aChosenFormatWinsWithoutAskingTheTv" classname="com.gathin.tvhome.ClockFormatTest" time="0.003"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

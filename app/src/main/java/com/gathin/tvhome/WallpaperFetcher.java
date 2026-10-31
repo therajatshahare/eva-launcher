@@ -21,11 +21,7 @@ public final class WallpaperFetcher {
             try {
                 URL url = new URL("https://www.reddit.com/r/wallpapers/hot.json?limit=25");
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-<<<<<<< HEAD
-                conn.setRequestProperty("User-Agent", "Android:com.gathin.tvhome:v3.2");
-=======
                 conn.setRequestProperty("User-Agent", "Android:com.gathin.tvhome:v1.1");
->>>>>>> ef71f96 (Release v1.1: Fix catalog sorting NPE and Javadoc formatting)
                 if (conn.getResponseCode() != 200) {
                     callback.onComplete(false, "Reddit HTTP error");
                     return;

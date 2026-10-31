@@ -1,0 +1,43 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.gathin.tvhome.app-mergeReleaseResources-8:/values-pt-rPT/values-pt-rPT.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\caches\\8.14.6\\transforms\\9765218b3880d2e946d65e7a73736c39\\transformed\\core-1.7.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "12",
+                        "startColumns": "4",
+                        "startOffsets": "774",
+                        "endColumns": "100",
+                        "endOffsets": "870"
+                    }
+                },
+                {
+                    "source": "D:\\Desktop\\github\\eva-launcher-main\\app\\src\\main\\res\\values-pt-rPT\\strings.xml",
+                    "from": {
+                        "startLines": "14,15,13,4,6,7,10,12,11,5,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "969,1021,914,218,320,429,691,866,812,270,555,617",
+                        "endColumns": "51,51,54,51,108,125,120,47,53,49,61,73",
+                        "endOffsets": "1016,1068,964,265,424,550,807,909,861,315,612,686"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,13,14",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,107,159,214,266,375,501,622,670,724,875,937",
+                        "endColumns": "51,51,54,51,108,125,120,47,53,49,61,73",
+                        "endOffsets": "102,154,209,261,370,496,617,665,719,769,932,1006"
+                    }
+                }
+            ]
+        }
+    ]
+}

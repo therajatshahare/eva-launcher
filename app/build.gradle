@@ -11,13 +11,8 @@ android {
         applicationId providers.gradleProperty('launcherApplicationId').getOrElse('com.gathin.tvhome')
         minSdk 26
         targetSdk 34
-<<<<<<< HEAD
-        versionCode 11
-        versionName '3.2'
-=======
         versionCode 12
         versionName '1.1'
->>>>>>> ef71f96 (Release v1.1: Fix catalog sorting NPE and Javadoc formatting)
     }
 
     buildTypes {

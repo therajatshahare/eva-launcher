@@ -283,12 +283,6 @@ final class AppLibraryDialog {
         Collator collator = Collator.getInstance();
         apps.sort((a, b) -> {
             String pa = a.activityInfo.packageName, pb = b.activityInfo.packageName;
-<<<<<<< HEAD
-            if (selectionMode) return LibraryApps.compareCatalog(home.get(pa), label(a), pa,
-                    home.get(pb), label(b), pb, collator);
-            int priority = LibraryApps.comparePriority(home.get(pa), installTimes.get(pa),
-                    home.get(pb), installTimes.get(pb), catalogTime);
-=======
             boolean homeA = Boolean.TRUE.equals(home.get(pa));
             boolean homeB = Boolean.TRUE.equals(home.get(pb));
             if (selectionMode) return LibraryApps.compareCatalog(homeA, label(a), pa,
@@ -298,7 +292,6 @@ final class AppLibraryDialog {
             long timeA = installedA != null ? installedA : 0L;
             long timeB = installedB != null ? installedB : 0L;
             int priority = LibraryApps.comparePriority(homeA, timeA, homeB, timeB, catalogTime);
->>>>>>> ef71f96 (Release v1.1: Fix catalog sorting NPE and Javadoc formatting)
             if (priority != 0) return priority;
             int byLabel = collator.compare(label(a), label(b));
             return byLabel != 0 ? byLabel : pa.compareTo(pb);

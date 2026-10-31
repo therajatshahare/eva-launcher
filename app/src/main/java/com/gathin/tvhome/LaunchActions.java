@@ -7,11 +7,7 @@ import java.util.function.BiFunction;
 
 /** Selects a configured, package-scoped action only when it resolves; otherwise keeps the normal launch. */
 final class LaunchActions {
-<<<<<<< HEAD
-    /** A launch_actions value "view:<uri>" opens that URI in the package instead of sending an action. */
-=======
     /** A launch_actions value "view:{@code <uri>}" opens that URI in the package instead of sending an action. */
->>>>>>> ef71f96 (Release v1.1: Fix catalog sorting NPE and Javadoc formatting)
     static final String VIEW_PREFIX = "view:";
 
     private LaunchActions() {}
@@ -26,11 +22,7 @@ final class LaunchActions {
 
     private static final String INPUT_PREFIX = "input:";
 
-<<<<<<< HEAD
-    /** The TV input id from an "input:<id>" launch_actions value, or null when the value isn't one, including
-=======
     /** The TV input id from an "input:{@code <id>}" launch_actions value, or null when the value isn't one, including
->>>>>>> ef71f96 (Release v1.1: Fix catalog sorting NPE and Javadoc formatting)
      *  an empty id ("input:" alone), which falls back to a normal launch rather than an empty input switch. */
     static String inputId(String action) {
         if (action == null || !action.startsWith(INPUT_PREFIX)) return null;
@@ -38,11 +30,7 @@ final class LaunchActions {
         return id.isEmpty() ? null : id;
     }
 
-<<<<<<< HEAD
-    /** The URI of a "view:<uri>" value, or null for a plain action. */
-=======
     /** The URI of a "view:{@code <uri>}" value, or null for a plain action. */
->>>>>>> ef71f96 (Release v1.1: Fix catalog sorting NPE and Javadoc formatting)
     static String viewUri(String value) {
         if (value == null || !value.startsWith(VIEW_PREFIX)) return null;
         String uri = value.substring(VIEW_PREFIX.length()).trim();
