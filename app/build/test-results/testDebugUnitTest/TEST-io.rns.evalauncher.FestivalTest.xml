@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.rns.evalauncher.FestivalTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-11-01T05:30:36.311Z" hostname="DESKTOP-EOQDD3G" time="0.027">
+  <properties/>
+  <testcase name="malformedValuesTurnTheSkinOff" classname="io.rns.evalauncher.FestivalTest" time="0.013"/>
+  <testcase name="activeThroughTheLastDayInclusive" classname="io.rns.evalauncher.FestivalTest" time="0.001"/>
+  <testcase name="customGreetingIsSanitizedAndOverridesTheFestivalDefault" classname="io.rns.evalauncher.FestivalTest" time="0.0"/>
+  <testcase name="halloweenHasItsOwnSkinAndPumpkinAccent" classname="io.rns.evalauncher.FestivalTest" time="0.001"/>
+  <testcase name="accentFallsBackToDiyaGold" classname="io.rns.evalauncher.FestivalTest" time="0.001"/>
+  <testcase name="unknownFestivalKeepsTheTimeOfDayGreeting" classname="io.rns.evalauncher.FestivalTest" time="0.001"/>
+  <testcase name="noEndDateStaysOn" classname="io.rns.evalauncher.FestivalTest" time="0.001"/>
+  <testcase name="otherFestivalsKeepTheDiyaSkin" classname="io.rns.evalauncher.FestivalTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

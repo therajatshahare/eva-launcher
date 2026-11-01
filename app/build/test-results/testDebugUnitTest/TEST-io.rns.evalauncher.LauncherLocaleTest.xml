@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.rns.evalauncher.LauncherLocaleTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-11-01T05:30:36.611Z" hostname="DESKTOP-EOQDD3G" time="0.011">
+  <properties/>
+  <testcase name="emptyOrMalformedTagsFollowTheTv" classname="io.rns.evalauncher.LauncherLocaleTest" time="0.004"/>
+  <testcase name="plainTagsBecomeLocales" classname="io.rns.evalauncher.LauncherLocaleTest" time="0.001"/>
+  <testcase name="tagsWithScriptsAndExtensionsBecomeLocales" classname="io.rns.evalauncher.LauncherLocaleTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

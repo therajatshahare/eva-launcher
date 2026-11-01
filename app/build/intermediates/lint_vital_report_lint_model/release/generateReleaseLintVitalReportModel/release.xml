@@ -22,11 +22,10 @@
   <testFixturesSourceProviders>
   </testFixturesSourceProviders>
   <artifact
-      classOutputs="build\intermediates\javac\release\compileReleaseJavaWithJavac\classes;build\intermediates\compile_and_runtime_r_class_jar\release\processReleaseResources\R.jar"
+      classOutputs="build\intermediates\javac\release\compileReleaseJavaWithJavac\classes;build\intermediates\built_in_kotlinc\release\compileReleaseKotlin\classes;build\intermediates\compile_r_class_jar\release\generateReleaseRFile\R.jar"
       type="MAIN"
       applicationId="io.rns.evalauncher"
       generatedSourceFolders="build\generated\ap_generated_sources\release\out"
-      generatedResourceFolders="build\generated\res\resValues\release"
       desugaredMethodsFiles="C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\fdb329cb002a5f78994b2aa19c47a8ed\transformed\D8BackportedDesugaredMethods.txt">
   </artifact>
 </variant>

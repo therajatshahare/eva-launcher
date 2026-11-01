@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.rns.evalauncher.PackageMapTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-11-01T05:30:37.957Z" hostname="DESKTOP-EOQDD3G" time="0.009">
+  <properties/>
+  <testcase name="aValueMayContainAnEqualsSign" classname="io.rns.evalauncher.PackageMapTest" time="0.001"/>
+  <testcase name="anEntryMapsItsPackageToItsAction" classname="io.rns.evalauncher.PackageMapTest" time="0.001"/>
+  <testcase name="entriesWithoutBothHalvesAreSkipped" classname="io.rns.evalauncher.PackageMapTest" time="0.001"/>
+  <testcase name="spacesAroundTheHalvesAreTrimmed" classname="io.rns.evalauncher.PackageMapTest" time="0.0"/>
+  <testcase name="aLaterEntryForAPackageWins" classname="io.rns.evalauncher.PackageMapTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

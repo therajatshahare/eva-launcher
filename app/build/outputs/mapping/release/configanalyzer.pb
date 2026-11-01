@@ -8,306 +8,197 @@ annotation"1.2.0
 ~zC:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\12dbd90c599fca9bfb38ba993cbc138b\transformed\core-1.7.0-runtime.jar
 éâC:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\0a070a260f9e75f6c68930be490ef42c\transformed\versionedparcelable-1.1.1-runtime.jar
 ∞pC:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\07b971810212e266f3e1deca45ed2763\transformed\proguard.txt:androidx.versionedparcelableversionedparcelable"1.1.1
-Å	}D:\Desktop\github\eva-launcher-main\app\build\intermediates\aapt_proguard_file\release\processReleaseResources\aapt_rules.txt
-á
-ÇC:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\7776312efd86237a680b97f80137a629\transformed\recyclerview-1.3.2-runtime.jar
-¢pC:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\47994036b841e87799019f74f62f2426\transformed\proguard.txt,androidx.recyclerviewrecyclerview"1.3.2
-°úC:\Users\RAJAT SHAHARE\.gradle\caches\modules-2\files-2.1\androidx.annotation\annotation\1.2.0\57136ff68ee784c6e19db34ed4a175338fadfde1\annotation-1.2.0.jar
-ípC:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\8096e9287b16b92fd2031167de8aceae\transformed\proguard.txtandroidx.corecore"1.7.0
-ÖÄC:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\7cc0ea0edb1a247627a58c3597c9bb7b\transformed\customview-1.0.0-runtime.jar
-™•C:\Users\RAJAT SHAHARE\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib\1.6.21\11ef67f1900634fd951bad28c53ec957fabbe5b8\kotlin-stdlib-1.6.21.jar
-¶pC:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\db3666b50b36a1e3189acd9abf37b9bc\transformed\proguard.txt0androidx.lifecyclelifecycle-viewmodel"2.0.0
->:D:\Desktop\github\eva-launcher-main\app\proguard-rules.pro"TU"CREATOR"VU"CREATOR"WU"CREATOR"XU"CREATOR"YU"CREATOR"U"CREATOR*"<init>*"<init>*	"<init>*"<init>*"<init>*"<init>*"<init>*"<init>*	"<init>*
-"<init>*"read*"write*"<init>*"read*"write*"<init>*"read*"write*"<init>*"read*"write*$"getAccessibilityNodeProvider*	"getFitsSystemWindows*$
-"getImportantForAccessibility*
-"getMinimumHeight*
-"getMinimumWidth*!"getParentForAccessibility*#
-"getWindowSystemUiVisibility*	"hasOverlappingRendering*	"hasTransientState*""performAccessibilityAction*! "postInvalidateOnAnimation*!!"postInvalidateOnAnimation*""postOnAnimation*#"postOnAnimationDelayed*$$"removeOnGlobalLayoutListener*%"requestFitSystemWindows*&"setBackground*'"setHasTransientState*$("setImportantForAccessibility*)&"generateViewId**&"
-getDisplay*+&
-"getLabelFor*,&
-"getLayoutDirection*-&
-"getPaddingEnd*.&
-"getPaddingStart*/&	"isPaddingRelative*0&"setLabelFor*1&"setLayerPaint*2&"setLayoutDirection*3&"setPaddingRelative*"4)
-"getAccessibilityLiveRegion*5)	"isAttachedToWindow*6)	"	isLaidOut*!7)	"isLayoutDirectionResolved*.8)"&notifySubtreeAccessibilityStateChanged*"9)"setAccessibilityLiveRegion*:)"setContentChangeTypes*!;+"dispatchApplyWindowInsets*<+"onApplyWindowInsets*=+"requestApplyInsets*>-"<init>*?-"onApplyWindowInsets*(@/" callCompatInsetAnimationCallback*!A/"computeSystemWindowInsets*B/"dispatchNestedFling*C/"dispatchNestedPreFling*D/ "dispatchNestedPreScroll*E/!"dispatchNestedScroll*F/""getBackgroundTintList*G/#"getBackgroundTintMode*H/$"getElevation*I/%"getRootWindowInsets*J/&"getTransitionName*K/$"getTranslationZ*L/$"getZ* M/	"hasNestedScrollingParent*#N/	"isImportantForAccessibility* O/	"isNestedScrollingEnabled*P/'"setBackgroundTintList*Q/("setBackgroundTintMode*R/)"setElevation*!S/"setNestedScrollingEnabled*&T/"setOnApplyWindowInsetsListener*U/*"setTransitionName*V/)"setTranslationZ*W/)"setZ*X/+"startNestedScroll*Y/"stopNestedScroll*Z7%"getRootWindowInsets*[7
-"getScrollIndicators*\7"setScrollIndicators*]7,"setScrollIndicators*%^8-"addKeyboardNavigationClusters*_8
-"getImportantForAutofill*`8
-"getNextClusterForwardId*a8	"hasExplicitFocusable*b8	"isFocusedByDefault*c8	"isImportantForAutofill*#d8	"isKeyboardNavigationCluster*'e8."keyboardNavigationClusterSearch*f8	"restoreDefaultFocus*g8/"setAutofillHints*h8"setFocusedByDefault*i8"setImportantForAutofill*$j8"setKeyboardNavigationCluster*k8"setNextClusterForwardId*l80"setTooltipText*&m<1"addOnUnhandledKeyEventListener*!n<2"getAccessibilityPaneTitle*o<	"isAccessibilityHeading*p<	"isScreenReaderFocusable*)q<1"!removeOnUnhandledKeyEventListener*r<3"requireViewById*s<"setAccessibilityHeading*!t<0"setAccessibilityPaneTitle* u<"setScreenReaderFocusable* v?4"getAccessibilityDelegate*&w?5"getSystemGestureExclusionRects*%x?6"saveAttributeDataForStyleable*&y?7"setSystemGestureExclusionRects*zC2"getStateDescription*{C0"setStateDescription*|D"<init>*}D8"build*"~D9"createWindowInsetsInstance*D:"setStableInsets*ÄD:"setSystemWindowInsets*ÅF"<init>*ÇF8"build*(ÉF:"setMandatorySystemGestureInsets*ÑF:"setStableInsets*ÖF:"setSystemGestureInsets*ÜF:"setSystemWindowInsets*!áF:"setTappableElementInsets*àG"<init>*âH"<init>*äH;"<init>*ãH"applyInsetTypes*åH8"build*(çH:"setMandatorySystemGestureInsets*éH:"setStableInsets*èH:"setSystemGestureInsets*êH:"setSystemWindowInsets*!ëH:"setTappableElementInsets*íI<"<init>*ìI="<init>*îI"copyRootViewBounds*ïI;"copyWindowDataInto*ñI>"equals*óI?"	getInsets*òI@"	getInsets*ôI@"getInsetsForType*öIA"getRootStableInsets*õIA"getSystemWindowInsets*úIB"getVisibleInsets*ùIC"isRound*ûI"loadReflectionField*üID"setOverriddenInsets*†I:"setRootViewData*°I;"setRootWindowInsets*¢K<"<init>*£KE"<init>*§K8"consumeStableInsets*"•K8"consumeSystemWindowInsets*¶KA"getStableInsets*ßKC"
-isConsumed*®K:"setStableInsets*©L<"<init>*™LF"<init>*´L8"consumeDisplayCutout*¨L>"equals*≠LG"getDisplayCutout*ÆL"hashCode*ØN<"<init>*∞NH"<init>*(±NA"getMandatorySystemGestureInsets*≤NA"getSystemGestureInsets*!≥NA"getTappableElementInsets*¥N:"setStableInsets*µO<"<init>*∂OI"<init>*∑O"copyRootViewBounds*∏O?"	getInsets*πP;"<init>*∫P8"consumeDisplayCutout*ªP8"consumeStableInsets*"ºP8"consumeSystemWindowInsets*ΩP"copyRootViewBounds*æP;"copyWindowDataInto*øP>"equals*¿PG"getDisplayCutout*¡P?"	getInsets*(¬PA"getMandatorySystemGestureInsets*√PA"getStableInsets*ƒPA"getSystemGestureInsets*≈PA"getSystemWindowInsets*!∆PA"getTappableElementInsets*«P"hashCode*»PC"
-isConsumed*…PC"isRound* PD"setOverriddenInsets*ÀP:"setRootViewData*ÃP;"setRootWindowInsets*ÕP:"setStableInsets*ŒQJ"toPlatformType*œRK"create*–RL"getDistance*—RM"onPullDistance*“C"isLayoutSuppressed*”N"suppressLayout*‘ZO"valueOf*’ZP"values*"÷Q"getAccessibilityClassName*◊R"
-getAdapter*ÿ"getBaseline*ŸC"getClipToPadding*'⁄S"getCompatAccessibilityDelegate*€T"getEdgeEffectFactory*‹U"getItemAnimator*›"getItemDecorationCount*ﬁV"getLayoutManager*ﬂ"getMaxFlingVelocity*‡"getMinFlingVelocity*·W"getNanoTime*‚X"getOnFlingListener*$„C"getPreserveFocusAfterLayout*‰Y"getRecycledViewPool*Â"getScrollState* ÊZ"getScrollingChildHelper*'Á["setAccessibilityDelegateCompat*Ë\"
-setAdapter*%È]"setChildDrawingOrderCallback*ÍN"setClipToPadding*"ÎN"setDebugAssertionsEnabled*Ï^"setEdgeEffectFactory*ÌN"setHasFixedSize*Ó_"setItemAnimator*Ô`"setItemViewCacheSize*N"setLayoutFrozen*Òa"setLayoutManager*Úb"setLayoutTransition*"ÛN"setNestedScrollingEnabled*Ùc"setOnFlingListener*ıd"setOnScrollListener*$ˆN"setPreserveFocusAfterLayout*˜e"setRecycledViewPool*¯f"setRecyclerListener*˘`"setScrollState*˙`"setScrollingTouchSlop*!˚N"setVerboseLoggingEnabled*¸g"setViewCacheExtension*˝ih"getExternalCacheDirs*˛ii"getExternalFilesDirs*ˇih"
-getObbDirs2
-2
-2
-22
-22
-22	2
-222
-2	
-2
-
-2
-2
-2
-2
-2
-22'2
-2
-2
-2,2
-2
-20222 2!2"42#52$22%02&62'
-2(
-2)
-2*
-2+2,
-2- 
-2.!2/"
-20#
-21$
-22;23>24@25A26%
-27&
-28029,2:'
-2;(
-2<)
-2=*
-2>+2?,E2@-E2AE2BE2C2D.
-2E/
-2F0
-2GM2H1
-2I2
-2J,2KS2L322M422N5
-2O6Z2P[2Q;2R\2S]2T^2U_2V`2W"2Xa2Yb2Zc2[7
-2\8
-2]9
-2^:
-2_;
-2`,
-2a<
-2b=
-2c>
-2d?
-2e@
-2fA
-2gB
-2hCj2iDj:;7Landroidx/lifecycle/CompositeGeneratedAdaptersObserver;:51Landroidx/lifecycle/FullLifecycleObserverAdapter;:&"Landroidx/lifecycle/Lifecycling$1;:84Landroidx/lifecycle/LiveData$LifecycleBoundObserver;:;7Landroidx/lifecycle/ReflectiveGenericLifecycleObserver;:73Landroidx/lifecycle/SingleGeneratedAdapterObserver;:*&Landroidx/core/app/RemoteActionCompat;:0,Landroidx/core/graphics/drawable/IconCompat;:<	8Landroidx/versionedparcelable/CustomVersionedParcelable;:
-V:,(Landroidx/core/app/CoreComponentFactory;:($Landroidx/core/content/FileProvider;:/+Landroidx/recyclerview/widget/RecyclerView;:Landroid/content/Context;:Landroid/util/AttributeSet;:40Landroidx/recyclerview/widget/GridLayoutManager;:62Landroidx/recyclerview/widget/LinearLayoutManager;:=9Landroidx/recyclerview/widget/StaggeredGridLayoutManager;:I:95Landroid/support/v4/app/RemoteActionCompatParcelizer;:?;Landroid/support/v4/graphics/drawable/IconCompatParcelizer;:2.Landroidx/versionedparcelable/VersionedParcel;:40Landroidx/core/app/RemoteActionCompatParcelizer;::6Landroidx/core/graphics/drawable/IconCompatParcelizer;:-)Landroidx/versionedparcelable/ParcelImpl;:Landroidx/annotation/Keep;:-)Landroidx/core/view/ViewCompat$Api16Impl;:Landroid/view/View;::6Landroid/view/accessibility/AccessibilityNodeProvider;:Z:Landroid/view/ViewParent;: Landroid/os/Bundle;:!Ljava/lang/Runnable;:"J:##Landroid/view/ViewTreeObserver;::$6Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;:(%$Landroid/graphics/drawable/Drawable;:-&)Landroidx/core/view/ViewCompat$Api17Impl;:'Landroid/view/Display;:(Landroid/graphics/Paint;:-))Landroidx/core/view/ViewCompat$Api19Impl;:3*/Landroid/view/accessibility/AccessibilityEvent;:-+)Landroidx/core/view/ViewCompat$Api20Impl;:,Landroid/view/WindowInsets;:/-+Landroidx/core/view/ViewCompat$Api21Impl$1;:4.0Landroidx/core/view/OnApplyWindowInsetsListener;:-/)Landroidx/core/view/ViewCompat$Api21Impl;:+0'Landroidx/core/view/WindowInsetsCompat;:1Landroid/graphics/Rect;:2F:3[I:(4$Landroid/content/res/ColorStateList;:&5"Landroid/graphics/PorterDuff$Mode;:6Ljava/lang/String;:-7)Landroidx/core/view/ViewCompat$Api23Impl;:-8)Landroidx/core/view/ViewCompat$Api26Impl;:9Ljava/util/Collection;::[Ljava/lang/String;:;Ljava/lang/CharSequence;:-<)Landroidx/core/view/ViewCompat$Api28Impl;:E=ALandroidx/core/view/ViewCompat$OnUnhandledKeyEventListenerCompat;:>Ljava/lang/Object;:-?)Landroidx/core/view/ViewCompat$Api29Impl;:-@)Landroid/view/View$AccessibilityDelegate;:ALjava/util/List;:$B Landroid/content/res/TypedArray;:-C)Landroidx/core/view/ViewCompat$Api30Impl;:9D5Landroidx/core/view/WindowInsetsCompat$BuilderImpl20;:#ELandroidx/core/graphics/Insets;:9F5Landroidx/core/view/WindowInsetsCompat$BuilderImpl29;:9G5Landroidx/core/view/WindowInsetsCompat$BuilderImpl30;:7H3Landroidx/core/view/WindowInsetsCompat$BuilderImpl;:2I.Landroidx/core/view/WindowInsetsCompat$Impl20;:$J [Landroidx/core/graphics/Insets;:2K.Landroidx/core/view/WindowInsetsCompat$Impl21;:2L.Landroidx/core/view/WindowInsetsCompat$Impl28;:,M(Landroidx/core/view/DisplayCutoutCompat;:2N.Landroidx/core/view/WindowInsetsCompat$Impl29;:2O.Landroidx/core/view/WindowInsetsCompat$Impl30;:0P,Landroidx/core/view/WindowInsetsCompat$Impl;:6Q2Landroidx/core/view/WindowInsetsCompat$TypeImpl30;:5R1Landroidx/core/widget/EdgeEffectCompat$Api31Impl;:SLandroid/widget/EdgeEffect;:,T(Landroidx/customview/view/AbsSavedState;:#ULandroid/os/Parcelable$Creator;:AV=Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;::W6Landroidx/recyclerview/widget/RecyclerView$SavedState;:YXULandroidx/recyclerview/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;:HYDLandroidx/recyclerview/widget/StaggeredGridLayoutManager$SavedState;:6Z2Lkotlin/coroutines/intrinsics/CoroutineSingletons;:7[3[Lkotlin/coroutines/intrinsics/CoroutineSingletons;:7\3Landroidx/recyclerview/widget/RecyclerView$Adapter;:D]@Landroidx/recyclerview/widget/RecyclerViewAccessibilityDelegate;:A^=Landroidx/recyclerview/widget/RecyclerView$EdgeEffectFactory;:<_8Landroidx/recyclerview/widget/RecyclerView$ItemAnimator;:=`9Landroidx/recyclerview/widget/RecyclerView$LayoutManager;:?a;Landroidx/recyclerview/widget/RecyclerView$OnFlingListener;:@b<Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool;:3c/Landroidx/core/view/NestedScrollingChildHelper;:IdELandroidx/recyclerview/widget/RecyclerView$ChildDrawingOrderCallback;:(e$Landroid/animation/LayoutTransition;:@f<Landroidx/recyclerview/widget/RecyclerView$OnScrollListener;:@g<Landroidx/recyclerview/widget/RecyclerView$RecyclerListener;:Bh>Landroidx/recyclerview/widget/RecyclerView$ViewCacheExtension;:3i/Landroidx/core/content/ContextCompat$Api19Impl;:j[Ljava/io/File;BBBBBBBB B		B
-!B!"B#$B%BBB(BB*B,B.B,B01B22B22B	33B
-3B4B5B2B6BB 9B!B":B#;B$=B%3BB&AB'EB(0B)0,B*0IB+>B,B-B.JB/0KB00LB10NB20OB3SB4S22B5B66B7]B8\B9dB:^B;_B<`B=eB>aB?fB@bBAgBBhBCBD6J	"J	"J	"J	"J	"J	"J	"J	"J			"J	
-"J	"J	
-"	J	
-"J	
-"J	
-"J	"J	"J	"J	"J	"J	"!R	"/R	
-"/R	
-"/R	
-"/R	
-"/R	"/Z	"Z	"Z	"Z	"Z	"Z	
-"	Z	
-"Z	
-"Z			
-"Z	
+á	ÇC:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\7776312efd86237a680b97f80137a629\transformed\recyclerview-1.3.2-runtime.jar
+¢
+pC:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\47994036b841e87799019f74f62f2426\transformed\proguard.txt,androidx.recyclerviewrecyclerview"1.3.2
+°úC:\Users\RAJAT SHAHARE\.gradle\caches\modules-2\files-2.1\androidx.annotation\annotation\1.2.0\57136ff68ee784c6e19db34ed4a175338fadfde1\annotation-1.2.0.jar
+ípC:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\8096e9287b16b92fd2031167de8aceae\transformed\proguard.txtandroidx.corecore"1.7.0
+ÖÄC:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\7cc0ea0edb1a247627a58c3597c9bb7b\transformed\customview-1.0.0-runtime.jar
+óíD:\Desktop\github\eva-launcher-main\app\build\intermediates\javac\release\compileReleaseJavaWithJavac\classes\io\rns\evalauncher\Cards$State.class
+ûôD:\Desktop\github\eva-launcher-main\app\build\intermediates\javac\release\compileReleaseJavaWithJavac\classes\io\rns\evalauncher\RaceWeekend$Status.class
+ûôD:\Desktop\github\eva-launcher-main\app\build\intermediates\javac\release\compileReleaseJavaWithJavac\classes\io\rns\evalauncher\TileRefresh$Action.class
+™•C:\Users\RAJAT SHAHARE\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib\2.2.10\30de6faa127a4a012db8e71bf1b9c0a99b1402b2\kotlin-stdlib-2.2.10.jar
+ïêD:\Desktop\github\eva-launcher-main\app\build\intermediates\javac\release\compileReleaseJavaWithJavac\classes\io\rns\evalauncher\GlassView.class
+ìéD:\Desktop\github\eva-launcher-main\app\build\intermediates\javac\release\compileReleaseJavaWithJavac\classes\io\rns\evalauncher\SkyView.class
+¶pC:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\db3666b50b36a1e3189acd9abf37b9bc\transformed\proguard.txt0androidx.lifecyclelifecycle-viewmodel"2.0.0
+>:D:\Desktop\github\eva-launcher-main\app\proguard-rules.pro"QR"CREATOR"SR"CREATOR"TR"CREATOR"UR"CREATOR"VR"CREATOR"R"CREATOR*
+"<init>*"<init>*"<init>*"<init>*"read*"write*"<init>*"read*	"write*
+"<init>*"read*"write*"<init>*"read*"write*$"getAccessibilityNodeProvider*"getFitsSystemWindows*$	"getImportantForAccessibility*	"getMinimumHeight*	"getMinimumWidth*!
+"getParentForAccessibility*#	"getWindowSystemUiVisibility*"hasOverlappingRendering*"hasTransientState*""performAccessibilityAction*!"postInvalidateOnAnimation*!"postInvalidateOnAnimation*"postOnAnimation*"postOnAnimationDelayed*$"removeOnGlobalLayoutListener*"requestFitSystemWindows* "setBackground*!"setHasTransientState*$""setImportantForAccessibility*##"generateViewId*$#"
+getDisplay*%#	"getLabelFor*&#	"getLayoutDirection*'#	"getPaddingEnd*(#	"getPaddingStart*)#"isPaddingRelative**#"setLabelFor*+#"setLayerPaint*,#"setLayoutDirection*-#"setPaddingRelative*".&	"getAccessibilityLiveRegion*/&"isAttachedToWindow*0&"	isLaidOut*!1&"isLayoutDirectionResolved*.2&"&notifySubtreeAccessibilityStateChanged*"3&"setAccessibilityLiveRegion*4&"setContentChangeTypes*!5("dispatchApplyWindowInsets*6("onApplyWindowInsets*7("requestApplyInsets*8*"<init>*9*"onApplyWindowInsets*(:," callCompatInsetAnimationCallback*!;,"computeSystemWindowInsets*<,"dispatchNestedFling*=,"dispatchNestedPreFling*>,"dispatchNestedPreScroll*?, "dispatchNestedScroll*@,!"getBackgroundTintList*A,""getBackgroundTintMode*B,#"getElevation*C,$"getRootWindowInsets*D,%"getTransitionName*E,#"getTranslationZ*F,#"getZ* G,"hasNestedScrollingParent*#H,"isImportantForAccessibility* I,"isNestedScrollingEnabled*J,&"setBackgroundTintList*K,'"setBackgroundTintMode*L,("setElevation*!M,"setNestedScrollingEnabled*&N,"setOnApplyWindowInsetsListener*O,)"setTransitionName*P,("setTranslationZ*Q,("setZ*R,*"startNestedScroll*S,"stopNestedScroll*T4$"getRootWindowInsets*U4	"getScrollIndicators*V4"setScrollIndicators*W4+"setScrollIndicators*%X5,"addKeyboardNavigationClusters*Y5	"getImportantForAutofill*Z5	"getNextClusterForwardId*[5"hasExplicitFocusable*\5"isFocusedByDefault*]5"isImportantForAutofill*#^5"isKeyboardNavigationCluster*'_5-"keyboardNavigationClusterSearch*`5"restoreDefaultFocus*a5."setAutofillHints*b5"setFocusedByDefault*c5"setImportantForAutofill*$d5"setKeyboardNavigationCluster*e5"setNextClusterForwardId*f5/"setTooltipText*&g90"addOnUnhandledKeyEventListener*!h91"getAccessibilityPaneTitle*i9"isAccessibilityHeading*j9"isScreenReaderFocusable*)k90"!removeOnUnhandledKeyEventListener*l92"requireViewById*m9"setAccessibilityHeading*!n9/"setAccessibilityPaneTitle* o9"setScreenReaderFocusable* p<3"getAccessibilityDelegate*&q<4"getSystemGestureExclusionRects*%r<5"saveAttributeDataForStyleable*&s<6"setSystemGestureExclusionRects*t@1"getStateDescription*u@/"setStateDescription*vA"<init>*wA7"build*"xA8"createWindowInsetsInstance*yA9"setStableInsets*zA9"setSystemWindowInsets*{C"<init>*|C7"build*'}C9"setMandatorySystemGestureInsets*~C9"setStableInsets*C9"setSystemGestureInsets*ÄC9"setSystemWindowInsets*!ÅC9"setTappableElementInsets*ÇD"<init>*ÉE"<init>*ÑE:"<init>*ÖE"applyInsetTypes*ÜE7"build*(áE9"setMandatorySystemGestureInsets*àE9"setStableInsets*âE9"setSystemGestureInsets*äE9"setSystemWindowInsets*!ãE9"setTappableElementInsets*åF;"<init>*çF<"<init>*éF"copyRootViewBounds*èF:"copyWindowDataInto*êF="equals*ëF>"	getInsets*íF?"	getInsets*ìF?"getInsetsForType*îF@"getRootStableInsets*ïF@"getSystemWindowInsets*ñFA"getVisibleInsets*óFB"isRound*òF"loadReflectionField*ôFC"setOverriddenInsets*öF9"setRootViewData*õF:"setRootWindowInsets*úH;"<init>*ùHD"<init>*ûH7"consumeStableInsets*"üH7"consumeSystemWindowInsets*†H@"getStableInsets*°HB"
+isConsumed*¢H9"setStableInsets*£I;"<init>*§IE"<init>*•I7"consumeDisplayCutout*¶I="equals*ßIF"getDisplayCutout*®I"hashCode*©K;"<init>*™KG"<init>*(´K@"getMandatorySystemGestureInsets*¨K@"getSystemGestureInsets*!≠K@"getTappableElementInsets*ÆK9"setStableInsets*ØL;"<init>*∞LH"<init>*±L"copyRootViewBounds*≤L>"	getInsets*≥M:"<init>*¥M7"consumeDisplayCutout*µM7"consumeStableInsets*"∂M7"consumeSystemWindowInsets*∑M"copyRootViewBounds*∏M:"copyWindowDataInto*πM="equals*∫MF"getDisplayCutout*ªM>"	getInsets*(ºM@"getMandatorySystemGestureInsets*ΩM@"getStableInsets*æM@"getSystemGestureInsets*øM@"getSystemWindowInsets*!¿M@"getTappableElementInsets*¡M"hashCode*¬MB"
+isConsumed*√MB"isRound*ƒMC"setOverriddenInsets*≈M9"setRootViewData*∆M:"setRootWindowInsets*«M9"setStableInsets*»NI"toPlatformType*…OJ"create* OK"getDistance*ÀOL"onPullDistance*ÃWB"isLayoutSuppressed*ÕWM"suppressLayout*ŒXN"valueOf*œXO"values*–ZP"valueOf*—ZQ"values*“\R"valueOf*”\S"values*‘^T"valueOf*’^U"values*÷`V"valueOf*◊`W"values*"ÿWX"getAccessibilityClassName*ŸWY"
+getAdapter*⁄W"getBaseline*€WB"getClipToPadding*'‹WZ"getCompatAccessibilityDelegate*›W["getEdgeEffectFactory*ﬁW\"getItemAnimator*ﬂW"getItemDecorationCount*‡W]"getLayoutManager*·W"getMaxFlingVelocity*‚W"getMinFlingVelocity*„W^"getNanoTime*‰W_"getOnFlingListener*$ÂWB"getPreserveFocusAfterLayout*ÊW`"getRecycledViewPool*ÁW"getScrollState* ËWa"getScrollingChildHelper*'ÈWb"setAccessibilityDelegateCompat*ÍWc"
+setAdapter*%ÎWd"setChildDrawingOrderCallback*ÏWM"setClipToPadding*"ÌWM"setDebugAssertionsEnabled*ÓWe"setEdgeEffectFactory*ÔWM"setHasFixedSize*Wf"setItemAnimator*ÒWg"setItemViewCacheSize*ÚWM"setLayoutFrozen*ÛWh"setLayoutManager*ÙWi"setLayoutTransition*"ıWM"setNestedScrollingEnabled*ˆWj"setOnFlingListener*˜Wk"setOnScrollListener*$¯WM"setPreserveFocusAfterLayout*˘Wl"setRecycledViewPool*˙Wm"setRecyclerListener*˚Wg"setScrollState*¸Wg"setScrollingTouchSlop*!˝WM"setVerboseLoggingEnabled*˛Wn"setViewCacheExtension*ˇog"	setAccent*Äoo"	setRadius*Åop"setStyle*Çpg"setIntensity*Éqq"getExternalCacheDirs*Ñqr"getExternalFilesDirs*Öqq"
+getObbDirs222222222	2
+2222	2
+222222$2222)222-2222 2!12"22#/2$-2%32&2'2(2)2*2+2,2- 2.!2/"20#21822;23=24>25$26%27-28)29&2:'2;(2<)2=*2>+B2?,B2@B2AB2B2C-2D.2E/2FJ2G02H12I+2J2P2K3/2L4/2M52N6X2OY2P6Z2Q[2R6\2S]2T6^2U_2V6`2Wa2X82Yb2Zc2[d2\e2]f2^2_g2`h2ai2b72c82d92e:2f;2g+2h<2i=2j>2k?2l@2mA2nB2oC2p62qDr2rEr:;7Landroidx/lifecycle/CompositeGeneratedAdaptersObserver;:51Landroidx/lifecycle/FullLifecycleObserverAdapter;:&"Landroidx/lifecycle/Lifecycling$1;:84Landroidx/lifecycle/LiveData$LifecycleBoundObserver;:;7Landroidx/lifecycle/ReflectiveGenericLifecycleObserver;:73Landroidx/lifecycle/SingleGeneratedAdapterObserver;:*&Landroidx/core/app/RemoteActionCompat;:0,Landroidx/core/graphics/drawable/IconCompat;:<	8Landroidx/versionedparcelable/CustomVersionedParcelable;:4
+0Landroidx/recyclerview/widget/GridLayoutManager;:62Landroidx/recyclerview/widget/LinearLayoutManager;:=9Landroidx/recyclerview/widget/StaggeredGridLayoutManager;:Landroid/content/Context;:Landroid/util/AttributeSet;:I:V:95Landroid/support/v4/app/RemoteActionCompatParcelizer;:?;Landroid/support/v4/graphics/drawable/IconCompatParcelizer;:2.Landroidx/versionedparcelable/VersionedParcel;:40Landroidx/core/app/RemoteActionCompatParcelizer;::6Landroidx/core/graphics/drawable/IconCompatParcelizer;:-)Landroidx/versionedparcelable/ParcelImpl;:Landroidx/annotation/Keep;:-)Landroidx/core/view/ViewCompat$Api16Impl;:Landroid/view/View;::6Landroid/view/accessibility/AccessibilityNodeProvider;:Z:Landroid/view/ViewParent;:Landroid/os/Bundle;:Ljava/lang/Runnable;:J:# Landroid/view/ViewTreeObserver;::!6Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;:("$Landroid/graphics/drawable/Drawable;:-#)Landroidx/core/view/ViewCompat$Api17Impl;:$Landroid/view/Display;:%Landroid/graphics/Paint;:-&)Landroidx/core/view/ViewCompat$Api19Impl;:3'/Landroid/view/accessibility/AccessibilityEvent;:-()Landroidx/core/view/ViewCompat$Api20Impl;:)Landroid/view/WindowInsets;:/*+Landroidx/core/view/ViewCompat$Api21Impl$1;:4+0Landroidx/core/view/OnApplyWindowInsetsListener;:-,)Landroidx/core/view/ViewCompat$Api21Impl;:+-'Landroidx/core/view/WindowInsetsCompat;:.Landroid/graphics/Rect;:/F:0[I:(1$Landroid/content/res/ColorStateList;:&2"Landroid/graphics/PorterDuff$Mode;:3Ljava/lang/String;:-4)Landroidx/core/view/ViewCompat$Api23Impl;:-5)Landroidx/core/view/ViewCompat$Api26Impl;:6Ljava/util/Collection;:7[Ljava/lang/String;:8Ljava/lang/CharSequence;:-9)Landroidx/core/view/ViewCompat$Api28Impl;:E:ALandroidx/core/view/ViewCompat$OnUnhandledKeyEventListenerCompat;:;Ljava/lang/Object;:-<)Landroidx/core/view/ViewCompat$Api29Impl;:-=)Landroid/view/View$AccessibilityDelegate;:>Ljava/util/List;:$? Landroid/content/res/TypedArray;:-@)Landroidx/core/view/ViewCompat$Api30Impl;:9A5Landroidx/core/view/WindowInsetsCompat$BuilderImpl20;:#BLandroidx/core/graphics/Insets;:9C5Landroidx/core/view/WindowInsetsCompat$BuilderImpl29;:9D5Landroidx/core/view/WindowInsetsCompat$BuilderImpl30;:7E3Landroidx/core/view/WindowInsetsCompat$BuilderImpl;:2F.Landroidx/core/view/WindowInsetsCompat$Impl20;:$G [Landroidx/core/graphics/Insets;:2H.Landroidx/core/view/WindowInsetsCompat$Impl21;:2I.Landroidx/core/view/WindowInsetsCompat$Impl28;:,J(Landroidx/core/view/DisplayCutoutCompat;:2K.Landroidx/core/view/WindowInsetsCompat$Impl29;:2L.Landroidx/core/view/WindowInsetsCompat$Impl30;:0M,Landroidx/core/view/WindowInsetsCompat$Impl;:6N2Landroidx/core/view/WindowInsetsCompat$TypeImpl30;:5O1Landroidx/core/widget/EdgeEffectCompat$Api31Impl;:PLandroid/widget/EdgeEffect;:,Q(Landroidx/customview/view/AbsSavedState;:#RLandroid/os/Parcelable$Creator;:AS=Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;::T6Landroidx/recyclerview/widget/RecyclerView$SavedState;:YUULandroidx/recyclerview/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;:HVDLandroidx/recyclerview/widget/StaggeredGridLayoutManager$SavedState;:/W+Landroidx/recyclerview/widget/RecyclerView;:NXJLandroidx/recyclerview/widget/RecyclerView$Adapter$StateRestorationPolicy;:OYK[Landroidx/recyclerview/widget/RecyclerView$Adapter$StateRestorationPolicy;:$Z Lio/rns/evalauncher/Cards$State;:%[![Lio/rns/evalauncher/Cards$State;:+\'Lio/rns/evalauncher/RaceWeekend$Status;:,]([Lio/rns/evalauncher/RaceWeekend$Status;:+^'Lio/rns/evalauncher/TileRefresh$Action;:,_([Lio/rns/evalauncher/TileRefresh$Action;:6`2Lkotlin/coroutines/intrinsics/CoroutineSingletons;:7a3[Lkotlin/coroutines/intrinsics/CoroutineSingletons;:7b3Landroidx/recyclerview/widget/RecyclerView$Adapter;:Dc@Landroidx/recyclerview/widget/RecyclerViewAccessibilityDelegate;:Ad=Landroidx/recyclerview/widget/RecyclerView$EdgeEffectFactory;:<e8Landroidx/recyclerview/widget/RecyclerView$ItemAnimator;:=f9Landroidx/recyclerview/widget/RecyclerView$LayoutManager;:?g;Landroidx/recyclerview/widget/RecyclerView$OnFlingListener;:@h<Landroidx/recyclerview/widget/RecyclerView$RecycledViewPool;:3i/Landroidx/core/view/NestedScrollingChildHelper;:IjELandroidx/recyclerview/widget/RecyclerView$ChildDrawingOrderCallback;:(k$Landroid/animation/LayoutTransition;:@l<Landroidx/recyclerview/widget/RecyclerView$OnScrollListener;:@m<Landroidx/recyclerview/widget/RecyclerView$RecyclerListener;:Bn>Landroidx/recyclerview/widget/RecyclerView$ViewCacheExtension;:"oLio/rns/evalauncher/GlassView;: pLio/rns/evalauncher/SkyView;:3q/Landroidx/core/content/ContextCompat$Api19Impl;:r[Ljava/io/File;BBBBBBBB	B	B
+B !B"BBB%BB'B)B+B)B-.B//B//B	00B
+0B1B2B/B3BB6B B!7B"8B#:B$0?B%>B&BB'-B(-)B)-FB*;B+B,B-GB.-HB/-IB0-KB1-LB2B3PB4P//B5B63B7cB8bB9jB:dB;eB<fB=kB>gB?lB@hBAmBBnBC/BDBE3J	"J	"J	"J	"J	"J	"J	"J	"J			"J	
 
-"Z	"Z	"Z	"Z	"Z	"Z	"Z	"Z	"Z	"Z	"Z	"Z
-"+9Z
-"+9Z
-"+9Z
-"+9Z
-"+9Z
-"+9Z
-"+9Z
-"+9Z
-"+9Z
-"+9Z
-  "+9Z
-!!"+9Z
-"""+9Z
-##"+9Z
-$$"+9Z
-%%"+9Z
-&&"+9Z
-''"+9Z
-(("+9Z
-))"+9Z
-**"+9Z
-++"+9Z
-,,"+9Z
---"+9Z
-.."+9Z
-//"+9Z
-00"+9Z
-11"+9Z
-22"+9Z
-33"+9Z
-44"+9Z
-55"+9Z
-66"+9Z
-77"+9Z
-88"+9Z
-99"+9Z
-::"+9Z
-;;"+9Z
-<<"+9Z
-=="+9Z	>>"+Z	??"+Z
-@@"+9Z
-AA"+9Z
-BB"+9Z
-CC"+9Z
-DD"+9Z
-EE"+9Z
-FF"+9Z
-GG"+9Z
-HH"+9Z
-II"+9Z
-JJ"+9Z
-KK"+9Z
-LL"+9Z
-MM"+9Z
-NN"+9Z
-OO"+9Z
-PP"+9Z
-QQ"+9Z
-RR"+9Z
-SS"+9Z
-TT"+9Z
-UU"+9Z
-VV"+9Z
-WW"+9Z
-XX"+9Z
-YY"+9Z	ZZ"+Z
-[["+9Z
-\\"+9Z
-]]"+9Z
-^^"+9Z
-__"+9Z
-``"+9Z
-aa"+9Z
-bb"+9Z
-cc"+9Z
-dd"+9Z
-ee"+9Z
-ff"+9Z
-gg"+9Z
-hh"+9Z
-ii"+9Z
-jj"+9Z
-kk"+9Z
-ll"+9Z
-mm"+9Z
-nn"+9Z
-oo"+9Z
-pp"+9Z
-qq"+9Z
-rr"+9Z
-ss"+9Z
-tt"+9Z
-uu"+9Z
-vv"+9Z
-ww"+9Z
-xx"+9Z
-yy"+9Z
-zz"+9Z
-{{"+9Z	||",Z	}}",Z	~~",Z	",ZÄÄ",ZÅÅ",ZÇÇ",ZÉÉ",ZÑÑ",ZÖÖ",ZÜÜ",Záá",Zàà",Zââ",Zää",Zãã",Zåå",Zçç",Zéé",Zèè",Zêê",Zëë",Zíí",Zìì",Zîî",Zïï",Zññ",Zóó",Zòò",Zôô",Zöö",Zõõ",Zúú",Zùù",Zûû",Züü",Z††",Z°°",Z¢¢",Z££",Z§§",Z••",Z¶¶",Zßß",Z®®",Z©©",Z™™",Z´´",Z¨¨",Z≠≠",ZÆÆ",ZØØ",Z∞∞",Z±±",Z≤≤",Z≥≥",Z¥¥",Zµµ",Z∂∂",Z∑∑",Z∏∏",Zππ",Z∫∫",Zªª",Zºº",ZΩΩ",Zææ",Zøø",Z¿¿",Z¡¡",Z¬¬",Z√√",Zƒƒ",Z≈≈",Z∆∆",Z««",Z»»",Z……",Z  ",ZÀÀ",ZÃÃ",ZÕÕ",ZŒŒ",Zœœ"-9Z––"-9Z——"-9Z““
-"3Z””
-"3Z‘‘"4Z’’"4Z÷÷
-"6Z◊◊
-"6Zÿÿ
-"6ZŸŸ
-"6Z⁄⁄
-"6Z€€
-"6Z‹‹
-"6Z››
-"6Zﬁﬁ
-"6Zﬂﬂ
-"6Z‡‡
-"6Z··
-"6Z‚‚
-"6Z„„
-"6Z‰‰
-"6ZÂÂ
-"6ZÊÊ
-"6ZÁÁ
-"6ZËË
-"6ZÈÈ
-"6ZÍÍ
-"6ZÎÎ
-"6ZÏÏ
-"6ZÌÌ
-"6ZÓÓ
-"6ZÔÔ
-"6Z
-"6ZÒÒ
-"6ZÚÚ
-"6ZÛÛ
-"6ZÙÙ
-"6Zıı
-"6Zˆˆ
-"6Z˜˜
-"6Z¯¯
-"6Z˘˘
-"6Z˙˙
-"6Z˚˚
-"6Z¸¸
-"6Z˝˝"9Z˛˛"9Zˇˇ"9b bb bj_G-keep !interface * implements androidx.lifecycle.LifecycleObserver {
+	"J		"J		"J	"J	"J	"	J	"	J	"
+J	"R	"R		"R		"R		"R		"R	"Z		"Z		"Z		"Z	"Z	"Z	"Z	"Z	"Z			"Z	
+
+"	Z	"	Z	"	Z	"	Z	"	Z	"	Z
+"&Z
+"&Z
+"&Z
+"&Z
+"&Z
+"&Z
+"&Z
+"&Z
+"&Z
+"&Z
+"&Z
+"&Z
+"&Z
+"&Z
+"&Z
+"&Z
+  "&Z
+!!"&Z
+"""&Z
+##"&Z
+$$"&Z
+%%"&Z
+&&"&Z
+''"&Z
+(("&Z
+))"&Z
+**"&Z
+++"&Z
+,,"&Z
+--"&Z
+.."&Z
+//"&Z
+00"&Z
+11"&Z
+22"&Z
+33"&Z
+44"&Z
+55"&Z
+66"&Z
+77"&Z	88"Z	99"Z
+::"&Z
+;;"&Z
+<<"&Z
+=="&Z
+>>"&Z
+??"&Z
+@@"&Z
+AA"&Z
+BB"&Z
+CC"&Z
+DD"&Z
+EE"&Z
+FF"&Z
+GG"&Z
+HH"&Z
+II"&Z
+JJ"&Z
+KK"&Z
+LL"&Z
+MM"&Z
+NN"&Z
+OO"&Z
+PP"&Z
+QQ"&Z
+RR"&Z
+SS"&Z	TT"Z
+UU"&Z
+VV"&Z
+WW"&Z
+XX"&Z
+YY"&Z
+ZZ"&Z
+[["&Z
+\\"&Z
+]]"&Z
+^^"&Z
+__"&Z
+``"&Z
+aa"&Z
+bb"&Z
+cc"&Z
+dd"&Z
+ee"&Z
+ff"&Z
+gg"&Z
+hh"&Z
+ii"&Z
+jj"&Z
+kk"&Z
+ll"&Z
+mm"&Z
+nn"&Z
+oo"&Z
+pp"&Z
+qq"&Z
+rr"&Z
+ss"&Z
+tt"&Z
+uu"&Z	vv"Z	ww"Z	xx"Z	yy"Z	zz"Z	{{"Z	||"Z	}}"Z	~~"Z	"ZÄÄ"ZÅÅ"ZÇÇ"ZÉÉ"ZÑÑ"ZÖÖ"ZÜÜ"Záá"Zàà"Zââ"Zää"Zãã"Zåå"Zçç"Zéé"Zèè"Zêê"Zëë"Zíí"Zìì"Zîî"Zïï"Zññ"Zóó"Zòò"Zôô"Zöö"Zõõ"Zúú"Zùù"Zûû"Züü"Z††"Z°°"Z¢¢"Z££"Z§§"Z••"Z¶¶"Zßß"Z®®"Z©©"Z™™"Z´´"Z¨¨"Z≠≠"ZÆÆ"ZØØ"Z∞∞"Z±±"Z≤≤"Z≥≥"Z¥¥"Zµµ"Z∂∂"Z∑∑"Z∏∏"Zππ"Z∫∫"Zªª"Zºº"ZΩΩ"Zææ"Zøø"Z¿¿"Z¡¡"Z¬¬"Z√√"Zƒƒ"Z≈≈"Z∆∆"Z««"Z»»"Z……"&Z  "&ZÀÀ"&ZÃÃ	" ZÕÕ	" ZŒŒ	"!Zœœ	"!Z––"!Z——"!Z““"!Z””"!Z‘‘"!Z’’"!Z÷÷"!Z◊◊"!Zÿÿ	"#ZŸŸ	"#Z⁄⁄	"#Z€€	"#Z‹‹	"#Z››	"#Zﬁﬁ	"#Zﬂﬂ	"#Z‡‡	"#Z··	"#Z‚‚	"#Z„„	"#Z‰‰	"#ZÂÂ	"#ZÊÊ	"#ZÁÁ	"#ZËË	"#ZÈÈ	"#ZÍÍ	"#ZÎÎ	"#ZÏÏ	"#ZÌÌ	"#ZÓÓ	"#ZÔÔ	"#Z	"#ZÒÒ	"#ZÚÚ	"#ZÛÛ	"#ZÙÙ	"#Zıı	"#Zˆˆ	"#Z˜˜	"#Z¯¯	"#Z˘˘	"#Z˙˙	"#Z˚˚	"#Z¸¸	"#Z˝˝	"#Z˛˛	"#Zˇˇ"#ZÄÄ"#ZÅÅ"#ZÇÇ"#ZÉÉ"&ZÑÑ"&ZÖÖ"&b bb bj_G-keep !interface * implements androidx.lifecycle.LifecycleObserver {
 }"*jC3-keep @android.support.annotation.Keep class * {*;}"F* j<,-keep @androidx.annotation.Keep class * {*;}"* jcS-keep class * implements androidx.lifecycle.GeneratedAdapter {
     <init>(...);
 }"
-* jcI-keep class * implements androidx.versionedparcelable.VersionedParcelable"*
-	"j;+-keep class android.support.annotation.Keep"D* jV@-keep class androidx.core.app.CoreComponentFactory { <init>(); }"	*
-"jR<-keep class androidx.core.content.FileProvider { <init>(); }"	*"jã	u-keep class androidx.recyclerview.widget.RecyclerView { <init>(android.content.Context, android.util.AttributeSet); }"	*"jN
->-keep class io.rns.evalauncher.AppLaunchActivity { <init>(); }"	* jJ:-keep class io.rns.evalauncher.ClockActivity { <init>(); }"	* jG7-keep class io.rns.evalauncher.ClockDream { <init>(); }"	* jxh-keep class io.rns.evalauncher.GlassView { <init>(android.content.Context, android.util.AttributeSet); }"	* jH8-keep class io.rns.evalauncher.GuardConfig { <init>(); }"	* jI9-keep class io.rns.evalauncher.GuardRevival { <init>(); }"	* jK;-keep class io.rns.evalauncher.HomeKeyService { <init>(); }"	* jQA-keep class io.rns.evalauncher.HomeSettingsActivity { <init>(); }"		* jL<-keep class io.rns.evalauncher.InputKeyService { <init>(); }"	
-* jRB-keep class io.rns.evalauncher.InputsRequestActivity { <init>(); }"	* jUE-keep class io.rns.evalauncher.LauncherSettingsActivity { <init>(); }"	* jI9-keep class io.rns.evalauncher.MainActivity { <init>(); }"	* jJ:-keep class io.rns.evalauncher.ProbeActivity { <init>(); }"	* jRB-keep class io.rns.evalauncher.QuickSettingsActivity { <init>(); }"	* jvf-keep class io.rns.evalauncher.SkyView { <init>(android.content.Context, android.util.AttributeSet); }"	* jJ:-keep class io.rns.evalauncher.ThemeProvider { <init>(); }"	* j‹¡-keep public class * extends androidx.recyclerview.widget.RecyclerView$LayoutManager {
+* j^I-keep class * implements androidx.versionedparcelable.VersionedParcelable"*	j;+-keep class android.support.annotation.Keep"D* j‹¡-keep public class * extends androidx.recyclerview.widget.RecyclerView$LayoutManager {
     public <init>(android.content.Context, android.util.AttributeSet, int, int);
     public <init>();
-}"*
-"	jR6-keep public class android.support.**Parcelizer { *; }"*"
-jK/-keep public class androidx.**Parcelizer { *; }"*"jM:-keep public class androidx.versionedparcelable.ParcelImpl"*jRB-keep public class com.android.vending.licensing.ILicensingService"* jYI-keep public class com.google.android.vending.licensing.ILicensingService"* jQ A-keep public class com.google.vending.licensing.ILicensingService"* jM!:-keep,allowobfuscation @interface androidx.annotation.Keep"*jf"V-keepclasseswithmembernames,includedescriptorclasses class * {
+}"
+*
+
+"jR6-keep public class android.support.**Parcelizer { *; }"*"	jK	/-keep public class androidx.**Parcelizer { *; }"*"
+jM
+:-keep public class androidx.versionedparcelable.ParcelImpl"*jRB-keep public class com.android.vending.licensing.ILicensingService"* jYI-keep public class com.google.android.vending.licensing.ILicensingService"* jQA-keep public class com.google.vending.licensing.ILicensingService"* jM:-keep,allowobfuscation @interface androidx.annotation.Keep"*jfV-keepclasseswithmembernames,includedescriptorclasses class * {
     native <methods>;
-}"* jb#R-keepclasseswithmembers class * {
+}"* jbR-keepclasseswithmembers class * {
     @android.support.annotation.Keep <fields>;
-}"L* je$U-keepclasseswithmembers class * {
+}"L* jeU-keepclasseswithmembers class * {
     @android.support.annotation.Keep <init>(...);
-}"P* jc%S-keepclasseswithmembers class * {
+}"P* jcS-keepclasseswithmembers class * {
     @android.support.annotation.Keep <methods>;
-}"H* j]&M-keepclasseswithmembers class * {
+}"H* j]M-keepclasseswithmembers class * {
     @androidx.annotation.Keep <fields>;
-}"* j`'P-keepclasseswithmembers class * {
+}"* j`P-keepclasseswithmembers class * {
     @androidx.annotation.Keep <init>(...);
-}"* j^(N-keepclasseswithmembers class * {
+}"* j^N-keepclasseswithmembers class * {
     @androidx.annotation.Keep <methods>;
-}"* jé)~-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.app.NotificationCompat$*$Api*Impl {
+}"* jé~-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.app.NotificationCompat$*$Api*Impl {
   <methods>;
-}"* jâ*y-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.os.UserHandleCompat$Api*Impl {
+}"* jây-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.os.UserHandleCompat$Api*Impl {
   <methods>;
-}"* jÈ+q-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.ViewCompat$Api* {
+}"* jÈq-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.ViewCompat$Api* {
   <methods>;
-}"*h"f !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{j±,{-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.WindowInsetsCompat$*Impl* {
+}"*h"f !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuj´{-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.WindowInsetsCompat$*Impl* {
   <methods>;
-}"*•"¢|}~ÄÅÇÉÑÖÜáàâäãåçéèêëíìîïñóòôöõúùûü†°¢£§•¶ß®©™´¨≠ÆØ∞±≤≥¥µ∂∑∏π∫ªºΩæø¿¡¬√ƒ≈∆«»… ÀÃÕŒjï-}-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.widget.EdgeEffectCompat$Api*Impl {
+}"*ü"úvwxyz{|}~ÄÅÇÉÑÖÜáàâäãåçéèêëíìîïñóòôöõúùûü†°¢£§•¶ß®©™´¨≠ÆØ∞±≤≥¥µ∂∑∏π∫ªºΩæø¿¡¬√ƒ≈∆«»jï}-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.widget.EdgeEffectCompat$Api*Impl {
   <methods>;
-}"*"œ–—jp.`-keepclassmembers class * extends android.app.Activity {
+}"*"… Àjp`-keepclassmembers class * extends android.app.Activity {
     public void *(android.view.View);
-}"(* jz/b-keepclassmembers class * implements android.os.Parcelable {
+}"(* jzb-keepclassmembers class * implements android.os.Parcelable {
     public static final ** CREATOR;
-}"2*j`0P-keepclassmembers class * {
+}"2*j`P-keepclassmembers class * {
     @android.webkit.JavascriptInterface <methods>;
-}"7* j\1L-keepclassmembers class ** {
+}"7* j\L-keepclassmembers class ** {
     @androidx.lifecycle.OnLifecycleEvent *;
-}"* jc2S-keepclassmembers class androidx.lifecycle.ReportFragment$LifecycleCallbacks { *; }"* j±3ö-keepclassmembers class androidx.recyclerview.widget.RecyclerView {
+}"* jcS-keepclassmembers class androidx.lifecycle.ReportFragment$LifecycleCallbacks { *; }"* j± ö-keepclassmembers class androidx.recyclerview.widget.RecyclerView {
     public void suppressLayout(boolean);
     public boolean isLayoutSuppressed();
-}"*"“”jÉ4m-keepclassmembers enum * {
+}"
+*"ÃÕjì!m-keepclassmembers enum * {
     public static **[] values();
     public static ** valueOf(java.lang.String);
-}"-*"‘’j]5M-keepclassmembers enum androidx.lifecycle.Lifecycle$Event {
+}"-*"Œœ–—“”‘’÷◊j]"M-keepclassmembers enum androidx.lifecycle.Lifecycle$Event {
     <fields>;
-}"* j¬6b-keepclassmembers public class * extends android.view.View {
+}"* j #b-keepclassmembers public class * extends android.view.View {
     void set*(***);
     *** get*();
-}""*P"N÷◊ÿŸ⁄€‹›ﬁﬂ‡·‚„‰ÂÊÁËÈÍÎÏÌÓÔÒÚÛÙıˆ˜¯˘˙˚¸jí7Å-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.AndroidViewModel {
+}""*X"VÿŸ⁄€‹›ﬁﬂ‡·‚„‰ÂÊÁËÈÍÎÏÌÓÔÒÚÛÙıˆ˜¯˘˙˚¸˝˛ˇÄÅÇjí$Å-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.AndroidViewModel {
     <init>(android.app.Application);
-}"* js8c-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.ViewModel {
+}"* js%c-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.ViewModel {
     <init>();
-}"* jﬂ9^-keepclassmembers,allowobfuscation class * {
+}"* jﬂ&^-keepclassmembers,allowobfuscation class * {
   @androidx.annotation.DoNotInline <methods>;
-}"*q"o˝˛ˇ !"#$%&'()*+,-./0123456789:;<=@ABCDEFGHIJKLMNOPQRSTUVWXY[\]^_`abcdefghijklmnopqrstuvwxyz{œ–—r:-dontobfuscatezÇï1†è Â(˛0£ÇR8 Configuration Analyzer
+}"*q"oÉÑÖ !"#$%&'()*+,-./01234567:;<=>?@ABCDEFGHIJKLMNOPQRSUVWXYZ[\]^_`abcdefghijklmnopqrstu… Àr'-dontobfuscatez¿ß>á¶ ë( 0–!ÇR8 Configuration Analyzer

@@ -231,31 +231,6 @@
 -dontwarn kotlin.annotation.Target
 
 # End of content from androidx.annotation:annotation-experimental:1.1.0 (extracted file: C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\a9db8ceda058b74dcf2ca15c515eca02\transformed\proguard.txt)
-# The proguard configuration file for the following section is AAPT2 generated keep rules (extracted file: D:\Desktop\github\eva-launcher-main\app\build\intermediates\aapt_proguard_file\release\processReleaseResources\aapt_rules.txt)
--keep class androidx.core.app.CoreComponentFactory { <init>(); }
--keep class androidx.core.content.FileProvider { <init>(); }
--keep class io.rns.evalauncher.AppLaunchActivity { <init>(); }
--keep class io.rns.evalauncher.ClockActivity { <init>(); }
--keep class io.rns.evalauncher.ClockDream { <init>(); }
--keep class io.rns.evalauncher.GuardConfig { <init>(); }
--keep class io.rns.evalauncher.GuardRevival { <init>(); }
--keep class io.rns.evalauncher.HomeKeyService { <init>(); }
--keep class io.rns.evalauncher.HomeSettingsActivity { <init>(); }
--keep class io.rns.evalauncher.InputKeyService { <init>(); }
--keep class io.rns.evalauncher.InputsRequestActivity { <init>(); }
--keep class io.rns.evalauncher.LauncherSettingsActivity { <init>(); }
--keep class io.rns.evalauncher.MainActivity { <init>(); }
--keep class io.rns.evalauncher.ProbeActivity { <init>(); }
--keep class io.rns.evalauncher.QuickSettingsActivity { <init>(); }
--keep class io.rns.evalauncher.ThemeProvider { <init>(); }
--keep class androidx.recyclerview.widget.RecyclerView { <init>(android.content.Context, android.util.AttributeSet); }
-
--keep class io.rns.evalauncher.GlassView { <init>(android.content.Context, android.util.AttributeSet); }
-
--keep class io.rns.evalauncher.SkyView { <init>(android.content.Context, android.util.AttributeSet); }
-
-
-# End of content from AAPT2 generated keep rules (extracted file: D:\Desktop\github\eva-launcher-main\app\build\intermediates\aapt_proguard_file\release\processReleaseResources\aapt_rules.txt)
 # The proguard configuration file for the following section is <unknown>
 
 # End of content from <unknown>

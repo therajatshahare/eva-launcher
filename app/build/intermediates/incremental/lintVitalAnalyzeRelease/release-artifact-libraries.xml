@@ -1,5 +1,9 @@
 <libraries>
   <library
+      name="org.jetbrains.kotlin:kotlin-stdlib:2.2.10@jar"
+      jars="C:\Users\RAJAT SHAHARE\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib\2.2.10\30de6faa127a4a012db8e71bf1b9c0a99b1402b2\kotlin-stdlib-2.2.10.jar"
+      resolved="org.jetbrains.kotlin:kotlin-stdlib:2.2.10"/>
+  <library
       name="androidx.recyclerview:recyclerview:1.3.2@aar"
       jars="C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\e065a926b79b88222249d01683dbcced\transformed\recyclerview-1.3.2\jars\classes.jar"
       resolved="androidx.recyclerview:recyclerview:1.3.2"
@@ -25,6 +29,10 @@
       symbolFile="R.txt"
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
+  <library
+      name="org.jetbrains:annotations:13.0@jar"
+      jars="C:\Users\RAJAT SHAHARE\.gradle\caches\modules-2\files-2.1\org.jetbrains\annotations\13.0\919f0dfe192fb4e063e7dacadee7f8bb9a2672a9\annotations-13.0.jar"
+      resolved="org.jetbrains:annotations:13.0"/>
   <library
       name="androidx.customview:customview:1.0.0@aar"
       jars="C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\c1b7afe8807da810535091938a423c68\transformed\customview-1.0.0\jars\classes.jar"
@@ -173,10 +181,15 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="androidx.arch.core:core-runtime:2.1.0@aar"
-      jars="C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\2c2ac70dc8b44f90fcef3c1ae6327bf5\transformed\core-runtime-2.1.0\jars\classes.jar"
-      resolved="androidx.arch.core:core-runtime:2.1.0"
-      folder="C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\2c2ac70dc8b44f90fcef3c1ae6327bf5\transformed\core-runtime-2.1.0"
+      name="androidx.lifecycle:lifecycle-common:2.3.1@jar"
+      jars="C:\Users\RAJAT SHAHARE\.gradle\caches\modules-2\files-2.1\androidx.lifecycle\lifecycle-common\2.3.1\fc466261d52f4433863642fb40d12441ae274a98\lifecycle-common-2.3.1.jar"
+      resolved="androidx.lifecycle:lifecycle-common:2.3.1"/>
+  <library
+      name="androidx.arch.core:core-runtime:2.0.0@aar"
+      jars="C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\2d4af7415be5abba26737d95fc6a0675\transformed\core-runtime-2.0.0\jars\classes.jar"
+      resolved="androidx.arch.core:core-runtime:2.0.0"
+      provided="true"
+      folder="C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\2d4af7415be5abba26737d95fc6a0675\transformed\core-runtime-2.0.0"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -185,10 +198,6 @@
       symbolFile="R.txt"
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
-  <library
-      name="androidx.lifecycle:lifecycle-common:2.3.1@jar"
-      jars="C:\Users\RAJAT SHAHARE\.gradle\caches\modules-2\files-2.1\androidx.lifecycle\lifecycle-common\2.3.1\fc466261d52f4433863642fb40d12441ae274a98\lifecycle-common-2.3.1.jar"
-      resolved="androidx.lifecycle:lifecycle-common:2.3.1"/>
   <library
       name="androidx.arch.core:core-common:2.1.0@jar"
       jars="C:\Users\RAJAT SHAHARE\.gradle\caches\modules-2\files-2.1\androidx.arch.core\core-common\2.1.0\b3152fc64428c9354344bd89848ecddc09b6f07e\core-common-2.1.0.jar"
@@ -254,19 +263,20 @@
       jars="C:\Users\RAJAT SHAHARE\.gradle\caches\modules-2\files-2.1\androidx.concurrent\concurrent-futures\1.0.0\c1e77e3ee6f4643b77496a1ddf7a2eef1aefdaa1\concurrent-futures-1.0.0.jar"
       resolved="androidx.concurrent:concurrent-futures:1.0.0"/>
   <library
-      name="org.jetbrains.kotlin:kotlin-stdlib:1.6.21@jar"
-      jars="C:\Users\RAJAT SHAHARE\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib\1.6.21\11ef67f1900634fd951bad28c53ec957fabbe5b8\kotlin-stdlib-1.6.21.jar"
-      resolved="org.jetbrains.kotlin:kotlin-stdlib:1.6.21"/>
+      name="androidx.arch.core:core-runtime:2.1.0@aar"
+      jars="C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\2c2ac70dc8b44f90fcef3c1ae6327bf5\transformed\core-runtime-2.1.0\jars\classes.jar"
+      resolved="androidx.arch.core:core-runtime:2.1.0"
+      folder="C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\2c2ac70dc8b44f90fcef3c1ae6327bf5\transformed\core-runtime-2.1.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
   <library
       name="com.google.guava:listenablefuture:1.0@jar"
       jars="C:\Users\RAJAT SHAHARE\.gradle\caches\modules-2\files-2.1\com.google.guava\listenablefuture\1.0\c949a840a6acbc5268d088e47b04177bf90b3cad\listenablefuture-1.0.jar"
       resolved="com.google.guava:listenablefuture:1.0"/>
-  <library
-      name="org.jetbrains.kotlin:kotlin-stdlib-common:1.6.21@jar"
-      jars="C:\Users\RAJAT SHAHARE\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib-common\1.6.21\5e5b55c26dbc80372a920aef60eb774b714559b8\kotlin-stdlib-common-1.6.21.jar"
-      resolved="org.jetbrains.kotlin:kotlin-stdlib-common:1.6.21"/>
-  <library
-      name="org.jetbrains:annotations:13.0@jar"
-      jars="C:\Users\RAJAT SHAHARE\.gradle\caches\modules-2\files-2.1\org.jetbrains\annotations\13.0\919f0dfe192fb4e063e7dacadee7f8bb9a2672a9\annotations-13.0.jar"
-      resolved="org.jetbrains:annotations:13.0"/>
 </libraries>

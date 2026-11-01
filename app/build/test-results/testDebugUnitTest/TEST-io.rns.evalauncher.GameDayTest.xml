@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.rns.evalauncher.GameDayTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2026-11-01T05:30:36.347Z" hostname="DESKTOP-EOQDD3G" time="0.034">
+  <properties/>
+  <testcase name="turnIsLiveOnlyBetweenStartAndEnd" classname="io.rns.evalauncher.GameDayTest" time="0.013"/>
+  <testcase name="noF1OutsideItsWeekend" classname="io.rns.evalauncher.GameDayTest" time="0.005"/>
+  <testcase name="nextTurnIsNeverMoreThanOneTurnAway" classname="io.rns.evalauncher.GameDayTest" time="0.001"/>
+  <testcase name="turnSecondsOutOfRangeBecomesThirty" classname="io.rns.evalauncher.GameDayTest" time="0.003"/>
+  <testcase name="f1LiveSortsFirst" classname="io.rns.evalauncher.GameDayTest" time="0.005"/>
+  <testcase name="f1JoinsSortedByItsNextSession" classname="io.rns.evalauncher.GameDayTest" time="0.001"/>
+  <testcase name="durationHelperMatchesTheCountdown" classname="io.rns.evalauncher.GameDayTest" time="0.001"/>
+  <testcase name="rotationIndex" classname="io.rns.evalauncher.GameDayTest" time="0.0"/>
+  <testcase name="endedGamesAreDropped" classname="io.rns.evalauncher.GameDayTest" time="0.001"/>
+  <testcase name="noTurnsHidesPanel" classname="io.rns.evalauncher.GameDayTest" time="0.001"/>
+  <testcase name="rowsAreParsedAndBadOnesSkipped" classname="io.rns.evalauncher.GameDayTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

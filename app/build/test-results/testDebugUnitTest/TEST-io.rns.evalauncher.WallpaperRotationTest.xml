@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.rns.evalauncher.WallpaperRotationTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-11-01T05:30:38.331Z" hostname="DESKTOP-EOQDD3G" time="0.043">
+  <properties/>
+  <testcase name="findMatchesByName" classname="io.rns.evalauncher.WallpaperRotationTest" time="0.002"/>
+  <testcase name="anOnTvPickReplacesTheRotation" classname="io.rns.evalauncher.WallpaperRotationTest" time="0.0"/>
+  <testcase name="imagesKeepsPicturesOnlySortedByName" classname="io.rns.evalauncher.WallpaperRotationTest" time="0.032"/>
+  <testcase name="pickUsesTheRequestedOrder" classname="io.rns.evalauncher.WallpaperRotationTest" time="0.002"/>
+  <testcase name="dueOnlyWithRotationOnAndTheIntervalPassed" classname="io.rns.evalauncher.WallpaperRotationTest" time="0.001"/>
+  <testcase name="pickAvoidsThePreviousPictureWhenThereIsAnother" classname="io.rns.evalauncher.WallpaperRotationTest" time="0.001"/>
+  <testcase name="findsTheFirstPictureWhenThePreviousOneIsGone" classname="io.rns.evalauncher.WallpaperRotationTest" time="0.001"/>
+  <testcase name="homeRebuildsWhenTheSettingsRevisionMoved" classname="io.rns.evalauncher.WallpaperRotationTest" time="0.001"/>
+  <testcase name="sequentialAdvancesInSortedOrderAndWraps" classname="io.rns.evalauncher.WallpaperRotationTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

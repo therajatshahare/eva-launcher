@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.rns.evalauncher.BannerShapeTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-11-01T05:30:35.786Z" hostname="DESKTOP-EOQDD3G" time="0.141">
+  <properties/>
+  <testcase name="squareAndTallPicturesAreNotBanners" classname="io.rns.evalauncher.BannerShapeTest" time="0.117"/>
+  <testcase name="drawablesWithoutAnIntrinsicSizeStillFillTheTile" classname="io.rns.evalauncher.BannerShapeTest" time="0.001"/>
+  <testcase name="wideBannersAreKept" classname="io.rns.evalauncher.BannerShapeTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

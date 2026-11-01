@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.rns.evalauncher.ThemeFilesTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-11-01T05:30:38.133Z" hostname="DESKTOP-EOQDD3G" time="0.009">
+  <properties/>
+  <testcase name="onlyTheBareFolderIsTheCollection" classname="io.rns.evalauncher.ThemeFilesTest" time="0.002"/>
+  <testcase name="anythingElseIsRefused" classname="io.rns.evalauncher.ThemeFilesTest" time="0.001"/>
+  <testcase name="collectionImagesAreAllowed" classname="io.rns.evalauncher.ThemeFilesTest" time="0.0"/>
+  <testcase name="theCollectionsCaptionsAreAllowed" classname="io.rns.evalauncher.ThemeFilesTest" time="0.002"/>
+  <testcase name="themeFilesAreAllowed" classname="io.rns.evalauncher.ThemeFilesTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

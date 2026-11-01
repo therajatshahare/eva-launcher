@@ -1,1298 +1,558 @@
-Marking attr:recyclerViewStyle:2130903061 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking dimen:fastscroll_default_thickness:2131099655 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking dimen:fastscroll_minimum_range:2131099657 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking dimen:fastscroll_margin:2131099656 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:is_pooling_container_tag:2131296347 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:pooling_container_listener_holder_tag:2131296367 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:tag_unhandled_key_listeners:2131296403 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:tag_window_insets_animation_callback:2131296404 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:tag_on_apply_window_listener:2131296396 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:tag_screen_reader_focusable:2131296399 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:tag_accessibility_heading:2131296394 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:tag_accessibility_pane_title:2131296395 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:tag_state_description:2131296400 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:tag_accessibility_actions:2131296392 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:accessibility_action_clickable_span:2131296256 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:tag_accessibility_clickable_spans:2131296393 reachable: referenced from in_memory_r8_base_classes0.dex
-@io.rns.evalauncher:anim/app_open_enter : reachable=false
-@io.rns.evalauncher:anim/app_open_exit : reachable=false
-@io.rns.evalauncher:anim/tile_enter : reachable=false
-@io.rns.evalauncher:array/app_banners : reachable=false
-@io.rns.evalauncher:array/app_keys : reachable=false
-@io.rns.evalauncher:array/app_labels : reachable=false
-@io.rns.evalauncher:array/dock_apps : reachable=false
-@io.rns.evalauncher:array/hidden_apps : reachable=false
-@io.rns.evalauncher:array/icon_tiles : reachable=false
-@io.rns.evalauncher:array/input_key_keycodes : reachable=false
-@io.rns.evalauncher:array/input_sources : reachable=false
-@io.rns.evalauncher:array/launch_actions : reachable=false
-@io.rns.evalauncher:array/library_apps : reachable=false
-@io.rns.evalauncher:array/library_excluded_apps : reachable=false
-@io.rns.evalauncher:array/lunar_branches : reachable=false
-@io.rns.evalauncher:array/lunar_stems : reachable=false
-@io.rns.evalauncher:array/settings_fallback_components : reachable=false
-@io.rns.evalauncher:array/settings_key_keycodes : reachable=false
-@io.rns.evalauncher:array/settings_key_scancodes : reachable=false
-@io.rns.evalauncher:array/top_bar_apps : reachable=false
-@io.rns.evalauncher:attr/alpha : reachable=false
-@io.rns.evalauncher:attr/fastScrollEnabled : reachable=false
-@io.rns.evalauncher:attr/fastScrollHorizontalThumbDrawable : reachable=false
-@io.rns.evalauncher:attr/fastScrollHorizontalTrackDrawable : reachable=false
-@io.rns.evalauncher:attr/fastScrollVerticalThumbDrawable : reachable=false
-@io.rns.evalauncher:attr/fastScrollVerticalTrackDrawable : reachable=false
-@io.rns.evalauncher:attr/font : reachable=false
-@io.rns.evalauncher:attr/fontProviderAuthority : reachable=false
-@io.rns.evalauncher:attr/fontProviderCerts : reachable=false
-@io.rns.evalauncher:attr/fontProviderFetchStrategy : reachable=false
-@io.rns.evalauncher:attr/fontProviderFetchTimeout : reachable=false
-@io.rns.evalauncher:attr/fontProviderPackage : reachable=false
-@io.rns.evalauncher:attr/fontProviderQuery : reachable=false
-@io.rns.evalauncher:attr/fontProviderSystemFontFamily : reachable=false
-@io.rns.evalauncher:attr/fontStyle : reachable=false
-@io.rns.evalauncher:attr/fontVariationSettings : reachable=false
-@io.rns.evalauncher:attr/fontWeight : reachable=false
-@io.rns.evalauncher:attr/lStar : reachable=false
-@io.rns.evalauncher:attr/layoutManager : reachable=false
-@io.rns.evalauncher:attr/nestedScrollViewStyle : reachable=false
-@io.rns.evalauncher:attr/queryPatterns : reachable=false
-@io.rns.evalauncher:attr/recyclerViewStyle : reachable=true
-@io.rns.evalauncher:attr/reverseLayout : reachable=false
-@io.rns.evalauncher:attr/shortcutMatchRequired : reachable=false
-@io.rns.evalauncher:attr/spanCount : reachable=false
-@io.rns.evalauncher:attr/stackFromEnd : reachable=false
-@io.rns.evalauncher:attr/ttcIndex : reachable=false
-@io.rns.evalauncher:bool/advanced_effects : reachable=false
-@io.rns.evalauncher:bool/always_show_names : reachable=false
-@io.rns.evalauncher:bool/ambient_glow : reachable=false
-@io.rns.evalauncher:bool/animations : reachable=false
-@io.rns.evalauncher:bool/app_glow : reachable=false
-@io.rns.evalauncher:bool/app_library : reachable=false
-@io.rns.evalauncher:bool/app_library_selection : reachable=false
-@io.rns.evalauncher:bool/back_opens_clock : reachable=false
-@io.rns.evalauncher:bool/boot_to_live_tv : reachable=false
-@io.rns.evalauncher:bool/cinematic_dots : reachable=false
-@io.rns.evalauncher:bool/cinematic_home : reachable=false
-@io.rns.evalauncher:bool/cinematic_white_focus : reachable=false
-@io.rns.evalauncher:bool/clock_glow : reachable=false
-@io.rns.evalauncher:bool/clock_wallpaper : reachable=false
-@io.rns.evalauncher:bool/consume_volume_keys : reachable=false
-@io.rns.evalauncher:bool/coocaa_sources : reachable=false
-@io.rns.evalauncher:bool/date_below_clock : reachable=false
-@io.rns.evalauncher:bool/date_single_line : reachable=false
-@io.rns.evalauncher:bool/dock_band : reachable=false
-@io.rns.evalauncher:bool/dock_band_all : reachable=false
-@io.rns.evalauncher:bool/dock_even_padding : reachable=false
-@io.rns.evalauncher:bool/dock_glass : reachable=false
-@io.rns.evalauncher:bool/dock_row : reachable=false
-@io.rns.evalauncher:bool/dock_title : reachable=false
-@io.rns.evalauncher:bool/fade_rows : reachable=false
-@io.rns.evalauncher:bool/fill_dock : reachable=false
-@io.rns.evalauncher:bool/focus_overshoot : reachable=false
-@io.rns.evalauncher:bool/gamepad_passthrough : reachable=false
-@io.rns.evalauncher:bool/handle_view_inputs : reachable=false
-@io.rns.evalauncher:bool/header_white : reachable=false
-@io.rns.evalauncher:bool/home_long_press_home : reachable=false
-@io.rns.evalauncher:bool/icon_only_buttons : reachable=false
-@io.rns.evalauncher:bool/icon_only_inputs : reachable=false
-@io.rns.evalauncher:bool/icon_only_vpn : reachable=false
-@io.rns.evalauncher:bool/inputs_connected_only : reachable=false
-@io.rns.evalauncher:bool/key_filter : reachable=false
-@io.rns.evalauncher:bool/launcher_settings_button : reachable=false
-@io.rns.evalauncher:bool/library_button : reachable=false
-@io.rns.evalauncher:bool/library_ok_opens : reachable=false
-@io.rns.evalauncher:bool/lunar_date : reachable=false
-@io.rns.evalauncher:bool/module_cards : reachable=false
-@io.rns.evalauncher:bool/open_on_start_choice : reachable=false
-@io.rns.evalauncher:bool/power_on_home : reachable=false
-@io.rns.evalauncher:bool/power_on_home_always : reachable=false
-@io.rns.evalauncher:bool/reduced_motion : reachable=false
-@io.rns.evalauncher:bool/reorder_button : reachable=false
-@io.rns.evalauncher:bool/restore_key_services : reachable=false
-@io.rns.evalauncher:bool/rtl_app_grid : reachable=false
-@io.rns.evalauncher:bool/rtl_menu_bar : reachable=false
-@io.rns.evalauncher:bool/settings_key_panel : reachable=false
-@io.rns.evalauncher:bool/shamsi_date : reachable=false
-@io.rns.evalauncher:bool/show_greeting : reachable=false
-@io.rns.evalauncher:bool/show_home_settings_shortcut : reachable=false
-@io.rns.evalauncher:bool/show_inputs_pill : reachable=false
-@io.rns.evalauncher:bool/show_library_pill : reachable=false
-@io.rns.evalauncher:bool/show_network_pill : reachable=false
-@io.rns.evalauncher:bool/show_stats : reachable=false
-@io.rns.evalauncher:bool/single_row : reachable=false
-@io.rns.evalauncher:bool/tile_menu : reachable=false
-@io.rns.evalauncher:bool/top_menu : reachable=false
-@io.rns.evalauncher:bool/uniform_tiles : reachable=false
-@io.rns.evalauncher:bool/vpn_pill : reachable=false
-@io.rns.evalauncher:bool/wallpaper_captions : reachable=false
-@io.rns.evalauncher:bool/wallpaper_true_color : reachable=false
-@io.rns.evalauncher:bool/wifi_status_color : reachable=false
-@io.rns.evalauncher:bool/wifi_status_warnings : reachable=false
-@io.rns.evalauncher:color/androidx_core_ripple_material_light : reachable=false
-@io.rns.evalauncher:color/androidx_core_secondary_text_default_material_light : reachable=false
-@io.rns.evalauncher:color/notification_action_color_filter : reachable=false
-    @io.rns.evalauncher:color/androidx_core_secondary_text_default_material_light
-@io.rns.evalauncher:color/notification_icon_bg_color : reachable=false
-@io.rns.evalauncher:color/pill_icon_no_internet : reachable=false
-@io.rns.evalauncher:color/pill_icon_offline : reachable=false
-@io.rns.evalauncher:color/pill_icon_online : reachable=false
-@io.rns.evalauncher:dimen/compat_button_inset_horizontal_material : reachable=false
-@io.rns.evalauncher:dimen/compat_button_inset_vertical_material : reachable=false
-@io.rns.evalauncher:dimen/compat_button_padding_horizontal_material : reachable=false
-@io.rns.evalauncher:dimen/compat_button_padding_vertical_material : reachable=false
-@io.rns.evalauncher:dimen/compat_control_corner_material : reachable=false
-@io.rns.evalauncher:dimen/compat_notification_large_icon_max_height : reachable=false
-@io.rns.evalauncher:dimen/compat_notification_large_icon_max_width : reachable=false
-@io.rns.evalauncher:dimen/fastscroll_default_thickness : reachable=true
-@io.rns.evalauncher:dimen/fastscroll_margin : reachable=true
-@io.rns.evalauncher:dimen/fastscroll_minimum_range : reachable=true
-@io.rns.evalauncher:dimen/item_touch_helper_max_drag_scroll_per_frame : reachable=false
-@io.rns.evalauncher:dimen/item_touch_helper_swipe_escape_max_velocity : reachable=false
-@io.rns.evalauncher:dimen/item_touch_helper_swipe_escape_velocity : reachable=false
-@io.rns.evalauncher:dimen/notification_action_icon_size : reachable=false
-@io.rns.evalauncher:dimen/notification_action_text_size : reachable=false
-@io.rns.evalauncher:dimen/notification_big_circle_margin : reachable=false
-@io.rns.evalauncher:dimen/notification_content_margin_start : reachable=false
-@io.rns.evalauncher:dimen/notification_large_icon_height : reachable=false
-@io.rns.evalauncher:dimen/notification_large_icon_width : reachable=false
-@io.rns.evalauncher:dimen/notification_main_column_padding_top : reachable=false
-@io.rns.evalauncher:dimen/notification_media_narrow_margin : reachable=false
-@io.rns.evalauncher:dimen/notification_right_icon_size : reachable=false
-@io.rns.evalauncher:dimen/notification_right_side_padding_top : reachable=false
-@io.rns.evalauncher:dimen/notification_small_icon_background_padding : reachable=false
-@io.rns.evalauncher:dimen/notification_small_icon_size_as_large : reachable=false
-@io.rns.evalauncher:dimen/notification_subtext_size : reachable=false
-@io.rns.evalauncher:dimen/notification_top_pad : reachable=false
-@io.rns.evalauncher:dimen/notification_top_pad_large_text : reachable=false
-@io.rns.evalauncher:drawable/banner : reachable=true
-@io.rns.evalauncher:drawable/banner_tv : reachable=true
-    @io.rns.evalauncher:drawable/ic_livetv
-@io.rns.evalauncher:drawable/dialog_rounded_bg : reachable=false
-@io.rns.evalauncher:drawable/glass_panel : reachable=false
-@io.rns.evalauncher:drawable/halloween_bat : reachable=false
-@io.rns.evalauncher:drawable/halloween_ghost : reachable=false
-@io.rns.evalauncher:drawable/halloween_pumpkin_dark : reachable=false
-@io.rns.evalauncher:drawable/halloween_pumpkin_lit : reachable=false
-@io.rns.evalauncher:drawable/ic_apps : reachable=false
-@io.rns.evalauncher:drawable/ic_apps_pill : reachable=false
-    @io.rns.evalauncher:drawable/ic_apps
-@io.rns.evalauncher:drawable/ic_av : reachable=false
-@io.rns.evalauncher:drawable/ic_ethernet : reachable=false
-@io.rns.evalauncher:drawable/ic_home_settings : reachable=false
-@io.rns.evalauncher:drawable/ic_home_settings_pill : reachable=false
-@io.rns.evalauncher:drawable/ic_input : reachable=false
-@io.rns.evalauncher:drawable/ic_livetv : reachable=false
-@io.rns.evalauncher:drawable/ic_lock : reachable=false
-@io.rns.evalauncher:drawable/ic_lock_open : reachable=false
-@io.rns.evalauncher:drawable/ic_picture : reachable=false
-@io.rns.evalauncher:drawable/ic_settings : reachable=false
-@io.rns.evalauncher:drawable/ic_swap_vert : reachable=false
-@io.rns.evalauncher:drawable/ic_wifi : reachable=false
-@io.rns.evalauncher:drawable/input_row_bg : reachable=false
-@io.rns.evalauncher:drawable/library_check : reachable=false
-@io.rns.evalauncher:drawable/notification_action_background : reachable=false
-    @io.rns.evalauncher:color/androidx_core_ripple_material_light
-    @io.rns.evalauncher:dimen/compat_button_inset_horizontal_material
-    @io.rns.evalauncher:dimen/compat_button_inset_vertical_material
-    @io.rns.evalauncher:dimen/compat_control_corner_material
-    @io.rns.evalauncher:dimen/compat_button_padding_vertical_material
-    @io.rns.evalauncher:dimen/compat_button_padding_horizontal_material
-@io.rns.evalauncher:drawable/notification_bg : reachable=false
-    @io.rns.evalauncher:drawable/notification_bg_normal_pressed
-    @io.rns.evalauncher:drawable/notification_bg_normal
-@io.rns.evalauncher:drawable/notification_bg_low : reachable=false
-    @io.rns.evalauncher:drawable/notification_bg_low_pressed
-    @io.rns.evalauncher:drawable/notification_bg_low_normal
-@io.rns.evalauncher:drawable/notification_bg_low_normal : reachable=false
-@io.rns.evalauncher:drawable/notification_bg_low_pressed : reachable=false
-@io.rns.evalauncher:drawable/notification_bg_normal : reachable=false
-@io.rns.evalauncher:drawable/notification_bg_normal_pressed : reachable=false
-@io.rns.evalauncher:drawable/notification_icon_background : reachable=false
-    @io.rns.evalauncher:color/notification_icon_bg_color
-@io.rns.evalauncher:drawable/notification_template_icon_bg : reachable=false
-@io.rns.evalauncher:drawable/notification_template_icon_low_bg : reachable=false
-@io.rns.evalauncher:drawable/notification_tile_bg : reachable=false
-    @io.rns.evalauncher:drawable/notify_panel_notification_icon_bg
-@io.rns.evalauncher:drawable/notify_panel_notification_icon_bg : reachable=false
-@io.rns.evalauncher:drawable/pill_bg : reachable=false
-@io.rns.evalauncher:drawable/pill_text : reachable=false
-@io.rns.evalauncher:drawable/pill_text_dim : reachable=false
-@io.rns.evalauncher:drawable/pill_text_mid : reachable=false
-@io.rns.evalauncher:drawable/race_bar : reachable=false
-@io.rns.evalauncher:drawable/settings_card_bg : reachable=false
-@io.rns.evalauncher:drawable/settings_choice_bg : reachable=false
-@io.rns.evalauncher:drawable/status_dot : reachable=false
-@io.rns.evalauncher:drawable/tile_bg : reachable=false
-@io.rns.evalauncher:drawable/wallpaper_card_gradient : reachable=false
-@io.rns.evalauncher:font/outfit : reachable=false
-@io.rns.evalauncher:font/outfit_extralight : reachable=false
-    @io.rns.evalauncher:font/outfit
-@io.rns.evalauncher:font/outfit_light : reachable=false
-    @io.rns.evalauncher:font/outfit
-@io.rns.evalauncher:font/outfit_medium : reachable=false
-    @io.rns.evalauncher:font/outfit
-@io.rns.evalauncher:font/outfit_regular : reachable=false
-    @io.rns.evalauncher:font/outfit
-@io.rns.evalauncher:id/accessibility_action_clickable_span : reachable=true
-@io.rns.evalauncher:id/accessibility_custom_action_0 : reachable=false
-@io.rns.evalauncher:id/accessibility_custom_action_1 : reachable=false
-@io.rns.evalauncher:id/accessibility_custom_action_10 : reachable=false
-@io.rns.evalauncher:id/accessibility_custom_action_11 : reachable=false
-@io.rns.evalauncher:id/accessibility_custom_action_12 : reachable=false
-@io.rns.evalauncher:id/accessibility_custom_action_13 : reachable=false
-@io.rns.evalauncher:id/accessibility_custom_action_14 : reachable=false
-@io.rns.evalauncher:id/accessibility_custom_action_15 : reachable=false
-@io.rns.evalauncher:id/accessibility_custom_action_16 : reachable=false
-@io.rns.evalauncher:id/accessibility_custom_action_17 : reachable=false
-@io.rns.evalauncher:id/accessibility_custom_action_18 : reachable=false
-@io.rns.evalauncher:id/accessibility_custom_action_19 : reachable=false
-@io.rns.evalauncher:id/accessibility_custom_action_2 : reachable=false
-@io.rns.evalauncher:id/accessibility_custom_action_20 : reachable=false
-@io.rns.evalauncher:id/accessibility_custom_action_21 : reachable=false
-@io.rns.evalauncher:id/accessibility_custom_action_22 : reachable=false
-@io.rns.evalauncher:id/accessibility_custom_action_23 : reachable=false
-@io.rns.evalauncher:id/accessibility_custom_action_24 : reachable=false
-@io.rns.evalauncher:id/accessibility_custom_action_25 : reachable=false
-@io.rns.evalauncher:id/accessibility_custom_action_26 : reachable=false
-@io.rns.evalauncher:id/accessibility_custom_action_27 : reachable=false
-@io.rns.evalauncher:id/accessibility_custom_action_28 : reachable=false
-@io.rns.evalauncher:id/accessibility_custom_action_29 : reachable=false
-@io.rns.evalauncher:id/accessibility_custom_action_3 : reachable=false
-@io.rns.evalauncher:id/accessibility_custom_action_30 : reachable=false
-@io.rns.evalauncher:id/accessibility_custom_action_31 : reachable=false
-@io.rns.evalauncher:id/accessibility_custom_action_4 : reachable=false
-@io.rns.evalauncher:id/accessibility_custom_action_5 : reachable=false
-@io.rns.evalauncher:id/accessibility_custom_action_6 : reachable=false
-@io.rns.evalauncher:id/accessibility_custom_action_7 : reachable=false
-@io.rns.evalauncher:id/accessibility_custom_action_8 : reachable=false
-@io.rns.evalauncher:id/accessibility_custom_action_9 : reachable=false
-@io.rns.evalauncher:id/action_container : reachable=false
-@io.rns.evalauncher:id/action_divider : reachable=false
-@io.rns.evalauncher:id/action_image : reachable=false
-@io.rns.evalauncher:id/action_text : reachable=false
-@io.rns.evalauncher:id/actions : reachable=false
-@io.rns.evalauncher:id/ambient : reachable=false
-@io.rns.evalauncher:id/ampm : reachable=false
-@io.rns.evalauncher:id/app : reachable=false
-@io.rns.evalauncher:id/async : reachable=false
-@io.rns.evalauncher:id/banner : reachable=false
-@io.rns.evalauncher:id/blocking : reachable=false
-@io.rns.evalauncher:id/body : reachable=false
-@io.rns.evalauncher:id/btnInputs : reachable=false
-@io.rns.evalauncher:id/btnKeep : reachable=false
-@io.rns.evalauncher:id/btnLibrary : reachable=false
-@io.rns.evalauncher:id/btnLibraryTop : reachable=false
-@io.rns.evalauncher:id/btnReorder : reachable=false
-@io.rns.evalauncher:id/btnSettings : reachable=false
-@io.rns.evalauncher:id/btnShow : reachable=false
-@io.rns.evalauncher:id/btnVpn : reachable=false
-@io.rns.evalauncher:id/btnWifi : reachable=false
-@io.rns.evalauncher:id/card : reachable=false
-@io.rns.evalauncher:id/cardHint : reachable=false
-@io.rns.evalauncher:id/cardTitle : reachable=false
-@io.rns.evalauncher:id/cardValue : reachable=false
-@io.rns.evalauncher:id/categoryCard : reachable=false
-@io.rns.evalauncher:id/categoryGrid : reachable=false
-@io.rns.evalauncher:id/categoryIcon : reachable=false
-@io.rns.evalauncher:id/categoryTitle : reachable=false
-@io.rns.evalauncher:id/chronometer : reachable=false
-@io.rns.evalauncher:id/clock : reachable=false
-@io.rns.evalauncher:id/clockDivider : reachable=false
-@io.rns.evalauncher:id/date : reachable=false
-@io.rns.evalauncher:id/dialogSubtitle : reachable=false
-@io.rns.evalauncher:id/dialogTitle : reachable=false
-@io.rns.evalauncher:id/dialog_button : reachable=false
-@io.rns.evalauncher:id/digest : reachable=false
-@io.rns.evalauncher:id/dot : reachable=false
-@io.rns.evalauncher:id/dreamAmPm : reachable=false
-@io.rns.evalauncher:id/dreamAmbient : reachable=false
-@io.rns.evalauncher:id/dreamClock : reachable=false
-@io.rns.evalauncher:id/dreamContent : reachable=false
-@io.rns.evalauncher:id/dreamDate : reachable=false
-@io.rns.evalauncher:id/forever : reachable=false
-@io.rns.evalauncher:id/glass : reachable=false
-@io.rns.evalauncher:id/greeting : reachable=false
-@io.rns.evalauncher:id/grid : reachable=false
-@io.rns.evalauncher:id/hero : reachable=false
-@io.rns.evalauncher:id/heroArt : reachable=false
-@io.rns.evalauncher:id/heroDots : reachable=false
-@io.rns.evalauncher:id/heroMeta : reachable=false
-@io.rns.evalauncher:id/heroName : reachable=false
-@io.rns.evalauncher:id/heroScrim : reachable=false
-@io.rns.evalauncher:id/hint : reachable=false
-@io.rns.evalauncher:id/icon : reachable=false
-@io.rns.evalauncher:id/icon_group : reachable=false
-@io.rns.evalauncher:id/identity : reachable=false
-@io.rns.evalauncher:id/info : reachable=false
-@io.rns.evalauncher:id/is_pooling_container_tag : reachable=true
-@io.rns.evalauncher:id/italic : reachable=false
-@io.rns.evalauncher:id/item1 : reachable=false
-@io.rns.evalauncher:id/item2 : reachable=false
-@io.rns.evalauncher:id/item3 : reachable=false
-@io.rns.evalauncher:id/item4 : reachable=false
-@io.rns.evalauncher:id/item_touch_helper_previous_elevation : reachable=false
-@io.rns.evalauncher:id/label : reachable=false
-@io.rns.evalauncher:id/leftBlock : reachable=false
-@io.rns.evalauncher:id/line1 : reachable=false
-@io.rns.evalauncher:id/line3 : reachable=false
-@io.rns.evalauncher:id/lunarDate : reachable=false
-@io.rns.evalauncher:id/name : reachable=false
-@io.rns.evalauncher:id/names : reachable=false
-@io.rns.evalauncher:id/normal : reachable=false
-@io.rns.evalauncher:id/notification_background : reachable=false
-@io.rns.evalauncher:id/notification_main_column : reachable=false
-@io.rns.evalauncher:id/notification_main_column_container : reachable=false
-@io.rns.evalauncher:id/panel : reachable=false
-@io.rns.evalauncher:id/pkg : reachable=false
-@io.rns.evalauncher:id/pooling_container_listener_holder_tag : reachable=true
-@io.rns.evalauncher:id/raceBar : reachable=false
-@io.rns.evalauncher:id/raceHeadline : reachable=false
-@io.rns.evalauncher:id/raceKicker : reachable=false
-@io.rns.evalauncher:id/racePager : reachable=false
-@io.rns.evalauncher:id/racePanel : reachable=false
-@io.rns.evalauncher:id/raceSessions : reachable=false
-@io.rns.evalauncher:id/right_icon : reachable=false
-@io.rns.evalauncher:id/right_side : reachable=false
-@io.rns.evalauncher:id/root : reachable=false
-@io.rns.evalauncher:id/rows : reachable=false
-@io.rns.evalauncher:id/scrim : reachable=false
-@io.rns.evalauncher:id/sectionContent : reachable=false
-@io.rns.evalauncher:id/sectionOptionsContainer : reachable=false
-@io.rns.evalauncher:id/sectionScrollView : reachable=false
-@io.rns.evalauncher:id/sectionSubtitle : reachable=false
-@io.rns.evalauncher:id/sectionTitle : reachable=false
-@io.rns.evalauncher:id/selectedBadge : reachable=false
-@io.rns.evalauncher:id/shamsiDate : reachable=false
-@io.rns.evalauncher:id/sky : reachable=false
-@io.rns.evalauncher:id/state : reachable=false
-@io.rns.evalauncher:id/stats : reachable=false
-@io.rns.evalauncher:id/status : reachable=false
-@io.rns.evalauncher:id/subGridCard : reachable=false
-@io.rns.evalauncher:id/subGridRecyclerView : reachable=false
-@io.rns.evalauncher:id/tag_accessibility_actions : reachable=true
-@io.rns.evalauncher:id/tag_accessibility_clickable_spans : reachable=true
-@io.rns.evalauncher:id/tag_accessibility_heading : reachable=true
-@io.rns.evalauncher:id/tag_accessibility_pane_title : reachable=true
-@io.rns.evalauncher:id/tag_on_apply_window_listener : reachable=true
-@io.rns.evalauncher:id/tag_on_receive_content_listener : reachable=false
-@io.rns.evalauncher:id/tag_on_receive_content_mime_types : reachable=false
-@io.rns.evalauncher:id/tag_screen_reader_focusable : reachable=true
-@io.rns.evalauncher:id/tag_state_description : reachable=true
-@io.rns.evalauncher:id/tag_transition_group : reachable=false
-@io.rns.evalauncher:id/tag_unhandled_key_event_manager : reachable=false
-@io.rns.evalauncher:id/tag_unhandled_key_listeners : reachable=true
-@io.rns.evalauncher:id/tag_window_insets_animation_callback : reachable=true
-@io.rns.evalauncher:id/text : reachable=false
-@io.rns.evalauncher:id/text2 : reachable=false
-@io.rns.evalauncher:id/time : reachable=false
-@io.rns.evalauncher:id/title : reachable=false
-@io.rns.evalauncher:id/topButtons : reachable=false
-@io.rns.evalauncher:id/view_tree_lifecycle_owner : reachable=false
-@io.rns.evalauncher:id/wallpaperCard : reachable=false
-@io.rns.evalauncher:id/wallpaperGrid : reachable=false
-@io.rns.evalauncher:id/wallpaperName : reachable=false
-@io.rns.evalauncher:id/wallpaperPreview : reachable=false
-@io.rns.evalauncher:integer/cinematic_art : reachable=false
-@io.rns.evalauncher:integer/cinematic_scrim : reachable=false
-@io.rns.evalauncher:integer/clock_wallpaper_dim : reachable=false
-@io.rns.evalauncher:integer/columns : reachable=false
-@io.rns.evalauncher:integer/home_idle_clock_minutes : reachable=false
-@io.rns.evalauncher:integer/open_on_start_network_wait : reachable=false
-@io.rns.evalauncher:integer/rows_below_dock : reachable=false
-@io.rns.evalauncher:integer/sky_intensity : reachable=false
-@io.rns.evalauncher:integer/status_bar_notification_info_maxnum : reachable=false
-@io.rns.evalauncher:integer/wifi_label_width : reachable=false
-@io.rns.evalauncher:layout/activity_launcher_settings : reachable=false
-    @io.rns.evalauncher:string/font_medium
-    @io.rns.evalauncher:string/launcher_settings
-@io.rns.evalauncher:layout/activity_main : reachable=false
-    @io.rns.evalauncher:drawable/race_bar
-    @io.rns.evalauncher:string/font_medium
-    @io.rns.evalauncher:string/font_light
-    @io.rns.evalauncher:string/font_regular
-    @io.rns.evalauncher:string/date_format_home
-    @io.rns.evalauncher:bool/date_single_line
-    @io.rns.evalauncher:drawable/ic_input
-    @io.rns.evalauncher:style/TopButton
-    @io.rns.evalauncher:string/inputs
-    @io.rns.evalauncher:drawable/ic_wifi
-    @io.rns.evalauncher:string/wifi
-    @io.rns.evalauncher:string/vpn
-    @io.rns.evalauncher:string/reorder
-    @io.rns.evalauncher:drawable/ic_swap_vert
-    @io.rns.evalauncher:style/TopButtonIcon
-    @io.rns.evalauncher:string/app_library
-    @io.rns.evalauncher:drawable/ic_apps_pill
-    @io.rns.evalauncher:drawable/ic_settings
-    @io.rns.evalauncher:string/settings
-    @io.rns.evalauncher:string/date_format
-    @io.rns.evalauncher:drawable/ic_apps
-@io.rns.evalauncher:layout/activity_quick_settings : reachable=false
-    @io.rns.evalauncher:drawable/glass_panel
-@io.rns.evalauncher:layout/custom_dialog : reachable=false
-@io.rns.evalauncher:layout/dialog_card_prompt : reachable=false
-    @io.rns.evalauncher:drawable/glass_panel
-    @io.rns.evalauncher:string/font_medium
-    @io.rns.evalauncher:string/font_body
-    @io.rns.evalauncher:string/card_prompt_hint
-    @io.rns.evalauncher:style/TopButton
-    @io.rns.evalauncher:string/card_keep_hidden
-    @io.rns.evalauncher:string/card_show
-@io.rns.evalauncher:layout/dialog_settings_grid : reachable=false
-    @io.rns.evalauncher:drawable/dialog_rounded_bg
-    @io.rns.evalauncher:string/font_medium
-@io.rns.evalauncher:layout/dialog_settings_section : reachable=false
-    @io.rns.evalauncher:drawable/dialog_rounded_bg
-    @io.rns.evalauncher:string/font_medium
-@io.rns.evalauncher:layout/dialog_wallpaper_picker : reachable=false
-    @io.rns.evalauncher:drawable/dialog_rounded_bg
-    @io.rns.evalauncher:string/font_medium
-    @io.rns.evalauncher:string/wallpaper_label
-@io.rns.evalauncher:layout/dream_clock : reachable=false
-    @io.rns.evalauncher:string/font_extralight
-    @io.rns.evalauncher:string/font_medium
-    @io.rns.evalauncher:string/date_format
-    @io.rns.evalauncher:string/font_regular
-@io.rns.evalauncher:layout/item_app : reachable=false
-    @io.rns.evalauncher:drawable/tile_bg
-    @io.rns.evalauncher:string/font_body
-    @io.rns.evalauncher:string/font_medium
-@io.rns.evalauncher:layout/item_card_row : reachable=false
-    @io.rns.evalauncher:drawable/input_row_bg
-    @io.rns.evalauncher:string/font_medium
-    @io.rns.evalauncher:drawable/pill_text
-    @io.rns.evalauncher:string/font_body
-    @io.rns.evalauncher:drawable/pill_text_mid
-@io.rns.evalauncher:layout/item_input : reachable=false
-    @io.rns.evalauncher:drawable/input_row_bg
-    @io.rns.evalauncher:drawable/pill_text
-    @io.rns.evalauncher:string/font_medium
-    @io.rns.evalauncher:drawable/status_dot
-    @io.rns.evalauncher:string/font_body
-    @io.rns.evalauncher:drawable/pill_text_dim
-@io.rns.evalauncher:layout/item_settings_category_card : reachable=false
-    @io.rns.evalauncher:drawable/settings_choice_bg
-    @io.rns.evalauncher:string/font_medium
-@io.rns.evalauncher:layout/item_settings_grid_card : reachable=false
-    @io.rns.evalauncher:drawable/settings_choice_bg
-    @io.rns.evalauncher:string/font_medium
-@io.rns.evalauncher:layout/item_wallpaper_card : reachable=false
-    @io.rns.evalauncher:drawable/settings_choice_bg
-    @io.rns.evalauncher:drawable/wallpaper_card_gradient
-    @io.rns.evalauncher:string/font_medium
-@io.rns.evalauncher:layout/notification_action : reachable=false
-    @io.rns.evalauncher:style/Widget_Compat_NotificationActionContainer
-    @io.rns.evalauncher:dimen/notification_action_icon_size
-    @io.rns.evalauncher:style/Widget_Compat_NotificationActionText
-@io.rns.evalauncher:layout/notification_action_tombstone : reachable=false
-    @io.rns.evalauncher:style/Widget_Compat_NotificationActionContainer
-    @io.rns.evalauncher:dimen/notification_action_icon_size
-    @io.rns.evalauncher:style/Widget_Compat_NotificationActionText
-@io.rns.evalauncher:layout/notification_template_custom_big : reachable=false
-    @io.rns.evalauncher:layout/notification_template_icon_group
-    @io.rns.evalauncher:dimen/notification_large_icon_width
-    @io.rns.evalauncher:dimen/notification_large_icon_height
-    @io.rns.evalauncher:dimen/notification_right_side_padding_top
-    @io.rns.evalauncher:layout/notification_template_part_time
-    @io.rns.evalauncher:layout/notification_template_part_chronometer
-    @io.rns.evalauncher:style/TextAppearance_Compat_Notification_Info
-@io.rns.evalauncher:layout/notification_template_icon_group : reachable=false
-    @io.rns.evalauncher:dimen/notification_large_icon_width
-    @io.rns.evalauncher:dimen/notification_large_icon_height
-    @io.rns.evalauncher:dimen/notification_big_circle_margin
-    @io.rns.evalauncher:dimen/notification_right_icon_size
-@io.rns.evalauncher:layout/notification_template_part_chronometer : reachable=false
-    @io.rns.evalauncher:style/TextAppearance_Compat_Notification_Time
-@io.rns.evalauncher:layout/notification_template_part_time : reachable=false
-    @io.rns.evalauncher:style/TextAppearance_Compat_Notification_Time
-@io.rns.evalauncher:layout/popup_cards : reachable=false
-    @io.rns.evalauncher:drawable/glass_panel
-    @io.rns.evalauncher:string/font_medium
-    @io.rns.evalauncher:string/module_cards
-@io.rns.evalauncher:layout/popup_inputs : reachable=false
-    @io.rns.evalauncher:drawable/glass_panel
-@io.rns.evalauncher:layout/row_app_library : reachable=false
-    @io.rns.evalauncher:drawable/ic_apps_pill
-    @io.rns.evalauncher:style/TopButton
-    @io.rns.evalauncher:string/app_library
-@io.rns.evalauncher:layout/top_app_button : reachable=false
-    @io.rns.evalauncher:style/TopButtonIcon
-@io.rns.evalauncher:menu/example_menu : reachable=false
-@io.rns.evalauncher:menu/example_menu2 : reachable=false
-@io.rns.evalauncher:mipmap/ic_launcher : reachable=true
-@io.rns.evalauncher:plurals/library_app_count : reachable=false
-@io.rns.evalauncher:raw/keep : reachable=false
-@io.rns.evalauncher:string/advanced_effects : reachable=false
-@io.rns.evalauncher:string/advanced_effects_state : reachable=false
-@io.rns.evalauncher:string/advanced_effects_warning : reachable=false
-@io.rns.evalauncher:string/animations_state : reachable=false
-@io.rns.evalauncher:string/app_library : reachable=false
-@io.rns.evalauncher:string/app_name : reachable=true
-@io.rns.evalauncher:string/cant_open : reachable=false
-@io.rns.evalauncher:string/card_app_name : reachable=false
-@io.rns.evalauncher:string/card_keep_hidden : reachable=false
-@io.rns.evalauncher:string/card_not_saved : reachable=false
-@io.rns.evalauncher:string/card_prompt_body : reachable=false
-@io.rns.evalauncher:string/card_prompt_hint : reachable=false
-@io.rns.evalauncher:string/card_prompt_identity : reachable=false
-@io.rns.evalauncher:string/card_prompt_names : reachable=false
-@io.rns.evalauncher:string/card_prompt_relabelled : reachable=false
-@io.rns.evalauncher:string/card_prompt_resigned : reachable=false
-@io.rns.evalauncher:string/card_prompt_title : reachable=false
-@io.rns.evalauncher:string/card_show : reachable=false
-@io.rns.evalauncher:string/card_state_hidden : reachable=false
-@io.rns.evalauncher:string/card_state_new : reachable=false
-@io.rns.evalauncher:string/card_state_new_key : reachable=false
-@io.rns.evalauncher:string/card_state_new_label : reachable=false
-@io.rns.evalauncher:string/card_state_over_limit : reachable=false
-@io.rns.evalauncher:string/card_state_shown : reachable=false
-@io.rns.evalauncher:string/choose_input : reachable=false
-@io.rns.evalauncher:string/clock_format : reachable=false
-@io.rns.evalauncher:string/clock_format_12 : reachable=false
-@io.rns.evalauncher:string/clock_format_24 : reachable=false
-@io.rns.evalauncher:string/clock_format_system : reachable=false
-@io.rns.evalauncher:string/columns_label : reachable=false
-@io.rns.evalauncher:string/connected : reachable=false
-@io.rns.evalauncher:string/date_format : reachable=false
-@io.rns.evalauncher:string/date_format_home : reachable=false
-    @io.rns.evalauncher:string/date_format
-@io.rns.evalauncher:string/dock_edit : reachable=false
-@io.rns.evalauncher:string/dock_edit_hint : reachable=false
-@io.rns.evalauncher:string/dock_edit_pick_app : reachable=false
-@io.rns.evalauncher:string/dock_edit_pick_place : reachable=false
-@io.rns.evalauncher:string/dock_opacity_label : reachable=false
-@io.rns.evalauncher:string/dream_name : reachable=true
-@io.rns.evalauncher:string/enable : reachable=false
-@io.rns.evalauncher:string/ethernet : reachable=false
-@io.rns.evalauncher:string/festival_diwali_greeting : reachable=false
-@io.rns.evalauncher:string/festival_dussehra_greeting : reachable=false
-@io.rns.evalauncher:string/festival_halloween_greeting : reachable=false
-@io.rns.evalauncher:string/follow_theme : reachable=false
-@io.rns.evalauncher:string/follow_theme_hint : reachable=false
-@io.rns.evalauncher:string/font_body : reachable=false
-    @io.rns.evalauncher:font/outfit
-@io.rns.evalauncher:string/font_extralight : reachable=false
-    @io.rns.evalauncher:font/outfit_extralight
-@io.rns.evalauncher:string/font_light : reachable=false
-    @io.rns.evalauncher:font/outfit_light
-@io.rns.evalauncher:string/font_medium : reachable=false
-    @io.rns.evalauncher:font/outfit_medium
-@io.rns.evalauncher:string/font_regular : reachable=false
-    @io.rns.evalauncher:font/outfit_regular
-@io.rns.evalauncher:string/game_day : reachable=false
-@io.rns.evalauncher:string/game_live : reachable=false
-@io.rns.evalauncher:string/github_update_repo : reachable=false
-@io.rns.evalauncher:string/glass_style : reachable=false
-@io.rns.evalauncher:string/glow_style : reachable=false
-@io.rns.evalauncher:string/good_afternoon : reachable=false
-@io.rns.evalauncher:string/good_evening : reachable=false
-@io.rns.evalauncher:string/good_forenoon : reachable=false
-@io.rns.evalauncher:string/good_morning : reachable=false
-@io.rns.evalauncher:string/good_night : reachable=false
-@io.rns.evalauncher:string/greeting_name : reachable=false
-@io.rns.evalauncher:string/greeting_with_name : reachable=false
-@io.rns.evalauncher:string/home_key_description : reachable=false
-@io.rns.evalauncher:string/home_key_name : reachable=true
-@io.rns.evalauncher:string/home_settings : reachable=false
-@io.rns.evalauncher:string/home_settings_help : reachable=false
-@io.rns.evalauncher:string/input_action : reachable=false
-@io.rns.evalauncher:string/input_key_service_description : reachable=false
-@io.rns.evalauncher:string/input_uri_scheme : reachable=false
-@io.rns.evalauncher:string/inputs : reachable=false
-@io.rns.evalauncher:string/last_opened : reachable=false
-@io.rns.evalauncher:string/latitude : reachable=false
-@io.rns.evalauncher:string/launcher_settings : reachable=false
-@io.rns.evalauncher:string/library_add_home : reachable=false
-@io.rns.evalauncher:string/library_app_info : reachable=false
-@io.rns.evalauncher:string/library_empty : reachable=false
-@io.rns.evalauncher:string/library_hint_add : reachable=false
-@io.rns.evalauncher:string/library_hint_open : reachable=false
-@io.rns.evalauncher:string/library_on_home : reachable=false
-@io.rns.evalauncher:string/library_open : reachable=false
-@io.rns.evalauncher:string/library_recent : reachable=false
-@io.rns.evalauncher:string/library_remove_shortcut : reachable=false
-@io.rns.evalauncher:string/library_save_failed : reachable=false
-@io.rns.evalauncher:string/live_tv : reachable=false
-@io.rns.evalauncher:string/live_tv_action : reachable=false
-@io.rns.evalauncher:string/live_tv_input_id : reachable=false
-@io.rns.evalauncher:string/live_tv_package : reachable=false
-@io.rns.evalauncher:string/locale : reachable=false
-@io.rns.evalauncher:string/longitude : reachable=false
-@io.rns.evalauncher:string/lunar_date_format : reachable=false
-@io.rns.evalauncher:string/lunar_month_leap : reachable=false
-@io.rns.evalauncher:string/lunar_year : reachable=false
-@io.rns.evalauncher:string/module_cards : reachable=false
-@io.rns.evalauncher:string/more_inputs : reachable=false
-@io.rns.evalauncher:string/native_settings : reachable=false
-@io.rns.evalauncher:string/no_inputs : reachable=false
-@io.rns.evalauncher:string/no_module_cards : reachable=false
-@io.rns.evalauncher:string/not_available : reachable=false
-@io.rns.evalauncher:string/not_connected : reachable=false
-@io.rns.evalauncher:string/off : reachable=false
-@io.rns.evalauncher:string/offline : reachable=false
-@io.rns.evalauncher:string/on : reachable=false
-@io.rns.evalauncher:string/open_on_start_label : reachable=false
-@io.rns.evalauncher:string/open_on_start_state : reachable=false
-@io.rns.evalauncher:string/power_menu : reachable=false
-@io.rns.evalauncher:string/quick_apps : reachable=false
-@io.rns.evalauncher:string/quick_apps_hint : reachable=false
-@io.rns.evalauncher:string/quick_network : reachable=false
-@io.rns.evalauncher:string/quick_picture : reachable=false
-@io.rns.evalauncher:string/race_countdown_days : reachable=false
-@io.rns.evalauncher:string/race_countdown_hours : reachable=false
-@io.rns.evalauncher:string/race_countdown_minutes : reachable=false
-@io.rns.evalauncher:string/race_finished : reachable=false
-@io.rns.evalauncher:string/race_kicker : reachable=false
-@io.rns.evalauncher:string/race_kicker_no_place : reachable=false
-@io.rns.evalauncher:string/race_lights_out : reachable=false
-@io.rns.evalauncher:string/race_live : reachable=false
-@io.rns.evalauncher:string/race_next : reachable=false
-@io.rns.evalauncher:string/race_practice_1 : reachable=false
-@io.rns.evalauncher:string/race_practice_1_short : reachable=false
-@io.rns.evalauncher:string/race_practice_2 : reachable=false
-@io.rns.evalauncher:string/race_practice_2_short : reachable=false
-@io.rns.evalauncher:string/race_practice_3 : reachable=false
-@io.rns.evalauncher:string/race_practice_3_short : reachable=false
-@io.rns.evalauncher:string/race_qualifying : reachable=false
-@io.rns.evalauncher:string/race_qualifying_short : reachable=false
-@io.rns.evalauncher:string/race_race : reachable=false
-@io.rns.evalauncher:string/race_race_short : reachable=false
-@io.rns.evalauncher:string/race_sprint : reachable=false
-@io.rns.evalauncher:string/race_sprint_qualifying : reachable=false
-@io.rns.evalauncher:string/race_sprint_qualifying_short : reachable=false
-@io.rns.evalauncher:string/race_sprint_short : reachable=false
-@io.rns.evalauncher:string/reorder : reachable=false
-@io.rns.evalauncher:string/reorder_hint : reachable=false
-@io.rns.evalauncher:string/reorder_not_saved : reachable=false
-@io.rns.evalauncher:string/rows_below_dock_label : reachable=false
-@io.rns.evalauncher:string/settings : reachable=false
-@io.rns.evalauncher:string/shamsi_month_aban : reachable=false
-@io.rns.evalauncher:string/shamsi_month_azar : reachable=false
-@io.rns.evalauncher:string/shamsi_month_bahman : reachable=false
-@io.rns.evalauncher:string/shamsi_month_dey : reachable=false
-@io.rns.evalauncher:string/shamsi_month_esfand : reachable=false
-@io.rns.evalauncher:string/shamsi_month_farvardin : reachable=false
-@io.rns.evalauncher:string/shamsi_month_khordad : reachable=false
-@io.rns.evalauncher:string/shamsi_month_mehr : reachable=false
-@io.rns.evalauncher:string/shamsi_month_mordad : reachable=false
-@io.rns.evalauncher:string/shamsi_month_ordibehesht : reachable=false
-@io.rns.evalauncher:string/shamsi_month_shahrivar : reachable=false
-@io.rns.evalauncher:string/shamsi_month_tir : reachable=false
-@io.rns.evalauncher:string/source_panel_action : reachable=false
-@io.rns.evalauncher:string/source_panel_extra : reachable=false
-@io.rns.evalauncher:string/source_panel_service : reachable=false
-@io.rns.evalauncher:string/standby : reachable=false
-@io.rns.evalauncher:string/stats_cpu : reachable=false
-@io.rns.evalauncher:string/stats_memory : reachable=false
-@io.rns.evalauncher:string/stats_storage : reachable=false
-@io.rns.evalauncher:string/status_bar_notification_info_overflow : reachable=false
-@io.rns.evalauncher:string/stock_home_redirect : reachable=false
-@io.rns.evalauncher:string/storage_gb_decimal : reachable=false
-@io.rns.evalauncher:string/storage_gb_whole : reachable=false
-@io.rns.evalauncher:string/tile_add_to_dock : reachable=false
-@io.rns.evalauncher:string/tile_move : reachable=false
-@io.rns.evalauncher:string/tile_replace_in_dock : reachable=false
-@io.rns.evalauncher:string/tv_settings : reachable=false
-@io.rns.evalauncher:string/vpn : reachable=false
-@io.rns.evalauncher:string/vpn_app : reachable=false
-@io.rns.evalauncher:string/vpn_off : reachable=false
-@io.rns.evalauncher:string/wallpaper_applied : reachable=false
-@io.rns.evalauncher:string/wallpaper_label : reachable=false
-@io.rns.evalauncher:string/wallpaper_moods : reachable=false
-@io.rns.evalauncher:string/wallpaper_none : reachable=false
-@io.rns.evalauncher:string/wallpaper_state : reachable=false
-@io.rns.evalauncher:string/wallpaper_theme_default : reachable=false
-@io.rns.evalauncher:string/wifi : reachable=false
-@io.rns.evalauncher:style/SettingsColumnChoice : reachable=false
-    @io.rns.evalauncher:style/SettingsRow
-@io.rns.evalauncher:style/SettingsRow : reachable=false
-    @io.rns.evalauncher:drawable/settings_choice_bg
-@io.rns.evalauncher:style/TextAppearance_Compat_Notification : reachable=false
-@io.rns.evalauncher:style/TextAppearance_Compat_Notification_Info : reachable=false
-@io.rns.evalauncher:style/TextAppearance_Compat_Notification_Line2 : reachable=false
-    @io.rns.evalauncher:style/TextAppearance_Compat_Notification_Info
-@io.rns.evalauncher:style/TextAppearance_Compat_Notification_Time : reachable=false
-@io.rns.evalauncher:style/TextAppearance_Compat_Notification_Title : reachable=false
-@io.rns.evalauncher:style/Theme_TvHome : reachable=true
-@io.rns.evalauncher:style/TopButton : reachable=false
-    @io.rns.evalauncher:style/TopButtonBase
-@io.rns.evalauncher:style/TopButtonBase : reachable=false
-    @io.rns.evalauncher:drawable/pill_bg
-    @io.rns.evalauncher:drawable/pill_text
-    @io.rns.evalauncher:string/font_medium
-@io.rns.evalauncher:style/TopButtonIcon : reachable=false
-    @io.rns.evalauncher:style/TopButtonBase
-@io.rns.evalauncher:style/Widget_Compat_NotificationActionContainer : reachable=false
-    @io.rns.evalauncher:drawable/notification_action_background
-@io.rns.evalauncher:style/Widget_Compat_NotificationActionText : reachable=false
-    @io.rns.evalauncher:color/androidx_core_secondary_text_default_material_light
-    @io.rns.evalauncher:dimen/notification_action_text_size
-@io.rns.evalauncher:xml/file_paths : reachable=true
-@io.rns.evalauncher:xml/home_key_service : reachable=true
-    @io.rns.evalauncher:string/home_key_description
-@io.rns.evalauncher:xml/input_key_service : reachable=true
-    @io.rns.evalauncher:string/input_key_service_description
-@io.rns.evalauncher:xml/locales_config : reachable=true
-
-The root reachable resources are:
- attr:recyclerViewStyle:2130903061
- dimen:fastscroll_default_thickness:2131099655
- dimen:fastscroll_margin:2131099656
- dimen:fastscroll_minimum_range:2131099657
- drawable:banner:2131165184
- drawable:banner_tv:2131165185
- id:accessibility_action_clickable_span:2131296256
- id:is_pooling_container_tag:2131296347
- id:pooling_container_listener_holder_tag:2131296367
- id:tag_accessibility_actions:2131296392
- id:tag_accessibility_clickable_spans:2131296393
- id:tag_accessibility_heading:2131296394
- id:tag_accessibility_pane_title:2131296395
- id:tag_on_apply_window_listener:2131296396
- id:tag_screen_reader_focusable:2131296399
- id:tag_state_description:2131296400
- id:tag_unhandled_key_listeners:2131296403
- id:tag_window_insets_animation_callback:2131296404
- mipmap:ic_launcher:2131558400
- string:app_name:2131755013
- string:dream_name:2131755046
- string:home_key_name:2131755072
- style:Theme_TvHome:2131820551
- xml:file_paths:2131951616
- xml:home_key_service:2131951617
- xml:input_key_service:2131951618
- xml:locales_config:2131951619
-Unused resources are: 
- anim:app_open_enter:2130771968
- anim:app_open_exit:2130771969
- anim:tile_enter:2130771970
- array:app_banners:2130837504
- array:app_keys:2130837505
- array:app_labels:2130837506
- array:dock_apps:2130837507
- array:hidden_apps:2130837508
- array:icon_tiles:2130837509
- array:input_key_keycodes:2130837510
- array:input_sources:2130837511
- array:launch_actions:2130837512
- array:library_apps:2130837513
- array:library_excluded_apps:2130837514
- array:lunar_branches:2130837515
- array:lunar_stems:2130837516
- array:settings_fallback_components:2130837517
- array:settings_key_keycodes:2130837518
- array:settings_key_scancodes:2130837519
- array:top_bar_apps:2130837520
- bool:advanced_effects:2130968576
- bool:always_show_names:2130968577
- bool:ambient_glow:2130968578
- bool:animations:2130968579
- bool:app_glow:2130968580
- bool:app_library:2130968581
- bool:app_library_selection:2130968582
- bool:back_opens_clock:2130968583
- bool:boot_to_live_tv:2130968584
- bool:cinematic_dots:2130968585
- bool:cinematic_home:2130968586
- bool:cinematic_white_focus:2130968587
- bool:clock_glow:2130968588
- bool:clock_wallpaper:2130968589
- bool:consume_volume_keys:2130968590
- bool:coocaa_sources:2130968591
- bool:date_below_clock:2130968592
- bool:date_single_line:2130968593
- bool:dock_band:2130968594
- bool:dock_band_all:2130968595
- bool:dock_even_padding:2130968596
- bool:dock_glass:2130968597
- bool:dock_row:2130968598
- bool:dock_title:2130968599
- bool:fade_rows:2130968600
- bool:fill_dock:2130968601
- bool:focus_overshoot:2130968602
- bool:gamepad_passthrough:2130968603
- bool:handle_view_inputs:2130968604
- bool:header_white:2130968605
- bool:home_long_press_home:2130968606
- bool:icon_only_buttons:2130968607
- bool:icon_only_inputs:2130968608
- bool:icon_only_vpn:2130968609
- bool:inputs_connected_only:2130968610
- bool:key_filter:2130968611
- bool:launcher_settings_button:2130968612
- bool:library_button:2130968613
- bool:library_ok_opens:2130968614
- bool:lunar_date:2130968615
- bool:module_cards:2130968616
- bool:open_on_start_choice:2130968617
- bool:power_on_home:2130968618
- bool:power_on_home_always:2130968619
- bool:reduced_motion:2130968620
- bool:reorder_button:2130968621
- bool:restore_key_services:2130968622
- bool:rtl_app_grid:2130968623
- bool:rtl_menu_bar:2130968624
- bool:settings_key_panel:2130968625
- bool:shamsi_date:2130968626
- bool:show_greeting:2130968627
- bool:show_home_settings_shortcut:2130968628
- bool:show_inputs_pill:2130968629
- bool:show_library_pill:2130968630
- bool:show_network_pill:2130968631
- bool:show_stats:2130968632
- bool:single_row:2130968633
- bool:tile_menu:2130968634
- bool:top_menu:2130968635
- bool:uniform_tiles:2130968636
- bool:vpn_pill:2130968637
- bool:wallpaper_captions:2130968638
- bool:wallpaper_true_color:2130968639
- bool:wifi_status_color:2130968640
- bool:wifi_status_warnings:2130968641
- color:androidx_core_ripple_material_light:2131034112
- color:androidx_core_secondary_text_default_material_light:2131034113
- color:notification_action_color_filter:2131034114
- color:notification_icon_bg_color:2131034115
- color:pill_icon_no_internet:2131034116
- color:pill_icon_offline:2131034117
- color:pill_icon_online:2131034118
- dimen:compat_button_inset_horizontal_material:2131099648
- dimen:compat_button_inset_vertical_material:2131099649
- dimen:compat_button_padding_horizontal_material:2131099650
- dimen:compat_button_padding_vertical_material:2131099651
- dimen:compat_control_corner_material:2131099652
- dimen:compat_notification_large_icon_max_height:2131099653
- dimen:compat_notification_large_icon_max_width:2131099654
- dimen:item_touch_helper_max_drag_scroll_per_frame:2131099658
- dimen:item_touch_helper_swipe_escape_max_velocity:2131099659
- dimen:item_touch_helper_swipe_escape_velocity:2131099660
- dimen:notification_action_icon_size:2131099661
- dimen:notification_action_text_size:2131099662
- dimen:notification_big_circle_margin:2131099663
- dimen:notification_content_margin_start:2131099664
- dimen:notification_large_icon_height:2131099665
- dimen:notification_large_icon_width:2131099666
- dimen:notification_main_column_padding_top:2131099667
- dimen:notification_media_narrow_margin:2131099668
- dimen:notification_right_icon_size:2131099669
- dimen:notification_right_side_padding_top:2131099670
- dimen:notification_small_icon_background_padding:2131099671
- dimen:notification_small_icon_size_as_large:2131099672
- dimen:notification_subtext_size:2131099673
- dimen:notification_top_pad:2131099674
- dimen:notification_top_pad_large_text:2131099675
- drawable:dialog_rounded_bg:2131165186
- drawable:glass_panel:2131165187
- drawable:halloween_bat:2131165188
- drawable:halloween_ghost:2131165189
- drawable:halloween_pumpkin_dark:2131165190
- drawable:halloween_pumpkin_lit:2131165191
- drawable:ic_apps:2131165192
- drawable:ic_apps_pill:2131165193
- drawable:ic_av:2131165194
- drawable:ic_ethernet:2131165195
- drawable:ic_home_settings:2131165196
- drawable:ic_home_settings_pill:2131165197
- drawable:ic_input:2131165198
- drawable:ic_lock:2131165200
- drawable:ic_lock_open:2131165201
- drawable:ic_picture:2131165202
- drawable:ic_settings:2131165203
- drawable:ic_swap_vert:2131165204
- drawable:ic_wifi:2131165205
- drawable:input_row_bg:2131165206
- drawable:library_check:2131165207
- drawable:notification_action_background:2131165208
- drawable:notification_bg:2131165209
- drawable:notification_bg_low:2131165210
- drawable:notification_bg_low_normal:2131165211
- drawable:notification_bg_low_pressed:2131165212
- drawable:notification_bg_normal:2131165213
- drawable:notification_bg_normal_pressed:2131165214
- drawable:notification_icon_background:2131165215
- drawable:notification_template_icon_bg:2131165216
- drawable:notification_template_icon_low_bg:2131165217
- drawable:notification_tile_bg:2131165218
- drawable:notify_panel_notification_icon_bg:2131165219
- drawable:pill_bg:2131165220
- drawable:pill_text:2131165221
- drawable:pill_text_dim:2131165222
- drawable:pill_text_mid:2131165223
- drawable:race_bar:2131165224
- drawable:settings_card_bg:2131165225
- drawable:settings_choice_bg:2131165226
- drawable:status_dot:2131165227
- drawable:tile_bg:2131165228
- drawable:wallpaper_card_gradient:2131165229
- font:outfit:2131230720
- font:outfit_extralight:2131230721
- font:outfit_light:2131230722
- font:outfit_medium:2131230723
- font:outfit_regular:2131230724
- id:accessibility_custom_action_0:2131296257
- id:accessibility_custom_action_1:2131296258
- id:accessibility_custom_action_10:2131296259
- id:accessibility_custom_action_11:2131296260
- id:accessibility_custom_action_12:2131296261
- id:accessibility_custom_action_13:2131296262
- id:accessibility_custom_action_14:2131296263
- id:accessibility_custom_action_15:2131296264
- id:accessibility_custom_action_16:2131296265
- id:accessibility_custom_action_17:2131296266
- id:accessibility_custom_action_18:2131296267
- id:accessibility_custom_action_19:2131296268
- id:accessibility_custom_action_2:2131296269
- id:accessibility_custom_action_20:2131296270
- id:accessibility_custom_action_21:2131296271
- id:accessibility_custom_action_22:2131296272
- id:accessibility_custom_action_23:2131296273
- id:accessibility_custom_action_24:2131296274
- id:accessibility_custom_action_25:2131296275
- id:accessibility_custom_action_26:2131296276
- id:accessibility_custom_action_27:2131296277
- id:accessibility_custom_action_28:2131296278
- id:accessibility_custom_action_29:2131296279
- id:accessibility_custom_action_3:2131296280
- id:accessibility_custom_action_30:2131296281
- id:accessibility_custom_action_31:2131296282
- id:accessibility_custom_action_4:2131296283
- id:accessibility_custom_action_5:2131296284
- id:accessibility_custom_action_6:2131296285
- id:accessibility_custom_action_7:2131296286
- id:accessibility_custom_action_8:2131296287
- id:accessibility_custom_action_9:2131296288
- id:action_container:2131296289
- id:action_divider:2131296290
- id:action_image:2131296291
- id:action_text:2131296292
- id:actions:2131296293
- id:ambient:2131296294
- id:ampm:2131296295
- id:app:2131296296
- id:async:2131296297
- id:banner:2131296298
- id:blocking:2131296299
- id:body:2131296300
- id:btnInputs:2131296301
- id:btnKeep:2131296302
- id:btnLibrary:2131296303
- id:btnLibraryTop:2131296304
- id:btnReorder:2131296305
- id:btnSettings:2131296306
- id:btnShow:2131296307
- id:btnVpn:2131296308
- id:btnWifi:2131296309
- id:card:2131296310
- id:cardHint:2131296311
- id:cardTitle:2131296312
- id:cardValue:2131296313
- id:categoryCard:2131296314
- id:categoryGrid:2131296315
- id:categoryIcon:2131296316
- id:categoryTitle:2131296317
- id:chronometer:2131296318
- id:clock:2131296319
- id:clockDivider:2131296320
- id:date:2131296321
- id:dialogSubtitle:2131296322
- id:dialogTitle:2131296323
- id:dialog_button:2131296324
- id:digest:2131296325
- id:dot:2131296326
- id:dreamAmPm:2131296327
- id:dreamAmbient:2131296328
- id:dreamClock:2131296329
- id:dreamContent:2131296330
- id:dreamDate:2131296331
- id:forever:2131296332
- id:glass:2131296333
- id:greeting:2131296334
- id:grid:2131296335
- id:hero:2131296336
- id:heroArt:2131296337
- id:heroDots:2131296338
- id:heroMeta:2131296339
- id:heroName:2131296340
- id:heroScrim:2131296341
- id:hint:2131296342
- id:icon:2131296343
- id:icon_group:2131296344
- id:identity:2131296345
- id:info:2131296346
- id:italic:2131296348
- id:item1:2131296349
- id:item2:2131296350
- id:item3:2131296351
- id:item4:2131296352
- id:item_touch_helper_previous_elevation:2131296353
- id:label:2131296354
- id:leftBlock:2131296355
- id:line1:2131296356
- id:line3:2131296357
- id:lunarDate:2131296358
- id:name:2131296359
- id:names:2131296360
- id:normal:2131296361
- id:notification_background:2131296362
- id:notification_main_column:2131296363
- id:notification_main_column_container:2131296364
- id:panel:2131296365
- id:pkg:2131296366
- id:raceBar:2131296368
- id:raceHeadline:2131296369
- id:raceKicker:2131296370
- id:racePager:2131296371
- id:racePanel:2131296372
- id:raceSessions:2131296373
- id:right_icon:2131296374
- id:right_side:2131296375
- id:root:2131296376
- id:rows:2131296377
- id:scrim:2131296378
- id:sectionContent:2131296379
- id:sectionOptionsContainer:2131296380
- id:sectionScrollView:2131296381
- id:sectionSubtitle:2131296382
- id:sectionTitle:2131296383
- id:selectedBadge:2131296384
- id:shamsiDate:2131296385
- id:sky:2131296386
- id:state:2131296387
- id:stats:2131296388
- id:status:2131296389
- id:subGridCard:2131296390
- id:subGridRecyclerView:2131296391
- id:tag_on_receive_content_listener:2131296397
- id:tag_on_receive_content_mime_types:2131296398
- id:tag_transition_group:2131296401
- id:tag_unhandled_key_event_manager:2131296402
- id:text:2131296405
- id:text2:2131296406
- id:time:2131296407
- id:title:2131296408
- id:topButtons:2131296409
- id:view_tree_lifecycle_owner:2131296410
- id:wallpaperCard:2131296411
- id:wallpaperGrid:2131296412
- id:wallpaperName:2131296413
- id:wallpaperPreview:2131296414
- integer:cinematic_art:2131361792
- integer:cinematic_scrim:2131361793
- integer:clock_wallpaper_dim:2131361794
- integer:columns:2131361795
- integer:home_idle_clock_minutes:2131361796
- integer:open_on_start_network_wait:2131361797
- integer:rows_below_dock:2131361798
- integer:sky_intensity:2131361799
- integer:status_bar_notification_info_maxnum:2131361800
- integer:wifi_label_width:2131361801
- layout:activity_launcher_settings:2131427328
- layout:activity_main:2131427329
- layout:activity_quick_settings:2131427330
- layout:custom_dialog:2131427331
- layout:dialog_card_prompt:2131427332
- layout:dialog_settings_grid:2131427333
- layout:dialog_settings_section:2131427334
- layout:dialog_wallpaper_picker:2131427335
- layout:dream_clock:2131427336
- layout:item_app:2131427337
- layout:item_card_row:2131427338
- layout:item_input:2131427339
- layout:item_settings_category_card:2131427340
- layout:item_settings_grid_card:2131427341
- layout:item_wallpaper_card:2131427342
- layout:notification_action:2131427343
- layout:notification_action_tombstone:2131427344
- layout:notification_template_custom_big:2131427345
- layout:notification_template_icon_group:2131427346
- layout:notification_template_part_chronometer:2131427347
- layout:notification_template_part_time:2131427348
- layout:popup_cards:2131427349
- layout:popup_inputs:2131427350
- layout:row_app_library:2131427351
- layout:top_app_button:2131427352
- menu:example_menu:2131492864
- menu:example_menu2:2131492865
- plurals:library_app_count:2131623936
- raw:keep:2131689472
- string:advanced_effects:2131755008
- string:advanced_effects_state:2131755009
- string:advanced_effects_warning:2131755010
- string:animations_state:2131755011
- string:app_library:2131755012
- string:cant_open:2131755014
- string:card_app_name:2131755015
- string:card_keep_hidden:2131755016
- string:card_not_saved:2131755017
- string:card_prompt_body:2131755018
- string:card_prompt_hint:2131755019
- string:card_prompt_identity:2131755020
- string:card_prompt_names:2131755021
- string:card_prompt_relabelled:2131755022
- string:card_prompt_resigned:2131755023
- string:card_prompt_title:2131755024
- string:card_show:2131755025
- string:card_state_hidden:2131755026
- string:card_state_new:2131755027
- string:card_state_new_key:2131755028
- string:card_state_new_label:2131755029
- string:card_state_over_limit:2131755030
- string:card_state_shown:2131755031
- string:choose_input:2131755032
- string:clock_format:2131755033
- string:clock_format_12:2131755034
- string:clock_format_24:2131755035
- string:clock_format_system:2131755036
- string:columns_label:2131755037
- string:connected:2131755038
- string:date_format:2131755039
- string:date_format_home:2131755040
- string:dock_edit:2131755041
- string:dock_edit_hint:2131755042
- string:dock_edit_pick_app:2131755043
- string:dock_edit_pick_place:2131755044
- string:dock_opacity_label:2131755045
- string:enable:2131755047
- string:ethernet:2131755048
- string:festival_diwali_greeting:2131755049
- string:festival_dussehra_greeting:2131755050
- string:festival_halloween_greeting:2131755051
- string:follow_theme:2131755052
- string:follow_theme_hint:2131755053
- string:font_body:2131755054
- string:font_extralight:2131755055
- string:font_light:2131755056
- string:font_medium:2131755057
- string:font_regular:2131755058
- string:game_day:2131755059
- string:game_live:2131755060
- string:github_update_repo:2131755061
- string:glass_style:2131755062
- string:glow_style:2131755063
- string:good_afternoon:2131755064
- string:good_evening:2131755065
- string:good_forenoon:2131755066
- string:good_morning:2131755067
- string:good_night:2131755068
- string:greeting_name:2131755069
- string:greeting_with_name:2131755070
- string:home_settings:2131755073
- string:home_settings_help:2131755074
- string:input_action:2131755075
- string:input_uri_scheme:2131755077
- string:inputs:2131755078
- string:last_opened:2131755079
- string:latitude:2131755080
- string:launcher_settings:2131755081
- string:library_add_home:2131755082
- string:library_app_info:2131755083
- string:library_empty:2131755084
- string:library_hint_add:2131755085
- string:library_hint_open:2131755086
- string:library_on_home:2131755087
- string:library_open:2131755088
- string:library_recent:2131755089
- string:library_remove_shortcut:2131755090
- string:library_save_failed:2131755091
- string:live_tv:2131755092
- string:live_tv_action:2131755093
- string:live_tv_input_id:2131755094
- string:live_tv_package:2131755095
- string:locale:2131755096
- string:longitude:2131755097
- string:lunar_date_format:2131755098
- string:lunar_month_leap:2131755099
- string:lunar_year:2131755100
- string:module_cards:2131755101
- string:more_inputs:2131755102
- string:native_settings:2131755103
- string:no_inputs:2131755104
- string:no_module_cards:2131755105
- string:not_available:2131755106
- string:not_connected:2131755107
- string:off:2131755108
- string:offline:2131755109
- string:on:2131755110
- string:open_on_start_label:2131755111
- string:open_on_start_state:2131755112
- string:power_menu:2131755113
- string:quick_apps:2131755114
- string:quick_apps_hint:2131755115
- string:quick_network:2131755116
- string:quick_picture:2131755117
- string:race_countdown_days:2131755118
- string:race_countdown_hours:2131755119
- string:race_countdown_minutes:2131755120
- string:race_finished:2131755121
- string:race_kicker:2131755122
- string:race_kicker_no_place:2131755123
- string:race_lights_out:2131755124
- string:race_live:2131755125
- string:race_next:2131755126
- string:race_practice_1:2131755127
- string:race_practice_1_short:2131755128
- string:race_practice_2:2131755129
- string:race_practice_2_short:2131755130
- string:race_practice_3:2131755131
- string:race_practice_3_short:2131755132
- string:race_qualifying:2131755133
- string:race_qualifying_short:2131755134
- string:race_race:2131755135
- string:race_race_short:2131755136
- string:race_sprint:2131755137
- string:race_sprint_qualifying:2131755138
- string:race_sprint_qualifying_short:2131755139
- string:race_sprint_short:2131755140
- string:reorder:2131755141
- string:reorder_hint:2131755142
- string:reorder_not_saved:2131755143
- string:rows_below_dock_label:2131755144
- string:settings:2131755145
- string:shamsi_month_aban:2131755146
- string:shamsi_month_azar:2131755147
- string:shamsi_month_bahman:2131755148
- string:shamsi_month_dey:2131755149
- string:shamsi_month_esfand:2131755150
- string:shamsi_month_farvardin:2131755151
- string:shamsi_month_khordad:2131755152
- string:shamsi_month_mehr:2131755153
- string:shamsi_month_mordad:2131755154
- string:shamsi_month_ordibehesht:2131755155
- string:shamsi_month_shahrivar:2131755156
- string:shamsi_month_tir:2131755157
- string:source_panel_action:2131755158
- string:source_panel_extra:2131755159
- string:source_panel_service:2131755160
- string:standby:2131755161
- string:stats_cpu:2131755162
- string:stats_memory:2131755163
- string:stats_storage:2131755164
- string:status_bar_notification_info_overflow:2131755165
- string:stock_home_redirect:2131755166
- string:storage_gb_decimal:2131755167
- string:storage_gb_whole:2131755168
- string:tile_add_to_dock:2131755169
- string:tile_move:2131755170
- string:tile_replace_in_dock:2131755171
- string:tv_settings:2131755172
- string:vpn:2131755173
- string:vpn_app:2131755174
- string:vpn_off:2131755175
- string:wallpaper_applied:2131755176
- string:wallpaper_label:2131755177
- string:wallpaper_moods:2131755178
- string:wallpaper_none:2131755179
- string:wallpaper_state:2131755180
- string:wallpaper_theme_default:2131755181
- string:wifi:2131755182
- style:SettingsColumnChoice:2131820544
- style:SettingsRow:2131820545
- style:TextAppearance_Compat_Notification:2131820546
- style:TextAppearance_Compat_Notification_Info:2131820547
- style:TextAppearance_Compat_Notification_Line2:2131820548
- style:TextAppearance_Compat_Notification_Time:2131820549
- style:TextAppearance_Compat_Notification_Title:2131820550
- style:TopButton:2131820552
- style:TopButtonBase:2131820553
- style:TopButtonIcon:2131820554
- style:Widget_Compat_NotificationActionContainer:2131820555
- style:Widget_Compat_NotificationActionText:2131820556
+anim:app_open_enter:2130771968 reachable from from dex
+anim:app_open_exit:2130771969 reachable from from dex
+anim:tile_enter:2130771970 reachable from from dex
+array:app_banners:2130837504 reachable from from dex
+array:app_keys:2130837505 reachable from from dex
+array:app_labels:2130837506 reachable from from dex
+array:dock_apps:2130837507 reachable from from dex
+array:hidden_apps:2130837508 reachable from from dex
+array:icon_tiles:2130837509 reachable from from dex
+array:input_key_keycodes:2130837510 reachable from from dex
+array:input_sources:2130837511 reachable from from dex
+array:launch_actions:2130837512 reachable from from dex
+array:library_apps:2130837513 reachable from from dex
+array:library_excluded_apps:2130837514 reachable from from dex
+array:lunar_branches:2130837515 reachable from from dex
+array:lunar_stems:2130837516 reachable from from dex
+array:settings_fallback_components:2130837517 reachable from from dex
+array:settings_key_keycodes:2130837518 reachable from from dex
+array:settings_key_scancodes:2130837519 reachable from from dex
+array:top_bar_apps:2130837520 reachable from from dex
+attr:fastScrollEnabled:2130903041 reachable from int[] androidx.recyclerview.R$styleable.RecyclerView
+attr:fastScrollHorizontalThumbDrawable:2130903042 reachable from int[] androidx.recyclerview.R$styleable.RecyclerView
+attr:fastScrollHorizontalTrackDrawable:2130903043 reachable from int[] androidx.recyclerview.R$styleable.RecyclerView
+attr:fastScrollVerticalThumbDrawable:2130903044 reachable from int[] androidx.recyclerview.R$styleable.RecyclerView
+attr:fastScrollVerticalTrackDrawable:2130903045 reachable from int[] androidx.recyclerview.R$styleable.RecyclerView
+attr:layoutManager:2130903058 reachable from int[] androidx.recyclerview.R$styleable.RecyclerView
+attr:recyclerViewStyle:2130903061 reachable from from dex
+attr:reverseLayout:2130903062 reachable from int[] androidx.recyclerview.R$styleable.RecyclerView
+attr:spanCount:2130903064 reachable from int[] androidx.recyclerview.R$styleable.RecyclerView
+attr:stackFromEnd:2130903065 reachable from int[] androidx.recyclerview.R$styleable.RecyclerView
+bool:advanced_effects:2130968576 reachable from from dex
+bool:always_show_names:2130968577 reachable from from dex
+bool:ambient_glow:2130968578 reachable from from dex
+bool:animations:2130968579 reachable from from dex
+bool:app_glow:2130968580 reachable from from dex
+bool:app_library:2130968581 reachable from from dex
+bool:app_library_selection:2130968582 reachable from from dex
+bool:back_opens_clock:2130968583 reachable from from dex
+bool:boot_to_live_tv:2130968584 reachable from from dex
+bool:cinematic_dots:2130968585 reachable from from dex
+bool:cinematic_home:2130968586 reachable from from dex
+bool:cinematic_white_focus:2130968587 reachable from from dex
+bool:clock_glow:2130968588 reachable from from dex
+bool:clock_wallpaper:2130968589 reachable from from dex
+bool:consume_volume_keys:2130968590 reachable from from dex
+bool:coocaa_sources:2130968591 reachable from from dex
+bool:date_below_clock:2130968592 reachable from from dex
+bool:date_single_line:2130968593 reachable from res/layout/activity_main.xml
+bool:dock_band:2130968594 reachable from from dex
+bool:dock_band_all:2130968595 reachable from from dex
+bool:dock_even_padding:2130968596 reachable from from dex
+bool:dock_glass:2130968597 reachable from from dex
+bool:dock_row:2130968598 reachable from from dex
+bool:dock_title:2130968599 reachable from from dex
+bool:fade_rows:2130968600 reachable from from dex
+bool:fill_dock:2130968601 reachable from from dex
+bool:focus_overshoot:2130968602 reachable from from dex
+bool:gamepad_passthrough:2130968603 reachable from from dex
+bool:handle_view_inputs:2130968604 reachable from from dex
+bool:header_white:2130968605 reachable from from dex
+bool:home_long_press_home:2130968606 reachable from from dex
+bool:icon_only_buttons:2130968607 reachable from from dex
+bool:icon_only_inputs:2130968608 reachable from from dex
+bool:icon_only_vpn:2130968609 reachable from from dex
+bool:inputs_connected_only:2130968610 reachable from from dex
+bool:key_filter:2130968611 reachable from from dex
+bool:launcher_settings_button:2130968612 reachable from from dex
+bool:library_button:2130968613 reachable from from dex
+bool:library_ok_opens:2130968614 reachable from from dex
+bool:lunar_date:2130968615 reachable from from dex
+bool:module_cards:2130968616 reachable from from dex
+bool:open_on_start_choice:2130968617 reachable from from dex
+bool:power_on_home:2130968618 reachable from from dex
+bool:power_on_home_always:2130968619 reachable from from dex
+bool:reduced_motion:2130968620 reachable from from dex
+bool:reorder_button:2130968621 reachable from from dex
+bool:restore_key_services:2130968622 reachable from from dex
+bool:rtl_app_grid:2130968623 reachable from from dex
+bool:rtl_menu_bar:2130968624 reachable from from dex
+bool:settings_key_panel:2130968625 reachable from from dex
+bool:shamsi_date:2130968626 reachable from from dex
+bool:show_greeting:2130968627 reachable from from dex
+bool:show_home_settings_shortcut:2130968628 reachable from from dex
+bool:show_inputs_pill:2130968629 reachable from from dex
+bool:show_library_pill:2130968630 reachable from from dex
+bool:show_network_pill:2130968631 reachable from from dex
+bool:show_stats:2130968632 reachable from from dex
+bool:single_row:2130968633 reachable from from dex
+bool:tile_menu:2130968634 reachable from from dex
+bool:top_menu:2130968635 reachable from from dex
+bool:uniform_tiles:2130968636 reachable from from dex
+bool:vpn_pill:2130968637 reachable from from dex
+bool:wallpaper_captions:2130968638 reachable from from dex
+bool:wallpaper_true_color:2130968639 reachable from from dex
+bool:wifi_status_color:2130968640 reachable from from dex
+bool:wifi_status_warnings:2130968641 reachable from from dex
+color:pill_icon_no_internet:2131034116 reachable from from dex
+color:pill_icon_offline:2131034117 reachable from from dex
+color:pill_icon_online:2131034118 reachable from from dex
+dimen:fastscroll_default_thickness:2131099655 reachable from from dex
+dimen:fastscroll_margin:2131099656 reachable from from dex
+dimen:fastscroll_minimum_range:2131099657 reachable from from dex
+drawable:banner:2131165184 reachable from AndroidManifest.xml
+drawable:banner_tv:2131165185 reachable from keep xml file
+drawable:dialog_rounded_bg:2131165186 reachable from res/layout/dialog_settings_grid.xml
+drawable:glass_panel:2131165187 reachable from res/layout/activity_quick_settings.xml
+drawable:halloween_bat:2131165188 reachable from from dex
+drawable:halloween_ghost:2131165189 reachable from from dex
+drawable:halloween_pumpkin_dark:2131165190 reachable from from dex
+drawable:halloween_pumpkin_lit:2131165191 reachable from from dex
+drawable:ic_apps:2131165192 reachable from int io.rns.evalauncher.R$drawable.ic_apps
+drawable:ic_apps_pill:2131165193 reachable from res/layout/activity_main.xml
+drawable:ic_av:2131165194 reachable from from dex
+drawable:ic_ethernet:2131165195 reachable from from dex
+drawable:ic_home_settings:2131165196 reachable from from dex
+drawable:ic_home_settings_pill:2131165197 reachable from from dex
+drawable:ic_input:2131165198 reachable from res/layout-iw/activity_main.xml
+drawable:ic_livetv:2131165199 reachable from res/drawable/banner_tv.xml
+drawable:ic_lock:2131165200 reachable from from dex
+drawable:ic_lock_open:2131165201 reachable from from dex
+drawable:ic_picture:2131165202 reachable from from dex
+drawable:ic_settings:2131165203 reachable from int io.rns.evalauncher.R$drawable.ic_settings
+drawable:ic_swap_vert:2131165204 reachable from int io.rns.evalauncher.R$drawable.ic_swap_vert
+drawable:ic_wifi:2131165205 reachable from int io.rns.evalauncher.R$drawable.ic_wifi
+drawable:input_row_bg:2131165206 reachable from res/layout/item_input.xml
+drawable:library_check:2131165207 reachable from from dex
+drawable:pill_bg:2131165220 reachable from style:TopButtonBase:2131820553
+drawable:pill_text:2131165221 reachable from style:TopButtonBase:2131820553
+drawable:pill_text_dim:2131165222 reachable from res/layout/item_input.xml
+drawable:pill_text_mid:2131165223 reachable from res/layout/item_card_row.xml
+drawable:race_bar:2131165224 reachable from res/layout-iw/activity_main.xml
+drawable:settings_choice_bg:2131165226 reachable from res/layout/item_settings_category_card.xml
+drawable:status_dot:2131165227 reachable from res/layout/item_input.xml
+drawable:tile_bg:2131165228 reachable from res/layout/item_app.xml
+drawable:wallpaper_card_gradient:2131165229 reachable from res/layout/item_wallpaper_card.xml
+font:outfit:2131230720 reachable from res/font/outfit_extralight.xml
+font:outfit_extralight:2131230721 reachable from string:font_extralight:2131755055
+font:outfit_light:2131230722 reachable from string:font_light:2131755056
+font:outfit_medium:2131230723 reachable from string:font_medium:2131755057
+font:outfit_regular:2131230724 reachable from string:font_regular:2131755058
+id:accessibility_action_clickable_span:2131296256 reachable from from dex
+id:accessibility_custom_action_0:2131296257 reachable from int androidx.core.R$id.accessibility_custom_action_0
+id:accessibility_custom_action_1:2131296258 reachable from int androidx.core.R$id.accessibility_custom_action_1
+id:accessibility_custom_action_10:2131296259 reachable from int androidx.core.R$id.accessibility_custom_action_10
+id:accessibility_custom_action_11:2131296260 reachable from int androidx.core.R$id.accessibility_custom_action_11
+id:accessibility_custom_action_12:2131296261 reachable from int androidx.core.R$id.accessibility_custom_action_12
+id:accessibility_custom_action_13:2131296262 reachable from int androidx.core.R$id.accessibility_custom_action_13
+id:accessibility_custom_action_14:2131296263 reachable from int androidx.core.R$id.accessibility_custom_action_14
+id:accessibility_custom_action_15:2131296264 reachable from int androidx.core.R$id.accessibility_custom_action_15
+id:accessibility_custom_action_16:2131296265 reachable from int androidx.core.R$id.accessibility_custom_action_16
+id:accessibility_custom_action_17:2131296266 reachable from int androidx.core.R$id.accessibility_custom_action_17
+id:accessibility_custom_action_18:2131296267 reachable from int androidx.core.R$id.accessibility_custom_action_18
+id:accessibility_custom_action_19:2131296268 reachable from int androidx.core.R$id.accessibility_custom_action_19
+id:accessibility_custom_action_2:2131296269 reachable from int androidx.core.R$id.accessibility_custom_action_2
+id:accessibility_custom_action_20:2131296270 reachable from int androidx.core.R$id.accessibility_custom_action_20
+id:accessibility_custom_action_21:2131296271 reachable from int androidx.core.R$id.accessibility_custom_action_21
+id:accessibility_custom_action_22:2131296272 reachable from int androidx.core.R$id.accessibility_custom_action_22
+id:accessibility_custom_action_23:2131296273 reachable from int androidx.core.R$id.accessibility_custom_action_23
+id:accessibility_custom_action_24:2131296274 reachable from int androidx.core.R$id.accessibility_custom_action_24
+id:accessibility_custom_action_25:2131296275 reachable from int androidx.core.R$id.accessibility_custom_action_25
+id:accessibility_custom_action_26:2131296276 reachable from int androidx.core.R$id.accessibility_custom_action_26
+id:accessibility_custom_action_27:2131296277 reachable from int androidx.core.R$id.accessibility_custom_action_27
+id:accessibility_custom_action_28:2131296278 reachable from int androidx.core.R$id.accessibility_custom_action_28
+id:accessibility_custom_action_29:2131296279 reachable from int androidx.core.R$id.accessibility_custom_action_29
+id:accessibility_custom_action_3:2131296280 reachable from int androidx.core.R$id.accessibility_custom_action_3
+id:accessibility_custom_action_30:2131296281 reachable from int androidx.core.R$id.accessibility_custom_action_30
+id:accessibility_custom_action_31:2131296282 reachable from int androidx.core.R$id.accessibility_custom_action_31
+id:accessibility_custom_action_4:2131296283 reachable from int androidx.core.R$id.accessibility_custom_action_4
+id:accessibility_custom_action_5:2131296284 reachable from int androidx.core.R$id.accessibility_custom_action_5
+id:accessibility_custom_action_6:2131296285 reachable from int androidx.core.R$id.accessibility_custom_action_6
+id:accessibility_custom_action_7:2131296286 reachable from int androidx.core.R$id.accessibility_custom_action_7
+id:accessibility_custom_action_8:2131296287 reachable from int androidx.core.R$id.accessibility_custom_action_8
+id:accessibility_custom_action_9:2131296288 reachable from int androidx.core.R$id.accessibility_custom_action_9
+id:ambient:2131296294 reachable from res/layout-iw/activity_main.xml
+id:ampm:2131296295 reachable from res/layout-iw/activity_main.xml
+id:app:2131296296 reachable from res/layout/item_card_row.xml
+id:banner:2131296298 reachable from res/layout/item_app.xml
+id:body:2131296300 reachable from res/layout/dialog_card_prompt.xml
+id:btnInputs:2131296301 reachable from res/layout-iw/activity_main.xml
+id:btnKeep:2131296302 reachable from from dex
+id:btnLibrary:2131296303 reachable from from dex
+id:btnLibraryTop:2131296304 reachable from res/layout-iw/activity_main.xml
+id:btnReorder:2131296305 reachable from res/layout-iw/activity_main.xml
+id:btnSettings:2131296306 reachable from res/layout-iw/activity_main.xml
+id:btnShow:2131296307 reachable from from dex
+id:btnVpn:2131296308 reachable from res/layout-iw/activity_main.xml
+id:btnWifi:2131296309 reachable from res/layout-iw/activity_main.xml
+id:card:2131296310 reachable from from dex
+id:cardHint:2131296311 reachable from res/layout/item_settings_grid_card.xml
+id:cardTitle:2131296312 reachable from res/layout/item_settings_grid_card.xml
+id:cardValue:2131296313 reachable from res/layout/item_settings_grid_card.xml
+id:categoryCard:2131296314 reachable from res/layout/item_settings_category_card.xml
+id:categoryGrid:2131296315 reachable from res/layout/activity_launcher_settings.xml
+id:categoryIcon:2131296316 reachable from res/layout/item_settings_category_card.xml
+id:categoryTitle:2131296317 reachable from res/layout/item_settings_category_card.xml
+id:clock:2131296319 reachable from from dex
+id:clockDivider:2131296320 reachable from from dex
+id:date:2131296321 reachable from from dex
+id:dialogSubtitle:2131296322 reachable from res/layout/dialog_settings_grid.xml
+id:dialogTitle:2131296323 reachable from res/layout/dialog_settings_grid.xml
+id:digest:2131296325 reachable from res/layout/item_card_row.xml
+id:dot:2131296326 reachable from res/layout/item_input.xml
+id:dreamAmPm:2131296327 reachable from res/layout-iw/dream_clock.xml
+id:dreamAmbient:2131296328 reachable from res/layout/dream_clock.xml
+id:dreamClock:2131296329 reachable from res/layout-iw/dream_clock.xml
+id:dreamContent:2131296330 reachable from res/layout/dream_clock.xml
+id:dreamDate:2131296331 reachable from res/layout-iw/dream_clock.xml
+id:glass:2131296333 reachable from res/layout-iw/activity_main.xml
+id:greeting:2131296334 reachable from res/layout-iw/activity_main.xml
+id:grid:2131296335 reachable from res/layout-iw/activity_main.xml
+id:hero:2131296336 reachable from res/layout-iw/activity_main.xml
+id:heroArt:2131296337 reachable from res/layout-iw/activity_main.xml
+id:heroDots:2131296338 reachable from res/layout-iw/activity_main.xml
+id:heroMeta:2131296339 reachable from res/layout-iw/activity_main.xml
+id:heroName:2131296340 reachable from res/layout-iw/activity_main.xml
+id:heroScrim:2131296341 reachable from res/layout-iw/activity_main.xml
+id:hint:2131296342 reachable from res/layout/dialog_card_prompt.xml
+id:icon:2131296343 reachable from res/layout/item_input.xml
+id:identity:2131296345 reachable from res/layout/dialog_card_prompt.xml
+id:is_pooling_container_tag:2131296347 reachable from from dex
+id:label:2131296354 reachable from res/layout/item_app.xml
+id:leftBlock:2131296355 reachable from from dex
+id:lunarDate:2131296358 reachable from res/layout-iw/activity_main.xml
+id:name:2131296359 reachable from res/layout/item_app.xml
+id:names:2131296360 reachable from res/layout/dialog_card_prompt.xml
+id:panel:2131296365 reachable from res/layout/activity_quick_settings.xml
+id:pkg:2131296366 reachable from res/layout/item_card_row.xml
+id:pooling_container_listener_holder_tag:2131296367 reachable from from dex
+id:raceBar:2131296368 reachable from res/layout-iw/activity_main.xml
+id:raceHeadline:2131296369 reachable from res/layout-iw/activity_main.xml
+id:raceKicker:2131296370 reachable from res/layout-iw/activity_main.xml
+id:racePager:2131296371 reachable from res/layout-iw/activity_main.xml
+id:racePanel:2131296372 reachable from res/layout-iw/activity_main.xml
+id:raceSessions:2131296373 reachable from res/layout-iw/activity_main.xml
+id:root:2131296376 reachable from res/layout-iw/activity_main.xml
+id:rows:2131296377 reachable from res/layout/activity_quick_settings.xml
+id:scrim:2131296378 reachable from res/layout/activity_quick_settings.xml
+id:selectedBadge:2131296384 reachable from res/layout/item_wallpaper_card.xml
+id:shamsiDate:2131296385 reachable from res/layout-iw/activity_main.xml
+id:sky:2131296386 reachable from res/layout-iw/activity_main.xml
+id:state:2131296387 reachable from res/layout/item_card_row.xml
+id:stats:2131296388 reachable from res/layout-iw/activity_main.xml
+id:status:2131296389 reachable from res/layout/item_input.xml
+id:subGridCard:2131296390 reachable from res/layout/item_settings_grid_card.xml
+id:subGridRecyclerView:2131296391 reachable from res/layout/dialog_settings_grid.xml
+id:tag_accessibility_actions:2131296392 reachable from from dex
+id:tag_accessibility_clickable_spans:2131296393 reachable from from dex
+id:tag_accessibility_heading:2131296394 reachable from from dex
+id:tag_accessibility_pane_title:2131296395 reachable from from dex
+id:tag_on_apply_window_listener:2131296396 reachable from from dex
+id:tag_screen_reader_focusable:2131296399 reachable from from dex
+id:tag_state_description:2131296400 reachable from from dex
+id:tag_unhandled_key_listeners:2131296403 reachable from from dex
+id:tag_window_insets_animation_callback:2131296404 reachable from from dex
+id:title:2131296408 reachable from res/layout/item_input.xml
+id:topButtons:2131296409 reachable from from dex
+id:wallpaperCard:2131296411 reachable from res/layout/item_wallpaper_card.xml
+id:wallpaperGrid:2131296412 reachable from res/layout/dialog_wallpaper_picker.xml
+id:wallpaperName:2131296413 reachable from res/layout/item_wallpaper_card.xml
+id:wallpaperPreview:2131296414 reachable from res/layout/item_wallpaper_card.xml
+integer:cinematic_art:2131361792 reachable from from dex
+integer:cinematic_scrim:2131361793 reachable from from dex
+integer:clock_wallpaper_dim:2131361794 reachable from from dex
+integer:columns:2131361795 reachable from from dex
+integer:home_idle_clock_minutes:2131361796 reachable from from dex
+integer:open_on_start_network_wait:2131361797 reachable from from dex
+integer:rows_below_dock:2131361798 reachable from from dex
+integer:sky_intensity:2131361799 reachable from from dex
+integer:wifi_label_width:2131361801 reachable from from dex
+layout:activity_launcher_settings:2131427328 reachable from from dex
+layout:activity_main:2131427329 reachable from from dex
+layout:activity_quick_settings:2131427330 reachable from from dex
+layout:dialog_card_prompt:2131427332 reachable from from dex
+layout:dialog_settings_grid:2131427333 reachable from from dex
+layout:dialog_wallpaper_picker:2131427335 reachable from from dex
+layout:dream_clock:2131427336 reachable from from dex
+layout:item_app:2131427337 reachable from from dex
+layout:item_card_row:2131427338 reachable from from dex
+layout:item_input:2131427339 reachable from from dex
+layout:item_settings_category_card:2131427340 reachable from from dex
+layout:item_settings_grid_card:2131427341 reachable from from dex
+layout:item_wallpaper_card:2131427342 reachable from from dex
+layout:popup_cards:2131427349 reachable from from dex
+layout:popup_inputs:2131427350 reachable from from dex
+layout:row_app_library:2131427351 reachable from from dex
+layout:top_app_button:2131427352 reachable from from dex
+mipmap:ic_launcher:2131558400 reachable from AndroidManifest.xml
+plurals:library_app_count:2131623936 reachable from from dex
+string:advanced_effects:2131755008 reachable from from dex
+string:advanced_effects_warning:2131755010 reachable from from dex
+string:app_library:2131755012 reachable from res/layout-iw/activity_main.xml
+string:app_name:2131755013 reachable from AndroidManifest.xml
+string:cant_open:2131755014 reachable from from dex
+string:card_app_name:2131755015 reachable from from dex
+string:card_keep_hidden:2131755016 reachable from res/layout/dialog_card_prompt.xml
+string:card_not_saved:2131755017 reachable from from dex
+string:card_prompt_body:2131755018 reachable from from dex
+string:card_prompt_hint:2131755019 reachable from res/layout/dialog_card_prompt.xml
+string:card_prompt_identity:2131755020 reachable from from dex
+string:card_prompt_names:2131755021 reachable from from dex
+string:card_prompt_relabelled:2131755022 reachable from from dex
+string:card_prompt_resigned:2131755023 reachable from from dex
+string:card_prompt_title:2131755024 reachable from from dex
+string:card_show:2131755025 reachable from res/layout/dialog_card_prompt.xml
+string:card_state_hidden:2131755026 reachable from from dex
+string:card_state_new:2131755027 reachable from from dex
+string:card_state_new_key:2131755028 reachable from from dex
+string:card_state_new_label:2131755029 reachable from from dex
+string:card_state_over_limit:2131755030 reachable from from dex
+string:card_state_shown:2131755031 reachable from from dex
+string:choose_input:2131755032 reachable from from dex
+string:clock_format:2131755033 reachable from from dex
+string:clock_format_12:2131755034 reachable from from dex
+string:clock_format_24:2131755035 reachable from from dex
+string:clock_format_system:2131755036 reachable from from dex
+string:columns_label:2131755037 reachable from from dex
+string:connected:2131755038 reachable from from dex
+string:date_format:2131755039 reachable from res/layout-iw/activity_main.xml
+string:date_format_home:2131755040 reachable from res/layout/activity_main.xml
+string:dock_edit:2131755041 reachable from from dex
+string:dock_edit_hint:2131755042 reachable from from dex
+string:dock_edit_pick_app:2131755043 reachable from from dex
+string:dock_edit_pick_place:2131755044 reachable from from dex
+string:dock_opacity_label:2131755045 reachable from from dex
+string:dream_name:2131755046 reachable from AndroidManifest.xml
+string:enable:2131755047 reachable from from dex
+string:ethernet:2131755048 reachable from from dex
+string:festival_diwali_greeting:2131755049 reachable from from dex
+string:festival_dussehra_greeting:2131755050 reachable from from dex
+string:festival_halloween_greeting:2131755051 reachable from from dex
+string:font_body:2131755054 reachable from res/layout/item_input.xml
+string:font_extralight:2131755055 reachable from res/layout/dream_clock.xml
+string:font_light:2131755056 reachable from res/layout-iw/activity_main.xml
+string:font_medium:2131755057 reachable from res/layout-iw/activity_main.xml
+string:font_regular:2131755058 reachable from res/layout-iw/activity_main.xml
+string:game_day:2131755059 reachable from from dex
+string:game_live:2131755060 reachable from from dex
+string:github_update_repo:2131755061 reachable from from dex
+string:glass_style:2131755062 reachable from from dex
+string:glow_style:2131755063 reachable from from dex
+string:good_afternoon:2131755064 reachable from from dex
+string:good_evening:2131755065 reachable from from dex
+string:good_forenoon:2131755066 reachable from from dex
+string:good_morning:2131755067 reachable from from dex
+string:good_night:2131755068 reachable from from dex
+string:greeting_name:2131755069 reachable from from dex
+string:greeting_with_name:2131755070 reachable from from dex
+string:home_key_description:2131755071 reachable from res/xml/home_key_service.xml
+string:home_key_name:2131755072 reachable from AndroidManifest.xml
+string:home_settings:2131755073 reachable from from dex
+string:home_settings_help:2131755074 reachable from from dex
+string:input_action:2131755075 reachable from from dex
+string:input_key_service_description:2131755076 reachable from res/xml/input_key_service.xml
+string:input_uri_scheme:2131755077 reachable from from dex
+string:inputs:2131755078 reachable from res/layout-iw/activity_main.xml
+string:last_opened:2131755079 reachable from from dex
+string:latitude:2131755080 reachable from from dex
+string:launcher_settings:2131755081 reachable from from dex
+string:library_add_home:2131755082 reachable from from dex
+string:library_app_info:2131755083 reachable from from dex
+string:library_empty:2131755084 reachable from from dex
+string:library_hint_add:2131755085 reachable from from dex
+string:library_hint_open:2131755086 reachable from from dex
+string:library_on_home:2131755087 reachable from from dex
+string:library_open:2131755088 reachable from from dex
+string:library_recent:2131755089 reachable from from dex
+string:library_remove_shortcut:2131755090 reachable from from dex
+string:library_save_failed:2131755091 reachable from from dex
+string:live_tv:2131755092 reachable from from dex
+string:live_tv_action:2131755093 reachable from from dex
+string:live_tv_input_id:2131755094 reachable from from dex
+string:live_tv_package:2131755095 reachable from from dex
+string:locale:2131755096 reachable from from dex
+string:longitude:2131755097 reachable from from dex
+string:lunar_date_format:2131755098 reachable from from dex
+string:lunar_month_leap:2131755099 reachable from from dex
+string:lunar_year:2131755100 reachable from from dex
+string:module_cards:2131755101 reachable from from dex
+string:more_inputs:2131755102 reachable from from dex
+string:native_settings:2131755103 reachable from from dex
+string:no_inputs:2131755104 reachable from from dex
+string:no_module_cards:2131755105 reachable from from dex
+string:not_available:2131755106 reachable from from dex
+string:not_connected:2131755107 reachable from from dex
+string:off:2131755108 reachable from from dex
+string:offline:2131755109 reachable from from dex
+string:on:2131755110 reachable from from dex
+string:open_on_start_label:2131755111 reachable from from dex
+string:power_menu:2131755113 reachable from from dex
+string:quick_apps:2131755114 reachable from from dex
+string:quick_apps_hint:2131755115 reachable from from dex
+string:quick_network:2131755116 reachable from from dex
+string:quick_picture:2131755117 reachable from from dex
+string:race_countdown_days:2131755118 reachable from from dex
+string:race_countdown_hours:2131755119 reachable from from dex
+string:race_countdown_minutes:2131755120 reachable from from dex
+string:race_finished:2131755121 reachable from from dex
+string:race_kicker:2131755122 reachable from from dex
+string:race_kicker_no_place:2131755123 reachable from from dex
+string:race_lights_out:2131755124 reachable from from dex
+string:race_live:2131755125 reachable from from dex
+string:race_next:2131755126 reachable from from dex
+string:race_practice_1:2131755127 reachable from from dex
+string:race_practice_1_short:2131755128 reachable from from dex
+string:race_practice_2:2131755129 reachable from from dex
+string:race_practice_2_short:2131755130 reachable from from dex
+string:race_practice_3:2131755131 reachable from from dex
+string:race_practice_3_short:2131755132 reachable from from dex
+string:race_qualifying:2131755133 reachable from from dex
+string:race_qualifying_short:2131755134 reachable from from dex
+string:race_race:2131755135 reachable from from dex
+string:race_race_short:2131755136 reachable from from dex
+string:race_sprint:2131755137 reachable from from dex
+string:race_sprint_qualifying:2131755138 reachable from from dex
+string:race_sprint_qualifying_short:2131755139 reachable from from dex
+string:race_sprint_short:2131755140 reachable from from dex
+string:reorder:2131755141 reachable from int io.rns.evalauncher.R$string.reorder
+string:reorder_hint:2131755142 reachable from from dex
+string:reorder_not_saved:2131755143 reachable from from dex
+string:rows_below_dock_label:2131755144 reachable from from dex
+string:settings:2131755145 reachable from res/layout-iw/activity_main.xml
+string:shamsi_month_aban:2131755146 reachable from from dex
+string:shamsi_month_azar:2131755147 reachable from from dex
+string:shamsi_month_bahman:2131755148 reachable from from dex
+string:shamsi_month_dey:2131755149 reachable from from dex
+string:shamsi_month_esfand:2131755150 reachable from from dex
+string:shamsi_month_farvardin:2131755151 reachable from from dex
+string:shamsi_month_khordad:2131755152 reachable from from dex
+string:shamsi_month_mehr:2131755153 reachable from from dex
+string:shamsi_month_mordad:2131755154 reachable from from dex
+string:shamsi_month_ordibehesht:2131755155 reachable from from dex
+string:shamsi_month_shahrivar:2131755156 reachable from from dex
+string:shamsi_month_tir:2131755157 reachable from from dex
+string:source_panel_action:2131755158 reachable from from dex
+string:source_panel_extra:2131755159 reachable from from dex
+string:source_panel_service:2131755160 reachable from from dex
+string:stats_cpu:2131755162 reachable from from dex
+string:stats_memory:2131755163 reachable from from dex
+string:stats_storage:2131755164 reachable from from dex
+string:stock_home_redirect:2131755166 reachable from from dex
+string:storage_gb_decimal:2131755167 reachable from from dex
+string:storage_gb_whole:2131755168 reachable from from dex
+string:tile_add_to_dock:2131755169 reachable from from dex
+string:tile_move:2131755170 reachable from from dex
+string:tile_replace_in_dock:2131755171 reachable from from dex
+string:tv_settings:2131755172 reachable from from dex
+string:vpn:2131755173 reachable from res/layout-iw/activity_main.xml
+string:vpn_app:2131755174 reachable from from dex
+string:vpn_off:2131755175 reachable from from dex
+string:wallpaper_applied:2131755176 reachable from from dex
+string:wallpaper_label:2131755177 reachable from res/layout/dialog_wallpaper_picker.xml
+string:wallpaper_moods:2131755178 reachable from from dex
+string:wallpaper_none:2131755179 reachable from from dex
+string:wallpaper_theme_default:2131755181 reachable from from dex
+string:wifi:2131755182 reachable from res/layout-iw/activity_main.xml
+style:Theme_TvHome:2131820551 reachable from AndroidManifest.xml
+style:TopButton:2131820552 reachable from res/layout-iw/activity_main.xml
+style:TopButtonBase:2131820553 reachable from style:TopButton:2131820552
+style:TopButtonIcon:2131820554 reachable from res/layout-iw/activity_main.xml
+xml:file_paths:2131951616 reachable from AndroidManifest.xml
+xml:home_key_service:2131951617 reachable from AndroidManifest.xml
+xml:input_key_service:2131951618 reachable from AndroidManifest.xml
+xml:locales_config:2131951619 reachable from AndroidManifest.xml
+attr:alpha:2130903040 is not reachable.
+attr:font:2130903046 is not reachable.
+attr:fontProviderAuthority:2130903047 is not reachable.
+attr:fontProviderCerts:2130903048 is not reachable.
+attr:fontProviderFetchStrategy:2130903049 is not reachable.
+attr:fontProviderFetchTimeout:2130903050 is not reachable.
+attr:fontProviderPackage:2130903051 is not reachable.
+attr:fontProviderQuery:2130903052 is not reachable.
+attr:fontProviderSystemFontFamily:2130903053 is not reachable.
+attr:fontStyle:2130903054 is not reachable.
+attr:fontVariationSettings:2130903055 is not reachable.
+attr:fontWeight:2130903056 is not reachable.
+attr:lStar:2130903057 is not reachable.
+attr:nestedScrollViewStyle:2130903059 is not reachable.
+attr:queryPatterns:2130903060 is not reachable.
+attr:shortcutMatchRequired:2130903063 is not reachable.
+attr:ttcIndex:2130903066 is not reachable.
+color:androidx_core_ripple_material_light:2131034112 is not reachable.
+color:androidx_core_secondary_text_default_material_light:2131034113 is not reachable.
+color:notification_action_color_filter:2131034114 is not reachable.
+color:notification_icon_bg_color:2131034115 is not reachable.
+dimen:compat_button_inset_horizontal_material:2131099648 is not reachable.
+dimen:compat_button_inset_vertical_material:2131099649 is not reachable.
+dimen:compat_button_padding_horizontal_material:2131099650 is not reachable.
+dimen:compat_button_padding_vertical_material:2131099651 is not reachable.
+dimen:compat_control_corner_material:2131099652 is not reachable.
+dimen:compat_notification_large_icon_max_height:2131099653 is not reachable.
+dimen:compat_notification_large_icon_max_width:2131099654 is not reachable.
+dimen:item_touch_helper_max_drag_scroll_per_frame:2131099658 is not reachable.
+dimen:item_touch_helper_swipe_escape_max_velocity:2131099659 is not reachable.
+dimen:item_touch_helper_swipe_escape_velocity:2131099660 is not reachable.
+dimen:notification_action_icon_size:2131099661 is not reachable.
+dimen:notification_action_text_size:2131099662 is not reachable.
+dimen:notification_big_circle_margin:2131099663 is not reachable.
+dimen:notification_content_margin_start:2131099664 is not reachable.
+dimen:notification_large_icon_height:2131099665 is not reachable.
+dimen:notification_large_icon_width:2131099666 is not reachable.
+dimen:notification_main_column_padding_top:2131099667 is not reachable.
+dimen:notification_media_narrow_margin:2131099668 is not reachable.
+dimen:notification_right_icon_size:2131099669 is not reachable.
+dimen:notification_right_side_padding_top:2131099670 is not reachable.
+dimen:notification_small_icon_background_padding:2131099671 is not reachable.
+dimen:notification_small_icon_size_as_large:2131099672 is not reachable.
+dimen:notification_subtext_size:2131099673 is not reachable.
+dimen:notification_top_pad:2131099674 is not reachable.
+dimen:notification_top_pad_large_text:2131099675 is not reachable.
+drawable:notification_action_background:2131165208 is not reachable.
+drawable:notification_bg:2131165209 is not reachable.
+drawable:notification_bg_low:2131165210 is not reachable.
+drawable:notification_bg_low_normal:2131165211 is not reachable.
+drawable:notification_bg_low_pressed:2131165212 is not reachable.
+drawable:notification_bg_normal:2131165213 is not reachable.
+drawable:notification_bg_normal_pressed:2131165214 is not reachable.
+drawable:notification_icon_background:2131165215 is not reachable.
+drawable:notification_template_icon_bg:2131165216 is not reachable.
+drawable:notification_template_icon_low_bg:2131165217 is not reachable.
+drawable:notification_tile_bg:2131165218 is not reachable.
+drawable:notify_panel_notification_icon_bg:2131165219 is not reachable.
+drawable:settings_card_bg:2131165225 is not reachable.
+integer:status_bar_notification_info_maxnum:2131361800 is not reachable.
+layout:custom_dialog:2131427331 is not reachable.
+layout:dialog_settings_section:2131427334 is not reachable.
+layout:notification_action:2131427343 is not reachable.
+layout:notification_action_tombstone:2131427344 is not reachable.
+layout:notification_template_custom_big:2131427345 is not reachable.
+layout:notification_template_icon_group:2131427346 is not reachable.
+layout:notification_template_part_chronometer:2131427347 is not reachable.
+layout:notification_template_part_time:2131427348 is not reachable.
+menu:example_menu:2131492864 is not reachable.
+menu:example_menu2:2131492865 is not reachable.
+raw:keep:2131689472 is not reachable.
+string:advanced_effects_state:2131755009 is not reachable.
+string:animations_state:2131755011 is not reachable.
+string:follow_theme:2131755052 is not reachable.
+string:follow_theme_hint:2131755053 is not reachable.
+string:open_on_start_state:2131755112 is not reachable.
+string:standby:2131755161 is not reachable.
+string:status_bar_notification_info_overflow:2131755165 is not reachable.
+string:wallpaper_state:2131755180 is not reachable.
+style:SettingsColumnChoice:2131820544 is not reachable.
+style:SettingsRow:2131820545 is not reachable.
+style:TextAppearance_Compat_Notification:2131820546 is not reachable.
+style:TextAppearance_Compat_Notification_Info:2131820547 is not reachable.
+style:TextAppearance_Compat_Notification_Line2:2131820548 is not reachable.
+style:TextAppearance_Compat_Notification_Time:2131820549 is not reachable.
+style:TextAppearance_Compat_Notification_Title:2131820550 is not reachable.
+style:Widget_Compat_NotificationActionContainer:2131820555 is not reachable.
+style:Widget_Compat_NotificationActionText:2131820556 is not reachable.
+styleable:Capability:2131886080 is not reachable.
+styleable:ColorStateListItem:2131886081 is not reachable.
+styleable:FontFamily:2131886082 is not reachable.
+styleable:FontFamilyFont:2131886083 is not reachable.
+styleable:GradientColor:2131886084 is not reachable.
+styleable:GradientColorItem:2131886085 is not reachable.
+styleable:RecyclerView:2131886086 is not reachable.

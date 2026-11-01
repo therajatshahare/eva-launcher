@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.rns.evalauncher.SunTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-11-01T05:30:38.108Z" hostname="DESKTOP-EOQDD3G" time="0.021">
+  <properties/>
+  <testcase name="noSunriseOrSunsetAtThePoles" classname="io.rns.evalauncher.SunTest" time="0.015"/>
+  <testcase name="theReferenceDayMapsOntoItself" classname="io.rns.evalauncher.SunTest" time="0.001"/>
+  <testcase name="skyGlowsLandOnTheRealSunriseAndSunset" classname="io.rns.evalauncher.SunTest" time="0.0"/>
+  <testcase name="vilniusWinterDayIsShortAndLate" classname="io.rns.evalauncher.SunTest" time="0.002"/>
+  <testcase name="nonsenseSunTimesFallBackToTheReferenceDay" classname="io.rns.evalauncher.SunTest" time="0.0"/>
+  <testcase name="vilniusSummerDayIsLongInLocalSummerTime" classname="io.rns.evalauncher.SunTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.rns.evalauncher.HomeKeyServiceTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2026-11-01T05:30:36.497Z" hostname="DESKTOP-EOQDD3G" time="0.03">
+  <properties/>
+  <testcase name="otherAppsAndInputsAreLeftAlone" classname="io.rns.evalauncher.HomeKeyServiceTest" time="0.023"/>
+  <testcase name="aTapIsAShortPress" classname="io.rns.evalauncher.HomeKeyServiceTest" time="0.0"/>
+  <testcase name="aRebindInTheSameBootDoesNot" classname="io.rns.evalauncher.HomeKeyServiceTest" time="0.001"/>
+  <testcase name="alwaysGoesHomeAfterScreenOnUntilAKey" classname="io.rns.evalauncher.HomeKeyServiceTest" time="0.0"/>
+  <testcase name="firstBindOfANewBootProbes" classname="io.rns.evalauncher.HomeKeyServiceTest" time="0.0"/>
+  <testcase name="offMeansNothing" classname="io.rns.evalauncher.HomeKeyServiceTest" time="0.001"/>
+  <testcase name="afterAKeyOrTheWindowLiveTvStays" classname="io.rns.evalauncher.HomeKeyServiceTest" time="0.001"/>
+  <testcase name="noBootCountMeansNoProbe" classname="io.rns.evalauncher.HomeKeyServiceTest" time="0.0"/>
+  <testcase name="holdingPastTheTimeoutIsALongPress" classname="io.rns.evalauncher.HomeKeyServiceTest" time="0.0"/>
+  <testcase name="liveTvBeforeAnyKeyGoesHome" classname="io.rns.evalauncher.HomeKeyServiceTest" time="0.001"/>
+  <testcase name="aBindLongAfterBootDoesNot" classname="io.rns.evalauncher.HomeKeyServiceTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

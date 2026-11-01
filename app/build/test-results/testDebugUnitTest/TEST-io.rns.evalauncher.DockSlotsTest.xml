@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.rns.evalauncher.DockSlotsTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2026-11-01T05:30:36.278Z" hostname="DESKTOP-EOQDD3G" time="0.027">
+  <properties/>
+  <testcase name="dockRowIsTheFirstColumnsTilesOrEveryTileOfASingleRow" classname="io.rns.evalauncher.DockSlotsTest" time="0.002"/>
+  <testcase name="aFullDockNeedsNoEmptySlot" classname="io.rns.evalauncher.DockSlotsTest" time="0.003"/>
+  <testcase name="anAppCarriedIntoTheDockStaysThere" classname="io.rns.evalauncher.DockSlotsTest" time="0.001"/>
+  <testcase name="threeDockAppsInFourColumnsLeaveOneSlotEmpty" classname="io.rns.evalauncher.DockSlotsTest" time="0.0"/>
+  <testcase name="fillDockKeepsTheOldBehaviour" classname="io.rns.evalauncher.DockSlotsTest" time="0.003"/>
+  <testcase name="noInstalledDockAppFillsTheFirstRow" classname="io.rns.evalauncher.DockSlotsTest" time="0.001"/>
+  <testcase name="fewerTilesThanDockSlotsStillPutTheDockFirst" classname="io.rns.evalauncher.DockSlotsTest" time="0.001"/>
+  <testcase name="focusOnAnEmptySlotGoesToTheLastDockApp" classname="io.rns.evalauncher.DockSlotsTest" time="0.001"/>
+  <testcase name="aSlidInGridAppAheadOfADockAppMovesBehindTheDock" classname="io.rns.evalauncher.DockSlotsTest" time="0.001"/>
+  <testcase name="aDockAppPushedPastTheDockLeavesIt" classname="io.rns.evalauncher.DockSlotsTest" time="0.004"/>
+  <testcase name="aGridAppThatOnlySlidIntoAFreeSlotGoesBackToTheGrid" classname="io.rns.evalauncher.DockSlotsTest" time="0.001"/>
+  <testcase name="nothingAfterTheDockNeedsNoEmptySlot" classname="io.rns.evalauncher.DockSlotsTest" time="0.001"/>
+  <testcase name="focusOnATileStaysPut" classname="io.rns.evalauncher.DockSlotsTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

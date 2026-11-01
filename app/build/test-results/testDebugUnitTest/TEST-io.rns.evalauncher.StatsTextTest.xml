@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.rns.evalauncher.StatsTextTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-11-01T05:30:38.080Z" hostname="DESKTOP-EOQDD3G" time="0.023">
+  <properties/>
+  <testcase name="preservesUpstreamSpacedUsedTotalAsOneRun" classname="io.rns.evalauncher.StatsTextTest" time="0.012"/>
+  <testcase name="isolatesUnitsAndPercentAsWholeMeasurements" classname="io.rns.evalauncher.StatsTextTest" time="0.002"/>
+  <testcase name="preservesEnglishExactly" classname="io.rns.evalauncher.StatsTextTest" time="0.001"/>
+  <testcase name="supportsAbsentCpuAndLargeValues" classname="io.rns.evalauncher.StatsTextTest" time="0.001"/>
+  <testcase name="keepsCapacityRatiosInOneDirectionRun" classname="io.rns.evalauncher.StatsTextTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

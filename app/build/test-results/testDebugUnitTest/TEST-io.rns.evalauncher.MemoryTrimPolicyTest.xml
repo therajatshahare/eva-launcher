@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.rns.evalauncher.MemoryTrimPolicyTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-11-01T05:30:37.892Z" hostname="DESKTOP-EOQDD3G" time="0.007">
+  <properties/>
+  <testcase name="ordinaryBackgroundTransitionKeepsWarmResources" classname="io.rns.evalauncher.MemoryTrimPolicyTest" time="0.004"/>
+  <testcase name="backgroundPressureReleasesResourcesOnlyWhenHomeIsStopped" classname="io.rns.evalauncher.MemoryTrimPolicyTest" time="0.001"/>
+  <testcase name="lowMemorySignalsReleaseResourcesWhenHomeIsStopped" classname="io.rns.evalauncher.MemoryTrimPolicyTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

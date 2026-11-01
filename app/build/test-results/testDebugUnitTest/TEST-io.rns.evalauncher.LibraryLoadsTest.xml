@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.rns.evalauncher.LibraryLoadsTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-11-01T05:30:36.723Z" hostname="DESKTOP-EOQDD3G" time="0.011">
+  <properties/>
+  <testcase name="aRefreshDuringTheOpeningStillRevealsOnce" classname="io.rns.evalauncher.LibraryLoadsTest" time="0.002"/>
+  <testcase name="aRefreshOnItsOwnNeverReveals" classname="io.rns.evalauncher.LibraryLoadsTest" time="0.001"/>
+  <testcase name="refreshesAfterTheRevealDoNotRevealAgain" classname="io.rns.evalauncher.LibraryLoadsTest" time="0.001"/>
+  <testcase name="anOpeningAfterARefreshRevealsWithItsOwnLoad" classname="io.rns.evalauncher.LibraryLoadsTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

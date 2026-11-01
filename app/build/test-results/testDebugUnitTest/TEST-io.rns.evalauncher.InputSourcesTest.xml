@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.rns.evalauncher.InputSourcesTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-11-01T05:30:36.563Z" hostname="DESKTOP-EOQDD3G" time="0.011">
+  <properties/>
+  <testcase name="anUnknownOrMalformedInputIsNotMapped" classname="io.rns.evalauncher.InputSourcesTest" time="0.003"/>
+  <testcase name="trimsMappingWhitespace" classname="io.rns.evalauncher.InputSourcesTest" time="0.001"/>
+  <testcase name="aDashHidesAnInput" classname="io.rns.evalauncher.InputSourcesTest" time="0.0"/>
+  <testcase name="mapsTheLastInputComponent" classname="io.rns.evalauncher.InputSourcesTest" time="0.004"/>
+  <testcase name="anActivityIsAComponentAndAnActionIsNot" classname="io.rns.evalauncher.InputSourcesTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
