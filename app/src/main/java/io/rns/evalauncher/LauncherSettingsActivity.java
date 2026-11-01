@@ -9,6 +9,7 @@ import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.Settings;
@@ -96,6 +97,46 @@ public final class LauncherSettingsActivity extends Activity {
         RecyclerView grid = findViewById(R.id.categoryGrid);
         grid.setLayoutManager(new GridLayoutManager(this, 3));
         grid.setAdapter(new CategoryAdapter(this, categories, this::openCategorySection));
+
+        View chai = findViewById(R.id.chaiButton);
+        if (chai != null) {
+            final float density = getResources().getDisplayMetrics().density;
+            chai.setOnFocusChangeListener((v, focused) -> {
+                v.animate()
+                        .scaleX(focused ? 1.05f : 1.00f)
+                        .scaleY(focused ? 1.05f : 1.00f)
+                        .translationZ(focused ? 8f * density : 0f)
+                        .setDuration(focused ? 180 : 140)
+                        .setInterpolator(focused ? new DecelerateInterpolator(1.5f) : new AccelerateInterpolator())
+                        .start();
+            });
+            chai.setOnClickListener(v -> showChaiDialog());
+        }
+    }
+
+    /** The UPI QR for "Buy me a chai". The code is drawn without smoothing so its modules stay sharp. */
+    private void showChaiDialog() {
+        View view = getLayoutInflater().inflate(R.layout.dialog_chai, null);
+        ImageView qr = view.findViewById(R.id.chaiQr);
+        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.upi_qr);
+        if (bitmap != null) {
+            BitmapDrawable drawable = new BitmapDrawable(getResources(), bitmap);
+            drawable.setFilterBitmap(false);
+            qr.setImageDrawable(drawable);
+        }
+
+        AlertDialog dialog = new AlertDialog.Builder(this)
+                .setView(view)
+                .setPositiveButton(android.R.string.ok, null)
+                .create();
+        if (dialog.getWindow() != null) {
+            dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
+        }
+        dialog.show();
+        if (dialog.getWindow() != null) {
+            float density = getResources().getDisplayMetrics().density;
+            dialog.getWindow().setLayout((int) (440 * density), ViewGroup.LayoutParams.WRAP_CONTENT);
+        }
     }
 
     static final class SubGridItem {

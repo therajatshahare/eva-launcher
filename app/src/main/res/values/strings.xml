@@ -158,5 +158,12 @@
     <string name="clock_format_system">System</string>
     <string name="clock_format_12">12-hour</string>
     <string name="clock_format_24">24-hour</string>
+    <!-- Launcher settings footer and donation dialog. -->
+    <string name="made_in_india" translatable="false">Made with love in India</string>
+    <string name="buy_chai" translatable="false">Buy me a chai</string>
+    <string name="chai_title" translatable="false">Buy me a chai</string>
+    <string name="chai_subtitle" translatable="false">Scan with any UPI app: Google Pay, PhonePe, Paytm, BHIM</string>
+    <string name="chai_upi_id" translatable="false">UPI ID: therajatshahare@apl</string>
+    <string name="chai_thanks" translatable="false">Thank you for supporting EVA Launcher</string>
     <string name="github_update_repo" translatable="false">therajatshahare/eva-launcher</string>
 </resources>

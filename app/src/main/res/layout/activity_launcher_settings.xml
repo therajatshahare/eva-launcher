@@ -32,10 +32,48 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/categoryGrid"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:layout_marginTop="24dp"
         android:clipChildren="false"
         android:clipToPadding="false"
         android:scrollbars="none" />
+
+    <!-- Footer: credit on the left, donation pill on the right. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/made_in_india"
+            android:textColor="#FF94A3B8"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/chaiButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chai_pill_bg"
+            android:clickable="true"
+            android:drawablePadding="8dp"
+            android:drawableStart="@drawable/ic_chai"
+            android:drawableTint="#FF4ADE80"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingEnd="22dp"
+            android:paddingStart="18dp"
+            android:paddingTop="10dp"
+            android:text="@string/buy_chai"
+            android:textColor="#FFFFFFFF"
+            android:textSize="15sp"
+            android:fontFamily="@string/font_medium" />
+    </LinearLayout>
 
 </LinearLayout>
