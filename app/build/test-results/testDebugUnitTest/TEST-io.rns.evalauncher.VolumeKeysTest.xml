@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="io.rns.evalauncher.VolumeKeysTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-11-01T06:04:26.338Z" hostname="DESKTOP-EOQDD3G" time="0.004">
-  <properties/>
-  <testcase name="otherKeysPassThrough" classname="io.rns.evalauncher.VolumeKeysTest" time="0.002"/>
-  <testcase name="onlyTheFirstDownAndTheUpChangeThePress" classname="io.rns.evalauncher.VolumeKeysTest" time="0.001"/>
-  <testcase name="volumeUpAndDownAreHandled" classname="io.rns.evalauncher.VolumeKeysTest" time="0.001"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

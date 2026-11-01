@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="io.rns.evalauncher.DockCornersTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-11-01T06:04:24.583Z" hostname="DESKTOP-EOQDD3G" time="0.008">
-  <properties/>
-  <testcase name="evenPaddingIsTheGapBetweenTilesUnlessTheEdgeIsTighter" classname="io.rns.evalauncher.DockCornersTest" time="0.006"/>
-  <testcase name="evenPaddingStaysPositiveAndBelowTheCellFromFourToSevenColumns" classname="io.rns.evalauncher.DockCornersTest" time="0.001"/>
-  <testcase name="bandRadiusIsTileRadiusPlusPadding" classname="io.rns.evalauncher.DockCornersTest" time="0.001"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

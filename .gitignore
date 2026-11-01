@@ -1,0 +1,23 @@
+# Gradle build outputs & caches
+.gradle/
+**/build/
+build/
+app/build/
+
+# IDE files
+.idea/
+*.iml
+.navigation/
+captures/
+.externalNativeBuild/
+.cxx/
+local.properties
+
+# Log files & OS files
+*.log
+.DS_Store
+Thumbs.db
+
+# Android Studio temporary files
+*.iws
+*.ipr

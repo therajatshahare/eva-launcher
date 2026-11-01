@@ -15,5 +15,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "tvhome"
+rootProject.name = "evalauncher"
 include ':app'

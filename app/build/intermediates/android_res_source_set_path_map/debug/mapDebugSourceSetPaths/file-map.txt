@@ -1,8 +1,0 @@
-io.rns.evalauncher.app-pngs-0 D:\Desktop\github\eva-launcher-main\app\build\generated\res\pngs\debug
-io.rns.evalauncher.app-updated_navigation_xml-1 D:\Desktop\github\eva-launcher-main\app\build\generated\updated_navigation_xml\debug
-io.rns.evalauncher.app-packageDebugResources-2 D:\Desktop\github\eva-launcher-main\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-io.rns.evalauncher.app-packageDebugResources-3 D:\Desktop\github\eva-launcher-main\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-io.rns.evalauncher.app-debug-4 D:\Desktop\github\eva-launcher-main\app\build\intermediates\merged_res\debug\mergeDebugResources
-io.rns.evalauncher.app-debug-5 D:\Desktop\github\eva-launcher-main\app\src\debug\res
-io.rns.evalauncher.app-main-6 D:\Desktop\github\eva-launcher-main\app\src\main\res
-gradleHome-0 C:\Users\RAJAT SHAHARE\.gradle
