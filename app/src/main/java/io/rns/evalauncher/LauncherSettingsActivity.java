@@ -400,6 +400,7 @@ public final class LauncherSettingsActivity extends Activity {
         @Override
         public void onBindViewHolder(SubGridViewHolder holder, int position) {
             SubGridItem item = items.get(position);
+            holder.card.setClipToOutline(true);
             holder.title.setText(item.title);
             holder.value.setText(item.value);
             holder.hint.setText(item.hint);
@@ -466,6 +467,7 @@ public final class LauncherSettingsActivity extends Activity {
         @Override
         public void onBindViewHolder(CategoryViewHolder holder, int position) {
             CategoryItem item = items.get(position);
+            holder.card.setClipToOutline(true);
             holder.title.setText(item.title);
             holder.icon.setImageResource(item.iconRes);
 
@@ -607,11 +609,13 @@ public final class LauncherSettingsActivity extends Activity {
         @Override
         public void onBindViewHolder(WallpaperViewHolder holder, int position) {
             WallpaperItem item = items.get(position);
+            holder.card.setClipToOutline(true);
             holder.name.setText(item.label);
 
             boolean isCurrent = (item.isThemeDefault && currentChoice == null)
                     || (!item.isThemeDefault && item.key != null && item.key.equals(currentChoice));
             holder.selectedBadge.setVisibility(isCurrent ? View.VISIBLE : View.GONE);
+            holder.card.setSelected(isCurrent);
 
             if (item.file != null && item.file.isFile()) {
                 new Thread(() -> {

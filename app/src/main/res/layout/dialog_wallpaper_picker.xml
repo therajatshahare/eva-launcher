@@ -29,8 +29,9 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/wallpaperGrid"
         android:layout_width="match_parent"
-        android:layout_height="340dp"
-        android:layout_marginTop="20dp"
+        android:layout_height="360dp"
+        android:layout_marginTop="16dp"
+        android:padding="4dp"
         android:clipChildren="false"
         android:clipToPadding="false"
         android:scrollbars="vertical" />
