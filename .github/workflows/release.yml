@@ -2,6 +2,8 @@ name: Build and Release TV Launcher APK
 
 on:
   push:
+    branches:
+      - main
     tags:
       - 'v*'
 
