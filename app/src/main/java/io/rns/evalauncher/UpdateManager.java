@@ -41,7 +41,7 @@ public final class UpdateManager {
 
         new Thread(() -> {
             try {
-                String currentVersionName = "2.4";
+                String currentVersionName = "2.5";
                 try {
                     PackageInfo pInfo = activity.getPackageManager().getPackageInfo(activity.getPackageName(), 0);
                     currentVersionName = pInfo.versionName;
@@ -50,7 +50,7 @@ public final class UpdateManager {
                 URL url = new URL("https://api.github.com/repos/" + targetRepo + "/releases/latest");
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                 conn.setRequestMethod("GET");
-                conn.setRequestProperty("User-Agent", "Android:io.rns.evalauncher:v1.4");
+                conn.setRequestProperty("User-Agent", "Android:io.rns.evalauncher:v2.5");
                 conn.setConnectTimeout(8000);
                 conn.setReadTimeout(8000);
 
@@ -93,18 +93,51 @@ public final class UpdateManager {
                 String finalTag = latestTag;
                 String finalCurrentVer = currentVersionName;
 
+                boolean newer = isNewerVersion(finalTag, finalCurrentVer);
+
                 activity.runOnUiThread(() -> {
-                    new AlertDialog.Builder(activity)
-                            .setTitle("Launcher Update")
-                            .setMessage("Version " + finalTag + " is available! (Current: " + finalCurrentVer + ")\n\nDownload and install now?")
-                            .setPositiveButton("Update Now", (d, w) -> downloadAndInstall(activity, finalApkUrl, callback))
-                            .setNegativeButton("Later", null)
-                            .show();
+                    if (newer) {
+                        new AlertDialog.Builder(activity)
+                                .setTitle("Update Available")
+                                .setMessage("New Version v" + finalTag + " is available! (Current: v" + finalCurrentVer + ")\n\nDownload and install now?")
+                                .setPositiveButton("Update Now", (d, w) -> downloadAndInstall(activity, finalApkUrl, callback))
+                                .setNegativeButton("Later", null)
+                                .show();
+                    } else if (manualCheck) {
+                        new AlertDialog.Builder(activity)
+                                .setTitle("Up to Date")
+                                .setMessage("You are using the latest version of EVA TV Launcher (v" + finalCurrentVer + ").")
+                                .setPositiveButton("OK", null)
+                                .show();
+                        callback.onStatus("You are using the latest version.");
+                    }
                 });
             } catch (Exception e) {
-                if (manualCheck) activity.runOnUiThread(() -> callback.onStatus("Error: " + e.getMessage()));
+                if (manualCheck) activity.runOnUiThread(() -> callback.onStatus("Error checking updates: " + e.getMessage()));
             }
         }).start();
+    }
+
+    public static boolean isNewerVersion(String latest, String current) {
+        if (latest == null || current == null) return false;
+        String[] lParts = latest.replaceAll("[^0-9.]", "").split("\\.");
+        String[] cParts = current.replaceAll("[^0-9.]", "").split("\\.");
+        int length = Math.max(lParts.length, cParts.length);
+        for (int i = 0; i < length; i++) {
+            int lVal = i < lParts.length && !lParts[i].isEmpty() ? parsePart(lParts[i]) : 0;
+            int cVal = i < cParts.length && !cParts[i].isEmpty() ? parsePart(cParts[i]) : 0;
+            if (lVal > cVal) return true;
+            if (lVal < cVal) return false;
+        }
+        return false;
+    }
+
+    private static int parsePart(String part) {
+        try {
+            return Integer.parseInt(part);
+        } catch (Exception e) {
+            return 0;
+        }
     }
 
     private static void downloadAndInstall(Activity activity, String apkUrl, StatusCallback callback) {

@@ -176,7 +176,11 @@ public final class LauncherSettingsActivity extends Activity {
 
             case CAT_UPDATES:
                 subtitle.setText("Check for new launcher releases and auto-launch");
-                items.add(new SubGridItem(ITEM_CHECK_UPDATE, "Check for Updates", "v2.3 Release Check", "Check latest launcher version"));
+                String currentVersionName = "2.5";
+                try {
+                    currentVersionName = getPackageManager().getPackageInfo(getPackageName(), 0).versionName;
+                } catch (Exception ignored) {}
+                items.add(new SubGridItem(ITEM_CHECK_UPDATE, "Check for Updates", "Check Latest Release", "Installed version: v" + currentVersionName));
                 if (config.openOnStartChoice) {
                     items.add(new SubGridItem(ITEM_OPEN_START, getString(R.string.open_on_start_label), openOnStartLabel(), "App on boot"));
                 }
