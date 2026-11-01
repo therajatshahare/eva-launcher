@@ -21,3 +21,9 @@ Thumbs.db
 # Android Studio temporary files
 *.iws
 *.ipr
+
+# Keystore / signing files
+*.jks
+*.keystore
+keystore.properties
+

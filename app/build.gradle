@@ -16,10 +16,14 @@ android {
 
     signingConfigs {
         release {
-            storeFile file('release.jks')
-            storePassword 'android'
-            keyAlias 'eva_key'
-            keyPassword 'android'
+            def keystorePath = System.getenv("KEYSTORE_FILE") ?: "release.jks"
+            def ksFile = file(keystorePath)
+            if (ksFile.exists()) {
+                storeFile ksFile
+                storePassword System.getenv("RELEASE_STORE_PASSWORD") ?: "android"
+                keyAlias System.getenv("RELEASE_KEY_ALIAS") ?: "eva_key"
+                keyPassword System.getenv("RELEASE_KEY_PASSWORD") ?: "android"
+            }
         }
     }
 
@@ -29,7 +33,9 @@ android {
             minifyEnabled true
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.release
+            if (signingConfigs.release.storeFile != null) {
+                signingConfig signingConfigs.release
+            }
         }
     }
 
