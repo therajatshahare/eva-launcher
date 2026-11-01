@@ -127,8 +127,23 @@ public final class LauncherSettingsActivity extends Activity {
 
         AlertDialog dialog = new AlertDialog.Builder(this)
                 .setView(view)
-                .setPositiveButton(android.R.string.ok, null)
                 .create();
+
+        TextView doneButton = view.findViewById(R.id.chaiDoneButton);
+        if (doneButton != null) {
+            final float density = getResources().getDisplayMetrics().density;
+            doneButton.setOnFocusChangeListener((v, focused) -> {
+                v.animate()
+                        .scaleX(focused ? 1.05f : 1.00f)
+                        .scaleY(focused ? 1.05f : 1.00f)
+                        .translationZ(focused ? 8f * density : 0f)
+                        .setDuration(focused ? 180 : 140)
+                        .setInterpolator(focused ? new DecelerateInterpolator(1.5f) : new AccelerateInterpolator())
+                        .start();
+            });
+            doneButton.setOnClickListener(v -> dialog.dismiss());
+        }
+
         if (dialog.getWindow() != null) {
             dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
         }
@@ -136,6 +151,9 @@ public final class LauncherSettingsActivity extends Activity {
         if (dialog.getWindow() != null) {
             float density = getResources().getDisplayMetrics().density;
             dialog.getWindow().setLayout((int) (440 * density), ViewGroup.LayoutParams.WRAP_CONTENT);
+        }
+        if (doneButton != null) {
+            doneButton.requestFocus();
         }
     }
 

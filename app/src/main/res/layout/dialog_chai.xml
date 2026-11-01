@@ -52,4 +52,23 @@
         android:textColor="#FF94A3B8"
         android:textSize="13sp" />
 
+    <!-- Done / Close Button inside the custom card -->
+    <TextView
+        android:id="@+id/chaiDoneButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/chai_pill_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:paddingStart="28dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="28dp"
+        android:paddingBottom="10dp"
+        android:text="@android:string/ok"
+        android:textColor="#FFFFFFFF"
+        android:textSize="15sp"
+        android:fontFamily="@string/font_medium" />
+
 </LinearLayout>
