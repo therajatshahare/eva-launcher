@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="io.rns.evalauncher.OpenOnStartTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-11-01T05:30:37.916Z" hostname="DESKTOP-EOQDD3G" time="0.007">
+<testsuite name="io.rns.evalauncher.OpenOnStartTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-11-01T06:04:26.033Z" hostname="DESKTOP-EOQDD3G" time="0.007">
   <properties/>
   <testcase name="unknownBootCountStaysHome" classname="io.rns.evalauncher.OpenOnStartTest" time="0.002"/>
-  <testcase name="offStaysHome" classname="io.rns.evalauncher.OpenOnStartTest" time="0.001"/>
-  <testcase name="onlineTheAppOpensAtOnce" classname="io.rns.evalauncher.OpenOnStartTest" time="0.0"/>
+  <testcase name="offStaysHome" classname="io.rns.evalauncher.OpenOnStartTest" time="0.0"/>
+  <testcase name="onlineTheAppOpensAtOnce" classname="io.rns.evalauncher.OpenOnStartTest" time="0.001"/>
   <testcase name="offlineTheAppWaitsUntilTheEndOfTheWait" classname="io.rns.evalauncher.OpenOnStartTest" time="0.001"/>
-  <testcase name="firstHomeOfANewBootOpensTheApp" classname="io.rns.evalauncher.OpenOnStartTest" time="0.001"/>
+  <testcase name="firstHomeOfANewBootOpensTheApp" classname="io.rns.evalauncher.OpenOnStartTest" time="0.0"/>
   <testcase name="laterHomeOfTheSameBootStaysHome" classname="io.rns.evalauncher.OpenOnStartTest" time="0.001"/>
   <testcase name="theLauncherItselfIsNeverOpened" classname="io.rns.evalauncher.OpenOnStartTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>

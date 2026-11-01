@@ -176,7 +176,7 @@ public final class LauncherSettingsActivity extends Activity {
 
             case CAT_UPDATES:
                 subtitle.setText("Check for new launcher releases and auto-launch");
-                items.add(new SubGridItem(ITEM_CHECK_UPDATE, "Check for Updates", "v2.0 Release Check", "Check latest launcher version"));
+                items.add(new SubGridItem(ITEM_CHECK_UPDATE, "Check for Updates", "v2.3 Release Check", "Check latest launcher version"));
                 if (config.openOnStartChoice) {
                     items.add(new SubGridItem(ITEM_OPEN_START, getString(R.string.open_on_start_label), openOnStartLabel(), "App on boot"));
                 }
@@ -208,8 +208,8 @@ public final class LauncherSettingsActivity extends Activity {
             dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
         }
 
-        SubGridAdapter adapter = new SubGridAdapter(this, items, item -> {
-            handleSubGridClick(item, dialog);
+        SubGridAdapter adapter = new SubGridAdapter(this, items, (item, holder) -> {
+            handleSubGridClick(item, holder, dialog);
         });
 
         gridView.setAdapter(adapter);
@@ -222,13 +222,14 @@ public final class LauncherSettingsActivity extends Activity {
         }
     }
 
-    private void handleSubGridClick(SubGridItem item, AlertDialog dialog) {
+    private void handleSubGridClick(SubGridItem item, SubGridViewHolder holder, AlertDialog dialog) {
         switch (item.id) {
             case ITEM_COLUMNS:
                 columns = columns >= 7 ? 4 : columns + 1;
                 choices.edit().putInt("columns", columns).apply();
                 changed();
                 item.value = "‹ " + columns + " ›";
+                if (holder != null) holder.value.setText(item.value);
                 break;
 
             case ITEM_ROWS:
@@ -236,6 +237,7 @@ public final class LauncherSettingsActivity extends Activity {
                 choices.edit().putInt(Config.ROWS_BELOW_DOCK_KEY, rowsBelowDock).apply();
                 changed();
                 item.value = "‹ " + rowsBelowDock + " ›";
+                if (holder != null) holder.value.setText(item.value);
                 break;
 
             case ITEM_DOCK:
@@ -244,6 +246,7 @@ public final class LauncherSettingsActivity extends Activity {
                 choices.edit().putInt(Config.DOCK_OPACITY_KEY, dockOpacity).apply();
                 changed();
                 item.value = "‹ " + dockOpacity + "% ›";
+                if (holder != null) holder.value.setText(item.value);
                 break;
 
             case ITEM_CLOCK_FORMAT:
@@ -252,6 +255,7 @@ public final class LauncherSettingsActivity extends Activity {
                 choices.edit().putString(Config.CLOCK_FORMAT_KEY, clockFormat).apply();
                 changed();
                 item.value = "‹ " + clockFormatLabel(clockFormat) + " ›";
+                if (holder != null) holder.value.setText(item.value);
                 break;
 
             case ITEM_ANIMATIONS:
@@ -261,12 +265,14 @@ public final class LauncherSettingsActivity extends Activity {
                         .putBoolean("advanced_effects", advancedEffects).apply();
                 changed();
                 item.value = animations ? getString(R.string.on) : getString(R.string.off);
+                if (holder != null) holder.value.setText(item.value);
                 break;
 
             case ITEM_ADVANCED:
                 if (advancedEffects) {
                     setAdvanced(false);
                     item.value = getString(R.string.off);
+                    if (holder != null) holder.value.setText(item.value);
                 } else {
                     new AlertDialog.Builder(this)
                             .setTitle(R.string.advanced_effects)
@@ -274,6 +280,7 @@ public final class LauncherSettingsActivity extends Activity {
                             .setPositiveButton(R.string.enable, (d, w) -> {
                                 setAdvanced(true);
                                 item.value = getString(R.string.on);
+                                if (holder != null) holder.value.setText(item.value);
                             })
                             .setNegativeButton(android.R.string.cancel, null)
                             .show();
@@ -371,7 +378,7 @@ public final class LauncherSettingsActivity extends Activity {
         private final OnSubGridClickListener listener;
 
         interface OnSubGridClickListener {
-            void onClick(SubGridItem item);
+            void onClick(SubGridItem item, SubGridViewHolder holder);
         }
 
         SubGridAdapter(Activity activity, List<SubGridItem> items, OnSubGridClickListener listener) {
@@ -407,10 +414,7 @@ public final class LauncherSettingsActivity extends Activity {
                 if (focused) v.bringToFront();
             });
 
-            holder.card.setOnClickListener(v -> {
-                listener.onClick(item);
-                notifyItemChanged(position);
-            });
+            holder.card.setOnClickListener(v -> listener.onClick(item, holder));
         }
 
         @Override

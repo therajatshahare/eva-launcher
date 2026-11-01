@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="io.rns.evalauncher.CardsTest" tests="37" skipped="0" failures="0" errors="0" timestamp="2026-11-01T05:30:35.997Z" hostname="DESKTOP-EOQDD3G" time="0.192">
+<testsuite name="io.rns.evalauncher.CardsTest" tests="37" skipped="0" failures="0" errors="0" timestamp="2026-11-01T06:04:24.426Z" hostname="DESKTOP-EOQDD3G" time="0.145">
   <properties/>
-  <testcase name="decodeRecordIsExact" classname="io.rns.evalauncher.CardsTest" time="0.005"/>
-  <testcase name="labelRejectsLengthAndCharacters" classname="io.rns.evalauncher.CardsTest" time="0.002"/>
+  <testcase name="decodeRecordIsExact" classname="io.rns.evalauncher.CardsTest" time="0.004"/>
+  <testcase name="labelRejectsLengthAndCharacters" classname="io.rns.evalauncher.CardsTest" time="0.001"/>
   <testcase name="packageNames" classname="io.rns.evalauncher.CardsTest" time="0.001"/>
-  <testcase name="emptyStoreRoundTrip" classname="io.rns.evalauncher.CardsTest" time="0.003"/>
-  <testcase name="parserRejectsWrongRootMissingSpecAndReferences" classname="io.rns.evalauncher.CardsTest" time="0.023"/>
-  <testcase name="decodeRejectsAnythingElse" classname="io.rns.evalauncher.CardsTest" time="0.004"/>
+  <testcase name="emptyStoreRoundTrip" classname="io.rns.evalauncher.CardsTest" time="0.001"/>
+  <testcase name="parserRejectsWrongRootMissingSpecAndReferences" classname="io.rns.evalauncher.CardsTest" time="0.017"/>
+  <testcase name="decodeRejectsAnythingElse" classname="io.rns.evalauncher.CardsTest" time="0.003"/>
   <testcase name="translatedUiNamesCountToo" classname="io.rns.evalauncher.CardsTest" time="0.001"/>
-  <testcase name="isFoldedIsStrict" classname="io.rns.evalauncher.CardsTest" time="0.006"/>
-  <testcase name="quarantineMovesTheBadFileAside" classname="io.rns.evalauncher.CardsTest" time="0.023"/>
+  <testcase name="isFoldedIsStrict" classname="io.rns.evalauncher.CardsTest" time="0.001"/>
+  <testcase name="quarantineMovesTheBadFileAside" classname="io.rns.evalauncher.CardsTest" time="0.017"/>
   <testcase name="foldDropsCaseSpacesAndPunctuation" classname="io.rns.evalauncher.CardsTest" time="0.001"/>
-  <testcase name="labelTakenByAnotherPackageOnly" classname="io.rns.evalauncher.CardsTest" time="0.002"/>
-  <testcase name="parserRejectsTwoRootElements" classname="io.rns.evalauncher.CardsTest" time="0.002"/>
-  <testcase name="cleanLabelStripsFormattingAndBounds" classname="io.rns.evalauncher.CardsTest" time="0.004"/>
-  <testcase name="parsesTheCompiledForms" classname="io.rns.evalauncher.CardsTest" time="0.002"/>
+  <testcase name="labelTakenByAnotherPackageOnly" classname="io.rns.evalauncher.CardsTest" time="0.0"/>
+  <testcase name="parserRejectsTwoRootElements" classname="io.rns.evalauncher.CardsTest" time="0.003"/>
+  <testcase name="cleanLabelStripsFormattingAndBounds" classname="io.rns.evalauncher.CardsTest" time="0.002"/>
+  <testcase name="parsesTheCompiledForms" classname="io.rns.evalauncher.CardsTest" time="0.001"/>
   <testcase name="firstPendingIsByPackage" classname="io.rns.evalauncher.CardsTest" time="0.002"/>
   <testcase name="accentAcceptsWrittenAndCompiledForms" classname="io.rns.evalauncher.CardsTest" time="0.001"/>
-  <testcase name="resolveClashesKeepsTheOwnersDecision" classname="io.rns.evalauncher.CardsTest" time="0.005"/>
+  <testcase name="resolveClashesKeepsTheOwnersDecision" classname="io.rns.evalauncher.CardsTest" time="0.003"/>
   <testcase name="encodeRefusesAnInvalidRecord" classname="io.rns.evalauncher.CardsTest" time="0.001"/>
-  <testcase name="shownFiltersOrdersAndCaps" classname="io.rns.evalauncher.CardsTest" time="0.002"/>
-  <testcase name="labelAcceptsTheSpecAlphabet" classname="io.rns.evalauncher.CardsTest" time="0.0"/>
-  <testcase name="storeRoundTrip" classname="io.rns.evalauncher.CardsTest" time="0.026"/>
-  <testcase name="parserRejectsTooManyEvents" classname="io.rns.evalauncher.CardsTest" time="0.002"/>
+  <testcase name="shownFiltersOrdersAndCaps" classname="io.rns.evalauncher.CardsTest" time="0.003"/>
+  <testcase name="labelAcceptsTheSpecAlphabet" classname="io.rns.evalauncher.CardsTest" time="0.001"/>
+  <testcase name="storeRoundTrip" classname="io.rns.evalauncher.CardsTest" time="0.001"/>
+  <testcase name="parserRejectsTooManyEvents" classname="io.rns.evalauncher.CardsTest" time="0.023"/>
   <testcase name="parserRejectsTooManyAttributes" classname="io.rns.evalauncher.CardsTest" time="0.001"/>
-  <testcase name="characterClasses" classname="io.rns.evalauncher.CardsTest" time="0.001"/>
-  <testcase name="parserIgnoresChildrenAndUnknownAttributes" classname="io.rns.evalauncher.CardsTest" time="0.0"/>
-  <testcase name="parserRejectsDeepNesting" classname="io.rns.evalauncher.CardsTest" time="0.0"/>
-  <testcase name="parsesTheReferenceCard" classname="io.rns.evalauncher.CardsTest" time="0.0"/>
-  <testcase name="unsupportedSpecIsParsedThenRejectedByTheCaller" classname="io.rns.evalauncher.CardsTest" time="0.0"/>
-  <testcase name="decodeCapsSizeAndCount" classname="io.rns.evalauncher.CardsTest" time="0.042"/>
-  <testcase name="resolveClashesOldestDecisionWins" classname="io.rns.evalauncher.CardsTest" time="0.001"/>
+  <testcase name="characterClasses" classname="io.rns.evalauncher.CardsTest" time="0.002"/>
+  <testcase name="parserIgnoresChildrenAndUnknownAttributes" classname="io.rns.evalauncher.CardsTest" time="0.001"/>
+  <testcase name="parserRejectsDeepNesting" classname="io.rns.evalauncher.CardsTest" time="0.001"/>
+  <testcase name="parsesTheReferenceCard" classname="io.rns.evalauncher.CardsTest" time="0.001"/>
+  <testcase name="unsupportedSpecIsParsedThenRejectedByTheCaller" classname="io.rns.evalauncher.CardsTest" time="0.001"/>
+  <testcase name="decodeCapsSizeAndCount" classname="io.rns.evalauncher.CardsTest" time="0.025"/>
+  <testcase name="resolveClashesOldestDecisionWins" classname="io.rns.evalauncher.CardsTest" time="0.003"/>
   <testcase name="captionCannotClaimEndorsement" classname="io.rns.evalauncher.CardsTest" time="0.001"/>
-  <testcase name="reservedWordsAreSubstringsOrWholeNames" classname="io.rns.evalauncher.CardsTest" time="0.001"/>
+  <testcase name="reservedWordsAreSubstringsOrWholeNames" classname="io.rns.evalauncher.CardsTest" time="0.002"/>
   <testcase name="resolveClashesDropsTwoPendingAndLeavesTheRest" classname="io.rns.evalauncher.CardsTest" time="0.001"/>
-  <testcase name="parserRejectsLongValuesBeforeLookingAtThem" classname="io.rns.evalauncher.CardsTest" time="0.003"/>
+  <testcase name="parserRejectsLongValuesBeforeLookingAtThem" classname="io.rns.evalauncher.CardsTest" time="0.004"/>
   <testcase name="captionIsOptionalAndBounded" classname="io.rns.evalauncher.CardsTest" time="0.001"/>
   <testcase name="digestFormatting" classname="io.rns.evalauncher.CardsTest" time="0.001"/>
-  <testcase name="relabelledCardIsPendingAgain" classname="io.rns.evalauncher.CardsTest" time="0.0"/>
+  <testcase name="relabelledCardIsPendingAgain" classname="io.rns.evalauncher.CardsTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

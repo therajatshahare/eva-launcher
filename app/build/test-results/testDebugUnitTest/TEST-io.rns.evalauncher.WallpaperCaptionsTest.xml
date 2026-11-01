@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="io.rns.evalauncher.WallpaperCaptionsTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-11-01T05:30:38.263Z" hostname="DESKTOP-EOQDD3G" time="0.011">
+<testsuite name="io.rns.evalauncher.WallpaperCaptionsTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-11-01T06:04:26.363Z" hostname="DESKTOP-EOQDD3G" time="0.006">
   <properties/>
-  <testcase name="missingFolderHasNoNames" classname="io.rns.evalauncher.WallpaperCaptionsTest" time="0.008"/>
-  <testcase name="skipsCommentsBlankAndMalformedLines" classname="io.rns.evalauncher.WallpaperCaptionsTest" time="0.001"/>
-  <testcase name="laterLineWinsForTheSameFile" classname="io.rns.evalauncher.WallpaperCaptionsTest" time="0.0"/>
-  <testcase name="cutsVeryLongNames" classname="io.rns.evalauncher.WallpaperCaptionsTest" time="0.0"/>
+  <testcase name="missingFolderHasNoNames" classname="io.rns.evalauncher.WallpaperCaptionsTest" time="0.001"/>
+  <testcase name="skipsCommentsBlankAndMalformedLines" classname="io.rns.evalauncher.WallpaperCaptionsTest" time="0.0"/>
+  <testcase name="laterLineWinsForTheSameFile" classname="io.rns.evalauncher.WallpaperCaptionsTest" time="0.001"/>
+  <testcase name="cutsVeryLongNames" classname="io.rns.evalauncher.WallpaperCaptionsTest" time="0.001"/>
   <testcase name="readsFilenameTabName" classname="io.rns.evalauncher.WallpaperCaptionsTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

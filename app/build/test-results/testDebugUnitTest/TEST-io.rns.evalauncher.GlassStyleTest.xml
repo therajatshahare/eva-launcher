@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="io.rns.evalauncher.GlassStyleTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-11-01T05:30:36.437Z" hostname="DESKTOP-EOQDD3G" time="0.003">
+<testsuite name="io.rns.evalauncher.GlassStyleTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-11-01T06:04:24.723Z" hostname="DESKTOP-EOQDD3G" time="0.003">
   <properties/>
   <testcase name="rimByNameAnyCase" classname="io.rns.evalauncher.GlassStyleTest" time="0.001"/>
-  <testcase name="anythingElseIsGlass" classname="io.rns.evalauncher.GlassStyleTest" time="0.0"/>
+  <testcase name="anythingElseIsGlass" classname="io.rns.evalauncher.GlassStyleTest" time="0.001"/>
   <testcase name="haloByNameAnyCase" classname="io.rns.evalauncher.GlassStyleTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

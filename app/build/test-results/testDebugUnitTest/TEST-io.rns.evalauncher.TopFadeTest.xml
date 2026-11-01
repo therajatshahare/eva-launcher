@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="io.rns.evalauncher.TopFadeTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-11-01T05:30:38.197Z" hostname="DESKTOP-EOQDD3G" time="0.008">
+<testsuite name="io.rns.evalauncher.TopFadeTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-11-01T06:04:26.326Z" hostname="DESKTOP-EOQDD3G" time="0.008">
   <properties/>
-  <testcase name="theFadeGrowsInWithTheFirstPixelsOfScrolling" classname="io.rns.evalauncher.TopFadeTest" time="0.007"/>
+  <testcase name="theFadeGrowsInWithTheFirstPixelsOfScrolling" classname="io.rns.evalauncher.TopFadeTest" time="0.005"/>
   <testcase name="theDockAtRestIsUntouched" classname="io.rns.evalauncher.TopFadeTest" time="0.001"/>
-  <testcase name="thenItStaysAtItsFullLength" classname="io.rns.evalauncher.TopFadeTest" time="0.0"/>
+  <testcase name="thenItStaysAtItsFullLength" classname="io.rns.evalauncher.TopFadeTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

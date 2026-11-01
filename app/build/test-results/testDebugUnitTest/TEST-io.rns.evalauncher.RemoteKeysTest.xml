@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="io.rns.evalauncher.RemoteKeysTest" tests="28" skipped="0" failures="0" errors="0" timestamp="2026-11-01T05:30:37.987Z" hostname="DESKTOP-EOQDD3G" time="0.046">
+<testsuite name="io.rns.evalauncher.RemoteKeysTest" tests="28" skipped="0" failures="0" errors="0" timestamp="2026-11-01T06:04:26.095Z" hostname="DESKTOP-EOQDD3G" time="0.089">
   <properties/>
-  <testcase name="holdScancodeEntries" classname="io.rns.evalauncher.RemoteKeysTest" time="0.004"/>
+  <testcase name="holdScancodeEntries" classname="io.rns.evalauncher.RemoteKeysTest" time="0.005"/>
   <testcase name="keyNamesWorkLikeNumbers" classname="io.rns.evalauncher.RemoteKeysTest" time="0.002"/>
-  <testcase name="anUpWithoutItsDownUsesTheEventsDownTime" classname="io.rns.evalauncher.RemoteKeysTest" time="0.007"/>
-  <testcase name="actionWordsAreTargets" classname="io.rns.evalauncher.RemoteKeysTest" time="0.002"/>
+  <testcase name="anUpWithoutItsDownUsesTheEventsDownTime" classname="io.rns.evalauncher.RemoteKeysTest" time="0.045"/>
+  <testcase name="actionWordsAreTargets" classname="io.rns.evalauncher.RemoteKeysTest" time="0.001"/>
   <testcase name="bothServicesAnswerEachPressOnce" classname="io.rns.evalauncher.RemoteKeysTest" time="0.004"/>
   <testcase name="aCanceledUpOpensNothingAndDropsTheHold" classname="io.rns.evalauncher.RemoteKeysTest" time="0.001"/>
-  <testcase name="losingOneHelperLeavesTheHoldWithTheOther" classname="io.rns.evalauncher.RemoteKeysTest" time="0.003"/>
-  <testcase name="holdTimePicksTheHoldApp" classname="io.rns.evalauncher.RemoteKeysTest" time="0.0"/>
-  <testcase name="scancodeEntries" classname="io.rns.evalauncher.RemoteKeysTest" time="0.002"/>
+  <testcase name="losingOneHelperLeavesTheHoldWithTheOther" classname="io.rns.evalauncher.RemoteKeysTest" time="0.002"/>
+  <testcase name="holdTimePicksTheHoldApp" classname="io.rns.evalauncher.RemoteKeysTest" time="0.001"/>
+  <testcase name="scancodeEntries" classname="io.rns.evalauncher.RemoteKeysTest" time="0.001"/>
   <testcase name="losingOneHelperKeepsTheOthersTap" classname="io.rns.evalauncher.RemoteKeysTest" time="0.001"/>
-  <testcase name="holdsOnTwoDevicesStayApart" classname="io.rns.evalauncher.RemoteKeysTest" time="0.0"/>
+  <testcase name="holdsOnTwoDevicesStayApart" classname="io.rns.evalauncher.RemoteKeysTest" time="0.001"/>
   <testcase name="aHelperThatStopsFilteringReleasesItsHold" classname="io.rns.evalauncher.RemoteKeysTest" time="0.0"/>
   <testcase name="anInputTargetIsNotAnActivity" classname="io.rns.evalauncher.RemoteKeysTest" time="0.001"/>
   <testcase name="inputTargets" classname="io.rns.evalauncher.RemoteKeysTest" time="0.001"/>
-  <testcase name="theLastEntryForAKeycodeWins" classname="io.rns.evalauncher.RemoteKeysTest" time="0.001"/>
+  <testcase name="theLastEntryForAKeycodeWins" classname="io.rns.evalauncher.RemoteKeysTest" time="0.0"/>
   <testcase name="badEntriesAreSkipped" classname="io.rns.evalauncher.RemoteKeysTest" time="0.001"/>
-  <testcase name="menuReleasedTakesXiaomisInjectedShortPress" classname="io.rns.evalauncher.RemoteKeysTest" time="0.001"/>
+  <testcase name="menuReleasedTakesXiaomisInjectedShortPress" classname="io.rns.evalauncher.RemoteKeysTest" time="0.0"/>
   <testcase name="inFrontMatchesTheTargetsPackageOnly" classname="io.rns.evalauncher.RemoteKeysTest" time="0.0"/>
-  <testcase name="chordedKeysKeepTheirOwnHold" classname="io.rns.evalauncher.RemoteKeysTest" time="0.0"/>
-  <testcase name="keycodeAndPackage" classname="io.rns.evalauncher.RemoteKeysTest" time="0.0"/>
+  <testcase name="chordedKeysKeepTheirOwnHold" classname="io.rns.evalauncher.RemoteKeysTest" time="0.001"/>
+  <testcase name="keycodeAndPackage" classname="io.rns.evalauncher.RemoteKeysTest" time="0.001"/>
   <testcase name="anUpAfterTheHoldWasReleasedOpensNothing" classname="io.rns.evalauncher.RemoteKeysTest" time="0.001"/>
   <testcase name="aHelperUnboundBeforeTheHoldCancelsIt" classname="io.rns.evalauncher.RemoteKeysTest" time="0.001"/>
   <testcase name="guideTargetNamesItsPackage" classname="io.rns.evalauncher.RemoteKeysTest" time="0.0"/>
-  <testcase name="inputsTargetKeptForAScancode" classname="io.rns.evalauncher.RemoteKeysTest" time="0.001"/>
-  <testcase name="globalActions" classname="io.rns.evalauncher.RemoteKeysTest" time="0.001"/>
-  <testcase name="frontEntriesAreReadApartFromTheRest" classname="io.rns.evalauncher.RemoteKeysTest" time="0.002"/>
+  <testcase name="inputsTargetKeptForAScancode" classname="io.rns.evalauncher.RemoteKeysTest" time="0.0"/>
+  <testcase name="globalActions" classname="io.rns.evalauncher.RemoteKeysTest" time="0.004"/>
+  <testcase name="frontEntriesAreReadApartFromTheRest" classname="io.rns.evalauncher.RemoteKeysTest" time="0.005"/>
   <testcase name="holdEntriesGetTheirOwnMap" classname="io.rns.evalauncher.RemoteKeysTest" time="0.001"/>
   <testcase name="releasingAHelperLeavesAnotherButtonsHoldAlone" classname="io.rns.evalauncher.RemoteKeysTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
