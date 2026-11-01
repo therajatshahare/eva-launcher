@@ -133,7 +133,7 @@ eva-launcher/
 │   ├── build.gradle                  # App configuration, SDK 34, R8 shrinking
 │   └── src/main/
 │       ├── AndroidManifest.xml       # Permissions, UpdateFileProvider
-│       ├── java/com/gathin/tvhome/
+│       ├── java/io/rns/evalauncher/
 │       │   ├── LauncherSettingsActivity.java
 │       │   ├── WallpaperFetcher.java
 │       │   ├── UpdateManager.java

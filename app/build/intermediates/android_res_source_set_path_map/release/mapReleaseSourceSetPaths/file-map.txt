@@ -1,0 +1,10 @@
+io.rns.evalauncher.app-pngs-0 D:\Desktop\github\eva-launcher-main\app\build\generated\res\pngs\release
+io.rns.evalauncher.app-resValues-1 D:\Desktop\github\eva-launcher-main\app\build\generated\res\resValues\release
+io.rns.evalauncher.app-updated_navigation_xml-2 D:\Desktop\github\eva-launcher-main\app\build\generated\updated_navigation_xml\release
+io.rns.evalauncher.app-packageReleaseResources-3 D:\Desktop\github\eva-launcher-main\app\build\intermediates\incremental\release\packageReleaseResources\merged.dir
+io.rns.evalauncher.app-packageReleaseResources-4 D:\Desktop\github\eva-launcher-main\app\build\intermediates\incremental\release\packageReleaseResources\stripped.dir
+io.rns.evalauncher.app-merged-not-compiled-resources-5 D:\Desktop\github\eva-launcher-main\app\build\intermediates\merged-not-compiled-resources\release
+io.rns.evalauncher.app-release-6 D:\Desktop\github\eva-launcher-main\app\build\intermediates\merged_res\release\mergeReleaseResources
+io.rns.evalauncher.app-main-7 D:\Desktop\github\eva-launcher-main\app\src\main\res
+io.rns.evalauncher.app-release-8 D:\Desktop\github\eva-launcher-main\app\src\release\res
+gradleHome-0 C:\Users\RAJAT SHAHARE\.gradle

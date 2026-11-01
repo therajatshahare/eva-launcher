@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.gathin.tvhome.app-mergeReleaseResources-8:/values-v21/values-v21.xml",
+            "outputFile": "io.rns.evalauncher.app-mergeReleaseResources-8:/values-v21/values-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\caches\\8.14.6\\transforms\\9765218b3880d2e946d65e7a73736c39\\transformed\\core-1.7.0\\res\\values-v21\\values-v21.xml",
+                    "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\caches\\9.8.2\\transforms\\2a9194c2fa5b95bc48cd0e9d5b5d4e61\\transformed\\core-1.7.0\\res\\values-v21\\values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,13",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",

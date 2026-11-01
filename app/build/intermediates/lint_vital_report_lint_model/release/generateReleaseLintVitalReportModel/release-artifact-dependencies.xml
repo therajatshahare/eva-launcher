@@ -1,6 +1,6 @@
 <dependencies>
   <compile
-      roots="androidx.recyclerview:recyclerview:1.3.2@aar,androidx.dynamicanimation:dynamicanimation:1.0.0@aar,androidx.customview:customview:1.0.0@aar,androidx.legacy:legacy-support-core-utils:1.0.0@aar,androidx.loader:loader:1.0.0@aar,androidx.core:core:1.7.0@aar,androidx.core:core:1.7.0@aar,androidx.versionedparcelable:versionedparcelable:1.1.1@aar,androidx.collection:collection:1.0.0@jar,androidx.lifecycle:lifecycle-runtime:2.3.1@aar,androidx.documentfile:documentfile:1.0.0@aar,androidx.localbroadcastmanager:localbroadcastmanager:1.0.0@aar,androidx.print:print:1.0.0@aar,androidx.lifecycle:lifecycle-livedata:2.0.0@aar,androidx.lifecycle:lifecycle-livedata-core:2.0.0@aar,androidx.lifecycle:lifecycle-common:2.3.1@jar,androidx.arch.core:core-runtime:2.1.0@aar,androidx.arch.core:core-common:2.1.0@jar,androidx.lifecycle:lifecycle-viewmodel:2.0.0@aar,androidx.annotation:annotation:1.2.0@jar,androidx.annotation:annotation-experimental:1.1.0@aar">
+      roots="androidx.recyclerview:recyclerview:1.3.2@aar,androidx.dynamicanimation:dynamicanimation:1.0.0@aar,androidx.customview:customview:1.0.0@aar,androidx.legacy:legacy-support-core-utils:1.0.0@aar,androidx.loader:loader:1.0.0@aar,androidx.core:core:1.7.0@aar,androidx.core:core:1.7.0@aar,androidx.versionedparcelable:versionedparcelable:1.1.1@aar,androidx.collection:collection:1.0.0@jar,androidx.lifecycle:lifecycle-runtime:2.3.1@aar,androidx.documentfile:documentfile:1.0.0@aar,androidx.localbroadcastmanager:localbroadcastmanager:1.0.0@aar,androidx.print:print:1.0.0@aar,androidx.lifecycle:lifecycle-livedata:2.0.0@aar,androidx.lifecycle:lifecycle-livedata-core:2.0.0@aar,androidx.arch.core:core-runtime:2.1.0@aar,androidx.lifecycle:lifecycle-common:2.3.1@jar,androidx.arch.core:core-common:2.1.0@jar,androidx.lifecycle:lifecycle-viewmodel:2.0.0@aar,androidx.annotation:annotation:1.2.0@jar,androidx.annotation:annotation-experimental:1.1.0@aar">
     <dependency
         name="androidx.recyclerview:recyclerview:1.3.2@aar"
         simpleName="androidx.recyclerview:recyclerview"/>
@@ -44,11 +44,11 @@
         name="androidx.lifecycle:lifecycle-livedata-core:2.0.0@aar"
         simpleName="androidx.lifecycle:lifecycle-livedata-core"/>
     <dependency
-        name="androidx.lifecycle:lifecycle-common:2.3.1@jar"
-        simpleName="androidx.lifecycle:lifecycle-common"/>
-    <dependency
         name="androidx.arch.core:core-runtime:2.1.0@aar"
         simpleName="androidx.arch.core:core-runtime"/>
+    <dependency
+        name="androidx.lifecycle:lifecycle-common:2.3.1@jar"
+        simpleName="androidx.lifecycle:lifecycle-common"/>
     <dependency
         name="androidx.arch.core:core-common:2.1.0@jar"
         simpleName="androidx.arch.core:core-common"/>

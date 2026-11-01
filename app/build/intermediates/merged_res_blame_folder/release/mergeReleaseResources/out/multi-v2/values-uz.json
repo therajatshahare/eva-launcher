@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.gathin.tvhome.app-mergeReleaseResources-8:/values-uz/values-uz.xml",
+            "outputFile": "io.rns.evalauncher.app-mergeReleaseResources-8:/values-uz/values-uz.xml",
             "map": [
                 {
                     "source": "D:\\Desktop\\github\\eva-launcher-main\\app\\src\\main\\res\\values-uz\\strings.xml",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\caches\\8.14.6\\transforms\\9765218b3880d2e946d65e7a73736c39\\transformed\\core-1.7.0\\res\\values-uz\\values-uz.xml",
+                    "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\caches\\9.8.2\\transforms\\2a9194c2fa5b95bc48cd0e9d5b5d4e61\\transformed\\core-1.7.0\\res\\values-uz\\values-uz.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -1,1913 +1,767 @@
-Marking id:icon:2131296343 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:title:2131296408 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:status:2131296389 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:library_on_home:2131755087 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:library_recent:2131755089 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:library_add_home:2131755082 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:dot:2131296326 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking drawable:library_check:2131165207 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:stats_cpu:2131755162 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:stats_memory:2131755163 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:storage_gb_whole:2131755168 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:storage_gb_decimal:2131755167 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:stats_storage:2131755164 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:home_settings_help:2131755074 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:not_available:2131755106 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking drawable:halloween_bat:2131165188 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking drawable:halloween_ghost:2131165189 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:card:2131296310 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:banner:2131296298 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:label:2131296354 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:name:2131296359 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:rtl_app_grid:2130968623 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking drawable:glass_panel:2131165187 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking layout:item_input:2131427339 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:library_save_failed:2131755091 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:app_library:2131755012 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking plurals:library_app_count:2131623936 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:library_empty:2131755084 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:library_remove_shortcut:2131755090 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:library_hint_add:2131755085 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:library_hint_open:2131755086 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:cant_open:2131755014 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:font_medium:2131755057 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:btnShow:2131296307 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking attr:recyclerViewStyle:2130903061 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking dimen:fastscroll_default_thickness:2131099655 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking dimen:fastscroll_minimum_range:2131099657 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking dimen:fastscroll_margin:2131099656 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking id:is_pooling_container_tag:2131296347 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking id:pooling_container_listener_holder_tag:2131296367 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:latitude:2131755080 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:longitude:2131755097 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:shamsi_month_farvardin:2131755151 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:shamsi_month_ordibehesht:2131755155 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:shamsi_month_khordad:2131755152 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:shamsi_month_tir:2131755157 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:shamsi_month_mordad:2131755154 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:shamsi_month_shahrivar:2131755156 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:shamsi_month_mehr:2131755153 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:shamsi_month_aban:2131755146 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:shamsi_month_azar:2131755147 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:shamsi_month_dey:2131755149 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:shamsi_month_bahman:2131755148 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:shamsi_month_esfand:2131755150 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:dock_edit_hint:2131755042 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:no_module_cards:2131755105 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:btnLibrary:2131296303 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:connected:2131755038 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:not_connected:2131755107 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:card_not_saved:2131755017 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:dock_edit_pick_app:2131755043 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:reorder_not_saved:2131755143 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:last_opened:2131755079 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:topButtons:2131296409 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:btnSettings:2131296306 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking layout:activity_main:2131427329 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:root:2131296376 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:sky:2131296386 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:glass:2131296333 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:ambient:2131296294 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:heroName:2131296340 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:hero:2131296336 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:heroMeta:2131296339 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:heroDots:2131296338 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:heroArt:2131296337 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:rtl_menu_bar:2130968624 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:heroScrim:2131296341 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:greeting:2131296334 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:leftBlock:2131296355 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:clockDivider:2131296320 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:date:2131296321 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:clock:2131296319 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:btnWifi:2131296309 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:shamsiDate:2131296385 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:stats:2131296388 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:racePanel:2131296372 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:raceKicker:2131296370 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:raceHeadline:2131296369 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:raceSessions:2131296373 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:raceBar:2131296368 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:racePager:2131296371 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:lunarDate:2131296358 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:btnVpn:2131296308 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:grid:2131296335 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking anim:tile_enter:2130771970 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:btnInputs:2131296301 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:launcher_settings:2131755081 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking drawable:ic_home_settings_pill:2131165197 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:btnReorder:2131296305 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:btnLibraryTop:2131296304 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking layout:top_app_button:2131427352 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking color:pill_icon_online:2131034118 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking color:pill_icon_no_internet:2131034116 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking color:pill_icon_offline:2131034117 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:settings:2131755145 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking drawable:ic_settings:2131165203 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking layout:popup_inputs:2131427350 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:rows:2131296377 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:tile_replace_in_dock:2131755171 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:tile_add_to_dock:2131755169 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:tile_move:2131755170 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:library_app_info:2131755083 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:home_settings:2131755073 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking drawable:ic_home_settings:2131165196 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking drawable:ic_av:2131165194 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking drawable:ic_input:2131165198 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:more_inputs:2131755102 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking drawable:ic_livetv:2131165199 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:inputs:2131755078 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:live_tv:2131755092 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:no_inputs:2131755104 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:reorder_hint:2131755142 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:state:2131296387 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:card_state_new:2131755027 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:card_state_hidden:2131755026 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:card_state_shown:2131755031 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:card_state_over_limit:2131755030 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:card_state_new_label:2131755029 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:card_state_new_key:2131755028 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:good_evening:2131755065 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:good_afternoon:2131755064 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:good_morning:2131755067 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:good_night:2131755068 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:good_forenoon:2131755066 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:festival_diwali_greeting:2131755049 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:festival_halloween_greeting:2131755051 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:festival_dussehra_greeting:2131755050 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:greeting_with_name:2131755070 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:lunar_month_leap:2131755099 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking array:lunar_stems:2130837516 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking array:lunar_branches:2130837515 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:lunar_year:2131755100 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:lunar_date_format:2131755098 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking drawable:race_bar:2131165224 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:game_live:2131755060 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:race_next:2131755126 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:race_kicker_no_place:2131755123 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:race_kicker:2131755122 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:race_live:2131755125 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:race_lights_out:2131755124 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:race_finished:2131755121 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:race_qualifying_short:2131755134 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:race_race_short:2131755136 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:race_practice_3_short:2131755132 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:race_practice_2_short:2131755130 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:race_practice_1_short:2131755128 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:race_sprint_qualifying_short:2131755139 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:race_sprint_short:2131755140 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:wifi:2131755182 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:offline:2131755109 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:ethernet:2131755048 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking drawable:ic_ethernet:2131165195 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking drawable:ic_wifi:2131165205 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking drawable:ic_lock:2131165200 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:vpn:2131755173 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:vpn_off:2131755175 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking drawable:ic_lock_open:2131165201 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking drawable:halloween_pumpkin_dark:2131165190 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking drawable:halloween_pumpkin_lit:2131165191 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:tag_unhandled_key_listeners:2131296403 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:tag_window_insets_animation_callback:2131296404 reachable: referenced from in_memory_r8_base_classes0.dex
+Marking id:tag_on_apply_window_listener:2131296396 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking id:tag_screen_reader_focusable:2131296399 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking id:tag_accessibility_heading:2131296394 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking id:tag_accessibility_pane_title:2131296395 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking id:tag_state_description:2131296400 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking id:tag_accessibility_actions:2131296392 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:font_regular:2131755058 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:subGridCard:2131296390 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:cardTitle:2131296312 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:cardValue:2131296313 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:cardHint:2131296311 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking layout:popup_cards:2131427349 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking layout:item_card_row:2131427338 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:app:2131296296 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:card_app_name:2131755015 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:pkg:2131296366 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:digest:2131296325 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking layout:dialog_card_prompt:2131427332 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:card_prompt_title:2131755024 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:body:2131296300 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:card_prompt_resigned:2131755023 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:card_prompt_relabelled:2131755022 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:card_prompt_body:2131755018 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:names:2131296360 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:card_prompt_names:2131755021 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:identity:2131296345 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:card_prompt_identity:2131755020 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:btnKeep:2131296302 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking array:settings_fallback_components:2130837517 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking array:dock_apps:2130837507 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:fill_dock:2130968601 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking array:hidden_apps:2130837508 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking array:library_apps:2130837513 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking array:library_excluded_apps:2130837514 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:live_tv_package:2131755095 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:live_tv_action:2131755093 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:live_tv_input_id:2131755094 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking array:launch_actions:2130837512 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking array:app_labels:2130837506 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking array:app_banners:2130837504 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:source_panel_service:2131755160 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:source_panel_action:2131755158 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:source_panel_extra:2131755159 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:coocaa_sources:2130968591 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:input_action:2131755075 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking array:input_sources:2130837511 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:input_uri_scheme:2131755077 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking integer:columns:2131361795 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking integer:rows_below_dock:2131361798 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:animations:2130968579 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:advanced_effects:2130968576 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:shamsi_date:2130968626 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:lunar_date:2130968615 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:greeting_name:2131755069 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:module_cards:2130968616 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:reduced_motion:2130968620 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:boot_to_live_tv:2130968584 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:open_on_start_choice:2130968617 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking integer:open_on_start_network_wait:2131361797 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:dock_title:2130968599 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:dock_row:2130968598 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:top_menu:2130968635 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:launcher_settings_button:2130968612 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:reorder_button:2130968621 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:show_network_pill:2130968631 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:show_inputs_pill:2130968629 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:icon_only_buttons:2130968607 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:icon_only_inputs:2130968608 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:icon_only_vpn:2130968609 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:back_opens_clock:2130968583 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:library_button:2130968613 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:show_library_pill:2130968630 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking integer:wifi_label_width:2131361801 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:always_show_names:2130968577 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:wallpaper_true_color:2130968639 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:focus_overshoot:2130968602 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:wallpaper_captions:2130968638 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:tile_menu:2130968634 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:vpn_app:2131755174 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:show_home_settings_shortcut:2130968628 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:show_stats:2130968632 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:game_day:2131755059 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:app_library:2130968581 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:app_library_selection:2130968582 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:library_ok_opens:2130968614 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:uniform_tiles:2130968636 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking integer:sky_intensity:2131361799 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking array:settings_key_keycodes:2130837518 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:settings_key_panel:2130968625 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:restore_key_services:2130968622 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking array:input_key_keycodes:2130837510 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:handle_view_inputs:2130968604 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking array:app_keys:2130837505 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:stock_home_redirect:2131755166 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:cinematic_home:2130968586 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:ambient_glow:2130968578 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:app_glow:2130968580 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:fade_rows:2130968600 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking integer:home_idle_clock_minutes:2131361796 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:key_filter:2130968611 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:gamepad_passthrough:2130968603 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:consume_volume_keys:2130968590 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:power_on_home:2130968618 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:home_long_press_home:2130968606 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:power_on_home_always:2130968619 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:inputs_connected_only:2130968610 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:clock_format:2131755033 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:dock_glass:2130968597 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:dock_even_padding:2130968596 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:dock_band:2130968594 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:cinematic_dots:2130968585 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:cinematic_white_focus:2130968587 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:wifi_status_color:2130968640 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking integer:cinematic_art:2131361792 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking integer:cinematic_scrim:2131361793 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:wallpaper_moods:2131755178 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:glow_style:2131755063 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:wifi_status_warnings:2130968641 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:date_below_clock:2130968592 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:vpn_pill:2130968637 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:locale:2131755096 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking array:top_bar_apps:2130837520 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:show_greeting:2130968627 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:header_white:2130968605 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:clock_wallpaper:2130968589 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking integer:clock_wallpaper_dim:2131361794 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:clock_glow:2130968588 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:glass_style:2131755062 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:single_row:2130968633 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking bool:dock_band_all:2130968595 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:race_countdown_minutes:2131755120 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:race_countdown_hours:2131755119 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:race_countdown_days:2131755118 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking drawable:ic_apps:2131165192 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:categoryCard:2131296314 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:categoryIcon:2131296316 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:categoryTitle:2131296317 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:app_name:2131755013 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:choose_input:2131755032 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:dream_name:2131755046 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking array:icon_tiles:2130837509 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking layout:row_app_library:2131427351 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking layout:item_app:2131427337 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking layout:item_settings_category_card:2131427340 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking layout:item_settings_grid_card:2131427341 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:dock_edit_pick_place:2131755044 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking layout:dream_clock:2131427336 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:clock_format_12:2131755034 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:clock_format_24:2131755035 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:clock_format_system:2131755036 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking layout:activity_launcher_settings:2131427328 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking drawable:ic_picture:2131165202 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:reorder:2131755141 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking drawable:ic_swap_vert:2131165204 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:categoryGrid:2131296315 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:native_settings:2131755103 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:module_cards:2131755101 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:dock_edit:2131755041 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:power_menu:2131755113 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:tag_unhandled_key_listeners:2131296403 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:library_open:2131755088 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking drawable:banner:2131165184 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking layout:item_wallpaper_card:2131427342 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:tag_window_insets_animation_callback:2131296404 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:tag_on_apply_window_listener:2131296396 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:on:2131755110 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:dreamContent:2131296330 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:dreamAmbient:2131296328 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:wallpaper_applied:2131755176 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking layout:dialog_settings_grid:2131427333 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:dialogTitle:2131296323 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:dialogSubtitle:2131296322 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:subGridRecyclerView:2131296391 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:off:2131755108 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:tv_settings:2131755172 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:open_on_start_label:2131755111 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:advanced_effects:2131755008 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:columns_label:2131755037 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:rows_below_dock_label:2131755144 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:dock_opacity_label:2131755045 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking anim:app_open_enter:2130771968 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking anim:app_open_exit:2130771969 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:race_qualifying:2131755133 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:race_race:2131755135 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:race_practice_3:2131755131 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:race_practice_2:2131755129 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:race_practice_1:2131755127 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:race_sprint_qualifying:2131755138 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:race_sprint:2131755137 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:quick_network:2131755116 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:wallpaperCard:2131296411 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:wallpaperPreview:2131296414 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:wallpaperName:2131296413 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:selectedBadge:2131296384 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:wallpaper_theme_default:2131755181 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:wallpaper_none:2131755179 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking layout:dialog_wallpaper_picker:2131427335 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:wallpaperGrid:2131296412 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:advanced_effects_warning:2131755010 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:enable:2131755047 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:github_update_repo:2131755061 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking layout:activity_quick_settings:2131427330 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:panel:2131296365 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking id:scrim:2131296378 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:quick_picture:2131755117 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:quick_apps:2131755114 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking string:quick_apps_hint:2131755115 reachable: referenced from in_memory_r8_base_classes0.dex
-Marking array:settings_key_scancodes:2130837519 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking id:accessibility_action_clickable_span:2131296256 reachable: referenced from in_memory_r8_base_classes0.dex
 Marking id:tag_accessibility_clickable_spans:2131296393 reachable: referenced from in_memory_r8_base_classes0.dex
-android.content.res.Resources#getIdentifier present: true
-Web content present: false
-Referenced Strings:
-getModule
-Animations
-glass_style
-greeting
-halo
-Clock
-AUDIO
-‏
-path
-Verified‮
-ViewHolder
-androidx.view.accessibility.Accessibi...
-absent
-kotlin.reflect.jvm.internal.Reflectio...
-ACTION_UNKNOWN
-accessibility_enabled
-clock_format
-wallpaper_true_color
-festival
-traceCounter
-kotlin.Unit
-ACTION_PRESS_AND_HOLD
-av
-SPRINT
-AV
-kotlin.jvm.functions.
-c:
-ACTION_CLICK
-race_calendar
-TraceCompat
-displayName
-TvHomeCards
-com.android.tv.settings
-example
-sleep
-dock_even_padding
-S
-app_labels
-gamepad_passthrough
-home_long_press_home
-SOUND
-ca
-android.intent.category.HOME
-_
-top_menu
-a
-androidx.view.accessibility.Accessibi...
-ACTION_CLEAR_ACCESSIBILITY_FOCUS
-ACTION_IME_ENTER
-android.settings.MANAGE_APPLICATIONS_...
-cinematic_scrim
-mounted
-r
-background_color
-GridLayoutManager
-java.lang.Module
-package:
-v
-w
-REL
-x
-ACTION_NEXT_AT_MOVEMENT_GRANULARITY
-input_action
-last_opened
-android.settings.DISPLAY_SETTINGS
-da
-captions.txt
-view:
-module_cards
-MemAvailable:
-inputs
-official
-BanParcelableUsage
-isTagEnabled
-live_tv_package
-androidx.view.accessibility.Accessibi...
-ACTION_SET_PROGRESS
-power_on_home
-Android:com.gathin.tvhome:v1.4
-ACTION_SCROLL_FORWARD
-android.settings.VPN_SETTINGS
-add
-ret
-image
-FP1
-android.intent.action.SCREEN_OFF
-FP3
-en
-FP2
-VOD
-es
-ES
-ACTION_ACCESSIBILITY_FOCUS
-show_library_pill
-androidx.view.accessibility.Accessibi...
-app_keys
-glow_style
-ACTION_LONG_CLICK
-ACTION_CLEAR_FOCUS
-ACTION_SET_SELECTION
-settings_key_keycodes
-back
-ACTION_SCROLL_BACKWARD
-uniform_tiles
-sourceIndex
-locale
-show_greeting
-content
-LIVE
-launcher_settings
-ambient_glow
-dock_glass
-icon_only_vpn
-ignore
-Home
-Inputs
-ACTION_SCROLL_UP
-tvvibehack
-input:
-start_ms
-BITMAP_MASKABLE
-TvHome.UpdateManager
-.jpg
-com.gathin.tvhome.extra.REORDER_FROM_...
-IconCompat
-GP
-label
-home
-horizon
-Credits
-sourceName
-he
-ACTION_MOVE_WINDOW
-android.view.View$AttachInfo
-boot_count
-.bad
-probe_boot
-wallpapers/
-.bak
-caption
-android.support.FILE_PROVIDER_PATHS
-ACTION_CONTEXT_CLICK
-turns
-cards.json
-tile_menu
-androidx.view.accessibility.Accessibi...
-rim
-id
-end_ms
-write
-Settings
-home_idle_clock_minutes
-in
-index
-iw
-UNDECIDED
-/proc/meminfo
-system
-getResId
-https://t.me/EvaTVLauncher
-ACTION_CLEAR_SELECTION
-TvHome.Config
-BLU
-browser_download_url
-URI
-reddit_
-androidx.view.accessibility.Accessibi...
-ACTION_PAGE_UP
-androidx.view.accessibility.Accessibi...
-banner_
-content://com.skyworth.tv.provider/sy...
-android.settings.APPLICATION_DETAILS_...
-ko
-ACTION_PAGE_RIGHT
-‬‎
-library_apps
-reorder_button
-url
-url_overridden_by_dest
-hide
-2.1
-ACTION_HIDE_TOOLTIP
-cinematic_art
-evening
-shuffle
-app_glow
-RESUMED
-android.intent.action.TIME_SET
-content://com.skyworth.tv.sdk.provide...
-festival_until
-settings_key_panel
-wallpaper_rotation_minutes
-_size
-UnknownNullness
-mVisibleInsets
-launcher_settings_button
-android.intent.action.USER_UNLOCKED
-turn_seconds
-settings
-read
-AMP
-cpu
-mv
-BOX
-Installing...
-mStableInsets
-https://github.com/Gathin23/cleanyourtv
-/time
-null
-DISC
-wifi_label_width
-open_on_start
-https://api.github.com/repos/
-key_filter
-inputs_connected_only
-ACTION_SCROLL_RIGHT
-android.settings.WIFI_SETTINGS
-asyncTraceEnd
-ACTION_SCROLL_LEFT
-‎‪
-icon_only_inputs
-cinematic_white_focus
-restore_key_services
-wallpaper
-BITMAP
-source_panel_extra
-source_panel_service
-input_key_keycodes
-wifi_status_color
-COROUTINE_SUSPENDED
-android.intent.action.MAIN
-PC
-DVD
-COMPUTER
-accessibility_helpers
-recents
-UNKNOWN
-ACTION_PASTE
-STB
-coocaa_sources
-accessibility
-android.intent.category.LEANBACK_LAUN...
-vpn_pill
-wallpaper_order
-open_on_start_choice
-wifi_status_warnings
-radial
-stats
-dock_title
-TRACE_TAG_APP
-fill_dock
-t.me/EvaTVLauncher
-12
-LATER
-com.android.tv.action.VIEW_INPUTS
-drawable
-ACTION_NEXT_HTML_ELEMENT
-livetv
-night
-reduced_motion
-ACTION_SCROLL_DOWN
-mute
-android.view.ViewRootImpl
-morning
-ACTION_COLLAPSE
-Later
-input
-seasonal_skin
-rm
-android.intent.action.SCREEN_ON
-config.json
-cleanLabel
-24
-icon_only_buttons
-rw
-top_bar_apps
-0x
-scan
-io.example.a
-hidden_apps
-show_inputs_pill
-ACTION_PAGE_DOWN
-cinematic_dots
-ACTION_SCROLL_TO_POSITION
-android.intent.action.PACKAGE_CHANGED
-RESOURCE
-ACTION_SELECT
-/cpuidle/state
-Netflix
-calendar
-QUALIFYING
-date_below_clock
-off_in_standby
-tag_name
-ACTION_EXPAND
-TvHome.Library
-wallpapers
-handle_view_inputs
-guard_off_in_standby
-hdmi2
-advanced_effects
-.webp
-RecyclerView
-rows_below_dock
-input_sources
-show_home_settings_shortcut
-vnd.android.cursor.dir/channel
-android.intent.action.PACKAGE_REMOVED
-theme_revision
-android.settings.HOME_SETTINGS
-theme_signature
-androidx.recyclerview.widget.Recycler...
-dock_apps
-up
-androidx.view.accessibility.Accessibi...
-source_panel_action
-glass
-stock_home_redirect
-dock_band
-power_on_home_always
-collection
-com.gathin.tvhome.action.LAUNCHER_SET...
-vi
-library_excluded_apps
-hold:
-name
-TvHome.WallpaperFetcher
-wallpaper_dim
-changed
-getDescriptor
-sequential
-show
-java.lang.module.ModuleDescriptor
-back_opens_clock
-wa
-updates
-Retro
-ViewParentCompat
-rwt
-CTSDummy
-NEXT
-guide:
-boot
-wt
-/releases/latest
-android.intent.action.TIMEZONE_CHANGED
-consume_volume_keys
-start
-app_library_selection
-View
-wallpaper_captions
-android.intent.action.PACKAGE_ADDED
-colour
-fade_rows
-shamsi_date
-cinematic_home
-top_line
-RACE
-android.intent.action.VIEW
-ACTION_PREVIOUS_AT_MOVEMENT_GRANULARITY
-Location
-﻿
-xx
-com.gathin.tvhome.card
-library_button
-cleanyourtv
-dock_row
-ACCESSIBILITY_CLICKABLE_SPAN_ID
-none
-ACTION_PAGE_LEFT
-EmptyCoroutineContext
-library_home_removed.txt
-getViewRootImpl
-connectivity
-children
-live_tv_action
-single_row
-METHOD_GOTO_SOURCE
-vnd.android.cursor.item/channel
-ACTION_SHOW_ON_SCREEN
-com.gathin.tvhome.games
-library_ok_opens
-wallpaper_moods
-wifi
-sessions
-enabled_accessibility_services
-_display_name
-CONSUMED
-screensaver
-.jpeg
-.png
-vpn_app
-analog
-GET
-.apk
-word
-card
-ACTION_FOCUS
-columns
-guard
-order.txt
-PrivateApi
-com.gathin.tvhome.category.DOCK_CARD
-TvHome.Wallpaper
-unknown
-accent_color
-greeting_name
-com.android.systemui
-mContentInsets
-library_apps.txt
-place
-/proc/stat
-defaulthome
-launch_actions
-game_day
-android.settings.SETTINGS
-lunar_date
-dock_opacity
-TvHome.Order
-ServiceRepair
-diwali
-input_uri_scheme
-ACTION_SET_TEXT
-live_tv_boot
-lunar_utc_offset
-URI_MASKABLE
-wallpaper_rotation
-https://www.reddit.com/r/wallpapers/.rss
-data
-boot_to_live_tv
-spec
-asyncTraceBegin
-halloween
-assets
-wallpaper.jpg
-MemTotal:
-android.permission.WRITE_SECURE_SETTINGS
-vnd.android.cursor.dir/program
-app_banners
-clock_wallpaper_dim
-DONE
-package
-wallpaper_choice
-Yesterday
-hdmi
-ACTION_COPY
-0123456789abcdef
-dussehra
-app_library
-sky_intensity
-CAM
-dock_band_all
-live_tv_input_id
-DATA
-HDMI
-front:
-res/
-clock_wallpaper
-open_on_start_network_wait
-android.intent.category.LAUNCHER
-settings_revision
-com.android.tv.settings.MainSettings
-SAT
-show_stats
-ACTION_CUT
-mAccessibilityDelegate
-/sys/devices/system/cpu/cpu
-GAME
-CABLE
-animations
-header_white
-android.intent.extra.REPLACING
-ACTION_PREVIOUS_HTML_ELEMENT
-always_show_names
-0x%08x
-ACTION_SHOW_TOOLTIP
-verified
-Parcelizer
-clock_glow
-accent
-show_network_pill
-focus_overshoot
-com.android.systemui.Somnambulator
-WindowInsetsCompat
-Today
-tv_input
-round
-mAttachInfo
-.updateprovider
-Marking string:glass_style:2131755062 used because it matches string pool constant glass_style
-Marking id:greeting:2131296334 used because it matches string pool constant greeting
-Marking string:greeting_name:2131755069 used because it matches string pool constant greeting
-Marking string:greeting_with_name:2131755070 used because it matches string pool constant greeting
-Marking string:clock_format:2131755033 used because it matches string pool constant clock_format
-Marking string:clock_format_12:2131755034 used because it matches string pool constant clock_format
-Marking string:clock_format_24:2131755035 used because it matches string pool constant clock_format
-Marking string:clock_format_system:2131755036 used because it matches string pool constant clock_format
-Marking bool:wallpaper_true_color:2130968639 used because it matches string pool constant wallpaper_true_color
-Marking string:festival_diwali_greeting:2131755049 used because it matches string pool constant festival
-Marking string:festival_dussehra_greeting:2131755050 used because it matches string pool constant festival
-Marking string:festival_halloween_greeting:2131755051 used because it matches string pool constant festival
-Marking menu:example_menu:2131492864 used because it matches string pool constant example
-Marking menu:example_menu2:2131492865 used because it matches string pool constant example
-Marking bool:dock_even_padding:2130968596 used because it matches string pool constant dock_even_padding
-Marking array:app_labels:2130837506 used because it matches string pool constant app_labels
-Marking bool:gamepad_passthrough:2130968603 used because it matches string pool constant gamepad_passthrough
-Marking bool:home_long_press_home:2130968606 used because it matches string pool constant home_long_press_home
-Marking id:card:2131296310 used because it matches string pool constant ca
-Marking id:cardHint:2131296311 used because it matches string pool constant ca
-Marking id:cardTitle:2131296312 used because it matches string pool constant ca
-Marking id:cardValue:2131296313 used because it matches string pool constant ca
-Marking id:categoryCard:2131296314 used because it matches string pool constant ca
-Marking id:categoryGrid:2131296315 used because it matches string pool constant ca
-Marking id:categoryIcon:2131296316 used because it matches string pool constant ca
-Marking id:categoryTitle:2131296317 used because it matches string pool constant ca
-Marking string:cant_open:2131755014 used because it matches string pool constant ca
-Marking string:card_app_name:2131755015 used because it matches string pool constant ca
-Marking string:card_keep_hidden:2131755016 used because it matches string pool constant ca
-Marking string:card_not_saved:2131755017 used because it matches string pool constant ca
-Marking string:card_prompt_body:2131755018 used because it matches string pool constant ca
-Marking string:card_prompt_hint:2131755019 used because it matches string pool constant ca
-Marking string:card_prompt_identity:2131755020 used because it matches string pool constant ca
-Marking string:card_prompt_names:2131755021 used because it matches string pool constant ca
-Marking string:card_prompt_relabelled:2131755022 used because it matches string pool constant ca
-Marking string:card_prompt_resigned:2131755023 used because it matches string pool constant ca
-Marking string:card_prompt_title:2131755024 used because it matches string pool constant ca
-Marking string:card_show:2131755025 used because it matches string pool constant ca
-Marking string:card_state_hidden:2131755026 used because it matches string pool constant ca
-Marking string:card_state_new:2131755027 used because it matches string pool constant ca
-Marking string:card_state_new_key:2131755028 used because it matches string pool constant ca
-Marking string:card_state_new_label:2131755029 used because it matches string pool constant ca
-Marking string:card_state_over_limit:2131755030 used because it matches string pool constant ca
-Marking string:card_state_shown:2131755031 used because it matches string pool constant ca
-Marking bool:top_menu:2130968635 used because it matches string pool constant top_menu
-Marking integer:cinematic_scrim:2131361793 used because it matches string pool constant cinematic_scrim
-Marking string:input_action:2131755075 used because it matches string pool constant input_action
-Marking string:last_opened:2131755079 used because it matches string pool constant last_opened
-Marking bool:date_below_clock:2130968592 used because it matches string pool constant da
-Marking bool:date_single_line:2130968593 used because it matches string pool constant da
-Marking id:date:2131296321 used because it matches string pool constant da
-Marking string:date_format:2131755039 used because it matches string pool constant da
-Marking string:date_format_home:2131755040 used because it matches string pool constant da
-Marking bool:module_cards:2130968616 used because it matches string pool constant module_cards
-Marking string:module_cards:2131755101 used because it matches string pool constant module_cards
-Marking bool:inputs_connected_only:2130968610 used because it matches string pool constant inputs
-Marking string:inputs:2131755078 used because it matches string pool constant inputs
-Marking string:live_tv_package:2131755095 used because it matches string pool constant live_tv_package
-Marking bool:power_on_home:2130968618 used because it matches string pool constant power_on_home
-Marking bool:power_on_home_always:2130968619 used because it matches string pool constant power_on_home
-Marking string:enable:2131755047 used because it matches string pool constant en
-Marking bool:show_library_pill:2130968630 used because it matches string pool constant show_library_pill
-Marking array:app_keys:2130837505 used because it matches string pool constant app_keys
-Marking string:glow_style:2131755063 used because it matches string pool constant glow_style
-Marking array:settings_key_keycodes:2130837518 used because it matches string pool constant settings_key_keycodes
-Marking bool:back_opens_clock:2130968583 used because it matches string pool constant back
-Marking bool:uniform_tiles:2130968636 used because it matches string pool constant uniform_tiles
-Marking string:locale:2131755096 used because it matches string pool constant locale
-Marking xml:locales_config:2131951619 used because it matches string pool constant locale
-Marking bool:show_greeting:2130968627 used because it matches string pool constant show_greeting
-Marking bool:launcher_settings_button:2130968612 used because it matches string pool constant launcher_settings
-Marking string:launcher_settings:2131755081 used because it matches string pool constant launcher_settings
-Marking bool:ambient_glow:2130968578 used because it matches string pool constant ambient_glow
-Marking bool:dock_glass:2130968597 used because it matches string pool constant dock_glass
-Marking bool:icon_only_vpn:2130968609 used because it matches string pool constant icon_only_vpn
-Marking id:label:2131296354 used because it matches string pool constant label
-Marking bool:home_long_press_home:2130968606 used because it matches string pool constant home
-Marking integer:home_idle_clock_minutes:2131361796 used because it matches string pool constant home
-Marking string:home_key_description:2131755071 used because it matches string pool constant home
-Marking string:home_key_name:2131755072 used because it matches string pool constant home
-Marking string:home_settings:2131755073 used because it matches string pool constant home
-Marking string:home_settings_help:2131755074 used because it matches string pool constant home
-Marking xml:home_key_service:2131951617 used because it matches string pool constant home
-Marking bool:header_white:2130968605 used because it matches string pool constant he
-Marking id:hero:2131296336 used because it matches string pool constant he
-Marking id:heroArt:2131296337 used because it matches string pool constant he
-Marking id:heroDots:2131296338 used because it matches string pool constant he
-Marking id:heroMeta:2131296339 used because it matches string pool constant he
-Marking id:heroName:2131296340 used because it matches string pool constant he
-Marking id:heroScrim:2131296341 used because it matches string pool constant he
-Marking bool:tile_menu:2130968634 used because it matches string pool constant tile_menu
-Marking id:identity:2131296345 used because it matches string pool constant id
-Marking style:SettingsColumnChoice:2131820544 used because it matches string pool constant Settings
-Marking style:SettingsRow:2131820545 used because it matches string pool constant Settings
-Marking integer:home_idle_clock_minutes:2131361796 used because it matches string pool constant home_idle_clock_minutes
-Marking array:input_key_keycodes:2130837510 used because it matches string pool constant in
-Marking array:input_sources:2130837511 used because it matches string pool constant in
-Marking bool:inputs_connected_only:2130968610 used because it matches string pool constant in
-Marking drawable:input_row_bg:2131165206 used because it matches string pool constant in
-Marking id:info:2131296346 used because it matches string pool constant in
-Marking string:input_action:2131755075 used because it matches string pool constant in
-Marking string:input_key_service_description:2131755076 used because it matches string pool constant in
-Marking string:input_uri_scheme:2131755077 used because it matches string pool constant in
-Marking string:inputs:2131755078 used because it matches string pool constant in
-Marking xml:input_key_service:2131951618 used because it matches string pool constant in
-Marking drawable:banner_tv:2131165185 used because it matches string pool constant banner_
-Marking array:library_apps:2130837513 used because it matches string pool constant library_apps
-Marking bool:reorder_button:2130968621 used because it matches string pool constant reorder_button
-Marking integer:cinematic_art:2131361792 used because it matches string pool constant cinematic_art
-Marking bool:app_glow:2130968580 used because it matches string pool constant app_glow
-Marking bool:settings_key_panel:2130968625 used because it matches string pool constant settings_key_panel
-Marking bool:launcher_settings_button:2130968612 used because it matches string pool constant launcher_settings_button
-Marking array:settings_fallback_components:2130837517 used because it matches string pool constant settings
-Marking array:settings_key_keycodes:2130837518 used because it matches string pool constant settings
-Marking array:settings_key_scancodes:2130837519 used because it matches string pool constant settings
-Marking bool:settings_key_panel:2130968625 used because it matches string pool constant settings
-Marking drawable:settings_card_bg:2131165225 used because it matches string pool constant settings
-Marking drawable:settings_choice_bg:2131165226 used because it matches string pool constant settings
-Marking string:settings:2131755145 used because it matches string pool constant settings
-Marking id:time:2131296407 used because it matches string pool constant /time
-Marking integer:wifi_label_width:2131361801 used because it matches string pool constant wifi_label_width
-Marking bool:open_on_start_choice:2130968617 used because it matches string pool constant open_on_start
-Marking integer:open_on_start_network_wait:2131361797 used because it matches string pool constant open_on_start
-Marking string:open_on_start_label:2131755111 used because it matches string pool constant open_on_start
-Marking string:open_on_start_state:2131755112 used because it matches string pool constant open_on_start
-Marking bool:key_filter:2130968611 used because it matches string pool constant key_filter
-Marking bool:inputs_connected_only:2130968610 used because it matches string pool constant inputs_connected_only
-Marking bool:icon_only_inputs:2130968608 used because it matches string pool constant icon_only_inputs
-Marking bool:cinematic_white_focus:2130968587 used because it matches string pool constant cinematic_white_focus
-Marking bool:restore_key_services:2130968622 used because it matches string pool constant restore_key_services
-Marking bool:wallpaper_captions:2130968638 used because it matches string pool constant wallpaper
-Marking bool:wallpaper_true_color:2130968639 used because it matches string pool constant wallpaper
-Marking drawable:wallpaper_card_gradient:2131165229 used because it matches string pool constant wallpaper
-Marking id:wallpaperCard:2131296411 used because it matches string pool constant wallpaper
-Marking id:wallpaperGrid:2131296412 used because it matches string pool constant wallpaper
-Marking id:wallpaperName:2131296413 used because it matches string pool constant wallpaper
-Marking id:wallpaperPreview:2131296414 used because it matches string pool constant wallpaper
-Marking string:wallpaper_applied:2131755176 used because it matches string pool constant wallpaper
-Marking string:wallpaper_label:2131755177 used because it matches string pool constant wallpaper
-Marking string:wallpaper_moods:2131755178 used because it matches string pool constant wallpaper
-Marking string:wallpaper_none:2131755179 used because it matches string pool constant wallpaper
-Marking string:wallpaper_state:2131755180 used because it matches string pool constant wallpaper
-Marking string:wallpaper_theme_default:2131755181 used because it matches string pool constant wallpaper
-Marking string:source_panel_extra:2131755159 used because it matches string pool constant source_panel_extra
-Marking string:source_panel_service:2131755160 used because it matches string pool constant source_panel_service
-Marking array:input_key_keycodes:2130837510 used because it matches string pool constant input_key_keycodes
-Marking bool:wifi_status_color:2130968640 used because it matches string pool constant wifi_status_color
-Marking bool:coocaa_sources:2130968591 used because it matches string pool constant coocaa_sources
-Marking id:accessibility_action_clickable_span:2131296256 used because it matches string pool constant accessibility
-Marking id:accessibility_custom_action_0:2131296257 used because it matches string pool constant accessibility
-Marking id:accessibility_custom_action_1:2131296258 used because it matches string pool constant accessibility
-Marking id:accessibility_custom_action_10:2131296259 used because it matches string pool constant accessibility
-Marking id:accessibility_custom_action_11:2131296260 used because it matches string pool constant accessibility
-Marking id:accessibility_custom_action_12:2131296261 used because it matches string pool constant accessibility
-Marking id:accessibility_custom_action_13:2131296262 used because it matches string pool constant accessibility
-Marking id:accessibility_custom_action_14:2131296263 used because it matches string pool constant accessibility
-Marking id:accessibility_custom_action_15:2131296264 used because it matches string pool constant accessibility
-Marking id:accessibility_custom_action_16:2131296265 used because it matches string pool constant accessibility
-Marking id:accessibility_custom_action_17:2131296266 used because it matches string pool constant accessibility
-Marking id:accessibility_custom_action_18:2131296267 used because it matches string pool constant accessibility
-Marking id:accessibility_custom_action_19:2131296268 used because it matches string pool constant accessibility
-Marking id:accessibility_custom_action_2:2131296269 used because it matches string pool constant accessibility
-Marking id:accessibility_custom_action_20:2131296270 used because it matches string pool constant accessibility
-Marking id:accessibility_custom_action_21:2131296271 used because it matches string pool constant accessibility
-Marking id:accessibility_custom_action_22:2131296272 used because it matches string pool constant accessibility
-Marking id:accessibility_custom_action_23:2131296273 used because it matches string pool constant accessibility
-Marking id:accessibility_custom_action_24:2131296274 used because it matches string pool constant accessibility
-Marking id:accessibility_custom_action_25:2131296275 used because it matches string pool constant accessibility
-Marking id:accessibility_custom_action_26:2131296276 used because it matches string pool constant accessibility
-Marking id:accessibility_custom_action_27:2131296277 used because it matches string pool constant accessibility
-Marking id:accessibility_custom_action_28:2131296278 used because it matches string pool constant accessibility
-Marking id:accessibility_custom_action_29:2131296279 used because it matches string pool constant accessibility
-Marking id:accessibility_custom_action_3:2131296280 used because it matches string pool constant accessibility
-Marking id:accessibility_custom_action_30:2131296281 used because it matches string pool constant accessibility
-Marking id:accessibility_custom_action_31:2131296282 used because it matches string pool constant accessibility
-Marking id:accessibility_custom_action_4:2131296283 used because it matches string pool constant accessibility
-Marking id:accessibility_custom_action_5:2131296284 used because it matches string pool constant accessibility
-Marking id:accessibility_custom_action_6:2131296285 used because it matches string pool constant accessibility
-Marking id:accessibility_custom_action_7:2131296286 used because it matches string pool constant accessibility
-Marking id:accessibility_custom_action_8:2131296287 used because it matches string pool constant accessibility
-Marking id:accessibility_custom_action_9:2131296288 used because it matches string pool constant accessibility
-Marking bool:vpn_pill:2130968637 used because it matches string pool constant vpn_pill
-Marking bool:open_on_start_choice:2130968617 used because it matches string pool constant open_on_start_choice
-Marking bool:wifi_status_warnings:2130968641 used because it matches string pool constant wifi_status_warnings
-Marking id:stats:2131296388 used because it matches string pool constant stats
-Marking string:stats_cpu:2131755162 used because it matches string pool constant stats
-Marking string:stats_memory:2131755163 used because it matches string pool constant stats
-Marking string:stats_storage:2131755164 used because it matches string pool constant stats
-Marking bool:dock_title:2130968599 used because it matches string pool constant dock_title
-Marking bool:fill_dock:2130968601 used because it matches string pool constant fill_dock
-Marking bool:reduced_motion:2130968620 used because it matches string pool constant reduced_motion
-Marking array:input_key_keycodes:2130837510 used because it matches string pool constant input
-Marking array:input_sources:2130837511 used because it matches string pool constant input
-Marking bool:inputs_connected_only:2130968610 used because it matches string pool constant input
-Marking drawable:input_row_bg:2131165206 used because it matches string pool constant input
-Marking string:input_action:2131755075 used because it matches string pool constant input
-Marking string:input_key_service_description:2131755076 used because it matches string pool constant input
-Marking string:input_uri_scheme:2131755077 used because it matches string pool constant input
-Marking string:inputs:2131755078 used because it matches string pool constant input
-Marking xml:input_key_service:2131951618 used because it matches string pool constant input
-Marking bool:icon_only_buttons:2130968607 used because it matches string pool constant icon_only_buttons
-Marking array:top_bar_apps:2130837520 used because it matches string pool constant top_bar_apps
-Marking array:hidden_apps:2130837508 used because it matches string pool constant hidden_apps
-Marking bool:show_inputs_pill:2130968629 used because it matches string pool constant show_inputs_pill
-Marking bool:cinematic_dots:2130968585 used because it matches string pool constant cinematic_dots
-Marking bool:date_below_clock:2130968592 used because it matches string pool constant date_below_clock
-Marking bool:handle_view_inputs:2130968604 used because it matches string pool constant handle_view_inputs
-Marking bool:advanced_effects:2130968576 used because it matches string pool constant advanced_effects
-Marking string:advanced_effects:2131755008 used because it matches string pool constant advanced_effects
-Marking string:advanced_effects_state:2131755009 used because it matches string pool constant advanced_effects
-Marking string:advanced_effects_warning:2131755010 used because it matches string pool constant advanced_effects
-Marking integer:rows_below_dock:2131361798 used because it matches string pool constant rows_below_dock
-Marking string:rows_below_dock_label:2131755144 used because it matches string pool constant rows_below_dock
-Marking array:input_sources:2130837511 used because it matches string pool constant input_sources
-Marking bool:show_home_settings_shortcut:2130968628 used because it matches string pool constant show_home_settings_shortcut
-Marking array:dock_apps:2130837507 used because it matches string pool constant dock_apps
-Marking string:source_panel_action:2131755158 used because it matches string pool constant source_panel_action
-Marking drawable:glass_panel:2131165187 used because it matches string pool constant glass
-Marking id:glass:2131296333 used because it matches string pool constant glass
-Marking string:glass_style:2131755062 used because it matches string pool constant glass
-Marking string:stock_home_redirect:2131755166 used because it matches string pool constant stock_home_redirect
-Marking bool:dock_band:2130968594 used because it matches string pool constant dock_band
-Marking bool:dock_band_all:2130968595 used because it matches string pool constant dock_band
-Marking bool:power_on_home_always:2130968619 used because it matches string pool constant power_on_home_always
-Marking id:view_tree_lifecycle_owner:2131296410 used because it matches string pool constant vi
-Marking array:library_excluded_apps:2130837514 used because it matches string pool constant library_excluded_apps
-Marking id:name:2131296359 used because it matches string pool constant name
-Marking id:names:2131296360 used because it matches string pool constant name
-Marking bool:show_greeting:2130968627 used because it matches string pool constant show
-Marking bool:show_home_settings_shortcut:2130968628 used because it matches string pool constant show
-Marking bool:show_inputs_pill:2130968629 used because it matches string pool constant show
-Marking bool:show_library_pill:2130968630 used because it matches string pool constant show
-Marking bool:show_network_pill:2130968631 used because it matches string pool constant show
-Marking bool:show_stats:2130968632 used because it matches string pool constant show
-Marking bool:back_opens_clock:2130968583 used because it matches string pool constant back_opens_clock
-Marking bool:wallpaper_captions:2130968638 used because it matches string pool constant wa
-Marking bool:wallpaper_true_color:2130968639 used because it matches string pool constant wa
-Marking drawable:wallpaper_card_gradient:2131165229 used because it matches string pool constant wa
-Marking id:wallpaperCard:2131296411 used because it matches string pool constant wa
-Marking id:wallpaperGrid:2131296412 used because it matches string pool constant wa
-Marking id:wallpaperName:2131296413 used because it matches string pool constant wa
-Marking id:wallpaperPreview:2131296414 used because it matches string pool constant wa
-Marking string:wallpaper_applied:2131755176 used because it matches string pool constant wa
-Marking string:wallpaper_label:2131755177 used because it matches string pool constant wa
-Marking string:wallpaper_moods:2131755178 used because it matches string pool constant wa
-Marking string:wallpaper_none:2131755179 used because it matches string pool constant wa
-Marking string:wallpaper_state:2131755180 used because it matches string pool constant wa
-Marking string:wallpaper_theme_default:2131755181 used because it matches string pool constant wa
-Marking bool:boot_to_live_tv:2130968584 used because it matches string pool constant boot
-Marking bool:consume_volume_keys:2130968590 used because it matches string pool constant consume_volume_keys
-Marking bool:app_library_selection:2130968582 used because it matches string pool constant app_library_selection
-Marking bool:wallpaper_captions:2130968638 used because it matches string pool constant wallpaper_captions
-Marking bool:fade_rows:2130968600 used because it matches string pool constant fade_rows
-Marking bool:shamsi_date:2130968626 used because it matches string pool constant shamsi_date
-Marking bool:cinematic_home:2130968586 used because it matches string pool constant cinematic_home
-Marking bool:library_button:2130968613 used because it matches string pool constant library_button
-Marking bool:dock_row:2130968598 used because it matches string pool constant dock_row
-Marking string:live_tv_action:2131755093 used because it matches string pool constant live_tv_action
-Marking bool:single_row:2130968633 used because it matches string pool constant single_row
-Marking bool:library_ok_opens:2130968614 used because it matches string pool constant library_ok_opens
-Marking string:wallpaper_moods:2131755178 used because it matches string pool constant wallpaper_moods
-Marking bool:wifi_status_color:2130968640 used because it matches string pool constant wifi
-Marking bool:wifi_status_warnings:2130968641 used because it matches string pool constant wifi
-Marking integer:wifi_label_width:2131361801 used because it matches string pool constant wifi
-Marking string:wifi:2131755182 used because it matches string pool constant wifi
-Marking string:vpn_app:2131755174 used because it matches string pool constant vpn_app
-Marking id:card:2131296310 used because it matches string pool constant card
-Marking id:cardHint:2131296311 used because it matches string pool constant card
-Marking id:cardTitle:2131296312 used because it matches string pool constant card
-Marking id:cardValue:2131296313 used because it matches string pool constant card
-Marking string:card_app_name:2131755015 used because it matches string pool constant card
-Marking string:card_keep_hidden:2131755016 used because it matches string pool constant card
-Marking string:card_not_saved:2131755017 used because it matches string pool constant card
-Marking string:card_prompt_body:2131755018 used because it matches string pool constant card
-Marking string:card_prompt_hint:2131755019 used because it matches string pool constant card
-Marking string:card_prompt_identity:2131755020 used because it matches string pool constant card
-Marking string:card_prompt_names:2131755021 used because it matches string pool constant card
-Marking string:card_prompt_relabelled:2131755022 used because it matches string pool constant card
-Marking string:card_prompt_resigned:2131755023 used because it matches string pool constant card
-Marking string:card_prompt_title:2131755024 used because it matches string pool constant card
-Marking string:card_show:2131755025 used because it matches string pool constant card
-Marking string:card_state_hidden:2131755026 used because it matches string pool constant card
-Marking string:card_state_new:2131755027 used because it matches string pool constant card
-Marking string:card_state_new_key:2131755028 used because it matches string pool constant card
-Marking string:card_state_new_label:2131755029 used because it matches string pool constant card
-Marking string:card_state_over_limit:2131755030 used because it matches string pool constant card
-Marking string:card_state_shown:2131755031 used because it matches string pool constant card
-Marking integer:columns:2131361795 used because it matches string pool constant columns
-Marking string:columns_label:2131755037 used because it matches string pool constant columns
-Marking string:greeting_name:2131755069 used because it matches string pool constant greeting_name
-Marking array:launch_actions:2130837512 used because it matches string pool constant launch_actions
-Marking string:game_day:2131755059 used because it matches string pool constant game_day
-Marking bool:lunar_date:2130968615 used because it matches string pool constant lunar_date
-Marking string:lunar_date_format:2131755098 used because it matches string pool constant lunar_date
-Marking string:dock_opacity_label:2131755045 used because it matches string pool constant dock_opacity
-Marking string:input_uri_scheme:2131755077 used because it matches string pool constant input_uri_scheme
-Marking bool:boot_to_live_tv:2130968584 used because it matches string pool constant boot_to_live_tv
-Marking drawable:halloween_bat:2131165188 used because it matches string pool constant halloween
-Marking drawable:halloween_ghost:2131165189 used because it matches string pool constant halloween
-Marking drawable:halloween_pumpkin_dark:2131165190 used because it matches string pool constant halloween
-Marking drawable:halloween_pumpkin_lit:2131165191 used because it matches string pool constant halloween
-Marking array:app_banners:2130837504 used because it matches string pool constant app_banners
-Marking integer:clock_wallpaper_dim:2131361794 used because it matches string pool constant clock_wallpaper_dim
-Marking bool:app_library:2130968581 used because it matches string pool constant app_library
-Marking bool:app_library_selection:2130968582 used because it matches string pool constant app_library
-Marking string:app_library:2131755012 used because it matches string pool constant app_library
-Marking integer:sky_intensity:2131361799 used because it matches string pool constant sky_intensity
-Marking bool:dock_band_all:2130968595 used because it matches string pool constant dock_band_all
-Marking string:live_tv_input_id:2131755094 used because it matches string pool constant live_tv_input_id
-Marking bool:clock_wallpaper:2130968589 used because it matches string pool constant clock_wallpaper
-Marking integer:clock_wallpaper_dim:2131361794 used because it matches string pool constant clock_wallpaper
-Marking integer:open_on_start_network_wait:2131361797 used because it matches string pool constant open_on_start_network_wait
-Marking bool:show_stats:2130968632 used because it matches string pool constant show_stats
-Marking bool:animations:2130968579 used because it matches string pool constant animations
-Marking string:animations_state:2131755011 used because it matches string pool constant animations
-Marking bool:header_white:2130968605 used because it matches string pool constant header_white
-Marking bool:always_show_names:2130968577 used because it matches string pool constant always_show_names
-Marking bool:clock_glow:2130968588 used because it matches string pool constant clock_glow
-Marking bool:show_network_pill:2130968631 used because it matches string pool constant show_network_pill
-Marking bool:focus_overshoot:2130968602 used because it matches string pool constant focus_overshoot
-@com.gathin.tvhome:anim/app_open_enter : reachable=true
-@com.gathin.tvhome:anim/app_open_exit : reachable=true
-@com.gathin.tvhome:anim/tile_enter : reachable=true
-@com.gathin.tvhome:array/app_banners : reachable=true
-@com.gathin.tvhome:array/app_keys : reachable=true
-@com.gathin.tvhome:array/app_labels : reachable=true
-@com.gathin.tvhome:array/dock_apps : reachable=true
-@com.gathin.tvhome:array/hidden_apps : reachable=true
-@com.gathin.tvhome:array/icon_tiles : reachable=true
-@com.gathin.tvhome:array/input_key_keycodes : reachable=true
-@com.gathin.tvhome:array/input_sources : reachable=true
-@com.gathin.tvhome:array/launch_actions : reachable=true
-@com.gathin.tvhome:array/library_apps : reachable=true
-@com.gathin.tvhome:array/library_excluded_apps : reachable=true
-@com.gathin.tvhome:array/lunar_branches : reachable=true
-@com.gathin.tvhome:array/lunar_stems : reachable=true
-@com.gathin.tvhome:array/settings_fallback_components : reachable=true
-@com.gathin.tvhome:array/settings_key_keycodes : reachable=true
-@com.gathin.tvhome:array/settings_key_scancodes : reachable=true
-@com.gathin.tvhome:array/top_bar_apps : reachable=true
-@com.gathin.tvhome:attr/alpha : reachable=false
-@com.gathin.tvhome:attr/fastScrollEnabled : reachable=false
-@com.gathin.tvhome:attr/fastScrollHorizontalThumbDrawable : reachable=false
-@com.gathin.tvhome:attr/fastScrollHorizontalTrackDrawable : reachable=false
-@com.gathin.tvhome:attr/fastScrollVerticalThumbDrawable : reachable=false
-@com.gathin.tvhome:attr/fastScrollVerticalTrackDrawable : reachable=false
-@com.gathin.tvhome:attr/font : reachable=false
-@com.gathin.tvhome:attr/fontProviderAuthority : reachable=false
-@com.gathin.tvhome:attr/fontProviderCerts : reachable=false
-@com.gathin.tvhome:attr/fontProviderFetchStrategy : reachable=false
-@com.gathin.tvhome:attr/fontProviderFetchTimeout : reachable=false
-@com.gathin.tvhome:attr/fontProviderPackage : reachable=false
-@com.gathin.tvhome:attr/fontProviderQuery : reachable=false
-@com.gathin.tvhome:attr/fontProviderSystemFontFamily : reachable=false
-@com.gathin.tvhome:attr/fontStyle : reachable=false
-@com.gathin.tvhome:attr/fontVariationSettings : reachable=false
-@com.gathin.tvhome:attr/fontWeight : reachable=false
-@com.gathin.tvhome:attr/lStar : reachable=false
-@com.gathin.tvhome:attr/layoutManager : reachable=false
-@com.gathin.tvhome:attr/nestedScrollViewStyle : reachable=false
-@com.gathin.tvhome:attr/queryPatterns : reachable=false
-@com.gathin.tvhome:attr/recyclerViewStyle : reachable=true
-@com.gathin.tvhome:attr/reverseLayout : reachable=false
-@com.gathin.tvhome:attr/shortcutMatchRequired : reachable=false
-@com.gathin.tvhome:attr/spanCount : reachable=false
-@com.gathin.tvhome:attr/stackFromEnd : reachable=false
-@com.gathin.tvhome:attr/ttcIndex : reachable=false
-@com.gathin.tvhome:bool/advanced_effects : reachable=true
-@com.gathin.tvhome:bool/always_show_names : reachable=true
-@com.gathin.tvhome:bool/ambient_glow : reachable=true
-@com.gathin.tvhome:bool/animations : reachable=true
-@com.gathin.tvhome:bool/app_glow : reachable=true
-@com.gathin.tvhome:bool/app_library : reachable=true
-@com.gathin.tvhome:bool/app_library_selection : reachable=true
-@com.gathin.tvhome:bool/back_opens_clock : reachable=true
-@com.gathin.tvhome:bool/boot_to_live_tv : reachable=true
-@com.gathin.tvhome:bool/cinematic_dots : reachable=true
-@com.gathin.tvhome:bool/cinematic_home : reachable=true
-@com.gathin.tvhome:bool/cinematic_white_focus : reachable=true
-@com.gathin.tvhome:bool/clock_glow : reachable=true
-@com.gathin.tvhome:bool/clock_wallpaper : reachable=true
-@com.gathin.tvhome:bool/consume_volume_keys : reachable=true
-@com.gathin.tvhome:bool/coocaa_sources : reachable=true
-@com.gathin.tvhome:bool/date_below_clock : reachable=true
-@com.gathin.tvhome:bool/date_single_line : reachable=true
-@com.gathin.tvhome:bool/dock_band : reachable=true
-@com.gathin.tvhome:bool/dock_band_all : reachable=true
-@com.gathin.tvhome:bool/dock_even_padding : reachable=true
-@com.gathin.tvhome:bool/dock_glass : reachable=true
-@com.gathin.tvhome:bool/dock_row : reachable=true
-@com.gathin.tvhome:bool/dock_title : reachable=true
-@com.gathin.tvhome:bool/fade_rows : reachable=true
-@com.gathin.tvhome:bool/fill_dock : reachable=true
-@com.gathin.tvhome:bool/focus_overshoot : reachable=true
-@com.gathin.tvhome:bool/gamepad_passthrough : reachable=true
-@com.gathin.tvhome:bool/handle_view_inputs : reachable=true
-@com.gathin.tvhome:bool/header_white : reachable=true
-@com.gathin.tvhome:bool/home_long_press_home : reachable=true
-@com.gathin.tvhome:bool/icon_only_buttons : reachable=true
-@com.gathin.tvhome:bool/icon_only_inputs : reachable=true
-@com.gathin.tvhome:bool/icon_only_vpn : reachable=true
-@com.gathin.tvhome:bool/inputs_connected_only : reachable=true
-@com.gathin.tvhome:bool/key_filter : reachable=true
-@com.gathin.tvhome:bool/launcher_settings_button : reachable=true
-@com.gathin.tvhome:bool/library_button : reachable=true
-@com.gathin.tvhome:bool/library_ok_opens : reachable=true
-@com.gathin.tvhome:bool/lunar_date : reachable=true
-@com.gathin.tvhome:bool/module_cards : reachable=true
-@com.gathin.tvhome:bool/open_on_start_choice : reachable=true
-@com.gathin.tvhome:bool/power_on_home : reachable=true
-@com.gathin.tvhome:bool/power_on_home_always : reachable=true
-@com.gathin.tvhome:bool/reduced_motion : reachable=true
-@com.gathin.tvhome:bool/reorder_button : reachable=true
-@com.gathin.tvhome:bool/restore_key_services : reachable=true
-@com.gathin.tvhome:bool/rtl_app_grid : reachable=true
-@com.gathin.tvhome:bool/rtl_menu_bar : reachable=true
-@com.gathin.tvhome:bool/settings_key_panel : reachable=true
-@com.gathin.tvhome:bool/shamsi_date : reachable=true
-@com.gathin.tvhome:bool/show_greeting : reachable=true
-@com.gathin.tvhome:bool/show_home_settings_shortcut : reachable=true
-@com.gathin.tvhome:bool/show_inputs_pill : reachable=true
-@com.gathin.tvhome:bool/show_library_pill : reachable=true
-@com.gathin.tvhome:bool/show_network_pill : reachable=true
-@com.gathin.tvhome:bool/show_stats : reachable=true
-@com.gathin.tvhome:bool/single_row : reachable=true
-@com.gathin.tvhome:bool/tile_menu : reachable=true
-@com.gathin.tvhome:bool/top_menu : reachable=true
-@com.gathin.tvhome:bool/uniform_tiles : reachable=true
-@com.gathin.tvhome:bool/vpn_pill : reachable=true
-@com.gathin.tvhome:bool/wallpaper_captions : reachable=true
-@com.gathin.tvhome:bool/wallpaper_true_color : reachable=true
-@com.gathin.tvhome:bool/wifi_status_color : reachable=true
-@com.gathin.tvhome:bool/wifi_status_warnings : reachable=true
-@com.gathin.tvhome:color/androidx_core_ripple_material_light : reachable=false
-@com.gathin.tvhome:color/androidx_core_secondary_text_default_material_light : reachable=false
-@com.gathin.tvhome:color/notification_action_color_filter : reachable=false
-    @com.gathin.tvhome:color/androidx_core_secondary_text_default_material_light
-@com.gathin.tvhome:color/notification_icon_bg_color : reachable=false
-@com.gathin.tvhome:color/pill_icon_no_internet : reachable=true
-@com.gathin.tvhome:color/pill_icon_offline : reachable=true
-@com.gathin.tvhome:color/pill_icon_online : reachable=true
-@com.gathin.tvhome:dimen/compat_button_inset_horizontal_material : reachable=false
-@com.gathin.tvhome:dimen/compat_button_inset_vertical_material : reachable=false
-@com.gathin.tvhome:dimen/compat_button_padding_horizontal_material : reachable=false
-@com.gathin.tvhome:dimen/compat_button_padding_vertical_material : reachable=false
-@com.gathin.tvhome:dimen/compat_control_corner_material : reachable=false
-@com.gathin.tvhome:dimen/compat_notification_large_icon_max_height : reachable=false
-@com.gathin.tvhome:dimen/compat_notification_large_icon_max_width : reachable=false
-@com.gathin.tvhome:dimen/fastscroll_default_thickness : reachable=true
-@com.gathin.tvhome:dimen/fastscroll_margin : reachable=true
-@com.gathin.tvhome:dimen/fastscroll_minimum_range : reachable=true
-@com.gathin.tvhome:dimen/item_touch_helper_max_drag_scroll_per_frame : reachable=false
-@com.gathin.tvhome:dimen/item_touch_helper_swipe_escape_max_velocity : reachable=false
-@com.gathin.tvhome:dimen/item_touch_helper_swipe_escape_velocity : reachable=false
-@com.gathin.tvhome:dimen/notification_action_icon_size : reachable=false
-@com.gathin.tvhome:dimen/notification_action_text_size : reachable=false
-@com.gathin.tvhome:dimen/notification_big_circle_margin : reachable=false
-@com.gathin.tvhome:dimen/notification_content_margin_start : reachable=false
-@com.gathin.tvhome:dimen/notification_large_icon_height : reachable=false
-@com.gathin.tvhome:dimen/notification_large_icon_width : reachable=false
-@com.gathin.tvhome:dimen/notification_main_column_padding_top : reachable=false
-@com.gathin.tvhome:dimen/notification_media_narrow_margin : reachable=false
-@com.gathin.tvhome:dimen/notification_right_icon_size : reachable=false
-@com.gathin.tvhome:dimen/notification_right_side_padding_top : reachable=false
-@com.gathin.tvhome:dimen/notification_small_icon_background_padding : reachable=false
-@com.gathin.tvhome:dimen/notification_small_icon_size_as_large : reachable=false
-@com.gathin.tvhome:dimen/notification_subtext_size : reachable=false
-@com.gathin.tvhome:dimen/notification_top_pad : reachable=false
-@com.gathin.tvhome:dimen/notification_top_pad_large_text : reachable=false
-@com.gathin.tvhome:drawable/banner : reachable=true
-@com.gathin.tvhome:drawable/banner_tv : reachable=true
-    @com.gathin.tvhome:drawable/ic_livetv
-@com.gathin.tvhome:drawable/dialog_rounded_bg : reachable=false
-@com.gathin.tvhome:drawable/glass_panel : reachable=true
-@com.gathin.tvhome:drawable/halloween_bat : reachable=true
-@com.gathin.tvhome:drawable/halloween_ghost : reachable=true
-@com.gathin.tvhome:drawable/halloween_pumpkin_dark : reachable=true
-@com.gathin.tvhome:drawable/halloween_pumpkin_lit : reachable=true
-@com.gathin.tvhome:drawable/ic_apps : reachable=true
-@com.gathin.tvhome:drawable/ic_apps_pill : reachable=false
-    @com.gathin.tvhome:drawable/ic_apps
-@com.gathin.tvhome:drawable/ic_av : reachable=true
-@com.gathin.tvhome:drawable/ic_ethernet : reachable=true
-@com.gathin.tvhome:drawable/ic_home_settings : reachable=true
-@com.gathin.tvhome:drawable/ic_home_settings_pill : reachable=true
-@com.gathin.tvhome:drawable/ic_input : reachable=true
-@com.gathin.tvhome:drawable/ic_livetv : reachable=true
-@com.gathin.tvhome:drawable/ic_lock : reachable=true
-@com.gathin.tvhome:drawable/ic_lock_open : reachable=true
-@com.gathin.tvhome:drawable/ic_picture : reachable=true
-@com.gathin.tvhome:drawable/ic_settings : reachable=true
-@com.gathin.tvhome:drawable/ic_swap_vert : reachable=true
-@com.gathin.tvhome:drawable/ic_wifi : reachable=true
-@com.gathin.tvhome:drawable/input_row_bg : reachable=true
-@com.gathin.tvhome:drawable/library_check : reachable=true
-@com.gathin.tvhome:drawable/notification_action_background : reachable=false
-    @com.gathin.tvhome:color/androidx_core_ripple_material_light
-    @com.gathin.tvhome:dimen/compat_button_inset_horizontal_material
-    @com.gathin.tvhome:dimen/compat_button_inset_vertical_material
-    @com.gathin.tvhome:dimen/compat_control_corner_material
-    @com.gathin.tvhome:dimen/compat_button_padding_vertical_material
-    @com.gathin.tvhome:dimen/compat_button_padding_horizontal_material
-@com.gathin.tvhome:drawable/notification_bg : reachable=false
-    @com.gathin.tvhome:drawable/notification_bg_normal_pressed
-    @com.gathin.tvhome:drawable/notification_bg_normal
-@com.gathin.tvhome:drawable/notification_bg_low : reachable=false
-    @com.gathin.tvhome:drawable/notification_bg_low_pressed
-    @com.gathin.tvhome:drawable/notification_bg_low_normal
-@com.gathin.tvhome:drawable/notification_bg_low_normal : reachable=false
-@com.gathin.tvhome:drawable/notification_bg_low_pressed : reachable=false
-@com.gathin.tvhome:drawable/notification_bg_normal : reachable=false
-@com.gathin.tvhome:drawable/notification_bg_normal_pressed : reachable=false
-@com.gathin.tvhome:drawable/notification_icon_background : reachable=false
-    @com.gathin.tvhome:color/notification_icon_bg_color
-@com.gathin.tvhome:drawable/notification_template_icon_bg : reachable=false
-@com.gathin.tvhome:drawable/notification_template_icon_low_bg : reachable=false
-@com.gathin.tvhome:drawable/notification_tile_bg : reachable=false
-    @com.gathin.tvhome:drawable/notify_panel_notification_icon_bg
-@com.gathin.tvhome:drawable/notify_panel_notification_icon_bg : reachable=false
-@com.gathin.tvhome:drawable/pill_bg : reachable=false
-@com.gathin.tvhome:drawable/pill_text : reachable=false
-@com.gathin.tvhome:drawable/pill_text_dim : reachable=false
-@com.gathin.tvhome:drawable/pill_text_mid : reachable=false
-@com.gathin.tvhome:drawable/race_bar : reachable=true
-@com.gathin.tvhome:drawable/settings_card_bg : reachable=true
-@com.gathin.tvhome:drawable/settings_choice_bg : reachable=true
-@com.gathin.tvhome:drawable/status_dot : reachable=false
-@com.gathin.tvhome:drawable/tile_bg : reachable=false
-@com.gathin.tvhome:drawable/wallpaper_card_gradient : reachable=true
-@com.gathin.tvhome:font/outfit : reachable=false
-@com.gathin.tvhome:font/outfit_extralight : reachable=false
-    @com.gathin.tvhome:font/outfit
-@com.gathin.tvhome:font/outfit_light : reachable=false
-    @com.gathin.tvhome:font/outfit
-@com.gathin.tvhome:font/outfit_medium : reachable=false
-    @com.gathin.tvhome:font/outfit
-@com.gathin.tvhome:font/outfit_regular : reachable=false
-    @com.gathin.tvhome:font/outfit
-@com.gathin.tvhome:id/accessibility_action_clickable_span : reachable=true
-@com.gathin.tvhome:id/accessibility_custom_action_0 : reachable=true
-@com.gathin.tvhome:id/accessibility_custom_action_1 : reachable=true
-@com.gathin.tvhome:id/accessibility_custom_action_10 : reachable=true
-@com.gathin.tvhome:id/accessibility_custom_action_11 : reachable=true
-@com.gathin.tvhome:id/accessibility_custom_action_12 : reachable=true
-@com.gathin.tvhome:id/accessibility_custom_action_13 : reachable=true
-@com.gathin.tvhome:id/accessibility_custom_action_14 : reachable=true
-@com.gathin.tvhome:id/accessibility_custom_action_15 : reachable=true
-@com.gathin.tvhome:id/accessibility_custom_action_16 : reachable=true
-@com.gathin.tvhome:id/accessibility_custom_action_17 : reachable=true
-@com.gathin.tvhome:id/accessibility_custom_action_18 : reachable=true
-@com.gathin.tvhome:id/accessibility_custom_action_19 : reachable=true
-@com.gathin.tvhome:id/accessibility_custom_action_2 : reachable=true
-@com.gathin.tvhome:id/accessibility_custom_action_20 : reachable=true
-@com.gathin.tvhome:id/accessibility_custom_action_21 : reachable=true
-@com.gathin.tvhome:id/accessibility_custom_action_22 : reachable=true
-@com.gathin.tvhome:id/accessibility_custom_action_23 : reachable=true
-@com.gathin.tvhome:id/accessibility_custom_action_24 : reachable=true
-@com.gathin.tvhome:id/accessibility_custom_action_25 : reachable=true
-@com.gathin.tvhome:id/accessibility_custom_action_26 : reachable=true
-@com.gathin.tvhome:id/accessibility_custom_action_27 : reachable=true
-@com.gathin.tvhome:id/accessibility_custom_action_28 : reachable=true
-@com.gathin.tvhome:id/accessibility_custom_action_29 : reachable=true
-@com.gathin.tvhome:id/accessibility_custom_action_3 : reachable=true
-@com.gathin.tvhome:id/accessibility_custom_action_30 : reachable=true
-@com.gathin.tvhome:id/accessibility_custom_action_31 : reachable=true
-@com.gathin.tvhome:id/accessibility_custom_action_4 : reachable=true
-@com.gathin.tvhome:id/accessibility_custom_action_5 : reachable=true
-@com.gathin.tvhome:id/accessibility_custom_action_6 : reachable=true
-@com.gathin.tvhome:id/accessibility_custom_action_7 : reachable=true
-@com.gathin.tvhome:id/accessibility_custom_action_8 : reachable=true
-@com.gathin.tvhome:id/accessibility_custom_action_9 : reachable=true
-@com.gathin.tvhome:id/action_container : reachable=false
-@com.gathin.tvhome:id/action_divider : reachable=false
-@com.gathin.tvhome:id/action_image : reachable=false
-@com.gathin.tvhome:id/action_text : reachable=false
-@com.gathin.tvhome:id/actions : reachable=false
-@com.gathin.tvhome:id/ambient : reachable=true
-@com.gathin.tvhome:id/ampm : reachable=false
-@com.gathin.tvhome:id/app : reachable=true
-@com.gathin.tvhome:id/async : reachable=false
-@com.gathin.tvhome:id/banner : reachable=true
-@com.gathin.tvhome:id/blocking : reachable=false
-@com.gathin.tvhome:id/body : reachable=true
-@com.gathin.tvhome:id/btnInputs : reachable=true
-@com.gathin.tvhome:id/btnKeep : reachable=true
-@com.gathin.tvhome:id/btnLibrary : reachable=true
-@com.gathin.tvhome:id/btnLibraryTop : reachable=true
-@com.gathin.tvhome:id/btnReorder : reachable=true
-@com.gathin.tvhome:id/btnSettings : reachable=true
-@com.gathin.tvhome:id/btnShow : reachable=true
-@com.gathin.tvhome:id/btnVpn : reachable=true
-@com.gathin.tvhome:id/btnWifi : reachable=true
-@com.gathin.tvhome:id/card : reachable=true
-@com.gathin.tvhome:id/cardHint : reachable=true
-@com.gathin.tvhome:id/cardTitle : reachable=true
-@com.gathin.tvhome:id/cardValue : reachable=true
-@com.gathin.tvhome:id/categoryCard : reachable=true
-@com.gathin.tvhome:id/categoryGrid : reachable=true
-@com.gathin.tvhome:id/categoryIcon : reachable=true
-@com.gathin.tvhome:id/categoryTitle : reachable=true
-@com.gathin.tvhome:id/chronometer : reachable=false
-@com.gathin.tvhome:id/clock : reachable=true
-@com.gathin.tvhome:id/clockDivider : reachable=true
-@com.gathin.tvhome:id/date : reachable=true
-@com.gathin.tvhome:id/dialogSubtitle : reachable=true
-@com.gathin.tvhome:id/dialogTitle : reachable=true
-@com.gathin.tvhome:id/dialog_button : reachable=false
-@com.gathin.tvhome:id/digest : reachable=true
-@com.gathin.tvhome:id/dot : reachable=true
-@com.gathin.tvhome:id/dreamAmPm : reachable=false
-@com.gathin.tvhome:id/dreamAmbient : reachable=true
-@com.gathin.tvhome:id/dreamClock : reachable=false
-@com.gathin.tvhome:id/dreamContent : reachable=true
-@com.gathin.tvhome:id/dreamDate : reachable=false
-@com.gathin.tvhome:id/forever : reachable=false
-@com.gathin.tvhome:id/glass : reachable=true
-@com.gathin.tvhome:id/greeting : reachable=true
-@com.gathin.tvhome:id/grid : reachable=true
-@com.gathin.tvhome:id/hero : reachable=true
-@com.gathin.tvhome:id/heroArt : reachable=true
-@com.gathin.tvhome:id/heroDots : reachable=true
-@com.gathin.tvhome:id/heroMeta : reachable=true
-@com.gathin.tvhome:id/heroName : reachable=true
-@com.gathin.tvhome:id/heroScrim : reachable=true
-@com.gathin.tvhome:id/hint : reachable=false
-@com.gathin.tvhome:id/icon : reachable=true
-@com.gathin.tvhome:id/icon_group : reachable=false
-@com.gathin.tvhome:id/identity : reachable=true
-@com.gathin.tvhome:id/info : reachable=true
-@com.gathin.tvhome:id/is_pooling_container_tag : reachable=true
-@com.gathin.tvhome:id/italic : reachable=false
-@com.gathin.tvhome:id/item1 : reachable=false
-@com.gathin.tvhome:id/item2 : reachable=false
-@com.gathin.tvhome:id/item3 : reachable=false
-@com.gathin.tvhome:id/item4 : reachable=false
-@com.gathin.tvhome:id/item_touch_helper_previous_elevation : reachable=false
-@com.gathin.tvhome:id/label : reachable=true
-@com.gathin.tvhome:id/leftBlock : reachable=true
-@com.gathin.tvhome:id/line1 : reachable=false
-@com.gathin.tvhome:id/line3 : reachable=false
-@com.gathin.tvhome:id/lunarDate : reachable=true
-@com.gathin.tvhome:id/name : reachable=true
-@com.gathin.tvhome:id/names : reachable=true
-@com.gathin.tvhome:id/normal : reachable=false
-@com.gathin.tvhome:id/notification_background : reachable=false
-@com.gathin.tvhome:id/notification_main_column : reachable=false
-@com.gathin.tvhome:id/notification_main_column_container : reachable=false
-@com.gathin.tvhome:id/panel : reachable=true
-@com.gathin.tvhome:id/pkg : reachable=true
-@com.gathin.tvhome:id/pooling_container_listener_holder_tag : reachable=true
-@com.gathin.tvhome:id/raceBar : reachable=true
-@com.gathin.tvhome:id/raceHeadline : reachable=true
-@com.gathin.tvhome:id/raceKicker : reachable=true
-@com.gathin.tvhome:id/racePager : reachable=true
-@com.gathin.tvhome:id/racePanel : reachable=true
-@com.gathin.tvhome:id/raceSessions : reachable=true
-@com.gathin.tvhome:id/right_icon : reachable=false
-@com.gathin.tvhome:id/right_side : reachable=false
-@com.gathin.tvhome:id/root : reachable=true
-@com.gathin.tvhome:id/rows : reachable=true
-@com.gathin.tvhome:id/scrim : reachable=true
-@com.gathin.tvhome:id/sectionContent : reachable=false
-@com.gathin.tvhome:id/sectionOptionsContainer : reachable=false
-@com.gathin.tvhome:id/sectionScrollView : reachable=false
-@com.gathin.tvhome:id/sectionSubtitle : reachable=false
-@com.gathin.tvhome:id/sectionTitle : reachable=false
-@com.gathin.tvhome:id/selectedBadge : reachable=true
-@com.gathin.tvhome:id/shamsiDate : reachable=true
-@com.gathin.tvhome:id/sky : reachable=true
-@com.gathin.tvhome:id/state : reachable=true
-@com.gathin.tvhome:id/stats : reachable=true
-@com.gathin.tvhome:id/status : reachable=true
-@com.gathin.tvhome:id/subGridCard : reachable=true
-@com.gathin.tvhome:id/subGridRecyclerView : reachable=true
-@com.gathin.tvhome:id/tag_accessibility_actions : reachable=true
-@com.gathin.tvhome:id/tag_accessibility_clickable_spans : reachable=true
-@com.gathin.tvhome:id/tag_accessibility_heading : reachable=true
-@com.gathin.tvhome:id/tag_accessibility_pane_title : reachable=true
-@com.gathin.tvhome:id/tag_on_apply_window_listener : reachable=true
-@com.gathin.tvhome:id/tag_on_receive_content_listener : reachable=false
-@com.gathin.tvhome:id/tag_on_receive_content_mime_types : reachable=false
-@com.gathin.tvhome:id/tag_screen_reader_focusable : reachable=true
-@com.gathin.tvhome:id/tag_state_description : reachable=true
-@com.gathin.tvhome:id/tag_transition_group : reachable=false
-@com.gathin.tvhome:id/tag_unhandled_key_event_manager : reachable=false
-@com.gathin.tvhome:id/tag_unhandled_key_listeners : reachable=true
-@com.gathin.tvhome:id/tag_window_insets_animation_callback : reachable=true
-@com.gathin.tvhome:id/text : reachable=false
-@com.gathin.tvhome:id/text2 : reachable=false
-@com.gathin.tvhome:id/time : reachable=true
-@com.gathin.tvhome:id/title : reachable=true
-@com.gathin.tvhome:id/topButtons : reachable=true
-@com.gathin.tvhome:id/view_tree_lifecycle_owner : reachable=true
-@com.gathin.tvhome:id/wallpaperCard : reachable=true
-@com.gathin.tvhome:id/wallpaperGrid : reachable=true
-@com.gathin.tvhome:id/wallpaperName : reachable=true
-@com.gathin.tvhome:id/wallpaperPreview : reachable=true
-@com.gathin.tvhome:integer/cinematic_art : reachable=true
-@com.gathin.tvhome:integer/cinematic_scrim : reachable=true
-@com.gathin.tvhome:integer/clock_wallpaper_dim : reachable=true
-@com.gathin.tvhome:integer/columns : reachable=true
-@com.gathin.tvhome:integer/home_idle_clock_minutes : reachable=true
-@com.gathin.tvhome:integer/open_on_start_network_wait : reachable=true
-@com.gathin.tvhome:integer/rows_below_dock : reachable=true
-@com.gathin.tvhome:integer/sky_intensity : reachable=true
-@com.gathin.tvhome:integer/status_bar_notification_info_maxnum : reachable=false
-@com.gathin.tvhome:integer/wifi_label_width : reachable=true
-@com.gathin.tvhome:layout/activity_launcher_settings : reachable=true
-    @com.gathin.tvhome:string/font_medium
-    @com.gathin.tvhome:string/launcher_settings
-@com.gathin.tvhome:layout/activity_main : reachable=true
-    @com.gathin.tvhome:drawable/race_bar
-    @com.gathin.tvhome:string/font_medium
-    @com.gathin.tvhome:string/font_light
-    @com.gathin.tvhome:string/font_regular
-    @com.gathin.tvhome:string/date_format_home
-    @com.gathin.tvhome:bool/date_single_line
-    @com.gathin.tvhome:drawable/ic_input
-    @com.gathin.tvhome:style/TopButton
-    @com.gathin.tvhome:string/inputs
-    @com.gathin.tvhome:drawable/ic_wifi
-    @com.gathin.tvhome:string/wifi
-    @com.gathin.tvhome:string/vpn
-    @com.gathin.tvhome:string/reorder
-    @com.gathin.tvhome:drawable/ic_swap_vert
-    @com.gathin.tvhome:style/TopButtonIcon
-    @com.gathin.tvhome:string/app_library
-    @com.gathin.tvhome:drawable/ic_apps_pill
-    @com.gathin.tvhome:drawable/ic_settings
-    @com.gathin.tvhome:string/settings
-    @com.gathin.tvhome:string/date_format
-    @com.gathin.tvhome:drawable/ic_apps
-@com.gathin.tvhome:layout/activity_quick_settings : reachable=true
-    @com.gathin.tvhome:drawable/glass_panel
-@com.gathin.tvhome:layout/custom_dialog : reachable=false
-@com.gathin.tvhome:layout/dialog_card_prompt : reachable=true
-    @com.gathin.tvhome:drawable/glass_panel
-    @com.gathin.tvhome:string/font_medium
-    @com.gathin.tvhome:string/font_body
-    @com.gathin.tvhome:string/card_prompt_hint
-    @com.gathin.tvhome:style/TopButton
-    @com.gathin.tvhome:string/card_keep_hidden
-    @com.gathin.tvhome:string/card_show
-@com.gathin.tvhome:layout/dialog_settings_grid : reachable=true
-    @com.gathin.tvhome:drawable/dialog_rounded_bg
-    @com.gathin.tvhome:string/font_medium
-@com.gathin.tvhome:layout/dialog_settings_section : reachable=false
-    @com.gathin.tvhome:drawable/dialog_rounded_bg
-    @com.gathin.tvhome:string/font_medium
-@com.gathin.tvhome:layout/dialog_wallpaper_picker : reachable=true
-    @com.gathin.tvhome:drawable/dialog_rounded_bg
-    @com.gathin.tvhome:string/font_medium
-    @com.gathin.tvhome:string/wallpaper_label
-@com.gathin.tvhome:layout/dream_clock : reachable=true
-    @com.gathin.tvhome:string/font_extralight
-    @com.gathin.tvhome:string/font_medium
-    @com.gathin.tvhome:string/date_format
-    @com.gathin.tvhome:string/font_regular
-@com.gathin.tvhome:layout/item_app : reachable=true
-    @com.gathin.tvhome:drawable/tile_bg
-    @com.gathin.tvhome:string/font_body
-    @com.gathin.tvhome:string/font_medium
-@com.gathin.tvhome:layout/item_card_row : reachable=true
-    @com.gathin.tvhome:drawable/input_row_bg
-    @com.gathin.tvhome:string/font_medium
-    @com.gathin.tvhome:drawable/pill_text
-    @com.gathin.tvhome:string/font_body
-    @com.gathin.tvhome:drawable/pill_text_mid
-@com.gathin.tvhome:layout/item_input : reachable=true
-    @com.gathin.tvhome:drawable/input_row_bg
-    @com.gathin.tvhome:drawable/pill_text
-    @com.gathin.tvhome:string/font_medium
-    @com.gathin.tvhome:drawable/status_dot
-    @com.gathin.tvhome:string/font_body
-    @com.gathin.tvhome:drawable/pill_text_dim
-@com.gathin.tvhome:layout/item_settings_category_card : reachable=true
-    @com.gathin.tvhome:drawable/settings_choice_bg
-    @com.gathin.tvhome:string/font_medium
-@com.gathin.tvhome:layout/item_settings_grid_card : reachable=true
-    @com.gathin.tvhome:drawable/settings_choice_bg
-    @com.gathin.tvhome:string/font_medium
-@com.gathin.tvhome:layout/item_wallpaper_card : reachable=true
-    @com.gathin.tvhome:drawable/settings_choice_bg
-    @com.gathin.tvhome:drawable/wallpaper_card_gradient
-    @com.gathin.tvhome:string/font_medium
-@com.gathin.tvhome:layout/notification_action : reachable=false
-    @com.gathin.tvhome:style/Widget_Compat_NotificationActionContainer
-    @com.gathin.tvhome:dimen/notification_action_icon_size
-    @com.gathin.tvhome:style/Widget_Compat_NotificationActionText
-@com.gathin.tvhome:layout/notification_action_tombstone : reachable=false
-    @com.gathin.tvhome:style/Widget_Compat_NotificationActionContainer
-    @com.gathin.tvhome:dimen/notification_action_icon_size
-    @com.gathin.tvhome:style/Widget_Compat_NotificationActionText
-@com.gathin.tvhome:layout/notification_template_custom_big : reachable=false
-    @com.gathin.tvhome:layout/notification_template_icon_group
-    @com.gathin.tvhome:dimen/notification_large_icon_width
-    @com.gathin.tvhome:dimen/notification_large_icon_height
-    @com.gathin.tvhome:dimen/notification_right_side_padding_top
-    @com.gathin.tvhome:layout/notification_template_part_time
-    @com.gathin.tvhome:layout/notification_template_part_chronometer
-    @com.gathin.tvhome:style/TextAppearance_Compat_Notification_Info
-@com.gathin.tvhome:layout/notification_template_icon_group : reachable=false
-    @com.gathin.tvhome:dimen/notification_large_icon_width
-    @com.gathin.tvhome:dimen/notification_large_icon_height
-    @com.gathin.tvhome:dimen/notification_big_circle_margin
-    @com.gathin.tvhome:dimen/notification_right_icon_size
-@com.gathin.tvhome:layout/notification_template_part_chronometer : reachable=false
-    @com.gathin.tvhome:style/TextAppearance_Compat_Notification_Time
-@com.gathin.tvhome:layout/notification_template_part_time : reachable=false
-    @com.gathin.tvhome:style/TextAppearance_Compat_Notification_Time
-@com.gathin.tvhome:layout/popup_cards : reachable=true
-    @com.gathin.tvhome:drawable/glass_panel
-    @com.gathin.tvhome:string/font_medium
-    @com.gathin.tvhome:string/module_cards
-@com.gathin.tvhome:layout/popup_inputs : reachable=true
-    @com.gathin.tvhome:drawable/glass_panel
-@com.gathin.tvhome:layout/row_app_library : reachable=true
-    @com.gathin.tvhome:drawable/ic_apps_pill
-    @com.gathin.tvhome:style/TopButton
-    @com.gathin.tvhome:string/app_library
-@com.gathin.tvhome:layout/top_app_button : reachable=true
-    @com.gathin.tvhome:style/TopButtonIcon
-@com.gathin.tvhome:menu/example_menu : reachable=true
-@com.gathin.tvhome:menu/example_menu2 : reachable=true
-@com.gathin.tvhome:mipmap/ic_launcher : reachable=true
-@com.gathin.tvhome:plurals/library_app_count : reachable=true
-@com.gathin.tvhome:raw/keep : reachable=false
-@com.gathin.tvhome:string/advanced_effects : reachable=true
-@com.gathin.tvhome:string/advanced_effects_state : reachable=true
-@com.gathin.tvhome:string/advanced_effects_warning : reachable=true
-@com.gathin.tvhome:string/animations_state : reachable=true
-@com.gathin.tvhome:string/app_library : reachable=true
-@com.gathin.tvhome:string/app_name : reachable=true
-@com.gathin.tvhome:string/cant_open : reachable=true
-@com.gathin.tvhome:string/card_app_name : reachable=true
-@com.gathin.tvhome:string/card_keep_hidden : reachable=true
-@com.gathin.tvhome:string/card_not_saved : reachable=true
-@com.gathin.tvhome:string/card_prompt_body : reachable=true
-@com.gathin.tvhome:string/card_prompt_hint : reachable=true
-@com.gathin.tvhome:string/card_prompt_identity : reachable=true
-@com.gathin.tvhome:string/card_prompt_names : reachable=true
-@com.gathin.tvhome:string/card_prompt_relabelled : reachable=true
-@com.gathin.tvhome:string/card_prompt_resigned : reachable=true
-@com.gathin.tvhome:string/card_prompt_title : reachable=true
-@com.gathin.tvhome:string/card_show : reachable=true
-@com.gathin.tvhome:string/card_state_hidden : reachable=true
-@com.gathin.tvhome:string/card_state_new : reachable=true
-@com.gathin.tvhome:string/card_state_new_key : reachable=true
-@com.gathin.tvhome:string/card_state_new_label : reachable=true
-@com.gathin.tvhome:string/card_state_over_limit : reachable=true
-@com.gathin.tvhome:string/card_state_shown : reachable=true
-@com.gathin.tvhome:string/choose_input : reachable=true
-@com.gathin.tvhome:string/clock_format : reachable=true
-@com.gathin.tvhome:string/clock_format_12 : reachable=true
-@com.gathin.tvhome:string/clock_format_24 : reachable=true
-@com.gathin.tvhome:string/clock_format_system : reachable=true
-@com.gathin.tvhome:string/columns_label : reachable=true
-@com.gathin.tvhome:string/connected : reachable=true
-@com.gathin.tvhome:string/date_format : reachable=true
-@com.gathin.tvhome:string/date_format_home : reachable=true
-    @com.gathin.tvhome:string/date_format
-@com.gathin.tvhome:string/dock_edit : reachable=true
-@com.gathin.tvhome:string/dock_edit_hint : reachable=true
-@com.gathin.tvhome:string/dock_edit_pick_app : reachable=true
-@com.gathin.tvhome:string/dock_edit_pick_place : reachable=true
-@com.gathin.tvhome:string/dock_opacity_label : reachable=true
-@com.gathin.tvhome:string/dream_name : reachable=true
-@com.gathin.tvhome:string/enable : reachable=true
-@com.gathin.tvhome:string/ethernet : reachable=true
-@com.gathin.tvhome:string/festival_diwali_greeting : reachable=true
-@com.gathin.tvhome:string/festival_dussehra_greeting : reachable=true
-@com.gathin.tvhome:string/festival_halloween_greeting : reachable=true
-@com.gathin.tvhome:string/follow_theme : reachable=false
-@com.gathin.tvhome:string/follow_theme_hint : reachable=false
-@com.gathin.tvhome:string/font_body : reachable=false
-    @com.gathin.tvhome:font/outfit
-@com.gathin.tvhome:string/font_extralight : reachable=false
-    @com.gathin.tvhome:font/outfit_extralight
-@com.gathin.tvhome:string/font_light : reachable=false
-    @com.gathin.tvhome:font/outfit_light
-@com.gathin.tvhome:string/font_medium : reachable=true
-    @com.gathin.tvhome:font/outfit_medium
-@com.gathin.tvhome:string/font_regular : reachable=true
-    @com.gathin.tvhome:font/outfit_regular
-@com.gathin.tvhome:string/game_day : reachable=true
-@com.gathin.tvhome:string/game_live : reachable=true
-@com.gathin.tvhome:string/github_update_repo : reachable=true
-@com.gathin.tvhome:string/glass_style : reachable=true
-@com.gathin.tvhome:string/glow_style : reachable=true
-@com.gathin.tvhome:string/good_afternoon : reachable=true
-@com.gathin.tvhome:string/good_evening : reachable=true
-@com.gathin.tvhome:string/good_forenoon : reachable=true
-@com.gathin.tvhome:string/good_morning : reachable=true
-@com.gathin.tvhome:string/good_night : reachable=true
-@com.gathin.tvhome:string/greeting_name : reachable=true
-@com.gathin.tvhome:string/greeting_with_name : reachable=true
-@com.gathin.tvhome:string/home_key_description : reachable=true
-@com.gathin.tvhome:string/home_key_name : reachable=true
-@com.gathin.tvhome:string/home_settings : reachable=true
-@com.gathin.tvhome:string/home_settings_help : reachable=true
-@com.gathin.tvhome:string/input_action : reachable=true
-@com.gathin.tvhome:string/input_key_service_description : reachable=true
-@com.gathin.tvhome:string/input_uri_scheme : reachable=true
-@com.gathin.tvhome:string/inputs : reachable=true
-@com.gathin.tvhome:string/last_opened : reachable=true
-@com.gathin.tvhome:string/latitude : reachable=true
-@com.gathin.tvhome:string/launcher_settings : reachable=true
-@com.gathin.tvhome:string/library_add_home : reachable=true
-@com.gathin.tvhome:string/library_app_info : reachable=true
-@com.gathin.tvhome:string/library_empty : reachable=true
-@com.gathin.tvhome:string/library_hint_add : reachable=true
-@com.gathin.tvhome:string/library_hint_open : reachable=true
-@com.gathin.tvhome:string/library_on_home : reachable=true
-@com.gathin.tvhome:string/library_open : reachable=true
-@com.gathin.tvhome:string/library_recent : reachable=true
-@com.gathin.tvhome:string/library_remove_shortcut : reachable=true
-@com.gathin.tvhome:string/library_save_failed : reachable=true
-@com.gathin.tvhome:string/live_tv : reachable=true
-@com.gathin.tvhome:string/live_tv_action : reachable=true
-@com.gathin.tvhome:string/live_tv_input_id : reachable=true
-@com.gathin.tvhome:string/live_tv_package : reachable=true
-@com.gathin.tvhome:string/locale : reachable=true
-@com.gathin.tvhome:string/longitude : reachable=true
-@com.gathin.tvhome:string/lunar_date_format : reachable=true
-@com.gathin.tvhome:string/lunar_month_leap : reachable=true
-@com.gathin.tvhome:string/lunar_year : reachable=true
-@com.gathin.tvhome:string/module_cards : reachable=true
-@com.gathin.tvhome:string/more_inputs : reachable=true
-@com.gathin.tvhome:string/native_settings : reachable=true
-@com.gathin.tvhome:string/no_inputs : reachable=true
-@com.gathin.tvhome:string/no_module_cards : reachable=true
-@com.gathin.tvhome:string/not_available : reachable=true
-@com.gathin.tvhome:string/not_connected : reachable=true
-@com.gathin.tvhome:string/off : reachable=true
-@com.gathin.tvhome:string/offline : reachable=true
-@com.gathin.tvhome:string/on : reachable=true
-@com.gathin.tvhome:string/open_on_start_label : reachable=true
-@com.gathin.tvhome:string/open_on_start_state : reachable=true
-@com.gathin.tvhome:string/power_menu : reachable=true
-@com.gathin.tvhome:string/quick_apps : reachable=true
-@com.gathin.tvhome:string/quick_apps_hint : reachable=true
-@com.gathin.tvhome:string/quick_network : reachable=true
-@com.gathin.tvhome:string/quick_picture : reachable=true
-@com.gathin.tvhome:string/race_countdown_days : reachable=true
-@com.gathin.tvhome:string/race_countdown_hours : reachable=true
-@com.gathin.tvhome:string/race_countdown_minutes : reachable=true
-@com.gathin.tvhome:string/race_finished : reachable=true
-@com.gathin.tvhome:string/race_kicker : reachable=true
-@com.gathin.tvhome:string/race_kicker_no_place : reachable=true
-@com.gathin.tvhome:string/race_lights_out : reachable=true
-@com.gathin.tvhome:string/race_live : reachable=true
-@com.gathin.tvhome:string/race_next : reachable=true
-@com.gathin.tvhome:string/race_practice_1 : reachable=true
-@com.gathin.tvhome:string/race_practice_1_short : reachable=true
-@com.gathin.tvhome:string/race_practice_2 : reachable=true
-@com.gathin.tvhome:string/race_practice_2_short : reachable=true
-@com.gathin.tvhome:string/race_practice_3 : reachable=true
-@com.gathin.tvhome:string/race_practice_3_short : reachable=true
-@com.gathin.tvhome:string/race_qualifying : reachable=true
-@com.gathin.tvhome:string/race_qualifying_short : reachable=true
-@com.gathin.tvhome:string/race_race : reachable=true
-@com.gathin.tvhome:string/race_race_short : reachable=true
-@com.gathin.tvhome:string/race_sprint : reachable=true
-@com.gathin.tvhome:string/race_sprint_qualifying : reachable=true
-@com.gathin.tvhome:string/race_sprint_qualifying_short : reachable=true
-@com.gathin.tvhome:string/race_sprint_short : reachable=true
-@com.gathin.tvhome:string/reorder : reachable=true
-@com.gathin.tvhome:string/reorder_hint : reachable=true
-@com.gathin.tvhome:string/reorder_not_saved : reachable=true
-@com.gathin.tvhome:string/rows_below_dock_label : reachable=true
-@com.gathin.tvhome:string/settings : reachable=true
-@com.gathin.tvhome:string/shamsi_month_aban : reachable=true
-@com.gathin.tvhome:string/shamsi_month_azar : reachable=true
-@com.gathin.tvhome:string/shamsi_month_bahman : reachable=true
-@com.gathin.tvhome:string/shamsi_month_dey : reachable=true
-@com.gathin.tvhome:string/shamsi_month_esfand : reachable=true
-@com.gathin.tvhome:string/shamsi_month_farvardin : reachable=true
-@com.gathin.tvhome:string/shamsi_month_khordad : reachable=true
-@com.gathin.tvhome:string/shamsi_month_mehr : reachable=true
-@com.gathin.tvhome:string/shamsi_month_mordad : reachable=true
-@com.gathin.tvhome:string/shamsi_month_ordibehesht : reachable=true
-@com.gathin.tvhome:string/shamsi_month_shahrivar : reachable=true
-@com.gathin.tvhome:string/shamsi_month_tir : reachable=true
-@com.gathin.tvhome:string/source_panel_action : reachable=true
-@com.gathin.tvhome:string/source_panel_extra : reachable=true
-@com.gathin.tvhome:string/source_panel_service : reachable=true
-@com.gathin.tvhome:string/standby : reachable=false
-@com.gathin.tvhome:string/stats_cpu : reachable=true
-@com.gathin.tvhome:string/stats_memory : reachable=true
-@com.gathin.tvhome:string/stats_storage : reachable=true
-@com.gathin.tvhome:string/status_bar_notification_info_overflow : reachable=false
-@com.gathin.tvhome:string/stock_home_redirect : reachable=true
-@com.gathin.tvhome:string/storage_gb_decimal : reachable=true
-@com.gathin.tvhome:string/storage_gb_whole : reachable=true
-@com.gathin.tvhome:string/tile_add_to_dock : reachable=true
-@com.gathin.tvhome:string/tile_move : reachable=true
-@com.gathin.tvhome:string/tile_replace_in_dock : reachable=true
-@com.gathin.tvhome:string/tv_settings : reachable=true
-@com.gathin.tvhome:string/vpn : reachable=true
-@com.gathin.tvhome:string/vpn_app : reachable=true
-@com.gathin.tvhome:string/vpn_off : reachable=true
-@com.gathin.tvhome:string/wallpaper_applied : reachable=true
-@com.gathin.tvhome:string/wallpaper_label : reachable=true
-@com.gathin.tvhome:string/wallpaper_moods : reachable=true
-@com.gathin.tvhome:string/wallpaper_none : reachable=true
-@com.gathin.tvhome:string/wallpaper_state : reachable=true
-@com.gathin.tvhome:string/wallpaper_theme_default : reachable=true
-@com.gathin.tvhome:string/wifi : reachable=true
-@com.gathin.tvhome:style/SettingsColumnChoice : reachable=true
-    @com.gathin.tvhome:style/SettingsRow
-@com.gathin.tvhome:style/SettingsRow : reachable=true
-    @com.gathin.tvhome:drawable/settings_choice_bg
-@com.gathin.tvhome:style/TextAppearance_Compat_Notification : reachable=false
-@com.gathin.tvhome:style/TextAppearance_Compat_Notification_Info : reachable=false
-@com.gathin.tvhome:style/TextAppearance_Compat_Notification_Line2 : reachable=false
-    @com.gathin.tvhome:style/TextAppearance_Compat_Notification_Info
-@com.gathin.tvhome:style/TextAppearance_Compat_Notification_Time : reachable=false
-@com.gathin.tvhome:style/TextAppearance_Compat_Notification_Title : reachable=false
-@com.gathin.tvhome:style/Theme_TvHome : reachable=true
-@com.gathin.tvhome:style/TopButton : reachable=false
-    @com.gathin.tvhome:style/TopButtonBase
-@com.gathin.tvhome:style/TopButtonBase : reachable=false
-    @com.gathin.tvhome:drawable/pill_bg
-    @com.gathin.tvhome:drawable/pill_text
-    @com.gathin.tvhome:string/font_medium
-@com.gathin.tvhome:style/TopButtonIcon : reachable=false
-    @com.gathin.tvhome:style/TopButtonBase
-@com.gathin.tvhome:style/Widget_Compat_NotificationActionContainer : reachable=false
-    @com.gathin.tvhome:drawable/notification_action_background
-@com.gathin.tvhome:style/Widget_Compat_NotificationActionText : reachable=false
-    @com.gathin.tvhome:color/androidx_core_secondary_text_default_material_light
-    @com.gathin.tvhome:dimen/notification_action_text_size
-@com.gathin.tvhome:xml/file_paths : reachable=true
-@com.gathin.tvhome:xml/home_key_service : reachable=true
-    @com.gathin.tvhome:string/home_key_description
-@com.gathin.tvhome:xml/input_key_service : reachable=true
-    @com.gathin.tvhome:string/input_key_service_description
-@com.gathin.tvhome:xml/locales_config : reachable=true
+@io.rns.evalauncher:anim/app_open_enter : reachable=false
+@io.rns.evalauncher:anim/app_open_exit : reachable=false
+@io.rns.evalauncher:anim/tile_enter : reachable=false
+@io.rns.evalauncher:array/app_banners : reachable=false
+@io.rns.evalauncher:array/app_keys : reachable=false
+@io.rns.evalauncher:array/app_labels : reachable=false
+@io.rns.evalauncher:array/dock_apps : reachable=false
+@io.rns.evalauncher:array/hidden_apps : reachable=false
+@io.rns.evalauncher:array/icon_tiles : reachable=false
+@io.rns.evalauncher:array/input_key_keycodes : reachable=false
+@io.rns.evalauncher:array/input_sources : reachable=false
+@io.rns.evalauncher:array/launch_actions : reachable=false
+@io.rns.evalauncher:array/library_apps : reachable=false
+@io.rns.evalauncher:array/library_excluded_apps : reachable=false
+@io.rns.evalauncher:array/lunar_branches : reachable=false
+@io.rns.evalauncher:array/lunar_stems : reachable=false
+@io.rns.evalauncher:array/settings_fallback_components : reachable=false
+@io.rns.evalauncher:array/settings_key_keycodes : reachable=false
+@io.rns.evalauncher:array/settings_key_scancodes : reachable=false
+@io.rns.evalauncher:array/top_bar_apps : reachable=false
+@io.rns.evalauncher:attr/alpha : reachable=false
+@io.rns.evalauncher:attr/fastScrollEnabled : reachable=false
+@io.rns.evalauncher:attr/fastScrollHorizontalThumbDrawable : reachable=false
+@io.rns.evalauncher:attr/fastScrollHorizontalTrackDrawable : reachable=false
+@io.rns.evalauncher:attr/fastScrollVerticalThumbDrawable : reachable=false
+@io.rns.evalauncher:attr/fastScrollVerticalTrackDrawable : reachable=false
+@io.rns.evalauncher:attr/font : reachable=false
+@io.rns.evalauncher:attr/fontProviderAuthority : reachable=false
+@io.rns.evalauncher:attr/fontProviderCerts : reachable=false
+@io.rns.evalauncher:attr/fontProviderFetchStrategy : reachable=false
+@io.rns.evalauncher:attr/fontProviderFetchTimeout : reachable=false
+@io.rns.evalauncher:attr/fontProviderPackage : reachable=false
+@io.rns.evalauncher:attr/fontProviderQuery : reachable=false
+@io.rns.evalauncher:attr/fontProviderSystemFontFamily : reachable=false
+@io.rns.evalauncher:attr/fontStyle : reachable=false
+@io.rns.evalauncher:attr/fontVariationSettings : reachable=false
+@io.rns.evalauncher:attr/fontWeight : reachable=false
+@io.rns.evalauncher:attr/lStar : reachable=false
+@io.rns.evalauncher:attr/layoutManager : reachable=false
+@io.rns.evalauncher:attr/nestedScrollViewStyle : reachable=false
+@io.rns.evalauncher:attr/queryPatterns : reachable=false
+@io.rns.evalauncher:attr/recyclerViewStyle : reachable=true
+@io.rns.evalauncher:attr/reverseLayout : reachable=false
+@io.rns.evalauncher:attr/shortcutMatchRequired : reachable=false
+@io.rns.evalauncher:attr/spanCount : reachable=false
+@io.rns.evalauncher:attr/stackFromEnd : reachable=false
+@io.rns.evalauncher:attr/ttcIndex : reachable=false
+@io.rns.evalauncher:bool/advanced_effects : reachable=false
+@io.rns.evalauncher:bool/always_show_names : reachable=false
+@io.rns.evalauncher:bool/ambient_glow : reachable=false
+@io.rns.evalauncher:bool/animations : reachable=false
+@io.rns.evalauncher:bool/app_glow : reachable=false
+@io.rns.evalauncher:bool/app_library : reachable=false
+@io.rns.evalauncher:bool/app_library_selection : reachable=false
+@io.rns.evalauncher:bool/back_opens_clock : reachable=false
+@io.rns.evalauncher:bool/boot_to_live_tv : reachable=false
+@io.rns.evalauncher:bool/cinematic_dots : reachable=false
+@io.rns.evalauncher:bool/cinematic_home : reachable=false
+@io.rns.evalauncher:bool/cinematic_white_focus : reachable=false
+@io.rns.evalauncher:bool/clock_glow : reachable=false
+@io.rns.evalauncher:bool/clock_wallpaper : reachable=false
+@io.rns.evalauncher:bool/consume_volume_keys : reachable=false
+@io.rns.evalauncher:bool/coocaa_sources : reachable=false
+@io.rns.evalauncher:bool/date_below_clock : reachable=false
+@io.rns.evalauncher:bool/date_single_line : reachable=false
+@io.rns.evalauncher:bool/dock_band : reachable=false
+@io.rns.evalauncher:bool/dock_band_all : reachable=false
+@io.rns.evalauncher:bool/dock_even_padding : reachable=false
+@io.rns.evalauncher:bool/dock_glass : reachable=false
+@io.rns.evalauncher:bool/dock_row : reachable=false
+@io.rns.evalauncher:bool/dock_title : reachable=false
+@io.rns.evalauncher:bool/fade_rows : reachable=false
+@io.rns.evalauncher:bool/fill_dock : reachable=false
+@io.rns.evalauncher:bool/focus_overshoot : reachable=false
+@io.rns.evalauncher:bool/gamepad_passthrough : reachable=false
+@io.rns.evalauncher:bool/handle_view_inputs : reachable=false
+@io.rns.evalauncher:bool/header_white : reachable=false
+@io.rns.evalauncher:bool/home_long_press_home : reachable=false
+@io.rns.evalauncher:bool/icon_only_buttons : reachable=false
+@io.rns.evalauncher:bool/icon_only_inputs : reachable=false
+@io.rns.evalauncher:bool/icon_only_vpn : reachable=false
+@io.rns.evalauncher:bool/inputs_connected_only : reachable=false
+@io.rns.evalauncher:bool/key_filter : reachable=false
+@io.rns.evalauncher:bool/launcher_settings_button : reachable=false
+@io.rns.evalauncher:bool/library_button : reachable=false
+@io.rns.evalauncher:bool/library_ok_opens : reachable=false
+@io.rns.evalauncher:bool/lunar_date : reachable=false
+@io.rns.evalauncher:bool/module_cards : reachable=false
+@io.rns.evalauncher:bool/open_on_start_choice : reachable=false
+@io.rns.evalauncher:bool/power_on_home : reachable=false
+@io.rns.evalauncher:bool/power_on_home_always : reachable=false
+@io.rns.evalauncher:bool/reduced_motion : reachable=false
+@io.rns.evalauncher:bool/reorder_button : reachable=false
+@io.rns.evalauncher:bool/restore_key_services : reachable=false
+@io.rns.evalauncher:bool/rtl_app_grid : reachable=false
+@io.rns.evalauncher:bool/rtl_menu_bar : reachable=false
+@io.rns.evalauncher:bool/settings_key_panel : reachable=false
+@io.rns.evalauncher:bool/shamsi_date : reachable=false
+@io.rns.evalauncher:bool/show_greeting : reachable=false
+@io.rns.evalauncher:bool/show_home_settings_shortcut : reachable=false
+@io.rns.evalauncher:bool/show_inputs_pill : reachable=false
+@io.rns.evalauncher:bool/show_library_pill : reachable=false
+@io.rns.evalauncher:bool/show_network_pill : reachable=false
+@io.rns.evalauncher:bool/show_stats : reachable=false
+@io.rns.evalauncher:bool/single_row : reachable=false
+@io.rns.evalauncher:bool/tile_menu : reachable=false
+@io.rns.evalauncher:bool/top_menu : reachable=false
+@io.rns.evalauncher:bool/uniform_tiles : reachable=false
+@io.rns.evalauncher:bool/vpn_pill : reachable=false
+@io.rns.evalauncher:bool/wallpaper_captions : reachable=false
+@io.rns.evalauncher:bool/wallpaper_true_color : reachable=false
+@io.rns.evalauncher:bool/wifi_status_color : reachable=false
+@io.rns.evalauncher:bool/wifi_status_warnings : reachable=false
+@io.rns.evalauncher:color/androidx_core_ripple_material_light : reachable=false
+@io.rns.evalauncher:color/androidx_core_secondary_text_default_material_light : reachable=false
+@io.rns.evalauncher:color/notification_action_color_filter : reachable=false
+    @io.rns.evalauncher:color/androidx_core_secondary_text_default_material_light
+@io.rns.evalauncher:color/notification_icon_bg_color : reachable=false
+@io.rns.evalauncher:color/pill_icon_no_internet : reachable=false
+@io.rns.evalauncher:color/pill_icon_offline : reachable=false
+@io.rns.evalauncher:color/pill_icon_online : reachable=false
+@io.rns.evalauncher:dimen/compat_button_inset_horizontal_material : reachable=false
+@io.rns.evalauncher:dimen/compat_button_inset_vertical_material : reachable=false
+@io.rns.evalauncher:dimen/compat_button_padding_horizontal_material : reachable=false
+@io.rns.evalauncher:dimen/compat_button_padding_vertical_material : reachable=false
+@io.rns.evalauncher:dimen/compat_control_corner_material : reachable=false
+@io.rns.evalauncher:dimen/compat_notification_large_icon_max_height : reachable=false
+@io.rns.evalauncher:dimen/compat_notification_large_icon_max_width : reachable=false
+@io.rns.evalauncher:dimen/fastscroll_default_thickness : reachable=true
+@io.rns.evalauncher:dimen/fastscroll_margin : reachable=true
+@io.rns.evalauncher:dimen/fastscroll_minimum_range : reachable=true
+@io.rns.evalauncher:dimen/item_touch_helper_max_drag_scroll_per_frame : reachable=false
+@io.rns.evalauncher:dimen/item_touch_helper_swipe_escape_max_velocity : reachable=false
+@io.rns.evalauncher:dimen/item_touch_helper_swipe_escape_velocity : reachable=false
+@io.rns.evalauncher:dimen/notification_action_icon_size : reachable=false
+@io.rns.evalauncher:dimen/notification_action_text_size : reachable=false
+@io.rns.evalauncher:dimen/notification_big_circle_margin : reachable=false
+@io.rns.evalauncher:dimen/notification_content_margin_start : reachable=false
+@io.rns.evalauncher:dimen/notification_large_icon_height : reachable=false
+@io.rns.evalauncher:dimen/notification_large_icon_width : reachable=false
+@io.rns.evalauncher:dimen/notification_main_column_padding_top : reachable=false
+@io.rns.evalauncher:dimen/notification_media_narrow_margin : reachable=false
+@io.rns.evalauncher:dimen/notification_right_icon_size : reachable=false
+@io.rns.evalauncher:dimen/notification_right_side_padding_top : reachable=false
+@io.rns.evalauncher:dimen/notification_small_icon_background_padding : reachable=false
+@io.rns.evalauncher:dimen/notification_small_icon_size_as_large : reachable=false
+@io.rns.evalauncher:dimen/notification_subtext_size : reachable=false
+@io.rns.evalauncher:dimen/notification_top_pad : reachable=false
+@io.rns.evalauncher:dimen/notification_top_pad_large_text : reachable=false
+@io.rns.evalauncher:drawable/banner : reachable=true
+@io.rns.evalauncher:drawable/banner_tv : reachable=true
+    @io.rns.evalauncher:drawable/ic_livetv
+@io.rns.evalauncher:drawable/dialog_rounded_bg : reachable=false
+@io.rns.evalauncher:drawable/glass_panel : reachable=false
+@io.rns.evalauncher:drawable/halloween_bat : reachable=false
+@io.rns.evalauncher:drawable/halloween_ghost : reachable=false
+@io.rns.evalauncher:drawable/halloween_pumpkin_dark : reachable=false
+@io.rns.evalauncher:drawable/halloween_pumpkin_lit : reachable=false
+@io.rns.evalauncher:drawable/ic_apps : reachable=false
+@io.rns.evalauncher:drawable/ic_apps_pill : reachable=false
+    @io.rns.evalauncher:drawable/ic_apps
+@io.rns.evalauncher:drawable/ic_av : reachable=false
+@io.rns.evalauncher:drawable/ic_ethernet : reachable=false
+@io.rns.evalauncher:drawable/ic_home_settings : reachable=false
+@io.rns.evalauncher:drawable/ic_home_settings_pill : reachable=false
+@io.rns.evalauncher:drawable/ic_input : reachable=false
+@io.rns.evalauncher:drawable/ic_livetv : reachable=false
+@io.rns.evalauncher:drawable/ic_lock : reachable=false
+@io.rns.evalauncher:drawable/ic_lock_open : reachable=false
+@io.rns.evalauncher:drawable/ic_picture : reachable=false
+@io.rns.evalauncher:drawable/ic_settings : reachable=false
+@io.rns.evalauncher:drawable/ic_swap_vert : reachable=false
+@io.rns.evalauncher:drawable/ic_wifi : reachable=false
+@io.rns.evalauncher:drawable/input_row_bg : reachable=false
+@io.rns.evalauncher:drawable/library_check : reachable=false
+@io.rns.evalauncher:drawable/notification_action_background : reachable=false
+    @io.rns.evalauncher:color/androidx_core_ripple_material_light
+    @io.rns.evalauncher:dimen/compat_button_inset_horizontal_material
+    @io.rns.evalauncher:dimen/compat_button_inset_vertical_material
+    @io.rns.evalauncher:dimen/compat_control_corner_material
+    @io.rns.evalauncher:dimen/compat_button_padding_vertical_material
+    @io.rns.evalauncher:dimen/compat_button_padding_horizontal_material
+@io.rns.evalauncher:drawable/notification_bg : reachable=false
+    @io.rns.evalauncher:drawable/notification_bg_normal_pressed
+    @io.rns.evalauncher:drawable/notification_bg_normal
+@io.rns.evalauncher:drawable/notification_bg_low : reachable=false
+    @io.rns.evalauncher:drawable/notification_bg_low_pressed
+    @io.rns.evalauncher:drawable/notification_bg_low_normal
+@io.rns.evalauncher:drawable/notification_bg_low_normal : reachable=false
+@io.rns.evalauncher:drawable/notification_bg_low_pressed : reachable=false
+@io.rns.evalauncher:drawable/notification_bg_normal : reachable=false
+@io.rns.evalauncher:drawable/notification_bg_normal_pressed : reachable=false
+@io.rns.evalauncher:drawable/notification_icon_background : reachable=false
+    @io.rns.evalauncher:color/notification_icon_bg_color
+@io.rns.evalauncher:drawable/notification_template_icon_bg : reachable=false
+@io.rns.evalauncher:drawable/notification_template_icon_low_bg : reachable=false
+@io.rns.evalauncher:drawable/notification_tile_bg : reachable=false
+    @io.rns.evalauncher:drawable/notify_panel_notification_icon_bg
+@io.rns.evalauncher:drawable/notify_panel_notification_icon_bg : reachable=false
+@io.rns.evalauncher:drawable/pill_bg : reachable=false
+@io.rns.evalauncher:drawable/pill_text : reachable=false
+@io.rns.evalauncher:drawable/pill_text_dim : reachable=false
+@io.rns.evalauncher:drawable/pill_text_mid : reachable=false
+@io.rns.evalauncher:drawable/race_bar : reachable=false
+@io.rns.evalauncher:drawable/settings_card_bg : reachable=false
+@io.rns.evalauncher:drawable/settings_choice_bg : reachable=false
+@io.rns.evalauncher:drawable/status_dot : reachable=false
+@io.rns.evalauncher:drawable/tile_bg : reachable=false
+@io.rns.evalauncher:drawable/wallpaper_card_gradient : reachable=false
+@io.rns.evalauncher:font/outfit : reachable=false
+@io.rns.evalauncher:font/outfit_extralight : reachable=false
+    @io.rns.evalauncher:font/outfit
+@io.rns.evalauncher:font/outfit_light : reachable=false
+    @io.rns.evalauncher:font/outfit
+@io.rns.evalauncher:font/outfit_medium : reachable=false
+    @io.rns.evalauncher:font/outfit
+@io.rns.evalauncher:font/outfit_regular : reachable=false
+    @io.rns.evalauncher:font/outfit
+@io.rns.evalauncher:id/accessibility_action_clickable_span : reachable=true
+@io.rns.evalauncher:id/accessibility_custom_action_0 : reachable=false
+@io.rns.evalauncher:id/accessibility_custom_action_1 : reachable=false
+@io.rns.evalauncher:id/accessibility_custom_action_10 : reachable=false
+@io.rns.evalauncher:id/accessibility_custom_action_11 : reachable=false
+@io.rns.evalauncher:id/accessibility_custom_action_12 : reachable=false
+@io.rns.evalauncher:id/accessibility_custom_action_13 : reachable=false
+@io.rns.evalauncher:id/accessibility_custom_action_14 : reachable=false
+@io.rns.evalauncher:id/accessibility_custom_action_15 : reachable=false
+@io.rns.evalauncher:id/accessibility_custom_action_16 : reachable=false
+@io.rns.evalauncher:id/accessibility_custom_action_17 : reachable=false
+@io.rns.evalauncher:id/accessibility_custom_action_18 : reachable=false
+@io.rns.evalauncher:id/accessibility_custom_action_19 : reachable=false
+@io.rns.evalauncher:id/accessibility_custom_action_2 : reachable=false
+@io.rns.evalauncher:id/accessibility_custom_action_20 : reachable=false
+@io.rns.evalauncher:id/accessibility_custom_action_21 : reachable=false
+@io.rns.evalauncher:id/accessibility_custom_action_22 : reachable=false
+@io.rns.evalauncher:id/accessibility_custom_action_23 : reachable=false
+@io.rns.evalauncher:id/accessibility_custom_action_24 : reachable=false
+@io.rns.evalauncher:id/accessibility_custom_action_25 : reachable=false
+@io.rns.evalauncher:id/accessibility_custom_action_26 : reachable=false
+@io.rns.evalauncher:id/accessibility_custom_action_27 : reachable=false
+@io.rns.evalauncher:id/accessibility_custom_action_28 : reachable=false
+@io.rns.evalauncher:id/accessibility_custom_action_29 : reachable=false
+@io.rns.evalauncher:id/accessibility_custom_action_3 : reachable=false
+@io.rns.evalauncher:id/accessibility_custom_action_30 : reachable=false
+@io.rns.evalauncher:id/accessibility_custom_action_31 : reachable=false
+@io.rns.evalauncher:id/accessibility_custom_action_4 : reachable=false
+@io.rns.evalauncher:id/accessibility_custom_action_5 : reachable=false
+@io.rns.evalauncher:id/accessibility_custom_action_6 : reachable=false
+@io.rns.evalauncher:id/accessibility_custom_action_7 : reachable=false
+@io.rns.evalauncher:id/accessibility_custom_action_8 : reachable=false
+@io.rns.evalauncher:id/accessibility_custom_action_9 : reachable=false
+@io.rns.evalauncher:id/action_container : reachable=false
+@io.rns.evalauncher:id/action_divider : reachable=false
+@io.rns.evalauncher:id/action_image : reachable=false
+@io.rns.evalauncher:id/action_text : reachable=false
+@io.rns.evalauncher:id/actions : reachable=false
+@io.rns.evalauncher:id/ambient : reachable=false
+@io.rns.evalauncher:id/ampm : reachable=false
+@io.rns.evalauncher:id/app : reachable=false
+@io.rns.evalauncher:id/async : reachable=false
+@io.rns.evalauncher:id/banner : reachable=false
+@io.rns.evalauncher:id/blocking : reachable=false
+@io.rns.evalauncher:id/body : reachable=false
+@io.rns.evalauncher:id/btnInputs : reachable=false
+@io.rns.evalauncher:id/btnKeep : reachable=false
+@io.rns.evalauncher:id/btnLibrary : reachable=false
+@io.rns.evalauncher:id/btnLibraryTop : reachable=false
+@io.rns.evalauncher:id/btnReorder : reachable=false
+@io.rns.evalauncher:id/btnSettings : reachable=false
+@io.rns.evalauncher:id/btnShow : reachable=false
+@io.rns.evalauncher:id/btnVpn : reachable=false
+@io.rns.evalauncher:id/btnWifi : reachable=false
+@io.rns.evalauncher:id/card : reachable=false
+@io.rns.evalauncher:id/cardHint : reachable=false
+@io.rns.evalauncher:id/cardTitle : reachable=false
+@io.rns.evalauncher:id/cardValue : reachable=false
+@io.rns.evalauncher:id/categoryCard : reachable=false
+@io.rns.evalauncher:id/categoryGrid : reachable=false
+@io.rns.evalauncher:id/categoryIcon : reachable=false
+@io.rns.evalauncher:id/categoryTitle : reachable=false
+@io.rns.evalauncher:id/chronometer : reachable=false
+@io.rns.evalauncher:id/clock : reachable=false
+@io.rns.evalauncher:id/clockDivider : reachable=false
+@io.rns.evalauncher:id/date : reachable=false
+@io.rns.evalauncher:id/dialogSubtitle : reachable=false
+@io.rns.evalauncher:id/dialogTitle : reachable=false
+@io.rns.evalauncher:id/dialog_button : reachable=false
+@io.rns.evalauncher:id/digest : reachable=false
+@io.rns.evalauncher:id/dot : reachable=false
+@io.rns.evalauncher:id/dreamAmPm : reachable=false
+@io.rns.evalauncher:id/dreamAmbient : reachable=false
+@io.rns.evalauncher:id/dreamClock : reachable=false
+@io.rns.evalauncher:id/dreamContent : reachable=false
+@io.rns.evalauncher:id/dreamDate : reachable=false
+@io.rns.evalauncher:id/forever : reachable=false
+@io.rns.evalauncher:id/glass : reachable=false
+@io.rns.evalauncher:id/greeting : reachable=false
+@io.rns.evalauncher:id/grid : reachable=false
+@io.rns.evalauncher:id/hero : reachable=false
+@io.rns.evalauncher:id/heroArt : reachable=false
+@io.rns.evalauncher:id/heroDots : reachable=false
+@io.rns.evalauncher:id/heroMeta : reachable=false
+@io.rns.evalauncher:id/heroName : reachable=false
+@io.rns.evalauncher:id/heroScrim : reachable=false
+@io.rns.evalauncher:id/hint : reachable=false
+@io.rns.evalauncher:id/icon : reachable=false
+@io.rns.evalauncher:id/icon_group : reachable=false
+@io.rns.evalauncher:id/identity : reachable=false
+@io.rns.evalauncher:id/info : reachable=false
+@io.rns.evalauncher:id/is_pooling_container_tag : reachable=true
+@io.rns.evalauncher:id/italic : reachable=false
+@io.rns.evalauncher:id/item1 : reachable=false
+@io.rns.evalauncher:id/item2 : reachable=false
+@io.rns.evalauncher:id/item3 : reachable=false
+@io.rns.evalauncher:id/item4 : reachable=false
+@io.rns.evalauncher:id/item_touch_helper_previous_elevation : reachable=false
+@io.rns.evalauncher:id/label : reachable=false
+@io.rns.evalauncher:id/leftBlock : reachable=false
+@io.rns.evalauncher:id/line1 : reachable=false
+@io.rns.evalauncher:id/line3 : reachable=false
+@io.rns.evalauncher:id/lunarDate : reachable=false
+@io.rns.evalauncher:id/name : reachable=false
+@io.rns.evalauncher:id/names : reachable=false
+@io.rns.evalauncher:id/normal : reachable=false
+@io.rns.evalauncher:id/notification_background : reachable=false
+@io.rns.evalauncher:id/notification_main_column : reachable=false
+@io.rns.evalauncher:id/notification_main_column_container : reachable=false
+@io.rns.evalauncher:id/panel : reachable=false
+@io.rns.evalauncher:id/pkg : reachable=false
+@io.rns.evalauncher:id/pooling_container_listener_holder_tag : reachable=true
+@io.rns.evalauncher:id/raceBar : reachable=false
+@io.rns.evalauncher:id/raceHeadline : reachable=false
+@io.rns.evalauncher:id/raceKicker : reachable=false
+@io.rns.evalauncher:id/racePager : reachable=false
+@io.rns.evalauncher:id/racePanel : reachable=false
+@io.rns.evalauncher:id/raceSessions : reachable=false
+@io.rns.evalauncher:id/right_icon : reachable=false
+@io.rns.evalauncher:id/right_side : reachable=false
+@io.rns.evalauncher:id/root : reachable=false
+@io.rns.evalauncher:id/rows : reachable=false
+@io.rns.evalauncher:id/scrim : reachable=false
+@io.rns.evalauncher:id/sectionContent : reachable=false
+@io.rns.evalauncher:id/sectionOptionsContainer : reachable=false
+@io.rns.evalauncher:id/sectionScrollView : reachable=false
+@io.rns.evalauncher:id/sectionSubtitle : reachable=false
+@io.rns.evalauncher:id/sectionTitle : reachable=false
+@io.rns.evalauncher:id/selectedBadge : reachable=false
+@io.rns.evalauncher:id/shamsiDate : reachable=false
+@io.rns.evalauncher:id/sky : reachable=false
+@io.rns.evalauncher:id/state : reachable=false
+@io.rns.evalauncher:id/stats : reachable=false
+@io.rns.evalauncher:id/status : reachable=false
+@io.rns.evalauncher:id/subGridCard : reachable=false
+@io.rns.evalauncher:id/subGridRecyclerView : reachable=false
+@io.rns.evalauncher:id/tag_accessibility_actions : reachable=true
+@io.rns.evalauncher:id/tag_accessibility_clickable_spans : reachable=true
+@io.rns.evalauncher:id/tag_accessibility_heading : reachable=true
+@io.rns.evalauncher:id/tag_accessibility_pane_title : reachable=true
+@io.rns.evalauncher:id/tag_on_apply_window_listener : reachable=true
+@io.rns.evalauncher:id/tag_on_receive_content_listener : reachable=false
+@io.rns.evalauncher:id/tag_on_receive_content_mime_types : reachable=false
+@io.rns.evalauncher:id/tag_screen_reader_focusable : reachable=true
+@io.rns.evalauncher:id/tag_state_description : reachable=true
+@io.rns.evalauncher:id/tag_transition_group : reachable=false
+@io.rns.evalauncher:id/tag_unhandled_key_event_manager : reachable=false
+@io.rns.evalauncher:id/tag_unhandled_key_listeners : reachable=true
+@io.rns.evalauncher:id/tag_window_insets_animation_callback : reachable=true
+@io.rns.evalauncher:id/text : reachable=false
+@io.rns.evalauncher:id/text2 : reachable=false
+@io.rns.evalauncher:id/time : reachable=false
+@io.rns.evalauncher:id/title : reachable=false
+@io.rns.evalauncher:id/topButtons : reachable=false
+@io.rns.evalauncher:id/view_tree_lifecycle_owner : reachable=false
+@io.rns.evalauncher:id/wallpaperCard : reachable=false
+@io.rns.evalauncher:id/wallpaperGrid : reachable=false
+@io.rns.evalauncher:id/wallpaperName : reachable=false
+@io.rns.evalauncher:id/wallpaperPreview : reachable=false
+@io.rns.evalauncher:integer/cinematic_art : reachable=false
+@io.rns.evalauncher:integer/cinematic_scrim : reachable=false
+@io.rns.evalauncher:integer/clock_wallpaper_dim : reachable=false
+@io.rns.evalauncher:integer/columns : reachable=false
+@io.rns.evalauncher:integer/home_idle_clock_minutes : reachable=false
+@io.rns.evalauncher:integer/open_on_start_network_wait : reachable=false
+@io.rns.evalauncher:integer/rows_below_dock : reachable=false
+@io.rns.evalauncher:integer/sky_intensity : reachable=false
+@io.rns.evalauncher:integer/status_bar_notification_info_maxnum : reachable=false
+@io.rns.evalauncher:integer/wifi_label_width : reachable=false
+@io.rns.evalauncher:layout/activity_launcher_settings : reachable=false
+    @io.rns.evalauncher:string/font_medium
+    @io.rns.evalauncher:string/launcher_settings
+@io.rns.evalauncher:layout/activity_main : reachable=false
+    @io.rns.evalauncher:drawable/race_bar
+    @io.rns.evalauncher:string/font_medium
+    @io.rns.evalauncher:string/font_light
+    @io.rns.evalauncher:string/font_regular
+    @io.rns.evalauncher:string/date_format_home
+    @io.rns.evalauncher:bool/date_single_line
+    @io.rns.evalauncher:drawable/ic_input
+    @io.rns.evalauncher:style/TopButton
+    @io.rns.evalauncher:string/inputs
+    @io.rns.evalauncher:drawable/ic_wifi
+    @io.rns.evalauncher:string/wifi
+    @io.rns.evalauncher:string/vpn
+    @io.rns.evalauncher:string/reorder
+    @io.rns.evalauncher:drawable/ic_swap_vert
+    @io.rns.evalauncher:style/TopButtonIcon
+    @io.rns.evalauncher:string/app_library
+    @io.rns.evalauncher:drawable/ic_apps_pill
+    @io.rns.evalauncher:drawable/ic_settings
+    @io.rns.evalauncher:string/settings
+    @io.rns.evalauncher:string/date_format
+    @io.rns.evalauncher:drawable/ic_apps
+@io.rns.evalauncher:layout/activity_quick_settings : reachable=false
+    @io.rns.evalauncher:drawable/glass_panel
+@io.rns.evalauncher:layout/custom_dialog : reachable=false
+@io.rns.evalauncher:layout/dialog_card_prompt : reachable=false
+    @io.rns.evalauncher:drawable/glass_panel
+    @io.rns.evalauncher:string/font_medium
+    @io.rns.evalauncher:string/font_body
+    @io.rns.evalauncher:string/card_prompt_hint
+    @io.rns.evalauncher:style/TopButton
+    @io.rns.evalauncher:string/card_keep_hidden
+    @io.rns.evalauncher:string/card_show
+@io.rns.evalauncher:layout/dialog_settings_grid : reachable=false
+    @io.rns.evalauncher:drawable/dialog_rounded_bg
+    @io.rns.evalauncher:string/font_medium
+@io.rns.evalauncher:layout/dialog_settings_section : reachable=false
+    @io.rns.evalauncher:drawable/dialog_rounded_bg
+    @io.rns.evalauncher:string/font_medium
+@io.rns.evalauncher:layout/dialog_wallpaper_picker : reachable=false
+    @io.rns.evalauncher:drawable/dialog_rounded_bg
+    @io.rns.evalauncher:string/font_medium
+    @io.rns.evalauncher:string/wallpaper_label
+@io.rns.evalauncher:layout/dream_clock : reachable=false
+    @io.rns.evalauncher:string/font_extralight
+    @io.rns.evalauncher:string/font_medium
+    @io.rns.evalauncher:string/date_format
+    @io.rns.evalauncher:string/font_regular
+@io.rns.evalauncher:layout/item_app : reachable=false
+    @io.rns.evalauncher:drawable/tile_bg
+    @io.rns.evalauncher:string/font_body
+    @io.rns.evalauncher:string/font_medium
+@io.rns.evalauncher:layout/item_card_row : reachable=false
+    @io.rns.evalauncher:drawable/input_row_bg
+    @io.rns.evalauncher:string/font_medium
+    @io.rns.evalauncher:drawable/pill_text
+    @io.rns.evalauncher:string/font_body
+    @io.rns.evalauncher:drawable/pill_text_mid
+@io.rns.evalauncher:layout/item_input : reachable=false
+    @io.rns.evalauncher:drawable/input_row_bg
+    @io.rns.evalauncher:drawable/pill_text
+    @io.rns.evalauncher:string/font_medium
+    @io.rns.evalauncher:drawable/status_dot
+    @io.rns.evalauncher:string/font_body
+    @io.rns.evalauncher:drawable/pill_text_dim
+@io.rns.evalauncher:layout/item_settings_category_card : reachable=false
+    @io.rns.evalauncher:drawable/settings_choice_bg
+    @io.rns.evalauncher:string/font_medium
+@io.rns.evalauncher:layout/item_settings_grid_card : reachable=false
+    @io.rns.evalauncher:drawable/settings_choice_bg
+    @io.rns.evalauncher:string/font_medium
+@io.rns.evalauncher:layout/item_wallpaper_card : reachable=false
+    @io.rns.evalauncher:drawable/settings_choice_bg
+    @io.rns.evalauncher:drawable/wallpaper_card_gradient
+    @io.rns.evalauncher:string/font_medium
+@io.rns.evalauncher:layout/notification_action : reachable=false
+    @io.rns.evalauncher:style/Widget_Compat_NotificationActionContainer
+    @io.rns.evalauncher:dimen/notification_action_icon_size
+    @io.rns.evalauncher:style/Widget_Compat_NotificationActionText
+@io.rns.evalauncher:layout/notification_action_tombstone : reachable=false
+    @io.rns.evalauncher:style/Widget_Compat_NotificationActionContainer
+    @io.rns.evalauncher:dimen/notification_action_icon_size
+    @io.rns.evalauncher:style/Widget_Compat_NotificationActionText
+@io.rns.evalauncher:layout/notification_template_custom_big : reachable=false
+    @io.rns.evalauncher:layout/notification_template_icon_group
+    @io.rns.evalauncher:dimen/notification_large_icon_width
+    @io.rns.evalauncher:dimen/notification_large_icon_height
+    @io.rns.evalauncher:dimen/notification_right_side_padding_top
+    @io.rns.evalauncher:layout/notification_template_part_time
+    @io.rns.evalauncher:layout/notification_template_part_chronometer
+    @io.rns.evalauncher:style/TextAppearance_Compat_Notification_Info
+@io.rns.evalauncher:layout/notification_template_icon_group : reachable=false
+    @io.rns.evalauncher:dimen/notification_large_icon_width
+    @io.rns.evalauncher:dimen/notification_large_icon_height
+    @io.rns.evalauncher:dimen/notification_big_circle_margin
+    @io.rns.evalauncher:dimen/notification_right_icon_size
+@io.rns.evalauncher:layout/notification_template_part_chronometer : reachable=false
+    @io.rns.evalauncher:style/TextAppearance_Compat_Notification_Time
+@io.rns.evalauncher:layout/notification_template_part_time : reachable=false
+    @io.rns.evalauncher:style/TextAppearance_Compat_Notification_Time
+@io.rns.evalauncher:layout/popup_cards : reachable=false
+    @io.rns.evalauncher:drawable/glass_panel
+    @io.rns.evalauncher:string/font_medium
+    @io.rns.evalauncher:string/module_cards
+@io.rns.evalauncher:layout/popup_inputs : reachable=false
+    @io.rns.evalauncher:drawable/glass_panel
+@io.rns.evalauncher:layout/row_app_library : reachable=false
+    @io.rns.evalauncher:drawable/ic_apps_pill
+    @io.rns.evalauncher:style/TopButton
+    @io.rns.evalauncher:string/app_library
+@io.rns.evalauncher:layout/top_app_button : reachable=false
+    @io.rns.evalauncher:style/TopButtonIcon
+@io.rns.evalauncher:menu/example_menu : reachable=false
+@io.rns.evalauncher:menu/example_menu2 : reachable=false
+@io.rns.evalauncher:mipmap/ic_launcher : reachable=true
+@io.rns.evalauncher:plurals/library_app_count : reachable=false
+@io.rns.evalauncher:raw/keep : reachable=false
+@io.rns.evalauncher:string/advanced_effects : reachable=false
+@io.rns.evalauncher:string/advanced_effects_state : reachable=false
+@io.rns.evalauncher:string/advanced_effects_warning : reachable=false
+@io.rns.evalauncher:string/animations_state : reachable=false
+@io.rns.evalauncher:string/app_library : reachable=false
+@io.rns.evalauncher:string/app_name : reachable=true
+@io.rns.evalauncher:string/cant_open : reachable=false
+@io.rns.evalauncher:string/card_app_name : reachable=false
+@io.rns.evalauncher:string/card_keep_hidden : reachable=false
+@io.rns.evalauncher:string/card_not_saved : reachable=false
+@io.rns.evalauncher:string/card_prompt_body : reachable=false
+@io.rns.evalauncher:string/card_prompt_hint : reachable=false
+@io.rns.evalauncher:string/card_prompt_identity : reachable=false
+@io.rns.evalauncher:string/card_prompt_names : reachable=false
+@io.rns.evalauncher:string/card_prompt_relabelled : reachable=false
+@io.rns.evalauncher:string/card_prompt_resigned : reachable=false
+@io.rns.evalauncher:string/card_prompt_title : reachable=false
+@io.rns.evalauncher:string/card_show : reachable=false
+@io.rns.evalauncher:string/card_state_hidden : reachable=false
+@io.rns.evalauncher:string/card_state_new : reachable=false
+@io.rns.evalauncher:string/card_state_new_key : reachable=false
+@io.rns.evalauncher:string/card_state_new_label : reachable=false
+@io.rns.evalauncher:string/card_state_over_limit : reachable=false
+@io.rns.evalauncher:string/card_state_shown : reachable=false
+@io.rns.evalauncher:string/choose_input : reachable=false
+@io.rns.evalauncher:string/clock_format : reachable=false
+@io.rns.evalauncher:string/clock_format_12 : reachable=false
+@io.rns.evalauncher:string/clock_format_24 : reachable=false
+@io.rns.evalauncher:string/clock_format_system : reachable=false
+@io.rns.evalauncher:string/columns_label : reachable=false
+@io.rns.evalauncher:string/connected : reachable=false
+@io.rns.evalauncher:string/date_format : reachable=false
+@io.rns.evalauncher:string/date_format_home : reachable=false
+    @io.rns.evalauncher:string/date_format
+@io.rns.evalauncher:string/dock_edit : reachable=false
+@io.rns.evalauncher:string/dock_edit_hint : reachable=false
+@io.rns.evalauncher:string/dock_edit_pick_app : reachable=false
+@io.rns.evalauncher:string/dock_edit_pick_place : reachable=false
+@io.rns.evalauncher:string/dock_opacity_label : reachable=false
+@io.rns.evalauncher:string/dream_name : reachable=true
+@io.rns.evalauncher:string/enable : reachable=false
+@io.rns.evalauncher:string/ethernet : reachable=false
+@io.rns.evalauncher:string/festival_diwali_greeting : reachable=false
+@io.rns.evalauncher:string/festival_dussehra_greeting : reachable=false
+@io.rns.evalauncher:string/festival_halloween_greeting : reachable=false
+@io.rns.evalauncher:string/follow_theme : reachable=false
+@io.rns.evalauncher:string/follow_theme_hint : reachable=false
+@io.rns.evalauncher:string/font_body : reachable=false
+    @io.rns.evalauncher:font/outfit
+@io.rns.evalauncher:string/font_extralight : reachable=false
+    @io.rns.evalauncher:font/outfit_extralight
+@io.rns.evalauncher:string/font_light : reachable=false
+    @io.rns.evalauncher:font/outfit_light
+@io.rns.evalauncher:string/font_medium : reachable=false
+    @io.rns.evalauncher:font/outfit_medium
+@io.rns.evalauncher:string/font_regular : reachable=false
+    @io.rns.evalauncher:font/outfit_regular
+@io.rns.evalauncher:string/game_day : reachable=false
+@io.rns.evalauncher:string/game_live : reachable=false
+@io.rns.evalauncher:string/github_update_repo : reachable=false
+@io.rns.evalauncher:string/glass_style : reachable=false
+@io.rns.evalauncher:string/glow_style : reachable=false
+@io.rns.evalauncher:string/good_afternoon : reachable=false
+@io.rns.evalauncher:string/good_evening : reachable=false
+@io.rns.evalauncher:string/good_forenoon : reachable=false
+@io.rns.evalauncher:string/good_morning : reachable=false
+@io.rns.evalauncher:string/good_night : reachable=false
+@io.rns.evalauncher:string/greeting_name : reachable=false
+@io.rns.evalauncher:string/greeting_with_name : reachable=false
+@io.rns.evalauncher:string/home_key_description : reachable=false
+@io.rns.evalauncher:string/home_key_name : reachable=true
+@io.rns.evalauncher:string/home_settings : reachable=false
+@io.rns.evalauncher:string/home_settings_help : reachable=false
+@io.rns.evalauncher:string/input_action : reachable=false
+@io.rns.evalauncher:string/input_key_service_description : reachable=false
+@io.rns.evalauncher:string/input_uri_scheme : reachable=false
+@io.rns.evalauncher:string/inputs : reachable=false
+@io.rns.evalauncher:string/last_opened : reachable=false
+@io.rns.evalauncher:string/latitude : reachable=false
+@io.rns.evalauncher:string/launcher_settings : reachable=false
+@io.rns.evalauncher:string/library_add_home : reachable=false
+@io.rns.evalauncher:string/library_app_info : reachable=false
+@io.rns.evalauncher:string/library_empty : reachable=false
+@io.rns.evalauncher:string/library_hint_add : reachable=false
+@io.rns.evalauncher:string/library_hint_open : reachable=false
+@io.rns.evalauncher:string/library_on_home : reachable=false
+@io.rns.evalauncher:string/library_open : reachable=false
+@io.rns.evalauncher:string/library_recent : reachable=false
+@io.rns.evalauncher:string/library_remove_shortcut : reachable=false
+@io.rns.evalauncher:string/library_save_failed : reachable=false
+@io.rns.evalauncher:string/live_tv : reachable=false
+@io.rns.evalauncher:string/live_tv_action : reachable=false
+@io.rns.evalauncher:string/live_tv_input_id : reachable=false
+@io.rns.evalauncher:string/live_tv_package : reachable=false
+@io.rns.evalauncher:string/locale : reachable=false
+@io.rns.evalauncher:string/longitude : reachable=false
+@io.rns.evalauncher:string/lunar_date_format : reachable=false
+@io.rns.evalauncher:string/lunar_month_leap : reachable=false
+@io.rns.evalauncher:string/lunar_year : reachable=false
+@io.rns.evalauncher:string/module_cards : reachable=false
+@io.rns.evalauncher:string/more_inputs : reachable=false
+@io.rns.evalauncher:string/native_settings : reachable=false
+@io.rns.evalauncher:string/no_inputs : reachable=false
+@io.rns.evalauncher:string/no_module_cards : reachable=false
+@io.rns.evalauncher:string/not_available : reachable=false
+@io.rns.evalauncher:string/not_connected : reachable=false
+@io.rns.evalauncher:string/off : reachable=false
+@io.rns.evalauncher:string/offline : reachable=false
+@io.rns.evalauncher:string/on : reachable=false
+@io.rns.evalauncher:string/open_on_start_label : reachable=false
+@io.rns.evalauncher:string/open_on_start_state : reachable=false
+@io.rns.evalauncher:string/power_menu : reachable=false
+@io.rns.evalauncher:string/quick_apps : reachable=false
+@io.rns.evalauncher:string/quick_apps_hint : reachable=false
+@io.rns.evalauncher:string/quick_network : reachable=false
+@io.rns.evalauncher:string/quick_picture : reachable=false
+@io.rns.evalauncher:string/race_countdown_days : reachable=false
+@io.rns.evalauncher:string/race_countdown_hours : reachable=false
+@io.rns.evalauncher:string/race_countdown_minutes : reachable=false
+@io.rns.evalauncher:string/race_finished : reachable=false
+@io.rns.evalauncher:string/race_kicker : reachable=false
+@io.rns.evalauncher:string/race_kicker_no_place : reachable=false
+@io.rns.evalauncher:string/race_lights_out : reachable=false
+@io.rns.evalauncher:string/race_live : reachable=false
+@io.rns.evalauncher:string/race_next : reachable=false
+@io.rns.evalauncher:string/race_practice_1 : reachable=false
+@io.rns.evalauncher:string/race_practice_1_short : reachable=false
+@io.rns.evalauncher:string/race_practice_2 : reachable=false
+@io.rns.evalauncher:string/race_practice_2_short : reachable=false
+@io.rns.evalauncher:string/race_practice_3 : reachable=false
+@io.rns.evalauncher:string/race_practice_3_short : reachable=false
+@io.rns.evalauncher:string/race_qualifying : reachable=false
+@io.rns.evalauncher:string/race_qualifying_short : reachable=false
+@io.rns.evalauncher:string/race_race : reachable=false
+@io.rns.evalauncher:string/race_race_short : reachable=false
+@io.rns.evalauncher:string/race_sprint : reachable=false
+@io.rns.evalauncher:string/race_sprint_qualifying : reachable=false
+@io.rns.evalauncher:string/race_sprint_qualifying_short : reachable=false
+@io.rns.evalauncher:string/race_sprint_short : reachable=false
+@io.rns.evalauncher:string/reorder : reachable=false
+@io.rns.evalauncher:string/reorder_hint : reachable=false
+@io.rns.evalauncher:string/reorder_not_saved : reachable=false
+@io.rns.evalauncher:string/rows_below_dock_label : reachable=false
+@io.rns.evalauncher:string/settings : reachable=false
+@io.rns.evalauncher:string/shamsi_month_aban : reachable=false
+@io.rns.evalauncher:string/shamsi_month_azar : reachable=false
+@io.rns.evalauncher:string/shamsi_month_bahman : reachable=false
+@io.rns.evalauncher:string/shamsi_month_dey : reachable=false
+@io.rns.evalauncher:string/shamsi_month_esfand : reachable=false
+@io.rns.evalauncher:string/shamsi_month_farvardin : reachable=false
+@io.rns.evalauncher:string/shamsi_month_khordad : reachable=false
+@io.rns.evalauncher:string/shamsi_month_mehr : reachable=false
+@io.rns.evalauncher:string/shamsi_month_mordad : reachable=false
+@io.rns.evalauncher:string/shamsi_month_ordibehesht : reachable=false
+@io.rns.evalauncher:string/shamsi_month_shahrivar : reachable=false
+@io.rns.evalauncher:string/shamsi_month_tir : reachable=false
+@io.rns.evalauncher:string/source_panel_action : reachable=false
+@io.rns.evalauncher:string/source_panel_extra : reachable=false
+@io.rns.evalauncher:string/source_panel_service : reachable=false
+@io.rns.evalauncher:string/standby : reachable=false
+@io.rns.evalauncher:string/stats_cpu : reachable=false
+@io.rns.evalauncher:string/stats_memory : reachable=false
+@io.rns.evalauncher:string/stats_storage : reachable=false
+@io.rns.evalauncher:string/status_bar_notification_info_overflow : reachable=false
+@io.rns.evalauncher:string/stock_home_redirect : reachable=false
+@io.rns.evalauncher:string/storage_gb_decimal : reachable=false
+@io.rns.evalauncher:string/storage_gb_whole : reachable=false
+@io.rns.evalauncher:string/tile_add_to_dock : reachable=false
+@io.rns.evalauncher:string/tile_move : reachable=false
+@io.rns.evalauncher:string/tile_replace_in_dock : reachable=false
+@io.rns.evalauncher:string/tv_settings : reachable=false
+@io.rns.evalauncher:string/vpn : reachable=false
+@io.rns.evalauncher:string/vpn_app : reachable=false
+@io.rns.evalauncher:string/vpn_off : reachable=false
+@io.rns.evalauncher:string/wallpaper_applied : reachable=false
+@io.rns.evalauncher:string/wallpaper_label : reachable=false
+@io.rns.evalauncher:string/wallpaper_moods : reachable=false
+@io.rns.evalauncher:string/wallpaper_none : reachable=false
+@io.rns.evalauncher:string/wallpaper_state : reachable=false
+@io.rns.evalauncher:string/wallpaper_theme_default : reachable=false
+@io.rns.evalauncher:string/wifi : reachable=false
+@io.rns.evalauncher:style/SettingsColumnChoice : reachable=false
+    @io.rns.evalauncher:style/SettingsRow
+@io.rns.evalauncher:style/SettingsRow : reachable=false
+    @io.rns.evalauncher:drawable/settings_choice_bg
+@io.rns.evalauncher:style/TextAppearance_Compat_Notification : reachable=false
+@io.rns.evalauncher:style/TextAppearance_Compat_Notification_Info : reachable=false
+@io.rns.evalauncher:style/TextAppearance_Compat_Notification_Line2 : reachable=false
+    @io.rns.evalauncher:style/TextAppearance_Compat_Notification_Info
+@io.rns.evalauncher:style/TextAppearance_Compat_Notification_Time : reachable=false
+@io.rns.evalauncher:style/TextAppearance_Compat_Notification_Title : reachable=false
+@io.rns.evalauncher:style/Theme_TvHome : reachable=true
+@io.rns.evalauncher:style/TopButton : reachable=false
+    @io.rns.evalauncher:style/TopButtonBase
+@io.rns.evalauncher:style/TopButtonBase : reachable=false
+    @io.rns.evalauncher:drawable/pill_bg
+    @io.rns.evalauncher:drawable/pill_text
+    @io.rns.evalauncher:string/font_medium
+@io.rns.evalauncher:style/TopButtonIcon : reachable=false
+    @io.rns.evalauncher:style/TopButtonBase
+@io.rns.evalauncher:style/Widget_Compat_NotificationActionContainer : reachable=false
+    @io.rns.evalauncher:drawable/notification_action_background
+@io.rns.evalauncher:style/Widget_Compat_NotificationActionText : reachable=false
+    @io.rns.evalauncher:color/androidx_core_secondary_text_default_material_light
+    @io.rns.evalauncher:dimen/notification_action_text_size
+@io.rns.evalauncher:xml/file_paths : reachable=true
+@io.rns.evalauncher:xml/home_key_service : reachable=true
+    @io.rns.evalauncher:string/home_key_description
+@io.rns.evalauncher:xml/input_key_service : reachable=true
+    @io.rns.evalauncher:string/input_key_service_description
+@io.rns.evalauncher:xml/locales_config : reachable=true
 
 The root reachable resources are:
+ attr:recyclerViewStyle:2130903061
+ dimen:fastscroll_default_thickness:2131099655
+ dimen:fastscroll_margin:2131099656
+ dimen:fastscroll_minimum_range:2131099657
+ drawable:banner:2131165184
+ drawable:banner_tv:2131165185
+ id:accessibility_action_clickable_span:2131296256
+ id:is_pooling_container_tag:2131296347
+ id:pooling_container_listener_holder_tag:2131296367
+ id:tag_accessibility_actions:2131296392
+ id:tag_accessibility_clickable_spans:2131296393
+ id:tag_accessibility_heading:2131296394
+ id:tag_accessibility_pane_title:2131296395
+ id:tag_on_apply_window_listener:2131296396
+ id:tag_screen_reader_focusable:2131296399
+ id:tag_state_description:2131296400
+ id:tag_unhandled_key_listeners:2131296403
+ id:tag_window_insets_animation_callback:2131296404
+ mipmap:ic_launcher:2131558400
+ string:app_name:2131755013
+ string:dream_name:2131755046
+ string:home_key_name:2131755072
+ style:Theme_TvHome:2131820551
+ xml:file_paths:2131951616
+ xml:home_key_service:2131951617
+ xml:input_key_service:2131951618
+ xml:locales_config:2131951619
+Unused resources are: 
  anim:app_open_enter:2130771968
  anim:app_open_exit:2130771969
  anim:tile_enter:2130771970
@@ -1928,7 +782,6 @@ The root reachable resources are:
  array:settings_key_keycodes:2130837518
  array:settings_key_scancodes:2130837519
  array:top_bar_apps:2130837520
- attr:recyclerViewStyle:2130903061
  bool:advanced_effects:2130968576
  bool:always_show_names:2130968577
  bool:ambient_glow:2130968578
@@ -1995,26 +848,51 @@ The root reachable resources are:
  bool:wallpaper_true_color:2130968639
  bool:wifi_status_color:2130968640
  bool:wifi_status_warnings:2130968641
+ color:androidx_core_ripple_material_light:2131034112
+ color:androidx_core_secondary_text_default_material_light:2131034113
+ color:notification_action_color_filter:2131034114
+ color:notification_icon_bg_color:2131034115
  color:pill_icon_no_internet:2131034116
  color:pill_icon_offline:2131034117
  color:pill_icon_online:2131034118
- dimen:fastscroll_default_thickness:2131099655
- dimen:fastscroll_margin:2131099656
- dimen:fastscroll_minimum_range:2131099657
- drawable:banner:2131165184
- drawable:banner_tv:2131165185
+ dimen:compat_button_inset_horizontal_material:2131099648
+ dimen:compat_button_inset_vertical_material:2131099649
+ dimen:compat_button_padding_horizontal_material:2131099650
+ dimen:compat_button_padding_vertical_material:2131099651
+ dimen:compat_control_corner_material:2131099652
+ dimen:compat_notification_large_icon_max_height:2131099653
+ dimen:compat_notification_large_icon_max_width:2131099654
+ dimen:item_touch_helper_max_drag_scroll_per_frame:2131099658
+ dimen:item_touch_helper_swipe_escape_max_velocity:2131099659
+ dimen:item_touch_helper_swipe_escape_velocity:2131099660
+ dimen:notification_action_icon_size:2131099661
+ dimen:notification_action_text_size:2131099662
+ dimen:notification_big_circle_margin:2131099663
+ dimen:notification_content_margin_start:2131099664
+ dimen:notification_large_icon_height:2131099665
+ dimen:notification_large_icon_width:2131099666
+ dimen:notification_main_column_padding_top:2131099667
+ dimen:notification_media_narrow_margin:2131099668
+ dimen:notification_right_icon_size:2131099669
+ dimen:notification_right_side_padding_top:2131099670
+ dimen:notification_small_icon_background_padding:2131099671
+ dimen:notification_small_icon_size_as_large:2131099672
+ dimen:notification_subtext_size:2131099673
+ dimen:notification_top_pad:2131099674
+ dimen:notification_top_pad_large_text:2131099675
+ drawable:dialog_rounded_bg:2131165186
  drawable:glass_panel:2131165187
  drawable:halloween_bat:2131165188
  drawable:halloween_ghost:2131165189
  drawable:halloween_pumpkin_dark:2131165190
  drawable:halloween_pumpkin_lit:2131165191
  drawable:ic_apps:2131165192
+ drawable:ic_apps_pill:2131165193
  drawable:ic_av:2131165194
  drawable:ic_ethernet:2131165195
  drawable:ic_home_settings:2131165196
  drawable:ic_home_settings_pill:2131165197
  drawable:ic_input:2131165198
- drawable:ic_livetv:2131165199
  drawable:ic_lock:2131165200
  drawable:ic_lock_open:2131165201
  drawable:ic_picture:2131165202
@@ -2023,11 +901,33 @@ The root reachable resources are:
  drawable:ic_wifi:2131165205
  drawable:input_row_bg:2131165206
  drawable:library_check:2131165207
+ drawable:notification_action_background:2131165208
+ drawable:notification_bg:2131165209
+ drawable:notification_bg_low:2131165210
+ drawable:notification_bg_low_normal:2131165211
+ drawable:notification_bg_low_pressed:2131165212
+ drawable:notification_bg_normal:2131165213
+ drawable:notification_bg_normal_pressed:2131165214
+ drawable:notification_icon_background:2131165215
+ drawable:notification_template_icon_bg:2131165216
+ drawable:notification_template_icon_low_bg:2131165217
+ drawable:notification_tile_bg:2131165218
+ drawable:notify_panel_notification_icon_bg:2131165219
+ drawable:pill_bg:2131165220
+ drawable:pill_text:2131165221
+ drawable:pill_text_dim:2131165222
+ drawable:pill_text_mid:2131165223
  drawable:race_bar:2131165224
  drawable:settings_card_bg:2131165225
  drawable:settings_choice_bg:2131165226
+ drawable:status_dot:2131165227
+ drawable:tile_bg:2131165228
  drawable:wallpaper_card_gradient:2131165229
- id:accessibility_action_clickable_span:2131296256
+ font:outfit:2131230720
+ font:outfit_extralight:2131230721
+ font:outfit_light:2131230722
+ font:outfit_medium:2131230723
+ font:outfit_regular:2131230724
  id:accessibility_custom_action_0:2131296257
  id:accessibility_custom_action_1:2131296258
  id:accessibility_custom_action_10:2131296259
@@ -2060,9 +960,17 @@ The root reachable resources are:
  id:accessibility_custom_action_7:2131296286
  id:accessibility_custom_action_8:2131296287
  id:accessibility_custom_action_9:2131296288
+ id:action_container:2131296289
+ id:action_divider:2131296290
+ id:action_image:2131296291
+ id:action_text:2131296292
+ id:actions:2131296293
  id:ambient:2131296294
+ id:ampm:2131296295
  id:app:2131296296
+ id:async:2131296297
  id:banner:2131296298
+ id:blocking:2131296299
  id:body:2131296300
  id:btnInputs:2131296301
  id:btnKeep:2131296302
@@ -2081,15 +989,21 @@ The root reachable resources are:
  id:categoryGrid:2131296315
  id:categoryIcon:2131296316
  id:categoryTitle:2131296317
+ id:chronometer:2131296318
  id:clock:2131296319
  id:clockDivider:2131296320
  id:date:2131296321
  id:dialogSubtitle:2131296322
  id:dialogTitle:2131296323
+ id:dialog_button:2131296324
  id:digest:2131296325
  id:dot:2131296326
+ id:dreamAmPm:2131296327
  id:dreamAmbient:2131296328
+ id:dreamClock:2131296329
  id:dreamContent:2131296330
+ id:dreamDate:2131296331
+ id:forever:2131296332
  id:glass:2131296333
  id:greeting:2131296334
  id:grid:2131296335
@@ -2099,27 +1013,46 @@ The root reachable resources are:
  id:heroMeta:2131296339
  id:heroName:2131296340
  id:heroScrim:2131296341
+ id:hint:2131296342
  id:icon:2131296343
+ id:icon_group:2131296344
  id:identity:2131296345
  id:info:2131296346
- id:is_pooling_container_tag:2131296347
+ id:italic:2131296348
+ id:item1:2131296349
+ id:item2:2131296350
+ id:item3:2131296351
+ id:item4:2131296352
+ id:item_touch_helper_previous_elevation:2131296353
  id:label:2131296354
  id:leftBlock:2131296355
+ id:line1:2131296356
+ id:line3:2131296357
  id:lunarDate:2131296358
  id:name:2131296359
  id:names:2131296360
+ id:normal:2131296361
+ id:notification_background:2131296362
+ id:notification_main_column:2131296363
+ id:notification_main_column_container:2131296364
  id:panel:2131296365
  id:pkg:2131296366
- id:pooling_container_listener_holder_tag:2131296367
  id:raceBar:2131296368
  id:raceHeadline:2131296369
  id:raceKicker:2131296370
  id:racePager:2131296371
  id:racePanel:2131296372
  id:raceSessions:2131296373
+ id:right_icon:2131296374
+ id:right_side:2131296375
  id:root:2131296376
  id:rows:2131296377
  id:scrim:2131296378
+ id:sectionContent:2131296379
+ id:sectionOptionsContainer:2131296380
+ id:sectionScrollView:2131296381
+ id:sectionSubtitle:2131296382
+ id:sectionTitle:2131296383
  id:selectedBadge:2131296384
  id:shamsiDate:2131296385
  id:sky:2131296386
@@ -2128,15 +1061,12 @@ The root reachable resources are:
  id:status:2131296389
  id:subGridCard:2131296390
  id:subGridRecyclerView:2131296391
- id:tag_accessibility_actions:2131296392
- id:tag_accessibility_clickable_spans:2131296393
- id:tag_accessibility_heading:2131296394
- id:tag_accessibility_pane_title:2131296395
- id:tag_on_apply_window_listener:2131296396
- id:tag_screen_reader_focusable:2131296399
- id:tag_state_description:2131296400
- id:tag_unhandled_key_listeners:2131296403
- id:tag_window_insets_animation_callback:2131296404
+ id:tag_on_receive_content_listener:2131296397
+ id:tag_on_receive_content_mime_types:2131296398
+ id:tag_transition_group:2131296401
+ id:tag_unhandled_key_event_manager:2131296402
+ id:text:2131296405
+ id:text2:2131296406
  id:time:2131296407
  id:title:2131296408
  id:topButtons:2131296409
@@ -2153,12 +1083,15 @@ The root reachable resources are:
  integer:open_on_start_network_wait:2131361797
  integer:rows_below_dock:2131361798
  integer:sky_intensity:2131361799
+ integer:status_bar_notification_info_maxnum:2131361800
  integer:wifi_label_width:2131361801
  layout:activity_launcher_settings:2131427328
  layout:activity_main:2131427329
  layout:activity_quick_settings:2131427330
+ layout:custom_dialog:2131427331
  layout:dialog_card_prompt:2131427332
  layout:dialog_settings_grid:2131427333
+ layout:dialog_settings_section:2131427334
  layout:dialog_wallpaper_picker:2131427335
  layout:dream_clock:2131427336
  layout:item_app:2131427337
@@ -2167,20 +1100,25 @@ The root reachable resources are:
  layout:item_settings_category_card:2131427340
  layout:item_settings_grid_card:2131427341
  layout:item_wallpaper_card:2131427342
+ layout:notification_action:2131427343
+ layout:notification_action_tombstone:2131427344
+ layout:notification_template_custom_big:2131427345
+ layout:notification_template_icon_group:2131427346
+ layout:notification_template_part_chronometer:2131427347
+ layout:notification_template_part_time:2131427348
  layout:popup_cards:2131427349
  layout:popup_inputs:2131427350
  layout:row_app_library:2131427351
  layout:top_app_button:2131427352
  menu:example_menu:2131492864
  menu:example_menu2:2131492865
- mipmap:ic_launcher:2131558400
  plurals:library_app_count:2131623936
+ raw:keep:2131689472
  string:advanced_effects:2131755008
  string:advanced_effects_state:2131755009
  string:advanced_effects_warning:2131755010
  string:animations_state:2131755011
  string:app_library:2131755012
- string:app_name:2131755013
  string:cant_open:2131755014
  string:card_app_name:2131755015
  string:card_keep_hidden:2131755016
@@ -2213,12 +1151,16 @@ The root reachable resources are:
  string:dock_edit_pick_app:2131755043
  string:dock_edit_pick_place:2131755044
  string:dock_opacity_label:2131755045
- string:dream_name:2131755046
  string:enable:2131755047
  string:ethernet:2131755048
  string:festival_diwali_greeting:2131755049
  string:festival_dussehra_greeting:2131755050
  string:festival_halloween_greeting:2131755051
+ string:follow_theme:2131755052
+ string:follow_theme_hint:2131755053
+ string:font_body:2131755054
+ string:font_extralight:2131755055
+ string:font_light:2131755056
  string:font_medium:2131755057
  string:font_regular:2131755058
  string:game_day:2131755059
@@ -2233,12 +1175,9 @@ The root reachable resources are:
  string:good_night:2131755068
  string:greeting_name:2131755069
  string:greeting_with_name:2131755070
- string:home_key_description:2131755071
- string:home_key_name:2131755072
  string:home_settings:2131755073
  string:home_settings_help:2131755074
  string:input_action:2131755075
- string:input_key_service_description:2131755076
  string:input_uri_scheme:2131755077
  string:inputs:2131755078
  string:last_opened:2131755079
@@ -2323,9 +1262,11 @@ The root reachable resources are:
  string:source_panel_action:2131755158
  string:source_panel_extra:2131755159
  string:source_panel_service:2131755160
+ string:standby:2131755161
  string:stats_cpu:2131755162
  string:stats_memory:2131755163
  string:stats_storage:2131755164
+ string:status_bar_notification_info_overflow:2131755165
  string:stock_home_redirect:2131755166
  string:storage_gb_decimal:2131755167
  string:storage_gb_whole:2131755168
@@ -2345,112 +1286,13 @@ The root reachable resources are:
  string:wifi:2131755182
  style:SettingsColumnChoice:2131820544
  style:SettingsRow:2131820545
- style:Theme_TvHome:2131820551
- xml:file_paths:2131951616
- xml:home_key_service:2131951617
- xml:input_key_service:2131951618
- xml:locales_config:2131951619
-Unused resources are: 
- color:androidx_core_ripple_material_light:2131034112
- color:androidx_core_secondary_text_default_material_light:2131034113
- color:notification_action_color_filter:2131034114
- color:notification_icon_bg_color:2131034115
- dimen:compat_button_inset_horizontal_material:2131099648
- dimen:compat_button_inset_vertical_material:2131099649
- dimen:compat_button_padding_horizontal_material:2131099650
- dimen:compat_button_padding_vertical_material:2131099651
- dimen:compat_control_corner_material:2131099652
- dimen:compat_notification_large_icon_max_height:2131099653
- dimen:compat_notification_large_icon_max_width:2131099654
- dimen:item_touch_helper_max_drag_scroll_per_frame:2131099658
- dimen:item_touch_helper_swipe_escape_max_velocity:2131099659
- dimen:item_touch_helper_swipe_escape_velocity:2131099660
- dimen:notification_action_icon_size:2131099661
- dimen:notification_action_text_size:2131099662
- dimen:notification_big_circle_margin:2131099663
- dimen:notification_content_margin_start:2131099664
- dimen:notification_large_icon_height:2131099665
- dimen:notification_large_icon_width:2131099666
- dimen:notification_main_column_padding_top:2131099667
- dimen:notification_media_narrow_margin:2131099668
- dimen:notification_right_icon_size:2131099669
- dimen:notification_right_side_padding_top:2131099670
- dimen:notification_small_icon_background_padding:2131099671
- dimen:notification_small_icon_size_as_large:2131099672
- dimen:notification_subtext_size:2131099673
- dimen:notification_top_pad:2131099674
- dimen:notification_top_pad_large_text:2131099675
- drawable:notification_action_background:2131165208
- drawable:notification_bg:2131165209
- drawable:notification_bg_low:2131165210
- drawable:notification_bg_low_normal:2131165211
- drawable:notification_bg_low_pressed:2131165212
- drawable:notification_bg_normal:2131165213
- drawable:notification_bg_normal_pressed:2131165214
- drawable:notification_icon_background:2131165215
- drawable:notification_template_icon_bg:2131165216
- drawable:notification_template_icon_low_bg:2131165217
- drawable:notification_tile_bg:2131165218
- drawable:notify_panel_notification_icon_bg:2131165219
- id:action_container:2131296289
- id:action_divider:2131296290
- id:action_image:2131296291
- id:action_text:2131296292
- id:actions:2131296293
- id:ampm:2131296295
- id:async:2131296297
- id:blocking:2131296299
- id:chronometer:2131296318
- id:dialog_button:2131296324
- id:dreamAmPm:2131296327
- id:dreamClock:2131296329
- id:dreamDate:2131296331
- id:forever:2131296332
- id:hint:2131296342
- id:icon_group:2131296344
- id:italic:2131296348
- id:item1:2131296349
- id:item2:2131296350
- id:item3:2131296351
- id:item4:2131296352
- id:item_touch_helper_previous_elevation:2131296353
- id:line1:2131296356
- id:line3:2131296357
- id:normal:2131296361
- id:notification_background:2131296362
- id:notification_main_column:2131296363
- id:notification_main_column_container:2131296364
- id:right_icon:2131296374
- id:right_side:2131296375
- id:sectionContent:2131296379
- id:sectionOptionsContainer:2131296380
- id:sectionScrollView:2131296381
- id:sectionSubtitle:2131296382
- id:sectionTitle:2131296383
- id:tag_on_receive_content_listener:2131296397
- id:tag_on_receive_content_mime_types:2131296398
- id:tag_transition_group:2131296401
- id:tag_unhandled_key_event_manager:2131296402
- id:text:2131296405
- id:text2:2131296406
- integer:status_bar_notification_info_maxnum:2131361800
- layout:custom_dialog:2131427331
- layout:dialog_settings_section:2131427334
- layout:notification_action:2131427343
- layout:notification_action_tombstone:2131427344
- layout:notification_template_custom_big:2131427345
- layout:notification_template_icon_group:2131427346
- layout:notification_template_part_chronometer:2131427347
- layout:notification_template_part_time:2131427348
- raw:keep:2131689472
- string:follow_theme:2131755052
- string:follow_theme_hint:2131755053
- string:standby:2131755161
- string:status_bar_notification_info_overflow:2131755165
  style:TextAppearance_Compat_Notification:2131820546
  style:TextAppearance_Compat_Notification_Info:2131820547
  style:TextAppearance_Compat_Notification_Line2:2131820548
  style:TextAppearance_Compat_Notification_Time:2131820549
  style:TextAppearance_Compat_Notification_Title:2131820550
+ style:TopButton:2131820552
+ style:TopButtonBase:2131820553
+ style:TopButtonIcon:2131820554
  style:Widget_Compat_NotificationActionContainer:2131820555
  style:Widget_Compat_NotificationActionText:2131820556

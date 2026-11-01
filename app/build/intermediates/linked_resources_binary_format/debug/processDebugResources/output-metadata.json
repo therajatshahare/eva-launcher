@@ -4,15 +4,15 @@
     "type": "LINKED_RESOURCES_BINARY_FORMAT",
     "kind": "Directory"
   },
-  "applicationId": "com.gathin.tvhome",
+  "applicationId": "io.rns.evalauncher",
   "variantName": "debug",
   "elements": [
     {
       "type": "SINGLE",
       "filters": [],
       "attributes": [],
-      "versionCode": 22,
-      "versionName": "2.1",
+      "versionCode": 23,
+      "versionName": "2.2",
       "outputFile": "linked-resources-binary-format-debug.ap_"
     }
   ],

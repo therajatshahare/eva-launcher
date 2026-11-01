@@ -377,6 +377,10 @@ androidx.core.content.ContextCompat:
     public static void startActivity(android.content.Context,android.content.Intent,android.os.Bundle)
     public static void startForegroundService(android.content.Context,android.content.Intent)
 androidx.core.content.ContextKt
+androidx.core.content.FileProvider$PathStrategy:
+    public abstract android.net.Uri getUriForFile(java.io.File)
+androidx.core.content.FileProvider$SimplePathStrategy:
+    public android.net.Uri getUriForFile(java.io.File)
 androidx.core.content.FileProvider:
     private static final java.lang.String ATTR_NAME
     private static final java.lang.String ATTR_PATH
@@ -389,6 +393,7 @@ androidx.core.content.FileProvider:
     private static final java.lang.String TAG_EXTERNAL_MEDIA
     private static final java.lang.String TAG_FILES_PATH
     private static final java.lang.String TAG_ROOT_PATH
+    public static android.net.Uri getUriForFile(android.content.Context,java.lang.String,java.io.File)
     public static android.net.Uri getUriForFile(android.content.Context,java.lang.String,java.io.File,java.lang.String)
 androidx.core.content.IntentCompat
 androidx.core.content.LocusIdCompat$Api29Impl
@@ -954,21 +959,12 @@ androidx.core.view.MotionEventCompat:
     public static float getY(android.view.MotionEvent,int)
 androidx.core.view.NestedScrollingChild2
 androidx.core.view.NestedScrollingChild3
-androidx.core.view.NestedScrollingChild:
-    public abstract boolean dispatchNestedFling(float,float,boolean)
-    public abstract boolean dispatchNestedPreFling(float,float)
-    public abstract boolean dispatchNestedPreScroll(int,int,int[],int[])
-    public abstract boolean dispatchNestedScroll(int,int,int,int,int[])
-    public abstract boolean hasNestedScrollingParent()
-    public abstract boolean isNestedScrollingEnabled()
-    public abstract void setNestedScrollingEnabled(boolean)
-    public abstract boolean startNestedScroll(int)
+androidx.core.view.NestedScrollingChild
 androidx.core.view.NestedScrollingChildHelper:
     public boolean dispatchNestedScroll(int,int,int,int,int[],int)
     public void onDetachedFromWindow()
     public void onStopNestedScroll(android.view.View)
-androidx.core.view.NestedScrollingParent:
-    public abstract int getNestedScrollAxes()
+androidx.core.view.NestedScrollingParent
 androidx.core.view.NestedScrollingParentHelper
 androidx.core.view.OnReceiveContentListener
 androidx.core.view.OnReceiveContentViewBehavior:
@@ -1080,6 +1076,10 @@ androidx.core.view.ViewCompat:
     private static java.lang.reflect.Method sChildrenDrawingOrderMethod
     private static java.lang.reflect.Method sDispatchFinishTemporaryDetach
     private static java.lang.reflect.Method sDispatchStartTemporaryDetach
+    private static java.lang.reflect.Field sMinHeightField
+    private static boolean sMinHeightFieldFetched
+    private static java.lang.reflect.Field sMinWidthField
+    private static boolean sMinWidthFieldFetched
     private static boolean sTempDetachBound
     private static java.lang.ThreadLocal sThreadLocalRect
     private static java.util.WeakHashMap sTransitionNameMap
@@ -1148,16 +1148,19 @@ androidx.core.view.ViewCompat:
     public static java.lang.String getTransitionName(android.view.View)
     public static float getTranslationX(android.view.View)
     public static float getTranslationY(android.view.View)
+    public static float getTranslationZ(android.view.View)
     public static androidx.core.view.WindowInsetsControllerCompat getWindowInsetsController(android.view.View)
     public static int getWindowSystemUiVisibility(android.view.View)
     public static float getX(android.view.View)
     public static float getY(android.view.View)
+    public static float getZ(android.view.View)
     public static boolean hasAccessibilityDelegate(android.view.View)
     public static boolean hasExplicitFocusable(android.view.View)
     public static boolean hasNestedScrollingParent(android.view.View)
     public static boolean hasNestedScrollingParent(android.view.View,int)
     public static boolean hasOnClickListeners(android.view.View)
     public static boolean hasOverlappingRendering(android.view.View)
+    public static boolean hasTransientState(android.view.View)
     public static boolean isFocusedByDefault(android.view.View)
     public static boolean isImportantForAccessibility(android.view.View)
     public static boolean isImportantForAutofill(android.view.View)
@@ -1231,9 +1234,11 @@ androidx.core.view.ViewCompat:
     public static void setTransitionName(android.view.View,java.lang.String)
     public static void setTranslationX(android.view.View,float)
     public static void setTranslationY(android.view.View,float)
+    public static void setTranslationZ(android.view.View,float)
     public static void setWindowInsetsAnimationCallback(android.view.View,androidx.core.view.WindowInsetsAnimationCompat$Callback)
     public static void setX(android.view.View,float)
     public static void setY(android.view.View,float)
+    public static void setZ(android.view.View,float)
     public static boolean startDragAndDrop(android.view.View,android.content.ClipData,android.view.View$DragShadowBuilder,java.lang.Object,int)
     public static boolean startNestedScroll(android.view.View,int)
     public static boolean startNestedScroll(android.view.View,int,int)
@@ -1242,7 +1247,9 @@ androidx.core.view.ViewCompat:
     public static void updateDragShadow(android.view.View,android.view.View$DragShadowBuilder)
 androidx.core.view.ViewConfigurationCompat:
     private static final java.lang.String TAG
+    private static java.lang.reflect.Method sGetScaledScrollFactorMethod
     private void <init>()
+    private static float getLegacyScrollFactor(android.view.ViewConfiguration,android.content.Context)
     public static int getScaledHoverSlop(android.view.ViewConfiguration)
     public static int getScaledPagingTouchSlop(android.view.ViewConfiguration)
     public static boolean hasPermanentMenuKey(android.view.ViewConfiguration)
@@ -1572,11 +1579,14 @@ androidx.core.view.accessibility.AccessibilityNodeInfoCompat:
     public void <init>(java.lang.Object)
     public void addChild(android.view.View)
     public void addChild(android.view.View,int)
+    private void addSpanLocationToExtras(android.text.style.ClickableSpan,android.text.Spanned,int)
     public boolean canOpenPopup()
+    private void clearExtrasSpans()
     public java.util.List findAccessibilityNodeInfosByText(java.lang.String)
     public java.util.List findAccessibilityNodeInfosByViewId(java.lang.String)
     public androidx.core.view.accessibility.AccessibilityNodeInfoCompat findFocus(int)
     public androidx.core.view.accessibility.AccessibilityNodeInfoCompat focusSearch(int)
+    public int getActions()
     private boolean getBooleanProperty(int)
     public androidx.core.view.accessibility.AccessibilityNodeInfoCompat getChild(int)
     public int getChildCount()
@@ -1592,10 +1602,12 @@ androidx.core.view.accessibility.AccessibilityNodeInfoCompat:
     public int getLiveRegion()
     public int getMaxTextLength()
     public int getMovementGranularities()
+    private android.util.SparseArray getOrCreateSpansFromViewTags(android.view.View)
     public java.lang.CharSequence getPaneTitle()
     public androidx.core.view.accessibility.AccessibilityNodeInfoCompat getParent()
     public androidx.core.view.accessibility.AccessibilityNodeInfoCompat$RangeInfoCompat getRangeInfo()
     public java.lang.CharSequence getRoleDescription()
+    private android.util.SparseArray getSpansFromViewTags(android.view.View)
     public java.lang.CharSequence getStateDescription()
     public int getTextSelectionEnd()
     public int getTextSelectionStart()
@@ -1605,6 +1617,7 @@ androidx.core.view.accessibility.AccessibilityNodeInfoCompat:
     public androidx.core.view.accessibility.AccessibilityNodeInfoCompat getTraversalBefore()
     public androidx.core.view.accessibility.AccessibilityWindowInfoCompat getWindow()
     public int getWindowId()
+    private int idForClickableSpan(android.text.style.ClickableSpan,android.util.SparseArray)
     public boolean isAccessibilityFocused()
     public boolean isContentInvalid()
     public boolean isContextClickable()
@@ -1627,6 +1640,7 @@ androidx.core.view.accessibility.AccessibilityNodeInfoCompat:
     public boolean removeAction(androidx.core.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityActionCompat)
     public boolean removeChild(android.view.View)
     public boolean removeChild(android.view.View,int)
+    private void removeCollectedSpans(android.view.View)
     public void setAccessibilityFocused(boolean)
     public void setBoundsInParent(android.graphics.Rect)
     public void setBoundsInScreen(android.graphics.Rect)
@@ -1841,60 +1855,42 @@ androidx.dynamicanimation.R$string
 androidx.dynamicanimation.R$style
 androidx.dynamicanimation.R$styleable
 androidx.dynamicanimation.R
-androidx.dynamicanimation.animation.AnimationHandler:
-    private static final long FRAME_DELAY_MS
-    public static long getFrameTime()
-    public void setProvider(androidx.dynamicanimation.animation.AnimationHandler$AnimationFrameCallbackProvider)
+androidx.dynamicanimation.animation.AnimationHandler$AnimationCallbackDispatcher
+androidx.dynamicanimation.animation.AnimationHandler$AnimationFrameCallback
+androidx.dynamicanimation.animation.AnimationHandler$AnimationFrameCallbackProvider
+androidx.dynamicanimation.animation.AnimationHandler$FrameCallbackProvider14$1
+androidx.dynamicanimation.animation.AnimationHandler$FrameCallbackProvider14
+androidx.dynamicanimation.animation.AnimationHandler$FrameCallbackProvider16$1
+androidx.dynamicanimation.animation.AnimationHandler$FrameCallbackProvider16
+androidx.dynamicanimation.animation.AnimationHandler
+androidx.dynamicanimation.animation.DynamicAnimation$10
+androidx.dynamicanimation.animation.DynamicAnimation$11
+androidx.dynamicanimation.animation.DynamicAnimation$12
+androidx.dynamicanimation.animation.DynamicAnimation$13
+androidx.dynamicanimation.animation.DynamicAnimation$14
 androidx.dynamicanimation.animation.DynamicAnimation$15
-androidx.dynamicanimation.animation.DynamicAnimation:
-    public static final float MIN_VISIBLE_CHANGE_ALPHA
-    public static final float MIN_VISIBLE_CHANGE_PIXELS
-    public static final float MIN_VISIBLE_CHANGE_ROTATION_DEGREES
-    public static final float MIN_VISIBLE_CHANGE_SCALE
-    private static final float THRESHOLD_MULTIPLIER
-    private static final float UNSET
-    void <init>(androidx.dynamicanimation.animation.FloatValueHolder)
-    public androidx.dynamicanimation.animation.DynamicAnimation addEndListener(androidx.dynamicanimation.animation.DynamicAnimation$OnAnimationEndListener)
-    public androidx.dynamicanimation.animation.DynamicAnimation addUpdateListener(androidx.dynamicanimation.animation.DynamicAnimation$OnAnimationUpdateListener)
-    abstract float getAcceleration(float,float)
-    public float getMinimumVisibleChange()
-    abstract boolean isAtEquilibrium(float,float)
-    public void removeEndListener(androidx.dynamicanimation.animation.DynamicAnimation$OnAnimationEndListener)
-    private static void removeEntry(java.util.ArrayList,java.lang.Object)
-    public void removeUpdateListener(androidx.dynamicanimation.animation.DynamicAnimation$OnAnimationUpdateListener)
-    public androidx.dynamicanimation.animation.DynamicAnimation setMaxValue(float)
-    public androidx.dynamicanimation.animation.DynamicAnimation setMinValue(float)
-    public androidx.dynamicanimation.animation.DynamicAnimation setStartValue(float)
-    public androidx.dynamicanimation.animation.DynamicAnimation setStartVelocity(float)
+androidx.dynamicanimation.animation.DynamicAnimation$1
+androidx.dynamicanimation.animation.DynamicAnimation$2
+androidx.dynamicanimation.animation.DynamicAnimation$3
+androidx.dynamicanimation.animation.DynamicAnimation$4
+androidx.dynamicanimation.animation.DynamicAnimation$5
+androidx.dynamicanimation.animation.DynamicAnimation$6
+androidx.dynamicanimation.animation.DynamicAnimation$7
+androidx.dynamicanimation.animation.DynamicAnimation$8
+androidx.dynamicanimation.animation.DynamicAnimation$9
+androidx.dynamicanimation.animation.DynamicAnimation$MassState
+androidx.dynamicanimation.animation.DynamicAnimation$OnAnimationEndListener
+androidx.dynamicanimation.animation.DynamicAnimation$OnAnimationUpdateListener
+androidx.dynamicanimation.animation.DynamicAnimation$ViewProperty
+androidx.dynamicanimation.animation.DynamicAnimation
 androidx.dynamicanimation.animation.FlingAnimation$DragForce
 androidx.dynamicanimation.animation.FlingAnimation
 androidx.dynamicanimation.animation.FloatPropertyCompat$1
-androidx.dynamicanimation.animation.FloatPropertyCompat:
-    public static androidx.dynamicanimation.animation.FloatPropertyCompat createFloatPropertyCompat(android.util.FloatProperty)
+androidx.dynamicanimation.animation.FloatPropertyCompat
 androidx.dynamicanimation.animation.FloatValueHolder
 androidx.dynamicanimation.animation.Force
-androidx.dynamicanimation.animation.SpringAnimation:
-    private static final float UNSET
-    public void <init>(androidx.dynamicanimation.animation.FloatValueHolder)
-    public void <init>(java.lang.Object,androidx.dynamicanimation.animation.FloatPropertyCompat,float)
-    public boolean canSkipToEnd()
-    float getAcceleration(float,float)
-    public androidx.dynamicanimation.animation.SpringForce getSpring()
-    public void skipToEnd()
-androidx.dynamicanimation.animation.SpringForce:
-    public static final float DAMPING_RATIO_HIGH_BOUNCY
-    public static final float DAMPING_RATIO_LOW_BOUNCY
-    public static final float DAMPING_RATIO_MEDIUM_BOUNCY
-    public static final float DAMPING_RATIO_NO_BOUNCY
-    public static final float STIFFNESS_HIGH
-    public static final float STIFFNESS_LOW
-    public static final float STIFFNESS_MEDIUM
-    public static final float STIFFNESS_VERY_LOW
-    private static final double UNSET
-    private static final double VELOCITY_THRESHOLD_MULTIPLIER
-    public float getAcceleration(float,float)
-    public float getDampingRatio()
-    public float getStiffness()
+androidx.dynamicanimation.animation.SpringAnimation
+androidx.dynamicanimation.animation.SpringForce
 androidx.legacy.content.WakefulBroadcastReceiver
 androidx.legacy.coreutils.R$attr
 androidx.legacy.coreutils.R$color
@@ -2078,7 +2074,9 @@ androidx.recyclerview.widget.AdapterHelper:
     static final int POSITION_TYPE_NEW_OR_LAID_OUT
     private static final java.lang.String TAG
     varargs androidx.recyclerview.widget.AdapterHelper addUpdateOp(androidx.recyclerview.widget.AdapterHelper$UpdateOp[])
+    boolean onItemRangeChanged(int,int,java.lang.Object)
     boolean onItemRangeInserted(int,int)
+    boolean onItemRangeMoved(int,int,int)
     boolean onItemRangeRemoved(int,int)
 androidx.recyclerview.widget.AdapterListUpdateCallback
 androidx.recyclerview.widget.AsyncDifferConfig$Builder
@@ -2157,9 +2155,12 @@ androidx.recyclerview.widget.GridLayoutManager:
     private static final boolean DEBUG
     public static final int DEFAULT_SPAN_COUNT
     private static final java.lang.String TAG
+    public void <init>(android.content.Context,int)
+    public void <init>(android.content.Context,int,int,boolean)
     public int getSpanCount()
     public androidx.recyclerview.widget.GridLayoutManager$SpanSizeLookup getSpanSizeLookup()
     public boolean isUsingSpansToEstimateScrollbarDimensions()
+    public void setSpanSizeLookup(androidx.recyclerview.widget.GridLayoutManager$SpanSizeLookup)
     public void setUsingSpansToEstimateScrollbarDimensions(boolean)
 androidx.recyclerview.widget.ItemTouchHelper$1
 androidx.recyclerview.widget.ItemTouchHelper$2
@@ -2199,6 +2200,9 @@ androidx.recyclerview.widget.LinearLayoutManager:
     private static final float MAX_SCROLL_FACTOR
     private static final java.lang.String TAG
     public static final int VERTICAL
+    public void <init>(android.content.Context)
+    public void <init>(android.content.Context,int,boolean)
+    public android.graphics.PointF computeScrollVectorForPosition(int)
     public int findFirstCompletelyVisibleItemPosition()
     public int findLastCompletelyVisibleItemPosition()
     public int getInitialPrefetchItemCount()
@@ -2207,18 +2211,14 @@ androidx.recyclerview.widget.LinearLayoutManager:
     public boolean getStackFromEnd()
     private void logChildren()
     public void prepareForDrop(android.view.View,android.view.View,int,int)
+    public void scrollToPosition(int)
+    public void scrollToPositionWithOffset(int,int)
     public void setInitialPrefetchItemCount(int)
     public void setRecycleChildrenOnDetach(boolean)
     public void setSmoothScrollbarEnabled(boolean)
+    public void smoothScrollToPosition(androidx.recyclerview.widget.RecyclerView,androidx.recyclerview.widget.RecyclerView$State,int)
     void validateChildOrder()
-androidx.recyclerview.widget.LinearSmoothScroller:
-    private static final boolean DEBUG
-    private static final float MILLISECONDS_PER_INCH
-    public static final int SNAP_TO_ANY
-    public static final int SNAP_TO_END
-    public static final int SNAP_TO_START
-    private static final float TARGET_SEEK_EXTRA_SCROLL_RATIO
-    private static final int TARGET_SEEK_SCROLL_DISTANCE_PX
+androidx.recyclerview.widget.LinearSmoothScroller
 androidx.recyclerview.widget.LinearSnapHelper
 androidx.recyclerview.widget.ListAdapter$1
 androidx.recyclerview.widget.ListAdapter
@@ -2245,23 +2245,38 @@ androidx.recyclerview.widget.OrientationHelper:
     public abstract void offsetChild(android.view.View,int)
 androidx.recyclerview.widget.PagerSnapHelper$1
 androidx.recyclerview.widget.PagerSnapHelper
+androidx.recyclerview.widget.RecyclerView$7
+androidx.recyclerview.widget.RecyclerView$Adapter$StateRestorationPolicy
 androidx.recyclerview.widget.RecyclerView$Adapter:
+    private boolean mHasStableIds
+    private final androidx.recyclerview.widget.RecyclerView$AdapterDataObservable mObservable
+    private androidx.recyclerview.widget.RecyclerView$Adapter$StateRestorationPolicy mStateRestorationPolicy
+    public void <init>()
+    public int findRelativeAdapterPositionIn(androidx.recyclerview.widget.RecyclerView$Adapter,androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
     public final androidx.recyclerview.widget.RecyclerView$Adapter$StateRestorationPolicy getStateRestorationPolicy()
+    public final boolean hasObservers()
+    public final void notifyDataSetChanged()
     public final void notifyItemChanged(int)
     public final void notifyItemChanged(int,java.lang.Object)
     public final void notifyItemInserted(int)
+    public final void notifyItemMoved(int,int)
+    public final void notifyItemRangeChanged(int,int)
     public final void notifyItemRangeChanged(int,int,java.lang.Object)
     public final void notifyItemRangeInserted(int,int)
     public final void notifyItemRangeRemoved(int,int)
     public final void notifyItemRemoved(int)
+    public abstract void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+    public void onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder,int,java.util.List)
+    public abstract androidx.recyclerview.widget.RecyclerView$ViewHolder onCreateViewHolder(android.view.ViewGroup,int)
+    public void setHasStableIds(boolean)
     public void setStateRestorationPolicy(androidx.recyclerview.widget.RecyclerView$Adapter$StateRestorationPolicy)
-androidx.recyclerview.widget.RecyclerView$AdapterDataObservable:
-    public void notifyItemRangeInserted(int,int)
-    public void notifyItemRangeRemoved(int,int)
-    public void notifyStateRestorationPolicyChanged()
+androidx.recyclerview.widget.RecyclerView$AdapterDataObservable
 androidx.recyclerview.widget.RecyclerView$AdapterDataObserver:
+    public void onChanged()
     public void onItemRangeChanged(int,int)
+    public void onItemRangeChanged(int,int,java.lang.Object)
     public void onItemRangeInserted(int,int)
+    public void onItemRangeMoved(int,int,int)
     public void onItemRangeRemoved(int,int)
     public void onStateRestorationPolicyChanged()
 androidx.recyclerview.widget.RecyclerView$EdgeEffectFactory$EdgeDirection
@@ -2286,6 +2301,8 @@ androidx.recyclerview.widget.RecyclerView$ItemAnimator:
     public void setChangeDuration(long)
     public void setMoveDuration(long)
     public void setRemoveDuration(long)
+androidx.recyclerview.widget.RecyclerView$ItemDecoration:
+    public void onDrawOver(android.graphics.Canvas,androidx.recyclerview.widget.RecyclerView)
 androidx.recyclerview.widget.RecyclerView$LayoutManager:
     public void assertInLayoutOrScroll(java.lang.String)
     public void attachView(android.view.View)
@@ -2304,12 +2321,16 @@ androidx.recyclerview.widget.RecyclerView$LayoutManager:
     public boolean isMeasurementCacheEnabled()
     public void layoutDecorated(android.view.View,int,int,int,int)
     public void measureChild(android.view.View,int,int)
+    void onSmoothScrollerStopped(androidx.recyclerview.widget.RecyclerView$SmoothScroller)
     public void postOnAnimation(java.lang.Runnable)
     public void removeAllViews()
     public void removeDetachedView(android.view.View)
+    public void scrollToPosition(int)
     public void setAutoMeasureEnabled(boolean)
     public final void setItemPrefetchEnabled(boolean)
     public void setMeasurementCacheEnabled(boolean)
+    public void smoothScrollToPosition(androidx.recyclerview.widget.RecyclerView,androidx.recyclerview.widget.RecyclerView$State,int)
+    public void startSmoothScroll(androidx.recyclerview.widget.RecyclerView$SmoothScroller)
     public void stopIgnoringView(android.view.View)
 androidx.recyclerview.widget.RecyclerView$LayoutParams:
     public int getAbsoluteAdapterPosition()
@@ -2329,23 +2350,38 @@ androidx.recyclerview.widget.RecyclerView$Recycler:
     static final int DEFAULT_CACHE_SIZE
     public void bindViewToPosition(android.view.View,int)
 androidx.recyclerview.widget.RecyclerView$RecyclerViewDataObserver:
+    public void onChanged()
+    public void onItemRangeChanged(int,int,java.lang.Object)
     public void onItemRangeInserted(int,int)
+    public void onItemRangeMoved(int,int,int)
     public void onItemRangeRemoved(int,int)
     public void onStateRestorationPolicyChanged()
+    void triggerUpdateProcessor()
 androidx.recyclerview.widget.RecyclerView$SimpleOnItemTouchListener
-androidx.recyclerview.widget.RecyclerView$SmoothScroller$Action:
-    public static final int UNDEFINED_DURATION
-    public void <init>(int,int,int)
-    public int getDuration()
-    public int getDx()
-    public int getDy()
-    public android.view.animation.Interpolator getInterpolator()
-    public void setDuration(int)
-    public void setDx(int)
-    public void setDy(int)
-    public void setInterpolator(android.view.animation.Interpolator)
+androidx.recyclerview.widget.RecyclerView$SmoothScroller$Action
+androidx.recyclerview.widget.RecyclerView$SmoothScroller$ScrollVectorProvider
 androidx.recyclerview.widget.RecyclerView$SmoothScroller:
+    private androidx.recyclerview.widget.RecyclerView$LayoutManager mLayoutManager
+    private boolean mPendingInitialRun
+    private androidx.recyclerview.widget.RecyclerView mRecyclerView
+    private final androidx.recyclerview.widget.RecyclerView$SmoothScroller$Action mRecyclingAction
+    private boolean mRunning
+    private boolean mStarted
+    private int mTargetPosition
+    private android.view.View mTargetView
+    public void <init>()
+    public android.graphics.PointF computeScrollVectorForPosition(int)
+    public android.view.View findViewByPosition(int)
+    public int getChildCount()
+    public int getChildPosition(android.view.View)
+    public androidx.recyclerview.widget.RecyclerView$LayoutManager getLayoutManager()
     public void instantScrollToPosition(int)
+    protected void normalize(android.graphics.PointF)
+    protected abstract void onSeekTargetStep(int,int,androidx.recyclerview.widget.RecyclerView$State,androidx.recyclerview.widget.RecyclerView$SmoothScroller$Action)
+    protected abstract void onStart()
+    protected abstract void onStop()
+    protected abstract void onTargetFound(android.view.View,androidx.recyclerview.widget.RecyclerView$State,androidx.recyclerview.widget.RecyclerView$SmoothScroller$Action)
+    void start(androidx.recyclerview.widget.RecyclerView,androidx.recyclerview.widget.RecyclerView$LayoutManager)
 androidx.recyclerview.widget.RecyclerView$State:
     static final int STEP_ANIMATIONS
     static final int STEP_LAYOUT
@@ -2374,11 +2410,25 @@ androidx.recyclerview.widget.RecyclerView$ViewHolder:
     static final int FLAG_RETURNED_FROM_SCRAP
     static final int FLAG_TMP_DETACHED
     static final int FLAG_UPDATE
+    private static final java.util.List FULLUPDATE_PAYLOADS
     static final int PENDING_ACCESSIBILITY_STATE_NOT_SET
+    private int mIsRecyclableCount
+    long mItemId
+    int mItemViewType
+    java.util.List mPayloads
+    java.util.List mUnmodifiedPayloads
+    private int mWasImportantForAccessibilityBeforeHidden
+    static void <clinit>()
+    public void <init>(android.view.View)
+    void clearPayload()
+    private void createPayloadsIfNeeded()
     public final int getAdapterPosition()
     public final androidx.recyclerview.widget.RecyclerView$Adapter getBindingAdapter()
+    public final int getBindingAdapterPosition()
     public final int getPosition()
+    boolean isAdapterPositionUnknown()
     void stopIgnoring()
+    public java.lang.String toString()
 androidx.recyclerview.widget.RecyclerView:
     static final int DEFAULT_ORIENTATION
     static final boolean DISPATCH_TEMP_DETACH
@@ -2409,6 +2459,8 @@ androidx.recyclerview.widget.RecyclerView:
     public static final int UNDEFINED_DURATION
     static final boolean VERBOSE_TRACING
     public static final int VERTICAL
+    public void <init>(android.content.Context)
+    public void addOnChildAttachStateChangeListener(androidx.recyclerview.widget.RecyclerView$OnChildAttachStateChangeListener)
     public void addRecyclerListener(androidx.recyclerview.widget.RecyclerView$RecyclerListener)
     void assertInLayoutOrScroll(java.lang.String)
     public void clearOnChildAttachStateChangeListeners()
@@ -2417,7 +2469,9 @@ androidx.recyclerview.widget.RecyclerView:
     public android.view.View findChildViewUnder(float,float)
     public androidx.recyclerview.widget.RecyclerView$ViewHolder findViewHolderForLayoutPosition(int)
     public androidx.recyclerview.widget.RecyclerView$ViewHolder findViewHolderForPosition(int)
+    public int getChildAdapterPosition(android.view.View)
     public long getChildItemId(android.view.View)
+    public int getChildLayoutPosition(android.view.View)
     public int getChildPosition(android.view.View)
     public void getDecoratedBoundsWithMargins(android.view.View,android.graphics.Rect)
     public androidx.recyclerview.widget.RecyclerView$ItemDecoration getItemDecorationAt(int)
@@ -2426,10 +2480,14 @@ androidx.recyclerview.widget.RecyclerView:
     public void invalidateItemDecorations()
     public boolean isAnimating()
     public boolean isLayoutFrozen()
+    void jumpToPositionForSmoothScroller(int)
     public void nestedScrollBy(int,int)
     public void removeItemDecorationAt(int)
     public void removeOnChildAttachStateChangeListener(androidx.recyclerview.widget.RecyclerView$OnChildAttachStateChangeListener)
     public void removeRecyclerListener(androidx.recyclerview.widget.RecyclerView$RecyclerListener)
+    public void scrollToPosition(int)
+    boolean setChildImportantForAccessibilityInternal(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+    public void smoothScrollToPosition(int)
     public void swapAdapter(androidx.recyclerview.widget.RecyclerView$Adapter,boolean)
 androidx.recyclerview.widget.ScrollbarHelper:
     private void <init>()
@@ -2478,6 +2536,7 @@ androidx.recyclerview.widget.StaggeredGridLayoutManager:
     private static final java.lang.String TAG
     public static final int VERTICAL
     public void <init>(int,int)
+    public android.graphics.PointF computeScrollVectorForPosition(int)
     public int[] findFirstCompletelyVisibleItemPositions(int[])
     public int[] findFirstVisibleItemPositions(int[])
     public int[] findLastCompletelyVisibleItemPositions(int[])
@@ -2486,8 +2545,10 @@ androidx.recyclerview.widget.StaggeredGridLayoutManager:
     public int getOrientation()
     public boolean getReverseLayout()
     public int getSpanCount()
+    public void scrollToPosition(int)
     public void scrollToPositionWithOffset(int,int)
     public void setGapStrategy(int)
+    public void smoothScrollToPosition(androidx.recyclerview.widget.RecyclerView,androidx.recyclerview.widget.RecyclerView$State,int)
 androidx.recyclerview.widget.ThreadUtil$BackgroundCallback
 androidx.recyclerview.widget.ThreadUtil$MainThreadCallback
 androidx.recyclerview.widget.ThreadUtil
@@ -2657,389 +2718,23 @@ androidx.versionedparcelable.VersionedParcelStream$1
 androidx.versionedparcelable.VersionedParcelStream$FieldBuffer
 androidx.versionedparcelable.VersionedParcelStream
 androidx.versionedparcelable.VersionedParcelize
-com.gathin.tvhome.AppAdapter$Entry:
-    static final int APP
-    static final int CARD
-    static final int EMPTY
-    static final int HOME_SETTINGS
-com.gathin.tvhome.AppAdapter:
-    static final float BOTTOM_ROOM_DP
-    static final float COMPACT_BOTTOM_ROOM_DP
-    static final float COMPACT_ITEM_EXTRA_DP
-    static final float DESIGN_H_DP
-    static final float DESIGN_W_DP
-    static final float DOCK_EXTRA_DP
-    static final float FOCUS_SCALE
-    private static final float ICON_SHARE
-    static final float ITEM_EXTRA_DP
-    static final float MIN_HEIGHT_FIT
-    static final float TITLE_ROOM_DP
-    static final float TOP_ROOM_DP
-com.gathin.tvhome.BatFlightView:
-    private static final double TAU
-com.gathin.tvhome.BellDrawable:
-    private static final float AMPLITUDE
-    private static final float BOX
-    private static final float CLAPPER_MAX
-    private static final float LAG
-    private static final float OMEGA
-    private static final float PX
-    private static final float PY
-    private static final long RING_MS
-    private static final float TAU
-com.gathin.tvhome.CardFeature:
-    private void <init>()
-    static void reset()
-com.gathin.tvhome.Cards:
-    static final int CAPTION_MAX
-    static final java.lang.String CATEGORY
-    static final java.lang.String DECISION_HIDE
-    static final java.lang.String DECISION_SHOW
-    private static final java.lang.String FOOTER
-    private static final java.lang.String F_DECIDED_AT
-    private static final java.lang.String F_DECISION
-    private static final java.lang.String F_DIGEST
-    private static final java.lang.String F_FIRST_SEEN
-    private static final java.lang.String F_LABEL
-    private static final java.lang.String F_PACKAGE
-    private static final java.lang.String HEADER
-    static final int LABEL_MAX
-    static final int MAX_ATTRIBUTES
-    static final int MAX_DECLARED
-    static final int MAX_DEPTH
-    static final int MAX_EVENTS
-    static final int MAX_RECORDS
-    static final int MAX_SHOWN
-    static final java.lang.String META_DATA
-    private static final java.lang.String RESERVED_PREFIX
-    static final int SPEC_SUPPORTED
-    static final java.lang.String STORE_FILE
-    static final java.lang.String TAG
-    private static final java.lang.String TEXT_PUNCTUATION
-    private void <init>()
-com.gathin.tvhome.ClockFormat:
-    private void <init>()
-com.gathin.tvhome.ClockScene:
-    private static final int GLOW_STEPS
-    private static final long GLOW_STEP_MS
-    private static final long MOVE_MS
-com.gathin.tvhome.Config:
-    static final java.lang.String CLOCK_FORMAT_KEY
-    static final java.lang.String DOCK_OPACITY_KEY
-    static final java.lang.String FILE_NAME
-    static final java.lang.String GLASS_DEFAULT
-    static final java.lang.String GLASS_HALO
-    static final java.lang.String GLASS_RIM
-    static final java.lang.String GLOW_HORIZON
-    static final java.lang.String GLOW_RADIAL
-    static final java.lang.String ROWS_BELOW_DOCK_KEY
-    static final java.lang.String SETTINGS_NAME
-    static final java.lang.String SETTINGS_REVISION_KEY
-    private static final java.lang.String TAG
-    private static final java.lang.String THEME_REVISION_NAME
-    private static final java.lang.String THEME_SIGNATURE_KEY
-    static final java.lang.String WALLPAPER_CHOICE_KEY
-    static final java.lang.String WALLPAPER_NAME
-com.gathin.tvhome.CoocaaSources:
-    private void <init>()
-com.gathin.tvhome.DiyaDrawable:
-    private static final float BOX
-    private static final float FLAME_H
-    private static final float FLAME_W
-    private static final long FRAME_MS
-    private static final long GROW_DELAY_MS
-    private static final long GROW_MS
-    private static final int IDLE
-    private static final long LEVEL_MS
-    private static final int OUT
-    private static final long OUT_MS
-    private static final int RELIGHT
-    private static final long SMOKE_DELAY_MS
-    private static final long SMOKE_MS
-    private static final int SMOKE_POINTS
-    private static final long SPARK_MS
-    private static final float WICK_X
-    private static final float WICK_Y
-com.gathin.tvhome.DockSlots:
-    private void <init>()
-com.gathin.tvhome.Festival:
-    static final int DEFAULT_ACCENT
-    static final java.lang.String HALLOWEEN
-    static final int PUMPKIN
-com.gathin.tvhome.FestiveLamp:
-    public abstract void setReducedMotion(boolean)
-com.gathin.tvhome.GameDay:
-    static final java.lang.String META
-    static final int TURN_DEFAULT
-com.gathin.tvhome.GridNavigation:
-    private void <init>()
-com.gathin.tvhome.GuardKeep:
-    static final java.lang.String ACTION
-    private static final java.lang.String KEY_OFF
-    private static final java.lang.String PREFS
-    private void <init>()
-com.gathin.tvhome.HeroArt:
-    static final int H
-    private static final float SATURATION
-    static final int W
-    private void <init>()
-com.gathin.tvhome.HomeKeyService:
-    static final long BOOT_WINDOW_MS
-    private static final long HOME_KEY_DELAY_MS
-    static final long POWER_ON_ALWAYS_DELAY_MS
-    static final long SCREEN_ON_WINDOW_MS
-com.gathin.tvhome.InputFold:
-    private void <init>()
-com.gathin.tvhome.InputKeyService:
-    private static final java.lang.String ACTION_VIEW_INPUTS
-com.gathin.tvhome.InputNames:
-    private void <init>()
-com.gathin.tvhome.InputSources:
-    private void <init>()
-com.gathin.tvhome.JackOLanternDrawable:
-    private static final float BOX_DP
-    private static final long FADE_MS
-    private static final long FRAME_MS
-com.gathin.tvhome.LastOpened:
-    private static final java.lang.String PREFS
-    private void <init>()
-com.gathin.tvhome.LaunchActions:
-    private static final java.lang.String INPUT_PREFIX
-    static final java.lang.String VIEW_PREFIX
-    private void <init>()
-com.gathin.tvhome.LauncherLocale:
-    private void <init>()
-com.gathin.tvhome.LauncherSettingsActivity:
-    private static final int CAT_ABOUT
-    private static final int CAT_CLOCK
-    private static final int CAT_HOMESCREEN
-    private static final int CAT_REORDER
-    private static final int CAT_SYSTEM
-    private static final int CAT_UPDATES
-    private static final int CAT_WALLPAPER
-    static final java.lang.String EXTRA_REORDER
-    private static final int ITEM_ADD_THEME
-    private static final int ITEM_ADVANCED
-    private static final int ITEM_ANIMATIONS
-    private static final int ITEM_CHECK_UPDATE
-    private static final int ITEM_CLOCK_FORMAT
-    private static final int ITEM_COLUMNS
-    private static final int ITEM_CREDITS
-    private static final int ITEM_DEFAULT_HOME
-    private static final int ITEM_DEFAULT_THEME
-    private static final int ITEM_DEV_INFO
-    private static final int ITEM_DOCK
-    private static final int ITEM_FETCH_REDDIT
-    private static final int ITEM_GITHUB
-    private static final int ITEM_OPEN_START
-    private static final int ITEM_PICK_WALLPAPER
-    private static final int ITEM_ROWS
-    private static final int ITEM_TELEGRAM
-    private static final int ITEM_TV_SETTINGS
-com.gathin.tvhome.LibraryApps:
-    static final int MAX_ADDED
-    private static final int MAX_BYTES
-    private static final long RECENT_MS
-    private void <init>()
-    static boolean visible(boolean,boolean,boolean)
-com.gathin.tvhome.Lunar:
-    private void <init>()
-com.gathin.tvhome.MainActivity:
-    static final java.lang.String ACTION_LAUNCHER_SETTINGS
-    static final java.lang.String ACTION_VIEW_INPUTS
-    private static final int CPU_UNREADABLE
-    private static final long HOLD_OK_MS
-    private static final int LAUNCHER_SETTINGS_REQUEST
-    private static final long MINUTE_MS
-    private static final int RACE_RED
-    private static final int REORDER_ACCENT
-    private static final long STATS_MS
-    private static final long TIME_VALID_AFTER_MS
-com.gathin.tvhome.MarigoldDrawable:
-    private static final float BOX
-    private static final float C
-    private static final float CORE_R
-    private static final float CORE_SPIN
-    private static final int EDGE
-    private static final float LIGHT_DEG
-    private static final int LIT
-    private static final int SHADOWED
-    private static final float SHADOW_DX
-    private static final float SHADOW_DY
-    private static final long TURN_MS
-com.gathin.tvhome.MemoryTrimPolicy:
-    private void <init>()
-com.gathin.tvhome.Motion:
-    static final float REDUCED_MIN_CHANGE
-    static final int REDUCED_MS
-    static final float REDUCED_STIFFNESS
-    private void <init>()
-com.gathin.tvhome.OpenOnStart:
-    static final java.lang.String BOOT_KEY
-    static final java.lang.String BOOT_PREFS
-    static final java.lang.String KEY
-    private void <init>()
-com.gathin.tvhome.Order:
-    private static final java.lang.String DOCK
-    private static final java.lang.String DOCKED
-    static final java.lang.String FILE_NAME
-    private static final java.lang.String MAGIC
-    private static final java.lang.String TAG
-    void <init>(java.lang.String,java.util.List)
-com.gathin.tvhome.PetalShowerView:
-    private static final int EDGE
-    private static final double TAU
-com.gathin.tvhome.R$anim:
-    private void <init>()
-com.gathin.tvhome.R$array:
-    private void <init>()
-com.gathin.tvhome.R$bool:
-    public static int date_single_line
-    private void <init>()
-com.gathin.tvhome.R$color:
-    private void <init>()
-com.gathin.tvhome.R$drawable:
-    public static int banner_tv
-    public static int dialog_rounded_bg
-    public static int ic_apps_pill
-    public static int input_row_bg
-    public static int pill_bg
-    public static int pill_text
-    public static int pill_text_dim
-    public static int pill_text_mid
-    public static int settings_card_bg
-    public static int settings_choice_bg
-    public static int status_dot
-    public static int tile_bg
-    public static int wallpaper_card_gradient
-    private void <init>()
-com.gathin.tvhome.R$font
-com.gathin.tvhome.R$id:
-    public static int ampm
-    public static int hint
-    public static int sectionContent
-    public static int sectionOptionsContainer
-    public static int sectionScrollView
-    public static int sectionSubtitle
-    public static int sectionTitle
-    private void <init>()
-com.gathin.tvhome.R$integer:
-    private void <init>()
-com.gathin.tvhome.R$layout:
-    public static int dialog_settings_section
-    private void <init>()
-com.gathin.tvhome.R$mipmap
-com.gathin.tvhome.R$plurals:
-    private void <init>()
-com.gathin.tvhome.R$raw
-com.gathin.tvhome.R$string:
-    public static int advanced_effects_state
-    public static int animations_state
-    public static int card_keep_hidden
-    public static int card_prompt_hint
-    public static int card_show
-    public static int date_format
-    public static int date_format_home
-    public static int follow_theme
-    public static int follow_theme_hint
-    public static int font_body
-    public static int font_extralight
-    public static int font_light
-    public static int home_key_description
-    public static int home_key_name
-    public static int input_key_service_description
-    public static int open_on_start_state
-    public static int standby
-    public static int wallpaper_label
-    public static int wallpaper_state
-    private void <init>()
-com.gathin.tvhome.R$style
-com.gathin.tvhome.R$xml
-com.gathin.tvhome.R
-com.gathin.tvhome.RaceWeekend$State:
-    boolean finished()
-com.gathin.tvhome.RaceWeekend:
-    private void <init>()
-com.gathin.tvhome.RemoteKeys:
-    static final long HOLD_MS
-    static final java.lang.String INPUTS
-    static final int XIAOMI_SHORT_MENU_FLAGS
-    private void <init>()
-    static java.util.Map parseAppKeys(java.lang.String[])
-    static java.util.Map parseHoldAppKeys(java.lang.String[])
-com.gathin.tvhome.ServiceRepair:
-    private static final java.lang.String PREFS
-    private void <init>()
-com.gathin.tvhome.Shamsi:
-    private void <init>()
-com.gathin.tvhome.Sky:
-    private static final int NIGHT_BOTTOM
-    private static final int NIGHT_MID
-    private static final int NIGHT_TOP
-    static final int REF_SUNRISE
-    static final int REF_SUNSET
-    private void <init>()
-com.gathin.tvhome.SkyView:
-    private static final int TEX_H
-    private static final int TEX_W
-com.gathin.tvhome.SpookyIconDrawable:
-    static final int BAT
-    private static final long BAT_MS
-    private static final float BOX_DP
-    static final int GHOST
-    private static final long GHOST_MS
-com.gathin.tvhome.StatsText:
-    void <init>()
-com.gathin.tvhome.Sun:
-    private void <init>()
-com.gathin.tvhome.SystemSettings:
-    private void <init>()
-com.gathin.tvhome.ThemeFiles:
-    static final java.lang.String WALLPAPERS
-    private void <init>()
-com.gathin.tvhome.UiFont:
-    private void <init>()
-com.gathin.tvhome.UpdateManager:
-    private static final java.lang.String TAG
-    public void <init>()
-com.gathin.tvhome.VolumeKeys:
-    static final long REPEAT_DELAY_MS
-    static final long REPEAT_INTERVAL_MS
-    private void <init>()
-com.gathin.tvhome.VpnBadge:
-    static final int GREEN
-    static final int INK
-    static final int INK_OFF
-    static final int PILL_HIDDEN
-    static final int PILL_OFF
-    static final int PILL_UP
-    static final int RED
-com.gathin.tvhome.WallpaperCaptions:
-    static final java.lang.String FILE_NAME
-    static final int MAX_LENGTH
-    private void <init>()
-com.gathin.tvhome.WallpaperFetcher:
-    private static final java.lang.String TAG
-    private static final java.lang.String USER_AGENT
-    public void <init>()
-com.gathin.tvhome.WallpaperMood:
-    static final int DEFAULT_SUNRISE
-    static final int DEFAULT_SUNSET
-    private static final int DUSK_MINUTES
-    static final java.lang.String EVENING
-    static final java.lang.String MORNING
-    static final java.lang.String NIGHT
-    private static final int NOON
-    private void <init>()
-com.gathin.tvhome.WallpaperRotation:
-    static final java.lang.String CHOICE_NONE
-    static final java.lang.String ORDER_SEQUENTIAL
-    static final java.lang.String ORDER_SHUFFLE
-    void <init>()
-com.gathin.tvhome.WallpaperSize:
-    static final long MAX_PIXELS
-    private void <init>()
 com.google.common.util.concurrent.ListenableFuture
+io.rns.evalauncher.R$anim
+io.rns.evalauncher.R$array
+io.rns.evalauncher.R$bool
+io.rns.evalauncher.R$color
+io.rns.evalauncher.R$drawable
+io.rns.evalauncher.R$font
+io.rns.evalauncher.R$id
+io.rns.evalauncher.R$integer
+io.rns.evalauncher.R$layout
+io.rns.evalauncher.R$mipmap
+io.rns.evalauncher.R$plurals
+io.rns.evalauncher.R$raw
+io.rns.evalauncher.R$string
+io.rns.evalauncher.R$style
+io.rns.evalauncher.R$xml
+io.rns.evalauncher.R
 kotlin.ArrayIntrinsicsKt
 kotlin.BuilderInference
 kotlin.CharCodeJVMKt
@@ -3906,7 +3601,6 @@ kotlin.jvm.JvmDefault
 kotlin.jvm.JvmDefaultWithCompatibility
 kotlin.jvm.JvmDefaultWithoutCompatibility
 kotlin.jvm.JvmField
-kotlin.jvm.JvmInline
 kotlin.jvm.JvmMultifileClass
 kotlin.jvm.JvmName
 kotlin.jvm.JvmOverloads
@@ -4787,7 +4481,6 @@ androidx.collection.ArrayMap:
 androidx.collection.ContainerHelpers:
     public static final long[] EMPTY_LONGS
     public static boolean equal(java.lang.Object,java.lang.Object)
-    public static int idealLongArraySize(int)
 androidx.collection.LongSparseArray:
     public static void clear()
     public static androidx.collection.LongSparseArray clone()
@@ -4809,17 +4502,12 @@ androidx.collection.SimpleArrayMap:
     public static java.lang.Object setValueAt()
     public final java.lang.Object valueAt(int)
 androidx.core.R$id
-androidx.core.app.CoreComponentFactory$$InternalSyntheticThrowCCEIfNotNull$14$28d6d52be828bd520f37653069cdb0fd59ddc413967dd43deec606fddf5e864e$0
 androidx.core.app.CoreComponentFactory$CompatWrapped
 androidx.core.content.ContextCompat
 androidx.core.content.FileProvider$PathStrategy
 androidx.core.content.FileProvider$SimplePathStrategy:
+    public final java.lang.String mAuthority
     public static void addRoot()
-    public static android.net.Uri getUriForFile()
-androidx.core.graphics.Insets$$InternalSyntheticApiModelOutline$2$3d9903e0d7c238cb9bfbac20bf7fcf9b914886a6e20621351e6747194928c6a0$0
-androidx.core.graphics.Insets$$InternalSyntheticApiModelOutline$2$3d9903e0d7c238cb9bfbac20bf7fcf9b914886a6e20621351e6747194928c6a0$1
-androidx.core.graphics.Insets$$InternalSyntheticApiModelOutline$2$3d9903e0d7c238cb9bfbac20bf7fcf9b914886a6e20621351e6747194928c6a0$2
-androidx.core.graphics.Insets$$InternalSyntheticApiModelOutline$2$3d9903e0d7c238cb9bfbac20bf7fcf9b914886a6e20621351e6747194928c6a0$3
 androidx.core.graphics.Insets:
     public static androidx.core.graphics.Insets of(android.graphics.Rect)
     public static androidx.core.graphics.Insets toCompatInsets(android.graphics.Insets)
@@ -4839,43 +4527,29 @@ androidx.core.util.Pools$Pool
 androidx.core.util.Preconditions
 androidx.core.view.AccessibilityDelegateCompat:
     public static java.util.List getActionList(android.view.View)
-    public static android.view.View$AccessibilityDelegate getBridge()
-androidx.core.view.DisplayCutoutCompat$$InternalSyntheticApiModelOutline$2$c5b1f9ffbbd5705cbaf308e358a1da86b0b28832833ebfd42dd4c6f74aada87b$0
-androidx.core.view.DisplayCutoutCompat$$InternalSyntheticApiModelOutline$2$c5b1f9ffbbd5705cbaf308e358a1da86b0b28832833ebfd42dd4c6f74aada87b$1
-androidx.core.view.DisplayCutoutCompat$$InternalSyntheticApiModelOutline$2$d293c25ff652803e58ec1e0122d430570d8865d4b14220e8a55c1a980618c70f$0
-androidx.core.view.DisplayCutoutCompat$$InternalSyntheticApiModelOutline$2$d293c25ff652803e58ec1e0122d430570d8865d4b14220e8a55c1a980618c70f$1
-androidx.core.view.DisplayCutoutCompat$$InternalSyntheticApiModelOutline$2$e54a676ce0bda1fd5813bf9905e3ebf1224a0d84757f7d5c137dcb937658f321$0
-androidx.core.view.DisplayCutoutCompat$$InternalSyntheticApiModelOutline$2$e54a676ce0bda1fd5813bf9905e3ebf1224a0d84757f7d5c137dcb937658f321$1
-androidx.core.view.DisplayCutoutCompat$$InternalSyntheticApiModelOutline$2$f0007ec70df0f1d267220d2ce6de249090c787c710658284a0a348ec350c1d44$0
-androidx.core.view.DisplayCutoutCompat$$InternalSyntheticApiModelOutline$2$f0007ec70df0f1d267220d2ce6de249090c787c710658284a0a348ec350c1d44$1
 androidx.core.view.DisplayCutoutCompat:
     public static int getSafeInsetBottom()
     public static int getSafeInsetLeft()
     public static int getSafeInsetRight()
     public static int getSafeInsetTop()
 androidx.core.view.MotionEventCompat
-androidx.core.view.NestedScrollingChild
 androidx.core.view.NestedScrollingChildHelper:
     public static boolean dispatchNestedFling()
     public static boolean dispatchNestedPreFling()
     public static boolean dispatchNestedPreScroll()
-    public static void dispatchNestedScroll()
     public static boolean dispatchNestedScroll()
     public final int[] getTempNestedScrollConsumed()
     public static boolean hasNestedScrollingParent()
     public final boolean hasNestedScrollingParent(int)
-    public static boolean isNestedScrollingEnabled()
     public static void setNestedScrollingEnabled()
     public final void setNestedScrollingParentForType(int,android.view.ViewParent)
     public static boolean startNestedScroll()
     public static void stopNestedScroll()
 androidx.core.view.NestedScrollingParent2
 androidx.core.view.NestedScrollingParent3
-androidx.core.view.NestedScrollingParent
 androidx.core.view.OnApplyWindowInsetsListener:
     public abstract androidx.core.view.WindowInsetsCompat onApplyWindowInsets()
 androidx.core.view.OnReceiveContentViewBehavior
-androidx.core.view.ViewCompat$$InternalSyntheticLambda$1$e3cdbeb62374cdd4f3b5b60cae1e30d9577b5e988cde694d4987a36632fcbb6b$0
 androidx.core.view.ViewCompat$1
 androidx.core.view.ViewCompat$2
 androidx.core.view.ViewCompat$3
@@ -4893,42 +4567,20 @@ androidx.core.view.ViewCompat:
     public static final int[] ACCESSIBILITY_ACTIONS_RESOURCE_IDS
     public static final androidx.core.view.ViewCompat$$InternalSyntheticLambda$1$e3cdbeb62374cdd4f3b5b60cae1e30d9577b5e988cde694d4987a36632fcbb6b$0 NO_OP_ON_RECEIVE_CONTENT_VIEW_BEHAVIOR
     public static final androidx.core.view.ViewCompat$AccessibilityPaneVisibilityManager sAccessibilityPaneVisibilityManager
-    public static java.lang.reflect.Field sMinHeightField
-    public static boolean sMinHeightFieldFetched
-    public static java.lang.reflect.Field sMinWidthField
-    public static boolean sMinWidthFieldFetched
     public static final java.util.concurrent.atomic.AtomicInteger sNextGeneratedId
     public static java.util.WeakHashMap sViewPropertyAnimatorMap
     public static void saveAttributeDataForStyleable(androidx.recyclerview.widget.RecyclerView,android.content.Context,int[],android.util.AttributeSet,android.content.res.TypedArray)
 androidx.core.view.ViewConfigurationCompat
 androidx.core.view.ViewGroupKt$children$1
-androidx.core.view.ViewGroupKt$descendants$1:
-    public final java.lang.Object invoke(kotlin.sequences.SequenceBuilderIterator,kotlin.coroutines.jvm.internal.BaseContinuationImpl)
+androidx.core.view.ViewGroupKt$descendants$1
 androidx.core.view.ViewGroupKt$iterator$1
 androidx.core.view.ViewGroupKt
-androidx.core.view.ViewKt$allViews$1:
-    public final java.lang.Object invoke(kotlin.sequences.SequenceBuilderIterator,kotlin.coroutines.jvm.internal.BaseContinuationImpl)
+androidx.core.view.ViewKt$allViews$1
 androidx.core.view.ViewKt
-androidx.core.view.ViewParentCompat$$InternalSyntheticThrowCCEIfNotNull$14$2a61360a7b1c60393fcf5820ae00ee4320c4549037c2fc658de4c3e75adecd88$0
-androidx.core.view.ViewParentCompat$$InternalSyntheticThrowCCEIfNotNull$14$2a61360a7b1c60393fcf5820ae00ee4320c4549037c2fc658de4c3e75adecd88$1
-androidx.core.view.ViewParentCompat$$InternalSyntheticThrowCCEIfNotNull$14$2b58d0105ca4ae4f6719b0b4a846dcc72268a4e510902cfe69948bc82e875e1d$0
-androidx.core.view.ViewParentCompat$$InternalSyntheticThrowCCEIfNotNull$14$34af3155686c2fece4e64a76009a6e235cdd4be8bb6db90a3cae2a722d38a40e$0
-androidx.core.view.ViewParentCompat$$InternalSyntheticThrowCCEIfNotNull$14$34af3155686c2fece4e64a76009a6e235cdd4be8bb6db90a3cae2a722d38a40e$1
-androidx.core.view.ViewParentCompat$$InternalSyntheticThrowCCEIfNotNull$14$34af3155686c2fece4e64a76009a6e235cdd4be8bb6db90a3cae2a722d38a40e$2
-androidx.core.view.ViewParentCompat$$InternalSyntheticThrowCCEIfNotNull$14$5dd6341c2af74899b57723b3b9d3a554047f0a0827486edba582c4b22393673c$0
-androidx.core.view.ViewParentCompat$$InternalSyntheticThrowCCEIfNotNull$14$5dd6341c2af74899b57723b3b9d3a554047f0a0827486edba582c4b22393673c$1
-androidx.core.view.ViewParentCompat$$InternalSyntheticThrowCCEIfNotNull$14$60b38615cadf5bc3bdee9729b7b7b4714748a0db720b551ac9c31444ad6b7359$0
-androidx.core.view.ViewParentCompat$$InternalSyntheticThrowCCEIfNotNull$14$a25fecbb808ccf037ff4d2bc14a28f05f01e2c21fed64e33b063e87cc80444ab$0
-androidx.core.view.ViewParentCompat$$InternalSyntheticThrowCCEIfNotNull$14$a25fecbb808ccf037ff4d2bc14a28f05f01e2c21fed64e33b063e87cc80444ab$1
-androidx.core.view.ViewParentCompat$$InternalSyntheticThrowCCEIfNotNull$14$ab1bf97d81fb365da45faf90a0ae00aea90bab7067241d36e6be99051195be86$0
-androidx.core.view.ViewParentCompat$$InternalSyntheticThrowCCEIfNotNull$14$ab1bf97d81fb365da45faf90a0ae00aea90bab7067241d36e6be99051195be86$1
 androidx.core.view.ViewParentCompat
 androidx.core.view.WindowInsetsCompat$Builder
 androidx.core.view.WindowInsetsCompat$BuilderImpl20:
     static void <clinit>()
-androidx.core.view.WindowInsetsCompat$BuilderImpl29$$InternalSyntheticApiModelOutline$1$1ca9d382cdc74f65913ade6ef35fb3fb253bce496d8cb46d4a4a8dcb5ca79360$0
-androidx.core.view.WindowInsetsCompat$BuilderImpl29$$InternalSyntheticApiModelOutline$1$88d406e0f46ea85f269b6a215970e55e694b8a2f3c1b6e376969f4c0aa2f9de8$0
-androidx.core.view.WindowInsetsCompat$BuilderImpl29$$InternalSyntheticApiModelOutline$1$9534b35913af28d3339cc79cca5f733a806c40a1a3edd0581a877a65b60669be$0
 androidx.core.view.WindowInsetsCompat$BuilderImpl29:
     public void setMandatorySystemGestureInsets(androidx.core.graphics.Insets)
     public void setSystemGestureInsets(androidx.core.graphics.Insets)
@@ -4953,9 +4605,6 @@ androidx.core.view.WindowInsetsCompat$Impl21:
     public void <init>(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl21)
 androidx.core.view.WindowInsetsCompat$Impl28:
     public void <init>(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl28)
-androidx.core.view.WindowInsetsCompat$Impl29$$InternalSyntheticApiModelOutline$1$65c4c93d4e81fc8279d543372375447f803c71d8df54c027335231bed0c00634$0
-androidx.core.view.WindowInsetsCompat$Impl29$$InternalSyntheticApiModelOutline$1$c5c3be555ae60087b011b03c9ffa636477d1bfe33691e708654db7a2fbcd99de$0
-androidx.core.view.WindowInsetsCompat$Impl29$$InternalSyntheticApiModelOutline$1$dea62217840270aa81991d7f4f6c69ee08223b7c0d6fd00632361d5bb5906a19$0
 androidx.core.view.WindowInsetsCompat$Impl29:
     public androidx.core.graphics.Insets mMandatorySystemGestureInsets
     public androidx.core.graphics.Insets mSystemGestureInsets
@@ -4964,7 +4613,6 @@ androidx.core.view.WindowInsetsCompat$Impl29:
     public androidx.core.graphics.Insets getMandatorySystemGestureInsets()
     public androidx.core.graphics.Insets getSystemGestureInsets()
     public androidx.core.graphics.Insets getTappableElementInsets()
-androidx.core.view.WindowInsetsCompat$Impl30$$InternalSyntheticApiModelOutline$1$663f2be5e2e5af2e433da663df578d75617943cd833b5cf447529c8a1ee16008$0
 androidx.core.view.WindowInsetsCompat$Impl30:
     public static final androidx.core.view.WindowInsetsCompat CONSUMED
     public void <init>(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl30)
@@ -4978,14 +4626,6 @@ androidx.core.view.WindowInsetsCompat$Impl:
     public androidx.core.graphics.Insets getTappableElementInsets()
     public void setRootViewData(androidx.core.graphics.Insets)
 androidx.core.view.WindowInsetsCompat$Type
-androidx.core.view.WindowInsetsCompat$TypeImpl30$$InternalSyntheticApiModelOutline$2$ec939894f55f3d9de99f56f370e781b210d6dc36f2e674583123dd2f0d1b4045$0
-androidx.core.view.WindowInsetsCompat$TypeImpl30$$InternalSyntheticApiModelOutline$2$ec939894f55f3d9de99f56f370e781b210d6dc36f2e674583123dd2f0d1b4045$1
-androidx.core.view.WindowInsetsCompat$TypeImpl30$$InternalSyntheticApiModelOutline$2$ec939894f55f3d9de99f56f370e781b210d6dc36f2e674583123dd2f0d1b4045$2
-androidx.core.view.WindowInsetsCompat$TypeImpl30$$InternalSyntheticApiModelOutline$2$ec939894f55f3d9de99f56f370e781b210d6dc36f2e674583123dd2f0d1b4045$3
-androidx.core.view.WindowInsetsCompat$TypeImpl30$$InternalSyntheticApiModelOutline$2$ec939894f55f3d9de99f56f370e781b210d6dc36f2e674583123dd2f0d1b4045$4
-androidx.core.view.WindowInsetsCompat$TypeImpl30$$InternalSyntheticApiModelOutline$2$ec939894f55f3d9de99f56f370e781b210d6dc36f2e674583123dd2f0d1b4045$5
-androidx.core.view.WindowInsetsCompat$TypeImpl30$$InternalSyntheticApiModelOutline$2$ec939894f55f3d9de99f56f370e781b210d6dc36f2e674583123dd2f0d1b4045$6
-androidx.core.view.WindowInsetsCompat$TypeImpl30$$InternalSyntheticApiModelOutline$2$ec939894f55f3d9de99f56f370e781b210d6dc36f2e674583123dd2f0d1b4045$7
 androidx.core.view.WindowInsetsCompat$TypeImpl30
 androidx.core.view.WindowInsetsCompat:
     public static final androidx.core.view.WindowInsetsCompat CONSUMED
@@ -5002,7 +4642,6 @@ androidx.core.view.WindowInsetsCompat:
     public static void setStableInsets()
     public final android.view.WindowInsets toWindowInsets()
 androidx.core.view.accessibility.AccessibilityEventCompat
-androidx.core.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityActionCompat$$InternalSyntheticThrowCCEIfNotNull$16$51a518e2562bdd83f1a37db6273eca8c40d29d82445ffc5c9314f2450daba410$0
 androidx.core.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityActionCompat:
     public static final androidx.core.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityActionCompat ACTION_ACCESSIBILITY_FOCUS
     public static final androidx.core.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityActionCompat ACTION_CLEAR_ACCESSIBILITY_FOCUS
@@ -5060,16 +4699,13 @@ androidx.core.view.accessibility.AccessibilityNodeInfoCompat:
     static void <clinit>()
     public static void addAction()
     public final void addAction(int)
-    public static void addSpansToExtras()
     public static java.util.List getActionList()
-    public static int getActions()
     public static void getBoundsInParent()
     public static void getBoundsInScreen()
     public static java.lang.CharSequence getClassName()
     public static java.lang.CharSequence getContentDescription()
     public static android.os.Bundle getExtras()
     public static java.lang.CharSequence getPackageName()
-    public static android.util.SparseArray getSpansFromViewTags()
     public static java.lang.CharSequence getText()
     public static java.lang.String getViewIdResourceName()
     public static boolean isCheckable()
@@ -5086,113 +4722,23 @@ androidx.core.view.accessibility.AccessibilityNodeInfoCompat:
     public final void setBooleanProperty(int,boolean)
     public static void setClassName()
     public static void setCollectionInfo()
-    public final void setCollectionItemInfo(androidx.core.view.accessibility.AccessibilityNodeInfoCompat$CollectionItemInfoCompat)
+    public static void setCollectionItemInfo()
     public static void setHeading()
     public static void setPaneTitle()
     public static void setScreenReaderFocusable()
     public final void setScrollable()
     public static void setStateDescription()
-    public static android.view.accessibility.AccessibilityNodeInfo unwrap()
-androidx.core.view.accessibility.AccessibilityNodeProviderCompat:
-    public static java.lang.Object getProvider()
 androidx.core.view.accessibility.AccessibilityViewCommand$CommandArguments:
     public abstract void setBundle()
 androidx.core.view.accessibility.AccessibilityViewCommand
-androidx.customview.poolingcontainer.PoolingContainer:
-    public static final int IsPoolingContainerTag
-    public static final int PoolingContainerListenerHolderTag
-    static void <clinit>()
-    public static final androidx.customview.poolingcontainer.PoolingContainerListenerHolder getPoolingContainerListenerHolder(android.view.View)
+androidx.customview.poolingcontainer.PoolingContainer
 androidx.customview.poolingcontainer.PoolingContainerListener
-androidx.customview.poolingcontainer.PoolingContainerListenerHolder$$InternalSyntheticThrowCCEIfNotNull$21$7b65cda82b6164824df4fe94f15f0ac33b924e849dd16ae33b6ae8083b9a9f3b$0
 androidx.customview.poolingcontainer.PoolingContainerListenerHolder:
     public final void onRelease()
 androidx.customview.poolingcontainer.R$id
 androidx.customview.view.AbsSavedState$2:
     public static androidx.customview.view.AbsSavedState createFromParcel()
     public static void createFromParcel(android.os.Parcel,java.lang.ClassLoader)
-    public static androidx.customview.view.AbsSavedState[] newArray()
-androidx.customview.view.AbsSavedState:
-    public abstract android.os.Parcelable getSuperState()
-androidx.dynamicanimation.animation.AnimationHandler$AnimationCallbackDispatcher:
-    public final void dispatchAnimationFrame()
-androidx.dynamicanimation.animation.AnimationHandler$AnimationFrameCallback:
-    public abstract boolean doAnimationFrame()
-androidx.dynamicanimation.animation.AnimationHandler$AnimationFrameCallbackProvider:
-    public abstract void postFrameCallback()
-androidx.dynamicanimation.animation.AnimationHandler$FrameCallbackProvider14$1
-androidx.dynamicanimation.animation.AnimationHandler$FrameCallbackProvider14
-androidx.dynamicanimation.animation.AnimationHandler$FrameCallbackProvider16:
-    public final void postFrameCallback()
-androidx.dynamicanimation.animation.AnimationHandler:
-    public long mCurrentFrameTime
-    public static void addAnimationFrameCallback()
-    public static void doAnimationFrame()
-    public static androidx.dynamicanimation.animation.AnimationHandler getInstance()
-    public final androidx.dynamicanimation.animation.AnimationHandler$AnimationFrameCallbackProvider getProvider()
-    public static void removeCallback()
-androidx.dynamicanimation.animation.DynamicAnimation$10
-androidx.dynamicanimation.animation.DynamicAnimation$11
-androidx.dynamicanimation.animation.DynamicAnimation$12:
-    public final float getValue()
-    public final void setValue()
-androidx.dynamicanimation.animation.DynamicAnimation$13
-androidx.dynamicanimation.animation.DynamicAnimation$14
-androidx.dynamicanimation.animation.DynamicAnimation$1
-androidx.dynamicanimation.animation.DynamicAnimation$2
-androidx.dynamicanimation.animation.DynamicAnimation$3
-androidx.dynamicanimation.animation.DynamicAnimation$4:
-    public final float getValue()
-    public final void setValue()
-androidx.dynamicanimation.animation.DynamicAnimation$5:
-    public final float getValue()
-    public final void setValue()
-androidx.dynamicanimation.animation.DynamicAnimation$6:
-    public final float getValue()
-    public final void setValue()
-androidx.dynamicanimation.animation.DynamicAnimation$7:
-    public final float getValue()
-    public final void setValue()
-androidx.dynamicanimation.animation.DynamicAnimation$8:
-    public final float getValue()
-    public final void setValue()
-androidx.dynamicanimation.animation.DynamicAnimation$9
-androidx.dynamicanimation.animation.DynamicAnimation$OnAnimationEndListener
-androidx.dynamicanimation.animation.DynamicAnimation$OnAnimationUpdateListener
-androidx.dynamicanimation.animation.DynamicAnimation
-androidx.dynamicanimation.animation.FloatPropertyCompat:
-    public final java.lang.String mPropertyName
-androidx.dynamicanimation.animation.SpringAnimation$$InternalSyntheticThrowCCEIfNotNull$23$5bb1a4985e537708005ff131cfd41f50541d71cd26fe87c1ed77e34c608207ef$0
-androidx.dynamicanimation.animation.SpringAnimation$$InternalSyntheticThrowCCEIfNotNull$23$6f5bbdca6380c0249362b1539b8217d618a687efc20717b3b6908935ea1b94a8$0
-androidx.dynamicanimation.animation.SpringAnimation:
-    public static final androidx.dynamicanimation.animation.DynamicAnimation$ViewProperty SCROLL_X
-    public static final androidx.dynamicanimation.animation.DynamicAnimation$ViewProperty SCROLL_Y
-    public static final androidx.dynamicanimation.animation.DynamicAnimation$ViewProperty TRANSLATION_X
-    public static final androidx.dynamicanimation.animation.DynamicAnimation$ViewProperty TRANSLATION_Y
-    public static final androidx.dynamicanimation.animation.DynamicAnimation$ViewProperty TRANSLATION_Z
-    public static final androidx.dynamicanimation.animation.DynamicAnimation$ViewProperty X
-    public static final androidx.dynamicanimation.animation.DynamicAnimation$ViewProperty Y
-    public static final androidx.dynamicanimation.animation.DynamicAnimation$ViewProperty Z
-    public boolean mEndRequested
-    public float mMaxValue
-    public float mMinValue
-    public boolean mStartValueIsSet
-    public final boolean doAnimationFrame()
-    public static float getValueThreshold()
-    public static boolean isAtEquilibrium()
-    public static boolean isRunning()
-    public static void removeNullEntries(java.util.ArrayList)
-    public static androidx.dynamicanimation.animation.SpringAnimation setMinimumVisibleChange()
-    public static androidx.dynamicanimation.animation.SpringAnimation setSpring()
-    public static void setValueThreshold()
-    public static void start()
-    public static void start$androidx$dynamicanimation$animation$DynamicAnimation()
-    public static boolean updateValueAndVelocity()
-androidx.dynamicanimation.animation.SpringForce:
-    public static float getFinalPosition()
-    public static boolean isAtEquilibrium()
-    public static androidx.dynamicanimation.animation.SpringForce setFinalPosition()
-    public static void setValueThreshold()
 androidx.recyclerview.R$attr
 androidx.recyclerview.R$dimen
 androidx.recyclerview.R$styleable:
@@ -5210,316 +4756,475 @@ androidx.recyclerview.R$styleable:
     public static int RecyclerView_stackFromEnd
 androidx.recyclerview.widget.AdapterHelper$Callback
 androidx.recyclerview.widget.AdapterHelper$UpdateOp:
+    public byte cmd
+    public int itemCount
+    public java.lang.Object payload
+    public int positionStart
     public static java.lang.String cmdToString()
+    public final boolean equals(java.lang.Object)
+    public final int hashCode()
+    public final java.lang.String toString()
 androidx.recyclerview.widget.AdapterHelper:
+    public final androidx.recyclerview.widget.RecyclerView$6 mCallback
     public final boolean mDisableRecycler
+    public int mExistingUpdateTypes
     public java.lang.Runnable mOnItemProcessedCallback
+    public final androidx.recyclerview.widget.OpReorderer mOpReorderer
     public static int applyPendingUpdatesToPosition()
+    public final boolean canFindInPreLayout(int)
+    public final void consumePostponedUpdates()
+    public final void consumeUpdatesInOnePass()
+    public final void dispatchAndUpdateViewHolders(androidx.recyclerview.widget.AdapterHelper$UpdateOp)
+    public final void dispatchFirstPassAndUpdateViewHolders(androidx.recyclerview.widget.AdapterHelper$UpdateOp)
     public static int findPositionOffset()
     public final boolean hasAnyUpdateTypes(int)
+    public final boolean hasPendingUpdates()
     public static boolean hasUpdates()
-    public static boolean onItemRangeChanged()
-    public static boolean onItemRangeMoved()
+    public final androidx.recyclerview.widget.AdapterHelper$UpdateOp obtainUpdateOp(int,int,int)
+    public final void postponeAndUpdateViewHolders(androidx.recyclerview.widget.AdapterHelper$UpdateOp)
+    public final void preProcess()
     public final void reset()
+    public final int updatePositionWithPostponed(int,int)
+androidx.recyclerview.widget.ChildHelper$Bucket:
+    public final void clear(int)
+    public final void insert(int,boolean)
+    public final boolean remove(int)
+    public final void set(int)
 androidx.recyclerview.widget.ChildHelper$Callback
 androidx.recyclerview.widget.ChildHelper:
+    public byte mRemoveStatus
+    public android.view.View mViewInRemoveView
     public static void addView()
+    public static void addView$1()
+    public static void attachViewToParent()
+    public static void detachViewFromParent()
     public static android.view.View findHiddenNonRemovedView()
     public static void hide()
-    public final int indexOfChild(android.view.View)
+    public static void hideViewInternal()
+    public static int indexOfChild()
     public final boolean isHidden(android.view.View)
     public static void removeAllViewsUnfiltered()
     public static void removeView()
     public static void removeViewAt()
     public static boolean removeViewIfHidden()
     public static void unhide()
+androidx.recyclerview.widget.DefaultItemAnimator$1
+androidx.recyclerview.widget.DefaultItemAnimator$2
+androidx.recyclerview.widget.DefaultItemAnimator$3
+androidx.recyclerview.widget.DefaultItemAnimator$4
+androidx.recyclerview.widget.DefaultItemAnimator$5
+androidx.recyclerview.widget.DefaultItemAnimator$6
+androidx.recyclerview.widget.DefaultItemAnimator$7
+androidx.recyclerview.widget.DefaultItemAnimator$8
+androidx.recyclerview.widget.DefaultItemAnimator$ChangeInfo
+androidx.recyclerview.widget.DefaultItemAnimator$MoveInfo
 androidx.recyclerview.widget.DefaultItemAnimator:
+    public boolean mSupportsChangeAnimations
+    public static android.animation.TimeInterpolator sDefaultInterpolator
     public static boolean animateAdd()
     public static void animateAddImpl()
     public final boolean animateAppearance()
     public static boolean animateChange()
+    public final boolean animateChange$1()
     public static void animateChangeImpl()
     public final boolean animateDisappearance()
+    public static boolean animateMove()
     public static void animateMoveImpl()
     public final boolean animatePersistence()
     public static boolean animateRemove()
     public final boolean canReuseUpdatedViewHolder()
     public final boolean canReuseUpdatedViewHolder$1()
     public static void dispatchAddFinished()
-    public static void dispatchAddStarting()
     public static void dispatchChangeFinished()
-    public static void dispatchChangeStarting()
+    public static void dispatchFinishedWhenDone()
     public static void dispatchMoveFinished()
-    public static void dispatchMoveStarting()
     public static void dispatchRemoveFinished()
-    public static void dispatchRemoveStarting()
-    public final void endChangeAnimationIfNecessary(androidx.recyclerview.widget.DefaultItemAnimator$ChangeInfo)
-    public static void onAddFinished()
-    public static void onAddStarting()
-    public static void onChangeFinished()
-    public static void onChangeStarting()
-    public static void onMoveFinished()
-    public static void onMoveStarting()
-    public static void onRemoveFinished()
-    public static void onRemoveStarting()
+    public final void endAnimation()
+    public static void endChangeAnimation()
+    public static void endChangeAnimationIfNecessary()
+    public static boolean endChangeAnimationIfNecessary()
+    public static void resetAnimation()
     public final void runPendingAnimations()
+androidx.recyclerview.widget.FastScroller$2:
+    public final synthetic androidx.recyclerview.widget.FastScroller this$0
+    public final void onScrolled(androidx.recyclerview.widget.RecyclerView)
 androidx.recyclerview.widget.FastScroller:
+    public int mHorizontalThumbCenterX
+    public int mHorizontalThumbWidth
     public final androidx.recyclerview.widget.FastScroller$2 mOnScrollListener
+    public final int mScrollbarMinimumRange
+    public int mVerticalThumbCenterY
+    public int mVerticalThumbHeight
     public static void attachToRecyclerView()
     public final void cancelHide()
+    public static void getItemOffsets()
+    public static void getItemOffsets$1()
     public static void hide()
     public final boolean isLayoutRTL()
-    public final boolean onInterceptTouchEvent()
-    public final void onRequestDisallowInterceptTouchEvent()
-    public final void onTouchEvent()
+    public static void onDrawOver()
+    public static boolean onInterceptTouchEvent()
+    public static void onRequestDisallowInterceptTouchEvent()
+    public static void onTouchEvent()
     public final void requestRedraw()
     public final void resetHideDelay(int)
     public static void updateScrollPosition()
 androidx.recyclerview.widget.GapWorker$1:
     public static int compare()
 androidx.recyclerview.widget.GapWorker$LayoutPrefetchRegistryImpl:
+    public int[] mPrefetchArray
+    public final void addPosition(int,int)
     public final void clearPrefetchPositions()
-    public final boolean lastPrefetchIncludedPosition(int)
+    public final void collectPrefetchPositionsFromView(androidx.recyclerview.widget.RecyclerView)
+    public static boolean lastPrefetchIncludedPosition()
     public static void setPrefetchVector()
 androidx.recyclerview.widget.GapWorker$Task:
     public static void clear()
 androidx.recyclerview.widget.GapWorker:
     public static void add()
     public static void remove()
-androidx.recyclerview.widget.GridLayoutManager$LayoutParams:
-    public static int getSpanIndex()
-    public static int getSpanSize()
-androidx.recyclerview.widget.GridLayoutManager$SpanSizeLookup:
+androidx.recyclerview.widget.GridLayoutManager$DefaultSpanSizeLookup:
     public boolean mCacheSpanGroupIndices
     public boolean mCacheSpanIndices
-    public abstract int getCachedSpanGroupIndex()
-    public abstract int getCachedSpanIndex()
+    public final android.util.SparseIntArray mSpanGroupIndexCache
+    public static int getCachedSpanGroupIndex()
+    public static int getCachedSpanIndex()
+    public static int getSpanIndex()
+    public static int getSpanSize()
     public final void invalidateSpanGroupIndexCache()
+androidx.recyclerview.widget.GridLayoutManager$LayoutParams:
+    public int mSpanIndex
+    public int mSpanSize
+    public void <init>(int,int)
+androidx.recyclerview.widget.GridLayoutManager$SpanSizeLookup
 androidx.recyclerview.widget.GridLayoutManager:
+    public int[] mCachedBorders
+    public final android.graphics.Rect mDecorInsets
+    public boolean mPendingSpanCountChange
+    public final android.util.SparseIntArray mPreLayoutSpanIndexCache
+    public final android.util.SparseIntArray mPreLayoutSpanSizeCache
+    public android.view.View[] mSet
     public boolean mUsingSpansToEstimateScrollBarDimensions
+    public final void collectPrefetchPositionsForLayoutState()
     public static int computeScrollOffsetWithSpanInfo()
     public static int computeScrollRangeWithSpanInfo()
-    public final void measureChildWithDecorationsAndMargin(android.view.View,int,int,boolean)
-    public static void setSpanSizeLookup()
+    public final void ensureViewSet()
+    public final android.view.View findReferenceChild()
+    public final int getSpaceForSpanRange(int)
+    public static int getSpanIndex()
+    public static int getSpanSize()
+    public final void layoutChunk()
+    public static void measureChild()
+    public static void measureChildWithDecorationsAndMargin()
+    public final void onAnchorReady()
+    public final android.view.View onFocusSearchFailed()
+    public final void onInitializeAccessibilityNodeInfoForItem()
+    public final void onItemsAdded(int,int)
+    public final void onItemsChanged()
+    public final void onItemsMoved(int,int)
+    public final void onItemsRemoved(int,int)
+    public final void onItemsUpdated(int,int)
+    public final void onLayoutChildren()
+    public final void onLayoutCompleted(androidx.recyclerview.widget.RecyclerView$State)
+    public final int scrollHorizontallyBy()
+    public final int scrollVerticallyBy()
+    public final void setMeasuredDimension()
+    public final void setSpanCount()
+    public final boolean supportsPredictiveItemAnimations()
+    public final void updateMeasurements()
 androidx.recyclerview.widget.LayoutState:
+    public int mAvailable
+    public int mCurrentPosition
+    public boolean mInfinite
+    public int mItemDirection
+    public int mLayoutDirection
+    public boolean mRecycle
+    public boolean mStopInFocusable
     public final boolean hasMore(androidx.recyclerview.widget.RecyclerView$State)
     public static android.view.View next()
 androidx.recyclerview.widget.LinearLayoutManager$AnchorInfo:
+    public androidx.recyclerview.widget.OrientationHelper mOrientationHelper
+    public final void assignCoordinateFromPadding()
+    public static void assignFromView()
+    public static void assignFromViewAndKeepVisibleRect()
     public static boolean isViewValidAsAnchor()
-androidx.recyclerview.widget.LinearLayoutManager$LayoutChunkResult:
-    public static void resetInternal()
+androidx.recyclerview.widget.LinearLayoutManager$LayoutChunkResult
 androidx.recyclerview.widget.LinearLayoutManager$LayoutState:
+    public int mAvailable
+    public int mCurrentPosition
+    public int mExtraFillSpace
+    public boolean mInfinite
     public boolean mIsPreLayout
+    public int mItemDirection
+    public int mLastScrollDelta
+    public int mLayoutDirection
+    public int mNoRecycleSpace
+    public int mOffset
+    public boolean mRecycle
+    public java.util.List mScrapList
+    public int mScrollingOffset
     public static void assignPositionFromScrapList()
-    public final boolean hasMore(androidx.recyclerview.widget.RecyclerView$State)
+    public final void assignPositionFromScrapList$1()
+    public static boolean hasMore()
+    public static android.view.View next()
     public static android.view.View nextViewInLimitedList()
 androidx.recyclerview.widget.LinearLayoutManager$SavedState$1:
     public static androidx.recyclerview.widget.LinearLayoutManager$SavedState createFromParcel()
-    public static androidx.recyclerview.widget.LinearLayoutManager$SavedState[] newArray()
 androidx.recyclerview.widget.LinearLayoutManager$SavedState:
     public final boolean hasValidAnchor()
     public static void invalidateAnchor()
 androidx.recyclerview.widget.LinearLayoutManager:
+    public final androidx.recyclerview.widget.LinearLayoutManager$AnchorInfo mAnchorInfo
+    public byte mInitialPrefetchItemCount
+    public boolean mLastStackFromEnd
+    public final androidx.recyclerview.widget.LinearLayoutManager$LayoutChunkResult mLayoutChunkResult
+    public androidx.recyclerview.widget.LinearLayoutManager$SavedState mPendingSavedState
+    public int mPendingScrollPosition
+    public int mPendingScrollPositionOffset
     public boolean mRecycleChildrenOnDetach
+    public int[] mReusableIntPair
     public final void calculateExtraLayoutSpace(androidx.recyclerview.widget.RecyclerView$State,int[])
+    public final void collectAdjacentPrefetchPositions()
+    public final void collectInitialPrefetchPositions()
+    public void collectPrefetchPositionsForLayoutState()
+    public static int convertFocusDirectionToLayoutDirection()
     public static androidx.recyclerview.widget.LinearLayoutManager$LayoutState createLayoutState()
+    public static int fill()
     public final android.view.View findFirstPartiallyOrCompletelyInvisibleChild()
-    public final int findFirstVisibleItemPosition()
+    public static int findFirstVisibleItemPosition()
     public final android.view.View findLastPartiallyOrCompletelyInvisibleChild()
     public static int findLastVisibleItemPosition()
+    public final android.view.View findOnePartiallyOrCompletelyInvisibleChild(int,int)
+    public android.view.View findReferenceChild()
+    public final void findViewByPosition()
+    public static int fixLayoutEndGap()
+    public static int fixLayoutStartGap()
+    public final android.view.View getChildClosestToEnd()
+    public final android.view.View getChildClosestToStart()
     public static int getExtraLayoutSpace()
-    public static int getOrientation()
-    public static boolean isSmoothScrollbarEnabled()
+    public final boolean isLayoutRTL()
+    public void layoutChunk()
+    public void onAnchorReady()
+    public android.view.View onFocusSearchFailed()
+    public void onLayoutChildren()
+    public void onLayoutCompleted(androidx.recyclerview.widget.RecyclerView$State)
+    public final void onRestoreInstanceState()
+    public static void recycleByLayoutState()
+    public static void recycleChildren()
     public final boolean resolveIsInfinite()
-    public final void scrollToPositionWithOffset(int,int)
+    public final void resolveShouldLayoutReverse()
+    public final int scrollBy(int,androidx.recyclerview.widget.RecyclerView$Recycler,androidx.recyclerview.widget.RecyclerView$State)
+    public int scrollHorizontallyBy()
+    public int scrollVerticallyBy()
+    public final void setOrientation()
     public final void setReverseLayout(boolean)
+    public final boolean shouldMeasureTwice()
+    public boolean supportsPredictiveItemAnimations()
     public final void updateLayoutStateToFillEnd(androidx.recyclerview.widget.LinearLayoutManager$AnchorInfo)
     public final void updateLayoutStateToFillStart(androidx.recyclerview.widget.LinearLayoutManager$AnchorInfo)
-androidx.recyclerview.widget.LinearSmoothScroller:
-    public static int calculateDxToMakeVisible()
-    public static int calculateDyToMakeVisible()
-    public static float calculateSpeedPerPixel()
-    public static int calculateTimeForDeceleration()
-    public static int clampApplyScroll(int,int)
-    public static android.view.View findViewByPosition()
-    public static int getChildCount()
-    public final int getChildPosition(android.view.View)
-    public static int getHorizontalSnapPreference()
-    public static androidx.recyclerview.widget.RecyclerView$LayoutManager getLayoutManager()
-    public static int getTargetPosition()
-    public static int getVerticalSnapPreference()
-    public static boolean isPendingInitialRun()
-    public static boolean isRunning()
-    public static void normalize()
-    public static void onChildAttachedToWindow()
-    public static void onSeekTargetStep()
-    public static void onStart()
-    public static void onStop()
-    public static void onTargetFound()
-    public static void setTargetPosition()
-    public static void start()
-    public static void updateActionForInterimTarget()
 androidx.recyclerview.widget.OpReorderer$Callback
 androidx.recyclerview.widget.OpReorderer:
+    public final androidx.recyclerview.widget.AdapterHelper mCallback
     public static void reorderOps()
     public static void swapMoveRemove()
     public static void swapMoveUpdate()
+androidx.recyclerview.widget.OrientationHelper$1:
+    public final int getDecoratedMeasurement(android.view.View)
+    public final int getDecoratedMeasurementInOther()
+    public final int getEnd()
+    public final int getEndPadding()
+    public final int getMode()
+    public final int getModeInOther()
+    public final int getTransformedEndWithDecoration(android.view.View)
+    public final int getTransformedStartWithDecoration(android.view.View)
+    public final void offsetChildren(int)
+androidx.recyclerview.widget.OrientationHelper$2:
+    public final int getDecoratedMeasurement(android.view.View)
+    public final int getDecoratedMeasurementInOther()
+    public final int getEnd()
+    public final int getEndPadding()
+    public final int getMode()
+    public final int getModeInOther()
+    public final int getTransformedEndWithDecoration(android.view.View)
+    public final int getTransformedStartWithDecoration(android.view.View)
+    public final void offsetChildren(int)
 androidx.recyclerview.widget.OrientationHelper:
+    public int mLastTotalSpace
+    public final android.graphics.Rect mTmpRect
+    public abstract int getDecoratedMeasurement(android.view.View)
+    public abstract int getDecoratedMeasurementInOther()
+    public abstract int getEnd()
+    public abstract int getEndPadding()
+    public abstract int getMode()
+    public abstract int getModeInOther()
     public final int getTotalSpaceChange()
+    public abstract int getTransformedEndWithDecoration(android.view.View)
+    public abstract int getTransformedStartWithDecoration(android.view.View)
+    public abstract void offsetChildren(int)
     public abstract void onLayoutComplete()
-androidx.recyclerview.widget.RecyclerView$4:
-    public static void processPersistent()
-    public final void unused(androidx.recyclerview.widget.RecyclerView$ViewHolder)
+androidx.recyclerview.widget.RecyclerView$1
+androidx.recyclerview.widget.RecyclerView$4
 androidx.recyclerview.widget.RecyclerView$5:
     public static void addView()
     public static void attachViewToParent()
     public static void detachViewFromParent()
     public static android.view.View getChildAt()
     public static int getChildCount()
-    public static androidx.recyclerview.widget.RecyclerView$ViewHolder getChildViewHolder()
+    public static void getChildViewHolder()
     public static int indexOfChild()
     public static void onEnteredHiddenState()
-    public final void onLeftHiddenState(android.view.View)
+    public static void onLeftHiddenState()
     public static void removeAllViews()
+    public final void removeViewAt(int)
 androidx.recyclerview.widget.RecyclerView$6:
-    public final void offsetPositionsForRemovingInvisible(int,int)
+    public final synthetic androidx.recyclerview.widget.RecyclerView this$0
+    public final void dispatchUpdate(androidx.recyclerview.widget.AdapterHelper$UpdateOp)
+    public final void findViewHolder()
+    public final void markViewHoldersUpdated()
+    public final void offsetPositionsForAdd()
+    public final void offsetPositionsForMove()
+    public final void offsetPositionsForRemovingInvisible(int)
     public static void offsetPositionsForRemovingLaidOutOrNewView()
     public static void onDispatchFirstPass()
     public static void onDispatchSecondPass()
-androidx.recyclerview.widget.RecyclerView$7
-androidx.recyclerview.widget.RecyclerView$Adapter$StateRestorationPolicy$EnumUnboxingLocalUtility
-androidx.recyclerview.widget.RecyclerView$Adapter$StateRestorationPolicy$EnumUnboxingSharedUtility:
-    public static final synthetic int[] $VALUES
-    public static synthetic java.lang.Integer boxedOrdinalOrNull(int)
-    public static synthetic void checkNotZero(int)
-    public static synthetic void checkNotZero(int,java.lang.String)
-    public static synthetic int compareTo(int,int)
-    public static synthetic boolean equals(int,int)
-    public static synthetic boolean objects$equals(int,int)
-    public static synthetic int[] values(int)
-androidx.recyclerview.widget.RecyclerView$Adapter$StateRestorationPolicy
 androidx.recyclerview.widget.RecyclerView$Adapter:
     public abstract void bindViewHolder()
     public abstract boolean canRestoreState()
     public abstract androidx.recyclerview.widget.RecyclerView$ViewHolder createViewHolder()
-    public abstract int findRelativeAdapterPositionIn()
-    public abstract boolean hasObservers()
+    public abstract int getItemCount()
+    public abstract long getItemId()
+    public abstract int getItemViewType()
     public abstract boolean hasStableIds()
-    public final void notifyDataSetChanged()
-    public abstract void notifyItemMoved()
-    public abstract void notifyItemRangeChanged()
     public abstract void onAttachedToRecyclerView()
-    public abstract void onBindViewHolder()
     public abstract void onDetachedFromRecyclerView()
     public abstract boolean onFailedToRecycleView()
     public abstract void onViewAttachedToWindow()
     public abstract void onViewDetachedFromWindow()
     public abstract void onViewRecycled()
     public abstract void registerAdapterDataObserver()
-    public abstract void setHasStableIds()
     public abstract void unregisterAdapterDataObserver()
-androidx.recyclerview.widget.RecyclerView$AdapterDataObservable:
-    public static void notifyItemRangeChanged()
 androidx.recyclerview.widget.RecyclerView$AdapterDataObserver
 androidx.recyclerview.widget.RecyclerView$ChildDrawingOrderCallback:
     public abstract int onGetChildDrawingOrder()
 androidx.recyclerview.widget.RecyclerView$EdgeEffectFactory:
     public abstract android.widget.EdgeEffect createEdgeEffect(androidx.recyclerview.widget.RecyclerView)
-androidx.recyclerview.widget.RecyclerView$ItemAnimator$$InternalSyntheticThrowCCEIfNotNull$16$b727cf6321d32d3f0b16a60ed66915ec0f245e056170aafe3b4c4cf626d65f87$0
 androidx.recyclerview.widget.RecyclerView$ItemAnimator$ItemAnimatorFinishedListener
 androidx.recyclerview.widget.RecyclerView$ItemAnimator$ItemAnimatorListener
-androidx.recyclerview.widget.RecyclerView$ItemAnimator$ItemHolderInfo:
-    public int bottom
-    public int right
-    public static androidx.recyclerview.widget.RecyclerView$ItemAnimator$ItemHolderInfo setFrom()
+androidx.recyclerview.widget.RecyclerView$ItemAnimator$ItemHolderInfo
 androidx.recyclerview.widget.RecyclerView$ItemAnimator:
+    public byte mAddDuration
+    public short mChangeDuration
+    public short mMoveDuration
+    public byte mRemoveDuration
     public abstract boolean animateAppearance()
+    public abstract boolean animateChange$1()
     public abstract boolean animateDisappearance()
     public abstract boolean animatePersistence()
     public abstract boolean canReuseUpdatedViewHolder()
     public abstract boolean canReuseUpdatedViewHolder$1()
-    public final void dispatchAnimationsFinished()
-    public abstract long getAddDuration()
-    public abstract long getChangeDuration()
-    public abstract long getMoveDuration()
-    public abstract long getRemoveDuration()
+    public abstract void dispatchAnimationFinished()
+    public abstract void dispatchAnimationsFinished()
+    public abstract void endAnimation()
     public abstract androidx.recyclerview.widget.RecyclerView$ItemAnimator$ItemHolderInfo obtainHolderInfo()
-    public abstract void onAnimationFinished()
     public abstract androidx.recyclerview.widget.RecyclerView$ItemAnimator$ItemHolderInfo recordPostLayoutInformation()
     public abstract androidx.recyclerview.widget.RecyclerView$ItemAnimator$ItemHolderInfo recordPreLayoutInformation()
     public abstract void runPendingAnimations()
-    public abstract void setListener()
 androidx.recyclerview.widget.RecyclerView$ItemAnimatorRestoreListener:
+    public final synthetic androidx.recyclerview.widget.RecyclerView this$0
     public static void onAnimationFinished()
-androidx.recyclerview.widget.RecyclerView$ItemDecoration:
-    public abstract void getItemOffsets()
-    public abstract void onDraw()
-    public abstract void onDrawOver()
+androidx.recyclerview.widget.RecyclerView$ItemDecoration
 androidx.recyclerview.widget.RecyclerView$LayoutManager$LayoutPrefetchRegistry
 androidx.recyclerview.widget.RecyclerView$LayoutManager:
     public boolean mAutoMeasure
+    public int mHeightMode
     public final androidx.recyclerview.widget.RecyclerView$LayoutManager$1 mHorizontalBoundCheckCallback
+    public boolean mItemPrefetchEnabled
+    public boolean mMeasurementCacheEnabled
+    public int mPrefetchMaxCountObserved
+    public boolean mPrefetchMaxObservedInInitialPrefetch
+    public boolean mRequestedSimpleAnimations
+    public androidx.recyclerview.widget.RecyclerView$SmoothScroller mSmoothScroller
     public final androidx.recyclerview.widget.RecyclerView$LayoutManager$2 mVerticalBoundCheckCallback
+    public int mWidthMode
     public abstract void addDisappearingView()
-    public final void addDisappearingView(android.view.View)
+    public abstract void addDisappearingView$1()
     public abstract void addView()
-    public final void addView(android.view.View)
+    public abstract void addView$1()
+    public abstract void addViewInt()
     public abstract void attachView()
     public abstract void attachView$1()
-    public final void calculateItemDecorationsForChild(android.view.View,android.graphics.Rect)
-    public final void detachViewAt(int)
+    public abstract void calculateItemDecorationsForChild()
+    public abstract void collectAdjacentPrefetchPositions()
+    public abstract void collectInitialPrefetchPositions()
+    public abstract void detachAndScrapAttachedViews()
+    public abstract void detachViewAt()
     public abstract void dispatchAttachedToWindow()
     public final void dispatchDetachedFromWindow(androidx.recyclerview.widget.RecyclerView,androidx.recyclerview.widget.RecyclerView$Recycler)
-    public final android.view.View findContainingItemView(android.view.View)
-    public abstract int getBaseline()
+    public abstract android.view.View findContainingItemView()
+    public void findViewByPosition()
     public abstract int getBottomDecorationHeight()
+    public static int getChildMeasureSpec(int,int,int,int,boolean)
     public abstract boolean getClipToPadding()
     public static int getDecoratedBottom(android.view.View)
-    public static int getDecoratedMeasuredHeight(android.view.View)
-    public static int getDecoratedMeasuredWidth(android.view.View)
+    public static int getDecoratedLeft(android.view.View)
+    public static int getDecoratedRight(android.view.View)
+    public static int getDecoratedTop(android.view.View)
     public final android.view.View getFocusedChild()
-    public abstract int getHeight()
-    public abstract int getHeightMode()
     public final int getLayoutDirection()
     public abstract int getLeftDecorationWidth()
     public final int getMinimumHeight()
     public final int getMinimumWidth()
     public abstract int getRightDecorationWidth()
-    public abstract int getSelectionModeForAccessibility()
     public abstract int getTopDecorationHeight()
-    public abstract int getWidth()
-    public abstract int getWidthMode()
+    public final void getTransformedBoundingBox(android.view.View,android.graphics.Rect)
     public abstract boolean hasFlexibleChildInBothOrientations()
-    public abstract boolean isAttachedToWindow()
-    public abstract boolean isItemPrefetchEnabled()
-    public abstract boolean isLayoutHierarchical()
-    public final boolean isSmoothScrolling()
+    public static boolean isMeasurementUpToDate(int,int,int)
+    public abstract boolean isSmoothScrolling()
     public abstract boolean isViewPartiallyVisible()
+    public abstract void layoutDecoratedWithMargins()
     public abstract void measureChildWithMargins()
     public abstract void moveView()
-    public abstract boolean onAddFocusables()
-    public abstract void onAttachedToWindow()
-    public abstract void onDetachedFromWindow()
+    public void offsetChildrenHorizontal(int)
+    public void offsetChildrenVertical(int)
+    public abstract android.view.View onFocusSearchFailed()
     public abstract void onInitializeAccessibilityEvent()
     public abstract void onInitializeAccessibilityNodeInfo()
-    public abstract android.view.View onInterceptFocusSearch()
-    public abstract void onItemsUpdated()
+    public abstract void onInitializeAccessibilityNodeInfoForItem()
+    public abstract void onInitializeAccessibilityNodeInfoForItem$1()
+    public void onItemsAdded(int,int)
+    public void onItemsChanged()
+    public void onItemsMoved(int,int)
+    public void onItemsRemoved(int,int)
+    public void onItemsUpdated(int,int)
+    public abstract void onLayoutChildren()
+    public void onLayoutCompleted(androidx.recyclerview.widget.RecyclerView$State)
     public final void onMeasure(int,int)
     public abstract boolean onRequestChildFocus()
-    public abstract boolean onRequestChildFocus$1()
-    public abstract void onSmoothScrollerStopped()
+    public abstract void onRestoreInstanceState()
     public abstract boolean performAccessibilityAction()
     public abstract boolean performAccessibilityAction$1()
     public abstract boolean performAccessibilityActionForItem()
-    public abstract boolean performAccessibilityActionForItem$1()
-    public final void removeAndRecycleViewAt(int,androidx.recyclerview.widget.RecyclerView$Recycler)
-    public final void removeCallbacks(androidx.recyclerview.widget.StaggeredGridLayoutManager$1)
+    public abstract void removeAndRecycleView()
+    public abstract void removeAndRecycleViewAt()
+    public abstract void removeCallbacks(androidx.recyclerview.widget.StaggeredGridLayoutManager$1)
     public abstract void removeView()
+    public final void removeViewAt(int)
     public abstract boolean requestChildRectangleOnScreen()
     public abstract void requestSimpleAnimationsInNextLayout()
+    public abstract int scrollHorizontallyBy()
+    public abstract int scrollVerticallyBy()
+    public abstract void setExactMeasureSpecsFrom()
+    public final void setMeasureSpecs(int,int)
+    public abstract void setMeasuredDimension()
     public final void setMeasuredDimension(int,int)
+    public abstract void setMeasuredDimensionFromChildren()
+    public abstract boolean shouldMeasureChild()
+    public abstract boolean shouldMeasureTwice()
+    public abstract boolean shouldReMeasureChild()
     public abstract void stopSmoothScroller()
+    public abstract boolean supportsPredictiveItemAnimations()
 androidx.recyclerview.widget.RecyclerView$LayoutParams:
+    public boolean mPendingInvalidate
+    public androidx.recyclerview.widget.RecyclerView$ViewHolder mViewHolder
     public static int getViewLayoutPosition()
     public static boolean isItemChanged()
     public static boolean isItemRemoved()
@@ -5527,259 +5232,363 @@ androidx.recyclerview.widget.RecyclerView$LayoutParams:
 androidx.recyclerview.widget.RecyclerView$OnChildAttachStateChangeListener
 androidx.recyclerview.widget.RecyclerView$OnFlingListener:
     public abstract boolean onFling()
-androidx.recyclerview.widget.RecyclerView$OnItemTouchListener:
-    public abstract boolean onInterceptTouchEvent()
-    public abstract void onRequestDisallowInterceptTouchEvent()
-    public abstract void onTouchEvent()
+androidx.recyclerview.widget.RecyclerView$OnItemTouchListener
+androidx.recyclerview.widget.RecyclerView$OnScrollListener:
+    public abstract void onScrolled(androidx.recyclerview.widget.RecyclerView)
+androidx.recyclerview.widget.RecyclerView$RecycledViewPool$ScrapData:
+    public long mBindRunningAverageNs
+    public long mCreateRunningAverageNs
+    public int mMaxScrap
+    public final java.util.ArrayList mScrapHeap
+    public void <init>()
 androidx.recyclerview.widget.RecyclerView$RecycledViewPool:
-    public final void attach()
+    public static void attach()
     public static void attachForPoolingContainer()
+    public static void clear()
     public final void detach()
     public static void detachForPoolingContainer()
     public static void factorInBindTime()
     public static void factorInCreateTime()
-    public static androidx.recyclerview.widget.RecyclerView$ViewHolder getRecycledView()
+    public static void getRecycledView()
+    public static androidx.recyclerview.widget.RecyclerView$RecycledViewPool$ScrapData getScrapDataForType()
     public static void onAdapterChanged()
     public static void putRecycledView()
-    public static long runningAverage(long,long)
+    public static long runningAverage()
     public static boolean willBindInTime()
     public static boolean willCreateInTime()
-androidx.recyclerview.widget.RecyclerView$Recycler$$InternalSyntheticThrowCCEIfNotNull$31$3d4117e3661818900ec32e474cf737c55f87ee15b1898c6f5f4c823236bead68$0
 androidx.recyclerview.widget.RecyclerView$Recycler:
+    public java.util.ArrayList mChangedScrap
+    public final java.util.List mUnmodifiableAttachedScrap
     public androidx.recyclerview.widget.RecyclerView$ViewCacheExtension mViewCacheExtension
+    public static void addViewHolderToRecycledViewPool()
     public final void clear()
     public static void clearOldPositions()
     public static void clearScrap()
+    public final int convertPreLayoutPositionToPostLayout(int)
     public static void dispatchViewRecycled()
-    public static androidx.recyclerview.widget.RecyclerView$ViewHolder getChangedScrapViewForPosition()
+    public static void getChangedScrapViewForPosition()
     public static int getScrapCount()
-    public static java.util.List getScrapList()
-    public static androidx.recyclerview.widget.RecyclerView$ViewHolder getScrapOrCachedViewForId()
-    public static androidx.recyclerview.widget.RecyclerView$ViewHolder getScrapOrHiddenOrCachedHolderForPosition()
+    public static void getScrapOrCachedViewForId()
+    public static void getScrapOrHiddenOrCachedHolderForPosition()
     public static android.view.View getScrapViewAt()
     public static android.view.View getViewForPosition()
-    public final android.view.View getViewForPosition(int)
-    public static void invalidateDisplayListInt(android.view.ViewGroup,boolean)
+    public final void getViewForPosition(int)
+    public static void invalidateDisplayListInt(android.view.ViewGroup)
     public static void markItemDecorInsetsDirty()
     public static void markKnownViewsInvalid()
+    public final void maybeSendPoolingContainerAttach()
     public static void offsetPositionRecordsForInsert()
     public static void offsetPositionRecordsForMove()
     public static void offsetPositionRecordsForRemove()
     public static void onAdapterChanged()
-    public static void onAttachedToWindow()
     public static void onDetachedFromWindow()
     public static void poolingContainerDetach()
-    public final void quickRecycleScrapView(android.view.View)
+    public static void quickRecycleScrapView()
+    public final void recycleAndClearCachedViews()
+    public static void recycleView()
+    public static void recycleViewHolderInternal()
+    public static void scrapView()
     public static void setRecycledViewPool()
-    public static void setViewCacheExtension()
     public static void setViewCacheSize()
+    public static void unscrapView()
     public static boolean validateViewHolderForOffsetPosition()
     public static void viewRangeUpdate()
 androidx.recyclerview.widget.RecyclerView$RecyclerListener:
     public abstract void onViewRecycled()
-androidx.recyclerview.widget.RecyclerView$RecyclerViewDataObserver:
-    public static void onChanged()
-    public static void onItemRangeChanged()
-    public static void onItemRangeMoved()
+androidx.recyclerview.widget.RecyclerView$RecyclerViewDataObserver
 androidx.recyclerview.widget.RecyclerView$SavedState$1:
     public static androidx.recyclerview.widget.RecyclerView$SavedState createFromParcel()
     public static androidx.recyclerview.widget.RecyclerView$SavedState createFromParcel$1()
-    public static androidx.recyclerview.widget.RecyclerView$SavedState[] newArray()
 androidx.recyclerview.widget.RecyclerView$SavedState:
     public static void copyFrom()
-androidx.recyclerview.widget.RecyclerView$SmoothScroller$Action:
-    public static boolean hasJumpTarget()
-    public static void jumpTo()
-    public final void update(int,int,int,android.view.animation.BaseInterpolator)
 androidx.recyclerview.widget.RecyclerView$SmoothScroller
 androidx.recyclerview.widget.RecyclerView$State:
     public android.util.SparseArray mData
+    public long mFocusedItemId
+    public int mFocusedItemPosition
+    public int mFocusedSubChildId
+    public boolean mIsMeasuring
+    public int mItemCount
+    public int mLayoutStep
+    public int mPreviousLayoutItemCount
     public int mRemainingScrollHorizontal
     public int mRemainingScrollVertical
-    public static int getTargetScrollPosition()
+    public int mTargetPosition
+    public boolean mTrackOldChangeHolders
+    public final void assertLayoutStep(int)
     public static boolean hasTargetScrollPosition()
-    public static boolean isPreLayout()
     public static void prepareForNestedPrefetch()
-    public static boolean willRunPredictiveAnimations()
 androidx.recyclerview.widget.RecyclerView$StretchEdgeEffectFactory:
     public final android.widget.EdgeEffect createEdgeEffect(androidx.recyclerview.widget.RecyclerView)
 androidx.recyclerview.widget.RecyclerView$ViewCacheExtension:
     public abstract android.view.View getViewForPositionAndType()
 androidx.recyclerview.widget.RecyclerView$ViewFlinger:
+    public androidx.recyclerview.widget.RecyclerView$3 mInterpolator
     public final void internalPostOnAnimation()
+    public final void postOnAnimation()
+    public static void smoothScrollBy()
     public final void stop()
-androidx.recyclerview.widget.RecyclerView$ViewHolder:
-    public abstract void addChangePayload(java.lang.Object)
-    public final void clearOldPosition()
-    public final void clearPayload()
-    public final void clearReturnedFromScrapFlag()
-    public final void clearTmpDetachFlag()
-    public abstract boolean doesTransientStatePreventRecycling()
-    public abstract void flagRemovedAndOffsetPosition()
-    public final int getAbsoluteAdapterPosition()
-    public abstract long getItemId()
-    public abstract int getItemViewType()
-    public abstract int getOldPosition()
-    public final boolean hasAnyOfTheFlags(int)
-    public abstract boolean isAdapterPositionUnknown()
-    public final boolean needsUpdate()
-    public abstract void onEnteredHiddenState()
-    public abstract void onLeftHiddenState()
-    public abstract void saveOldPosition()
-    public final void setFlags(int,int)
-    public abstract void setScrapContainer()
-    public abstract boolean shouldBeKeptAsChild()
-    public final void unScrap()
+androidx.recyclerview.widget.RecyclerView$ViewHolder
 androidx.recyclerview.widget.RecyclerView:
+    public static final boolean ALLOW_SIZE_IN_UNSPECIFIED_SPEC
+    public static final boolean ALLOW_THREAD_GAP_WORK
+    public static final float DECELERATION_RATE
     public static final boolean FORCE_ABS_FOCUS_SEARCH_DIRECTION
     public static final boolean FORCE_INVALIDATE_DISPLAY_LIST
     public static final boolean IGNORE_DETACHED_FOCUSED_CHILD
+    public static final boolean POST_UPDATES_ON_ANIMATION
+    public androidx.recyclerview.widget.RecyclerView$Adapter mAdapter
+    public boolean mAdapterUpdateDuringMeasure
     public androidx.recyclerview.widget.RecyclerView$ChildDrawingOrderCallback mChildDrawingOrderCallback
     public boolean mEnableFastScroller
+    public boolean mItemsAddedOrRemoved
+    public boolean mItemsChanged
+    public int mLastAutoMeasureNonExactMeasuredHeight
+    public int mLastAutoMeasureNonExactMeasuredWidth
+    public boolean mLastAutoMeasureSkippedDueToExact
+    public boolean mLayoutWasDefered
+    public final int[] mMinMaxLayoutPositions
+    public final androidx.recyclerview.widget.RecyclerView$RecyclerViewDataObserver mObserver
+    public java.util.List mOnChildAttachStateListeners
     public androidx.recyclerview.widget.RecyclerView$OnFlingListener mOnFlingListener
+    public boolean mPostedAnimatorRunner
     public androidx.recyclerview.widget.RecyclerView$RecyclerListener mRecyclerListener
+    public final java.util.ArrayList mRecyclerListeners
+    public androidx.recyclerview.widget.RecyclerView$OnScrollListener mScrollListener
+    public final android.graphics.RectF mTempRectF
+    public final java.lang.Runnable mUpdateChildViewsRunnable
+    public final androidx.recyclerview.widget.RecyclerView$4 mViewInfoProcessCallback
     public static void absorbGlows()
+    public static synthetic void access$100(androidx.recyclerview.widget.RecyclerView,int)
+    public static synthetic void access$500(androidx.recyclerview.widget.RecyclerView,int,int)
+    public static void addAnimatingView()
     public static void addItemDecoration()
-    public static void addOnChildAttachStateChangeListener()
+    public static void addItemDecoration$1()
     public static void addOnItemTouchListener()
+    public static void addOnScrollListener()
     public static void animateAppearance()
+    public static void animateChange()
     public static void animateDisappearance()
     public static boolean canReuseUpdatedViewHolder()
     public final void cancelScroll()
+    public static void clearOldPositions()
     public static int consumeFlingInHorizontalStretch()
     public static int consumeFlingInVerticalStretch()
     public static void dispatchChildAttached()
+    public static void dispatchChildDetached()
+    public static void dispatchLayout()
+    public static void dispatchLayoutStep1()
+    public static void dispatchLayoutStep2()
     public static void dispatchOnScrollStateChanged()
+    public final void dispatchOnScrolled()
     public static void dispatchPendingImportantForAccessibilityChanges()
-    public static androidx.recyclerview.widget.RecyclerView$ViewHolder findContainingViewHolder()
-    public static androidx.recyclerview.widget.RecyclerView$ViewHolder findViewHolderForItemId()
-    public static androidx.recyclerview.widget.RecyclerView$ViewHolder findViewHolderForPosition()
+    public final void fillRemainingScrollValues(androidx.recyclerview.widget.RecyclerView$State)
+    public static void findContainingViewHolder()
+    public final void findMinMaxChildLayoutPositions(int[])
+    public static androidx.recyclerview.widget.RecyclerView findNestedRecyclerView(android.view.View)
+    public final void findViewHolderForAdapterPosition()
+    public static void findViewHolderForItemId()
+    public static void findViewHolderForPosition()
     public static boolean fling()
-    public static int getChildAdapterPosition(android.view.View)
-    public static int getChildLayoutPosition()
+    public static int getAdapterPositionInRecyclerView()
+    public static long getChangedHolderKey()
+    public final void getChildViewHolder(android.view.View)
+    public static android.graphics.Rect getItemDecorInsetsForChild()
+    public static void handleMissingPreInfoForChangeError()
     public static void initAdapterManager()
     public static void initFastScroller()
     public final void invalidateGlows()
     public final boolean isAccessibilityEnabled()
+    public final boolean isComputingLayout()
     public static void markKnownViewsInvalid()
     public static void offsetChildrenHorizontal()
     public static void offsetChildrenVertical()
     public static void offsetPositionRecordsForInsert()
     public static void offsetPositionRecordsForMove()
-    public static void onChildAttachedToWindow()
-    public static void onChildDetachedFromWindow()
+    public final void offsetPositionRecordsForRemove()
     public static void onExitLayoutOrScroll()
-    public static void onScrollStateChanged()
-    public static void onScrolled()
+    public static void postAnimationRunner()
     public final boolean predictiveItemAnimationsEnabled()
+    public static void processDataSetCompletelyChanged()
+    public static void recordAnimationInfoIfBouncedHiddenView()
+    public static void recoverFocusFromState()
     public final void removeAndRecycleViews()
     public static boolean removeAnimatingView()
     public static void removeItemDecoration()
     public static void removeOnItemTouchListener()
-    public final void removeOnScrollListener(androidx.recyclerview.widget.RecyclerView$OnScrollListener)
+    public static void removeOnScrollListener()
     public static void repositionShadowingViews()
     public final void resetFocusInfo()
     public static void saveOldPositions()
-    public final void setChildImportantForAccessibilityInternal(androidx.recyclerview.widget.RecyclerView$ViewHolder,int)
+    public static void scrollStep()
     public static boolean shouldDeferAccessibilityEvent()
     public static void smoothScrollBy()
-    public final void smoothScrollBy(int,int)
     public static void smoothScrollBy$1()
-    public final void smoothScrollToPosition(int)
+    public static void smoothScrollBy$2()
     public final void startNestedScroll(int,int)
+    public final void stopScroll()
     public final void stopScrollersInternal()
     public static void viewRangeUpdate()
 androidx.recyclerview.widget.RecyclerViewAccessibilityDelegate$ItemDelegate:
     public static androidx.core.view.AccessibilityDelegateCompat getAndRemoveOriginalDelegateForItem()
     public static void saveOriginalDelegate()
 androidx.recyclerview.widget.RecyclerViewAccessibilityDelegate:
-    public static androidx.core.view.AccessibilityDelegateCompat getItemDelegate()
     public static boolean shouldIgnore()
+androidx.recyclerview.widget.ScrollbarHelper:
+    public static void computeScrollOffset(androidx.recyclerview.widget.RecyclerView$State,android.view.View,android.view.View,androidx.recyclerview.widget.RecyclerView$LayoutManager)
 androidx.recyclerview.widget.SimpleItemAnimator
 androidx.recyclerview.widget.StaggeredGridLayoutManager$AnchorInfo:
+    public boolean mInvalidateOffsets
+    public boolean mLayoutFromEnd
+    public int mOffset
+    public int mPosition
+    public int[] mSpanReferenceLines
+    public boolean mValid
+    public final synthetic androidx.recyclerview.widget.StaggeredGridLayoutManager this$0
     public final void assignCoordinateFromPadding()
     public static void assignCoordinateFromPadding$1()
+    public final void reset()
     public static void saveSpanReferenceLines()
 androidx.recyclerview.widget.StaggeredGridLayoutManager$LayoutParams:
     public boolean mFullSpan
-    public static boolean isFullSpan()
+    public androidx.recyclerview.widget.StaggeredGridLayoutManager$Span mSpan
 androidx.recyclerview.widget.StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem$1:
     public static androidx.recyclerview.widget.StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem createFromParcel()
-    public static androidx.recyclerview.widget.StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem[] newArray()
 androidx.recyclerview.widget.StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem:
     public static int getGapForSpan()
 androidx.recyclerview.widget.StaggeredGridLayoutManager$LazySpanLookup:
+    public int[] mData
     public static void addFullSpanItem()
+    public final void ensureSize(int)
     public final void forceInvalidateAfter(int)
-    public final androidx.recyclerview.widget.StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem getFirstFullSpanItemInRange(int,int,int)
+    public final androidx.recyclerview.widget.StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem getFirstFullSpanItemInRange(int,int)
     public final androidx.recyclerview.widget.StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem getFullSpanItem(int)
     public static int getSpan()
+    public final int invalidateAfter(int)
+    public final void offsetForAddition(int,int)
+    public final void offsetForRemoval(int,int)
     public static void setSpan()
     public static int sizeForPosition()
 androidx.recyclerview.widget.StaggeredGridLayoutManager$SavedState$1:
     public static androidx.recyclerview.widget.StaggeredGridLayoutManager$SavedState createFromParcel()
-    public static androidx.recyclerview.widget.StaggeredGridLayoutManager$SavedState[] newArray()
 androidx.recyclerview.widget.StaggeredGridLayoutManager$SavedState:
-    public final void invalidateAnchorPositionInfo()
+    public static void invalidateAnchorPositionInfo()
     public final void invalidateSpanInfo()
 androidx.recyclerview.widget.StaggeredGridLayoutManager$Span:
-    public final void appendToSpan(android.view.View)
+    public int mDeletedSize
+    public static void appendToSpan()
     public static void cacheReferenceLineAndClear()
     public final void calculateCachedStart()
+    public final void findFirstPartiallyVisibleItemPosition()
+    public final void findLastPartiallyVisibleItemPosition()
     public static int findOnePartiallyOrCompletelyVisibleChild()
-    public static int getDeletedSize()
+    public final void findOnePartiallyVisibleChild(int,int)
     public final int getEndLine()
+    public final android.view.View getFocusableViewAfter(int)
     public static androidx.recyclerview.widget.StaggeredGridLayoutManager$LayoutParams getLayoutParams()
     public final int getStartLine()
     public static void invalidateCache()
     public final void onOffset(int)
     public final void popEnd()
     public final void popStart()
-    public final void prependToSpan(android.view.View)
+    public static void prependToSpan()
     public static void setLine()
 androidx.recyclerview.widget.StaggeredGridLayoutManager:
+    public final androidx.recyclerview.widget.StaggeredGridLayoutManager$AnchorInfo mAnchorInfo
     public int mFullSizeSpec
     public boolean mLaidOutInvalidFullSpan
+    public boolean mLastLayoutFromEnd
+    public boolean mLastLayoutRTL
+    public final androidx.recyclerview.widget.LayoutState mLayoutState
+    public androidx.recyclerview.widget.StaggeredGridLayoutManager$SavedState mPendingSavedState
+    public int mPendingScrollPosition
+    public int mPendingScrollPositionOffset
+    public int[] mPrefetchDistances
+    public java.util.BitSet mRemainingSpans
+    public int mSizePerSpan
+    public final android.graphics.Rect mTmpRect
     public static boolean areAllEndsEqual()
     public static boolean areAllStartsEqual()
-    public final int calculateScrollDirectionForPosition(int)
+    public static void attachViewToSpans()
+    public final void collectAdjacentPrefetchPositions()
     public final int computeScrollExtent$1(androidx.recyclerview.widget.RecyclerView$State)
     public final int computeScrollRange$1(androidx.recyclerview.widget.RecyclerView$State)
+    public static androidx.recyclerview.widget.StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem createFullSpanItemFromEnd()
+    public static androidx.recyclerview.widget.StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem createFullSpanItemFromStart()
     public static int findFirstVisibleItemPositionInt()
+    public static void fixEndGap()
+    public static void fixStartGap()
+    public static androidx.recyclerview.widget.StaggeredGridLayoutManager$Span getNextSpan()
+    public final void handleUpdate(int,int,int)
+    public final android.view.View hasGapsToFix()
     public static void invalidateSpanAssignments()
-    public final void setOrientation(int)
+    public static void measureChildWithDecorationsAndMargin$1()
+    public static void measureChildWithDecorationsAndMargin$1$1()
+    public final void offsetChildrenHorizontal(int)
+    public final void offsetChildrenVertical(int)
+    public final android.view.View onFocusSearchFailed()
+    public final void onItemsAdded(int,int)
+    public final void onItemsChanged()
+    public final void onItemsMoved(int,int)
+    public final void onItemsRemoved(int,int)
+    public final void onItemsUpdated(int,int)
+    public final void onLayoutChildren()
+    public static void onLayoutChildren$1()
+    public final void onLayoutCompleted(androidx.recyclerview.widget.RecyclerView$State)
+    public final void onRestoreInstanceState()
+    public final boolean preferLastSpan(int)
+    public final void prepareLayoutStateForDelta(int)
+    public final void recycle(androidx.recyclerview.widget.LayoutState)
+    public final void recycleFromEnd(int)
+    public final void recycleFromStart(int)
+    public final void resolveShouldLayoutReverse$1()
+    public final int scrollBy(int,androidx.recyclerview.widget.RecyclerView$Recycler,androidx.recyclerview.widget.RecyclerView$State)
+    public final int scrollHorizontallyBy()
+    public final int scrollVerticallyBy()
+    public final void setMeasuredDimension()
+    public final void setOrientation()
     public final void setReverseLayout(boolean)
-    public final void setSpanCount(int)
+    public final void setSpanCount()
+    public final boolean supportsPredictiveItemAnimations()
     public static boolean updateAnchorFromPendingData()
     public static void updateAnchorInfoForLayout()
     public final void updateMeasureSpecs(int)
+    public static int updateSpecWithExtra(int,int,int)
 androidx.recyclerview.widget.ViewBoundsCheck$BoundFlags:
     public final void addFlags(int)
     public static int compare(int,int)
     public static void resetFlags()
     public final void setBounds(int,int,int,int)
+androidx.recyclerview.widget.ViewBoundsCheck:
+    public static boolean isViewWithinBoundFlags()
 androidx.recyclerview.widget.ViewInfoStore$InfoRecord:
+    public int flags
+    public androidx.recyclerview.widget.RecyclerView$ItemAnimator$ItemHolderInfo postInfo
+    public androidx.recyclerview.widget.RecyclerView$ItemAnimator$ItemHolderInfo preInfo
     public static void recycle(androidx.recyclerview.widget.ViewInfoStore$InfoRecord)
 androidx.recyclerview.widget.ViewInfoStore$ProcessCallback
 androidx.recyclerview.widget.ViewInfoStore:
+    public final androidx.collection.SimpleArrayMap mLayoutHolderMap
+    public final androidx.collection.LongSparseArray mOldChangedHolders
     public static void addToAppearedInPreLayoutHolders()
-    public final void addToDisappearedInLayout(androidx.recyclerview.widget.RecyclerView$ViewHolder)
-    public final void addToPreLayout(androidx.recyclerview.widget.RecyclerView$ViewHolder,androidx.recyclerview.widget.RecyclerView$ItemAnimator$ItemHolderInfo)
+    public final void addToDisappearedInLayout()
+    public static void addToOldChangeHolders()
+    public static void addToPostLayout()
+    public static void addToPreLayout()
     public final void clear()
-    public static androidx.recyclerview.widget.RecyclerView$ViewHolder getFromOldChangeHolders()
-    public final boolean isDisappearing(androidx.recyclerview.widget.RecyclerView$ViewHolder)
+    public static void getFromOldChangeHolders()
+    public static boolean isDisappearing()
     public static boolean isInPreLayout()
-    public static void onDetach()
-    public static void onViewDetached()
+    public static androidx.recyclerview.widget.RecyclerView$ItemAnimator$ItemHolderInfo popFromLayoutStep()
     public static androidx.recyclerview.widget.RecyclerView$ItemAnimator$ItemHolderInfo popFromPostLayout()
     public static androidx.recyclerview.widget.RecyclerView$ItemAnimator$ItemHolderInfo popFromPreLayout()
     public static void process()
+    public static void removeFromDisappearedInLayout()
+    public static void removeViewHolder()
 androidx.versionedparcelable.ParcelImpl$1:
     public static androidx.versionedparcelable.ParcelImpl createFromParcel()
-    public static androidx.versionedparcelable.ParcelImpl[] newArray()
 androidx.versionedparcelable.VersionedParcel:
     public abstract void closeField()
-    public abstract boolean isStream()
     public abstract boolean readBoolean()
     public final boolean readBoolean(boolean,int)
     public abstract byte[] readByteArray()
@@ -5793,7 +5602,6 @@ androidx.versionedparcelable.VersionedParcel:
     public abstract java.lang.String readString()
     public final java.lang.String readString(java.lang.String,int)
     public abstract androidx.versionedparcelable.VersionedParcelable readVersionedParcelable()
-    public abstract void setSerializationFlags()
     public abstract void writeBoolean()
     public final void writeBoolean(boolean,int)
     public abstract void writeByteArray()
@@ -5822,260 +5630,12 @@ androidx.versionedparcelable.VersionedParcelParcel:
     public final void writeInt(int)
     public final void writeParcelable()
     public final void writeString(java.lang.String)
-com.gathin.tvhome.AppAdapter$1:
-    public final synthetic com.gathin.tvhome.AppAdapter this$0
-com.gathin.tvhome.AppAdapter$Holder$1:
-    public final synthetic com.gathin.tvhome.AppAdapter$Holder this$0
-com.gathin.tvhome.AppAdapter$Holder:
-    public final boolean advancedEffects
-    public final boolean animations
-    public final boolean overshoot
-    public final boolean reducedMotion
-    public final float restNameAlpha
-com.gathin.tvhome.AppAdapter$TileListener:
-    public abstract void onLibraryFocused()
-    public abstract void onLibraryRequested()
-    public abstract void onLibraryUp()
-    public abstract void onOpenInput()
-    public abstract void onTileFocused(int,android.view.View)
-    public abstract void onTileLongPress(int,android.view.View)
-    public abstract boolean onTileVerticalKey()
-com.gathin.tvhome.AppAdapter:
-    public final int appCount()
-    public static android.graphics.drawable.Drawable artworkAt()
-    public static int clamp(float)
-    public static void clear()
-    public static boolean containsPackage()
-    public final int dockFilled()
-    public static boolean hasEmptySlots()
-    public static java.lang.String labelAt()
-    public static int median(int[],int)
-    public static void reload()
-    public static void setReordering()
-    public static void setSavedOrder()
-    public static int tileHeightPx(int)
-com.gathin.tvhome.AppLibraryDialog$$InternalSyntheticLambda$8$e5b154d025041b80e22a252c34a63e515055759f533bdae4094b46b0ca4d3dc7$0
-com.gathin.tvhome.AppLibraryDialog$2:
-    public final float getValue()
-    public final void setValue()
-com.gathin.tvhome.AppLibraryDialog$Catalog:
-    public static void onBindViewHolder$1()
-    public static com.gathin.tvhome.AppLibraryDialog$Row onCreateViewHolder()
-com.gathin.tvhome.AppLibraryDialog-IA
-com.gathin.tvhome.AppLibraryDialog:
-    public static android.graphics.drawable.GradientDrawable -$$Nest$msurface(com.gathin.tvhome.AppLibraryDialog,int,int)
-    public static java.lang.String loadLabel(android.content.pm.PackageManager,android.content.pm.ResolveInfo)
-    public static void refresh()
-    public static void show()
-    public final void stopHighlight()
-com.gathin.tvhome.BatFlightView:
-    public static void play()
-com.gathin.tvhome.BellDrawable:
-    public final void drawBand(android.graphics.Canvas,android.graphics.Path)
-    public static android.graphics.Paint fill()
-    public static void ring()
-    public static void setReducedMotion()
-com.gathin.tvhome.CardFeature$$InternalSyntheticLambda$2$24275c87ab89ddcc718ac6232e4e7e0cf3648abdd5afe5acb7ce5714386b5c66$0
-com.gathin.tvhome.CardFeature$Reporter
-com.gathin.tvhome.CardFeature:
-    public static com.gathin.tvhome.CardFeature$$InternalSyntheticLambda$2$24275c87ab89ddcc718ac6232e4e7e0cf3648abdd5afe5acb7ce5714386b5c66$0 reporter
-    static void <clinit>()
-com.gathin.tvhome.Cards$Card:
-    public final boolean pending()
-com.gathin.tvhome.Cards$State$EnumUnboxingLocalUtility
-com.gathin.tvhome.Cards$State
-com.gathin.tvhome.Cards:
-    public static int byLabel(com.gathin.tvhome.Cards$Card,com.gathin.tvhome.Cards$Card)
-    public static boolean isDigest(java.lang.String)
-    public static java.io.File storeFile(android.content.Context)
-com.gathin.tvhome.ClockScene:
-    public final void setGlow(int)
-com.gathin.tvhome.Config:
-    public final boolean overlayApplied
-    public final java.io.File wallpaper
-com.gathin.tvhome.CoocaaSources:
-    public static int rank(java.lang.String)
-com.gathin.tvhome.DiyaDrawable:
-    public static float clamp01(float)
-    public static float decel(float)
-    public final void setReducedMotion()
-com.gathin.tvhome.DockSlots
-com.gathin.tvhome.Festival:
-    public final int accentColor()
-    public final boolean active(java.time.LocalDate)
-    public static java.lang.String greetingText()
-    public final boolean isHalloween()
-com.gathin.tvhome.GameDay-IA
-com.gathin.tvhome.GameDay:
-    public static void shutdown()
-    public static void start()
-    public final void stop()
-    public static int turnSeconds()
-    public static java.util.List turns()
-com.gathin.tvhome.GamepadPassthrough:
-    public final void start()
-    public final void stop()
-com.gathin.tvhome.GridNavigation
-com.gathin.tvhome.GuardKeep:
-    public static void watchScreenOn(android.content.Context)
-com.gathin.tvhome.GuardRevival:
-    public final void stopWaiting()
-com.gathin.tvhome.HomeKeyService:
-    public final void homeAtPowerOn()
-    public final void leaveForStandby()
-    public final void stopWaitingForUnlock()
-com.gathin.tvhome.InputFold
-com.gathin.tvhome.JackOLanternDrawable:
-    public final void setReducedMotion()
-com.gathin.tvhome.LastOpened
-com.gathin.tvhome.LauncherSettingsActivity$$InternalSyntheticLambda$1$287214e63e9f0b048f4c9985f49720ae4ec808c99f9a6453cd1d779255d7f011$0:
-    public static void onClick()
-com.gathin.tvhome.LauncherSettingsActivity$$InternalSyntheticLambda$3$ac1f1ba37b15f227c784ff5e067b3bb0b4e86d4578e64673a3300e035351f12b$0:
-    public static void onClick()
-com.gathin.tvhome.LauncherSettingsActivity$$InternalSyntheticLambda$6$b882af7a8e780a453707d25877b2139f0ccb41ed911f5731ac9bdb11f1b61c01$0:
-    public static void onSelected()
-com.gathin.tvhome.LauncherSettingsActivity$CategoryAdapter$OnCategoryClickListener
-com.gathin.tvhome.LauncherSettingsActivity$CategoryAdapter:
-    public static void onBindViewHolder$2()
-    public static com.gathin.tvhome.LauncherSettingsActivity$CategoryViewHolder onCreateViewHolder()
-com.gathin.tvhome.LauncherSettingsActivity$SubGridAdapter$OnSubGridClickListener
-com.gathin.tvhome.LauncherSettingsActivity$SubGridAdapter:
-    public static void onBindViewHolder$3()
-    public static com.gathin.tvhome.LauncherSettingsActivity$SubGridViewHolder onCreateViewHolder()
-com.gathin.tvhome.LauncherSettingsActivity$WallpaperGridAdapter$OnWallpaperSelectedListener
-com.gathin.tvhome.LauncherSettingsActivity$WallpaperGridAdapter:
-    public static void onBindViewHolder$4()
-    public static com.gathin.tvhome.LauncherSettingsActivity$WallpaperViewHolder onCreateViewHolder()
-com.gathin.tvhome.LauncherSettingsActivity:
-    public final void open(android.content.Intent)
-    public final void setAdvanced(boolean)
-com.gathin.tvhome.LibraryApps:
-    public static java.util.Set read(android.util.AtomicFile)
-com.gathin.tvhome.LibraryLoads:
-    public static boolean isLatest()
-    public static int start()
-    public static boolean takeReveal()
-com.gathin.tvhome.MainActivity$$InternalSyntheticLambda$1$ebe6759a03754f3c2b5d855a6298336c16a91ca84dc3280ed7e183c9a93e28da$1
-com.gathin.tvhome.MainActivity$$InternalSyntheticLambda$2$282cc59a1362f5e45fd92dcba2ba9ef4b8bb0d260be8d83063a8490b40acd24e$0
-com.gathin.tvhome.MainActivity$$InternalSyntheticLambda$2$671473e62713ad8300232dab849e388d794b8f9909aa7bf7c18eb5d79cbb95c9$0
-com.gathin.tvhome.MainActivity$10:
-    public static void onChildViewAttachedToWindow()
-    public static void onChildViewDetachedFromWindow()
-com.gathin.tvhome.MainActivity$14:
-    public final float getValue()
-    public final void setValue()
-com.gathin.tvhome.MainActivity$15:
-    public final float getValue()
-    public final void setValue()
-com.gathin.tvhome.MainActivity$22
-com.gathin.tvhome.MainActivity$2:
-    public static synthetic void $r8$lambda$EaN4pnXpARi4ND9-QopX9lexMls(com.gathin.tvhome.MainActivity)
-com.gathin.tvhome.MainActivity$4:
-    public static synthetic void $r8$lambda$EaN4pnXpARi4ND9-QopX9lexMls(com.gathin.tvhome.MainActivity)
-com.gathin.tvhome.MainActivity:
-    public float glassTargetX
-    public float glassTargetY
-    static void <clinit>()
-    public static void addFocusAction(android.widget.TextView,java.lang.Runnable)
-    public static void appendStat(java.lang.StringBuilder,java.lang.String)
-    public final com.gathin.tvhome.Cards$Card cardFor(java.lang.String)
-    public final void drop()
-    public final void onLibraryFocused()
-    public final void onLibraryUp()
-    public final void onOpenInput()
-    public final boolean onTileVerticalKey()
-    public final void openNetworkPill()
-    public final void pickUp(int)
-    public final void refocusAfterLayout(int)
-    public static void reloadApps()
-    public final void restartIdleClock()
-    public final void restoreFocus()
-    public final long settingsRevision()
-    public static android.content.Intent systemIntent()
-com.gathin.tvhome.MarigoldDrawable:
-    public static void setReducedMotion()
-    public static void turn()
-com.gathin.tvhome.MemoryTrimPolicy
-com.gathin.tvhome.Motion
-com.gathin.tvhome.Order:
-    public static int docked(com.gathin.tvhome.Order,java.util.List)
-    public static java.io.File file(com.gathin.tvhome.MainActivity)
-com.gathin.tvhome.PetalShowerView:
-    public static void play()
-com.gathin.tvhome.R$anim
-com.gathin.tvhome.R$array
-com.gathin.tvhome.R$bool
-com.gathin.tvhome.R$color
-com.gathin.tvhome.R$drawable
-com.gathin.tvhome.R$id
-com.gathin.tvhome.R$integer
-com.gathin.tvhome.R$layout
-com.gathin.tvhome.R$plurals
-com.gathin.tvhome.R$string
-com.gathin.tvhome.RaceWeekend$Race:
-    public final java.lang.String shortName()
-com.gathin.tvhome.RaceWeekend$Session:
-    public final boolean isRace()
-    public static java.time.Duration length()
-    public static java.lang.String shortName()
-com.gathin.tvhome.RemoteKeys$$InternalSyntheticLambda$1$4216708f67fdac5217cba42370adb00747e0ab35afbadf43a604260f42855217$1
-com.gathin.tvhome.RemoteKeys$1:
-    public final void cancel(java.lang.Runnable)
-    public static void post()
-com.gathin.tvhome.RemoteKeys$Presses$Timer
-com.gathin.tvhome.RemoteKeys$Presses:
-    public static void down()
-    public static void release()
-    public static void up()
-com.gathin.tvhome.RemoteKeys-IA
-com.gathin.tvhome.RemoteKeys:
-    public static void applyKeyFilter(android.accessibilityservice.AccessibilityService,boolean)
-    public static java.lang.String inputId(java.lang.String)
-    public static java.util.HashMap parseAppKeys(java.util.List)
-    public static java.util.HashMap parseHoldAppKeys(java.util.List)
-    public static java.util.HashMap parseHoldAppScancodes(java.util.List)
-com.gathin.tvhome.ServiceRepair:
-    public static void connected(android.accessibilityservice.AccessibilityService,java.lang.Class)
-    public static void disconnected(android.accessibilityservice.AccessibilityService,java.lang.Class)
-    public static android.content.SharedPreferences prefs(android.accessibilityservice.AccessibilityService)
-com.gathin.tvhome.SkyView:
-    public final void update()
-com.gathin.tvhome.SpookyIconDrawable:
-    public final void nudge()
-    public final void setReducedMotion(boolean)
-com.gathin.tvhome.TileRefresh$Action$EnumUnboxingLocalUtility
-com.gathin.tvhome.TileRefresh$Action
-com.gathin.tvhome.TileRefresh:
-    public static void invalidate()
-    public static void onHomeAgain()
-    public static boolean onPackagesChanged()
-    public static int onResume()
-    public static void onStart()
-    public static void onStop()
-com.gathin.tvhome.UpdateManager$$InternalSyntheticLambda$6$fea7254b7512e6e8ee18a42f46172baeb9945d1f459806396f1efe4e434dfce1$0:
-    public final synthetic boolean f$2
-com.gathin.tvhome.UpdateManager$StatusCallback
-com.gathin.tvhome.VolumeKeys:
-    public static void stop()
-com.gathin.tvhome.VpnBadge:
-    public final float lockGap()
-    public final float lockSize(android.graphics.Paint)
-    public static int pillInkColor(boolean,boolean)
-    public static float textSize()
-com.gathin.tvhome.WallpaperFetcher$Callback
-com.gathin.tvhome.WallpaperMood:
-    public static java.lang.String timeOfDay(int,int,int)
-com.gathin.tvhome.WallpaperPlayer:
-    public static void close()
-    public static void releaseForMemoryPressure()
-    public static void start()
-    public static void stop()
-com.gathin.tvhome.WallpaperSize:
-    public static boolean accepted(int,int)
-    public static int sampleSize(int,int,int,int)
 kotlin.Function
 kotlin.Result$Companion
+kotlin.Result$Failure
 kotlin.Result
+kotlin.ResultKt
+kotlin.Unit
 kotlin.collections.CollectionsKt
 kotlin.collections.CollectionsKt__CollectionsJVMKt
 kotlin.collections.CollectionsKt__CollectionsKt
@@ -6087,35 +5647,30 @@ kotlin.collections.CollectionsKt__MutableCollectionsKt
 kotlin.collections.CollectionsKt__ReversedViewsKt
 kotlin.collections.CollectionsKt___CollectionsJvmKt
 kotlin.collections.CollectionsKt___CollectionsKt
+kotlin.coroutines.Continuation
 kotlin.coroutines.ContinuationInterceptor$Key
 kotlin.coroutines.ContinuationInterceptor
 kotlin.coroutines.CoroutineContext$Element
 kotlin.coroutines.CoroutineContext$Key
-kotlin.coroutines.CoroutineContext:
-    public abstract void get()
-kotlin.coroutines.EmptyCoroutineContext:
-    public final void get()
-kotlin.coroutines.intrinsics.CoroutineSingletons:
-    public static final enum kotlin.coroutines.intrinsics.CoroutineSingletons RESUMED
-    public static final enum kotlin.coroutines.intrinsics.CoroutineSingletons UNDECIDED
+kotlin.coroutines.CoroutineContext
+kotlin.coroutines.EmptyCoroutineContext
+kotlin.coroutines.intrinsics.CoroutineSingletons
 kotlin.coroutines.intrinsics.IntrinsicsKt
 kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsJvmKt$createCoroutineUnintercepted$$inlined$createCoroutineFromSuspendFunction$IntrinsicsKt__IntrinsicsJvmKt$3
 kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsJvmKt$createCoroutineUnintercepted$$inlined$createCoroutineFromSuspendFunction$IntrinsicsKt__IntrinsicsJvmKt$4
 kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsJvmKt
 kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsKt
-kotlin.coroutines.jvm.internal.BaseContinuationImpl:
-    public abstract kotlin.coroutines.Continuation getCompletion()
-    public abstract java.lang.StackTraceElement getStackTraceElement()
+kotlin.coroutines.jvm.internal.BaseContinuationImpl
 kotlin.coroutines.jvm.internal.CompletedContinuation
 kotlin.coroutines.jvm.internal.ContinuationImpl
+kotlin.coroutines.jvm.internal.DebugMetadata
 kotlin.coroutines.jvm.internal.DebugMetadataKt
 kotlin.coroutines.jvm.internal.DebugProbesKt
-kotlin.coroutines.jvm.internal.ModuleNameRetriever:
-    public static final kotlin.coroutines.jvm.internal.ModuleNameRetriever INSTANCE
-    public static java.lang.String getModuleName()
-kotlin.coroutines.jvm.internal.RestrictedSuspendLambda:
-    public final int arity
-    public abstract int getArity()
+kotlin.coroutines.jvm.internal.ModuleNameRetriever$Cache
+kotlin.coroutines.jvm.internal.ModuleNameRetriever
+kotlin.coroutines.jvm.internal.RestrictedContinuationImpl
+kotlin.coroutines.jvm.internal.RestrictedSuspendLambda
+kotlin.jvm.JvmInline
 kotlin.jvm.functions.Function0
 kotlin.jvm.functions.Function10
 kotlin.jvm.functions.Function11
@@ -6141,18 +5696,13 @@ kotlin.jvm.functions.Function8
 kotlin.jvm.functions.Function9
 kotlin.jvm.internal.DefaultConstructorMarker
 kotlin.jvm.internal.FunctionBase
-kotlin.jvm.internal.Reflection:
-    public static final kotlin.reflect.KClass[] EMPTY_K_CLASS_ARRAY
-kotlin.jvm.internal.ReflectionFactory:
-    public static java.lang.String renderLambdaToString()
+kotlin.jvm.internal.Intrinsics
+kotlin.jvm.internal.Reflection
+kotlin.jvm.internal.ReflectionFactory
 kotlin.jvm.internal.TypeIntrinsics
 kotlin.reflect.KClass
 kotlin.sequences.Sequence
-kotlin.sequences.SequenceBuilderIterator:
-    public static void setNextStep()
-    public final void yield(java.lang.Object,kotlin.coroutines.jvm.internal.RestrictedSuspendLambda)
-    public static java.lang.Object yieldAll()
-    public final java.lang.Object yieldAll(kotlin.sequences.SequencesKt__SequenceBuilderKt$sequence$$inlined$Sequence$1,kotlin.coroutines.jvm.internal.RestrictedSuspendLambda)
+kotlin.sequences.SequenceBuilderIterator
 kotlin.sequences.SequenceScope
 kotlin.sequences.SequencesKt
 kotlin.sequences.SequencesKt__SequenceBuilderKt$sequence$$inlined$Sequence$1

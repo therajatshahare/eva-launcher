@@ -1,4 +1,4 @@
-com.gathin.tvhome
+io.rns.evalauncher
 anim app_open_enter
 anim app_open_exit
 anim tile_enter

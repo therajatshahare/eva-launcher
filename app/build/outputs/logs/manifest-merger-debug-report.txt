@@ -1,5 +1,5 @@
 -- Merging decision tree log ---
-provider#com.gathin.tvhome.ThemeProvider
+provider#io.rns.evalauncher.ThemeProvider
 INJECTED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:212:9-216:77
 	android:authorities
 		INJECTED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml
@@ -26,24 +26,24 @@ ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:
 INJECTED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:2:1-265:12
 INJECTED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:2:1-265:12
 INJECTED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:2:1-265:12
-MERGED from [androidx.recyclerview:recyclerview:1.3.2] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\12e7a3cd0b2bb63e310553f31f94b304\transformed\recyclerview-1.3.2\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\bf60f3bdc0db4022392617937fb1c593\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\fd85e4fb334b739f57914217c9eb8bd6\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\9398c32f4d0d89e710bdbd255dc36dc4\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\f55c91ff6b362a8ef4201b0ea12887aa\transformed\customview-poolingcontainer-1.0.0\AndroidManifest.xml:17:1-23:12
-MERGED from [androidx.core:core-ktx:1.5.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\549ff8e877e64bb375faa9f7b0de01ed\transformed\core-ktx-1.5.0\AndroidManifest.xml:2:1-9:12
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\c37a31ceb556f40ec01b83cd8c6c75ea\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.7.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\9765218b3880d2e946d65e7a73736c39\transformed\core-1.7.0\AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\b5a967ff7ed68aaf12e249d0f9061d3b\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\9ece5a1ade88729813b8644b246e26f7\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\7c1201837953469e62840bcac8906d3f\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\4607b1450df5cacb5fa1e197c5609c06\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\efd1b28b9f1dd1e69d4b1cfe1ca7c338\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\f6462db9dfbb6ec105335564e650d542\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\cf640615e594a6e3c20f22ea518a0515\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\a3a678945474547dcad78a6951d59c62\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\eb592f511f628acbc7bda8b7867ec2c6\transformed\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\4321dbeb9509aeae65c94b1476c7384e\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.3.2] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\e065a926b79b88222249d01683dbcced\transformed\recyclerview-1.3.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\a5c42149def50c034092d9b11adf4728\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\c1b7afe8807da810535091938a423c68\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\555704e976ed3c7be8f611e6f36d6fef\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\e2ca1470ea735fc025dfbf081813d9a7\transformed\customview-poolingcontainer-1.0.0\AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.core:core-ktx:1.5.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\c19899bb5aea2b49a782192a35b86414\transformed\core-ktx-1.5.0\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\273c781bd9e6e1dd36a121740a6349dc\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.7.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\2a9194c2fa5b95bc48cd0e9d5b5d4e61\transformed\core-1.7.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\655200b2dc8dfa1a908e3a83c88d5f44\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\fad5af7e2ec3e28ff9a7726ef23b6ed4\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\c08e2e30290b615ba087f82afa7307e5\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\f303d9dda600ad245e3e3485cde83d10\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\603a07025b2006bb296945958a3ec65d\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\5fbff314b4ac363dc445974a0dc9e8ad\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\8457843041ceefa086f472e05772d486\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\2c2ac70dc8b44f90fcef3c1ae6327bf5\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\571bb7b889b0825d6586b978c9c2a2b5\transformed\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\15854782e46e8d53136512f741cfedbe\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
 	package
 		INJECTED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml
 	android:versionName
@@ -164,12 +164,12 @@ category#android.intent.category.LEANBACK_LAUNCHER
 ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:54:13-82
 	android:name
 		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:54:23-79
-intent#action:name:android.intent.action.MAIN+category:name:com.gathin.tvhome.category.DOCK_CARD
+intent#action:name:android.intent.action.MAIN+category:name:io.rns.evalauncher.category.DOCK_CARD
 ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:56:9-59:18
-category#com.gathin.tvhome.category.DOCK_CARD
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:58:13-77
+category#io.rns.evalauncher.category.DOCK_CARD
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:58:13-78
 	android:name
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:58:23-74
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:58:23-75
 intent#action:name:android.intent.action.MAIN+category:name:android.intent.category.HOME
 ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:61:9-64:18
 category#android.intent.category.HOME
@@ -188,23 +188,27 @@ package#com.amazon.tv.launcher
 ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:69:9-58
 	android:name
 		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:69:18-55
-provider
+provider#com.skyworth.tv.provider
 ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:71:9-68
 	android:authorities
 		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:71:19-65
+provider#com.skyworth.tv.sdk.provider
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:72:9-72
+	android:authorities
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:72:19-69
 application
 ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:75:5-264:19
 INJECTED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:75:5-264:19
-MERGED from [androidx.core:core:1.7.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\9765218b3880d2e946d65e7a73736c39\transformed\core-1.7.0\AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.7.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\9765218b3880d2e946d65e7a73736c39\transformed\core-1.7.0\AndroidManifest.xml:24:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\b5a967ff7ed68aaf12e249d0f9061d3b\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\b5a967ff7ed68aaf12e249d0f9061d3b\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.core:core:1.7.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\2a9194c2fa5b95bc48cd0e9d5b5d4e61\transformed\core-1.7.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.7.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\2a9194c2fa5b95bc48cd0e9d5b5d4e61\transformed\core-1.7.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\655200b2dc8dfa1a908e3a83c88d5f44\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\655200b2dc8dfa1a908e3a83c88d5f44\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 	android:extractNativeLibs
 		INJECTED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml
 	android:localeConfig
 		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:81:9-51
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.7.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\9765218b3880d2e946d65e7a73736c39\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+		ADDED from [androidx.core:core:1.7.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\2a9194c2fa5b95bc48cd0e9d5b5d4e61\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 	android:label
 		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:76:9-41
 	android:icon
@@ -215,7 +219,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\RA
 		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:78:9-42
 	android:theme
 		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:79:9-44
-activity#com.gathin.tvhome.MainActivity
+activity#io.rns.evalauncher.MainActivity
 ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:83:9-106:20
 	android:screenOrientation
 		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:91:13-50
@@ -245,7 +249,7 @@ ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:
 		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:99:27-73
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LEANBACK_LAUNCHER
 ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:102:13-105:29
-activity#com.gathin.tvhome.LauncherSettingsActivity
+activity#io.rns.evalauncher.LauncherSettingsActivity
 ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:108:9-112:53
 	android:screenOrientation
 		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:112:13-50
@@ -255,7 +259,7 @@ ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:
 		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:110:13-37
 	android:name
 		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:109:13-53
-activity#com.gathin.tvhome.InputsRequestActivity
+activity#io.rns.evalauncher.InputsRequestActivity
 ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:118:9-129:20
 	android:enabled
 		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:121:13-36
@@ -275,7 +279,7 @@ action#com.android.tv.action.VIEW_INPUTS
 ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:126:17-76
 	android:name
 		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:126:25-73
-activity#com.gathin.tvhome.QuickSettingsActivity
+activity#io.rns.evalauncher.QuickSettingsActivity
 ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:133:9-140:86
 	android:excludeFromRecents
 		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:138:13-46
@@ -291,7 +295,7 @@ ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:
 		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:136:13-36
 	android:name
 		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:134:13-50
-activity#com.gathin.tvhome.HomeSettingsActivity
+activity#io.rns.evalauncher.HomeSettingsActivity
 ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:141:9-146:62
 	android:excludeFromRecents
 		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:145:13-46
@@ -303,7 +307,7 @@ ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:
 		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:144:13-36
 	android:name
 		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:142:13-49
-service#com.gathin.tvhome.HomeKeyService
+service#io.rns.evalauncher.HomeKeyService
 ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:149:9-161:19
 	android:label
 		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:151:13-50
@@ -327,7 +331,7 @@ ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:
 		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:160:17-57
 	android:name
 		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:159:17-60
-activity#com.gathin.tvhome.AppLaunchActivity
+activity#io.rns.evalauncher.AppLaunchActivity
 ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:165:9-177:20
 	android:excludeFromRecents
 		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:168:13-46
@@ -349,7 +353,7 @@ category#android.intent.category.BROWSABLE
 ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:174:17-78
 	android:name
 		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:174:27-75
-activity#com.gathin.tvhome.ClockActivity
+activity#io.rns.evalauncher.ClockActivity
 ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:180:9-185:80
 	android:excludeFromRecents
 		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:183:13-46
@@ -361,7 +365,7 @@ ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:
 		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:185:13-77
 	android:name
 		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:181:13-42
-activity#com.gathin.tvhome.ProbeActivity
+activity#io.rns.evalauncher.ProbeActivity
 ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:189:9-195:75
 	android:excludeFromRecents
 		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:192:13-46
@@ -375,7 +379,7 @@ ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:
 		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:194:13-36
 	android:name
 		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:190:13-42
-service#com.gathin.tvhome.ClockDream
+service#io.rns.evalauncher.ClockDream
 ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:199:9-208:19
 	android:label
 		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:201:13-47
@@ -391,7 +395,7 @@ action#android.service.dreams.DreamService
 ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:205:17-78
 	android:name
 		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:205:25-75
-service#com.gathin.tvhome.GuardRevival
+service#io.rns.evalauncher.GuardRevival
 ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:233:9-242:19
 	android:label
 		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:237:13-50
@@ -409,7 +413,7 @@ action#android.service.notification.NotificationListenerService
 ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:240:17-99
 	android:name
 		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:240:25-96
-receiver#com.gathin.tvhome.GuardConfig
+receiver#io.rns.evalauncher.GuardConfig
 ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:243:9-250:20
 	android:exported
 		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:245:13-36
@@ -417,13 +421,13 @@ ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:
 		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:246:13-74
 	android:name
 		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:244:13-40
-intent-filter#action:name:com.gathin.tvhome.GUARD
+intent-filter#action:name:io.rns.evalauncher.GUARD
 ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:247:13-249:29
-action#com.gathin.tvhome.GUARD
-ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:248:17-66
+action#io.rns.evalauncher.GUARD
+ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:248:17-67
 	android:name
-		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:248:25-63
-service#com.gathin.tvhome.InputKeyService
+		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:248:25-64
+service#io.rns.evalauncher.InputKeyService
 ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:252:9-263:19
 	android:label
 		ADDED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml:255:13-45
@@ -443,42 +447,42 @@ uses-sdk
 INJECTED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml
 INJECTED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml
-MERGED from [androidx.recyclerview:recyclerview:1.3.2] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\12e7a3cd0b2bb63e310553f31f94b304\transformed\recyclerview-1.3.2\AndroidManifest.xml:20:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.3.2] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\12e7a3cd0b2bb63e310553f31f94b304\transformed\recyclerview-1.3.2\AndroidManifest.xml:20:5-44
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\bf60f3bdc0db4022392617937fb1c593\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\bf60f3bdc0db4022392617937fb1c593\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\fd85e4fb334b739f57914217c9eb8bd6\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\fd85e4fb334b739f57914217c9eb8bd6\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\9398c32f4d0d89e710bdbd255dc36dc4\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\9398c32f4d0d89e710bdbd255dc36dc4\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\f55c91ff6b362a8ef4201b0ea12887aa\transformed\customview-poolingcontainer-1.0.0\AndroidManifest.xml:20:5-21:38
-MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\f55c91ff6b362a8ef4201b0ea12887aa\transformed\customview-poolingcontainer-1.0.0\AndroidManifest.xml:20:5-21:38
-MERGED from [androidx.core:core-ktx:1.5.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\549ff8e877e64bb375faa9f7b0de01ed\transformed\core-ktx-1.5.0\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.core:core-ktx:1.5.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\549ff8e877e64bb375faa9f7b0de01ed\transformed\core-ktx-1.5.0\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\c37a31ceb556f40ec01b83cd8c6c75ea\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\c37a31ceb556f40ec01b83cd8c6c75ea\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.7.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\9765218b3880d2e946d65e7a73736c39\transformed\core-1.7.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.7.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\9765218b3880d2e946d65e7a73736c39\transformed\core-1.7.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\b5a967ff7ed68aaf12e249d0f9061d3b\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\b5a967ff7ed68aaf12e249d0f9061d3b\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\9ece5a1ade88729813b8644b246e26f7\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\9ece5a1ade88729813b8644b246e26f7\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\7c1201837953469e62840bcac8906d3f\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\7c1201837953469e62840bcac8906d3f\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\4607b1450df5cacb5fa1e197c5609c06\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\4607b1450df5cacb5fa1e197c5609c06\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\efd1b28b9f1dd1e69d4b1cfe1ca7c338\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\efd1b28b9f1dd1e69d4b1cfe1ca7c338\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\f6462db9dfbb6ec105335564e650d542\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\f6462db9dfbb6ec105335564e650d542\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\cf640615e594a6e3c20f22ea518a0515\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\cf640615e594a6e3c20f22ea518a0515\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\a3a678945474547dcad78a6951d59c62\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\a3a678945474547dcad78a6951d59c62\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\eb592f511f628acbc7bda8b7867ec2c6\transformed\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\eb592f511f628acbc7bda8b7867ec2c6\transformed\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\4321dbeb9509aeae65c94b1476c7384e\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\4321dbeb9509aeae65c94b1476c7384e\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.3.2] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\e065a926b79b88222249d01683dbcced\transformed\recyclerview-1.3.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.3.2] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\e065a926b79b88222249d01683dbcced\transformed\recyclerview-1.3.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\a5c42149def50c034092d9b11adf4728\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\a5c42149def50c034092d9b11adf4728\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\c1b7afe8807da810535091938a423c68\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\c1b7afe8807da810535091938a423c68\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\555704e976ed3c7be8f611e6f36d6fef\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\555704e976ed3c7be8f611e6f36d6fef\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\e2ca1470ea735fc025dfbf081813d9a7\transformed\customview-poolingcontainer-1.0.0\AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\e2ca1470ea735fc025dfbf081813d9a7\transformed\customview-poolingcontainer-1.0.0\AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.core:core-ktx:1.5.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\c19899bb5aea2b49a782192a35b86414\transformed\core-ktx-1.5.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.5.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\c19899bb5aea2b49a782192a35b86414\transformed\core-ktx-1.5.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\273c781bd9e6e1dd36a121740a6349dc\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\273c781bd9e6e1dd36a121740a6349dc\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.7.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\2a9194c2fa5b95bc48cd0e9d5b5d4e61\transformed\core-1.7.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.7.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\2a9194c2fa5b95bc48cd0e9d5b5d4e61\transformed\core-1.7.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\655200b2dc8dfa1a908e3a83c88d5f44\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\655200b2dc8dfa1a908e3a83c88d5f44\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\fad5af7e2ec3e28ff9a7726ef23b6ed4\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\fad5af7e2ec3e28ff9a7726ef23b6ed4\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\c08e2e30290b615ba087f82afa7307e5\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\c08e2e30290b615ba087f82afa7307e5\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\f303d9dda600ad245e3e3485cde83d10\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\f303d9dda600ad245e3e3485cde83d10\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\603a07025b2006bb296945958a3ec65d\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\603a07025b2006bb296945958a3ec65d\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\5fbff314b4ac363dc445974a0dc9e8ad\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\5fbff314b4ac363dc445974a0dc9e8ad\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\8457843041ceefa086f472e05772d486\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\8457843041ceefa086f472e05772d486\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\2c2ac70dc8b44f90fcef3c1ae6327bf5\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\2c2ac70dc8b44f90fcef3c1ae6327bf5\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\571bb7b889b0825d6586b978c9c2a2b5\transformed\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\571bb7b889b0825d6586b978c9c2a2b5\transformed\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\15854782e46e8d53136512f741cfedbe\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\15854782e46e8d53136512f741cfedbe\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
 	android:targetSdkVersion
 		INJECTED from D:\Desktop\github\eva-launcher-main\app\src\main\AndroidManifest.xml
 	android:minSdkVersion

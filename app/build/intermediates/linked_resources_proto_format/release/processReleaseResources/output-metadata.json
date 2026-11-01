@@ -4,15 +4,15 @@
     "type": "LINKED_RESOURCES_PROTO_FORMAT",
     "kind": "Directory"
   },
-  "applicationId": "com.gathin.tvhome",
+  "applicationId": "io.rns.evalauncher",
   "variantName": "release",
   "elements": [
     {
       "type": "SINGLE",
       "filters": [],
       "attributes": [],
-      "versionCode": 22,
-      "versionName": "2.1",
+      "versionCode": 23,
+      "versionName": "2.2",
       "outputFile": "linked-resources-proto-format-release.ap_"
     }
   ],

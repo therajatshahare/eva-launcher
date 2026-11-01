@@ -1,29 +1,4 @@
-# The proguard configuration file for the following section is D:\Desktop\github\eva-launcher-main\app\build\intermediates\aapt_proguard_file\release\processReleaseResources\aapt_rules.txt
--keep class androidx.core.app.CoreComponentFactory { <init>(); }
--keep class androidx.core.content.FileProvider { <init>(); }
--keep class com.gathin.tvhome.AppLaunchActivity { <init>(); }
--keep class com.gathin.tvhome.ClockActivity { <init>(); }
--keep class com.gathin.tvhome.ClockDream { <init>(); }
--keep class com.gathin.tvhome.GuardConfig { <init>(); }
--keep class com.gathin.tvhome.GuardRevival { <init>(); }
--keep class com.gathin.tvhome.HomeKeyService { <init>(); }
--keep class com.gathin.tvhome.HomeSettingsActivity { <init>(); }
--keep class com.gathin.tvhome.InputKeyService { <init>(); }
--keep class com.gathin.tvhome.InputsRequestActivity { <init>(); }
--keep class com.gathin.tvhome.LauncherSettingsActivity { <init>(); }
--keep class com.gathin.tvhome.MainActivity { <init>(); }
--keep class com.gathin.tvhome.ProbeActivity { <init>(); }
--keep class com.gathin.tvhome.QuickSettingsActivity { <init>(); }
--keep class com.gathin.tvhome.ThemeProvider { <init>(); }
--keep class androidx.recyclerview.widget.RecyclerView { <init>(android.content.Context, android.util.AttributeSet); }
-
--keep class com.gathin.tvhome.GlassView { <init>(android.content.Context, android.util.AttributeSet); }
-
--keep class com.gathin.tvhome.SkyView { <init>(android.content.Context, android.util.AttributeSet); }
-
-
-# End of content from D:\Desktop\github\eva-launcher-main\app\build\intermediates\aapt_proguard_file\release\processReleaseResources\aapt_rules.txt
-# The proguard configuration file for the following section is D:\Desktop\github\eva-launcher-main\app\build\intermediates\default_proguard_files\global\proguard-android-optimize.txt-8.13.2
+# The proguard configuration file for the following section is Android Gradle plugin 9.5.0 (extracted file: D:\Desktop\github\eva-launcher-main\app\build\intermediates\default_proguard_files\global\proguard-android-optimize.txt-9.5.0)
 # This is a configuration file for ProGuard.
 # http://proguard.sourceforge.net/index.html#manual/usage.html
 #
@@ -114,7 +89,7 @@
 # These classes are duplicated between android.jar and core-lambda-stubs.jar.
 -dontnote java.lang.invoke.**
 
-# End of content from D:\Desktop\github\eva-launcher-main\app\build\intermediates\default_proguard_files\global\proguard-android-optimize.txt-8.13.2
+# End of content from Android Gradle plugin 9.5.0 (extracted file: D:\Desktop\github\eva-launcher-main\app\build\intermediates\default_proguard_files\global\proguard-android-optimize.txt-9.5.0)
 # The proguard configuration file for the following section is D:\Desktop\github\eva-launcher-main\app\proguard-rules.pro
 # Shrink and optimise, but keep class and method names: the size win comes from dropping unused
 # AndroidX code, not from renaming, and readable stack traces matter more in a sideloaded app
@@ -122,7 +97,7 @@
 -dontobfuscate
 
 # End of content from D:\Desktop\github\eva-launcher-main\app\proguard-rules.pro
-# The proguard configuration file for the following section is C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\12e7a3cd0b2bb63e310553f31f94b304\transformed\recyclerview-1.3.2\proguard.txt
+# The proguard configuration file for the following section is androidx.recyclerview:recyclerview:1.3.2 (extracted file: C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\47994036b841e87799019f74f62f2426\transformed\proguard.txt)
 # Copyright (C) 2015 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -148,8 +123,9 @@
     public void suppressLayout(boolean);
     public boolean isLayoutSuppressed();
 }
-# End of content from C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\12e7a3cd0b2bb63e310553f31f94b304\transformed\recyclerview-1.3.2\proguard.txt
-# The proguard configuration file for the following section is C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\9765218b3880d2e946d65e7a73736c39\transformed\core-1.7.0\proguard.txt
+
+# End of content from androidx.recyclerview:recyclerview:1.3.2 (extracted file: C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\47994036b841e87799019f74f62f2426\transformed\proguard.txt)
+# The proguard configuration file for the following section is androidx.core:core:1.7.0 (extracted file: C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\8096e9287b16b92fd2031167de8aceae\transformed\proguard.txt)
 # Never inline methods, but allow shrinking and obfuscation.
 -keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.ViewCompat$Api* {
   <methods>;
@@ -167,15 +143,15 @@
   <methods>;
 }
 
-# End of content from C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\9765218b3880d2e946d65e7a73736c39\transformed\core-1.7.0\proguard.txt
-# The proguard configuration file for the following section is C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\b5a967ff7ed68aaf12e249d0f9061d3b\transformed\versionedparcelable-1.1.1\proguard.txt
+# End of content from androidx.core:core:1.7.0 (extracted file: C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\8096e9287b16b92fd2031167de8aceae\transformed\proguard.txt)
+# The proguard configuration file for the following section is androidx.versionedparcelable:versionedparcelable:1.1.1 (extracted file: C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\07b971810212e266f3e1deca45ed2763\transformed\proguard.txt)
 -keep class * implements androidx.versionedparcelable.VersionedParcelable
 -keep public class android.support.**Parcelizer { *; }
 -keep public class androidx.**Parcelizer { *; }
 -keep public class androidx.versionedparcelable.ParcelImpl
 
-# End of content from C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\b5a967ff7ed68aaf12e249d0f9061d3b\transformed\versionedparcelable-1.1.1\proguard.txt
-# The proguard configuration file for the following section is C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\9ece5a1ade88729813b8644b246e26f7\transformed\lifecycle-runtime-2.3.1\proguard.txt
+# End of content from androidx.versionedparcelable:versionedparcelable:1.1.1 (extracted file: C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\07b971810212e266f3e1deca45ed2763\transformed\proguard.txt)
+# The proguard configuration file for the following section is androidx.lifecycle:lifecycle-runtime:2.3.1 (extracted file: C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\5cced2d61dd8e2d2c3e14221f16d7f7b\transformed\proguard.txt)
 -keepattributes *Annotation*
 
 -keepclassmembers enum androidx.lifecycle.Lifecycle$Event {
@@ -196,8 +172,9 @@
 # this rule is need to work properly when app is compiled with api 28, see b/142778206
 # Also this rule prevents registerIn from being inlined.
 -keepclassmembers class androidx.lifecycle.ReportFragment$LifecycleCallbacks { *; }
-# End of content from C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\9ece5a1ade88729813b8644b246e26f7\transformed\lifecycle-runtime-2.3.1\proguard.txt
-# The proguard configuration file for the following section is C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\eb592f511f628acbc7bda8b7867ec2c6\transformed\lifecycle-viewmodel-2.0.0\proguard.txt
+
+# End of content from androidx.lifecycle:lifecycle-runtime:2.3.1 (extracted file: C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\5cced2d61dd8e2d2c3e14221f16d7f7b\transformed\proguard.txt)
+# The proguard configuration file for the following section is androidx.lifecycle:lifecycle-viewmodel:2.0.0 (extracted file: C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\db3666b50b36a1e3189acd9abf37b9bc\transformed\proguard.txt)
 -keepclassmembers,allowobfuscation class * extends androidx.lifecycle.ViewModel {
     <init>();
 }
@@ -206,8 +183,8 @@
     <init>(android.app.Application);
 }
 
-# End of content from C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\eb592f511f628acbc7bda8b7867ec2c6\transformed\lifecycle-viewmodel-2.0.0\proguard.txt
-# The proguard configuration file for the following section is C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\824a2ce24b271b73f613aa94fbe1b578\transformed\shrink-rules\lib\META-INF\proguard\androidx-annotations.pro
+# End of content from androidx.lifecycle:lifecycle-viewmodel:2.0.0 (extracted file: C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\db3666b50b36a1e3189acd9abf37b9bc\transformed\proguard.txt)
+# The proguard configuration file for the following section is androidx.annotation:annotation:1.2.0 (extracted file: C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\fdf1e8e1204d0ea229bb1ca8295842a2\transformed\shrink-rules\lib\META-INF\proguard\androidx-annotations.pro)
 -keep,allowobfuscation @interface androidx.annotation.Keep
 -keep @androidx.annotation.Keep class * {*;}
 
@@ -227,8 +204,8 @@
   @androidx.annotation.DoNotInline <methods>;
 }
 
-# End of content from C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\824a2ce24b271b73f613aa94fbe1b578\transformed\shrink-rules\lib\META-INF\proguard\androidx-annotations.pro
-# The proguard configuration file for the following section is C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\4321dbeb9509aeae65c94b1476c7384e\transformed\annotation-experimental-1.1.0\proguard.txt
+# End of content from androidx.annotation:annotation:1.2.0 (extracted file: C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\fdf1e8e1204d0ea229bb1ca8295842a2\transformed\shrink-rules\lib\META-INF\proguard\androidx-annotations.pro)
+# The proguard configuration file for the following section is androidx.annotation:annotation-experimental:1.1.0 (extracted file: C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\a9db8ceda058b74dcf2ca15c515eca02\transformed\proguard.txt)
 # Copyright (C) 2020 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -253,7 +230,32 @@
 -dontwarn kotlin.annotation.Retention
 -dontwarn kotlin.annotation.Target
 
-# End of content from C:\Users\RAJAT SHAHARE\.gradle\caches\8.14.6\transforms\4321dbeb9509aeae65c94b1476c7384e\transformed\annotation-experimental-1.1.0\proguard.txt
+# End of content from androidx.annotation:annotation-experimental:1.1.0 (extracted file: C:\Users\RAJAT SHAHARE\.gradle\caches\9.8.2\transforms\a9db8ceda058b74dcf2ca15c515eca02\transformed\proguard.txt)
+# The proguard configuration file for the following section is AAPT2 generated keep rules (extracted file: D:\Desktop\github\eva-launcher-main\app\build\intermediates\aapt_proguard_file\release\processReleaseResources\aapt_rules.txt)
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+-keep class androidx.core.content.FileProvider { <init>(); }
+-keep class io.rns.evalauncher.AppLaunchActivity { <init>(); }
+-keep class io.rns.evalauncher.ClockActivity { <init>(); }
+-keep class io.rns.evalauncher.ClockDream { <init>(); }
+-keep class io.rns.evalauncher.GuardConfig { <init>(); }
+-keep class io.rns.evalauncher.GuardRevival { <init>(); }
+-keep class io.rns.evalauncher.HomeKeyService { <init>(); }
+-keep class io.rns.evalauncher.HomeSettingsActivity { <init>(); }
+-keep class io.rns.evalauncher.InputKeyService { <init>(); }
+-keep class io.rns.evalauncher.InputsRequestActivity { <init>(); }
+-keep class io.rns.evalauncher.LauncherSettingsActivity { <init>(); }
+-keep class io.rns.evalauncher.MainActivity { <init>(); }
+-keep class io.rns.evalauncher.ProbeActivity { <init>(); }
+-keep class io.rns.evalauncher.QuickSettingsActivity { <init>(); }
+-keep class io.rns.evalauncher.ThemeProvider { <init>(); }
+-keep class androidx.recyclerview.widget.RecyclerView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class io.rns.evalauncher.GlassView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class io.rns.evalauncher.SkyView { <init>(android.content.Context, android.util.AttributeSet); }
+
+
+# End of content from AAPT2 generated keep rules (extracted file: D:\Desktop\github\eva-launcher-main\app\build\intermediates\aapt_proguard_file\release\processReleaseResources\aapt_rules.txt)
 # The proguard configuration file for the following section is <unknown>
 
 # End of content from <unknown>

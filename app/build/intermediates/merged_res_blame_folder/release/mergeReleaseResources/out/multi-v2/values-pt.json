@@ -1,25 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "com.gathin.tvhome.app-mergeReleaseResources-8:/values-pt/values-pt.xml",
+            "outputFile": "io.rns.evalauncher.app-mergeReleaseResources-8:/values-pt/values-pt.xml",
             "map": [
-                {
-                    "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\caches\\8.14.6\\transforms\\9765218b3880d2e946d65e7a73736c39\\transformed\\core-1.7.0\\res\\values-pt\\values-pt.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "139",
-                        "startColumns": "4",
-                        "startOffsets": "9229",
-                        "endColumns": "100",
-                        "endOffsets": "9325"
-                    }
-                },
                 {
                     "source": "D:\\Desktop\\github\\eva-launcher-main\\app\\src\\main\\res\\values-pt\\bools.xml",
                     "from": {
@@ -35,6 +18,23 @@
                         "startOffsets": "55",
                         "endColumns": "46",
                         "endOffsets": "97"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\RAJAT SHAHARE\\.gradle\\caches\\9.8.2\\transforms\\2a9194c2fa5b95bc48cd0e9d5b5d4e61\\transformed\\core-1.7.0\\res\\values-pt\\values-pt.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "139",
+                        "startColumns": "4",
+                        "startOffsets": "9229",
+                        "endColumns": "100",
+                        "endOffsets": "9325"
                     }
                 },
                 {

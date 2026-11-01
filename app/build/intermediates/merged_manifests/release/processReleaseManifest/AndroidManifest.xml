@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.gathin.tvhome"
-    android:versionCode="22"
-    android:versionName="2.1" >
+    package="io.rns.evalauncher"
+    android:versionCode="23"
+    android:versionName="2.2" >
 
     <uses-sdk
         android:minSdkVersion="26"
@@ -80,7 +80,7 @@
         <intent>
             <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="com.gathin.tvhome.category.DOCK_CARD" />
+            <category android:name="io.rns.evalauncher.category.DOCK_CARD" />
         </intent>
         <!-- stock_home_redirect: HomeKeyService looks up the stock launcher's HOME activity. -->
         <intent>
@@ -110,7 +110,7 @@
         android:localeConfig="@xml/locales_config"
         android:theme="@style/Theme.TvHome" >
         <activity
-            android:name="com.gathin.tvhome.MainActivity"
+            android:name="io.rns.evalauncher.MainActivity"
             android:clearTaskOnLaunch="true"
             android:configChanges="orientation|screenSize|keyboard|keyboardHidden|uiMode"
             android:excludeFromRecents="true"
@@ -139,7 +139,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.gathin.tvhome.LauncherSettingsActivity"
+            android:name="io.rns.evalauncher.LauncherSettingsActivity"
             android:excludeFromRecents="true"
             android:exported="false"
             android:screenOrientation="landscape" />
@@ -151,7 +151,7 @@
              its own input picker never sees a second candidate and a chooser.
         -->
         <activity
-            android:name="com.gathin.tvhome.InputsRequestActivity"
+            android:name="io.rns.evalauncher.InputsRequestActivity"
             android:enabled="false"
             android:excludeFromRecents="true"
             android:exported="true"
@@ -169,7 +169,7 @@
              which throws IllegalStateException in onCreate (#1122); a TV is landscape anyway.
         -->
         <activity
-            android:name="com.gathin.tvhome.QuickSettingsActivity"
+            android:name="io.rns.evalauncher.QuickSettingsActivity"
             android:excludeFromRecents="true"
             android:exported="false"
             android:launchMode="singleTop"
@@ -177,7 +177,7 @@
             android:taskAffinity=""
             android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
         <activity
-            android:name="com.gathin.tvhome.HomeSettingsActivity"
+            android:name="io.rns.evalauncher.HomeSettingsActivity"
             android:excludeFromRecents="true"
             android:exported="false"
             android:taskAffinity=""
@@ -187,7 +187,7 @@
              build-and-install.sh; see HomeKeyService.
         -->
         <service
-            android:name="com.gathin.tvhome.HomeKeyService"
+            android:name="io.rns.evalauncher.HomeKeyService"
             android:directBootAware="true"
             android:exported="true"
             android:label="@string/home_key_name"
@@ -206,7 +206,7 @@
              (Home Assistant android_tv_remote), normally served by the stock launcher.
         -->
         <activity
-            android:name="com.gathin.tvhome.AppLaunchActivity"
+            android:name="io.rns.evalauncher.AppLaunchActivity"
             android:excludeFromRecents="true"
             android:exported="true"
             android:noHistory="true"
@@ -225,7 +225,7 @@
 
         <!-- The same clock, started by Home itself after home_idle_clock_minutes without input. -->
         <activity
-            android:name="com.gathin.tvhome.ClockActivity"
+            android:name="io.rns.evalauncher.ClockActivity"
             android:excludeFromRecents="true"
             android:exported="false"
             android:noHistory="true"
@@ -236,7 +236,7 @@
              it sends a window event when it closes (HomeKeyService.probeAtBoot).
         -->
         <activity
-            android:name="com.gathin.tvhome.ProbeActivity"
+            android:name="io.rns.evalauncher.ProbeActivity"
             android:excludeFromRecents="true"
             android:exported="false"
             android:noHistory="true"
@@ -245,10 +245,10 @@
 
         <!--
              Screensaver: pick it in Settings, or `settings put secure screensaver_components
-             com.gathin.tvhome/.ClockDream` over adb.
+             io.rns.evalauncher/.ClockDream` over adb.
         -->
         <service
-            android:name="com.gathin.tvhome.ClockDream"
+            android:name="io.rns.evalauncher.ClockDream"
             android:exported="true"
             android:label="@string/dream_name"
             android:permission="android.permission.BIND_DREAM_SERVICE" >
@@ -264,13 +264,13 @@
              see ThemeProvider. WRITE_SECURE_SETTINGS: the adb shell has it, ordinary apps don't.
         -->
         <provider
-            android:name="com.gathin.tvhome.ThemeProvider"
-            android:authorities="com.gathin.tvhome.theme"
+            android:name="io.rns.evalauncher.ThemeProvider"
+            android:authorities="io.rns.evalauncher.theme"
             android:exported="true"
             android:permission="android.permission.WRITE_SECURE_SETTINGS" />
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="com.gathin.tvhome.updateprovider"
+            android:authorities="io.rns.evalauncher.updateprovider"
             android:exported="false"
             android:grantUriPermissions="true" >
             <meta-data
@@ -285,10 +285,10 @@
         <!--
              Bound again by the system after a force stop, which restarts Home on firmware that kills
              third-party apps (TCL tc8000_ay30a2). It reads no notification.
-             cmd notification allow_listener com.gathin.tvhome/.GuardRevival
+             cmd notification allow_listener io.rns.evalauncher/.GuardRevival
         -->
         <service
-            android:name="com.gathin.tvhome.GuardRevival"
+            android:name="io.rns.evalauncher.GuardRevival"
             android:directBootAware="true"
             android:exported="true"
             android:label="@string/home_key_name"
@@ -299,16 +299,16 @@
         </service>
 
         <receiver
-            android:name="com.gathin.tvhome.GuardConfig"
+            android:name="io.rns.evalauncher.GuardConfig"
             android:exported="true"
             android:permission="android.permission.WRITE_SECURE_SETTINGS" >
             <intent-filter>
-                <action android:name="com.gathin.tvhome.GUARD" />
+                <action android:name="io.rns.evalauncher.GUARD" />
             </intent-filter>
         </receiver>
 
         <service
-            android:name="com.gathin.tvhome.InputKeyService"
+            android:name="io.rns.evalauncher.InputKeyService"
             android:exported="false"
             android:label="@string/app_name"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
