@@ -264,7 +264,6 @@ public final class LauncherSettingsActivity extends Activity {
 
         AlertDialog dialog = new AlertDialog.Builder(this)
                 .setView(dialogView)
-                .setNegativeButton(android.R.string.cancel, null)
                 .create();
 
         if (dialog.getWindow() != null) {
@@ -615,7 +614,6 @@ public final class LauncherSettingsActivity extends Activity {
 
         AlertDialog dialog = new AlertDialog.Builder(this)
                 .setView(dialogView)
-                .setNegativeButton(android.R.string.cancel, null)
                 .create();
 
         if (dialog.getWindow() != null) {
