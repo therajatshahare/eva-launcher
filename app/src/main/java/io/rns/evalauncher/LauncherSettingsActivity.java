@@ -350,9 +350,24 @@ public final class LauncherSettingsActivity extends Activity {
                 break;
 
             case ITEM_DEFAULT_THEME:
-                choices.edit().remove(Config.WALLPAPER_CHOICE_KEY).apply();
+                File themeDir = Config.dir(this);
+                if (themeDir != null) {
+                    File configJson = new File(themeDir, Config.FILE_NAME);
+                    if (configJson.exists()) configJson.delete();
+                    File wallpaperImg = new File(themeDir, Config.WALLPAPER_NAME);
+                    if (wallpaperImg.exists()) wallpaperImg.delete();
+                }
+                File internalConfigCopy = new File(getFilesDir(), Config.FILE_NAME);
+                if (internalConfigCopy.exists()) internalConfigCopy.delete();
+
+                choices.edit()
+                        .remove(Config.WALLPAPER_CHOICE_KEY)
+                        .remove(Config.DOCK_OPACITY_KEY)
+                        .remove(Config.ROWS_BELOW_DOCK_KEY)
+                        .remove(Config.CLOCK_FORMAT_KEY)
+                        .apply();
                 changed();
-                Toast.makeText(this, "Default theme active", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Default theme restored", Toast.LENGTH_SHORT).show();
                 dialog.dismiss();
                 break;
 
