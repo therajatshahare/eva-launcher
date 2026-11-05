@@ -225,7 +225,7 @@ final class Cards {
             String pkg = ri.activityInfo != null ? ri.activityInfo.packageName : "?";
             try {
                 Card card = read(ctx, pm, ri, tiles, names, uiNames, hidden, seen, records);
-                seen.add(card.pkg);
+                seen.add(card.component.flattenToString());
                 out.add(card);
             } catch (CardException e) {
                 Log.w(TAG, pkg + ": " + e.getMessage());
@@ -289,11 +289,11 @@ final class Cards {
         String pkg = ai.packageName;
         if (pkg.equals(ctx.getPackageName())) throw new CardException("the launcher itself");
         if (hidden.contains(pkg)) throw new CardException("listed in hidden_apps");
-        if (seen.contains(pkg)) throw new CardException("declares a second card; one per package is read");
+        ComponentName component = new ComponentName(pkg, ai.name);
+        if (seen.contains(component.flattenToString())) throw new CardException("duplicate card activity");
         if (!ai.exported || !ai.enabled || !ai.applicationInfo.enabled) {
             throw new CardException("card activity is not exported and enabled");
         }
-        ComponentName component = new ComponentName(pkg, ai.name);
         if (!tiles.contains(component.flattenToString())) {
             throw new CardException("card activity has no LEANBACK_LAUNCHER intent filter");
         }
