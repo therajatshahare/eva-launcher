@@ -36,18 +36,26 @@ public final class WallpaperFetcher {
                 }
 
                 if (imageUrls.isEmpty()) {
-                    callback.onComplete(false, "No wallpapers found on Reddit.");
+                    if (callback != null) callback.onComplete(false, "No wallpapers found on Reddit.");
                     return;
                 }
 
                 File dir = Config.dir(context);
+                if (dir == null) return;
                 File wallpapersDir = new File(dir, "wallpapers");
                 if (!wallpapersDir.exists()) wallpapersDir.mkdirs();
 
                 int downloaded = 0;
                 for (int i = 0; i < imageUrls.size(); i++) {
                     String imgUrl = imageUrls.get(i);
-                    File outFile = new File(wallpapersDir, "reddit_" + System.currentTimeMillis() + "_" + i + ".jpg");
+                    String urlHash = Integer.toHexString(imgUrl.hashCode());
+                    File outFile = new File(wallpapersDir, "reddit_" + urlHash + ".jpg");
+
+                    // De-duplication check: if file already exists, do not download again
+                    if (outFile.exists() && outFile.length() > 10 * 1024) {
+                        continue;
+                    }
+
                     if (downloadImage(imgUrl, outFile)) {
                         downloaded++;
                         if (downloaded >= 5) break;
@@ -55,13 +63,13 @@ public final class WallpaperFetcher {
                 }
 
                 if (downloaded > 0) {
-                    callback.onComplete(true, "Downloaded " + downloaded + " Reddit wallpapers!");
+                    if (callback != null) callback.onComplete(true, "Downloaded " + downloaded + " new Reddit wallpapers!");
                 } else {
-                    callback.onComplete(false, "Failed to save Reddit wallpapers.");
+                    if (callback != null) callback.onComplete(false, "Wallpapers up to date.");
                 }
             } catch (Exception e) {
                 Log.e(TAG, "Fetch failed", e);
-                callback.onComplete(false, "Error: " + e.getMessage());
+                if (callback != null) callback.onComplete(false, "Error: " + e.getMessage());
             }
         }).start();
     }
@@ -72,7 +80,6 @@ public final class WallpaperFetcher {
             String xmlContent = fetchStringWithRedirects(rssUrl);
             if (xmlContent == null || xmlContent.isEmpty()) return urls;
 
-            // Extract i.redd.it or preview.redd.it direct image links from RSS Atom content
             Pattern pattern = Pattern.compile("https://(i\\.redd\\.it|preview\\.redd\\.it)/[a-zA-Z0-9_.]+\\.(jpg|png|jpeg)");
             Matcher matcher = pattern.matcher(xmlContent);
             while (matcher.find()) {
@@ -136,7 +143,7 @@ public final class WallpaperFetcher {
                     out.write(buf, 0, len);
                 }
                 in.close();
-                return out.toString("UTF-8");
+                return out.toString(StandardCharsets.UTF_8.name());
             } else {
                 throw new IOException("HTTP " + status);
             }

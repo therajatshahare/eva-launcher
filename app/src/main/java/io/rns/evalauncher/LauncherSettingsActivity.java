@@ -230,7 +230,6 @@ public final class LauncherSettingsActivity extends Activity {
                 items.add(new SubGridItem(ITEM_DEFAULT_THEME, "Default Theme", "Reset Choices", "Revert to built-in theme"));
                 items.add(new SubGridItem(ITEM_ADD_THEME, "Online Theme Store", "Browse Themes", "Download & apply 1-click themes"));
                 items.add(new SubGridItem(ITEM_PICK_WALLPAPER, "Choose Wallpaper", "Visual Grid Previews", "Select 16:9 wallpaper card"));
-                items.add(new SubGridItem(ITEM_FETCH_REDDIT, "Fetch Wallpapers", "Reddit r/wallpapers", "Download HD wallpapers"));
                 break;
 
             case CAT_UPDATES:
@@ -724,30 +723,7 @@ public final class LauncherSettingsActivity extends Activity {
 
     private void showWallpaperPicker() {
         File dir = Config.dir(this);
-        List<File> images = new ArrayList<>(WallpaperRotation.images(
-                dir == null ? null : new File(dir, "wallpapers")));
-        File single = dir == null ? null : new File(dir, Config.WALLPAPER_NAME);
-        if (single != null && single.isFile() && !images.contains(single)) {
-            images.add(0, single);
-        }
-
-        List<WallpaperItem> items = new ArrayList<>();
-        items.add(new WallpaperItem(null, getString(R.string.wallpaper_theme_default), single, true, false));
-
-        for (File img : images) {
-            String name = img.getName();
-            String displayLabel = name;
-            if (name.startsWith("reddit_")) {
-                int idx = name.lastIndexOf('_');
-                String num = idx >= 0 ? name.substring(idx + 1).replace(".jpg", "") : "";
-                displayLabel = "Reddit Wallpaper #" + num;
-            }
-            items.add(new WallpaperItem(name, displayLabel, img, false, false));
-        }
-
-        items.add(new WallpaperItem("none", getString(R.string.wallpaper_none), null, false, true));
-
-        String currentChoice = choices.getString(Config.WALLPAPER_CHOICE_KEY, null);
+        File wallpapersSubDir = dir == null ? null : new File(dir, "wallpapers");
 
         View dialogView = getLayoutInflater().inflate(R.layout.dialog_wallpaper_picker, null);
         RecyclerView grid = dialogView.findViewById(R.id.wallpaperGrid);
@@ -761,17 +737,42 @@ public final class LauncherSettingsActivity extends Activity {
             dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
         }
 
-        grid.setAdapter(new WallpaperGridAdapter(this, items, currentChoice, item -> {
-            dialog.dismiss();
-            if (item.isThemeDefault) {
-                choices.edit().remove(Config.WALLPAPER_CHOICE_KEY).apply();
-            } else {
-                choices.edit().putString(Config.WALLPAPER_CHOICE_KEY, item.key).apply();
+        Runnable reloadGrid = () -> {
+            List<File> images = new ArrayList<>(WallpaperRotation.images(wallpapersSubDir));
+            File single = dir == null ? null : new File(dir, Config.WALLPAPER_NAME);
+            if (single != null && single.isFile() && !images.contains(single)) {
+                images.add(0, single);
             }
-            changed();
-            Toast.makeText(this, R.string.wallpaper_applied, Toast.LENGTH_SHORT).show();
-        }));
 
+            List<WallpaperItem> items = new ArrayList<>();
+            items.add(new WallpaperItem(null, getString(R.string.wallpaper_theme_default), single, true, false));
+
+            for (File img : images) {
+                String name = img.getName();
+                String displayLabel = name;
+                if (name.startsWith("reddit_")) {
+                    displayLabel = "Reddit Wallpaper #" + Math.abs(name.hashCode() % 1000);
+                }
+                items.add(new WallpaperItem(name, displayLabel, img, false, false));
+            }
+
+            items.add(new WallpaperItem("none", getString(R.string.wallpaper_none), null, false, true));
+
+            String currentChoice = choices.getString(Config.WALLPAPER_CHOICE_KEY, null);
+
+            grid.setAdapter(new WallpaperGridAdapter(this, items, currentChoice, item -> {
+                dialog.dismiss();
+                if (item.isThemeDefault) {
+                    choices.edit().remove(Config.WALLPAPER_CHOICE_KEY).apply();
+                } else {
+                    choices.edit().putString(Config.WALLPAPER_CHOICE_KEY, item.key).apply();
+                }
+                changed();
+                Toast.makeText(this, R.string.wallpaper_applied, Toast.LENGTH_SHORT).show();
+            }));
+        };
+
+        reloadGrid.run();
         dialog.show();
 
         if (dialog.getWindow() != null) {
@@ -779,6 +780,12 @@ public final class LauncherSettingsActivity extends Activity {
             int width = (int) (getResources().getDisplayMetrics().widthPixels * 0.65f);
             dialog.getWindow().setLayout(Math.max(width, (int) (550 * getResources().getDisplayMetrics().density)), maxHeight);
         }
+
+        WallpaperFetcher.fetchFromReddit(this, (success, msg) -> {
+            if (success) {
+                runOnUiThread(reloadGrid);
+            }
+        });
     }
 
     private static final class WallpaperGridAdapter extends RecyclerView.Adapter<WallpaperViewHolder> {
