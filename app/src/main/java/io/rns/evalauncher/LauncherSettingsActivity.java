@@ -228,7 +228,7 @@ public final class LauncherSettingsActivity extends Activity {
             case CAT_WALLPAPER:
                 subtitle.setText("Themes and Wallpaper visual selection");
                 items.add(new SubGridItem(ITEM_DEFAULT_THEME, "Default Theme", "Reset Choices", "Revert to built-in theme"));
-                items.add(new SubGridItem(ITEM_ADD_THEME, "+ Add Theme Addon", "Custom Addons", "Add custom theme folders"));
+                items.add(new SubGridItem(ITEM_ADD_THEME, "Online Theme Store", "Browse Themes", "Download & apply 1-click themes"));
                 items.add(new SubGridItem(ITEM_PICK_WALLPAPER, "Choose Wallpaper", "Visual Grid Previews", "Select 16:9 wallpaper card"));
                 items.add(new SubGridItem(ITEM_FETCH_REDDIT, "Fetch Wallpapers", "Reddit r/wallpapers", "Download HD wallpapers"));
                 break;
@@ -372,7 +372,8 @@ public final class LauncherSettingsActivity extends Activity {
                 break;
 
             case ITEM_ADD_THEME:
-                Toast.makeText(this, "Theme Addons: Place theme folders in Android/data/io.rns.evalauncher/files/", Toast.LENGTH_LONG).show();
+                dialog.dismiss();
+                showThemeStoreDialog();
                 break;
 
             case ITEM_PICK_WALLPAPER:
@@ -593,6 +594,131 @@ public final class LauncherSettingsActivity extends Activity {
             this.file = file;
             this.isThemeDefault = isThemeDefault;
             this.isNone = isNone;
+        }
+    }
+
+    private void showThemeStoreDialog() {
+        View view = getLayoutInflater().inflate(R.layout.dialog_theme_store, null);
+        TextView subtitle = view.findViewById(R.id.storeSubtitle);
+        RecyclerView grid = view.findViewById(R.id.themeStoreGrid);
+        grid.setLayoutManager(new GridLayoutManager(this, 2));
+
+        AlertDialog dialog = new AlertDialog.Builder(this)
+                .setView(view)
+                .create();
+
+        if (dialog.getWindow() != null) {
+            dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
+        }
+
+        dialog.show();
+
+        if (dialog.getWindow() != null) {
+            int maxHeight = (int) (getResources().getDisplayMetrics().heightPixels * 0.82f);
+            int width = (int) (getResources().getDisplayMetrics().widthPixels * 0.70f);
+            dialog.getWindow().setLayout(Math.max(width, (int) (600 * getResources().getDisplayMetrics().density)), maxHeight);
+        }
+
+        Toast.makeText(this, "Loading online themes...", Toast.LENGTH_SHORT).show();
+        ThemeFetcher.fetchThemes(this, (success, themes, message) -> {
+            runOnUiThread(() -> {
+                if (!success || themes == null || themes.isEmpty()) {
+                    if (subtitle != null) subtitle.setText("Could not load online themes. Check your connection.");
+                    Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                if (subtitle != null) subtitle.setText("Select any theme and press Apply to install in 1-click");
+                grid.setAdapter(new ThemeStoreAdapter(this, themes, themeItem -> {
+                    Toast.makeText(this, "Downloading " + themeItem.name + "...", Toast.LENGTH_SHORT).show();
+                    ThemeFetcher.downloadAndApplyTheme(this, themeItem, (appliedSuccess, appliedMsg) -> {
+                        runOnUiThread(() -> {
+                            Toast.makeText(this, appliedMsg, Toast.LENGTH_LONG).show();
+                            if (appliedSuccess) {
+                                dialog.dismiss();
+                                changed();
+                            }
+                        });
+                    });
+                }));
+            });
+        });
+    }
+
+    private static final class ThemeStoreAdapter extends RecyclerView.Adapter<ThemeStoreViewHolder> {
+        private final Activity activity;
+        private final List<ThemeFetcher.ThemeItem> items;
+        private final OnThemeSelectedListener listener;
+
+        interface OnThemeSelectedListener {
+            void onSelected(ThemeFetcher.ThemeItem item);
+        }
+
+        ThemeStoreAdapter(Activity activity, List<ThemeFetcher.ThemeItem> items, OnThemeSelectedListener listener) {
+            this.activity = activity;
+            this.items = items;
+            this.listener = listener;
+        }
+
+        @Override
+        public ThemeStoreViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+            View view = activity.getLayoutInflater().inflate(R.layout.item_theme_store_card, parent, false);
+            return new ThemeStoreViewHolder(view);
+        }
+
+        @Override
+        public void onBindViewHolder(ThemeStoreViewHolder holder, int position) {
+            ThemeFetcher.ThemeItem item = items.get(position);
+            holder.card.setClipToOutline(true);
+            holder.title.setText(item.name);
+            holder.author.setText("by " + item.author);
+            holder.desc.setText(item.description);
+
+            if (item.previewUrl != null && !item.previewUrl.isEmpty()) {
+                new Thread(() -> {
+                    Bitmap bmp = ThemeFetcher.loadBitmapFromUrl(item.previewUrl);
+                    if (bmp != null) {
+                        activity.runOnUiThread(() -> holder.preview.setImageBitmap(bmp));
+                    }
+                }).start();
+            }
+
+            final float density = activity.getResources().getDisplayMetrics().density;
+            holder.card.setOnFocusChangeListener((v, focused) -> {
+                float scale = focused ? 1.05f : 1.00f;
+                float z = focused ? 8f * density : 0f;
+                v.animate().scaleX(scale).scaleY(scale).translationZ(z)
+                        .setDuration(focused ? 180 : 140)
+                        .setInterpolator(focused ? new DecelerateInterpolator(1.5f) : new AccelerateInterpolator())
+                        .start();
+                if (focused) v.bringToFront();
+            });
+
+            holder.applyBtn.setOnClickListener(v -> listener.onSelected(item));
+            holder.card.setOnClickListener(v -> listener.onSelected(item));
+        }
+
+        @Override
+        public int getItemCount() {
+            return items.size();
+        }
+    }
+
+    private static final class ThemeStoreViewHolder extends RecyclerView.ViewHolder {
+        final View card;
+        final ImageView preview;
+        final TextView title;
+        final TextView author;
+        final TextView desc;
+        final TextView applyBtn;
+
+        ThemeStoreViewHolder(View itemView) {
+            super(itemView);
+            card = itemView.findViewById(R.id.themeStoreCard);
+            preview = itemView.findViewById(R.id.themePreview);
+            title = itemView.findViewById(R.id.themeTitle);
+            author = itemView.findViewById(R.id.themeAuthor);
+            desc = itemView.findViewById(R.id.themeDesc);
+            applyBtn = itemView.findViewById(R.id.applyThemeButton);
         }
     }
 

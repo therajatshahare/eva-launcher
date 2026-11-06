@@ -1,0 +1,18 @@
+[
+  {
+    "id": "tvos_dusk",
+    "name": "tvOS Dusk Theme",
+    "author": "Rajat Shahare",
+    "description": "Apple TV style 8-column grid layout with dusk purple gradient wallpaper",
+    "preview_url": "https://raw.githubusercontent.com/therajatshahare/eva-launcher/main/themes/tvos_dusk_preview.jpg",
+    "download_url": "https://raw.githubusercontent.com/therajatshahare/eva-launcher/main/themes/tvos-dusk-theme.zip"
+  },
+  {
+    "id": "minimal_list",
+    "name": "Minimal List Theme",
+    "author": "Rajat Shahare",
+    "description": "Ultra-minimalist vertical text-only app list theme with midnight background",
+    "preview_url": "https://raw.githubusercontent.com/therajatshahare/eva-launcher/main/themes/minimal_list_preview.jpg",
+    "download_url": "https://raw.githubusercontent.com/therajatshahare/eva-launcher/main/themes/minimal-list-theme.zip"
+  }
+]

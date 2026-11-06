@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_rounded_bg"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:padding="28dp">
+
+    <!-- Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Online Theme Store"
+        android:textColor="#FF4ADE80"
+        android:textSize="22sp"
+        android:fontFamily="@string/font_medium" />
+
+    <TextView
+        android:id="@+id/storeSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Browse community themes and apply with 1-click"
+        android:textColor="#FF94A3B8"
+        android:textSize="14sp" />
+
+    <!-- Grid Container for Theme Cards -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/themeStoreGrid"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_marginTop="16dp"
+        android:padding="4dp"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

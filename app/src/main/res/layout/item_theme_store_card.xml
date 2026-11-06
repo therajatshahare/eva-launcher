@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/themeStoreCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@drawable/settings_choice_bg"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <!-- Theme Preview Image -->
+    <ImageView
+        android:id="@+id/themePreview"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#FF11161F"
+        android:scaleType="centerCrop" />
+
+    <!-- Title & Author -->
+    <TextView
+        android:id="@+id/themeTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@string/font_medium"
+        android:textColor="#FFFFFFFF"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/themeAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:textColor="#FF4ADE80"
+        android:textSize="12sp" />
+
+    <!-- Description -->
+    <TextView
+        android:id="@+id/themeDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:maxLines="2"
+        android:textColor="#FF94A3B8"
+        android:textSize="12sp" />
+
+    <!-- Apply Button -->
+    <TextView
+        android:id="@+id/applyThemeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/chai_pill_bg"
+        android:fontFamily="@string/font_medium"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="Apply Theme"
+        android:textColor="#FFFFFFFF"
+        android:textSize="13sp" />
+
+</LinearLayout>
