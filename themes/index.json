@@ -1,11 +1,19 @@
 [
   {
     "id": "tvos_dusk",
-    "name": "tvOS Dusk Theme",
+    "name": "tvOS Dusk Theme (Grid)",
     "author": "Rajat Shahare",
-    "description": "Apple TV style 8-column grid layout with dusk purple gradient wallpaper",
+    "description": "Apple TV style 8-column grid layout without dock band",
     "preview_url": "https://raw.githubusercontent.com/therajatshahare/eva-launcher/main/themes/tvos_dusk_preview.jpg",
     "download_url": "https://raw.githubusercontent.com/therajatshahare/eva-launcher/main/themes/tvos-dusk-theme.zip"
+  },
+  {
+    "id": "tvos_dusk_dockband",
+    "name": "tvOS Dusk Theme (Dock Band)",
+    "author": "Rajat Shahare",
+    "description": "Apple TV style theme with glass dock band & mountain dusk landscape",
+    "preview_url": "https://raw.githubusercontent.com/therajatshahare/eva-launcher/main/themes/tvos_dusk_dockband_preview.jpg",
+    "download_url": "https://raw.githubusercontent.com/therajatshahare/eva-launcher/main/themes/tvos-dusk-dockband-theme.zip"
   },
   {
     "id": "minimal_list",
