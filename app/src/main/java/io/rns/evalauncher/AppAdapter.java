@@ -19,6 +19,8 @@ import android.graphics.drawable.GradientDrawable;
 import android.net.Uri;
 import android.provider.Settings;
 import android.util.DisplayMetrics;
+import android.util.TypedValue;
+import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -32,6 +34,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.core.content.res.ResourcesCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -168,6 +171,11 @@ public class AppAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         return Math.max(Math.max(Math.round(80 * density), Math.round(w * MIN_HEIGHT_FIT)), Math.min(w, byHeight));
     }
 
+    /** list_layout: a row's width and height, the name's size and its side padding (dp). */
+    static final float LIST_W_DP = 360f, LIST_ROW_DP = 52f, LIST_TEXT_SP = 26f, LIST_PAD_DP = 24f;
+    /** list_layout: a name's alpha while its row is not focused, and how far it slides right when focused (dp). */
+    static final float LIST_REST_ALPHA = 0.55f, LIST_NUDGE_DP = 6f;
+
     /** The smallest share of the width-only tile size that fitting rows_below_dock into the height may go to. */
     static final float MIN_HEIGHT_FIT = 0.85f;
 
@@ -186,6 +194,8 @@ public class AppAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private final boolean dockRow;
     /** config single_row: tiles sit in one sideways row, each as wide as a grid column would be. */
     private final boolean singleRow;
+    /** config list_layout: every app is a row of text in one vertical list (see listHolder). */
+    private final boolean listLayout;
     /** config always_show_names: the alpha of an unfocused tile's name (0 hides it). */
     private final float restNameAlpha;
     /** cinematic_home: only then does a launch record the last-opened app the shelf uses. */
@@ -240,6 +250,7 @@ public class AppAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         this.dockTitle = cfg.dockTitle;
         this.dockRow = cfg.dockRow;
         this.singleRow = cfg.singleRow;
+        this.listLayout = cfg.listLayout;
         this.restNameAlpha = cfg.alwaysShowNames ? 0.75f : 0f;
         this.cinematic = cfg.cinematicHome;
         this.launchActions = cfg.launchActions;
@@ -418,6 +429,7 @@ public class AppAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         }
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_app, parent, false);
         float density = parent.getResources().getDisplayMetrics().density;
+        if (listLayout) return listHolder(v, parent, density);
         int width = parent.getWidth() > 0 ? parent.getWidth() : parent.getMeasuredWidth();
         int inner = width - parent.getPaddingLeft() - parent.getPaddingRight();
         int w = tileWidthPx(inner, parent.getHeight(), dockSize, rowsBelowDock, dockTitle, dockRow, density), h = tileHeightPx(w);
@@ -460,6 +472,46 @@ public class AppAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         return new Holder(v, listener, animations, advancedEffects, reducedMotion, restNameAlpha, focusOvershoot);
     }
 
+    /**
+     * list_layout: item_app.xml reshaped into one row of text. The card keeps its place (focus, click and the glass
+     * all hang on it) but has no fill, banner or icon; the label inside it is the name, left-aligned and large.
+     */
+    private Holder listHolder(View v, ViewGroup parent, float density) {
+        int width = parent.getWidth() > 0 ? parent.getWidth() : parent.getMeasuredWidth();
+        int inner = width - parent.getPaddingLeft() - parent.getPaddingRight();
+        int rowW = Math.round(LIST_W_DP * density);
+        View card = v.findViewById(R.id.card);
+        FrameLayout.LayoutParams cardLp = (FrameLayout.LayoutParams) card.getLayoutParams();
+        cardLp.width = inner > 0 ? Math.min(inner, rowW) : rowW;
+        cardLp.height = Math.round(LIST_ROW_DP * density);
+        cardLp.gravity = Gravity.START | Gravity.TOP;
+        card.setLayoutParams(cardLp);
+        card.setBackground(null);
+        int pad = Math.round(2 * density);
+        v.setPadding(v.getPaddingLeft(), pad, v.getPaddingRight(), pad);
+        v.findViewById(R.id.name).setVisibility(View.GONE);
+        v.findViewById(R.id.banner).setVisibility(View.GONE);
+        v.findViewById(R.id.icon).setVisibility(View.GONE);
+        TextView label = v.findViewById(R.id.label);
+        FrameLayout.LayoutParams labelLp = (FrameLayout.LayoutParams) label.getLayoutParams();
+        labelLp.width = ViewGroup.LayoutParams.MATCH_PARENT;
+        labelLp.height = ViewGroup.LayoutParams.MATCH_PARENT;
+        labelLp.gravity = Gravity.START | Gravity.CENTER_VERTICAL;
+        label.setLayoutParams(labelLp);
+        label.setGravity(Gravity.START | Gravity.CENTER_VERTICAL);
+        int side = Math.round(LIST_PAD_DP * density);
+        label.setPadding(side, 0, side, 0);
+        label.setTextSize(TypedValue.COMPLEX_UNIT_SP, LIST_TEXT_SP);
+        label.setLetterSpacing(0.02f);
+        android.graphics.Typeface light = ResourcesCompat.getFont(ctx, R.font.outfit_light);
+        if (light != null) label.setTypeface(light);
+        label.setVisibility(View.VISIBLE);
+        label.setAlpha(LIST_REST_ALPHA);
+        Holder holder = new Holder(v, listener, animations, advancedEffects, reducedMotion, restNameAlpha, focusOvershoot);
+        holder.listRow = true;
+        return holder;
+    }
+
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
         if (isLibraryAt(position)) return;
@@ -495,7 +547,7 @@ public class AppAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         // A fully opaque banner covers the whole card (centerCrop), so the card's own fill under it is drawn for
         // nothing on every frame; keep it under banners with transparent parts and under icon tiles.
         h.card.setBackground(e.banner != null && e.banner.getOpacity() == PixelFormat.OPAQUE ? null : h.cardBackground);
-        if (uniformTiles && e.banner == null) {
+        if (uniformTiles && e.banner == null && !listLayout) {
             if (e.backdrop == null) e.backdrop = backdrop(e.icon, ambientColorAt(position));
             h.card.setBackground(new GradientDrawable(GradientDrawable.Orientation.TOP_BOTTOM, e.backdrop));
         }
@@ -511,6 +563,19 @@ public class AppAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             h.icon.setVisibility(View.VISIBLE);
             h.label.setText(e.label);
             h.label.setVisibility(uniformTiles ? View.GONE : View.VISIBLE);
+        }
+        if (listLayout) {
+            // Text only: no fill, banner, icon or caption under the row. The glass bar shows the focus.
+            h.card.setBackground(null);
+            h.banner.setImageDrawable(null);
+            h.banner.setVisibility(View.GONE);
+            h.icon.setImageDrawable(null);
+            h.icon.setVisibility(View.GONE);
+            h.name.setVisibility(View.GONE);
+            h.label.setText(e.name);
+            h.label.setVisibility(View.VISIBLE);
+            h.label.setAlpha(focused ? 1f : LIST_REST_ALPHA);
+            h.label.setTranslationX(focused && animations ? LIST_NUDGE_DP * ctx.getResources().getDisplayMetrics().density : 0f);
         }
         h.card.setOnClickListener(v -> launch(e));
         h.card.setOnLongClickListener(v -> {
@@ -678,7 +743,14 @@ public class AppAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         return e.banner != null ? e.banner : e.icon;
     }
 
+    /** list_layout: the rows are text in one column (MainActivity shapes the glass bar as a pill for them). */
+    boolean isListLayout() {
+        return listLayout;
+    }
+
     float focusScale() {
+        // A list row does not grow: its name brightens and the glass bar moves to it.
+        if (listLayout) return 1f;
         return !animations ? 1f : advancedEffects ? 1.12f : 1.10f;
     }
 
@@ -902,6 +974,8 @@ public class AppAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         final boolean overshoot;
         /** A dock tile: it grows in place without advanced_effects' lift, which reads as off-centre in the band (#2135). */
         boolean inDock;
+        /** list_layout: a row of text; focus brightens the name instead of zooming the card. */
+        boolean listRow;
 
         Holder(View v, TileListener listener, boolean animations, boolean advancedEffects,
                boolean reducedMotion, float restNameAlpha, boolean overshoot) {
@@ -937,6 +1011,20 @@ public class AppAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             });
 
             card.setOnFocusChangeListener((view, focused) -> {
+                if (listRow) {
+                    label.animate().cancel();
+                    float alpha = focused ? 1f : LIST_REST_ALPHA;
+                    float dx = focused && animations ? LIST_NUDGE_DP * density : 0f;
+                    if (!animations || reducedMotion) {
+                        label.setAlpha(alpha);
+                        label.setTranslationX(dx);
+                    } else {
+                        label.animate().alpha(alpha).translationX(dx).setDuration(focused ? 200 : 160).start();
+                    }
+                    int row = getBindingAdapterPosition();
+                    if (focused && listener != null && row != RecyclerView.NO_POSITION) listener.onTileFocused(row, view);
+                    return;
+                }
                 view.animate().cancel();
                 banner.animate().cancel();
                 name.animate().cancel();

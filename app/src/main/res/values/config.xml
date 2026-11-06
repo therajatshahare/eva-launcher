@@ -296,6 +296,10 @@
          reaches its edge. No grid below; rows_below_dock is ignored. Needs dock_row. Can also be set with
          "single_row" in a theme. -->
     <bool name="single_row">false</bool>
+    <!-- Apps as one vertical list of names: no icons or banners, left-aligned, with a glass bar that follows
+         the focus up and down. Forces one column and ignores dock_row, single_row and rows_below_dock. Can also be
+         set with "list_layout" in a theme. -->
+    <bool name="list_layout">false</bool>
     <!-- With single_row, the band runs behind every app in the row, apps installed later included, instead of
          the dock apps only. Can also be set with "dock_band_all" in a theme. -->
     <bool name="dock_band_all">false</bool>

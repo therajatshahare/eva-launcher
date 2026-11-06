@@ -653,6 +653,8 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
             grid.setLayoutAnimation(new LayoutAnimationController(
                     AnimationUtils.loadAnimation(this, R.anim.tile_enter), 0.06f));
         }
+        // list_layout: the names line up under the clock, so the grid keeps only room for the glass bar's edge.
+        if (cfg.listLayout) grid.setPadding((int) (6 * density), grid.getPaddingTop(), 0, grid.getPaddingBottom());
         adapter = new AppAdapter(this, this, COLUMNS, cfg);
         dockApps = cfg.dockApps;
         fillDockLeavesSlots = !cfg.fillDock;
@@ -1753,7 +1755,9 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
             lp.height = (int) h;
             glass.setLayoutParams(lp);
             // GlassView draws its slab inset by pad, i.e. exactly over the zoomed tile: same corners as the tile.
-            glass.setRadius(AppAdapter.cornerRadius(card.getWidth(), density) * scale);
+            // list_layout: the bar is a pill around the name.
+            glass.setRadius(adapter.isListLayout() ? card.getHeight() * scale / 2f
+                    : AppAdapter.cornerRadius(card.getWidth(), density) * scale);
         }
         glassCardW = card.getWidth();
         glassTargetX = x;
