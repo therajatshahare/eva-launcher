@@ -113,20 +113,6 @@
         android:visibility="gone"
         android:importantForAccessibility="no" />
 
-    <!-- Horizontal Highlight Recommendation Cards Row -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/highlightsGrid"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginEnd="68dp"
-        android:layout_marginTop="200dp"
-        android:clipChildren="false"
-        android:clipToPadding="false"
-        android:orientation="horizontal"
-        android:scrollbars="none"
-        android:visibility="gone" />
-
     <!-- Top shelf: the focused dock app's name, positioned above the dock in code. -->
     <LinearLayout
         android:id="@+id/hero"
@@ -409,6 +395,18 @@
                     android:nextFocusDown="@+id/grid" />
             </LinearLayout>
         </RelativeLayout>
+
+        <!-- Horizontal Highlight Recommendation Cards Row -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/highlightsGrid"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_marginTop="12dp"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:scrollbars="none"
+            android:visibility="gone" />
 
         <!-- The wrapper clips at the grid's edge; the grid itself must not clip so scaled tiles can overflow their cells. -->
         <FrameLayout
