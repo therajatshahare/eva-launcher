@@ -510,10 +510,11 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
         heroArtAlpha = cfg.cinematicArt / 100f;
         if (cinematic) setUpCinematicShelf(cfg.cinematicScrim);
         RecyclerView highlightsGrid = findViewById(R.id.highlightsGrid);
-        if (highlightsGrid != null && cinematic) {
+        if (highlightsGrid != null) {
             highlightsGrid.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
             new Thread(() -> {
                 List<HighlightCardItem> items = TvRecommendationsLoader.loadLiveRecommendations(this);
+                android.util.Log.d("TvHome.Highlights", "Loaded " + (items != null ? items.size() : 0) + " highlight items");
                 if (items != null && !items.isEmpty()) {
                     runOnUiThread(() -> {
                         highlightsGrid.setAdapter(new HighlightCardsAdapter(this, items));
