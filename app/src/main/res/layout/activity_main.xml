@@ -381,18 +381,6 @@
             </LinearLayout>
         </RelativeLayout>
 
-        <!-- Horizontal Highlight Recommendation Cards Row -->
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/highlightsGrid"
-            android:layout_width="match_parent"
-            android:layout_height="210dp"
-            android:layout_marginTop="12dp"
-            android:clipChildren="false"
-            android:clipToPadding="false"
-            android:orientation="horizontal"
-            android:scrollbars="none"
-            android:visibility="gone" />
-
         <!-- The wrapper clips at the grid's edge; the grid itself must not clip so scaled tiles can overflow their cells. -->
         <FrameLayout
             android:layout_width="match_parent"

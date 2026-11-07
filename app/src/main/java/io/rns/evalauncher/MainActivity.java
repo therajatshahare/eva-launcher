@@ -75,7 +75,6 @@ import androidx.dynamicanimation.animation.FloatPropertyCompat;
 import androidx.dynamicanimation.animation.SpringAnimation;
 import androidx.dynamicanimation.animation.SpringForce;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.io.File;
@@ -509,20 +508,6 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
         cinematicWhiteFocus = cfg.cinematicWhiteFocus;
         heroArtAlpha = cfg.cinematicArt / 100f;
         if (cinematic) setUpCinematicShelf(cfg.cinematicScrim);
-        RecyclerView highlightsGrid = findViewById(R.id.highlightsGrid);
-        if (highlightsGrid != null) {
-            highlightsGrid.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
-            new Thread(() -> {
-                List<HighlightCardItem> items = TvRecommendationsLoader.loadLiveRecommendations(this);
-                android.util.Log.d("TvHome.Highlights", "Loaded " + (items != null ? items.size() : 0) + " highlight items");
-                if (items != null && !items.isEmpty()) {
-                    runOnUiThread(() -> {
-                        highlightsGrid.setAdapter(new HighlightCardsAdapter(this, items));
-                        highlightsGrid.setVisibility(View.VISIBLE);
-                    });
-                }
-            }).start();
-        }
         // dock_title false: the name above the dock (and the cinematic lines under it) never shows; the glow
         // still follows the dock.
         if (!cfg.dockTitle) hero.setVisibility(View.GONE);
