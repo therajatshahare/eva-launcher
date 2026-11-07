@@ -1,5 +1,13 @@
 [
   {
+    "id": "cinema_dusk",
+    "name": "Cinema Dusk Theme",
+    "author": "Eva Community",
+    "description": "Cinematic slate-teal vignette theme with 16:9 Watch Next recommendations and glass dock band",
+    "preview_url": "https://raw.githubusercontent.com/therajatshahare/eva-launcher/main/themes/cinema_dusk_preview.jpg",
+    "download_url": "https://raw.githubusercontent.com/therajatshahare/eva-launcher/main/themes/cinema-dusk-theme.zip"
+  },
+  {
     "id": "tvos_dusk",
     "name": "tvOS Dusk Theme (Grid)",
     "author": "Rajat Shahare",
@@ -21,6 +29,6 @@
     "author": "Rajat Shahare",
     "description": "Ultra-minimalist vertical text-only app list theme with midnight background",
     "preview_url": "https://raw.githubusercontent.com/therajatshahare/eva-launcher/main/themes/minimal_list_preview.jpg",
-    "download_url": "https://raw.githubusercontent.com/therajatshahare/eva-launcher/main/themes/minimal-list-theme.zip"
+    "download_url": "https://raw.githubusercontent.com/therajatshahare/eva-launcher/main/themes/minimal_list-theme.zip"
   }
 ]
