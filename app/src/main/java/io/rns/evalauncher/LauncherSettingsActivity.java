@@ -38,7 +38,7 @@ public final class LauncherSettingsActivity extends Activity {
 
     static final String EXTRA_REORDER = "io.rns.evalauncher.extra.REORDER_FROM_SETTINGS";
     private SharedPreferences choices;
-    private static final int[] DOCK_OPACITIES = {100, 70, 50, 30};
+    private static final int[] DOCK_OPACITIES = {30, 50, 70, 100};
     private static final String[] CLOCK_FORMATS = {"system", "12", "24"};
     private int columns;
     private int rowsBelowDock;

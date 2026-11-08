@@ -127,10 +127,22 @@ public final class ThemeFetcher {
                 ZipInputStream zipIn = new ZipInputStream(in);
                 ZipEntry entry;
 
+                // Clean out stale wallpapers from previous theme before extracting new ones
+                File oldWallpaper = new File(targetDir, Config.WALLPAPER_NAME);
+                if (oldWallpaper.exists()) oldWallpaper.delete();
+                File wallpapersSubDir = new File(targetDir, "wallpapers");
+                if (wallpapersSubDir.isDirectory()) {
+                    File[] oldFiles = wallpapersSubDir.listFiles();
+                    if (oldFiles != null) {
+                        for (File f : oldFiles) f.delete();
+                    }
+                }
+
                 while ((entry = zipIn.getNextEntry()) != null) {
                     String name = entry.getName();
                     if (name.contains("..")) continue;
 
+                    name = name.replace('\\', '/');
                     if (name.contains("/")) {
                         name = name.substring(name.lastIndexOf('/') + 1);
                     }
@@ -141,7 +153,6 @@ public final class ThemeFetcher {
                         if (name.equalsIgnoreCase("wallpaper.jpg") || name.equalsIgnoreCase("wallpaper.png") || name.equalsIgnoreCase("wallpaper.webp")) {
                             destFile = new File(targetDir, Config.WALLPAPER_NAME);
                         } else {
-                            File wallpapersSubDir = new File(targetDir, "wallpapers");
                             if (!wallpapersSubDir.isDirectory()) wallpapersSubDir.mkdirs();
                             destFile = new File(wallpapersSubDir, name);
                         }
@@ -149,6 +160,10 @@ public final class ThemeFetcher {
                         destFile = new File(targetDir, Config.FILE_NAME);
                     } else {
                         continue;
+                    }
+
+                    if (destFile.getParentFile() != null && !destFile.getParentFile().exists()) {
+                        destFile.getParentFile().mkdirs();
                     }
 
                     FileOutputStream fOut = new FileOutputStream(destFile);
@@ -166,6 +181,21 @@ public final class ThemeFetcher {
 
                 File internalCopy = new File(context.getFilesDir(), Config.FILE_NAME);
                 if (internalCopy.exists()) internalCopy.delete();
+
+                // Clear user overrides in launcher_settings SharedPreferences so theme settings apply cleanly
+                context.getSharedPreferences(Config.SETTINGS_NAME, Context.MODE_PRIVATE)
+                        .edit()
+                        .remove(Config.WALLPAPER_CHOICE_KEY)
+                        .remove(Config.ROWS_BELOW_DOCK_KEY)
+                        .remove(Config.DOCK_OPACITY_KEY)
+                        .remove("columns")
+                        .apply();
+
+                // Clear wallpaper rotation playback state so new wallpaper shows immediately
+                context.getSharedPreferences("wallpaper_rotation", Context.MODE_PRIVATE)
+                        .edit()
+                        .clear()
+                        .apply();
 
                 if (listener != null) listener.onResult(true, "Applied " + item.name);
             } catch (Exception e) {

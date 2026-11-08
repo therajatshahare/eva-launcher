@@ -26,6 +26,7 @@
   "show_greeting": true,
   "greeting_name": "Rajat Shahare",
   "top_menu": true,
+  "wallpaper": true,
   "wallpaper_true_color": true,
   "background_color": "#F5F1EB"
 }

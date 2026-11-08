@@ -118,19 +118,22 @@ public class DockDecoration extends RecyclerView.ItemDecoration {
         // outwards and still keeps about the band's top margin from its rounded end.
         float sidePad = 22 * density;
         float side = Math.max(0f, Math.min(sidePad, Math.min(rect.left, parent.getWidth() - rect.right) - density));
-        float radius = AppAdapter.cornerRadius(cardWidth, density);
+        boolean isCircle = cardWidth > 0 && Math.abs(cardWidth - (rect.bottom - rect.top)) < density * 2;
+        float baseRadius = isCircle ? cardWidth / 2f : AppAdapter.cornerRadius(cardWidth, density);
+        float radius;
         if (evenPadding) {
             // The same padding on all four sides, so the band's corners are concentric with the tiles' everywhere.
             int inner = parent.getWidth() - parent.getPaddingLeft() - parent.getPaddingRight();
             // A single row's tiles can run off the screen, so only its top limits the padding; its ends are clamped below.
             float room = (singleRow ? rect.top : Math.min(rect.top, Math.min(rect.left, parent.getWidth() - rect.right))) - density;
-            float even = evenPaddingPx(inner, dockSize, cardWidth, room);
+            float maxEven = 16 * density;
+            float even = Math.min(maxEven, evenPaddingPx(inner, dockSize, cardWidth, room));
             rect.inset(-even, -even);
-            radius = radiusPx(radius, even);
+            radius = radiusPx(baseRadius, even);
         } else {
             // dock_even_padding off: the band as before, with its fixed 26 dp corners.
             rect.inset(singleRow ? -sidePad : -side, -pad);
-            radius = 26 * density;
+            radius = isCircle ? radiusPx(baseRadius, pad) : 26 * density;
         }
         if (singleRow) {
             // Tiles past the screen's edge: the band stops at the grid's edge with its rounded end instead of being
