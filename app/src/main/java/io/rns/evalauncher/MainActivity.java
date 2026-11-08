@@ -1756,7 +1756,8 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
             glass.setLayoutParams(lp);
             // GlassView draws its slab inset by pad, i.e. exactly over the zoomed tile: same corners as the tile.
             // list_layout: the bar is a pill around the name.
-            glass.setRadius(adapter.isListLayout() ? card.getHeight() * scale / 2f
+            glass.setRadius(adapter.isCircleTiles() ? card.getHeight() * scale / 2f
+                    : adapter.isListLayout() ? card.getHeight() * scale / 2f
                     : AppAdapter.cornerRadius(card.getWidth(), density) * scale);
         }
         glassCardW = card.getWidth();

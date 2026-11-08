@@ -300,6 +300,8 @@
          the focus up and down. Forces one column and ignores dock_row, single_row and rows_below_dock. Can also be
          set with "list_layout" in a theme. -->
     <bool name="list_layout">false</bool>
+    <!-- App tiles as round circular icons with colorful backdrops. Can also be set with "circle_tiles" or "tile_shape": "circle" in a theme. -->
+    <bool name="circle_tiles">false</bool>
     <!-- With single_row, the band runs behind every app in the row, apps installed later included, instead of
          the dock apps only. Can also be set with "dock_band_all" in a theme. -->
     <bool name="dock_band_all">false</bool>
