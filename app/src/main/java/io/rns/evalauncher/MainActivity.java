@@ -1742,8 +1742,10 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
         root.offsetDescendantRectToMyCoords(card, r);
         float pad = 6f * density;        // matches GlassView's glow inset
         float scale = adapter.focusScale();
-        float w = card.getWidth() * scale + 2 * pad;
-        float h = card.getHeight() * scale + 2 * pad;
+        float cardW = adapter.isCircleTiles() ? Math.min(card.getWidth(), card.getHeight()) : card.getWidth();
+        float cardH = adapter.isCircleTiles() ? Math.min(card.getWidth(), card.getHeight()) : card.getHeight();
+        float w = cardW * scale + 2 * pad;
+        float h = cardH * scale + 2 * pad;
         float x = r.exactCenterX() - w / 2f;
         // advanced_effects lifts a focused grid tile by 4dp and the glass follows it; dock tiles stay put (#2135).
         boolean lifted = advancedEffects && !DockSlots.inDockRow(dockRow, singleRow, position, COLUMNS);
@@ -1756,7 +1758,7 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
             glass.setLayoutParams(lp);
             // GlassView draws its slab inset by pad, i.e. exactly over the zoomed tile: same corners as the tile.
             // list_layout: the bar is a pill around the name.
-            glass.setRadius(adapter.isCircleTiles() ? card.getHeight() * scale / 2f
+            glass.setRadius(adapter.isCircleTiles() ? cardH * scale / 2f
                     : adapter.isListLayout() ? card.getHeight() * scale / 2f
                     : AppAdapter.cornerRadius(card.getWidth(), density) * scale);
         }

@@ -1,5 +1,13 @@
 [
   {
+    "id": "zen_monk",
+    "name": "Zen Monk Theme",
+    "author": "Rajat Shahare",
+    "description": "Serene watercolor meditating monk under cherry blossoms with true circular icons, warm parchment ivory palette, 100% dock opacity, and smooth animations",
+    "preview_url": "https://raw.githubusercontent.com/therajatshahare/eva-launcher/main/themes/zen_monk_preview.jpg",
+    "download_url": "https://raw.githubusercontent.com/therajatshahare/eva-launcher/main/themes/zen-monk-theme.zip"
+  },
+  {
     "id": "zen_buddha",
     "name": "Zen Buddha Theme",
     "author": "Rajat Shahare",
