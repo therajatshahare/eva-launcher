@@ -475,8 +475,14 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
         sourcePanelExtra = cfg.sourcePanelExtra;
         coocaaSources = cfg.coocaaSources;
 
+        boolean isLight = Config.isLightMode(this, cfg.themeMode);
+
         root = findViewById(R.id.root);
-        root.setBackgroundColor(cfg.backgroundColor);
+        if (isLight && cfg.backgroundColor == 0xFF000000) {
+            root.setBackgroundColor(0xFFF6F8FA);
+        } else {
+            root.setBackgroundColor(cfg.backgroundColor);
+        }
         // root fills the window with an opaque colour (Config keeps background_color opaque), so the window's own
         // black under it is a second full-screen fill on every frame for nothing. The starting window still uses
         // the theme's background, so launch looks the same.
@@ -486,6 +492,7 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
         sky.setIntensity(cfg.skyIntensity);
         glass = findViewById(R.id.glass);
         glass.setStyle(cfg.glassStyle);
+        if (isLight) glass.setLightMode(true);
         if (festive) glass.setAccent(festival.accentColor());
         ambient = findViewById(R.id.ambient);
         // The glow is one bitmap, so its alpha can be applied while drawing it. Otherwise every frame of
@@ -513,9 +520,20 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
         if (!cfg.dockTitle) hero.setVisibility(View.GONE);
         greeting = findViewById(R.id.greeting);
         clockBlock = findViewById(R.id.leftBlock);
-        greetingColor = greeting.getCurrentTextColor();
+        if (isLight) {
+            greetingColor = 0x990F172A;
+            greeting.setTextColor(greetingColor);
+            ((TextView) findViewById(R.id.clock)).setTextColor(0xFF0F172A);
+            ((TextView) findViewById(R.id.ampm)).setTextColor(0x8C0F172A);
+            findViewById(R.id.clockDivider).setBackgroundColor(0x330F172A);
+            ((TextView) findViewById(R.id.date)).setTextColor(0xB30F172A);
+            heroName.setTextColor(0xFF0F172A);
+            heroMeta.setTextColor(0xB30F172A);
+        } else {
+            greetingColor = greeting.getCurrentTextColor();
+        }
         if (!cfg.showGreeting) greeting.setVisibility(View.GONE);
-        if (cfg.headerWhite) {
+        if (cfg.headerWhite && !isLight) {
             // The clock's own white for the date and the line before it, instead of their dimmed whites.
             ((TextView) findViewById(R.id.date)).setTextColor(Color.WHITE);
             findViewById(R.id.clockDivider).setBackgroundColor(Color.WHITE);
@@ -564,6 +582,11 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
             date.setTextSize(11f);
             lunarDate.setTextSize(11f);
             date.setPadding(0, (int) (4 * density), 0, 0);
+        }
+        if (isLight) {
+            if (shamsiDate != null) shamsiDate.setTextColor(0xB30F172A);
+            if (lunarDate != null) lunarDate.setTextColor(0xB30F172A);
+            if (stats != null) stats.setTextColor(0x8C0F172A);
         }
         vpnApp = cfg.vpnApp;
         vpnPill = cfg.vpnPill && !cfg.topMenu;
@@ -646,7 +669,7 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
             }
         });
         if (dockRow) grid.addItemDecoration(new DockDecoration(COLUMNS, density, cinematic, cfg.alwaysShowNames, cfg.dockOpacity, cfg.dockGlass, cfg.dockEvenPadding, cfg.dockBand,
-                singleRow, cfg.dockBandAll));
+                singleRow, cfg.dockBandAll, isLight));
         if (cfg.fadeRows) TopFade.attach(grid, 48 * density);
         // Reduced motion: the tiles are simply there, with no entrance (reloadApps skips it there too).
         if (animations && !reducedMotion) {
@@ -887,6 +910,19 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
                 button.setOnFocusChangeListener((view, focused) -> view.animate()
                         .scaleX(focused ? 1.04f : 1f).scaleY(focused ? 1.04f : 1f)
                         .setDuration(reducedMotion ? Motion.REDUCED_MS : 160).start());
+            }
+        }
+        if (isLight) {
+            List<View> allPills = new ArrayList<>(Arrays.asList(btnInputs, btnWifi, btnVpn, btnReorder, btnLibraryTop, btnSettings));
+            allPills.addAll(topAppButtons);
+            android.content.res.ColorStateList textColors = androidx.core.content.ContextCompat.getColorStateList(this, R.color.pill_text_light);
+            for (View p : allPills) {
+                p.setBackgroundResource(R.drawable.pill_bg_light);
+                if (p instanceof TextView) {
+                    TextView tv = (TextView) p;
+                    tv.setTextColor(textColors);
+                    androidx.core.widget.TextViewCompat.setCompoundDrawableTintList(tv, textColors);
+                }
             }
         }
         if (festive) applyFestiveSkin((TextView) btnInputs, (TextView) btnSettings);

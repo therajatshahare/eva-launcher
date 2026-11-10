@@ -64,7 +64,8 @@ final class WallpaperPlayer {
 
     WallpaperPlayer(Context context, FrameLayout root, Config config) {
         this.root = root;
-        backgroundColor = config.backgroundColor;
+        backgroundColor = (Config.isLightMode(context, config.themeMode) && config.backgroundColor == 0xFF000000)
+                ? 0xFFF6F8FA : config.backgroundColor;
         files = new ArrayList<>(config.wallpapers);
         interval = config.wallpaperRotationMinutes * 60_000L;
         bitmapConfig = config.wallpaperTrueColor ? Bitmap.Config.ARGB_8888 : Bitmap.Config.RGB_565;

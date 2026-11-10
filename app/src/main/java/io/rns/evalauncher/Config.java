@@ -44,6 +44,19 @@ final class Config {
     static final String WALLPAPER_CHOICE_KEY = "wallpaper_choice";
     static final String DOCK_OPACITY_KEY = "dock_opacity";
     static final String CLOCK_FORMAT_KEY = "clock_format";
+    static final String THEME_MODE_KEY = "theme_mode";
+    static final String THEME_MODE_DARK = "dark";
+    static final String THEME_MODE_LIGHT = "light";
+    static final String THEME_MODE_SYSTEM = "system";
+
+    static boolean isLightMode(Context ctx, String themeMode) {
+        if (THEME_MODE_LIGHT.equals(themeMode)) return true;
+        if (THEME_MODE_SYSTEM.equals(themeMode)) {
+            int night = ctx.getResources().getConfiguration().uiMode & android.content.res.Configuration.UI_MODE_NIGHT_MASK;
+            return night == android.content.res.Configuration.UI_MODE_NIGHT_NO;
+        }
+        return false;
+    }
     /**
      * Counts the changes made in Launcher settings. Home remembers the count it was built with and rebuilds on
      * resume when it differs, however the settings were left (see MainActivity#onResume).
@@ -278,6 +291,8 @@ final class Config {
      * (config.xml, list_layout). It forces one column, no dock band and no rows below the dock.
      */
     final boolean listLayout;
+    /** Current active color mode: "dark", "light", or "system". */
+    final String themeMode;
 
     private Config(List<String> dockApps, boolean fillDock, List<String> hiddenApps, List<String> libraryApps, List<String> libraryExcludedApps, String liveTvPackage,
                    String liveTvAction, String liveTvInputId, Map<String, String> launchActions, Map<String, String> appLabels,
@@ -293,7 +308,7 @@ final class Config {
                    boolean keyFilter, boolean dockGlass, String glowStyle, boolean wallpaperCaptions,
                    boolean handleViewInputs, boolean tileMenu, boolean dockEvenPadding, boolean dockBand, boolean cinematicDots, boolean cinematicWhiteFocus, boolean wifiStatusColor, int cinematicScrim, int cinematicArt,
                    Map<String, Set<String>> wallpaperMoods, boolean gamepadPassthrough, boolean consumeVolumeKeys, boolean powerOnHome, boolean homeLongPressHome, boolean wifiStatusWarnings, List<String> topBarApps, boolean showGreeting, boolean headerWhite, boolean clockWallpaper, int clockWallpaperDim, boolean clockGlow, String glassStyle, boolean singleRow, boolean dockBandAll, boolean lunarDate, int lunarUtcOffset, boolean dateBelowClock, boolean vpnPill, String locale, boolean powerOnHomeAlways, boolean inputsConnectedOnly,
-                   int openOnStartNetworkWait, boolean iconOnlyVpn, String clockFormat, boolean backOpensClock, boolean listLayout, boolean circleTiles) {
+                   int openOnStartNetworkWait, boolean iconOnlyVpn, String clockFormat, boolean backOpensClock, boolean listLayout, boolean circleTiles, String themeMode) {
         this.handleViewInputs = handleViewInputs;
         this.tileMenu = tileMenu;
         this.inputKeycodes = inputKeycodes;
@@ -406,6 +421,7 @@ final class Config {
         this.dockBandAll = dockBandAll;
         this.listLayout = listLayout;
         this.circleTiles = circleTiles;
+        this.themeMode = themeMode;
         this.glowStyle = glowStyle(glowStyle);
         this.wallpaperCaptions = wallpaperCaptions;
         this.glassStyle = glassStyle(glassStyle);
@@ -682,6 +698,10 @@ final class Config {
         int dockOpacity = json == null ? 100 : integer(json, "dock_opacity", 100, 30, 100);
         dockOpacity = chosenDockOpacity(choices.getInt(DOCK_OPACITY_KEY, -1), dockOpacity);
         clockFormat = choices.getString(CLOCK_FORMAT_KEY, clockFormat);
+        String themeMode = choices.getString(THEME_MODE_KEY, THEME_MODE_DARK);
+        if (!THEME_MODE_LIGHT.equals(themeMode) && !THEME_MODE_SYSTEM.equals(themeMode)) {
+            themeMode = THEME_MODE_DARK;
+        }
         String wallpaperOrder = json == null ? WallpaperRotation.ORDER_SHUFFLE
                 : string(json, "wallpaper_order", WallpaperRotation.ORDER_SHUFFLE);
         // An unknown order must not silently change how an existing collection rotates.
@@ -721,7 +741,8 @@ final class Config {
                 consumeVolumeKeys, powerOnHome, homeLongPressHome, wifiStatusWarnings, topBarApps, showGreeting, headerWhite, clockWallpaper,
                 Math.max(0, Math.min(90, clockWallpaperDim)), clockGlow, glassStyle, singleRow && dockRow, dockBandAll, lunar, lunarOffset,
                 dateBelowClock, vpnPill, locale, powerOnHomeAlways, inputsConnectedOnly,
-                Math.max(0, Math.min(600, openOnStartNetworkWait)), iconOnlyVpn, clockFormat, backOpensClock, listLayout, circleTiles);
+                Math.max(0, Math.min(600, openOnStartNetworkWait)), iconOnlyVpn, clockFormat, backOpensClock, listLayout, circleTiles,
+                themeMode);
     }
 
     /**

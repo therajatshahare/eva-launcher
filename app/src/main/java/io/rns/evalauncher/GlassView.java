@@ -69,6 +69,32 @@ public class GlassView extends View {
         invalidate();
     }
 
+    private boolean isLight;
+
+    void setLightMode(boolean isLight) {
+        this.isLight = isLight;
+        if (isLight) {
+            glowRgb = 0x000000;
+            glowAlpha = 0x18;
+            rim.setColor(0x80000000);
+        } else {
+            glowRgb = 0xFFFFFF;
+            glowAlpha = 0x30;
+            rim.setColor(0xCCFFFFFF);
+        }
+        if (getHeight() > 0) {
+            fill.setShader(new LinearGradient(0, 0, 0, getHeight(),
+                    isLight ? 0x1A000000 : 0x3DFFFFFF,
+                    isLight ? 0x08000000 : 0x12FFFFFF,
+                    Shader.TileMode.CLAMP));
+            specular.setShader(new LinearGradient(0, 0, 0, getHeight() * 0.45f,
+                    isLight ? 0x22000000 : 0x66FFFFFF,
+                    0x00FFFFFF,
+                    Shader.TileMode.CLAMP));
+        }
+        invalidate();
+    }
+
     void setRadius(float px) {
         radius = px;
         invalidate();
@@ -77,8 +103,14 @@ public class GlassView extends View {
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
-        fill.setShader(new LinearGradient(0, 0, 0, h, 0x3DFFFFFF, 0x12FFFFFF, Shader.TileMode.CLAMP));
-        specular.setShader(new LinearGradient(0, 0, 0, h * 0.45f, 0x66FFFFFF, 0x00FFFFFF, Shader.TileMode.CLAMP));
+        fill.setShader(new LinearGradient(0, 0, 0, h,
+                isLight ? 0x1A000000 : 0x3DFFFFFF,
+                isLight ? 0x08000000 : 0x12FFFFFF,
+                Shader.TileMode.CLAMP));
+        specular.setShader(new LinearGradient(0, 0, 0, h * 0.45f,
+                isLight ? 0x22000000 : 0x66FFFFFF,
+                0x00FFFFFF,
+                Shader.TileMode.CLAMP));
     }
 
     @Override

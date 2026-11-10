@@ -188,6 +188,7 @@ public final class ThemeFetcher {
                         .remove(Config.WALLPAPER_CHOICE_KEY)
                         .remove(Config.ROWS_BELOW_DOCK_KEY)
                         .remove(Config.DOCK_OPACITY_KEY)
+                        .remove(Config.THEME_MODE_KEY)
                         .remove("columns")
                         .apply();
 

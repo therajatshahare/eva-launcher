@@ -40,10 +40,12 @@ public final class LauncherSettingsActivity extends Activity {
     private SharedPreferences choices;
     private static final int[] DOCK_OPACITIES = {30, 50, 70, 100};
     private static final String[] CLOCK_FORMATS = {"system", "12", "24"};
+    private static final String[] THEME_MODES = {Config.THEME_MODE_DARK, Config.THEME_MODE_LIGHT, Config.THEME_MODE_SYSTEM};
     private int columns;
     private int rowsBelowDock;
     private int dockOpacity;
     private String clockFormat;
+    private String themeMode;
     private boolean animations;
     private boolean advancedEffects;
     private Config config;
@@ -80,6 +82,7 @@ public final class LauncherSettingsActivity extends Activity {
         rowsBelowDock = config.rowsBelowDock;
         dockOpacity = config.dockOpacity;
         clockFormat = config.clockFormat;
+        themeMode = config.themeMode;
         animations = config.animations;
         advancedEffects = config.animations && config.advancedEffects;
 
@@ -97,6 +100,17 @@ public final class LauncherSettingsActivity extends Activity {
         RecyclerView grid = findViewById(R.id.categoryGrid);
         grid.setLayoutManager(new GridLayoutManager(this, 3));
         grid.setAdapter(new CategoryAdapter(this, categories, this::openCategorySection));
+
+        boolean isLight = Config.isLightMode(this, themeMode);
+        if (isLight) {
+            findViewById(R.id.settingsRoot).setBackgroundColor(0xFFF8FAFC);
+            TextView title = findViewById(R.id.settingsTitle);
+            if (title != null) title.setTextColor(0xFF0F172A);
+            TextView subtitle = findViewById(R.id.settingsSubtitle);
+            if (subtitle != null) subtitle.setTextColor(0xFF64748B);
+            TextView footer = findViewById(R.id.settingsFooter);
+            if (footer != null) footer.setTextColor(0xFF64748B);
+        }
 
         View chai = findViewById(R.id.chaiButton);
         if (chai != null) {
@@ -117,6 +131,9 @@ public final class LauncherSettingsActivity extends Activity {
     /** The UPI QR for "Buy me a chai". The code is drawn without smoothing so its modules stay sharp. */
     private void showChaiDialog() {
         View view = getLayoutInflater().inflate(R.layout.dialog_chai, null);
+        if (Config.isLightMode(this, themeMode)) {
+            view.setBackgroundResource(R.drawable.dialog_rounded_bg_light);
+        }
         ImageView qr = view.findViewById(R.id.chaiQr);
         Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.upi_qr);
         if (bitmap != null) {
@@ -174,6 +191,7 @@ public final class LauncherSettingsActivity extends Activity {
     private static final int ITEM_COLUMNS = 101;
     private static final int ITEM_ROWS = 102;
     private static final int ITEM_DOCK = 103;
+    private static final int ITEM_THEME_MODE = 104;
 
     private static final int ITEM_CLOCK_FORMAT = 201;
     private static final int ITEM_ANIMATIONS = 202;
@@ -216,6 +234,7 @@ public final class LauncherSettingsActivity extends Activity {
                 items.add(new SubGridItem(ITEM_COLUMNS, getString(R.string.columns_label), "‹ " + columns + " ›", "Press OK to cycle (4..7)"));
                 items.add(new SubGridItem(ITEM_ROWS, getString(R.string.rows_below_dock_label), "‹ " + rowsBelowDock + " ›", "Press OK to cycle (0..3)"));
                 items.add(new SubGridItem(ITEM_DOCK, getString(R.string.dock_opacity_label), "‹ " + dockOpacity + "% ›", "Press OK to cycle opacity"));
+                items.add(new SubGridItem(ITEM_THEME_MODE, getString(R.string.theme_mode_label), "‹ " + themeModeLabel(themeMode) + " ›", "Press OK to cycle Dark/Light/System"));
                 break;
 
             case CAT_CLOCK:
@@ -261,6 +280,13 @@ public final class LauncherSettingsActivity extends Activity {
 
         gridView.setLayoutManager(new GridLayoutManager(this, 2));
 
+        boolean isLight = Config.isLightMode(this, themeMode);
+        if (isLight) {
+            dialogView.setBackgroundResource(R.drawable.dialog_rounded_bg_light);
+            title.setTextColor(0xFF059669);
+            subtitle.setTextColor(0xFF64748B);
+        }
+
         AlertDialog dialog = new AlertDialog.Builder(this)
                 .setView(dialogView)
                 .create();
@@ -268,6 +294,13 @@ public final class LauncherSettingsActivity extends Activity {
         if (dialog.getWindow() != null) {
             dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
         }
+
+        final String origMode = themeMode;
+        dialog.setOnDismissListener(d -> {
+            if (!origMode.equals(themeMode)) {
+                recreate();
+            }
+        });
 
         SubGridAdapter adapter = new SubGridAdapter(this, items, (item, holder) -> {
             handleSubGridClick(item, holder, dialog);
@@ -307,6 +340,15 @@ public final class LauncherSettingsActivity extends Activity {
                 choices.edit().putInt(Config.DOCK_OPACITY_KEY, dockOpacity).apply();
                 changed();
                 item.value = "‹ " + dockOpacity + "% ›";
+                if (holder != null) holder.value.setText(item.value);
+                break;
+
+            case ITEM_THEME_MODE:
+                int tmIdx = indexOfStr(THEME_MODES, themeMode);
+                themeMode = THEME_MODES[(tmIdx + 1) % THEME_MODES.length];
+                choices.edit().putString(Config.THEME_MODE_KEY, themeMode).apply();
+                changed();
+                item.value = "‹ " + themeModeLabel(themeMode) + " ›";
                 if (holder != null) holder.value.setText(item.value);
                 break;
 
@@ -364,6 +406,7 @@ public final class LauncherSettingsActivity extends Activity {
                         .remove(Config.DOCK_OPACITY_KEY)
                         .remove(Config.ROWS_BELOW_DOCK_KEY)
                         .remove(Config.CLOCK_FORMAT_KEY)
+                        .remove(Config.THEME_MODE_KEY)
                         .apply();
                 changed();
                 Toast.makeText(this, "Default theme restored", Toast.LENGTH_SHORT).show();
@@ -430,6 +473,12 @@ public final class LauncherSettingsActivity extends Activity {
         return getString(R.string.clock_format_system);
     }
 
+    private static String themeModeLabel(String mode) {
+        if (Config.THEME_MODE_LIGHT.equals(mode)) return "Light";
+        if (Config.THEME_MODE_SYSTEM.equals(mode)) return "System";
+        return "Dark";
+    }
+
     private void openUrl(String url) {
         try {
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
@@ -477,6 +526,14 @@ public final class LauncherSettingsActivity extends Activity {
             holder.title.setText(item.title);
             holder.value.setText(item.value);
             holder.hint.setText(item.hint);
+
+            boolean isLight = Config.isLightMode(activity, ((LauncherSettingsActivity) activity).themeMode);
+            if (isLight) {
+                holder.card.setBackgroundResource(R.drawable.settings_choice_bg_light);
+                holder.title.setTextColor(0xFF059669);
+                holder.value.setTextColor(0xFF0F172A);
+                holder.hint.setTextColor(0xFF64748B);
+            }
 
             final float density = activity.getResources().getDisplayMetrics().density;
             holder.card.setOnFocusChangeListener((v, focused) -> {
@@ -544,6 +601,12 @@ public final class LauncherSettingsActivity extends Activity {
             holder.title.setText(item.title);
             holder.icon.setImageResource(item.iconRes);
 
+            boolean isLight = Config.isLightMode(activity, ((LauncherSettingsActivity) activity).themeMode);
+            if (isLight) {
+                holder.card.setBackgroundResource(R.drawable.settings_choice_bg_light);
+                holder.title.setTextColor(0xFF0F172A);
+            }
+
             final float density = activity.getResources().getDisplayMetrics().density;
             holder.card.setOnFocusChangeListener((v, focused) -> {
                 float scale = focused ? 1.05f : 1.00f;
@@ -598,7 +661,13 @@ public final class LauncherSettingsActivity extends Activity {
 
     private void showThemeStoreDialog() {
         View view = getLayoutInflater().inflate(R.layout.dialog_theme_store, null);
+        if (Config.isLightMode(this, themeMode)) {
+            view.setBackgroundResource(R.drawable.dialog_rounded_bg_light);
+        }
         TextView subtitle = view.findViewById(R.id.storeSubtitle);
+        if (subtitle != null && Config.isLightMode(this, themeMode)) {
+            subtitle.setTextColor(0xFF64748B);
+        }
         RecyclerView grid = view.findViewById(R.id.themeStoreGrid);
         grid.setLayoutManager(new GridLayoutManager(this, 2));
 
@@ -726,6 +795,9 @@ public final class LauncherSettingsActivity extends Activity {
         File wallpapersSubDir = dir == null ? null : new File(dir, "wallpapers");
 
         View dialogView = getLayoutInflater().inflate(R.layout.dialog_wallpaper_picker, null);
+        if (Config.isLightMode(this, themeMode)) {
+            dialogView.setBackgroundResource(R.drawable.dialog_rounded_bg_light);
+        }
         RecyclerView grid = dialogView.findViewById(R.id.wallpaperGrid);
         grid.setLayoutManager(new GridLayoutManager(this, 3));
 

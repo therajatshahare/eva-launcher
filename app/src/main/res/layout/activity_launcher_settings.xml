@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/settingsRoot"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FF0F141A"
@@ -13,6 +14,7 @@
 
     <!-- Title & Subtitle Header -->
     <TextView
+        android:id="@+id/settingsTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/launcher_settings"
@@ -21,6 +23,7 @@
         android:fontFamily="@string/font_medium" />
 
     <TextView
+        android:id="@+id/settingsSubtitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
@@ -48,6 +51,7 @@
         android:orientation="horizontal">
 
         <TextView
+            android:id="@+id/settingsFooter"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"

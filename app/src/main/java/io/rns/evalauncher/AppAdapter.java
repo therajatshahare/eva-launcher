@@ -232,6 +232,7 @@ public class AppAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private final boolean uniformTiles;
     /** Packages drawn from their icon and name even when they have a banner (config.xml icon_tiles). */
     private final Set<String> iconTiles;
+    private final boolean isLight;
     private final List<Entry> items = new ArrayList<>();
 
     AppAdapter(Context ctx, TileListener listener, int dockSize, Config cfg) {
@@ -254,6 +255,7 @@ public class AppAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         this.singleRow = cfg.singleRow;
         this.listLayout = cfg.listLayout;
         this.circleTiles = cfg.circleTiles;
+        this.isLight = Config.isLightMode(ctx, cfg.themeMode);
         this.restNameAlpha = cfg.alwaysShowNames ? 0.75f : 0f;
         this.cinematic = cfg.cinematicHome;
         this.launchActions = cfg.launchActions;
@@ -472,7 +474,7 @@ public class AppAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             View label = v.findViewById(R.id.label);
             label.setPadding(label.getPaddingLeft(), label.getPaddingTop(), label.getPaddingRight(), Math.round(4f * density));
         }
-        return new Holder(v, listener, animations, advancedEffects, reducedMotion, restNameAlpha, focusOvershoot, circleTiles);
+        return new Holder(v, listener, animations, advancedEffects, reducedMotion, restNameAlpha, focusOvershoot, circleTiles, isLight);
     }
 
     /**
@@ -510,7 +512,8 @@ public class AppAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         if (light != null) label.setTypeface(light);
         label.setVisibility(View.VISIBLE);
         label.setAlpha(LIST_REST_ALPHA);
-        Holder holder = new Holder(v, listener, animations, advancedEffects, reducedMotion, restNameAlpha, focusOvershoot, circleTiles);
+        if (isLight) label.setTextColor(0xFF0F172A);
+        Holder holder = new Holder(v, listener, animations, advancedEffects, reducedMotion, restNameAlpha, focusOvershoot, circleTiles, isLight);
         holder.listRow = true;
         return holder;
     }
@@ -534,6 +537,7 @@ public class AppAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         h.card.setVisibility(View.VISIBLE);
         h.card.setFocusable(true);
         h.name.setText(e.name);
+        h.name.setTextColor(isLight ? 0xF20F172A : 0xF2FFFFFF);
         // The dock has no labels, unless always_show_names asks for them (DockDecoration then makes room in the band).
         // In a single row every tile is the dock's kind: the big title above names it.
         boolean dockKind = DockSlots.inDockRow(dockRow, singleRow, position, dockSize);
@@ -565,6 +569,7 @@ public class AppAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             h.icon.setImageDrawable(e.icon);
             h.icon.setVisibility(View.VISIBLE);
             h.label.setText(e.label);
+            h.label.setTextColor(isLight ? 0xFF0F172A : 0xFFFFFFFF);
             h.label.setVisibility((uniformTiles || circleTiles) ? View.GONE : View.VISIBLE);
         }
         if (listLayout) {
@@ -986,10 +991,10 @@ public class AppAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         boolean listRow;
 
         Holder(View v, TileListener listener, boolean animations, boolean advancedEffects,
-               boolean reducedMotion, float restNameAlpha, boolean overshoot, boolean circleTiles) {
+               boolean reducedMotion, float restNameAlpha, boolean overshoot, boolean circleTiles, boolean isLight) {
             super(v);
             card = v.findViewById(R.id.card);
-            cardBackground = card.getBackground();
+            cardBackground = isLight ? androidx.core.content.ContextCompat.getDrawable(v.getContext(), R.drawable.tile_bg_light) : card.getBackground();
             banner = v.findViewById(R.id.banner);
             icon = v.findViewById(R.id.icon);
             label = v.findViewById(R.id.label);
