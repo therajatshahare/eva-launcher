@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chaiDialogRoot"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/dialog_rounded_bg"
@@ -8,6 +9,7 @@
     android:padding="28dp">
 
     <TextView
+        android:id="@+id/chaiTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/chai_title"
@@ -16,6 +18,7 @@
         android:fontFamily="@string/font_medium" />
 
     <TextView
+        android:id="@+id/chaiSubtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
@@ -36,15 +39,17 @@
         android:scaleType="fitCenter" />
 
     <TextView
+        android:id="@+id/chaiUpiId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="14dp"
         android:text="@string/chai_upi_id"
         android:textColor="#FFFFFFFF"
-        android:textSize="14sp"
+        android:textSize="15sp"
         android:fontFamily="@string/font_medium" />
 
     <TextView
+        android:id="@+id/chaiThanks"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"

@@ -102,6 +102,7 @@ public final class LauncherSettingsActivity extends Activity {
         grid.setAdapter(new CategoryAdapter(this, categories, this::openCategorySection));
 
         boolean isLight = Config.isLightMode(this, themeMode);
+        TextView chaiBtn = findViewById(R.id.chaiButton);
         if (isLight) {
             findViewById(R.id.settingsRoot).setBackgroundColor(0xFFF8FAFC);
             TextView title = findViewById(R.id.settingsTitle);
@@ -110,12 +111,16 @@ public final class LauncherSettingsActivity extends Activity {
             if (subtitle != null) subtitle.setTextColor(0xFF64748B);
             TextView footer = findViewById(R.id.settingsFooter);
             if (footer != null) footer.setTextColor(0xFF64748B);
+            if (chaiBtn != null) {
+                chaiBtn.setBackgroundResource(R.drawable.settings_choice_bg_light);
+                chaiBtn.setTextColor(0xFF0F172A);
+                chaiBtn.setCompoundDrawableTintList(android.content.res.ColorStateList.valueOf(0xFF059669));
+            }
         }
 
-        View chai = findViewById(R.id.chaiButton);
-        if (chai != null) {
+        if (chaiBtn != null) {
             final float density = getResources().getDisplayMetrics().density;
-            chai.setOnFocusChangeListener((v, focused) -> {
+            chaiBtn.setOnFocusChangeListener((v, focused) -> {
                 v.animate()
                         .scaleX(focused ? 1.05f : 1.00f)
                         .scaleY(focused ? 1.05f : 1.00f)
@@ -124,15 +129,29 @@ public final class LauncherSettingsActivity extends Activity {
                         .setInterpolator(focused ? new DecelerateInterpolator(1.5f) : new AccelerateInterpolator())
                         .start();
             });
-            chai.setOnClickListener(v -> showChaiDialog());
+            chaiBtn.setOnClickListener(v -> showChaiDialog());
         }
     }
 
     /** The UPI QR for "Buy me a chai". The code is drawn without smoothing so its modules stay sharp. */
     private void showChaiDialog() {
         View view = getLayoutInflater().inflate(R.layout.dialog_chai, null);
-        if (Config.isLightMode(this, themeMode)) {
+        TextView doneButton = view.findViewById(R.id.chaiDoneButton);
+        boolean isLight = Config.isLightMode(this, themeMode);
+        if (isLight) {
             view.setBackgroundResource(R.drawable.dialog_rounded_bg_light);
+            TextView title = view.findViewById(R.id.chaiTitle);
+            if (title != null) title.setTextColor(0xFF059669);
+            TextView subtitle = view.findViewById(R.id.chaiSubtitle);
+            if (subtitle != null) subtitle.setTextColor(0xFF64748B);
+            TextView upiId = view.findViewById(R.id.chaiUpiId);
+            if (upiId != null) upiId.setTextColor(0xFF0F172A);
+            TextView thanks = view.findViewById(R.id.chaiThanks);
+            if (thanks != null) thanks.setTextColor(0xFF64748B);
+            if (doneButton != null) {
+                doneButton.setBackgroundResource(R.drawable.settings_choice_bg_light);
+                doneButton.setTextColor(0xFF0F172A);
+            }
         }
         ImageView qr = view.findViewById(R.id.chaiQr);
         Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.upi_qr);
@@ -146,7 +165,6 @@ public final class LauncherSettingsActivity extends Activity {
                 .setView(view)
                 .create();
 
-        TextView doneButton = view.findViewById(R.id.chaiDoneButton);
         if (doneButton != null) {
             final float density = getResources().getDisplayMetrics().density;
             doneButton.setOnFocusChangeListener((v, focused) -> {

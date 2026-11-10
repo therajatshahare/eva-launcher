@@ -478,10 +478,10 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
         boolean isLight = Config.isLightMode(this, cfg.themeMode);
 
         root = findViewById(R.id.root);
-        if (isLight && cfg.backgroundColor == 0xFF000000) {
-            root.setBackgroundColor(0xFFF6F8FA);
+        if (isLight) {
+            root.setBackgroundColor(cfg.backgroundColor != 0xFF000000 ? cfg.backgroundColor : 0xFFF6F8FA);
         } else {
-            root.setBackgroundColor(cfg.backgroundColor);
+            root.setBackgroundColor(0xFF000000);
         }
         // root fills the window with an opaque colour (Config keeps background_color opaque), so the window's own
         // black under it is a second full-screen fill on every frame for nothing. The starting window still uses

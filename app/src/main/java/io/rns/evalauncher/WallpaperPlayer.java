@@ -64,13 +64,19 @@ final class WallpaperPlayer {
 
     WallpaperPlayer(Context context, FrameLayout root, Config config) {
         this.root = root;
-        backgroundColor = (Config.isLightMode(context, config.themeMode) && config.backgroundColor == 0xFF000000)
-                ? 0xFFF6F8FA : config.backgroundColor;
+        boolean isLight = Config.isLightMode(context, config.themeMode);
+        backgroundColor = isLight
+                ? (config.backgroundColor != 0xFF000000 ? config.backgroundColor : 0xFFF6F8FA)
+                : 0xFF000000;
         files = new ArrayList<>(config.wallpapers);
         interval = config.wallpaperRotationMinutes * 60_000L;
         bitmapConfig = config.wallpaperTrueColor ? Bitmap.Config.ARGB_8888 : Bitmap.Config.RGB_565;
-        // The dim is painted into the picture (decode), so no full-screen shade layer is drawn on every frame.
-        dimColor = config.wallpaperDim > 0 ? (config.wallpaperDim * 255 / 100) << 24 : 0;
+        // In dark mode, if the theme wallpaper has no explicit dim, apply a 45% dark scrim so light wallpapers become dark and white text pops.
+        int effectiveDim = config.wallpaperDim;
+        if (!isLight && effectiveDim == 0) {
+            effectiveDim = 45;
+        }
+        dimColor = effectiveDim > 0 ? (effectiveDim * 255 / 100) << 24 : 0;
         order = config.wallpaperOrder;
         preferences = context.getSharedPreferences("wallpaper_rotation", Context.MODE_PRIVATE);
         moods = config.wallpaperMoods;
