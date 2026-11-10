@@ -70,13 +70,17 @@ final class WallpaperPlayer {
                 : 0xFF000000;
         files = new ArrayList<>(config.wallpapers);
         interval = config.wallpaperRotationMinutes * 60_000L;
-        bitmapConfig = config.wallpaperTrueColor ? Bitmap.Config.ARGB_8888 : Bitmap.Config.RGB_565;
-        // In dark mode, if the theme wallpaper has no explicit dim, apply a 45% dark scrim so light wallpapers become dark and white text pops.
-        int effectiveDim = config.wallpaperDim;
-        if (!isLight && effectiveDim == 0) {
-            effectiveDim = 45;
+        bitmapConfig = (isLight || config.wallpaperTrueColor) ? Bitmap.Config.ARGB_8888 : Bitmap.Config.RGB_565;
+        if (isLight) {
+            // In light mode, apply a frosted daylight scrim (70% white wash) so any wallpaper
+            // turns bright and airy, making dark text, clock, greeting and pills pop with high contrast.
+            dimColor = 0xB3FFFFFF;
+        } else {
+            // In dark mode, if the theme wallpaper has no explicit dim, apply a 45% dark scrim
+            // so light wallpapers become dark and white text pops.
+            int effectiveDim = config.wallpaperDim > 0 ? config.wallpaperDim : 45;
+            dimColor = (effectiveDim * 255 / 100) << 24;
         }
-        dimColor = effectiveDim > 0 ? (effectiveDim * 255 / 100) << 24 : 0;
         order = config.wallpaperOrder;
         preferences = context.getSharedPreferences("wallpaper_rotation", Context.MODE_PRIVATE);
         moods = config.wallpaperMoods;
@@ -97,7 +101,7 @@ final class WallpaperPlayer {
         image.setImportantForAccessibility(View.IMPORTANT_FOR_ACCESSIBILITY_NO);
         names = config.wallpaperCaptions && config.wallpaperEnabled && !files.isEmpty()
                 ? WallpaperCaptions.read(files.get(0).getParentFile()) : Collections.emptyMap();
-        caption = names.isEmpty() ? null : makeCaption(context, root);
+        caption = names.isEmpty() ? null : makeCaption(context, root, isLight);
         if (config.wallpaperEnabled && !files.isEmpty()) {
             root.addView(image, 0, new FrameLayout.LayoutParams(
                     ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
@@ -214,12 +218,17 @@ final class WallpaperPlayer {
      * Small light text under the top-right buttons, above everything else and never focusable. It sits where the
      * top bar ends in every layout, so it does not cover the clock, the stats line or the tiles.
      */
-    private static TextView makeCaption(Context context, FrameLayout root) {
+    private static TextView makeCaption(Context context, FrameLayout root, boolean isLight) {
         float dp = context.getResources().getDisplayMetrics().density;
         TextView text = new TextView(context);
         text.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15);
-        text.setTextColor(0xD9FFFFFF);
-        text.setShadowLayer(6 * dp, 0, dp, 0xCC000000);
+        if (isLight) {
+            text.setTextColor(0xD90F172A);
+            text.setShadowLayer(4 * dp, 0, dp, 0x40FFFFFF);
+        } else {
+            text.setTextColor(0xD9FFFFFF);
+            text.setShadowLayer(6 * dp, 0, dp, 0xCC000000);
+        }
         text.setSingleLine(true);
         text.setEllipsize(TextUtils.TruncateAt.END);
         text.setMaxWidth(Math.round(520 * dp));
