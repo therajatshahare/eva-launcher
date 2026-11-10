@@ -50,12 +50,7 @@ final class Config {
     static final String THEME_MODE_SYSTEM = "system";
 
     static boolean isLightMode(Context ctx, String themeMode) {
-        if (THEME_MODE_LIGHT.equals(themeMode)) return true;
-        if (THEME_MODE_SYSTEM.equals(themeMode)) {
-            int night = ctx.getResources().getConfiguration().uiMode & android.content.res.Configuration.UI_MODE_NIGHT_MASK;
-            return night == android.content.res.Configuration.UI_MODE_NIGHT_NO;
-        }
-        return false;
+        return THEME_MODE_LIGHT.equals(themeMode);
     }
     /**
      * Counts the changes made in Launcher settings. Home remembers the count it was built with and rebuilds on
@@ -698,9 +693,9 @@ final class Config {
         int dockOpacity = json == null ? 100 : integer(json, "dock_opacity", 100, 30, 100);
         dockOpacity = chosenDockOpacity(choices.getInt(DOCK_OPACITY_KEY, -1), dockOpacity);
         clockFormat = choices.getString(CLOCK_FORMAT_KEY, clockFormat);
-        String themeMode = choices.getString(THEME_MODE_KEY, THEME_MODE_DARK);
-        if (!THEME_MODE_LIGHT.equals(themeMode) && !THEME_MODE_SYSTEM.equals(themeMode)) {
-            themeMode = THEME_MODE_DARK;
+        String themeMode = choices.getString(THEME_MODE_KEY, THEME_MODE_SYSTEM);
+        if (!THEME_MODE_LIGHT.equals(themeMode) && !THEME_MODE_DARK.equals(themeMode)) {
+            themeMode = THEME_MODE_SYSTEM;
         }
         String wallpaperOrder = json == null ? WallpaperRotation.ORDER_SHUFFLE
                 : string(json, "wallpaper_order", WallpaperRotation.ORDER_SHUFFLE);

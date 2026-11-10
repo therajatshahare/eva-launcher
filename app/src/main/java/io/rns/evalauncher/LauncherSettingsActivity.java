@@ -40,7 +40,7 @@ public final class LauncherSettingsActivity extends Activity {
     private SharedPreferences choices;
     private static final int[] DOCK_OPACITIES = {30, 50, 70, 100};
     private static final String[] CLOCK_FORMATS = {"system", "12", "24"};
-    private static final String[] THEME_MODES = {Config.THEME_MODE_DARK, Config.THEME_MODE_LIGHT, Config.THEME_MODE_SYSTEM};
+    private static final String[] THEME_MODES = {Config.THEME_MODE_SYSTEM, Config.THEME_MODE_LIGHT, Config.THEME_MODE_DARK};
     private int columns;
     private int rowsBelowDock;
     private int dockOpacity;

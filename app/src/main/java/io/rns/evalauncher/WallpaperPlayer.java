@@ -65,22 +65,28 @@ final class WallpaperPlayer {
     WallpaperPlayer(Context context, FrameLayout root, Config config) {
         this.root = root;
         boolean isLight = Config.isLightMode(context, config.themeMode);
-        backgroundColor = isLight
-                ? (config.backgroundColor != 0xFF000000 ? config.backgroundColor : 0xFFF6F8FA)
-                : 0xFF000000;
-        files = new ArrayList<>(config.wallpapers);
-        interval = config.wallpaperRotationMinutes * 60_000L;
-        bitmapConfig = (isLight || config.wallpaperTrueColor) ? Bitmap.Config.ARGB_8888 : Bitmap.Config.RGB_565;
+        boolean isDark = Config.THEME_MODE_DARK.equals(config.themeMode);
         if (isLight) {
+            backgroundColor = config.backgroundColor != 0xFF000000 ? config.backgroundColor : 0xFFF6F8FA;
+            bitmapConfig = Bitmap.Config.ARGB_8888;
             // In light mode, apply a balanced frosted daylight scrim (60% white wash) so wallpapers
             // stay bright and airy while retaining rich color for the ambient horizon gradient to pop.
             dimColor = 0x99FFFFFF;
-        } else {
+        } else if (isDark) {
+            backgroundColor = 0xFF000000;
+            bitmapConfig = config.wallpaperTrueColor ? Bitmap.Config.ARGB_8888 : Bitmap.Config.RGB_565;
             // In dark mode, if the theme wallpaper has no explicit dim, apply a 45% dark scrim
             // so light wallpapers become dark and white text pops.
             int effectiveDim = config.wallpaperDim > 0 ? config.wallpaperDim : 45;
             dimColor = (effectiveDim * 255 / 100) << 24;
+        } else {
+            // THEME_MODE_SYSTEM: absolute default original v4.10 theme look
+            backgroundColor = config.backgroundColor;
+            bitmapConfig = config.wallpaperTrueColor ? Bitmap.Config.ARGB_8888 : Bitmap.Config.RGB_565;
+            dimColor = config.wallpaperDim > 0 ? (config.wallpaperDim * 255 / 100) << 24 : 0;
         }
+        files = new ArrayList<>(config.wallpapers);
+        interval = config.wallpaperRotationMinutes * 60_000L;
         order = config.wallpaperOrder;
         preferences = context.getSharedPreferences("wallpaper_rotation", Context.MODE_PRIVATE);
         moods = config.wallpaperMoods;
