@@ -490,7 +490,6 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
         wallpaperPlayer = new WallpaperPlayer(this, root, cfg);
         sky = findViewById(R.id.sky);
         sky.setIntensity(cfg.skyIntensity);
-        if (isLight) sky.setVisibility(View.GONE);
         glass = findViewById(R.id.glass);
         glass.setStyle(cfg.glassStyle);
         if (isLight) glass.setLightMode(true);
@@ -501,7 +500,7 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
         ambient.forceHasOverlappingRendering(false);
         ambientGlow = cfg.ambientGlow;
         appGlow = cfg.appGlow;
-        if (!ambientGlow || isLight) ambient.setVisibility(View.GONE);
+        if (!ambientGlow) ambient.setVisibility(View.GONE);
         heroName = findViewById(R.id.heroName);
         hero = findViewById(R.id.hero);
         // The hero is now a group (name, and the cinematic lines): without this every fade of the default

@@ -72,9 +72,9 @@ final class WallpaperPlayer {
         interval = config.wallpaperRotationMinutes * 60_000L;
         bitmapConfig = (isLight || config.wallpaperTrueColor) ? Bitmap.Config.ARGB_8888 : Bitmap.Config.RGB_565;
         if (isLight) {
-            // In light mode, apply a frosted daylight scrim (70% white wash) so any wallpaper
-            // turns bright and airy, making dark text, clock, greeting and pills pop with high contrast.
-            dimColor = 0xB3FFFFFF;
+            // In light mode, apply a balanced frosted daylight scrim (60% white wash) so wallpapers
+            // stay bright and airy while retaining rich color for the ambient horizon gradient to pop.
+            dimColor = 0x99FFFFFF;
         } else {
             // In dark mode, if the theme wallpaper has no explicit dim, apply a 45% dark scrim
             // so light wallpapers become dark and white text pops.
